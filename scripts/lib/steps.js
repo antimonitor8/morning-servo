@@ -98,7 +98,8 @@ export function select(scored, s) {
   top.sort(rank);
 
   const used = new Set(top);
-  const funding = pool.filter((it) => it.funding && it.score >= 3 && !used.has(it)).slice(0, 25);
+  // The Money table lists every deal, including ones that also made the top stories.
+  const funding = pool.filter((it) => it.funding && it.score >= 3).slice(0, 25);
   const fundingSet = new Set(funding);
   let briefs = pool.filter((it) => !used.has(it) && !fundingSet.has(it) && it.score >= s.minBriefScore).slice(0, s.briefsMax);
   if (briefs.length < s.briefsMin) {
@@ -205,11 +206,24 @@ Use only facts in the items. Skip items that don't report a specific deal.`;
     return r.json.rounds
       .filter((x) => funding[x.i])
       .map((x) => ({ ...x, url: funding[x.i].link, source: funding[x.i].source }))
-      .sort((a, b) => (b.amount_usd_m ?? -1) - (a.amount_usd_m ?? -1));
+      .sort((a, b) => (b.amount_usd_m ?? -1) - (a.amount_usd_m ?? -1))
+      .filter(uniqueCompany());
   } catch (err) {
     log(`  money extraction failed: ${err.message}`);
     return [];
   }
+}
+
+// Two outlets reporting one deal give two rows ("Robusta" and "Robusta Dev"); keep the first, largest one.
+function uniqueCompany() {
+  const seen = [];
+  const key = (name) => name.toLowerCase().replace(/[^a-z0-9]/g, '');
+  return (row) => {
+    const k = key(row.company);
+    if (!k || seen.some((s) => s.startsWith(k) || k.startsWith(s))) return false;
+    seen.push(k);
+    return true;
+  };
 }
 
 // ---------- THINK ----------

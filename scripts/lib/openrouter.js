@@ -20,6 +20,8 @@ export class Budget {
 }
 
 const URL = 'https://openrouter.ai/api/v1/chat/completions';
+// Models that refused to run with thinking off; later calls in this run skip the failed first try.
+const needsThinking = new Set();
 
 function estimateCost(model, inT, outT) {
   const price = modelsConfig().prices[model.replace(/:.*$/, '')];
@@ -50,6 +52,10 @@ export async function chat({ step, models, system, user, schema, maxTokens = 200
   // Reasoning tokens bill as output; keep them off unless a step asks for them.
   // Temperature is left at each model's default: Claude models on OpenRouter reject it.
   body.reasoning = reasoning ? (typeof reasoning === 'object' ? reasoning : { effort: 'medium' }) : { enabled: false };
+  if (!reasoning && needsThinking.has(models[0])) {
+    body.reasoning = { effort: 'low', exclude: true };
+    body.max_tokens = maxTokens + 4000;
+  }
   if (schema) {
     body.response_format = { type: 'json_schema', json_schema: { name: step, strict: true, schema } };
     body.provider = { require_parameters: true };
@@ -75,7 +81,8 @@ export async function chat({ step, models, system, user, schema, maxTokens = 200
         const msg = data.error?.message || JSON.stringify(data).slice(0, 300);
         // Some models (e.g. GLM) can't turn thinking off; retry them with light, hidden thinking.
         if (/reasoning is mandatory/i.test(msg) && body.reasoning?.enabled === false) {
-          log(`  ${step}: ${data.model || models[0]} requires thinking; retrying with light thinking`);
+          if (!needsThinking.has(models[0])) log(`  ${step}: ${models[0]} requires thinking; using light thinking`);
+          needsThinking.add(models[0]);
           body.reasoning = { effort: 'low', exclude: true };
           body.max_tokens = maxTokens + 4000;
           attempt--;

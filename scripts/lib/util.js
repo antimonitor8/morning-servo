@@ -55,10 +55,17 @@ export const clip = (s, n) => {
   return s.length > n ? s.slice(0, n - 1).trimEnd() + '…' : s;
 };
 
-const STOP = new Set('a an the of to in on for and or with by at from as is are was be its it this that new how why what says say after over into up out about than more ai'.split(' '));
+const STOP = new Set('a an the of to in on for and or with by at from as is are was be its it this that new how why what says say after over into up out about than more ai our its report raises raised launches launched releases released announces unveils introduces startup round funding series'.split(' '));
 export const titleTokens = (t) => new Set(
   (t || '').toLowerCase().replace(/[^a-z0-9$ ]+/g, ' ').split(' ').filter((w) => w.length > 1 && !STOP.has(w)),
 );
+// Same story if headlines share most words, or share 3+ distinctive words covering half the shorter headline.
+export function sameStory(a, b) {
+  if (!a.size || !b.size) return false;
+  let inter = 0;
+  for (const x of a) if (b.has(x)) inter++;
+  return inter / (a.size + b.size - inter) >= 0.55 || (inter >= 3 && inter / Math.min(a.size, b.size) >= 0.5);
+}
 export function jaccard(a, b) {
   if (!a.size || !b.size) return 0;
   let inter = 0;

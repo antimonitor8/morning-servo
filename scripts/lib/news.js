@@ -1,7 +1,7 @@
 import Parser from 'rss-parser';
 import { parseHTML } from 'linkedom';
 import { Readability } from '@mozilla/readability';
-import { readJson, p, hash, clip, titleTokens, jaccard, mapLimit, log } from './util.js';
+import { readJson, p, hash, clip, titleTokens, sameStory, mapLimit, log } from './util.js';
 
 const UA = 'Mozilla/5.0 (compatible; MorningServo/1.0; personal news reader)';
 const parser = new Parser({ timeout: 20_000, headers: { 'User-Agent': UA } });
@@ -49,8 +49,8 @@ export function dedupe(items, seenTitles = [], seenLinks = []) {
   for (const it of items) {
     if (links.has(it.link)) continue;
     const tok = titleTokens(it.title);
-    if (seenTok.some((s) => jaccard(s, tok) >= 0.6)) continue;
-    const match = clusters.find((c) => jaccard(c.tok, tok) >= 0.55);
+    if (seenTok.some((s) => sameStory(s, tok))) continue;
+    const match = clusters.find((c) => sameStory(c.tok, tok));
     if (match) {
       match.also.push({ name: it.source, url: it.link });
       if (it.snippet.length > match.snippet.length) match.snippet = it.snippet;
