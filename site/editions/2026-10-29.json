@@ -1,0 +1,536 @@
+{
+  "date": "2026-10-29",
+  "weekday": "Thursday",
+  "sunday": false,
+  "number": 1,
+  "paper": "The Morning Servo",
+  "readMinutes": 12,
+  "stories": [
+    {
+      "id": "0ceea29d22",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "WorldOracle benchmark finds world models miss object outcomes and degrade over long robot task sequences",
+      "deck": "Researchers from Princeton, UT Austin, Toronto, NVIDIA and AgiBot scored seven models against real executions; arm motion was predicted well, but objects often were not.",
+      "body": [
+        "WorldOracle is a benchmark for action-conditioned world models. Each model gets the initial frame and action sequence of a real manipulation episode and generates a video. The platform scores that video against the real execution. It opened to developers on October 16 and accepts open-weight and closed-source models.",
+        "The team tested seven models, including DreamDojo, Cosmos 3, IRASim and GE-Sim 2.0. All five models tested on human-operated AgiBot G2 data scored higher on the arm than on the object. IRASim scored 78.8 on the arm and 29.1 on the object. Cosmos 3 scored 89.4 and 45.4.",
+        "Scores also fell over full sequences. DreamDojo dropped from 50.56 to 27.08 and Cosmos 3 from 53.99 to 26.60. GE-Sim 2.0 fell from 73.86 to 63.33 and led at both horizons. In one case a grasp missed, yet the model predicted a successful pick.",
+        "The benchmark covers AgiBot G2 and YAM robots plus first-person human-hand manipulation. Tasks are fruit picking, towel hanging, water pouring and drawer pulling. Failed executions count as test samples, so a model is rewarded for predicting a miss correctly."
+      ],
+      "why": "World models are used to evaluate and train robot policies, and they need real recordings that include failures to be tested honestly. The benchmark's inclusion of egocentric hand data and failed episodes points to demand for such footage across rigid, deformable and fluid tasks.",
+      "hard": "The benchmark covers only four tasks and two robot types, and it is unclear how scores relate to the usefulness of a world model for policy training.",
+      "tags": {
+        "industry": [
+          "Robotics research",
+          "Manipulation"
+        ],
+        "task": [
+          "World model evaluation",
+          "Pick, pour and hang tasks"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/worldoracle-tests-whether-world-models-can-reliably-predict-real-world-executions/"
+        }
+      ]
+    },
+    {
+      "id": "97373eedda",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Surge AI benchmark finds best AI agent passes only 10.8% of professional tax assignments",
+      "deck": "DAYJOB: Tax tests agents on 50 assignments built from real workflows; Claude Sonnet 5.5 leads, and passing requires meeting at least 95% of grading criteria.",
+      "body": [
+        "Surge AI released DAYJOB: Tax, a benchmark of 50 environments across eight areas of tax practice, including individual, partnership, international and estate work. Agents receive client requests and records, then produce returns, workpapers, reviews or advice.",
+        "Claude Sonnet 5.5 leads with a 10.8% pass rate. Claude Fable 5.1 scores 9.6% and Claude Opus 5.5 scores 9.2%. Pass@1 is measured at a 95% rubric threshold. The benchmark has 1,789 workspace files, 1,487 of them PDFs, with a median of 30 per assignment.",
+        "The files include handwritten receipt photos, dispatch logs, K-1s, IRS notices and crypto exchange exports. Tax experts wrote the tasks and grading criteria, with three-layer review. Failures often involved missed issues: one agent never flagged a home-sale deadline, and another assumed a couple was unmarried."
+      ],
+      "why": "The tasks rely on messy, mixed-format records and on judgment about what to investigate. This suggests demand for training data that shows professionals working through real documents, not only clean question-and-answer pairs.",
+      "hard": "The benchmark is built by one vendor from expert-written scenarios, and the 95% threshold is strict, so low pass rates may not reflect how useful agents are in practice.",
+      "tags": {
+        "industry": [
+          "Tax and accounting",
+          "Professional services"
+        ],
+        "task": [
+          "Document review",
+          "Agent evaluation"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "Hacker News",
+          "url": "https://surgehq.ai/blog/dayjob-tax"
+        }
+      ]
+    },
+    {
+      "id": "49002047d7",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Hyderabad physical AI startup Tensrai raises Rs 3.4 crore in pre-seed round",
+      "deck": "India Accelerator, Finvolve and Hyderabad Angels backed the company, which is building a retrofittable autonomy platform for industrial and commercial robots, vehicles and machines.",
+      "body": [
+        "Tensrai, a Hyderabad-based physical AI startup, has raised Rs 3.4 crore in pre-seed funding. Investors include India Accelerator, Finvolve, Hyderabad Angels and other angels. The company says it will use the money for technology development, engineering and deployment, and expansion into domestic and international markets.",
+        "The company is building a single autonomy platform. It combines vision-first navigation, AI-based localisation, reasoning driven by vision-language models, mobility, arm manipulation, and a teach-and-deploy function based on vision-language-action models. It is meant to work on new machines and to be retrofitted to existing equipment.",
+        "Target uses include material handling and cleaning in factories, warehouses, airports, hospitals, malls and commercial campuses. Tensrai is also developing a general-purpose mobile manipulator for material handling, cleaning, manufacturing and construction. Planned revenue comes from robot sales, retrofits, Robot-as-a-Service and custom solutions."
+      ],
+      "why": "An Indian startup is aiming a VLA-based teach-and-deploy system at factories, warehouses and cleaning work. Such systems need real-world demonstration data from these settings, including mobile manipulation tasks.",
+      "hard": "The source gives no deployment results, customer names or performance figures, so the platform's real-world capability is unproven.",
+      "tags": {
+        "industry": [
+          "Manufacturing",
+          "Warehousing"
+        ],
+        "task": [
+          "Material handling",
+          "Mobile manipulation"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "Entrackr",
+          "url": "https://entrackr.com/snippets/physical-ai-startup-tensrai-raises-rs-34-cr-in-pre-seed-round-12764908"
+        }
+      ]
+    },
+    {
+      "id": "56cfe99450",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Odisha underwater robotics startup Coratia raises Rs 18 crore in bridge round led by MGF Kavachh",
+      "deck": "The funds will go toward a Rs 66 crore Indian Navy contract under iDEX, new product R&D, and scaling manufacturing and deployment for defence and infrastructure.",
+      "body": [
+        "Coratia Technologies, an Odisha-based maker of underwater robotic systems, has raised Rs 18 crore in a bridge round led by MGF Kavachh. The company announced the round in a press release.",
+        "It earlier raised Rs 17 crore from MGF Kavachh, Piper and SIDBI in a pre-Series A round. The new money will fund delivery of a Rs 66 crore contract with the Indian Navy under the iDEX initiative. It will also support R&D on new products and manufacturing scale-up.",
+        "Debendra Pradhan and Biswajit Swain founded Coratia in 2021. Its flagship Jalasimha UWROV has reached Technology Readiness Level 9. Customers and partners include Indian Oil, Indian Railways, Tata Steel, Hindalco, SAIL, Jindal Steel and Power, and NIT Rourkela."
+      ],
+      "why": "Indian steel, rail and energy firms already buy underwater robots for inspection work, and the Navy is paying for it. That marks underwater inspection and intervention as a domestic field task with real buyers, and a likely source of demand for data from such environments.",
+      "hard": "The source gives no detail on how autonomous the systems are or whether they use learned models, so their link to robot learning data is unclear.",
+      "tags": {
+        "industry": [
+          "Defence",
+          "Heavy industry and infrastructure"
+        ],
+        "task": [
+          "Underwater inspection",
+          "Remotely operated vehicle operation"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "Entrackr",
+          "url": "https://entrackr.com/snippets/coratia-technologies-raises-rs-18-cr-in-bridge-round-led-by-mgf-kavachh-12764727"
+        }
+      ]
+    },
+    {
+      "id": "d5f1609a99",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "AGIBOT proposes Worken, a measure of robot work hours, and unveils GO-3 Preview model",
+      "deck": "At its Shanghai Innovation Day, the company also launched the AHA3 hardware platform, the G2 Max industrial robot, and MEgo Glove, a tactile data-collection device for training embodied AI.",
+      "body": [
+        "AGIBOT introduced Worken, a proposed framework for measuring robot productivity in real deployments. It stands for effective intelligent work hours. The formula multiplies active robots, autonomous working hours, and an output efficiency ratio. The ratio compares output with a reference benchmark, such as acceptable work by a human worker.",
+        "The company also showed GO-3 Preview, an embodied foundation model built around a World Reasoning Action Model. It is meant to anticipate the results of actions and generalize beyond learned task sequences. AGIBOT said it showed zero-shot and few-shot abilities, and that the model ranked first on RoboDojo for task success rate and process score.",
+        "On data, AGIBOT introduced MEgo Glove, a wearable that captures hand movements and contact. The Air version captures finger pose. The Ultra version adds fingertip and palm force and torque data. AGIBOT also launched the AHA3 platform, the OmniHand 3 hand family, G2 Max and Link-U OS 1.0. It said its 20,000th robot was built last month, and that IDC ranked it first in humanoid shipments in the first half of 2026."
+      ],
+      "why": "Worken points buyers toward autonomous hours and intervention rates, which raises demand for task data from real work sites. The MEgo Glove shows a major humanoid maker collecting tactile human-hand data alongside video.",
+      "hard": "Worken is a company-proposed metric with task benchmarks still to be developed, and the GO-3 Preview results come from evaluations AGIBOT presented itself.",
+      "tags": {
+        "industry": [
+          "Humanoid robots",
+          "Manufacturing"
+        ],
+        "task": [
+          "Dexterous manipulation",
+          "Tactile data collection"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/agibot-introduces-worken-measure-robot-productivity-innovation-day-2026/"
+        }
+      ]
+    },
+    {
+      "id": "9d2f69bbb0",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "North American robot orders rise 24.8% in Q3 2026, led by auto suppliers and electronics",
+      "deck": "A3 says companies ordered 10,989 robots worth $723.5 million, the strongest quarter of the year, with automotive component orders up 90.4% and food and consumer goods down 23.7%.",
+      "body": [
+        "North American companies ordered 10,989 robots valued at $723.5 million in the third quarter of 2026, the Association for Advancing Automation (A3) reported. Units rose 24.8% and value rose 26.1% from Q3 2025. Nine-month orders reached 28,984 robots worth about $1.89 billion.",
+        "Automotive component suppliers ordered 90.4% more robots. Semiconductors and electronics/photonics rose 97.6% in units, plastics and rubber 67.7%, life sciences 38.7% and metals 37.0%. Food and consumer goods fell 23.7%. Automotive OEM orders rose 7.5% in Q3 but remain 17% below last year for the nine months.",
+        "Collaborative robots did well. Cobot orders were 1,831 units worth $63.8 million, up about 56% in units and 16.7% of Q3 units. Through September, cobots were 43.8% of life sciences orders and 36.9% of semiconductor and electronics orders. The September ISM manufacturing PMI was 54.5, a ninth month of expansion."
+      ],
+      "why": "Order growth in electronics, pharma, plastics and metals shows where new robot cells are being installed. Those are the settings where buyers of manipulation models will want footage of real tasks. Cobot strength in life sciences and electronics points to demand for close-range, precise handling data.",
+      "hard": "The figures are orders for conventional industrial robots in North America, and A3 notes input costs, trade uncertainty and the timing of large projects could change the picture.",
+      "tags": {
+        "industry": [
+          "Manufacturing",
+          "Automotive"
+        ],
+        "task": [
+          "Industrial robot orders",
+          "Collaborative robot deployment"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/north-american-robot-orders-climb-24-8-q3-2026-says-a3/"
+        }
+      ]
+    },
+    {
+      "id": "6b07a95dd8",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Warp Sciences exits stealth with $215 million to build robotic chemistry labs",
+      "deck": "The South San Francisco startup, led by former OpenAI executive Kevin Weil, is building a U.S. chemistry contract research organization that uses robotics and AI to make and test molecules.",
+      "body": [
+        "Warp Sciences emerged from stealth with $215 million in funding. It says it is building a U.S.-based chemistry contract research organization that combines chemists, robotics and AI to make and test molecules for biotech and pharmaceutical research teams.",
+        "Its first service is lead optimization analog synthesis: making variations of molecules that scientists compare while searching for a drug candidate. Experienced chemists guide the work as the lab is increasingly automated. Warp says AI models will be trained on data from physical experiments. It has no drug pipeline of its own.",
+        "Lightspeed led the round, with many other venture firms taking part. Angels include Skild AI CEO Deepak Pathak, former Tesla robotics vice president Milan Kovac and Physical Intelligence co-founder Lachy Groom. Early hires have robotics experience from Genesis, Skild AI and 1X Technologies. Warp also cites the BIOSECURE Act as a reason for U.S.-based chemistry."
+      ],
+      "why": "Robotics talent and investors are moving into automated lab work, where data comes from physical experiments rather than video. It points to a possible new buyer category for manipulation data on lab tasks such as pipetting and sample handling.",
+      "hard": "Warp has not published results or a timeline for automation, so it is unclear how much of the lab work robots will actually do.",
+      "tags": {
+        "industry": [
+          "Biotech",
+          "Pharma"
+        ],
+        "task": [
+          "Laboratory automation",
+          "Molecule synthesis"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/warp-sciences-emerges-stealth-apply-robotics-drug-research/"
+        }
+      ]
+    },
+    {
+      "id": "88294416a4",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Dream raises $17M seed from a16z for AI world models that design buildings",
+      "deck": "The startup, founded by two former Palantir executives, trained its model on more than 100 million square feet of U.S. permit data and says it is deployed on 10 projects.",
+      "body": [
+        "Dream, a startup founded by former Palantir executives Andy Alder and Arjun Mather, has come out of stealth with $17 million in seed funding. Andreessen Horowitz led the round. SV Angel, XYZ and Zigg Capital also took part.",
+        "Dream builds a world model that generates whole building designs. It was trained on more than 100 million square feet of building data from permit archives across the United States. The founders say the model accounts for materials, beams, load capacity, plumbing and HVAC. They call the approach structural cognition.",
+        "The company is already selling to architecture, engineering and construction professionals and developers. They use it to conceptualize designs and estimate costs. It runs on 10 active projects in Texas and California. Motif, Snaptrude and Arcol are also applying AI to design software, and Dream aims to replace tools such as AutoCAD and Revit."
+      ],
+      "why": "Buyers are funding models that learn physical constraints from real-world records, here building permits, rather than from images or text. It shows demand for domain-specific physical data in construction, a sector where robots may later work from such designs.",
+      "hard": "The structural accuracy claims come from the founders and have not been independently verified, and 10 active projects is a small base.",
+      "tags": {
+        "industry": [
+          "Construction",
+          "Architecture and engineering"
+        ],
+        "task": [
+          "Building design",
+          "Cost estimation"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/"
+        }
+      ]
+    },
+    {
+      "id": "2205cd09de",
+      "section": "india",
+      "kicker": "India Desk",
+      "headline": "Venttup raises $3 million to move Indian hardware from prototype to production",
+      "deck": "The Bengaluru startup, backed by Rainmatter and Unicorn India Ventures, reports FY26 revenue of ₹10 crore, up fivefold since its 2024 seed round.",
+      "body": [
+        "Venttup, a Bengaluru manufacturing startup, has raised $3 million in a Pre-Series A round co-led by Rainmatter by Zerodha and Unicorn India Ventures. The money will fund engineering hires, precision manufacturing and rapid prototyping infrastructure, and AI tools for B2B sourcing and supplier intelligence.",
+        "Founded in 2021, Venttup combines in-house engineering with a network of manufacturing partners, mostly MSMEs. It handles supplier selection, prototype testing, quality inspection and production. Its work covers precision machining, casting, forging, sheet metal, box builds, special purpose machines, industrial automation and robotics.",
+        "Revenue reached ₹10 crore in FY26, up fivefold since the 2024 seed round. The company added more than 15 large customers in the past 12 months and reports a pipeline of about ₹30 crore. It competes with Zetwerk and CapGrid, and Karkhana is a peer with an electronics focus."
+      ],
+      "why": "Robotics and automation hardware is moving from prototype to local production in India, which points to more factory and machining floors where work is done by hand. Those sites are candidates for first-person data collection.",
+      "hard": "It is unproven whether customers will keep Venttup involved after a component is validated, since repeat production contracts are the real test.",
+      "tags": {
+        "industry": [
+          "Manufacturing",
+          "Deeptech hardware"
+        ],
+        "task": [
+          "Precision machining",
+          "Component prototyping and production"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "Inc42",
+          "url": "https://inc42.com/buzz/venttup-raises-3-mn-to-bridge-indias-precision-manufacturing-gap/"
+        }
+      ]
+    },
+    {
+      "id": "fc7d1d71bd",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Google releases Gemini 4 Carbon, a cybersecurity-focused model, to select defense partners",
+      "deck": "Carbon tops the Artificial Analysis Intelligence Index v5.0 and two security benchmarks, but access is limited to a select group of cybersecurity defense companies for now.",
+      "body": [
+        "Google has released Gemini 4 Carbon, its latest frontier model. The company says it makes significant gains in coding, agentic tasks and cybersecurity. It improves on Argon, which Google released earlier this month.",
+        "Google says Carbon ranks first on the Artificial Analysis Intelligence Index (v5.0), ahead of Claude Opus 5.5 and GPT-6 Astra. It also leads SEC-bench Pro, which measures finding real-world bugs, and ExploitGym, which measures turning a vulnerability into an exploit. Pricing matches Argon: $2 per million input tokens and $10 per million output tokens.",
+        "Google says the model is built for long tasks. Internal teams have seen it run for days and persist through dead ends on multi-step engineering work. It is also said to resist prompt injection better and cut unsupported claims by half versus Argon. Access will later widen to other partners in the Fairwind Program."
+      ],
+      "why": "Models that can sustain multi-day agentic work are the kind that may later drive robot planning and data-processing pipelines. The pricing also sets a reference point for the cost of labeling and analyzing large video datasets with frontier models.",
+      "hard": "The benchmark rankings and the claims about long-running tasks come from Google, and the model is not yet available for independent testing.",
+      "tags": {
+        "industry": [
+          "Cybersecurity",
+          "Software"
+        ],
+        "task": [
+          "Agentic coding",
+          "Vulnerability discovery"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "Robotics Floor",
+      "headline": "What Symbotic’s Walmart growth teaches robotics startups about anchor customers",
+      "url": "https://www.therobotreport.com/what-symbotic-growth-with-walmart-teaches-robotics-startups-about-anchor-customers/",
+      "source": "The Robot Report"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Gemini 4 Carbon: Our next frontier model",
+      "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+      "source": "Google DeepMind"
+    },
+    {
+      "kicker": "India Desk",
+      "headline": "Innodata Lays Off Nearly 550 Employees In India: Report",
+      "url": "https://inc42.com/buzz/innodata-lays-off-nearly-550-employees-in-india-report/",
+      "source": "Inc42"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Voice AI in vogue: Nvidia releases new open transcription model",
+      "url": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
+      "source": "TechCrunch AI"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "Pairing industrial AI autonomy and human control",
+      "url": "https://www.technologyreview.com/2026/10/28/1147637/pairing-industrial-ai-autonomy-and-human-control/",
+      "source": "MIT Technology Review"
+    },
+    {
+      "kicker": "India Desk",
+      "headline": "India’s new-age manufacturers to benefit from $3 trillion global AI investment cycle: Avendus Capital",
+      "url": "https://yourstory.com/2026/10/new-age-manufacturers-to-benefit-from-3-trillion-global-ai-investment-cycle-avendus-capital",
+      "source": "YourStory"
+    },
+    {
+      "kicker": "The Money",
+      "headline": "Anthropic Makes $2.08 in Revenue for Every $1 Spent on Compute — Here’s the Full IPO Story",
+      "url": "https://analyticsindiamag.com/global-tech/anthropic-makes-208-in-revenue-for-every-1-spent-on-compute-heres-the-full-ipo-story",
+      "source": "Analytics India Magazine"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "NVIDIA Launches Open-Weight Transcription Model for 40 Languages",
+      "url": "https://analyticsindiamag.com/ai-news/nvidia-launches-open-weight-transcription-model-for-40-languages",
+      "source": "Analytics India Magazine"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Google Announces Gemini 4 Carbon With Focus on Cybersecurity and Coding",
+      "url": "https://analyticsindiamag.com/ai-news/google-announces-gemini-4-carbon-with-focus-on-cybersecurity-and-coding",
+      "source": "Analytics India Magazine"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 0,
+        "company": "Venttup",
+        "what": "Industries 5.0 precision manufacturing startup",
+        "round": "Pre Series A",
+        "amount_usd_m": 3,
+        "amount_text": "$3M",
+        "lead": "Rainmatter, Unicorn India Ventures",
+        "india": true,
+        "url": "https://entrackr.com/snippets/industries-50-startup-venttup-raises-3-mn-in-pre-series-a-led-by-rainmatter-by-zerodha-and-unicorn-india-12764564",
+        "source": "Entrackr"
+      },
+      {
+        "i": 1,
+        "company": "Venttup",
+        "what": "AI precision manufacturing and B2B sourcing",
+        "round": "Pre Series A",
+        "amount_usd_m": 3,
+        "amount_text": "$3M",
+        "lead": "Not disclosed",
+        "india": true,
+        "url": "https://analyticsindiamag.com/ai-news/venttup-raises-3-million-to-expand-precision-manufacturing",
+        "source": "Analytics India Magazine"
+      },
+      {
+        "i": 4,
+        "company": "Viridian Ingni Propulsion",
+        "what": "Electric propulsion systems deeptech startup",
+        "round": "Pre Seed",
+        "amount_usd_m": 0.17,
+        "amount_text": "₹1.47 Cr ($0.17M)",
+        "lead": "Inflection Point Ventures (IPV)",
+        "india": true,
+        "url": "https://entrackr.com/snippets/viridian-ingni-propulsion-raises-rs-147-cr-in-pre-seed-round-led-by-ipv-12763438",
+        "source": "Entrackr"
+      },
+      {
+        "i": 3,
+        "company": "Robusta",
+        "what": "AI incident investigation for IT operations",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Freshworks",
+        "india": false,
+        "url": "https://inc42.com/buzz/freshworks-acquires-ai-startup-robusta-to-strengthen-it-operations-platform/",
+        "source": "Inc42"
+      },
+      {
+        "i": 5,
+        "company": "Robusta Dev",
+        "what": "AI incident management startup",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Freshworks",
+        "india": false,
+        "url": "https://yourstory.com/2026/10/freshworks-acquires-israel-based-ai-startup-robusta-dev",
+        "source": "YourStory"
+      },
+      {
+        "i": 6,
+        "company": "Daily",
+        "what": "Real-time voice and video infrastructure",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Deepgram",
+        "india": false,
+        "url": "https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/",
+        "source": "TechCrunch AI"
+      }
+    ],
+    "totalUsdM": 6
+  },
+  "think": {
+    "collision": {
+      "a": {
+        "kind": "story",
+        "n": 1,
+        "label": "World models miss object outcomes, need failure footage"
+      },
+      "b": {
+        "kind": "story",
+        "n": 4,
+        "label": "Coratia raises Rs 18 crore for underwater robots"
+      },
+      "headline": "Record annotated failure-and-recovery footage from Indian underwater inspection dives as a benchmark set for testing world models in fluid settings",
+      "body": "WorldOracle shows world models track arm motion but lose objects, and degrade worst on deformable and fluid tasks, so honest tests need real recordings that include failures. Coratia's inspection work for steel, rail, energy firms and the Navy produces exactly such conditions: turbidity, current, drifting tethers and fouled surfaces. A paired dataset of ROV camera feeds, diver helmet-cam footage and logged outcomes, including failed grasps and lost targets, would give world-model builders an evaluation set nobody else has.",
+      "who_pays": "World-model and simulation teams at firms like NVIDIA and AgiBot, plus underwater robot makers who want to validate policies before sea trials.",
+      "data_needed": "Synchronized ROV and diver-mounted stereo video with thruster and manipulator logs, object state labels and explicit success or failure tags across harbour, dam and plant-intake sites.",
+      "why_fail": "Defence and critical-infrastructure clients may refuse to let footage leave their control, leaving too little licensable data to build a credible benchmark."
+    },
+    "contrarian": {
+      "story_n": 5,
+      "consensus": "AGIBOT's Worken metric will push the industry to judge robots by autonomous work hours, which will lift demand for real work-site data.",
+      "against": [
+        "A vendor-defined metric tends to measure what the vendor's robots already do well, so Worken may count easy, repetitive hours and hide the hard tasks where interventions cluster.",
+        "Buyers such as auto suppliers in the A3 data already buy on cycle time, uptime and cost per part, so a new hours unit may add little to how purchasing decisions are made.",
+        "If autonomous hours become the target, the cheapest path is narrowing robots to structured tasks and fixed cells, which reduces rather than raises demand for varied egocentric data."
+      ],
+      "bets_otherwise": "Fixed-automation sellers like Symbotic, which win through anchor customers on throughput contracts, and industrial integrators selling cobot cells priced on output per shift.",
+      "settle_it": "Whether any major buyer outside AGIBOT's own customer base writes Worken or intervention rates into a procurement contract within the next year."
+    }
+  },
+  "cost": {
+    "usd": 0.1562,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 3,
+        "inTokens": 18163,
+        "outTokens": 4682,
+        "cost": 0.0042,
+        "models": {
+          "anthropic/claude-haiku-5.5": 3
+        }
+      },
+      "write": {
+        "calls": 10,
+        "inTokens": 28958,
+        "outTokens": 6093,
+        "cost": 0.1188,
+        "models": {
+          "anthropic/claude-sonnet-5.5": 10
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 1700,
+        "outTokens": 530,
+        "cost": 0.0004,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "think": {
+        "calls": 1,
+        "inTokens": 3925,
+        "outTokens": 854,
+        "cost": 0.0328,
+        "models": {
+          "anthropic/claude-opus-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 134,
+    "unique": 131,
+    "feeds": 20,
+    "failedFeeds": [
+      "VentureBeat AI",
+      "Import AI"
+    ]
+  },
+  "generatedAt": "2026-10-29T16:31:10.139Z"
+}
