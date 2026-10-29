@@ -1,0 +1,30 @@
+name: Deploy site
+
+# Redeploys the app when its code changes. Daily editions deploy from the edition workflow.
+on:
+  push:
+    branches: [main]
+    paths: ['site/**', '!site/editions/**']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - uses: actions/deploy-pages@v4

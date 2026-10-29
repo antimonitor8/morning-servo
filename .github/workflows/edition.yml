@@ -1,0 +1,54 @@
+name: Print edition
+
+on:
+  schedule:
+    # 00:15 UTC = 05:45 IST. GitHub can start scheduled runs late, so this leaves time before the 8:00 push.
+    - cron: '15 0 * * *'
+  workflow_dispatch:
+    inputs:
+      sunday:
+        description: 'Force the Sunday Think edition (for testing)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: edition
+  cancel-in-progress: false
+
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Generate edition
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          READER_PROFILE: ${{ secrets.READER_PROFILE }}
+          SITE_URL: ${{ vars.SITE_URL }}
+          FORCE_SUNDAY: ${{ inputs.sunday && '1' || '' }}
+        run: npm run generate
+      - name: Commit edition
+        run: |
+          git config user.name "morning-servo-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/editions data/seen.json
+          git diff --cached --quiet || git commit -m "Edition $(TZ=Asia/Kolkata date +%F)"
+          git push
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - uses: actions/deploy-pages@v4

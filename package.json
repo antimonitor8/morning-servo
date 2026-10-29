@@ -1,0 +1,25 @@
+{
+  "name": "morning-servo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "node scripts/generate.js",
+    "notify": "node scripts/notify.js",
+    "serve": "node scripts/serve.js",
+    "vapid": "node scripts/vapid.js",
+    "bakeoff": "node scripts/bakeoff.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "private": "true",
+  "dependencies": {
+    "@mozilla/readability": "^0.6.0",
+    "linkedom": "^0.18.14",
+    "rss-parser": "^3.13.0",
+    "web-push": "^3.6.7"
+  }
+}

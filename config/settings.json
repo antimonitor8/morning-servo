@@ -1,0 +1,14 @@
+{
+  "paperName": "The Morning Servo",
+  "timezone": "Asia/Kolkata",
+  "windowHours": 30,
+  "maxCostPerEditionUsd": 1.0,
+  "topStories": 10,
+  "briefsMin": 5,
+  "briefsMax": 10,
+  "triageBatchSize": 50,
+  "maxItemsToTriage": 450,
+  "minTopScore": 5,
+  "minBriefScore": 4,
+  "sectionCaps": { "breakthroughs": 4, "robotics": 4, "beat": 3, "money": 3, "india": 3, "policy": 2, "other": 2 }
+}

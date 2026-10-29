@@ -1,0 +1,22 @@
+[
+  { "name": "The Robot Report", "url": "https://www.therobotreport.com/feed/" },
+  { "name": "IEEE Spectrum Robotics", "url": "https://spectrum.ieee.org/feeds/topic/robotics.rss" },
+  { "name": "IEEE Spectrum AI", "url": "https://spectrum.ieee.org/feeds/topic/artificial-intelligence.rss" },
+  { "name": "Robohub", "url": "https://robohub.org/feed/" },
+  { "name": "TechCrunch AI", "url": "https://techcrunch.com/category/artificial-intelligence/feed/" },
+  { "name": "TechCrunch Robotics", "url": "https://techcrunch.com/category/robotics/feed/" },
+  { "name": "VentureBeat AI", "url": "https://venturebeat.com/category/ai/feed/" },
+  { "name": "The Verge AI", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml" },
+  { "name": "MIT Technology Review", "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed" },
+  { "name": "Crunchbase News", "url": "https://news.crunchbase.com/feed/" },
+  { "name": "Google DeepMind", "url": "https://deepmind.google/blog/feed/basic/" },
+  { "name": "OpenAI", "url": "https://openai.com/news/rss.xml" },
+  { "name": "Hugging Face", "url": "https://huggingface.co/blog/feed.xml" },
+  { "name": "Import AI", "url": "https://importai.substack.com/feed" },
+  { "name": "arXiv cs.RO", "url": "https://rss.arxiv.org/rss/cs.RO", "maxItems": 60 },
+  { "name": "Hacker News", "url": "https://hnrss.org/newest?q=robot+OR+robotics+OR+humanoid+OR+LLM+OR+AI&points=80", "maxItems": 40 },
+  { "name": "Inc42", "url": "https://inc42.com/feed/" },
+  { "name": "Entrackr", "url": "https://entrackr.com/rss" },
+  { "name": "YourStory", "url": "https://yourstory.com/feed" },
+  { "name": "Analytics India Magazine", "url": "https://analyticsindiamag.com/feed/" }
+]
