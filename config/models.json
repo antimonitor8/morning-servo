@@ -2,27 +2,23 @@
   "_note": "Prices are USD per million tokens, from OpenRouter on 2026-10-29. Used only as a fallback when OpenRouter does not return a cost.",
   "steps": {
     "triage": {
-      "models": ["deepseek/deepseek-v4.1-flash", "z-ai/glm-5.3-flash"],
+      "models": ["anthropic/claude-haiku-5.5", "z-ai/glm-5.3-flash"],
       "maxTokens": 6000,
-      "temperature": 0.1,
       "reasoning": false
     },
     "money": {
-      "models": ["deepseek/deepseek-v4.1-flash", "z-ai/glm-5.3-flash"],
+      "models": ["anthropic/claude-haiku-5.5", "z-ai/glm-5.3-flash"],
       "maxTokens": 4000,
-      "temperature": 0,
       "reasoning": false
     },
     "write": {
       "models": ["anthropic/claude-sonnet-5.5", "openai/gpt-6.1-terra"],
       "maxTokens": 1500,
-      "temperature": 0.4,
       "reasoning": false
     },
     "think": {
       "models": ["anthropic/claude-opus-5.5", "openai/gpt-6.1-sol"],
       "maxTokens": 4000,
-      "temperature": 0.9,
       "reasoning": false
     }
   },

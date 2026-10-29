@@ -39,16 +39,16 @@ function parseJson(text) {
  * One chat call. `models` is [primary, ...fallbacks]; OpenRouter tries them in order.
  * With `schema`, the reply is parsed and returned as an object.
  */
-export async function chat({ step, models, system, user, schema, maxTokens = 2000, temperature = 0.3, reasoning = false, budget }) {
+export async function chat({ step, models, system, user, schema, maxTokens = 2000, reasoning = false, budget }) {
   budget?.check();
   const body = {
     models,
     messages: [{ role: 'system', content: system }, { role: 'user', content: user }],
     max_tokens: maxTokens,
-    temperature,
     usage: { include: true },
   };
   // Reasoning tokens bill as output; keep them off unless a step asks for them.
+  // Temperature is left at each model's default: Claude models on OpenRouter reject it.
   body.reasoning = reasoning ? (typeof reasoning === 'object' ? reasoning : { effort: 'medium' }) : { enabled: false };
   if (schema) {
     body.response_format = { type: 'json_schema', json_schema: { name: step, strict: true, schema } };
@@ -71,7 +71,18 @@ export async function chat({ step, models, system, user, schema, maxTokens = 200
         signal: AbortSignal.timeout(180_000),
       });
       const data = await res.json();
-      if (!res.ok || data.error) throw new Error(`OpenRouter ${res.status}: ${data.error?.message || JSON.stringify(data).slice(0, 300)}`);
+      if (!res.ok || data.error) {
+        const msg = data.error?.message || JSON.stringify(data).slice(0, 300);
+        // Some models (e.g. GLM) can't turn thinking off; retry them with light, hidden thinking.
+        if (/reasoning is mandatory/i.test(msg) && body.reasoning?.enabled === false) {
+          log(`  ${step}: ${data.model || models[0]} requires thinking; retrying with light thinking`);
+          body.reasoning = { effort: 'low', exclude: true };
+          body.max_tokens = maxTokens + 4000;
+          attempt--;
+          continue;
+        }
+        throw new Error(`OpenRouter ${res.status}: ${msg}`);
+      }
 
       const model = data.model;
       const inTokens = data.usage?.prompt_tokens || 0;
