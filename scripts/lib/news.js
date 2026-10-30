@@ -27,8 +27,8 @@ export async function fetchAll(windowHours) {
             title: clip(gn ? gn[1] : it.title, 200),
             link: it.link,
             source: gn ? gn[2].trim() : src.name,
-            // Funding-only sources feed The Money and In Brief, never a full write-up.
-            fundingOnly: src.role === 'funding',
+            // Funding and fun sources feed The Money, In Brief and The Playground, never a full write-up.
+            role: src.role || null,
             published: it.isoDate || it.pubDate || null,
             snippet: gn ? '' : clip(it.contentSnippet || it.summary || it.content || '', 400),
           };

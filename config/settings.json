@@ -10,5 +10,14 @@
   "maxItemsToTriage": 450,
   "minTopScore": 5,
   "minBriefScore": 4,
-  "sectionCaps": { "breakthroughs": 4, "robotics": 4, "beat": 3, "money": 3, "india": 3, "policy": 2, "other": 2 }
+  "sectionCaps": {
+    "breakthroughs": 4,
+    "robotics": 4,
+    "beat": 3,
+    "money": 3,
+    "india": 3,
+    "policy": 2,
+    "other": 2
+  },
+  "playgroundItems": 4
 }

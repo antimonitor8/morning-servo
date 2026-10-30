@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import { loadEnv, settings, readerProfile, localDate, readJson, writeJson, p, log, mapLimit } from './lib/util.js';
 import { Budget } from './lib/openrouter.js';
 import { fetchAll, dedupe, fullText } from './lib/news.js';
-import { triage, select, writeStories, extractMoney, think, SECTION_LABEL } from './lib/steps.js';
+import { triage, select, writeStories, extractMoney, think, playground, SECTION_LABEL } from './lib/steps.js';
 
 loadEnv();
 if (!process.env.OPENROUTER_API_KEY) { console.error('OPENROUTER_API_KEY is not set. Add it to .env.'); process.exit(1); }
@@ -49,8 +49,8 @@ log(`Triage done ($${budget.spent.toFixed(3)} so far)`);
 
 // 4. Select
 stage = 'select';
-const { top, briefs, funding } = select(scored, s);
-log(`Selected ${top.length} top stories, ${briefs.length} briefs, ${funding.length} funding items`);
+const { top, briefs, funding, fun } = select(scored, s);
+log(`Selected ${top.length} top stories, ${briefs.length} briefs, ${funding.length} funding items, ${fun.length} playground candidates`);
 
 // 5. Write the top stories from full article text
 stage = 'full text and writing';
@@ -84,6 +84,12 @@ const pastCompanies = recent.flatMap((e) => e.money?.rounds?.map((r) => r.compan
 const rounds = await extractMoney(funding, { budget, pastCompanies });
 const totalM = rounds.reduce((sum, r) => sum + (r.amount_usd_m || 0), 0);
 
+// 6b. The Playground
+stage = 'playground';
+const funTexts = await mapLimit(fun, 5, (it) => (it.link.includes('news.google.com') ? '' : fullText(it.link).then((t) => t.slice(0, 2500))));
+const play = await playground(fun, funTexts, { budget, count: s.playgroundItems });
+log(`Playground: ${play.length} items`);
+
 // 7. THINK
 stage = 'think';
 const briefList = [...demoted, ...briefs].slice(0, s.briefsMax);
@@ -102,7 +108,7 @@ if (thinkOut && sunday) {
 // 8. Save
 stage = 'save';
 const words = stories.reduce((n, st) => n + [st.deck, ...st.body, st.why, st.hard].join(' ').split(/\s+/).length, 0)
-  + briefList.length * 15 + (thinkOut ? (sunday ? 700 : 380) : 0);
+  + briefList.length * 15 + play.length * 70 + (thinkOut ? (sunday ? 700 : 380) : 0);
 const edition = {
   date,
   weekday,
@@ -113,6 +119,7 @@ const edition = {
   stories,
   briefs: briefList.map((b) => ({ kicker: SECTION_LABEL[b.section], headline: b.title, url: b.link, source: b.source })),
   money: { rounds, totalUsdM: Math.round(totalM) },
+  playground: play,
   think: thinkOut,
   cost: { usd: +budget.spent.toFixed(4), cap: s.maxCostPerEditionUsd, steps: budget.byStep() },
   sources: { fetched: raw.length, unique: items.length, feeds: report.length, failedFeeds: report.filter((r) => r.error).map((r) => r.source) },
@@ -121,7 +128,7 @@ const edition = {
 writeJson(p(`site/editions/${date}.json`), edition);
 writeJson(indexFile, [{ date, weekday, number: edition.number, lead: stories[0]?.headline || '', stories: stories.length, readMinutes: edition.readMinutes, costUsd: edition.cost.usd }, ...index]
   .sort((a, b) => b.date.localeCompare(a.date)));
-writeJson(p('data/seen.json'), [...seen, ...top, ...briefs, ...funding].map((x) => ({ date: x.date || date, title: x.title, link: x.link })));
+writeJson(p('data/seen.json'), [...seen, ...top, ...briefs, ...funding, ...fun].map((x) => ({ date: x.date || date, title: x.title, link: x.link })));
 
 log(`Saved edition No. ${edition.number}: ${stories.length} stories, ${edition.briefs.length} briefs, ${rounds.length} rounds, think: ${thinkOut ? 'yes' : 'no'}`);
 log(`Cost: $${budget.spent.toFixed(4)}`, JSON.stringify(edition.cost.steps));
@@ -131,3 +138,6 @@ function dateDaysAgo(iso, n) {
   d.setUTCDate(d.getUTCDate() - n);
   return d.toISOString().slice(0, 10);
 }
+
+// Open keep-alive connections from article fetches can hold the process open; the work is done.
+process.exit(0);

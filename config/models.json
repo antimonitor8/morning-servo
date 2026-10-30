@@ -2,23 +2,43 @@
   "_note": "Prices are USD per million tokens, from OpenRouter on 2026-10-29. Used only as a fallback when OpenRouter does not return a cost.",
   "steps": {
     "triage": {
-      "models": ["anthropic/claude-haiku-5.5", "z-ai/glm-5.3-flash"],
+      "models": [
+        "anthropic/claude-haiku-5.5",
+        "z-ai/glm-5.3-flash"
+      ],
       "maxTokens": 6000,
       "reasoning": false
     },
     "money": {
-      "models": ["anthropic/claude-haiku-5.5", "z-ai/glm-5.3-flash"],
+      "models": [
+        "anthropic/claude-haiku-5.5",
+        "z-ai/glm-5.3-flash"
+      ],
       "maxTokens": 4000,
       "reasoning": false
     },
     "write": {
-      "models": ["deepseek/deepseek-v4-pro-0813", "anthropic/claude-sonnet-5.5"],
+      "models": [
+        "deepseek/deepseek-v4-pro-0813",
+        "anthropic/claude-sonnet-5.5"
+      ],
       "maxTokens": 1500,
       "reasoning": false
     },
     "think": {
-      "models": ["anthropic/claude-opus-5.5", "openai/gpt-6.1-sol"],
+      "models": [
+        "anthropic/claude-opus-5.5",
+        "openai/gpt-6.1-sol"
+      ],
       "maxTokens": 4000,
+      "reasoning": false
+    },
+    "playground": {
+      "models": [
+        "deepseek/deepseek-v4-pro-0813",
+        "anthropic/claude-sonnet-5.5"
+      ],
+      "maxTokens": 2000,
       "reasoning": false
     }
   },
@@ -36,15 +56,45 @@
     ]
   },
   "prices": {
-    "anthropic/claude-haiku-5.5": [0.10, 0.50],
-    "anthropic/claude-sonnet-5.5": [2.00, 10.00],
-    "anthropic/claude-opus-5.5": [4.00, 20.00],
-    "openai/gpt-6-luna": [0.10, 0.50],
-    "openai/gpt-6.1-terra": [1.00, 5.00],
-    "openai/gpt-6.1-sol": [2.00, 10.00],
-    "deepseek/deepseek-v4.1-flash": [0.045, 0.50],
-    "deepseek/deepseek-v4-pro-0813": [0.66, 1.98],
-    "z-ai/glm-5.3-flash": [0.046, 0.074],
-    "google/gemma-4-26b-a4b-it": [0.09, 0.30]
+    "anthropic/claude-haiku-5.5": [
+      0.1,
+      0.5
+    ],
+    "anthropic/claude-sonnet-5.5": [
+      2.0,
+      10.0
+    ],
+    "anthropic/claude-opus-5.5": [
+      4.0,
+      20.0
+    ],
+    "openai/gpt-6-luna": [
+      0.1,
+      0.5
+    ],
+    "openai/gpt-6.1-terra": [
+      1.0,
+      5.0
+    ],
+    "openai/gpt-6.1-sol": [
+      2.0,
+      10.0
+    ],
+    "deepseek/deepseek-v4.1-flash": [
+      0.045,
+      0.5
+    ],
+    "deepseek/deepseek-v4-pro-0813": [
+      0.66,
+      1.98
+    ],
+    "z-ai/glm-5.3-flash": [
+      0.046,
+      0.074
+    ],
+    "google/gemma-4-26b-a4b-it": [
+      0.09,
+      0.3
+    ]
   }
 }

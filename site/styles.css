@@ -105,6 +105,18 @@ td small { display: block; color: var(--ink-2); font-size: .7rem; }
 .briefs a.src { font-family: var(--f-ui); font-size: .74rem; color: var(--accent); text-decoration: none; white-space: nowrap; margin-left: 4px; }
 .empty-note { color: var(--ink-2); font-style: italic; padding: 8px 0 16px; }
 
+/* ---------- The Playground: the one loose, hand-set page in the paper ---------- */
+.play-mast { text-align: center; padding: 4px 0 10px; border-bottom: 3px double var(--ink); }
+.play-mast .w { font-family: var(--f-head); font-style: italic; font-size: 2.3rem; line-height: 1.05; transform: rotate(-1.5deg); }
+.play-mast .s { font-family: var(--f-ui); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); margin-top: 6px; }
+.play { position: relative; padding: 14px 0 14px 40px; border-bottom: 1px dashed var(--rule); }
+.play-n { position: absolute; left: 0; top: 14px; width: 28px; height: 28px; border: 1.5px solid var(--accent); border-radius: 50%; display: grid; place-items: center; font-family: var(--f-head); font-size: 1rem; color: var(--accent); transform: rotate(-6deg); }
+.play:nth-child(even) .play-n { transform: rotate(5deg); }
+.play-why { font-size: .92rem; line-height: 1.45; margin: 0 0 6px; background: var(--accent-soft); padding: 7px 9px; }
+.play-why b { font-family: var(--f-ui); font-size: .6rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-right: 4px; }
+.play-src { font-family: var(--f-ui); font-size: .76rem; color: var(--ink-2); margin: 0; }
+.play-src a { color: var(--accent); text-decoration: none; }
+
 /* ---------- THINK ---------- */
 .think-mast { text-align: center; padding: 6px 0 8px; border-bottom: 3px double var(--ink); }
 .think-mast .w { font-family: var(--f-head); font-size: 2.9rem; letter-spacing: .18em; line-height: 1; padding-left: .18em; }

@@ -44,6 +44,7 @@
     const pages = [{ id: 'A1', kind: 'front' }];
     e.stories.forEach((s, i) => pages.push({ id: `A${i + 2}`, kind: 'story', i }));
     pages.push({ id: 'D1', kind: 'money' }, { id: 'D2', kind: 'briefs' });
+    if (e.playground?.length) pages.push({ id: 'P1', kind: 'playground' });
     if (e.think) pages.push({ id: 'T1', kind: 'think' });
     return pages;
   }
@@ -64,6 +65,7 @@
       ...sections.map((s) => [s.page, s.kicker, `${s.n} ${s.n === 1 ? 'story' : 'stories'}`]),
       ['D1', 'The Money', `${e.money.rounds.length} rounds`],
       ['D2', 'In Brief', `${e.briefs.length} headlines`],
+      ...(e.playground?.length ? [['P1', 'The Playground', `${e.playground.length} experiments`]] : []),
       ...(e.think ? [['T1', 'Think', e.sunday ? 'Sunday edition' : '4 min']] : []),
     ];
     return `
@@ -135,6 +137,22 @@
     return `
       <div class="pagehead"><span class="t">In Brief</span><span class="p">Page D2</span></div>
       <ul class="briefs">${e.briefs.map((b) => `<li><span class="k">${esc(b.kicker)} · ${esc(b.source)}</span>${esc(b.headline)}<a class="src" href="${esc(b.url)}" target="_blank" rel="noopener">source ↗</a></li>`).join('')}</ul>
+      ${nextAfterBriefs(e)}`;
+  }
+
+  const nextAfterBriefs = (e) => (e.playground?.length ? '<a class="next" href="#p=P1">Next<b>The Playground →</b></a>'
+    : e.think ? '<a class="next" href="#p=T1">Last page<b>Think →</b></a>' : doneBlock(e));
+
+  function playgroundPage(e) {
+    return `
+      <div class="play-mast"><div class="w">The Playground</div><div class="s">Things people built this week, just to see if they could</div></div>
+      ${e.playground.map((x, i) => `<article class="play">
+        <span class="play-n">${i + 1}</span>
+        <h2 class="hl m">${esc(x.headline)}</h2>
+        <p class="body">${esc(x.body)}</p>
+        <p class="play-why"><b>Why it's cool</b> ${esc(x.why)}</p>
+        <p class="play-src">${x.maker && x.maker !== 'Unknown' ? `By ${esc(x.maker)} · ` : ''}<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.source)} ↗</a></p>
+      </article>`).join('')}
       ${e.think ? '<a class="next" href="#p=T1">Last page<b>Think →</b></a>' : doneBlock(e)}`;
   }
 
@@ -196,6 +214,7 @@
       if (p.kind === 'story') return folio(e, p.id) + story(e, p.i);
       if (p.kind === 'money') return folio(e, p.id) + moneyPage(e);
       if (p.kind === 'briefs') return folio(e, p.id) + briefsPage(e);
+      if (p.kind === 'playground') return folio(e, p.id) + playgroundPage(e);
       return folio(e, p.id) + thinkPage(e);
     };
     view.innerHTML = `<div class="pages" id="pages">${pages.map((p) => `<section class="page" id="page-${p.id}" aria-label="Page ${p.id}"><div class="page-inner">${body(p)}</div></section>`).join('')}</div>`;

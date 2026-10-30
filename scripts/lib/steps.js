@@ -18,7 +18,7 @@ const triageSchema = {
       type: 'array',
       items: {
         type: 'object', additionalProperties: false,
-        required: ['i', 'score', 'section', 'industry', 'task', 'funding'],
+        required: ['i', 'score', 'section', 'industry', 'task', 'funding', 'fun'],
         properties: {
           i: { type: 'integer' },
           score: { type: 'integer', minimum: 0, maximum: 10 },
@@ -26,6 +26,7 @@ const triageSchema = {
           industry: { type: 'string' },
           task: { type: 'string' },
           funding: { type: 'boolean' },
+          fun: { type: 'boolean' },
         },
       },
     },
@@ -49,6 +50,7 @@ section: breakthroughs (research, models, benchmarks), robotics (robot products,
 industry: one short label for the industry the story applies to, such as Logistics, Automotive, Healthcare, Agriculture, Household, Retail, Construction, Textiles, Software, or General.
 task: one short label for the task, such as Manipulation, Navigation, Inspection, Assembly, Coding, Customer support, or General.
 funding: true only if the item reports a specific funding round, acquisition or IPO.
+fun: true if the item is a playful, surprising or creative experiment that uses AI or robots: a hobbyist build, a weird demo, an art or music project, a game, a clever hack, or a research stunt. It must involve AI or robots. Give fun items a score of at least 3 even if they matter little to the reader's work.
 
 Return exactly one entry per item, using the item's index as i.`;
 
@@ -85,7 +87,7 @@ export function select(scored, s) {
   for (const it of pool) {
     if (top.length >= s.topStories) break;
     if (it.score < s.minTopScore) break;
-    if (it.fundingOnly) continue;
+    if (it.role) continue;
     if ((count[it.section] || 0) >= (s.sectionCaps[it.section] ?? 2)) continue;
     top.push(it);
     count[it.section] = (count[it.section] || 0) + 1;
@@ -93,7 +95,7 @@ export function select(scored, s) {
   // Guarantee the reader's beat and India a slot when there's a decent candidate.
   for (const must of ['beat', 'india']) {
     if (top.some((t) => t.section === must)) continue;
-    const cand = pool.find((it) => it.section === must && !it.fundingOnly && it.score >= s.minTopScore - 1 && !top.includes(it));
+    const cand = pool.find((it) => it.section === must && !it.role && it.score >= s.minTopScore - 1 && !top.includes(it));
     if (cand && top.length) top[top.length - 1] = cand;
   }
   top.sort(rank);
@@ -103,11 +105,15 @@ export function select(scored, s) {
   // Any real AI or robotics deal qualifies; relevance to the reader only orders them.
   const funding = pool.filter((it) => it.funding && it.score >= 2).slice(0, 45);
   const fundingSet = new Set(funding);
-  let briefs = pool.filter((it) => !used.has(it) && !fundingSet.has(it) && it.score >= s.minBriefScore).slice(0, s.briefsMax);
+  // Candidates for The Playground; the writer picks the best few.
+  const fun = pool.filter((it) => it.fun && !used.has(it) && !fundingSet.has(it) && it.score >= 2).slice(0, 10);
+  const funSet = new Set(fun);
+  const briefable = (it) => !used.has(it) && !fundingSet.has(it) && !funSet.has(it) && it.role !== 'fun';
+  let briefs = pool.filter((it) => briefable(it) && it.score >= s.minBriefScore).slice(0, s.briefsMax);
   if (briefs.length < s.briefsMin) {
-    briefs = pool.filter((it) => !used.has(it) && !fundingSet.has(it) && it.score > 0).slice(0, s.briefsMin);
+    briefs = pool.filter((it) => briefable(it) && it.score > 0).slice(0, s.briefsMin);
   }
-  return { top, briefs, funding };
+  return { top, briefs, funding, fun };
 }
 
 // ---------- Writing ----------
@@ -162,6 +168,49 @@ export async function writeStories(top, texts, { budget, profile, models }) {
       return null;
     }
   });
+}
+
+// ---------- The Playground ----------
+
+const playgroundSchema = {
+  type: 'object', additionalProperties: false, required: ['items'],
+  properties: {
+    items: {
+      type: 'array',
+      items: {
+        type: 'object', additionalProperties: false,
+        required: ['n', 'headline', 'body', 'why_cool', 'maker'],
+        properties: { n: { type: 'integer' }, headline: { type: 'string' }, body: { type: 'string' }, why_cool: { type: 'string' }, maker: { type: 'string' } },
+      },
+    },
+  },
+};
+
+export async function playground(candidates, texts, { budget, count }) {
+  if (!candidates.length) return [];
+  const cfg = stepModels('playground');
+  const system = `You write The Playground, the light-hearted page of The Morning Servo, a daily AI and robotics newspaper. It shows the fun, surprising and creative things people are building with AI and robots, because these experiments show what is newly possible.
+
+Pick the ${count} most delightful items from the candidates. Prefer things people actually built and showed working over announcements. Prefer variety: mix robots, AI software, art, games and hardware hacks. Skip anything that isn't really about AI or robots, and anything grim.
+
+For each pick:
+- n: the candidate number
+- headline: at most 12 words, playful but clear about what was built
+- body: 2 or 3 short sentences on what they made and how it works. Warm and a little wry, like a friend telling you about something cool they saw. Use only facts from the source.
+- why_cool: one sentence on what this shows is now possible, or what it hints at for the future
+- maker: who built it (a person, team, lab or company), or "Unknown" if the source doesn't say
+No hype words, no exclamation marks, no emoji.`;
+  const user = candidates.map((it, i) => `Candidate ${i + 1} | ${it.source} | ${it.title}\n${texts[i] || it.snippet}`).join('\n\n');
+  try {
+    const r = await chat({ step: 'playground', ...cfg, system, user, schema: playgroundSchema, budget });
+    return r.json.items
+      .filter((x) => candidates[x.n - 1])
+      .slice(0, count)
+      .map((x) => ({ headline: x.headline, body: x.body, why: x.why_cool, maker: x.maker, url: candidates[x.n - 1].link, source: candidates[x.n - 1].source }));
+  } catch (err) {
+    log(`  playground failed: ${err.message}`);
+    return [];
+  }
 }
 
 // ---------- The Money ----------
