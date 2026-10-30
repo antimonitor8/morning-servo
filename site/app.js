@@ -105,17 +105,27 @@
       ${next ? `<a class="next" href="#p=A${i + 3}">Next, story ${i + 2} of ${e.stories.length}<b>${esc(next.headline)} →</b></a>` : `<a class="next" href="#p=D1">Next<b>The Money →</b></a>`}`;
   }
 
+  const MONEY_GROUPS = [['robotics', 'Robotics &amp; physical AI'], ['ai', 'AI'], ['deeptech', 'Other deep tech']];
+
+  function moneyGroup(rows, title) {
+    if (!rows.length) return '';
+    const sum = rows.reduce((n, x) => n + (x.amount_usd_m || 0), 0);
+    return `<h4 class="sec money-group">${title}<span>${rows.length} ${rows.length === 1 ? 'deal' : 'deals'}${sum ? ` · ${money(sum)}` : ''}</span></h4>
+      <div class="tbl-wrap"><table>
+      <thead><tr><th>Company</th><th>Round</th><th class="amt">Raised</th></tr></thead>
+      <tbody>${rows.map((x) => `<tr>
+        <td><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.company)}</a>${x.india ? '<span class="in">IN</span>' : ''}<small>${esc(x.what)}</small></td>
+        <td>${esc(x.round)}<small>${esc(x.lead)}</small></td>
+        <td class="amt">${esc(x.amount_text)}</td></tr>`).join('')}</tbody>
+      </table></div>`;
+  }
+
   function moneyPage(e) {
     const r = e.money.rounds;
+    const groups = MONEY_GROUPS.map(([key, title]) => moneyGroup(r.filter((x) => (x.sector || 'ai') === key), title)).join('');
     return `
       <div class="pagehead"><span class="t">The Money</span><span class="p">Page D1</span></div>
-      ${r.length ? `<div class="tbl-wrap"><table>
-        <thead><tr><th>Company</th><th>Round</th><th class="amt">Raised</th></tr></thead>
-        <tbody>${r.map((x) => `<tr>
-          <td><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.company)}</a>${x.india ? '<span class="in">IN</span>' : ''}<small>${esc(x.what)}</small></td>
-          <td>${esc(x.round)}<small>${esc(x.lead)}</small></td>
-          <td class="amt">${esc(x.amount_text)}</td></tr>`).join('')}</tbody>
-      </table></div>
+      ${r.length ? `${groups}
       <div class="tally">Disclosed total: <b>${money(e.money.totalUsdM)}</b> across ${r.length} deals · Tap a company for the source</div>`
         : '<p class="empty-note">No funding rounds were reported in the last day.</p>'}
       <a class="next" href="#p=D2">Next<b>In Brief →</b></a>`;

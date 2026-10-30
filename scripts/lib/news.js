@@ -19,14 +19,20 @@ export async function fetchAll(windowHours) {
         new Promise((_, reject) => setTimeout(() => reject(new Error('timed out after 30s')), 30_000)),
       ]);
       const items = (feed.items || [])
-        .map((it) => ({
-          id: hash(it.link || it.guid || it.title),
-          title: clip(it.title, 200),
-          link: it.link,
-          source: src.name,
-          published: it.isoDate || it.pubDate || null,
-          snippet: clip(it.contentSnippet || it.summary || it.content || '', 400),
-        }))
+        .map((it) => {
+          // Google News titles end in " - Outlet"; use the real outlet as the source.
+          const gn = src.url.includes('news.google.com') && /^(.*) - ([^-]+)$/.exec(it.title || '');
+          return {
+            id: hash(it.link || it.guid || it.title),
+            title: clip(gn ? gn[1] : it.title, 200),
+            link: it.link,
+            source: gn ? gn[2].trim() : src.name,
+            // Funding-only sources feed The Money and In Brief, never a full write-up.
+            fundingOnly: src.role === 'funding',
+            published: it.isoDate || it.pubDate || null,
+            snippet: gn ? '' : clip(it.contentSnippet || it.summary || it.content || '', 400),
+          };
+        })
         .filter((it) => it.title && it.link)
         // Items without a date are kept; feeds like arXiv list only the current day anyway.
         .filter((it) => !it.published || Date.parse(it.published) >= since)

@@ -85,6 +85,7 @@ export function select(scored, s) {
   for (const it of pool) {
     if (top.length >= s.topStories) break;
     if (it.score < s.minTopScore) break;
+    if (it.fundingOnly) continue;
     if ((count[it.section] || 0) >= (s.sectionCaps[it.section] ?? 2)) continue;
     top.push(it);
     count[it.section] = (count[it.section] || 0) + 1;
@@ -92,14 +93,15 @@ export function select(scored, s) {
   // Guarantee the reader's beat and India a slot when there's a decent candidate.
   for (const must of ['beat', 'india']) {
     if (top.some((t) => t.section === must)) continue;
-    const cand = pool.find((it) => it.section === must && it.score >= s.minTopScore - 1 && !top.includes(it));
+    const cand = pool.find((it) => it.section === must && !it.fundingOnly && it.score >= s.minTopScore - 1 && !top.includes(it));
     if (cand && top.length) top[top.length - 1] = cand;
   }
   top.sort(rank);
 
   const used = new Set(top);
   // The Money table lists every deal, including ones that also made the top stories.
-  const funding = pool.filter((it) => it.funding && it.score >= 3).slice(0, 25);
+  // Any real AI or robotics deal qualifies; relevance to the reader only orders them.
+  const funding = pool.filter((it) => it.funding && it.score >= 2).slice(0, 45);
   const fundingSet = new Set(funding);
   let briefs = pool.filter((it) => !used.has(it) && !fundingSet.has(it) && it.score >= s.minBriefScore).slice(0, s.briefsMax);
   if (briefs.length < s.briefsMin) {
@@ -171,9 +173,10 @@ const moneySchema = {
       type: 'array',
       items: {
         type: 'object', additionalProperties: false,
-        required: ['i', 'company', 'what', 'round', 'amount_usd_m', 'amount_text', 'lead', 'india'],
+        required: ['i', 'company', 'what', 'sector', 'round', 'amount_usd_m', 'amount_text', 'lead', 'india'],
         properties: {
           i: { type: 'integer' },
+          sector: { type: 'string', enum: ['robotics', 'ai', 'deeptech'] },
           company: { type: 'string' },
           what: { type: 'string' },
           round: { type: 'string' },
@@ -187,27 +190,29 @@ const moneySchema = {
   },
 };
 
-export async function extractMoney(funding, { budget }) {
+export async function extractMoney(funding, { budget, pastCompanies = [] }) {
   if (!funding.length) return [];
   const cfg = stepModels('money');
   const system = `Extract funding rounds, acquisitions and IPOs from news items about AI and robotics companies.
 For each item that reports a specific deal, return:
 - company: the company that raised money or was acquired
 - what: what the company does, in at most 6 words
-- round: the round (Seed, Series A, Series B, Acquisition, IPO, Debt, and so on)
+- round: the round (Seed, Series A, Series B, Acquisition, IPO, Debt, and so on), or "Funding" if the item doesn't say
 - amount_usd_m: the amount in millions of US dollars as a number, converting other currencies at roughly current rates (1 USD = 88 INR, 1 EUR = 1.08 USD), or null if undisclosed
 - amount_text: the amount as it should appear in a table, like "$210M", "₹150 Cr ($17M)" or "Undisclosed"
 - lead: the lead investor or acquirer, or "Not disclosed"
 - india: true if the company is based in India
-Use only facts in the items. Skip items that don't report a specific deal.`;
+- sector: robotics (robots, drones, autonomous vehicles, physical AI, robot data), ai (AI models, AI software, AI chips and infrastructure), or deeptech (other hard tech such as space, defence tech, biotech platforms or semiconductors)
+Use only facts in the items. Skip an item if it doesn't report a specific deal, if the company isn't named, if it's a venture fund raising money rather than a company, or if the company isn't in AI, robotics or deep tech (skip consumer brands, clinics, food, retail and generic marketplaces).`;
   const user = funding.map((it, i) => `${i} | ${it.source} | ${it.title} | ${it.snippet}`).join('\n');
   try {
     const r = await chat({ step: 'money', ...cfg, system, user, schema: moneySchema, budget });
     return r.json.rounds
-      .filter((x) => funding[x.i])
+      .filter((x) => funding[x.i] && !/^(not named|unnamed|undisclosed|unknown)/i.test(x.company.trim()))
+      .map((x) => ({ ...x, round: /undisclosed|unknown/i.test(x.round) ? 'Funding' : x.round }))
       .map((x) => ({ ...x, url: funding[x.i].link, source: funding[x.i].source }))
       .sort((a, b) => (b.amount_usd_m ?? -1) - (a.amount_usd_m ?? -1))
-      .filter(uniqueCompany());
+      .filter(uniqueCompany(pastCompanies));
   } catch (err) {
     log(`  money extraction failed: ${err.message}`);
     return [];
@@ -215,8 +220,9 @@ Use only facts in the items. Skip items that don't report a specific deal.`;
 }
 
 // Two outlets reporting one deal give two rows ("Robusta" and "Robusta Dev"); keep the first, largest one.
-function uniqueCompany() {
-  const seen = [];
+// Companies already listed in recent editions are dropped too, so a deal never repeats on a later day.
+function uniqueCompany(pastCompanies = []) {
+  const seen = pastCompanies.map((c) => c.toLowerCase().replace(/[^a-z0-9]/g, '')).filter(Boolean);
   const key = (name) => name.toLowerCase().replace(/[^a-z0-9]/g, '');
   return (row) => {
     const k = key(row.company);

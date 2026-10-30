@@ -1,22 +1,102 @@
 [
-  { "name": "The Robot Report", "url": "https://www.therobotreport.com/feed/" },
-  { "name": "IEEE Spectrum Robotics", "url": "https://spectrum.ieee.org/feeds/topic/robotics.rss" },
-  { "name": "IEEE Spectrum AI", "url": "https://spectrum.ieee.org/feeds/topic/artificial-intelligence.rss" },
-  { "name": "Robohub", "url": "https://robohub.org/feed/" },
-  { "name": "TechCrunch AI", "url": "https://techcrunch.com/category/artificial-intelligence/feed/" },
-  { "name": "TechCrunch Robotics", "url": "https://techcrunch.com/category/robotics/feed/" },
-  { "name": "VentureBeat AI", "url": "https://venturebeat.com/category/ai/feed/" },
-  { "name": "The Verge AI", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml" },
-  { "name": "MIT Technology Review", "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed" },
-  { "name": "Crunchbase News", "url": "https://news.crunchbase.com/feed/" },
-  { "name": "Google DeepMind", "url": "https://deepmind.google/blog/feed/basic/" },
-  { "name": "OpenAI", "url": "https://openai.com/news/rss.xml" },
-  { "name": "Hugging Face", "url": "https://huggingface.co/blog/feed.xml" },
-  { "name": "Import AI", "url": "https://importai.substack.com/feed" },
-  { "name": "arXiv cs.RO", "url": "https://rss.arxiv.org/rss/cs.RO", "maxItems": 60 },
-  { "name": "Hacker News", "url": "https://hnrss.org/newest?q=robot+OR+robotics+OR+humanoid+OR+LLM+OR+AI&points=80", "maxItems": 40 },
-  { "name": "Inc42", "url": "https://inc42.com/feed/" },
-  { "name": "Entrackr", "url": "https://entrackr.com/rss" },
-  { "name": "YourStory", "url": "https://yourstory.com/feed" },
-  { "name": "Analytics India Magazine", "url": "https://analyticsindiamag.com/feed/" }
+  {
+    "name": "The Robot Report",
+    "url": "https://www.therobotreport.com/feed/"
+  },
+  {
+    "name": "IEEE Spectrum Robotics",
+    "url": "https://spectrum.ieee.org/feeds/topic/robotics.rss"
+  },
+  {
+    "name": "IEEE Spectrum AI",
+    "url": "https://spectrum.ieee.org/feeds/topic/artificial-intelligence.rss"
+  },
+  {
+    "name": "Robohub",
+    "url": "https://robohub.org/feed/"
+  },
+  {
+    "name": "TechCrunch AI",
+    "url": "https://techcrunch.com/category/artificial-intelligence/feed/"
+  },
+  {
+    "name": "TechCrunch Robotics",
+    "url": "https://techcrunch.com/category/robotics/feed/"
+  },
+  {
+    "name": "The Verge AI",
+    "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"
+  },
+  {
+    "name": "MIT Technology Review",
+    "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed"
+  },
+  {
+    "name": "Crunchbase News",
+    "url": "https://news.crunchbase.com/feed/"
+  },
+  {
+    "name": "Google DeepMind",
+    "url": "https://deepmind.google/blog/feed/basic/"
+  },
+  {
+    "name": "OpenAI",
+    "url": "https://openai.com/news/rss.xml"
+  },
+  {
+    "name": "Hugging Face",
+    "url": "https://huggingface.co/blog/feed.xml"
+  },
+  {
+    "name": "Import AI",
+    "url": "https://importai.substack.com/feed"
+  },
+  {
+    "name": "arXiv cs.RO",
+    "url": "https://rss.arxiv.org/rss/cs.RO",
+    "maxItems": 60
+  },
+  {
+    "name": "Hacker News",
+    "url": "https://hnrss.org/newest?q=robot+OR+robotics+OR+humanoid+OR+LLM+OR+AI&points=80",
+    "maxItems": 40
+  },
+  {
+    "name": "Inc42",
+    "url": "https://inc42.com/feed/"
+  },
+  {
+    "name": "Entrackr",
+    "url": "https://entrackr.com/rss"
+  },
+  {
+    "name": "YourStory",
+    "url": "https://yourstory.com/feed"
+  },
+  {
+    "name": "Analytics India Magazine",
+    "url": "https://analyticsindiamag.com/feed/"
+  },
+  {
+    "name": "Tech Funding News",
+    "url": "https://techfundingnews.com/feed/",
+    "role": "funding"
+  },
+  {
+    "name": "AlleyWatch",
+    "url": "https://www.alleywatch.com/feed/",
+    "role": "funding"
+  },
+  {
+    "name": "Google News: robotics deals",
+    "url": "https://news.google.com/rss/search?q=%28robotics%20OR%20robot%20OR%20humanoid%20OR%20%22physical%20AI%22%20OR%20%22embodied%20AI%22%20OR%20drone%20OR%20autonomous%29%20%28raises%20OR%20funding%20OR%20%22Series%20A%22%20OR%20%22Series%20B%22%20OR%20%22Series%20C%22%20OR%20seed%20OR%20acquires%29%20when%3A2d&hl=en-US&gl=US&ceid=US:en",
+    "role": "funding",
+    "maxItems": 100
+  },
+  {
+    "name": "Google News: AI deals",
+    "url": "https://news.google.com/rss/search?q=%28%22AI%20startup%22%20OR%20%22artificial%20intelligence%20startup%22%20OR%20%22AI%20company%22%29%20%28raises%20OR%20%22Series%20A%22%20OR%20%22Series%20B%22%20OR%20%22Series%20C%22%20OR%20%22seed%20round%22%20OR%20acquires%29%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+    "role": "funding",
+    "maxItems": 100
+  }
 ]

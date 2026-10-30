@@ -94,6 +94,9 @@ td.amt, th.amt { text-align: right; }
 td.amt { font-weight: 700; white-space: nowrap; }
 td small { display: block; color: var(--ink-2); font-size: .7rem; }
 .in { font-size: .58rem; border: 1px solid var(--accent); color: var(--accent); padding: 0 3px; margin-left: 4px; vertical-align: 1px; }
+.money-group { display: flex; justify-content: space-between; align-items: baseline; margin: 16px 0 4px; }
+.money-group:first-of-type { margin-top: 4px; }
+.money-group span { font-weight: 500; letter-spacing: .04em; text-transform: none; color: var(--ink-2); font-size: .74rem; }
 .tally { font-family: var(--f-ui); font-size: .78rem; padding: 8px 0 16px; color: var(--ink-2); }
 .tally b { color: var(--ink); }
 .briefs { list-style: none; margin: 0; padding: 0; }

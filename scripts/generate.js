@@ -80,7 +80,8 @@ log(`Wrote ${stories.length} stories ($${budget.spent.toFixed(3)} so far)`);
 
 // 6. The Money
 stage = 'money';
-const rounds = await extractMoney(funding, { budget });
+const pastCompanies = recent.flatMap((e) => e.money?.rounds?.map((r) => r.company) || []);
+const rounds = await extractMoney(funding, { budget, pastCompanies });
 const totalM = rounds.reduce((sum, r) => sum + (r.amount_usd_m || 0), 0);
 
 // 7. THINK
