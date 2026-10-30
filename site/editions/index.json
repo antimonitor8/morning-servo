@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-10-30",
+    "weekday": "Friday",
+    "number": 2,
+    "lead": "US finds robotics imports threaten national security under Section 232",
+    "stories": 7,
+    "readMinutes": 9,
+    "costUsd": 0.0475
+  },
+  {
     "date": "2026-10-29",
     "weekday": "Thursday",
     "number": 1,

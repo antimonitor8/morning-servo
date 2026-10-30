@@ -74,7 +74,7 @@ export async function chat({ step, models, system, user, schema, maxTokens = 200
           'X-Title': 'The Morning Servo',
         },
         body: JSON.stringify(body),
-        signal: AbortSignal.timeout(180_000),
+        signal: AbortSignal.timeout(120_000),
       });
       const data = await res.json();
       if (!res.ok || data.error) {

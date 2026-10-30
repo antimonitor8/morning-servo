@@ -2,12 +2,22 @@ name: Morning push
 
 on:
   schedule:
-    # 02:30 UTC = 08:00 IST
-    - cron: '30 2 * * *'
+    - cron: '30 2 * * *'   # 08:00 IST
+    - cron: '50 2 * * *'   # 08:20 IST, backup in case GitHub skips the first
+    - cron: '30 4 * * *'   # 10:00 IST, sends a "no edition today" note if the paper never printed
   workflow_dispatch:
+    inputs:
+      force:
+        description: 'Send even before 8:00 IST (for testing)'
+        type: boolean
+        default: false
 
 permissions:
-  contents: read
+  contents: write
+
+concurrency:
+  group: notify
+  cancel-in-progress: false
 
 jobs:
   push:
@@ -27,4 +37,11 @@ jobs:
           VAPID_SUBJECT: ${{ vars.SITE_URL }}
           PUSH_SUBSCRIPTION: ${{ secrets.PUSH_SUBSCRIPTION }}
           SITE_URL: ${{ vars.SITE_URL }}
+          FORCE: ${{ inputs.force && '1' || '' }}
         run: npm run notify
+      - name: Record that it was sent
+        run: |
+          git config user.name "morning-servo-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/notified.json 2>/dev/null || true
+          git diff --cached --quiet || { git commit -m "Notified $(TZ=Asia/Kolkata date +%F)"; git pull --rebase; git push; }

@@ -1,4 +1,5 @@
 // Builds today's edition: fetch → dedupe → triage → select → write → money → think → save.
+import fs from 'node:fs';
 import { loadEnv, settings, readerProfile, localDate, readJson, writeJson, p, log, mapLimit } from './lib/util.js';
 import { Budget } from './lib/openrouter.js';
 import { fetchAll, dedupe, fullText } from './lib/news.js';
@@ -13,6 +14,16 @@ const budget = new Budget(s.maxCostPerEditionUsd);
 const { iso: date, weekday } = localDate(s.timezone);
 const sunday = weekday === 'Sunday' || process.env.FORCE_SUNDAY === '1';
 
+// Several scheduled runs try each morning; only the first one prints.
+if (fs.existsSync(p(`site/editions/${date}.json`)) && process.env.FORCE !== '1') {
+  log(`Edition for ${date} already exists; nothing to do. Set FORCE=1 to reprint.`);
+  process.exit(0);
+}
+
+// If anything stalls, fail loudly with the step it was on instead of hanging until GitHub's limit.
+let stage = 'start';
+setTimeout(() => { log(`Gave up after 12 minutes during: ${stage}`); process.exit(1); }, 12 * 60_000).unref();
+
 const indexFile = p('site/editions/index.json');
 const index = readJson(indexFile, []).filter((e) => e.date !== date);
 const recent = index.slice(0, 6).map((e) => readJson(p(`site/editions/${e.date}.json`), null)).filter(Boolean);
@@ -21,24 +32,30 @@ const seen = readJson(p('data/seen.json'), []).filter((x) => x.date >= dateDaysA
 log(`Edition for ${weekday} ${date}${sunday ? ' (Sunday)' : ''}`);
 
 // 1. Fetch
+stage = 'fetch';
 const { items: raw, report } = await fetchAll(s.windowHours);
 for (const r of report) if (r.error) log(`  source failed: ${r.source}: ${r.error}`);
 log(`Fetched ${raw.length} items from ${report.filter((r) => !r.error).length}/${report.length} sources`);
 
 // 2. Dedupe
+stage = 'dedupe';
 const items = dedupe(raw, seen.map((x) => x.title), seen.map((x) => x.link)).slice(0, s.maxItemsToTriage);
 log(`${items.length} unique new items after dedupe`);
 
 // 3. Triage
+stage = 'triage';
 const scored = await triage(items, { batchSize: s.triageBatchSize, budget, profile });
 log(`Triage done ($${budget.spent.toFixed(3)} so far)`);
 
 // 4. Select
+stage = 'select';
 const { top, briefs, funding } = select(scored, s);
 log(`Selected ${top.length} top stories, ${briefs.length} briefs, ${funding.length} funding items`);
 
 // 5. Write the top stories from full article text
+stage = 'full text and writing';
 const texts = await mapLimit(top, 5, (it) => fullText(it.link));
+log(`Fetched full text for ${texts.filter(Boolean).length}/${top.length} stories`);
 const written = await writeStories(top, texts, { budget, profile });
 const stories = [];
 const demoted = [];
@@ -62,10 +79,12 @@ top.forEach((it, i) => {
 log(`Wrote ${stories.length} stories ($${budget.spent.toFixed(3)} so far)`);
 
 // 6. The Money
+stage = 'money';
 const rounds = await extractMoney(funding, { budget });
 const totalM = rounds.reduce((sum, r) => sum + (r.amount_usd_m || 0), 0);
 
 // 7. THINK
+stage = 'think';
 const briefList = [...demoted, ...briefs].slice(0, s.briefsMax);
 const pastCollisions = recent.map((e) => e.think?.collision?.headline).filter(Boolean);
 const pastWildcards = recent.map((e) => e.think?.wildcard?.headline).filter(Boolean);
@@ -80,6 +99,7 @@ if (thinkOut && sunday) {
 }
 
 // 8. Save
+stage = 'save';
 const words = stories.reduce((n, st) => n + [st.deck, ...st.body, st.why, st.hard].join(' ').split(/\s+/).length, 0)
   + briefList.length * 15 + (thinkOut ? (sunday ? 700 : 380) : 0);
 const edition = {

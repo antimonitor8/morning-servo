@@ -66,9 +66,14 @@ export async function fullText(url) {
   try {
     const res = await fetch(url, { headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(15_000) });
     if (!res.ok) return '';
-    const html = await res.text();
+    const t0 = Date.now();
+    // Parsing is synchronous and can't be timed out, so cap the work up front:
+    // very large pages are cut short, and Readability gives up on huge DOMs.
+    const html = (await res.text()).slice(0, 1_500_000);
     const { document } = parseHTML(html);
-    const article = new Readability(document).parse();
+    const article = new Readability(document, { maxElemsToParse: 6000 }).parse();
+    const ms = Date.now() - t0;
+    if (ms > 3000) log(`  slow page (${(ms / 1000).toFixed(1)}s to parse): ${url}`);
     return clip(article?.textContent || '', 9000);
   } catch (err) {
     log(`  full text failed for ${url}: ${err.message}`);

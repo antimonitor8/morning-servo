@@ -2,12 +2,19 @@ name: Print edition
 
 on:
   schedule:
-    # 00:15 UTC = 05:45 IST. GitHub can start scheduled runs late, so this leaves time before the 8:00 push.
-    - cron: '15 0 * * *'
+    # GitHub sometimes skips or delays scheduled runs, so there are three tries.
+    # The first one to run prints the paper; the others see it exists and stop.
+    - cron: '15 0 * * *'   # 05:45 IST
+    - cron: '45 0 * * *'   # 06:15 IST
+    - cron: '30 1 * * *'   # 07:00 IST
   workflow_dispatch:
     inputs:
+      force:
+        description: "Reprint today's edition even if it exists"
+        type: boolean
+        default: false
       sunday:
-        description: 'Force the Sunday Think edition (for testing)'
+        description: 'Use the Sunday Think page (for testing)'
         type: boolean
         default: false
 
@@ -25,30 +32,60 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-    timeout-minutes: 30
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+      - name: Check whether today's edition exists
+        id: check
+        run: |
+          if [ -f "site/editions/$(TZ=Asia/Kolkata date +%F).json" ] && [ "${{ inputs.force }}" != "true" ]; then
+            echo "Today's edition already exists."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/setup-node@v4
+        if: steps.check.outputs.skip != 'true'
         with:
           node-version: 24
           cache: npm
-      - run: npm ci
+      - if: steps.check.outputs.skip != 'true'
+        run: npm ci
       - name: Generate edition
+        if: steps.check.outputs.skip != 'true'
+        timeout-minutes: 15
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           READER_PROFILE: ${{ secrets.READER_PROFILE }}
           SITE_URL: ${{ vars.SITE_URL }}
+          FORCE: ${{ inputs.force && '1' || '' }}
           FORCE_SUNDAY: ${{ inputs.sunday && '1' || '' }}
         run: npm run generate
       - name: Commit edition
+        if: steps.check.outputs.skip != 'true'
         run: |
           git config user.name "morning-servo-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add site/editions data/seen.json
           git diff --cached --quiet || git commit -m "Edition $(TZ=Asia/Kolkata date +%F)"
+          git pull --rebase
           git push
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - if: steps.check.outputs.skip != 'true'
+        uses: actions/configure-pages@v5
+      - if: steps.check.outputs.skip != 'true'
+        uses: actions/upload-pages-artifact@v3
         with:
           path: site
-      - uses: actions/deploy-pages@v4
+      - if: steps.check.outputs.skip != 'true'
+        uses: actions/deploy-pages@v4
+      # If the paper printed after 8:00, send the notification now (it skips itself before 8:00 or if already sent).
+      - name: Notify if late
+        if: steps.check.outputs.skip != 'true'
+        env:
+          VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          VAPID_SUBJECT: ${{ vars.SITE_URL }}
+          PUSH_SUBSCRIPTION: ${{ secrets.PUSH_SUBSCRIPTION }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: |
+          npm run notify
+          git add data/notified.json 2>/dev/null || true
+          git diff --cached --quiet || { git commit -m "Notified $(TZ=Asia/Kolkata date +%F)"; git pull --rebase; git push; }

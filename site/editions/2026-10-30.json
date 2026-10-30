@@ -1,0 +1,394 @@
+{
+  "date": "2026-10-30",
+  "weekday": "Friday",
+  "sunday": false,
+  "number": 2,
+  "paper": "The Morning Servo",
+  "readMinutes": 9,
+  "stories": [
+    {
+      "id": "2ef5fc9bb7",
+      "section": "policy",
+      "kicker": "Policy",
+      "headline": "US finds robotics imports threaten national security under Section 232",
+      "deck": "The commerce secretary's investigation cites advanced robots, humanoids, quadrupeds and autonomous ground vehicles as direct support to the US military.",
+      "body": [
+        "President Trump issued a proclamation stating that robotics, industrial machinery and their components are being imported in quantities that threaten to impair US national security. The finding follows a Section 232 investigation by the secretary of commerce.",
+        "The government cited approximately $7.1 trillion in manufactured goods shipments and about $86 billion in equipment production in 2024. Advanced robots including autonomous robots, humanoids, quadrupeds and autonomous ground vehicles were named as providing direct military support.",
+        "The president directed the commerce secretary and US trade representative to negotiate with trading partners to adjust imports. No tariffs take effect immediately. Boston Dynamics vice president Brendan Schulman noted negotiations could run six months before further trade measures are considered."
+      ],
+      "why": "US import restrictions or tariffs on robots and industrial components would shift where robot manufacturers build capacity and source parts. Vendors selling training data for manipulation and mobile robots may see more demand tied to US-based assembly, testing and component production.",
+      "hard": "No tariff, quota or other trade measure has been announced yet; the outcome depends on negotiations with trading partners over the next six months or more.",
+      "tags": {
+        "industry": [
+          "Industrial automation",
+          "Defense"
+        ],
+        "task": [
+          "Manipulation",
+          "Mobile robots"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/white-house-makes-section-232-determination-regarding-foreign-made-robots/"
+        }
+      ]
+    },
+    {
+      "id": "4629df9db2",
+      "section": "india",
+      "kicker": "India Desk",
+      "headline": "Shadowfax Q2 profit rises fivefold to Rs 68 crore on 57% revenue growth",
+      "deck": "The logistics firm's hyperlocal revenue grew 88% year on year to Rs 341 crore while express parcel orders rose sharply.",
+      "body": [
+        "Shadowfax posted a consolidated net profit of Rs 68 crore for the September quarter, up 421.9% from Rs 13 crore a year earlier. Operating revenue rose 56.6% year on year to Rs 1,537.7 crore, a new quarterly high. Total income including other income stood at Rs 1,558.1 crore.",
+        "Total expenses increased 53% to Rs 1,490.2 crore. Adjusted EBITDA grew 177.4% to Rs 77 crore, with margin widening to 5% from 2.8%. The company said this was its sixth straight quarter of revenue growth above 55% year on year, despite the sale season shifting to Q3.",
+        "Hyperlocal revenue grew 87.7% to Rs 341 crore, while express parcel revenue rose 55.2% to Rs 1,096 crore. Combined orders across both segments reached 27.1 crore, up 69.7% year on year. The company's self-serve platform for small sellers, Shadowfax 360, crossed 6,700 transacting sellers within two quarters of launch."
+      ],
+      "why": "Shadowfax is expanding micro-fulfilment centres for D2C brands and running daily AI-based route planning across more than 3,600 trucks and 5,500 touchpoints. That signals rising demand for logistics optimisation and last-mile operations data in India.",
+      "hard": "The profit jump comes off a low base of Rs 13 crore a year earlier, and the festive season shipment surge has shifted to the next quarter, so the current growth rate may not hold through Q3.",
+      "tags": {
+        "industry": [
+          "Logistics",
+          "Ecommerce delivery"
+        ],
+        "task": [
+          "Route optimisation",
+          "Last-mile delivery"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "Inc42",
+          "url": "https://inc42.com/buzz/shadowfax-q2-profit-zooms-over-5x-yoy-to-%e2%82%b968-cr-revenue-crosses-%e2%82%b91500-cr/"
+        },
+        {
+          "name": "Entrackr",
+          "url": "https://entrackr.com/fintrackr/shadowfax-q2-fy27-profit-balloons-52x-to-rs-68-cr-revenue-grows-57-12764706"
+        },
+        {
+          "name": "Entrackr",
+          "url": "https://entrackr.com/fintrackr/pine-labs-crosses-rs-800-cr-revenue-in-q2-fy27-profit-jumps-65x-12764550"
+        }
+      ]
+    },
+    {
+      "id": "50a74d7208",
+      "section": "india",
+      "kicker": "India Desk",
+      "headline": "BlackBuck Q2 FY27 revenue rises 56% to Rs 235 crore",
+      "deck": "Truck operator services brought in Rs 232 crore of the total, while the lending segment stayed small and loss-making.",
+      "body": [
+        "BlackBuck reported consolidated operating revenue of Rs 235 crore for Q2 FY27, up 56% from Rs 151 crore a year earlier, according to its unaudited BSE filing. Net profit rose 42% to Rs 41.4 crore, helped by a lower tax expense.",
+        "The truck operator services segment accounted for nearly 99% of operating revenue at Rs 232 crore. The lending business contributed Rs 3.4 crore and posted a loss of Rs 1.7 crore, widening from Rs 77.5 lakh.",
+        "Total expenses rose 64% to Rs 210 crore. Other expenses climbed to Rs 141 crore and depreciation more than doubled to Rs 24.5 crore. Profit before tax was up only 10% to Rs 42.8 crore, indicating the profit jump relied partly on tax outgo falling."
+      ],
+      "why": "This shows digital logistics platforms in India are scaling revenue from core trucking operations while adjacencies like lending remain weak. It signals where fleet management and freight matching data demand may be consolidating.",
+      "hard": "Profit growth was supported by lower tax expense, not operating leverage, since total expenses grew faster than revenue.",
+      "tags": {
+        "industry": [
+          "Logistics",
+          "Freight tech"
+        ],
+        "task": [
+          "Fleet management",
+          "Freight matching"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "Entrackr",
+          "url": "https://entrackr.com/fintrackr/blackbucks-q2-fy27-revenue-jumps-56-to-rs-235-cr-profit-grows-42-12764836"
+        },
+        {
+          "name": "Entrackr",
+          "url": "https://entrackr.com/fintrackr/kisshts-q2-profit-doubles-to-rs-125-cr-revenue-jumps-45-12763220"
+        }
+      ]
+    },
+    {
+      "id": "55cd01abe0",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "2026 Robotics Handbook reviews humanoid, manipulation and construction automation design choices",
+      "deck": "The Robot Report's annual guide covers deployment trends, AI-driven control, and component decisions across commercial robotics.",
+      "body": [
+        "The Robot Report has released its 2026 Robotics Handbook as a free download. The publication surveys engineering challenges, component choices, and market opportunities in commercial robotics, with sections on humanoids, dexterous manipulation, AI, and construction automation. Robotics orders are climbing after a post-pandemic pause, according to the International Federation of Robotics and the Association for Advancing Automation.",
+        "The handbook includes case studies on specific design trade-offs. Plus One Robotics discusses cost, human-in-the-loop control, and generalization versus specialization in manipulators. Jabil and Apptronik cover integration and safety constraints in humanoid development. Boston Dynamics explains its end-effector approach for the Atlas humanoid. SoftServe describes using simulated 'virtual gyms' to accelerate robot learning, while Locus Robotics compares suction and soft grippers. Monumental explains why it chose bricklaying as its entry point for construction automation.",
+        "The report frames AI as a central theme, citing large language models, vision-language-action models, and world models as tools that are making robots more autonomous and easier to operate. It notes persistent concerns around data availability, cybersecurity, and national sovereignty."
+      ],
+      "why": "The case studies on virtual gyms, human-in-the-loop manipulation, and construction point to where robot learning is shifting from scripted automation to learned skills, which increases demand for task-specific demonstration data. Monumental's bricklaying focus and Boston Dynamics' end-effector work are direct signals for which real-world tasks and manipulation data types may be commercially valuable next.",
+      "hard": "The handbook is a curated industry survey, not a source of new performance benchmarks or independent validation of the claims made by the featured companies.",
+      "tags": {
+        "industry": [
+          "industrial robotics",
+          "humanoid robots"
+        ],
+        "task": [
+          "dexterous manipulation",
+          "construction automation"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/2026-robotics-handbook-looks-at-humanoids/"
+        }
+      ]
+    },
+    {
+      "id": "56fa7327f2",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Thrive Holdings acquires ADT for $7.6 billion in equity",
+      "deck": "The OpenAI-backed holding company plans to build ADT into its smart home security business using AI models and forward-deployed engineers.",
+      "body": [
+        "Thrive Holdings has acquired physical security firm ADT for $10 per share, or about $7.6 billion in equity. Total enterprise value is $15.3 billion. Thrive Holdings is a long-term holding company spinout from Thrive Capital that counts OpenAI as a partner and investor.",
+        "OpenAI supplies AI models, technology, and forward-deployed engineers to Thrive portfolio companies. Neither company announced specific AI-powered security products, but said ADT would form the foundation of a smart home security business. ADT already partners with Apple and Google and is expected to continue those relationships.",
+        "AI-powered physical security is drawing new entrants. Apple recently launched smart home and security products with LG and Schneider Electric. Amazon updated its smart home line with AI-powered cameras. Some startups are selling AI dog robots as roving security guards."
+      ],
+      "why": "A large home security install base means millions of indoor and outdoor camera feeds that could become training or fine-tuning data for vision models, especially for activity recognition and anomaly detection in residential settings.",
+      "hard": "No new AI-powered security products or data practices were announced, so the actual scope of model training or deployment remains unproven.",
+      "tags": {
+        "industry": [
+          "Home security",
+          "Smart home"
+        ],
+        "task": [
+          "Activity recognition",
+          "Anomaly detection"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/"
+        }
+      ]
+    },
+    {
+      "id": "bcae5e5bff",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Mistral releases weights for trillion-parameter ML4 model aimed at cyber defense",
+      "deck": "Businesses and governments can now download and deploy the open-weight model on their own infrastructure.",
+      "body": [
+        "French AI company Mistral has published the weights for Mistral Large 4, a trillion-parameter model it introduced earlier this month. The files are available on Hugging Face and through its API, letting organizations run the model themselves rather than through a third-party service.",
+        "Mistral says ML4 matches the cyber performance of the Chinese open-weight model GLM-5.3 while using 47 percent fewer tokens per task. It also claims the model ranks first among open models on Artificial Analysis' Coding Agent Index for agentic coding tasks.",
+        "The release targets sovereign control. Mistral's VP of Science, Pierre Stock, said open weights mean access cannot be cut off, allowing companies and governments to detect, analyze, and respond to security incidents on-prem. The company frames closed models as a dependency risk."
+      ],
+      "why": "This signals that frontier-scale open-weight models can now be deployed on-prem, which matters for training-data companies that handle sensitive egocentric video and want control over data processing without sending footage to external APIs.",
+      "hard": "Model weights alone do not solve the harder problem of safely operating AI agents in security-critical environments, a risk Mistral itself acknowledged.",
+      "tags": {
+        "industry": [
+          "AI models",
+          "Cybersecurity"
+        ],
+        "task": [
+          "On-prem deployment",
+          "Threat detection"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
+        }
+      ]
+    },
+    {
+      "id": "e1c742c1d9",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Hugging Face launches Project ProtoStar to make public science data AI-ready",
+      "deck": "Carnegie Mellon will host the first open challenge on November 2, using historical weather data from 210 U.S. cities.",
+      "body": [
+        "Project ProtoStar brings together universities, research organizations, industry, and the open science community to release publicly funded datasets, models, and code in AI-ready formats. Founding partners include Carnegie Mellon, Purdue, Georgia Tech, Arizona State, and George Washington universities, working through the Open Forum for AI. Hugging Face is the infrastructure partner.",
+        "The first challenge, Climate Risk Intelligence, runs November 2 to 13. Teams will use climate records through 2018 to predict actual conditions from 2019 to 2026 across 210 U.S. cities, forecasting average annual temperature, total precipitation, hottest day, and cooling degree days. Predictions will be compared against statistical baselines, and participants must also propose a climate adaptation policy idea.",
+        "Hugging Face hosts more than 17,000 public datasets across core scientific domains, approaching 29,000 when medicine and mathematics are included. Researchers shared more than three times as many new science datasets in the first nine months of 2026 as in the same period of 2025. NCBI repositories on Hugging Face have received over 11 million downloads, and NASA IMPACT repositories about 770,000."
+      ],
+      "why": "The push to standardize scientific datasets in machine-actionable formats could create new demand for data curation and preparation work, including from robotics researchers who need well-documented, interoperable datasets for training models on physical-world tasks.",
+      "hard": "The initiative is still early, and the first challenge's forecasting results will not be published until early 2027, so there is no evidence yet that AI-ready formatting improves scientific reuse at scale.",
+      "tags": {
+        "industry": [
+          "scientific research",
+          "open data infrastructure"
+        ],
+        "task": [
+          "dataset curation",
+          "climate forecasting"
+        ]
+      },
+      "score": 4,
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/announcing-project-protostar"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "India Desk",
+      "headline": "IG Defence, Oman’s MSA Global explore production of drone systems",
+      "url": "https://yourstory.com/2026/10/ig-defence-omans-msa-global-explore-production-of-drone-systems",
+      "source": "YourStory"
+    },
+    {
+      "kicker": "Elsewhere",
+      "headline": "AWS will be a $1T business, Jassy says. But first, it will spend big.",
+      "url": "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/",
+      "source": "TechCrunch AI"
+    },
+    {
+      "kicker": "The Money",
+      "headline": "Anthropic is asking Wall Street to believe in AGI",
+      "url": "https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview",
+      "source": "The Verge AI"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Gnani AI Launches Prisma v3.0 Speech Recognition Model for 10 Languages",
+      "url": "https://analyticsindiamag.com/ai-news/gnani-ai-launches-prisma-v30-speech-recognition-model-for-10-languages",
+      "source": "Analytics India Magazine"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Articul8 Launches Bivia To Help Enterprise AI Agents Make Decisions",
+      "url": "https://analyticsindiamag.com/ai-news/articul8-launches-bivia-to-help-enterprise-ai-agents-make-decisions",
+      "source": "Analytics India Magazine"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 0,
+        "company": "ADT",
+        "what": "Home security and alarm services provider",
+        "round": "Acquisition",
+        "amount_usd_m": 15300,
+        "amount_text": "$15.3B",
+        "lead": "Thrive Holdings",
+        "india": false,
+        "url": "https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 1,
+        "company": "Wabi",
+        "what": "AI agent that builds mini apps",
+        "round": "Series Unknown",
+        "amount_usd_m": 55,
+        "amount_text": "$55M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 3,
+        "company": "Zorit (formerly Bijnis)",
+        "what": "B2B quick commerce ecommerce platform",
+        "round": "Series Unknown",
+        "amount_usd_m": 3.07,
+        "amount_text": "₹27 Cr ($3M)",
+        "lead": "Sparrow",
+        "india": true,
+        "url": "https://inc42.com/buzz/bijnis-rebrands-as-zorit-raises-%e2%82%b927-cr-for-b2b-quick-commerce/",
+        "source": "Inc42"
+      }
+    ],
+    "totalUsdM": 15358
+  },
+  "think": {
+    "collision": {
+      "a": {
+        "kind": "story",
+        "n": 2,
+        "label": "Shadowfax micro-fulfilment centres and hyperlocal growth"
+      },
+      "b": {
+        "kind": "brief",
+        "n": 4,
+        "label": "Gnani AI speech model for 10 languages"
+      },
+      "headline": "Egocentric video of Indian micro-fulfilment pickers, paired with synchronized multilingual spoken narration, sold as a language-grounded manipulation dataset",
+      "body": "Shadowfax is adding micro-fulfilment centres for D2C brands, where workers pick, pack and label varied SKUs at high volume. Workers in these centres could narrate what they are doing in their own language while wearing stereo cameras. A speech model like Gnani's Prisma would then transcribe and align the narration to the video, which gives cheap, timestamped action labels in Hindi, Tamil, Kannada and other languages. Buyers training vision-language-action models get dense language grounding for cluttered pick-and-pack tasks, and the narration costs far less than post-hoc human annotation.",
+      "who_pays": "Robot foundation model labs and warehouse-automation firms that need instruction-following pick-pack data, along with Indian logistics operators that want their own process analytics.",
+      "data_needed": "Several thousand hours of head-mounted stereo video from micro-fulfilment shifts, with synchronized audio narration, SKU metadata and consent-cleared worker and facility releases.",
+      "why_fail": "Narrating slows workers and changes how they move, so the footage may stop reflecting natural task speed, and operators may refuse that productivity hit."
+    },
+    "contrarian": {
+      "story_n": 1,
+      "consensus": "US Section 232 action on robot imports will pull robot manufacturing and related data demand toward US-based assembly.",
+      "against": [
+        "Tariffs on components raise the cost of building robots in the US too, because actuators, reducers and sensors come mostly from Asia. That could slow US humanoid deployment rather than relocate it.",
+        "The likely winner may be friendly third countries, India included, that assemble robots for US buyers. US onshoring is a less likely outcome.",
+        "Training data is not imported hardware. Restrictions on Chinese robots could raise US labs' demand for non-Chinese data vendors, wherever those vendors are based, and not only for US-collected data."
+      ],
+      "bets_otherwise": "Chinese makers such as Unitree and UBTech are likely to expand in markets outside the US. Indian contract manufacturers and firms like IG Defence that are building cross-border production ties may be positioning as tariff-safe assemblers.",
+      "settle_it": "Over the 12 months after the final 232 ruling, compare announced US robot factory capacity against new robot assembly lines in India, Mexico and Southeast Asia serving US customers."
+    }
+  },
+  "cost": {
+    "usd": 0.0475,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 2,
+        "inTokens": 10782,
+        "outTokens": 2886,
+        "cost": 0.0025,
+        "models": {
+          "anthropic/claude-haiku-5.5": 2
+        }
+      },
+      "write": {
+        "calls": 7,
+        "inTokens": 9249,
+        "outTokens": 2596,
+        "cost": 0.0138,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 7
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 1202,
+        "outTokens": 264,
+        "cost": 0.0003,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "think": {
+        "calls": 1,
+        "inTokens": 3123,
+        "outTokens": 918,
+        "cost": 0.0309,
+        "models": {
+          "anthropic/claude-opus-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 106,
+    "unique": 81,
+    "feeds": 20,
+    "failedFeeds": [
+      "VentureBeat AI",
+      "Hacker News"
+    ]
+  },
+  "generatedAt": "2026-10-30T03:52:36.833Z"
+}
