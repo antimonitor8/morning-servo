@@ -48,7 +48,7 @@
     return pages;
   }
 
-  const folio = (e, label) => `<div class="folio"><span>${esc(e.paper)}</span><span>${esc(longDate(e.date))}</span><b>${esc(label)}</b></div>`;
+  const folio = (e, label) => `<div class="folio"><a href="#p=A1" class="home">↩ Front page</a><span>${esc(longDate(e.date))}</span><b>${esc(label)}</b></div>`;
 
   function front(e, pages) {
     const lead = e.stories[0];
@@ -317,6 +317,17 @@
     if (!date) return renderEmpty();
     try { renderEdition(await loadEdition(date)); } catch { plain('<p class="empty-note">This edition could not be loaded. Check your connection and try again.</p>'); }
   }
+
+  // Tapping Today while reading today's paper goes back to the front page.
+  document.querySelector('.tabbar a[data-tab="today"]').addEventListener('click', (ev) => {
+    const strip = document.getElementById('pages');
+    const onToday = location.hash === '' || location.hash === '#/';
+    if (!strip || !onToday) return;
+    ev.preventDefault();
+    const front = document.getElementById('page-A1');
+    front.scrollTop = 0;
+    strip.scrollTo({ left: 0 });
+  });
 
   window.addEventListener('hashchange', route);
   document.addEventListener('visibilitychange', async () => {

@@ -35,6 +35,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 
 .folio { display: flex; justify-content: space-between; gap: 8px; font-family: var(--f-ui); font-size: .64rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); border-bottom: 1px solid var(--rule); padding-bottom: 5px; margin-bottom: 10px; }
 .folio b { color: var(--ink); }
+.folio .home { color: var(--accent); text-decoration: none; font-weight: 700; padding: 6px 8px 6px 0; margin: -6px 0; }
 
 .mast { text-align: center; border-bottom: 3px double var(--ink); padding-bottom: 6px; }
 .mast .name { font-family: var(--f-mast); font-size: clamp(2.1rem, 10vw, 3.2rem); line-height: 1.05; }
