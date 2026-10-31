@@ -1,0 +1,685 @@
+{
+  "date": "2026-10-31",
+  "weekday": "Saturday",
+  "sunday": false,
+  "number": 3,
+  "paper": "The Morning Servo",
+  "readMinutes": 12,
+  "stories": [
+    {
+      "id": "ba7df5a4ce",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "CuraEval finds demonstration curation often no better than random subsets",
+      "deck": "The framework tested scoring methods on mixed-skill robomimic data and found none significantly beat full-data training after correction.",
+      "body": [
+        "CuraEval compares demonstration scoring methods against fixed size-matched random subsets and full-data training on mixed-skill robomimic data using Diffusion Policy and BC-RNN. The authors found the PSD score depends only on episode length and squared position magnitudes, correlating nearly perfectly with episode length on the square task (rho=0.999).",
+        "Selecting the shortest 50% of demonstrations improved square success from 70.7% under random selection to 76.5% with Diffusion Policy. But a geometric-entropy leave-one-out selector reduced can success at 25% retention from 94.7% to 74.0%, and on square achieved 41.7%, below the mean of three random subsets (59.8-62.5%).",
+        "Length-based selection at 75% retention improved square success over full-data training from 76.7% to 86.7% under the original protocol, but fell to 79.5% versus 80.5% after changing checkpoint reporting, rollout count, and evaluation seed jointly. No curated condition significantly outperformed full-data training after Holm correction."
+      ],
+      "why": "The result weakens the case for complex demonstration curation on mixed-skill data. Training-data companies may waste effort scoring demonstrations when simple length filtering or using all data performs comparably.",
+      "hard": "Rollout-count and seed changes flipped the main positive result for length-based selection, leaving no curation method with a statistically significant edge over full-data training.",
+      "tags": {
+        "industry": [
+          "Robot learning",
+          "Training data"
+        ],
+        "task": [
+          "Demonstration curation",
+          "Imitation learning"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2610.38221"
+        }
+      ]
+    },
+    {
+      "id": "863d137958",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "EgoContact dataset tests robot contact-point prediction on egocentric video",
+      "deck": "The 22.5K manually verified interaction events improved real-robot grasp success from 16% to 58% when used as a memory bank.",
+      "body": [
+        "Researchers released EgoContact, a large-scale egocentric dataset for evaluating how well learned manipulation priors predict where to contact an object. It contains 22.5K manually verified interaction events, each with a pre-contact observation, semantic intent, and pixel-precise contact locations.",
+        "Current methods often struggle to predict precise contact points and sometimes fail to localize target objects in diverse in-the-wild scenes, even when allowed multiple predictions.",
+        "Using EgoContact as the memory bank of an existing affordance-transfer policy improved grasp success from 14.2% to 31.2% in simulation and from 16% to 58% on a real robot."
+      ],
+      "why": "This shows egocentric video can serve both as training data and as a validation benchmark for contact-level physical intelligence. The strong real-robot gains from a memory-bank approach suggest demand for manually verified egocentric interaction data with pixel-precise labels.",
+      "hard": "Contact-point prediction remains unreliable for current methods in diverse scenes, and the dataset has not yet shown whether these gains transfer across different robot embodiments or manipulation tasks.",
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Training data"
+        ],
+        "task": [
+          "Manipulation priors",
+          "Egocentric video evaluation"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2610.39167"
+        }
+      ]
+    },
+    {
+      "id": "0ae931fb5b",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Agility expects $465M from SPAC deal, down from $620M estimate",
+      "deck": "The humanoid maker cited $164M from the trust, a $201M PIPE led by Foxconn, and $100M already received.",
+      "body": [
+        "Agility Robotics and Churchill Capital Corp XI said they expect the merger to generate about $465 million in gross proceeds. The amount includes roughly $164 million from Churchill XI's trust account, a $201 million common stock PIPE at $10 per share led by Foxconn, and $100 million in equity funding already received after the business combination was announced.",
+        "The new figure is $155 million below the $620 million Agility predicted when it announced the SPAC deal in June at a $2.5 billion valuation. Agility said it expects to close the transaction on November 4, subject to shareholder approval and closing conditions. The company has said it would be the first publicly traded pure-play humanoid supplier in the U.S. with commercial deployments.",
+        "Agility reported $1.8 million in net sales in 2025 and cited committed multi-year orders for Digit 5 above $300 million. It plans early-access deliveries in the first half of 2027 and general availability by the end of 2027. Recent deployments include AGCO's Kansas factory and an expanded GXO Logistics partnership in North Carolina and Tennessee."
+      ],
+      "why": "A lower raise and reported $1.8 million in annual sales show how far humanoid makers still are from large commercial volumes, even with multi-year order commitments. For training-data suppliers, Agility's expansion into agriculture manufacturing and logistics signals where new manipulation and navigation data may be needed first.",
+      "hard": "The $1.8 million in net sales and reduced raise suggest commercial deployment is still early, and the SPAC close remains subject to shareholder approval.",
+      "tags": {
+        "industry": [
+          "Humanoid robotics",
+          "Venture funding"
+        ],
+        "task": [
+          "Manipulation",
+          "Logistics"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/humanoid-developer-agility-now-expects-raise-465m-spac-deal/"
+        }
+      ]
+    },
+    {
+      "id": "74a24c6b93",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "DexSuite releases simulation framework with 30 dexterous manipulation tasks and 4,700 teleoperation episodes",
+      "deck": "The open-source Genesis-based tool covers arms, dexterous hands, teleoperation, tactile sensing, and benchmark task-embodiment pairs.",
+      "body": [
+        "Researchers have released DexSuite, a simulation framework for dexterous manipulation built on the Genesis simulator. It provides 30 tasks and combines 10 arms with 12 end-effectors, from parallel-jaw grippers to dexterous hands, into over 100 single-arm robots and thousands of bimanual pairs.",
+        "The framework includes a standardized environment API, integrated teleoperation, and simulated tactile sensing. The team defines a benchmark of 16 task-embodiment pairs and releases a dataset of 4,700 successful simulation episodes collected from human teleoperation, scripted experts, and learned policies.",
+        "DexSuite is available as open source, with videos and datasets on the project page. The authors state they hope others will build on the framework for future dexterous manipulation work."
+      ],
+      "why": "The teleoperation pipeline and 4,700-episode dataset show one path for generating dexterous manipulation data in simulation, which can inform decisions about where physical egocentric video collection adds value.",
+      "hard": "All released demonstrations come from simulation, so the transfer of policies trained on DexSuite data to real-world dexterous manipulation remains unproven.",
+      "tags": {
+        "industry": [
+          "robotics research",
+          "simulation tools"
+        ],
+        "task": [
+          "dexterous manipulation",
+          "teleoperation data collection"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2610.37799"
+        }
+      ]
+    },
+    {
+      "id": "14e2490a01",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Paired test finds VLA inference strategies do not transfer across 100 household tasks",
+      "deck": "A fine-tuned pi-0.5 model scored 0.39 Q-score on BEHAVIOR-1K while previously proposed inference and data-collection strategies failed to generalize uniformly.",
+      "body": [
+        "Researchers ran a systematic paired evaluation of inference and data-collection strategies proposed for vision-language-action models across all 100 tasks in the BEHAVIOR-1K suite. They used a fine-tuned pi-0.5 model based on the 2025 BEHAVIOR Challenge winner, which achieves a Q-score of 0.39 on the public test set.",
+        "The results show that strategies which worked in smaller-scale settings do not transfer uniformly to new environments and tasks. The work is presented with a project page, videos, and detailed analysis.",
+        "This follows a pattern in robot learning where methods tuned on narrow benchmarks underperform on broad, diverse task suites. The authors frame the gap as one between deployed small-scale practice and the demands of large-scale household robotics."
+      ],
+      "why": "It flags that current VLA inference and data-collection recipes are brittle across task diversity. Buyers building general-purpose manipulation models may need to revalidate data pipelines for each new environment rather than assume one recipe scales.",
+      "hard": "A Q-score of 0.39 is far below reliable autonomous performance, and the paper has not yet been peer-reviewed.",
+      "tags": {
+        "industry": [
+          "Robot foundation models",
+          "Household robotics"
+        ],
+        "task": [
+          "Manipulation",
+          "Policy evaluation"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2610.37917"
+        }
+      ]
+    },
+    {
+      "id": "201508ce6c",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Underwater imitation learning dataset and models tested on ROV in pool and sea",
+      "deck": "A 1,616-episode manipulation dataset trained 14 vision-language-action models, with the best reaching 93.3% success on pool tasks.",
+      "body": [
+        "Researchers collected 1,616 episodes of underwater manipulation data in calm and turbulent waters to train 14 generalist vision-language-action models under the name DynamicVLA. They evaluated 1,260 on-hardware rollouts across three pool tasks. Ten models beat the baseline, and the top performer achieved 93.3% overall success including partial successes.",
+        "A separate case study tested single-task Action Chunking Transformer and generalist SmolVLA policies for grasping and mooring on an ROV at a WWII wreck and a marina in Malta. Across 508 gradable rollouts, ACT clearly outperformed SmolVLA with 47.9% pooled success versus 7.9%. ACT reached 66.7% success on its best marine archaeology task.",
+        "The BLUEMBODIED KIT used for data collection, model training, and deployment on the ROV has been open sourced."
+      ],
+      "why": "This is one of the few public datasets and model benchmarks for real underwater manipulation, a domain where visual distortion and currents break standard imitation-learning assumptions. It signals demand for field-collected egocentric manipulation data beyond factory floors.",
+      "hard": "The open-water results are far below pool performance and based on a small set of tasks, so generalization to untested marine sites is unproven.",
+      "tags": {
+        "industry": [
+          "marine robotics",
+          "research"
+        ],
+        "task": [
+          "underwater manipulation",
+          "imitation learning"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2610.38199"
+        }
+      ]
+    },
+    {
+      "id": "b9b3bf746f",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Re:Build raises $2.1B; Bedrock Robotics gets $600M for construction autonomy",
+      "deck": "Crunchbase's top US rounds for Oct 24-30 were led by manufacturing, with construction equipment autonomy and autonomous factories also drawing large checks.",
+      "body": [
+        "Re:Build, a Massachusetts manufacturing startup that works with industrial companies from product design through large-scale production, raised $2.1 billion. General Catalyst and JPMorganChase led the round. The company is six years old.",
+        "Bedrock Robotics raised a $600 million Series C led by CapitalG and Emergence Capital. The San Francisco company develops autonomous systems for heavy construction equipment. It has now raised nearly $1 billion at a $4.1 billion valuation.",
+        "Foundry Robotics, which builds and operates autonomous factories, closed a $100 million Series A led by Marlinspike. Group 14 Technologies, a silicon battery materials maker, raised a $169 million Series D extension and announced a Spain production facility."
+      ],
+      "why": "Three of the top ten rounds went to companies automating physical work: heavy construction equipment, factory operations, and full production cycles. This signals continued venture appetite for autonomy in sectors where egocentric training data from real sites will be needed.",
+      "hard": "Round sizes and valuations do not yet show whether these autonomous systems can reach reliable commercial deployment at scale.",
+      "tags": {
+        "industry": [
+          "robotics",
+          "manufacturing"
+        ],
+        "task": [
+          "robot learning",
+          "deployment"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "Crunchbase News",
+          "url": "https://news.crunchbase.com/venture/biggest-rounds-startups-physical-ai-predictions-robotics-rebuild/"
+        },
+        {
+          "name": "Crunchbase News",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSWE3RDE4Y3hHYWExbks5Wkc0Vm1WOVBCTGhCU0VBaTRUcnlLWlgwQVJQckJfUENhd2hlUnZSZU4zZWN6dkxGeDQ1N2N1bDRhWUxqQXJrOWdtRFNXMTRoZEdBd0pROEpGSldEaloybVd5eEJrUjZtdWRQVGp1WnY5WUhpTzFxTE1ZRElYUUN3TllBY09aZE43ak5kSWlVU1VVZjUw?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "d632f17599",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Percepto launches Axion, a hardware-agnostic AI platform for inspection data",
+      "deck": "The software-as-a-service platform ingests data from third-party drones, sensors, and archives, applying more than 160 AI models to prioritize maintenance.",
+      "body": [
+        "Percepto this week launched Axion, a physical AI platform that shifts the Israeli company from autonomous drone maker to software-first provider. The system is hardware-agnostic, so critical infrastructure operators can analyze existing inspection footage from any third-party drone or sensor network without buying Percepto hardware.",
+        "Axion organizes inspection data by asset and interprets equipment condition in context. Percepto said it can identify a downed wire by its relation to nearby components or evaluate a thermal anomaly against expected asset behavior and environmental conditions. Users can also query inspection archives using plain-language questions through a large language model.",
+        "New CEO Julien Bellanger and a new revenue and marketing team are leading the pivot. Percepto will keep selling its drones and docks, with manufacturing moved onshore in the U.S. to align with American Drone Dominance Initiatives. The company holds compliance waivers for one-to-many autonomous flight."
+      ],
+      "why": "It signals that inspection AI is becoming a data-integration layer rather than a hardware bundle, increasing the value of diverse field-captured video and sensor archives for training infrastructure-focused models.",
+      "hard": "The claimed model count and plain-language querying are vendor assertions; accuracy on messy third-party inspection data across different sites remains unproven.",
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Infrastructure inspection"
+        ],
+        "task": [
+          "Inspection data analysis",
+          "Drone operations"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/percepto-launches-axion-ai-platform-unify-inspection-data-analysis/"
+        }
+      ]
+    },
+    {
+      "id": "c4dbacf8aa",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Google satellite TPUs run first Gemma 4 prompt in orbit",
+      "deck": "The Project Suncatcher test produced a haiku and other responses, with twin satellites planned for 2027.",
+      "body": [
+        "Google booted up Tensor Processing Units on a satellite and ran the Gemma 4 model in orbit. The company said the model completed a prompt to write a haiku about being in space, along with other space-themed limericks and telemetry prompts.",
+        "The test is part of Project Suncatcher, an experimental effort that could eventually put AI data centers in space. Google launched the satellite earlier this month.",
+        "Google said the next tests will evaluate how the TPUs perform under thermal stress and radiation exposure in orbit. The company said verifying reliable in-orbit workloads paves the way for twin interconnected satellites in 2027."
+      ],
+      "why": "In-orbit inference could shift where compute-heavy AI workloads run, but it sits far from physical robot training data needs today. The thermal and radiation test results will show whether space-based TPUs can sustain real model serving.",
+      "hard": "Google has not shared latency, power draw, or error rates from the first in-orbit responses, so reliable operation remains unproven.",
+      "tags": {
+        "industry": [
+          "Aerospace computing",
+          "Semiconductors"
+        ],
+        "task": [
+          "In-orbit model inference"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission"
+        }
+      ]
+    },
+    {
+      "id": "c2d47ab1fd",
+      "section": "india",
+      "kicker": "India Desk",
+      "headline": "MeitY proposes data-sharing framework for training AI models in India",
+      "deck": "The DEPA for AI training framework uses clean rooms and differential privacy to share datasets without transferring raw data.",
+      "body": [
+        "The IT ministry has floated a consent-based framework to help startups and institutions access India-specific datasets for training AI models. Called Data Empowerment and Protection Architecture for AI training, it builds on the existing Account Aggregator model and was drafted with think tank iSPIRT.",
+        "The framework uses confidential clean rooms, differential privacy, electronic contracts and zero-trust security. Training data providers such as banks and hospitals register encrypted datasets. Consumers request access for specific use cases. Models are trained inside a secure environment so raw data stays with the provider.",
+        "Trained models would undergo independent checks for bias, fairness, security, safety and explainability before pilot deployment. Post-deployment monitoring, periodic reviews and output traceability to training data would continue. The move follows TRAI draft guidelines on responsible AI use in telecom networks."
+      ],
+      "why": "A consent-based, clean-room approach could open access to India-specific industrial and service datasets without direct data transfer. That may shape how Indian training-data buyers source real-world video and sensor data under DPDP Act compliance.",
+      "hard": "The framework is a proposal; it is unclear which data providers will participate or how well clean-room training will work for large-scale physical-world video datasets.",
+      "tags": {
+        "industry": [
+          "AI governance",
+          "Data infrastructure"
+        ],
+        "task": [
+          "Training data access",
+          "Privacy-preserving model training"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "Inc42",
+          "url": "https://inc42.com/buzz/meity-floats-new-privacy-led-framework-to-unlock-data-for-training-ai-models/"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "Your Beat",
+      "headline": "Tactus: Tactile & Pose Sensing Glove for Natural Dexterity Data Collection",
+      "url": "https://arxiv.org/abs/2610.39076",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "TACOS: Terrain-Aware COntact Supervision for Visual Footstep Planning",
+      "url": "https://arxiv.org/abs/2610.37806",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Echo: Scaling Visual Reinforcement Learning with Off-policy Experience",
+      "url": "https://arxiv.org/abs/2610.37865",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "FORGE: Feasible Online Reduced-Order Reference Generation and Whole-Body Execution for Agile Humanoid Locomotion",
+      "url": "https://arxiv.org/abs/2610.37974",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Self-Labeled Preference Transfer for Steerable Robot Manipulation",
+      "url": "https://arxiv.org/abs/2610.38000",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "METATRON: A Promptable Whole-Body Execution Layer for Humanoids",
+      "url": "https://arxiv.org/abs/2610.38027",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Your Beat",
+      "headline": "Same Label, Different Interface: Beyond Action-Space Labels in Robot Learning",
+      "url": "https://arxiv.org/abs/2610.38104",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "SKiD-SLAM: Resource-Aware Distributed Multi-Robot LiDAR SLAM for Planetary Missions with Field Deployments at Analog Sites",
+      "url": "https://arxiv.org/abs/2610.38141",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "SimRetract: Zero-Shot Sim-to-Real Robotic Assistance for Retractor Take-Over in Open Surgery",
+      "url": "https://arxiv.org/abs/2610.38234",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Proprioceptive Finger Force Estimation for Reliable Box Manipulation",
+      "url": "https://arxiv.org/abs/2610.38351",
+      "source": "arXiv cs.RO"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 1,
+        "sector": "ai",
+        "company": "NAVER",
+        "what": "AI factory and cloud infrastructure",
+        "round": "Funding",
+        "amount_usd_m": 1000,
+        "amount_text": "$1B",
+        "lead": "NVIDIA",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1SNTRnNHZUc1hLcHpmU1hyLWY4QU1zRkNXeUVEQmFjSzhuNWdPZkR6dmhsX3BLOHpkN0dZMzhERXJyT3dlODh4OXd1ZW5sdWNUYXdN?oc=5",
+        "source": "Wowtale"
+      },
+      {
+        "i": 3,
+        "sector": "robotics",
+        "company": "Physical Intelligence",
+        "what": "Robot foundation model developer",
+        "round": "Funding",
+        "amount_usd_m": 1000,
+        "amount_text": "$1B",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPd2xvM0Y0SmpoSDVYLXFSTFBqSGw4RHRfQ2l2RDlYU3NrU2lodDFDeWJkNy05LXBNWE9faU9IVHdfMF9HMWdxS1g1c1RBbDR1UWpDbTBfWHNCSXY1YjJTcGRkaDQycWpQOUNwMVRBTjZ6cXMtRzd5OGlfS1Bub2JydG1hSlB1LTNncmhzWl9mVFoxMmxoazhsVGFLcnhNbDR1SnpNZGtnV2pzSWV1bElIQzBWZEtSRUFnbWNCcQ?oc=5",
+        "source": "Exchange4Media"
+      },
+      {
+        "i": 2,
+        "sector": "robotics",
+        "company": "Agility",
+        "what": "Humanoid robot developer",
+        "round": "SPAC",
+        "amount_usd_m": 465,
+        "amount_text": "$465M",
+        "lead": "Churchill Capital Corp XI",
+        "india": false,
+        "url": "https://www.therobotreport.com/humanoid-developer-agility-now-expects-raise-465m-spac-deal/",
+        "source": "The Robot Report"
+      },
+      {
+        "i": 9,
+        "sector": "ai",
+        "company": "Rune",
+        "what": "Defense AI startup",
+        "round": "Acquisition",
+        "amount_usd_m": 375,
+        "amount_text": "$375M",
+        "lead": "Salesforce",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbWFBdGRJWUwzWDF4SHlPakZSTnFwa1R6Ynd0MzdDeTYyMHdsUnk0NVRUV2trZU93QUZoalNfenVzckVTUHVMQUVOR1dDazhfSGVsRlFPZEh4UVNDaEdUeVlBRGY4Yl9mNURaMDZxeEwwLXJnYy1ib2ZUOU0tOFAycHpLY21jUXU1QnVTUHFR?oc=5",
+        "source": "The Tech Buzz"
+      },
+      {
+        "i": 14,
+        "sector": "ai",
+        "company": "Healthleap",
+        "what": "AI-powered clinical screening",
+        "round": "Funding",
+        "amount_usd_m": 38,
+        "amount_text": "$38M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxORDRoTEhmcFlKVVI4aWpWOHg2RG95MldQMGNucVJxbXpOMVh5UHQ4TnpLWENCdlpDOFc0SUVhUGtuSjBkVlZoR1FwYzhpT3YxR25oSGpNeHk2UjJfTHh2aV9LckhMMkFXcUdHa0hqdTNqYzQwWkYtZ2RPeE5GOWp1SWJR?oc=5",
+        "source": "weetracker.com"
+      },
+      {
+        "i": 7,
+        "sector": "robotics",
+        "company": "Beyond Vision",
+        "what": "Portuguese drone maker",
+        "round": "Funding",
+        "amount_usd_m": 30.2,
+        "amount_text": "€28M ($30.2M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQVHZ5TVZSeHZfcV9GdFBURXN6cGZpTWk5ajNKdmF6SGluYm9Fb3BqZUxNS3A2NVRwRTBtOGhMbTJCQ0xBUFpxRVUyOGpueHVRMm0zQUNuUDF0UUQzMVFLTlB1SUNSWV9vNWd0SGRpOHIwZ0c0R0daYTl5ZUc0OHBoUW94YVFjZkp0dmtVcGpqeDVGOTdM?oc=5",
+        "source": "Evertiq"
+      },
+      {
+        "i": 5,
+        "sector": "robotics",
+        "company": "Origin",
+        "what": "Robots for construction",
+        "round": "Funding",
+        "amount_usd_m": 20,
+        "amount_text": "$20M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNN0VKeDc1NUdXRzJ1Zjh5MHRQUVZBRzZjejRRLUdTOGVfLTI5MEh6bkFmczQ2LW1VOWtIMTF5M0pNcVdwTVZGOVJESkw3ZkY4T2RDLWFJMnVySXJIZlFGRFFLWmpwYTgwanV1Wl9xTlkyV0E3MjNDT2hTRjR3LUlkLVVyVEJDUlI1MWs1VUV6WUc2ODMzY0ZJZVlaSlQ1dw?oc=5",
+        "source": "Evertiq"
+      },
+      {
+        "i": 15,
+        "sector": "ai",
+        "company": "Live2.ai",
+        "what": "AI startup scaling globally",
+        "round": "Funding",
+        "amount_usd_m": 13.7,
+        "amount_text": "$13.7M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE56b053UjlneFVQVlV5V0RxN3ZuRl9OajltemRGbHBKQVdJTnZyUi1jVDdwTDdTMXZWSkpjZFZHSkRveDN2Y3hLcG1UTFluMldDdHhiNERxOF9TOVNYRzR3LVNFQTNncTFjYVVlaXBuOWJjcXFhQmhVSlVnWEhEdw?oc=5",
+        "source": "TradeFlock"
+      },
+      {
+        "i": 20,
+        "sector": "ai",
+        "company": "ALPHA10X",
+        "what": "AI company relocating HQ to Qatar",
+        "round": "Funding",
+        "amount_usd_m": 5,
+        "amount_text": "$5M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUHA4aDBnTUNIMm9FX0xjYTdpREpEeUFZVEgzNi1PNllTY0Y2MnNZNFZUeXU5blpzRXVxenNIaWRrSl9JOVJfY2pvSWtpX0FiQ1QyZ3N2eFBtZHMxYnl2QVVLNGc4SXlZcFFmSDNZeUJNYl9keUJKem55Mkdycy1Vc05PUTFHcy1wV21tZ1Z5WWR6M3M?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 19,
+        "sector": "ai",
+        "company": "Akinbile AI startup",
+        "what": "AI startup founded by engineer Akinbile",
+        "round": "Funding",
+        "amount_usd_m": 3.8,
+        "amount_text": "$3.8M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNNFpQdmdnOTdXSWI4dmhJX3pIUFNkWUt0SUNlTTBzSzJNX3FVZWVHdnUwbkFncUVWeHVIb05NWTJ1V3o4ZTJfc3B2S3NOMXY2c1A4OUp5YlluYzh2b0tuY0pzX3BHa3NyOWsyZHFETjZZQ1g3VVFVNF8ybHJHamFoQmhpVFgtbzVJc3FYVG45M1NHelHSAZgBQVVfeXFMTUgyYmRXUHE2OHZiWlJoV1B1UU84QmlIZ2MtdmJlUVZXTVZxTzBPU0RVQURhUW1ndmJzcWEwOFAweFJrZmtHeVpIVFltZ0VmVlJ2aHpGakc1QW1XczNaNnljM09xMVNHaEdPbnExb1RTcGxNd1IzQnRhMGRVSkFDU3lLcEdtMTdKd0wyaGV3a25HY29HaWFJa2E?oc=5",
+        "source": "The Nation Newspaper"
+      },
+      {
+        "i": 17,
+        "sector": "deeptech",
+        "company": "Manastu Space",
+        "what": "Spacetech startup",
+        "round": "Funding",
+        "amount_usd_m": 2.3,
+        "amount_text": "₹22 Cr ($2.3M)",
+        "lead": "Gandhi Securities and Investments",
+        "india": true,
+        "url": "https://inc42.com/buzz/exclusive-manastu-space-raises-%e2%82%b922-cr-in-ongoing-funding-round/",
+        "source": "Inc42"
+      },
+      {
+        "i": 10,
+        "sector": "deeptech",
+        "company": "Fractile",
+        "what": "UK AI chipmaker",
+        "round": "Series C",
+        "amount_usd_m": null,
+        "amount_text": "£577M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/fractile-577m-series-c-nvidia-ai-chips/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 12,
+        "sector": "ai",
+        "company": "House Numbers",
+        "what": "Agentic AI platform for home lending",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Dark Matter",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxNUkVlZ1k0bmZoOTl0VVJneTg2OFFaeWd1NW1lbXMwS2o2WEh4Yi1zcjZFM1VtVVBYOWQxY3o4Xzk2OFIzTUdvQnNYXy1iVGlQWXN6QTByYXlxYXRWQmNYM3VubHZKc1NFOEljUEdtZDNFZTl1VFdYWTEzS2s3YTJ1LVhYelFRMjlkS3BpLU5zcVFRaTlNWm1kMmhhbUU1WWl1Y2ZmVXQ0dEtrek1WTmdLclQycF9oVFZGRm1GUTVsNVlka0U5aHp6MFp5eFlBQmNXWk4tbUh2bmtNcVNuTzhqNExRNW53SGZWcEx4THoxa1U4TkNIMXdmbTJCdFBpdGVpZ3NWQmNqY3E0dUxOVmZWaEZvTjhpSE94WFA5b29ya0Y4RDQ?oc=5",
+        "source": "Rocky Mount Telegram"
+      }
+    ],
+    "totalUsdM": 2953
+  },
+  "playground": [
+    {
+      "headline": "A working NES emulator baked into Qwen's weights",
+      "body": "Drew Breunig trained Qwen3.5-4B to emulate the NES 6502 CPU, in the style of the earlier qwenputer. Opus 5.5 helped him route around using a 15-year-old conformance test suite for the chip.",
+      "why": "A game console running inside a language model suggests weights can hold working logic, not just text.",
+      "maker": "Drew Breunig",
+      "url": "https://simonwillison.net/2026/Oct/30/nesformer/",
+      "source": "Simon Willison"
+    },
+    {
+      "headline": "Local LLM turns a robot arm into a roommate",
+      "body": "A hobbyist runs Qwen3.8-Flash locally to control a robotic arm using plain English. The arm shoots a nerf gun at him, throws balls, writes words, draws pictures, and pours cups, all fully offline in his house.",
+      "why": "Generalized robotic control with everyday language no longer requires the cloud.",
+      "maker": "Unknown",
+      "url": "https://www.reddit.com/r/robotics/comments/1xj6oae/local_llms_to_fully_control_a_robotic_arm/",
+      "source": "r/robotics"
+    },
+    {
+      "headline": "Robot learns tea service in a digital twin",
+      "body": "A team recreated a real self-service tea station in Isaac Sim and scripted a Unitree G1 to make tea in five steps. The robot's motions were designed from scratch rather than copied from the human reference video.",
+      "why": "Physically interactive digital twins could let robots practice jobs before trying them in real spaces.",
+      "maker": "Unknown",
+      "url": "https://www.reddit.com/r/robotics/comments/1xjy9f3/recreated_a_real_tea_station_in_isaac_sim_then/",
+      "source": "r/robotics"
+    },
+    {
+      "headline": "Trick-or-treating hand makes a run for the candy",
+      "body": "On Halloween, someone's dexterous robotic hand escaped the lab after dark. A follow-up post reveals it was only after candy, and the team caught it and brought it back.",
+      "why": "Even a simple holiday prank is a chance to test how a robot handles unstructured environments.",
+      "maker": "LSunround",
+      "url": "https://www.reddit.com/r/robotics/comments/1xjibhy/youre_working_late_on_halloween_and_your_robotic/",
+      "source": "r/robotics"
+    }
+  ],
+  "think": {
+    "collision": {
+      "a": {
+        "kind": "story",
+        "n": 10,
+        "label": "MeitY clean-room data-sharing framework for AI training"
+      },
+      "b": {
+        "kind": "story",
+        "n": 8,
+        "label": "Percepto Axion ingests third-party inspection archives"
+      },
+      "headline": "Turn Indian utilities' archived inspection footage into licensable robot training data through DEPA clean rooms, without moving raw video.",
+      "body": "Indian power, rail and refinery operators hold years of drone and handheld inspection video they cannot sell outright under the DPDP Act or security rules. Percepto's Axion shows that buyers now value third-party field archives as training input. A clean-room broker under the proposed DEPA framework could let model builders train contact and defect models on that footage, and pay per training run, while the raw files stay with the asset owner.",
+      "who_pays": "Inspection-AI and field-robotics model builders pay per clean-room training run, and asset owners take a revenue share.",
+      "data_needed": "Archived inspection video and sensor logs from Indian utilities, paired with maintenance work orders that serve as labels, plus new egocentric footage of technicians doing the repairs.",
+      "why_fail": "The DEPA framework may stay a proposal for years, and public-sector asset owners may refuse to enroll sensitive infrastructure footage without a clear legal mandate."
+    },
+    "contrarian": {
+      "story_n": 1,
+      "consensus": "Demonstration curation is mostly wasted effort, so data suppliers should ship everything and skip scoring.",
+      "against": [
+        "The study used robomimic, a small simulated benchmark with controlled skill mixes. Real egocentric field data contains occlusion, off-task footage and sensor faults that random subsets cannot wash out.",
+        "Curation methods that score demonstrations for policy learning differ from curation that removes unusable or mislabeled clips. EgoContact's gains came from manually verified events, which suggests verification still pays.",
+        "Story 5 shows recipes do not transfer across tasks. The lesson may be that curation must be task-specific, not that it is useless, which raises demand for metadata-rich data that buyers can filter themselves."
+      ],
+      "bets_otherwise": "The EgoContact authors are betting on manual verification, and Scale AI and other labelling firms sell curated, quality-scored robot data as their core product.",
+      "settle_it": "Run a controlled test on large, messy real-world egocentric datasets that compares random subsets, simple filters and verified curation, measured by real-robot success across several task families."
+    }
+  },
+  "cost": {
+    "usd": 0.0615,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 4,
+        "inTokens": 25829,
+        "outTokens": 7781,
+        "cost": 0.0065,
+        "models": {
+          "anthropic/claude-haiku-5.5": 4
+        }
+      },
+      "write": {
+        "calls": 10,
+        "inTokens": 11101,
+        "outTokens": 3532,
+        "cost": 0.017,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 10
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 2398,
+        "outTokens": 1432,
+        "cost": 0.001,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 2343,
+        "outTokens": 465,
+        "cost": 0.0049,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "think": {
+        "calls": 1,
+        "inTokens": 3936,
+        "outTokens": 819,
+        "cost": 0.0321,
+        "models": {
+          "anthropic/claude-opus-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 222,
+    "unique": 179,
+    "feeds": 29,
+    "failedFeeds": [
+      "Import AI",
+      "Hacker News",
+      "r/LocalLLaMA"
+    ]
+  },
+  "generatedAt": "2026-10-31T02:32:59.873Z"
+}

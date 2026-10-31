@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-10-31",
+    "weekday": "Saturday",
+    "number": 3,
+    "lead": "CuraEval finds demonstration curation often no better than random subsets",
+    "stories": 10,
+    "readMinutes": 12,
+    "costUsd": 0.0615
+  },
+  {
     "date": "2026-10-30",
     "weekday": "Friday",
     "number": 2,

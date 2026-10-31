@@ -448,5 +448,260 @@
     "date": "2026-10-30",
     "title": "An Attempt at a Useful Desktop OS For Microcontrollers",
     "link": "https://hackaday.com/2026/10/29/an-attempt-at-a-useful-desktop-os-for-microcontrollers/"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "CuraEval: Evaluating Demonstration Curation on Mixed-Skill Robot Data",
+    "link": "https://arxiv.org/abs/2610.38221"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "EgoContact: Evaluating Physical Intelligence with Egocentric Video",
+    "link": "https://arxiv.org/abs/2610.39167"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Humanoid developer Agility now expects to raise $465M in SPAC deal",
+    "link": "https://www.therobotreport.com/humanoid-developer-agility-now-expects-raise-465m-spac-deal/"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "DexSuite: An All-in-One Framework for Dexterous Manipulation Across Arms, Hands, and Tasks",
+    "link": "https://arxiv.org/abs/2610.37799"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "What Actually Matters? A Paired Evaluation of Inference Settings for $\\pi_{0.5}$ on BEHAVIOR-1K",
+    "link": "https://arxiv.org/abs/2610.37917"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Embodied at Sea: Imitation Learning for Multi-Task Underwater Manipulation",
+    "link": "https://arxiv.org/abs/2610.38199"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "The Week’s 10 Biggest Funding Rounds: Physical AI And Predictions Lead The Lineup",
+    "link": "https://news.crunchbase.com/venture/biggest-rounds-startups-physical-ai-predictions-robotics-rebuild/"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Percepto launches Axion AI platform to unify inspection data analysis",
+    "link": "https://www.therobotreport.com/percepto-launches-axion-ai-platform-unify-inspection-data-analysis/"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Google&#8217;s satellite AI server transmits its first response to Earth",
+    "link": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "MeitY Floats New Privacy-Led Framework To Unlock Data For Training AI Models",
+    "link": "https://inc42.com/buzz/meity-floats-new-privacy-led-framework-to-unlock-data-for-training-ai-models/"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Tactus: Tactile & Pose Sensing Glove for Natural Dexterity Data Collection",
+    "link": "https://arxiv.org/abs/2610.39076"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "TACOS: Terrain-Aware COntact Supervision for Visual Footstep Planning",
+    "link": "https://arxiv.org/abs/2610.37806"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Echo: Scaling Visual Reinforcement Learning with Off-policy Experience",
+    "link": "https://arxiv.org/abs/2610.37865"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "FORGE: Feasible Online Reduced-Order Reference Generation and Whole-Body Execution for Agile Humanoid Locomotion",
+    "link": "https://arxiv.org/abs/2610.37974"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Self-Labeled Preference Transfer for Steerable Robot Manipulation",
+    "link": "https://arxiv.org/abs/2610.38000"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "METATRON: A Promptable Whole-Body Execution Layer for Humanoids",
+    "link": "https://arxiv.org/abs/2610.38027"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Same Label, Different Interface: Beyond Action-Space Labels in Robot Learning",
+    "link": "https://arxiv.org/abs/2610.38104"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "SKiD-SLAM: Resource-Aware Distributed Multi-Robot LiDAR SLAM for Planetary Missions with Field Deployments at Analog Sites",
+    "link": "https://arxiv.org/abs/2610.38141"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "SimRetract: Zero-Shot Sim-to-Real Robotic Assistance for Retractor Take-Over in Open Surgery",
+    "link": "https://arxiv.org/abs/2610.38234"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Proprioceptive Finger Force Estimation for Reliable Box Manipulation",
+    "link": "https://arxiv.org/abs/2610.38351"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Foundry Robotics raises US$100 million to build AI-powered autonomous factory in US",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQZGNrcHBjRG1KR2ppaVhiMm5FUzBOZ1J5aVpKSnRoTnFfUEVfdklXMVN1alk5akRkdnVKMGhDdXJGbmR4NnZlM3FxS3ZYaC0zcGZzZkFvVkIxampxaDVNaHNJWnYzSVF3UjVpb19nczlYc2d5SnNsc2FPRkU1VThOZzNNekRCZkUyTVRUa0N1LUNHT2RTcUJSMi1xSW1BeXJ3bmRQeVdsU2RpU2VFemVtNU4wLWRjZG1lT2szNHNPbnc0ckU4OWdzYkJ5M1F6aGNNMUtkMTJn?oc=5"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "NAVER Raises USD 1 Billion From NVIDIA to Expand AI Factory Business",
+    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1SNTRnNHZUc1hLcHpmU1hyLWY4QU1zRkNXeUVEQmFjSzhuNWdPZkR6dmhsX3BLOHpkN0dZMzhERXJyT3dlODh4OXd1ZW5sdWNUYXdN?oc=5"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Humanoid developer Agility now expects to raise $465M in SPAC deal",
+    "link": "https://www.therobotreport.com/humanoid-developer-agility-now-expects-raise-465m-spac-deal/"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Jeff Bezos-backed Physical Intelligence eyes $1 billion funding",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPd2xvM0Y0SmpoSDVYLXFSTFBqSGw4RHRfQ2l2RDlYU3NrU2lodDFDeWJkNy05LXBNWE9faU9IVHdfMF9HMWdxS1g1c1RBbDR1UWpDbTBfWHNCSXY1YjJTcGRkaDQycWpQOUNwMVRBTjZ6cXMtRzd5OGlfS1Bub2JydG1hSlB1LTNncmhzWl9mVFoxMmxoazhsVGFLcnhNbDR1SnpNZGtnV2pzSWV1bElIQzBWZEtSRUFnbWNCcQ?oc=5"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "The Week’s 10 Biggest Funding Rounds: Physical AI And Predictions Lead The Lineup",
+    "link": "https://news.crunchbase.com/venture/biggest-rounds-startups-physical-ai-predictions-robotics-rebuild/"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "US startup Origin raises $20M to build robots for construction",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNN0VKeDc1NUdXRzJ1Zjh5MHRQUVZBRzZjejRRLUdTOGVfLTI5MEh6bkFmczQ2LW1VOWtIMTF5M0pNcVdwTVZGOVJESkw3ZkY4T2RDLWFJMnVySXJIZlFGRFFLWmpwYTgwanV1Wl9xTlkyV0E3MjNDT2hTRjR3LUlkLVVyVEJDUlI1MWs1VUV6WUc2ODMzY0ZJZVlaSlQ1dw?oc=5"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Opentrons Raises $40M in Series E to Expand Its Robotics, Software, Data Infrastructure",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPdUR4M0ZzMFVSdWV1VGluRVkxT0RHMzVPbzNyRzZrdUZPRGhCQWRMUnFKdlpHM1doVVg1TF84enBRSV9GMWVvNzliSnlUeW1nOHhtakJzWFZlZ3QyaXBUNTloaXBpY01VdGZydkVEZ05hVEhPYUJENlA1UHJ6T3ZHV2MxSllHNWNnZUNxTXdfMzl4RGlkLTV4SmZjaWVfcjhDVnloUDNveTFvdjlqZ3EzWHBha3VMem5kTExBWmg0emh0THNiTXhqblczWFd5bm5haTE5TGhiMVV0ZnM?oc=5"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Portuguese drone maker Beyond Vision raises €28 million",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQVHZ5TVZSeHZfcV9GdFBURXN6cGZpTWk5ajNKdmF6SGluYm9Fb3BqZUxNS3A2NVRwRTBtOGhMbTJCQ0xBUFpxRVUyOGpueHVRMm0zQUNuUDF0UUQzMVFLTlB1SUNSWV9vNWd0SGRpOHIwZ0c0R0daYTl5ZUc0OHBoUW94YVFjZkp0dmtVcGpqeDVGOTdM?oc=5"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Opentrons raises $40 million to expand AI-powered lab automation",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPMU9SUGxoTy1WVnQtZGlGT0FlRzljb1h1TFN1RWRVQ2VZY0I5aFU4S3ZTX1AxM0Ffb2FCaXpuZ3kyQmZidmgtTlQ2aENHMTRTcGpKZF9lZDg5SXg2VXB3U3d0TTNNTk5Gcm5laTJkaktCUlZzcnBvUHN6MFVYSjh6Z0Z6WXhZdTF0UnBXVVh0dmprOTFKcmhlbXY1TVNHa3pYN2syYTUyRGNiUlVWbjUzbHI5N3owVVdfeUFadQ?oc=5"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Salesforce Snaps Up Defense AI Startup Rune for $375M",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbWFBdGRJWUwzWDF4SHlPakZSTnFwa1R6Ynd0MzdDeTYyMHdsUnk0NVRUV2trZU93QUZoalNfenVzckVTUHVMQUVOR1dDazhfSGVsRlFPZEh4UVNDaEdUeVlBRGY4Yl9mNURaMDZxeEwwLXJnYy1ib2ZUOU0tOFAycHpLY21jUXU1QnVTUHFR?oc=5"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Fractile’s £577M Series C: Companies House shows UK chipmaker’s biggest raise yet",
+    "link": "https://techfundingnews.com/fractile-577m-series-c-nvidia-ai-chips/"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Startup Funding Round-Up: AI, Robotics Startups Raise Millions this Week",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOV9ldWMxU1BQeXUzaEhNMGNEelV0MWU2eDJQT2JWUy1hcWlTSzBrUndHbE1FMDlrN1pqdlZmbjEwS0pveDRFOTFYeXpsb1NUZ3RRMTdsSERuVVdmdncyMVp0M3paTnBIc1dxNVBGV2liMHdsbmxoVUk0cFVtSzZsV3dpTTYwWlR3Zkk1YmVhajlmbWdKdDNMNEQ0a3dQalNnUzVlUlkyU2s2ckluYmMxT0w1bGFRWU9NeWfSAboBQVVfeXFMTTlfZXVjMVNQUHl1M2hITTBjRHpVdDFlNngyUE9iVlMtYXFpU0swa1J3R2xNRTA5azdaanZWZm4xMEtKb3g0RTkxWHl6bG9TVGd0UTE3bEhEblVXZnZ3MjFadDN6Wk5wSHNXcTVQRldpYjB3bG5saFVJNHBVbUs2bFd3aU02MFpUd2ZJNWJlYWo5Zm1nSnQzTDRENGt3UGpTZ1M1ZVJZMlNrNnJJbmJjMU9MNWxhUVlPTXln?oc=5"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Dark Matter acquires House Numbers’ agentic AI platform for home lending, names Jeff Levinsohn chief AI officer",
+    "link": "https://news.google.com/rss/articles/CBMiowJBVV95cUxNUkVlZ1k0bmZoOTl0VVJneTg2OFFaeWd1NW1lbXMwS2o2WEh4Yi1zcjZFM1VtVVBYOWQxY3o4Xzk2OFIzTUdvQnNYXy1iVGlQWXN6QTByYXlxYXRWQmNYM3VubHZKc1NFOEljUEdtZDNFZTl1VFdYWTEzS2s3YTJ1LVhYelFRMjlkS3BpLU5zcVFRaTlNWm1kMmhhbUU1WWl1Y2ZmVXQ0dEtrek1WTmdLclQycF9oVFZGRm1GUTVsNVlka0U5aHp6MFp5eFlBQmNXWk4tbUh2bmtNcVNuTzhqNExRNW53SGZWcEx4THoxa1U4TkNIMXdmbTJCdFBpdGVpZ3NWQmNqY3E0dUxOVmZWaEZvTjhpSE94WFA5b29ya0Y4RDQ?oc=5"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Wabi raises $55M from IVP at $1.25B: Can Replika’s founder out-run Meta’s Muse and Instinct?",
+    "link": "https://techfundingnews.com/wabi-55m-funding-1-25b-valuation-ai-messenger/"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "SA-Born Healthleap Raises USD 38 M to Expand AI-Powered Clinical Screening",
+    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxORDRoTEhmcFlKVVI4aWpWOHg2RG95MldQMGNucVJxbXpOMVh5UHQ4TnpLWENCdlpDOFc0SUVhUGtuSjBkVlZoR1FwYzhpT3YxR25oSGpNeHk2UjJfTHh2aV9LckhMMkFXcUdHa0hqdTNqYzQwWkYtZ2RPeE5GOWp1SWJR?oc=5"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "AI Startup Live2.ai Raises $13.7M to Scale Globally",
+    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE56b053UjlneFVQVlV5V0RxN3ZuRl9OajltemRGbHBKQVdJTnZyUi1jVDdwTDdTMXZWSkpjZFZHSkRveDN2Y3hLcG1UTFluMldDdHhiNERxOF9TOVNYRzR3LVNFQTNncTFjYVVlaXBuOWJjcXFhQmhVSlVnWEhEdw?oc=5"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Exclusive: upliance.ai In Talks To Raise Up To $4 Mn For R&D, Global Expansion",
+    "link": "https://inc42.com/buzz/exclusive-upliance-ai-in-talks-to-raise-up-to-4-mn-for-rd-global-expansion/"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Exclusive: Manastu Space Raises ₹22 Cr In Ongoing Funding Round",
+    "link": "https://inc42.com/buzz/exclusive-manastu-space-raises-%e2%82%b922-cr-in-ongoing-funding-round/"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "DoorDash to acquire Instacart for $17B, less than half its $39B peak valuation",
+    "link": "https://techfundingnews.com/doordash-instacart-acquisition-17-billion/"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Nigerian-born Engineer Akinbile raises $3.8m for AI startup",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNNFpQdmdnOTdXSWI4dmhJX3pIUFNkWUt0SUNlTTBzSzJNX3FVZWVHdnUwbkFncUVWeHVIb05NWTJ1V3o4ZTJfc3B2S3NOMXY2c1A4OUp5YlluYzh2b0tuY0pzX3BHa3NyOWsyZHFETjZZQ1g3VVFVNF8ybHJHamFoQmhpVFgtbzVJc3FYVG45M1NHelHSAZgBQVVfeXFMTUgyYmRXUHE2OHZiWlJoV1B1UU84QmlIZ2MtdmJlUVZXTVZxTzBPU0RVQURhUW1ndmJzcWEwOFAweFJrZmtHeVpIVFltZ0VmVlJ2aHpGakc1QW1XczNaNnljM09xMVNHaEdPbnExb1RTcGxNd1IzQnRhMGRVSkFDU3lLcEdtMTdKd0wyaGV3a25HY29HaWFJa2E?oc=5"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "ALPHA10X raises $5M, moves global HQ from France to Qatar",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUHA4aDBnTUNIMm9FX0xjYTdpREpEeUFZVEgzNi1PNllTY0Y2MnNZNFZUeXU5blpzRXVxenNIaWRrSl9JOVJfY2pvSWtpX0FiQ1QyZ3N2eFBtZHMxYnl2QVVLNGc4SXlZcFFmSDNZeUJNYl9keUJKem55Mkdycy1Vc05PUTFHcy1wV21tZ1Z5WWR6M3M?oc=5"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Recreated a real tea station in Isaac Sim, then scripted a Unitree G1 to make tea",
+    "link": "https://www.reddit.com/r/robotics/comments/1xjy9f3/recreated_a_real_tea_station_in_isaac_sim_then/"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Catch It All!: Generalizable Dynamic Catching with a Dexterous Hand",
+    "link": "https://arxiv.org/abs/2610.39044"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Google’s first data center satellite is online and writing poetry",
+    "link": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Local LLMs to fully control a robotic arm, translating plain English instructions into generalized control of the arm",
+    "link": "https://www.reddit.com/r/robotics/comments/1xj6oae/local_llms_to_fully_control_a_robotic_arm/"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Mino's companion behavior explained",
+    "link": "https://www.reddit.com/r/robotics/comments/1xjdzmk/minos_companion_behavior_explained/"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "This DIY Arcade Cabinet Accepts Strange Cuboid Concrete Cartridges",
+    "link": "https://www.hackster.io/news/this-diy-arcade-cabinet-accepts-strange-cuboid-concrete-cartridges-b430157d3dcf"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "A Conference Badge Powered by a Piece of Computing History",
+    "link": "https://www.hackster.io/news/a-conference-badge-powered-by-a-piece-of-computing-history-66b6f9a0d2f2"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "You're working late on Halloween, and your robotic hand decides to escape the lab… 👻",
+    "link": "https://www.reddit.com/r/robotics/comments/1xjibhy/youre_working_late_on_halloween_and_your_robotic/"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "We vibecoded skull eyes for our robot dog in 12 minutes",
+    "link": "https://www.reddit.com/r/robotics/comments/1xjtmhz/we_vibecoded_skull_eyes_for_our_robot_dog_in_12/"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "dbreunig/nesformer",
+    "link": "https://simonwillison.net/2026/Oct/30/nesformer/"
   }
 ]
