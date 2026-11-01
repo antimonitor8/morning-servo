@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-11-01",
+    "weekday": "Sunday",
+    "number": 4,
+    "lead": "Robotic animals move from toys to disaster rescue and pipeline inspection",
+    "stories": 4,
+    "readMinutes": 8,
+    "costUsd": 0.0496
+  },
+  {
     "date": "2026-10-31",
     "weekday": "Saturday",
     "number": 3,

@@ -1,0 +1,406 @@
+{
+  "date": "2026-11-01",
+  "weekday": "Sunday",
+  "sunday": true,
+  "number": 4,
+  "paper": "The Morning Servo",
+  "readMinutes": 8,
+  "stories": [
+    {
+      "id": "0fde7e3cfd",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Robotic animals move from toys to disaster rescue and pipeline inspection",
+      "deck": "Research groups are testing insect-scale, snake-like, and quadruped robots for real industrial and rescue tasks.",
+      "body": [
+        "Korean researchers at KAIST have built a beetle-like soft robot, while NTU Singapore has turned Madagascar cockroaches into cyborgs for search and rescue. Each insect carries a solar-powered microcomputer with gas sensors and a thermal camera. Electrodes steer the cockroach through rubble, and one insect can survey up to 100 square meters.",
+        "Other animal-inspired machines are aimed at physical work. A Norwegian snake-like robot inspects and repairs underwater oil pipelines at depths up to 500 meters, using manipulators at both ends. Stanford's robot ants can pull loads 2,000 times their body weight when plugged into a power cable.",
+        "Zoomorphic platforms are becoming testbeds for locomotion and inspection algorithms. MIT's Mini Cheetah supports guide-robot research, Gecko Robotics sells suction-cup wall-climbing systems, and robotic falcons are already deployed at Canadian and German airports to scare birds off runways."
+      ],
+      "why": "The underlying sensors, locomotion controllers, and manipulation tasks described here are the same capabilities robot foundation models are being trained for. Inspection, haulage, and confined-space search are likely buyers of egocentric training data as commercial deployments scale.",
+      "hard": "Effectiveness is still limited by energy supply and operator bandwidth; the cyborg cockroach system alone would need about 500 insects and 500 operators to survey a large collapsed building.",
+      "tags": {
+        "industry": [
+          "Research",
+          "Inspection"
+        ],
+        "task": [
+          "Search and rescue",
+          "Manipulation"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/unusual-robotic-animals-can-prove-their-utility/"
+        }
+      ]
+    },
+    {
+      "id": "25a528e218",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "AI firms adopt shared opt-out signal for web scraping",
+      "deck": "OpenAI, Google, Microsoft and Anthropic will honor one robots.txt token for training preferences.",
+      "body": [
+        "OpenAI, Google, Microsoft, and Anthropic said they will adopt a shared standard that lets publishers opt out of being scraped for AI training across companies at once. The policy token, proposed by Anthropic's Kevin Kelley through the Internet Engineering Task Force, sits in a website's robots.txt file.",
+        "Currently, publishers must set separate preferences for each AI company. With the new signal, the four firms will restrict their crawlers when they see the token. Anthropic has already adopted it. Google and Microsoft plan support next year, and OpenAI will implement it in the coming months. Meta signaled support but did not commit to honoring it.",
+        "The move comes as publishers face more AI crawlers. Microsoft will add granular controls to opt out of training or AI grounding without affecting Bing search visibility. Google has similar controls. Cloudflare already blocks AI crawlers by default, and the Really Simple Licensing standard lets publishers charge crawlers."
+      ],
+      "why": "Web text is still a major source for pretraining, but this standard mainly affects content owners, not proprietary egocentric video or industrial teleoperation data. It does signal that frontier labs are formalizing permission systems, which may shape how data provenance is handled across modalities.",
+      "hard": "Meta has not said whether it will honor the token, and the standard is voluntary, so crawlers that ignore it face no enforcement beyond the policy of each company.",
+      "tags": {
+        "industry": [
+          "AI infrastructure",
+          "Web data"
+        ],
+        "task": [
+          "Data governance",
+          "Opt-out compliance"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out"
+        }
+      ]
+    },
+    {
+      "id": "0e186d1855",
+      "section": "india",
+      "kicker": "India Desk",
+      "headline": "CapGrid raises ₹50 Cr to expand beyond automotive into drones and data centres",
+      "deck": "The B2B manufacturing platform will use part of the pre-Series B round for R&D into higher-end precision components.",
+      "body": [
+        "Delhi NCR-based CapGrid raised ₹50 Cr (about $5.2 Mn) in a pre-Series B round led by Hero Enterprise Venture Partners, at a valuation of ₹430 Cr. Axilor Ventures, Anicut Capital, Nexus Venture Partners and angels also participated. The round included primary and secondary transactions.",
+        "CapGrid runs a cloud manufacturing platform that matches OEM orders to third-party factories, using AI and ML for supplier matching and production tracking. It pools orders from automotive, consumer durables and heavy industries to fill spare capacity, with 14 fulfilment centres across India's OEM clusters.",
+        "The company reported around ₹240 Cr in FY26 operating revenue and targets ₹350 Cr in FY27. Its annualised revenue run rate is ₹360-370 Cr. CapGrid now plans to enter drone manufacturing and data centres, moving from component sourcing into higher-end engineered precision parts."
+      ],
+      "why": "A B2B platform moving into engineered precision components for drones and data centres signals where Indian manufacturing demand is concentrating. Those sectors use complex assemblies that could create demand for physical-task demonstration data as suppliers automate or improve quality control.",
+      "hard": "CapGrid has not disclosed margins or working capital, so it is unclear whether more complex orders will improve returns over its existing sourcing model.",
+      "tags": {
+        "industry": [
+          "B2B manufacturing",
+          "AI in supply chain"
+        ],
+        "task": [
+          "precision component sourcing",
+          "drone and data centre manufacturing"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "Inc42",
+          "url": "https://inc42.com/buzz/capgrid-secures-%e2%82%b950-cr-funding-to-deepen-its-manufacturing-play/"
+        }
+      ]
+    },
+    {
+      "id": "a7393ac399",
+      "section": "policy",
+      "kicker": "Policy",
+      "headline": "MeitY releases DEPA handbook for controlled data sharing in AI training",
+      "deck": "The framework lets institutions pool data for AI training while retaining ownership and control over their datasets.",
+      "body": [
+        "India's Ministry of Electronics and Information Technology has published a handbook for the Data Empowerment and Protection Architecture, or DEPA. It sets out a techno-legal framework for trusted data sharing among institutions for AI training.",
+        "Under the framework, data holders keep control of their data while enabling collaborative use. The handbook addresses consent, technical standards and governance for sharing datasets without transferring full custody.",
+        "The release follows broader government work on IndiaAI and the national data governance policy. It signals an effort to make more Indian data available for model training under defined rules."
+      ],
+      "why": "A formal consent-based sharing framework could open new sources of Indian training data, including industrial and commercial video, if vendors and robotics companies adopt the mechanism.",
+      "hard": "The handbook is a framework document only; no operating data exchanges or uptake figures were provided in the source material.",
+      "tags": {
+        "industry": [
+          "Government policy",
+          "AI"
+        ],
+        "task": [
+          "Data sharing",
+          "AI training"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "YourStory",
+          "url": "https://yourstory.com/2026/10/meity-unveils-depa-handbook-to-enable-trusted-data-sharing-for-ai-training"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "The Money",
+      "headline": "Cracks are emerging in the AI spending boom",
+      "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+      "source": "TechCrunch AI"
+    },
+    {
+      "kicker": "India Desk",
+      "headline": "India Can Build Rockets, But Can Its VCs Fund The Next One?",
+      "url": "https://inc42.com/features/india-can-build-rockets-but-can-its-vcs-fund-the-next-one/",
+      "source": "Inc42"
+    },
+    {
+      "kicker": "India Desk",
+      "headline": "Can D-Propulse Help India Reduce Its Dependence On Foreign Missile Engine Technology?",
+      "url": "https://inc42.com/startups/can-d-propulse-help-india-reduce-its-dependence-on-foreign-missile-engine-technology/",
+      "source": "Inc42"
+    },
+    {
+      "kicker": "Elsewhere",
+      "headline": "Are Boutique AI Firms India’s Next Big Thing?",
+      "url": "https://analyticsindiamag.com/it-services/are-boutique-ai-firms-indias-next-big-thing",
+      "source": "Analytics India Magazine"
+    },
+    {
+      "kicker": "Elsewhere",
+      "headline": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
+      "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
+      "source": "TechCrunch AI"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 4,
+        "sector": "ai",
+        "company": "OpenAI",
+        "what": "Frontier AI model developer",
+        "round": "Funding",
+        "amount_usd_m": 11000,
+        "amount_text": "$11B",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZ2hxNG5LYURKOWVBYmlxRk9ES1d0RXVUUmlIdWxhdGVqNDFEc2VWQnRzdzA3MUZHVm9DNUpRR0VnNWJudDdkTnV1RERxb3hXNlA1T0dGdlJ4V3lMQjdGVXYwTmt3ZzlYY0J0Z1F2MlVWX3cwWk5TWW1uUXBMOWM5NUllbEFReHNwSDdrUU5jZ3lNYy1DVkd4TS1NZ1M?oc=5",
+        "source": "Brief IA"
+      },
+      {
+        "i": 1,
+        "sector": "ai",
+        "company": "Dulo",
+        "what": "Engineering superintelligence AI startup",
+        "round": "Seed",
+        "amount_usd_m": 130,
+        "amount_text": "$130M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOT1FjU2dFNU92NTk0U2Z6NG53dTh6aDNpVmZWRGZwZ3czal9DZ2JRRjlvQmh0TTdydUZtYndqMHB5Ry1Zemg4bm9DSDVhT0N5U2sxTEVNMldYeUJBSHQ0ZndsWVFDMGo0cmNWTmQwVFdZeWlCWGZnS0VTTjRrU1o3VHA5aWJyQWlDTGtVaTdsY3hLTFhJQXJ0UVdKYw?oc=5",
+        "source": "Pulse 2.0"
+      },
+      {
+        "i": 3,
+        "sector": "ai",
+        "company": "CapGrid",
+        "what": "B2B manufacturing platform startup",
+        "round": "Pre-Series B",
+        "amount_usd_m": 5.2,
+        "amount_text": "₹50 Cr ($5.2M)",
+        "lead": "Not disclosed",
+        "india": true,
+        "url": "https://inc42.com/buzz/capgrid-secures-%e2%82%b950-cr-funding-to-deepen-its-manufacturing-play/",
+        "source": "Inc42"
+      },
+      {
+        "i": 0,
+        "sector": "ai",
+        "company": "Dream",
+        "what": "AI company seed funding announced",
+        "round": "Seed",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQa0FrUktnQ2NhdTl4TFFrbkh1RU5fMFRXZnlrcHYydjdGNHlacjRRZFBIZnh2SmRTTWg2Z2hENXBPZi1pNXY3c25WcF9WaUdqXzUwcklFd0JMUHc5LXlZTjdqajhoNEozMHQ4MDdFUFRyaVdQOEhMTFV5R3JBbWpldHNqUHpTN0o2SEVEaUpwOW1xTkVNUFZrcGwtSG9rdWNvTUw0Zg?oc=5",
+        "source": "Axios"
+      },
+      {
+        "i": 2,
+        "sector": "ai",
+        "company": "Lingshu",
+        "what": "Industrial AI company in China",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQeFNuRDlOV3Z3dVQtRkRKSmdtUFNpV1VOZlZYa282LUdRcXZJMjdlZEZzc3ZwQmlIOUdicHA1WkhCZkdXMnlpMjdvbjFQNEc2VldfbVdlVEpOWnNMNUFVb2tMTVF1QVkzWTgxQzNBNHFRODNGV1pNTks1V1g2YlVwZWU1R281Tm9YZmNSVGxtZmdjNHFJSDZZZFhCbXl4Y1E?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 7,
+        "sector": "ai",
+        "company": "Nscale",
+        "what": "AI data center operator",
+        "round": "Debt",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Nvidia (potential cosigner)",
+        "india": false,
+        "url": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
+        "source": "TechCrunch AI"
+      }
+    ],
+    "totalUsdM": 11135
+  },
+  "playground": [
+    {
+      "headline": "WiFi Analyzer Uses a Decision-Making AI to Sniff Out Congestion",
+      "body": "Roni Bandini built a tool that pairs a single-board Linux computer with a USB WiFi adapter and a specialized AI model called Jev. Python gathers channel data like signal strength and client counts, and Jev classifies coverage and congestion while suggesting basic fixes. It runs locally and doesn't generate text or images, just bounded decisions.",
+      "why": "Shows how cheap, focused decision-making models can turn raw sensor data into useful real-world guidance.",
+      "maker": "Roni Bandini",
+      "url": "https://hackaday.com/2026/10/31/diy-wifi-analyzer-sniffs-out-congestion-and-coverage-issues-suggests-fixes/",
+      "source": "Hackaday"
+    },
+    {
+      "headline": "An LLM Runs Inside Qwen's Weights, Like a Matryoshka Doll",
+      "body": "The same maker who previously put a RISC-V CPU inside Qwen has now compiled an NPU into Qwen 3.5-4B's weights, and used it to run Karpathy's stories260k model. The result is one language model executing another one entirely inside its own parameters.",
+      "why": "Pushes the boundary of what can be embedded and executed within a model's own weights, hinting at self-contained AI systems.",
+      "maker": "divagr18 (GitHub)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xkiuut/an_llm_inside_an_llm_same_guy_who_put_a_riskv_cpu/",
+      "source": "r/LocalLLaMA"
+    },
+    {
+      "headline": "A $50 Homemade AI Companion Beats Waiting for Meta",
+      "body": "Sean Hollister bought a Waveshare ESP32-S3 touchscreen pendant and, with help from Claude Code, turned it into a working AI companion that talks to Meta's Muse. He added voice replies, readable text, smart home control, and a remote camera shutter. The device doubles as a pocket watch and viewfinder.",
+      "why": "Demonstrates that a cheap dev board plus an AI coding assistant can replicate and even improve on a product a big company hasn't shipped yet.",
+      "maker": "Sean Hollister",
+      "url": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
+      "source": "The Verge AI"
+    },
+    {
+      "headline": "Transparent 3D Printed Fridge Cools Down by Burning Fuel",
+      "body": "Ben Krasnow built a see-through Einstein-Szilard refrigerator that runs on waste heat from an open flame. It uses ammonia, water, and perfluoropentane in a cycle with no moving parts. The clear resin body makes the absorption process visible, and it reached five degrees Celsius below ambient temperature.",
+      "why": "Turns a niche thermodynamic cycle into a working, visible demo, making an obscure cooling method easier to understand and tinker with.",
+      "maker": "Ben Krasnow",
+      "url": "https://hackaday.com/2026/10/31/3d-printed-einstein-szilard-refrigerator-cools-with-fire/",
+      "source": "Hackaday"
+    }
+  ],
+  "think": {
+    "collision": {
+      "a": {
+        "kind": "story",
+        "n": 3,
+        "label": "CapGrid expands into drone and data centre components"
+      },
+      "b": {
+        "kind": "brief",
+        "n": 5,
+        "label": "NAACP lawsuit over xAI data centre pollution proceeds"
+      },
+      "headline": "Egocentric dataset of Indian technicians assembling and servicing data centre cooling and power hardware, sold to robot labs and operators",
+      "body": "CapGrid's move shows Indian suppliers are now building precision parts for data centres, so the assembly lines and service crews are local and reachable. The xAI case shows data centres face scrutiny over cooling, generators and emissions, which pushes operators toward tighter, more frequent maintenance that robots may one day share. Recording head-mounted stereo video of technicians fitting coolant manifolds, swapping filters and inspecting gensets gives buyers a niche, high-value task set that few collectors cover.",
+      "who_pays": "Robot foundation model labs building facility-maintenance skills, and data centre operators piloting inspection robots.",
+      "data_needed": "Stereo egocentric video with hand pose, tool labels and step annotations from component assembly lines and live facility maintenance rounds.",
+      "why_fail": "Data centre operators may refuse camera access to secure halls, limiting capture to supplier factories."
+    },
+    "contrarian": {
+      "story_n": 2,
+      "consensus": "A shared opt-out token means AI labs are becoming more respectful of data permissions.",
+      "against": [
+        "The token only governs future crawling, so models already trained on scraped text keep that advantage and incumbents lock in their lead.",
+        "Labs agreeing on one signal sets the terms themselves, which may preempt stricter regulation or paid licensing that content owners would prefer.",
+        "As web text matters less relative to licensed, synthetic and physical-world data, the standard concedes a shrinking asset while real competition moves to proprietary video and teleoperation data."
+      ],
+      "bets_otherwise": "Publishers suing AI firms and licensing intermediaries are betting that paid, contract-based access, not opt-out tokens, becomes the norm.",
+      "settle_it": "Whether licensing deal volume and prices for training data rise or fall over the next two years after the token's adoption."
+    },
+    "outside": {
+      "field": "Ecology",
+      "headline": "Indicator species reveal ecosystem health before broad decline appears",
+      "body": "Ecologists track sensitive species such as lichens or stream insects because they respond early to pollution or habitat change. Monitoring a few well-chosen organisms is cheaper than surveying everything and gives early warning.",
+      "pull": "What if robot training datasets included a small set of indicator tasks whose failure rates warn that a model is degrading in a new site?",
+      "why_helps": "It would let buyers check data and model fit at a new deployment cheaply before full rollout.",
+      "who_might": "A data vendor offering a standard indicator-task audit pack alongside its main datasets."
+    },
+    "wildcard": {
+      "headline": "It's 2031. Indian states require certified provenance logs for any workplace video used in robot training.",
+      "changed": "Every frame must carry worker consent, site permission and pay records traceable through a DEPA-style registry.",
+      "won": "Collectors who built consent and payment tracking early became the default suppliers to global labs.",
+      "broke": "Informal vendor networks with loose paperwork lost access to buyers overnight.",
+      "your_move": "Could your vendors today produce a signed consent and payment record for every clip you have sold?"
+    },
+    "week": [
+      {
+        "date": "2026-10-29",
+        "weekday": "Thursday",
+        "headline": "Record annotated failure-and-recovery footage from Indian underwater inspection dives as a benchmark set for testing world models in fluid settings"
+      },
+      {
+        "date": "2026-10-30",
+        "weekday": "Friday",
+        "headline": "Narrated egocentric dataset of Indian last-mile parcel handling, with code-switched speech transcripts aligned to each grasp and handover"
+      },
+      {
+        "date": "2026-10-31",
+        "weekday": "Saturday",
+        "headline": "Turn Indian utilities' archived inspection footage into licensable robot training data through DEPA clean rooms, without moving raw video."
+      }
+    ]
+  },
+  "cost": {
+    "usd": 0.0496,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 2,
+        "inTokens": 10852,
+        "outTokens": 3165,
+        "cost": 0.0027,
+        "models": {
+          "anthropic/claude-haiku-5.5": 2
+        }
+      },
+      "write": {
+        "calls": 4,
+        "inTokens": 5340,
+        "outTokens": 1359,
+        "cost": 0.0072,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 4
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 2088,
+        "outTokens": 687,
+        "cost": 0.0006,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 2269,
+        "outTokens": 589,
+        "cost": 0.0032,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "think": {
+        "calls": 1,
+        "inTokens": 3329,
+        "outTokens": 1136,
+        "cost": 0.036,
+        "models": {
+          "anthropic/claude-opus-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 96,
+    "unique": 77,
+    "feeds": 29,
+    "failedFeeds": [
+      "Import AI",
+      "r/robotics"
+    ]
+  },
+  "generatedAt": "2026-11-01T00:16:03.166Z"
+}
