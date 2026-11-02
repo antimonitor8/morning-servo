@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-11-02",
+    "weekday": "Monday",
+    "number": 5,
+    "lead": "Robotics startups raised $27.6 billion in 2025, led by physical AI bets",
+    "stories": 1,
+    "readMinutes": 3,
+    "costUsd": 0.0083
+  },
+  {
     "date": "2026-11-01",
     "weekday": "Sunday",
     "number": 4,

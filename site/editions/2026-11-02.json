@@ -1,0 +1,269 @@
+{
+  "date": "2026-11-02",
+  "weekday": "Monday",
+  "sunday": false,
+  "number": 5,
+  "paper": "The Morning Servo",
+  "readMinutes": 3,
+  "stories": [
+    {
+      "id": "7e4fb2c536",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Robotics startups raised $27.6 billion in 2025, led by physical AI bets",
+      "deck": "Funding doubled year over year across 1,009 deals, with robotics foundation models and general-purpose manipulation drawing the largest rounds.",
+      "body": [
+        "Robotics and physical AI startups raised a record $27.6 billion across 1,009 deals in 2025, more than double the prior year, according to PitchBook. The surge includes large early rounds for companies building robot foundation models and wheeled service robots for commercial environments.",
+        "Dyna Robotics, which builds foundation models for service tasks in hotels, restaurants, and laundromats, raised a $120 million Series A within about a year of founding. Genesis AI emerged from stealth with a $105 million seed round for a wheeled robot that operates in commercial spaces without replicating the human body.",
+        "Investor interest is concentrated in manufacturing, automotive, logistics, and healthcare, where firms are piloting robots to address labor costs and shortages. Figure AI reached a $39 billion valuation within three years by assembling auto parts in BMW factories, the fastest path to unicorn status in robotics history."
+      ],
+      "why": "The jump in deal volume and focus on robotics foundation models signals stronger near-term demand for manipulation and egocentric video datasets, especially from companies targeting service and light-industrial tasks rather than humanoid-only form factors.",
+      "hard": "The report describes most physical AI companies as still in the founder-surge stage, meaning production deployments are limited and failure rates among startups remain high.",
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Venture capital"
+        ],
+        "task": [
+          "Robot learning",
+          "Manipulation"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/why-physical-ai-next-lucrative-frontier/"
+        },
+        {
+          "name": "The Robot Report",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFB0T29pWUJMM044YU9FMXY5WVJCSmpTaFlQS3N3akpjcS1MeWNIU0ZZNC1udnVUTl9WeHR1bFhIQnEwSjczLUFWZUZUZDBOTzZHVWZwVzRXTVZRdXdiRmVmcEJkTk1TM1hEa3l5QlFrS3YzYlNieUhxVTBMOA?oc=5"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "Robotics Floor",
+      "headline": "China’s Humanoid Robot Race Shifts From Legs To AI Brains",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQS256TUFUQ0hYMUNENHZ1WFp0MDFOMWpydS1GVlJxVkdkTUoySkZTT1RoOEdkdWRsaUd5OEl5RzJGUFhqM28ySVkyRTF2Ri1GUktHMTI4azl4VGRKRjNtOUtDdHFnVXNLSWdlLVFFWUF5dUtPaUYxQ1ZxSWZUd1lHd05aT0lBblM1SVRPdkZ3?oc=5",
+      "source": "Finimize"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "China's Robot Makers Drive Race for AI-Powered Industrial Robotics",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTTEwN20wSmJ5ZVJ2akJwMXlyS25fbUFCWGRWNXlzNTlkSkVRQWt5cTJyM3I3bzZKakhCM3FTci1KbWM2WnNXRFpVWlZfSHUwZUhOcUdUODZZSm9HUjFfcWM3VzRBdTAzZy1ITzdMcDJHZFJtNkpBZkg1YnZSdGZLdW5CRjdwbURVMUhFb1NxRFpNOVpyNFlHbA?oc=5",
+      "source": "Global Banking & Finance Review"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "Middlesbrough 'Nippybot' robots firm hopes to roll out 'short-distance' delivery service",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZjM1dEo5d0FNa3Zvb21nb2FkRXMxOWhhdmpsaUxMWVl6LTd0NFJrN3VNV1NUX3gwOXhDTGZnMlJpbUwwejRkaUY3QnkyRHppS2xDVE51eEJUTUpBblpYYWtHVUxZV1J2VjdrSWpRcy1Hb3ZfY1p1WllKMVJoZlQzbDB0SmYtdm85cGFJOUt2UFd4cEVDV2d5Xy1rVG15R3hjNWhuNzJn0gGrAUFVX3lxTE9fTnZXZ3ZDR3lFMkprOEZiTElTQlY5ejhnMkNaYzUxekJ5R0hwZGtGZmZMbUFTY0NXQVhIWk9aNkxzY3VpS1dQcDNjQ09YWm5IWXFUZXM1SjJxRzMxMXVxQWFrYkhodjZ6cXFPUFNlcTB6VDBGejJhdXJOMWNHb3Bkc2FhR3ZhN3liZWotYl9zR1lTVEFudG5VQ0hNbExWcmxGdXVHR3dDYjRRMA?oc=5",
+      "source": "Teesside Live"
+    },
+    {
+      "kicker": "Elsewhere",
+      "headline": "28 Zero-Day Findings in Less Than Two Days: What AI-Speed Discovery Means for Robotics",
+      "url": "https://www.therobotreport.com/28-zero-day-findings-in-less-than-two-days-what-ai-speed-discovery-means-for-robotics/",
+      "source": "The Robot Report"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "Solving the Interconnect Challenge in Modern Robotics: How 3M Is Engineering for Motion, Density, and Uptime",
+      "url": "https://www.therobotreport.com/solving-the-interconnect-challenge-in-modern-robotics-how-3m-is-engineering-for-motion-density-and-uptime/",
+      "source": "The Robot Report"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "San Bernardino County acquires five autonomous firefighting drones capable of delivering over 500 gallons of foam",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPb3RfWVByQUhJaXd0Qm5GcXhUb3hiMk0tbGI5OG02bUplRmtSTDhwYVlheDBvbExUb3FZc2lqTkFxQXhrTmJwcy1Pb2tHVW40MVZra2hjckwtUEdTNFYxaXgzanh5eXliWFQ5Q3hQc1REQkhfZjdVQmtWSkN5ZG8ycFQ2QlF0RzQ?oc=5",
+      "source": "Mezha.net"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 7,
+        "sector": "ai",
+        "company": "HUMAIN",
+        "what": "Saudi AI company",
+        "round": "Acquisition",
+        "amount_usd_m": 2600,
+        "amount_text": "$2.6B cash injection (49% stake)",
+        "lead": "Saudi Aramco",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPa1RCWG9aLWdNZEljZnJOX250VFF6WHZDS2RDY2pLYlhpMHk3R09yTFFOUTFCc1JHeUZocXVFT0xodTZJVTlDMlI0NlRGMFRRMDhqVzRkblA4eUxXdUh3VWhvRnRQaFRjTDgwZWpnMkdyZms1ckV6eWRxUnlRQXJEdGdYcmdKVm4xYVQzUVFsNWVUTXllcnVZ?oc=5",
+        "source": "FWDStart"
+      },
+      {
+        "i": 0,
+        "sector": "robotics",
+        "company": "Bedrock Robotics",
+        "what": "Autonomous construction equipment robotics",
+        "round": "Funding",
+        "amount_usd_m": 600,
+        "amount_text": "$600M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSm4zZWdJeFdMRWs0X08tYk1lUTJEM1V3bU44cnB3RjJXeVJhWnp1X3RUZzZVWUV4LXI0LTdVSy0xQXFIa3FlM1AzdXhzU29nLTNueFpMWnRtemZRQl9WZlBBUEZ3TW53a1VEeUZETXk3bnJpVFh5YWhVcEsySHl5R0RocmR1MTB1U2M3ckNmUVVlaHdhQ1M5MGRUZ2JYYW9R?oc=5",
+        "source": "Axios"
+      },
+      {
+        "i": 0,
+        "sector": "deeptech",
+        "company": "Group14",
+        "what": "Silicon battery materials",
+        "round": "Funding",
+        "amount_usd_m": 169,
+        "amount_text": "$169M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSm4zZWdJeFdMRWs0X08tYk1lUTJEM1V3bU44cnB3RjJXeVJhWnp1X3RUZzZVWUV4LXI0LTdVSy0xQXFIa3FlM1AzdXhzU29nLTNueFpMWnRtemZRQl9WZlBBUEZ3TW53a1VEeUZETXk3bnJpVFh5YWhVcEsySHl5R0RocmR1MTB1U2M3ckNmUVVlaHdhQ1M5MGRUZ2JYYW9R?oc=5",
+        "source": "Axios"
+      },
+      {
+        "i": 3,
+        "sector": "ai",
+        "company": "Lumaril",
+        "what": "Palantir Foundry tooling software",
+        "round": "Funding",
+        "amount_usd_m": 66,
+        "amount_text": "$66M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWnBhWHRkbXlUb25CdVY3RDNrTnduRUhVNXBPVzV4NFJKb0U3MTY5TFVqZFZtSnZYWjVteGZHWWFRcmMzdG9HTEJlS3g0V2xXWHMtSk5NcFBlakY3UlJjQTZpM3ZmUzV2VGNCdUhYWDRwN2dPNGtYeFd1N19iRUo2WEFyaXJmNjA?oc=5",
+        "source": "FourWeekMBA"
+      },
+      {
+        "i": 6,
+        "sector": "ai",
+        "company": "Broccoli AI",
+        "what": "AI software for marketing",
+        "round": "Series A and B",
+        "amount_usd_m": 52,
+        "amount_text": "$52M",
+        "lead": "Khosla Ventures",
+        "india": true,
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcER4MmFGZUFMYTZ5N1NNS1plMVFvRFNrUENwZnJnZDcteFBxOWJ1ckVpOTRyTWFwS2lCSG5MODJCQUt4V01HcUE2dktYU2VrODY1OFRXUTBKRk1ldUpqLXJFZFRqZ2pEdjZzYmVqa1hkTzBweU5xTnFOX1c0SldSenFXUGpkNkdQempXbmJDN3E?oc=5",
+        "source": "Bharat Fast"
+      },
+      {
+        "i": 12,
+        "sector": "ai",
+        "company": "Minicor",
+        "what": "AI bridge to legacy business software",
+        "round": "Funding",
+        "amount_usd_m": 3.8,
+        "amount_text": "$3.8M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQMkhTRnFMMzJndm1kcEM1MlVmYTBiNHc3UTRBRE5tTGNBLVQxQ1dxRV9OTmx1RUJaUlk5RWNXQV9nNVFFeVNxVkhQVHA4U0syYUZpTi1WbHlZYWZROTVHVldCaUtEcS1qLVpRb0FVd3RmcE82TEJsZlpna2NzWEJWN0xpWV9iZ0VhSldOLTJTNnFybFBNcmpWdHVpMGZqVnNxd0RuVk0wNGNqdnlTb0l4Q3RmNWRkVkhYWjlyMVZSTHBtel85TjVveUNDRDVXaFlabGc?oc=5",
+        "source": "Nairametrics"
+      },
+      {
+        "i": 11,
+        "sector": "ai",
+        "company": "Talky",
+        "what": "AI corporate accounting automation",
+        "round": "Funding",
+        "amount_usd_m": 1.6,
+        "amount_text": "€1.5M ($1.6M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNMWVuWkNhdWxibWFxYS1ZU3lueXkwU0xGTzJyOFV4RVg1ZWpoNnoza3FXdEtFZWppanFkMDJWLUtJaHE0U3FJTVdUWldhZ3FGVnB0QzloU1NPT2xYeEFEdEJQS3ZlNkExdnAwc2M5Q3FZM1RWQjBxOEwxenBUQlFwZmpwT2pJSkZUakt0elY0bjktLUZzMGtWTmZjSmlMdw?oc=5",
+        "source": "n24.com.tr"
+      }
+    ],
+    "totalUsdM": 3492
+  },
+  "playground": [
+    {
+      "headline": "Agent swarms in Minecraft descend into paperwork chaos",
+      "body": "Researchers ran hundreds of AI agents through Minecraft scenarios to study cooperation and conflict. The simulations aimed to show why real-world agent swarms sometimes work brilliantly and other times go sideways.",
+      "why": "Games like Minecraft are becoming testbeds for understanding how large groups of AI agents organize, fail, or succeed.",
+      "maker": "YCombinator and Olam Labs researchers",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
+      "source": "Hacker News"
+    },
+    {
+      "headline": "Robot escape practice world record run posted online",
+      "body": "A video shows a robot completing an escape practice mode run in a system labeled Seed 891450829. The run is marked as a new world record by its creator.",
+      "why": "Robots are now setting track records in virtual practice worlds, hinting at real-world speed and precision gains.",
+      "maker": "Unknown",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBVbnpmTUE4MkIyZU1lOUo1MWFMWW1ycm1wR3ZfZHVra3A0TkZfRmQ4SUZvRDk5TlZzb0txUzl0LTBPdEo5Rjd3SmU1bnJYemhZeFIycmF5QXREMDBO?oc=5",
+      "source": "YouTube"
+    },
+    {
+      "headline": "Dorm-room jet drone reportedly hits 790 km/h",
+      "body": "Georgia Tech student claims his Reaper jet drone set a speed record of 790 kilometers per hour. Details are scarce, but the build appears to have emerged from a student dorm room.",
+      "why": "High-performance drone builds are moving from industrial labs into student housing.",
+      "maker": "Georgia Tech student",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdWJvUUhPWHpQcExzY2ZXS2ZRdFZfbjAydVRJeGdjYkFMRU5vWkdqc3BiVDRSeXZBTGxYczJ4TWdieUhJS0FNS3R5TjFjazE0ZXY0MDVROHhVc0h1cFlVQUVlbF9WWEV5S2pTRHBoRmpybTkzRmU2M2RWRlprYzlLTXNYQndLbWxVbF9TaUMxak9rRDllYWh4UGh3V2k4dUdJM3BsSlAycU9XcENKYWZ3MVJRd3lLOWZBTlE?oc=5",
+      "source": "Dealroom"
+    },
+    {
+      "headline": "LLM-assisted game engine runs 2D and 3D on microcontrollers",
+      "body": "Jet Studio is an open-source game editor that runs as a Godot app and targets the Arduino Nano ESP32 and STM32F746 with an ILI9341 display. Demos include a 62 FPS 2D shooter on the ESP32 and a partially-3D Outrun-style game.",
+      "why": "Microcontrollers are now capable hosts for real-time 2D and partial 3D games, with an LLM lending a hand in the code.",
+      "maker": "Fedyfausto",
+      "url": "https://hackaday.com/2026/11/01/a-game-engine-for-microcontrollers/",
+      "source": "Hackaday"
+    }
+  ],
+  "think": null,
+  "cost": {
+    "usd": 0.0083,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 2,
+        "inTokens": 7640,
+        "outTokens": 2472,
+        "cost": 0.002,
+        "models": {
+          "anthropic/claude-haiku-5.5": 2
+        }
+      },
+      "write": {
+        "calls": 1,
+        "inTokens": 2071,
+        "outTokens": 368,
+        "cost": 0.0017,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 1682,
+        "outTokens": 705,
+        "cost": 0.0005,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 1704,
+        "outTokens": 472,
+        "cost": 0.0041,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 73,
+    "unique": 59,
+    "feeds": 29,
+    "failedFeeds": [
+      "Import AI",
+      "Inc42",
+      "Google DeepMind",
+      "r/robotics",
+      "r/LocalLLaMA"
+    ]
+  },
+  "generatedAt": "2026-11-02T00:15:47.110Z"
+}
