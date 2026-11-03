@@ -1,0 +1,790 @@
+{
+  "date": "2026-11-03",
+  "weekday": "Tuesday",
+  "sunday": false,
+  "number": 6,
+  "paper": "The Morning Servo",
+  "readMinutes": 13,
+  "stories": [
+    {
+      "id": "560a9e06c4",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Tutor Intelligence raises $75M Series B for picking robots trained on real-world data",
+      "deck": "The MIT spinoff uses remote human operators and deployed robot fleets to build a training data flywheel.",
+      "body": [
+        "Tutor Intelligence has raised $75 million in Series B funding, bringing its total capital to $117 million. Andreessen Horowitz led the round, with Union Square Ventures and Neo participating.",
+        "The Watertown, Mass. company deploys two-armed Sonny robots for picking and Cassie mobile manipulators for case picking and palletizing. Customers pay by the hour or by the pick, with no upfront purchase or long-term contract.",
+        "Remote operators called tutors correct robot actions during real deployments. That intervention data trains better manipulation models, which Tutor says makes the robots more capable and affordable. The company reported twice as many robots working in nearly four times as many facilities compared with a year ago."
+      ],
+      "why": "This is a rare public example of a company building a commercial data flywheel where deployed robots generate correction data from remote operators. The model of paying per pick rather than via RaaS could shift how training data collection is funded and scaled.",
+      "hard": "Tutor has not published independent benchmarks showing how much the tutor-derived data improves model performance versus other approaches, and the 1,000-robot target remains unproven until the end of 2027.",
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Warehouse automation"
+        ],
+        "task": [
+          "Manipulation",
+          "Robot learning"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/tutor-intelligence-raises-series-b-to-scale-model-training-robot-deployments/"
+        },
+        {
+          "name": "The Robot Report",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQTDZtaFZsbE5RSk1qSzBWdzRwN3puWHFNWVp1RC1WTV9oZl9wWVZRQ0czM19HQ3BjUmNsUlFsLUc5SFptLWFWMEJBRl8zMURMeHFQMEgxczBDdWt5RTBuU3NuUGdmeWV2UVQ5WVcyZU1wcWtLZC10WlBaU2VxeW9vUFczbklTVllZT3hyTzdVYWFiQ0dEMkVVcnNTclhOeWxSQy0wdC1wVGtEWkkz?oc=5"
+        },
+        {
+          "name": "AI Insider",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdFVuaVVLOS1xNjI4YUFMSHd0NWtYLVloTk8zTld1WUtESFFGWWlyQ1pPYkNXRm5NQWJBSzN5NDFiUnFJZGNLaFowUi11VDJkdXVXX2Q0azFTT0xwY2xTOF80VmJZdGIxZXdVemNmZW1Uby12aVhhcGVEM0VIbkVQRUJLa1RiWlpycHlMclJCWldWY2FXM1BCeVRyZ3Z1ZGxDUkNiN19MTjlIa0hZcDVWRFpERFU3M1lUbFJ0bFUzMUwxdjlWSGdLQTBR?oc=5"
+        },
+        {
+          "name": "巴士的報",
+          "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxPOEdqMXlJc1hiYTRxaTRYWWt3QTdjNlUtYjBzSTJ3X3R1Z2R3dTNVNG56MzNfblFadU1PZzRXSFBaSDIwYTRiMFl4X3Mzam8zQW55YjRrb2NHZUVhTWxLSkpTSjY0RE90M1ItdUoxeHI3Y3RVSEdvVDM2TS03MjZpX245amZRWGdmWlI4Q3VhRS1uTlNXb3VjckVCb0NObzBKXzJYT0hhVUI3S3MyTTE3OUpUd0hZT0xoX0tVS19SWFBldzRoRHZWbi1Ha081cDhqTUc3RG44dXFDQV9zNHgwU2txT1dzbC1YNUdLQ21hNzV0ZEJmdGp1Qk1TZnJpQTUyOTZrZEJBdkZ2NEJSWEItZkhrcndBc0laUTUyWDcwWUo?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "a523346ded",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "WorldBridge model uses unlabeled video to lift robot task generalization",
+      "deck": "Adding video-only demonstrations of new tasks raised out-of-distribution success from 25.07% to 55.90% on RoboTwin 2.0.",
+      "body": [
+        "Researchers introduced WorldBridge, a World Action Model with separate video and action experts connected through structured attention and trained with joint flow matching. It uses visual memory at two temporal scales and action forcing during inference.",
+        "On RoboTwin 2.0, a model trained only on in-distribution video-action pairs reached 25.07% success on out-of-distribution tasks. Adding video of those tasks without action labels lifted success to 55.90%. Adding one action-labeled demonstration per task brought it to 70.70%.",
+        "WorldBridge reports state-of-the-art results among compared methods: 96.23% on RoboTwin 2.0 full data, 80.9% on clean-to-random, 82.8% on RoboCasa GR1 TableTop, and 57.6% on DOMINO Level-1. The authors also describe a pipeline that standardizes and filters heterogeneous robot trajectories and egocentric hand-derived supervision."
+      ],
+      "why": "The result that unlabeled video of new tasks nearly doubles success suggests buyers may need broad egocentric video coverage more than dense action labels for task transfer. That shifts the value of low-cost video-only collection relative to expensive teleoperation or action-labeled data.",
+      "hard": "The findings are from simulation and tabletop manipulation benchmarks, not deployed industrial settings, so the transfer benefit of unlabeled video in real environments remains unproven.",
+      "tags": {
+        "industry": [
+          "Robot foundation models",
+          "Training data"
+        ],
+        "task": [
+          "Manipulation",
+          "Task generalization"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2610.40748"
+        }
+      ]
+    },
+    {
+      "id": "f6bfa7a1ca",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Representation choices dominate real-robot imitation learning performance in 1,700-trial study",
+      "deck": "Point-cloud encoding and action prediction format each shifted insertion success by 70 to 100 percentage points.",
+      "body": [
+        "Researchers evaluated 281 imitation-learning policies across seven policy families in roughly 1,700 real-robot trials of RJ45 connector grasping and insertion with a five-fingered hand. Controlled ablations found observation and action representations mattered more than optimizer or sampling choices.",
+        "For point-cloud policies, region-of-interest cropping, robot-base frame representation, and normalization inside the point encoder each improved success by 70–100 percentage points. A vision-language-action policy improved insertion success by up to 70 percentage points when predicting absolute rather than relative actions.",
+        "Only five of 67 offline metrics, all measures of predicted-motion smoothness and directness, correlated reliably with insertion success, with correlations of r = -0.70 to -0.80, and only within one policy family. Skill decomposition, multi-view perception, and recovery demonstrations appeared in the strongest systems but were not isolated."
+      ],
+      "why": "The finding that input representation and action format outweigh optimizer choices can guide data-collection and training decisions for manipulation datasets, particularly around camera framing and reference frames in egocentric video.",
+      "hard": "The offline metrics that predicted success only worked within a single policy family, so they cannot yet replace real-robot evaluation.",
+      "tags": {
+        "industry": [
+          "Robotics research",
+          "Robot foundation models"
+        ],
+        "task": [
+          "Dexterous manipulation",
+          "Imitation learning"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2610.40828"
+        }
+      ]
+    },
+    {
+      "id": "f3047fc2bf",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Robot-free demo method improves dexterous skill transfer by 50 points on LEAP and Wuji",
+      "deck": "A contact-grounded interface pairs human demonstrations with hierarchical policies to preserve natural dexterity across six hand-task pairs.",
+      "body": [
+        "Researchers introduced Contact Imitation Interface (CIMI), a framework for transferring human dexterity to robot hands without using robots during data collection. The demonstration interface combines shared contact geometry with fingertip RGB views, retargets demonstrations using contact alignment, and reprojects wider scene views.",
+        "The learning side uses a hierarchical policy in which a contact-surface planner predicts relative trajectories while a controller coordinates wrist and finger commands. Across six hand-task pairs on the LEAP and Wuji benchmarks, CIMI improved mean final-stage success by at least 50 percentage points over baseline policies.",
+        "Hardware designs and software are publicly available. The paper is 15 pages including supplementary material and cites six hand-task pairs spanning two benchmark platforms."
+      ],
+      "why": "Robot-free human demonstrations remove the need for teleoperated robot hardware when collecting dexterous manipulation data. This could shift training-data sourcing toward camera-based capture of human hands at contact surfaces, a format relevant to egocentric video pipelines.",
+      "hard": "Results are reported on simulation benchmarks LEAP and Wuji, so transfer to physical robot hands remains unproven.",
+      "tags": {
+        "industry": [
+          "Robot learning",
+          "Training data"
+        ],
+        "task": [
+          "Dexterous manipulation",
+          "Human demonstration retargeting"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2610.41028"
+        }
+      ]
+    },
+    {
+      "id": "87a9709a16",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Object-centric policy learns dexterous robot manipulation from egocentric RGB-D videos",
+      "deck": "HandMimicX formulates reinforcement learning around object motion, not hand trajectories, to transfer single human demos into spatially generalizable skills.",
+      "body": [
+        "Researchers introduced HandMimicX, an object-centric framework that learns dexterous manipulation from egocentric human RGB-D videos. The reinforcement learning objective is defined in terms of object motion, decoupling the underlying skill from specific hand trajectories. Constraints on hand-object interaction states also promote more anatomically natural hand configurations.",
+        "The paper reports experiments in both simulation and on real robots. The authors say the method enables efficient learning from human videos and generalizable skill transfer across novel spatial configurations, starting from a single demonstration.",
+        "The work addresses a persistent gap in robot learning: prior approaches emphasized hand-motion imitation, which struggles with spatial generalization and physical plausibility. By focusing on object motion, HandMimicX treats the human hand as a means to an end rather than the target of imitation."
+      ],
+      "why": "Egocentric RGB-D video is exactly the data type sold for robot foundation models. Methods that extract object-centric skills from single demos, rather than requiring paired robot teleoperation or large multi-demo datasets, could shift what buyers demand from training-data providers.",
+      "hard": "The results are reported by the authors and the method has not yet been tested across varied real-world object sets or by independent labs.",
+      "tags": {
+        "industry": [
+          "Robotics research",
+          "Training data"
+        ],
+        "task": [
+          "Dexterous manipulation",
+          "Imitation learning"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2610.41336"
+        }
+      ]
+    },
+    {
+      "id": "27035a6b4f",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "VLA policies start moving without instruction in LIBERO simulation tests",
+      "deck": "All six checkpoints began moving on empty instructions, and five often completed tasks the instruction had not specified.",
+      "body": [
+        "Researchers tested six vision-language-action checkpoints in LIBERO-Goal simulation with empty, neutral, nonsense, infeasible, and wrong-task instructions. Holding the initial state fixed, they measured whether the robot started moving, what task it completed, and what the instruction determined. All six checkpoints moved on empty instructions. Five often completed a task that was not the specified one.",
+        "On two GR00T checkpoints, the instruction determined which task ran but not whether the robot moved; the robot moved even on infeasible instructions. The team tried three suppression methods: a prefix telling the robot not to move without a task, a gate comparing the first action chunk to the empty-instruction chunk, and fine-tuning to hold still on non-task inputs.",
+        "The prefix failed across all checkpoints. The gate held the robot on non-task inputs in five of six checkpoints. The fine-tuned model never completed a task on non-task inputs but still did not reliably stay still and failed to suppress starts on infeasible instructions. Code is available."
+      ],
+      "why": "If VLA policies act without explicit instruction, deployed robots can initiate motion in warehouses or factories without operator intent. This raises the value of training data that includes idle, no-task, and infeasible-instruction scenarios, which most manipulation datasets likely under-represent.",
+      "hard": "Results come from LIBERO-Goal simulation only; behavior on real robot hardware and with longer-horizon tasks remains untested.",
+      "tags": {
+        "industry": [
+          "robotics",
+          "AI"
+        ],
+        "task": [
+          "manipulation",
+          "policy robustness"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2610.41609"
+        },
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2610.41724"
+        }
+      ]
+    },
+    {
+      "id": "55dd7e97ce",
+      "section": "other",
+      "kicker": "Elsewhere",
+      "headline": "Anthropic filing says it may soon meet its own recursive self-improvement threshold",
+      "deck": "The AI lab has not crossed the threshold yet but says internal estimates point to imminent dramatically accelerated progress attributable to AI.",
+      "body": [
+        "Anthropic's revised S-1A filing adds language on recursive self-improvement, or RSI. The company defines this as dramatically accelerated AI progress attributable to AI itself. It states that internal estimates and expectations for future models, rather than current ones, indicate it may imminently meet this threshold.",
+        "The company also says it has already used AI to develop new models whose capability leaps it did not recognize at the time. It warns that AI-assisted research could outpace safety, alignment, and security work. No current model has been designated as exceeding the RSI threshold.",
+        "Anthropic said it does not anticipate safely using Claude to autonomously design and build successive frontier models without meaningful human supervision. It is considering updates to its Responsible Scaling Policy to keep humans in control of development."
+      ],
+      "why": "Faster AI-driven model development could shift demand toward frontier-lab safety and oversight tools, and it signals that coding-heavy training data will remain a bottleneck for labs trying to accelerate their own research loops.",
+      "hard": "The filing itself says past capability leaps went unrecognized until after they occurred, so the internal estimates may lag behind actual model behavior.",
+      "tags": {
+        "industry": [
+          "Frontier AI labs",
+          "AI safety"
+        ],
+        "task": [
+          "Model development",
+          "Recursive self-improvement"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+        }
+      ]
+    },
+    {
+      "id": "6e11dddc7a",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "42AI exits stealth with $62.5M and behavioral model for predicting trader decisions",
+      "deck": "The Israeli startup claims 98 percent accuracy in predicting whether trading flows fall within a predicted range, using customer records from 10 large brokerages.",
+      "body": [
+        "42AI has built a transformer-based world model that predicts the probability of a person making a given decision under different circumstances. Instead of extrapolating from past actions alone, the system ingests signals such as support calls, sentiment, voice data, onboarding behavior, and transaction history to infer underlying psychological tendencies.",
+        "In live deployments across 10 large brokerages, the model is used for liquidity management, margin requirements, and hedging exposure. 42AI reports an F1 score of 0.8 to 0.85 for predicting trading direction and volume. The company says it generates more than seven figures in revenue and claims one brokerage gained roughly $30 million through dynamic hedging.",
+        "The $62.5 million seed round came largely from the founders and Infinity Group, chaired by the CEO's father. The startup is exploring gaming, fraud prevention, and cybersecurity, and says it eventually wants the model to help robots and AI agents understand people, though each new domain requires training on domain-specific rules and context."
+      ],
+      "why": "Behavioral prediction trained on egocentric-style customer interaction signals could inform future data collection for robots that need to anticipate human actions in industrial or commercial settings.",
+      "hard": "The 98 percent accuracy figure measures only whether trading falls within a predicted range, not correct per-trade predictions, and performance drops when the model lacks external situational context.",
+      "tags": {
+        "industry": [
+          "AI behavioral modeling",
+          "Robotics foundations"
+        ],
+        "task": [
+          "Human behavior prediction",
+          "Training data modeling"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/"
+        }
+      ]
+    },
+    {
+      "id": "2fdd1f81bb",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Small open VLM trained as code-as-policy agent reaches 73.8% on LIBERO",
+      "deck": "CaPtain uses SFT plus multi-turn RL with a physical critic, no frontier model or VLA at test time.",
+      "body": [
+        "Researchers at arXiv released CaPtain, a post-training pipeline that turns a 4-billion-parameter open vision-language model into a code-as-policy robot agent. Starting from zero-shot failure, CaPtain-4B reaches 55.4% held-out LIBERO success after supervised fine-tuning and 73.8% after multi-turn reinforcement learning. On LIBERO-PRO it reaches 78.5%, ahead of some frontier-model agents.",
+        "The pipeline trains and deploys inside CaPtain-Harness, which exposes low-level perception, geometry, and guarded-motion primitives across simulation and real hardware. A physical critic reads privileged simulator state the policy never sees and credits each agent request by how much it changes the predicted chance of success. This handles the delayed effects common in multi-turn robot code execution.",
+        "RL gains persisted across three perturbation suites, improving by 17.6 to 21.2 points. Without target-domain training, the model reached 83.3% on SimplerEnv WidowX and ran on a real robot after simulation-only adaptation. Code, data, and weights are released."
+      ],
+      "why": "This shows demand for training data shifting toward multi-turn code-writing trajectories paired with privileged simulator state. Egocentric video of real manipulation tasks could serve as a source for synthetic SFT trajectories or for validating sim-to-real transfer on physical hardware.",
+      "hard": "The real-robot result comes from simulation-only adaptation, so performance on diverse physical tasks outside the tested setup remains unproven.",
+      "tags": {
+        "industry": [
+          "Robot learning",
+          "Open-weight models"
+        ],
+        "task": [
+          "Manipulation",
+          "Code-as-policy"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2610.40799"
+        }
+      ]
+    },
+    {
+      "id": "7e32db7ab3",
+      "section": "india",
+      "kicker": "India Desk",
+      "headline": "ideaForge posts Rs 6.5 crore Q2 net profit, defence drives revenue",
+      "deck": "Operating revenue rose 124 percent year on year to Rs 91.3 crore, with defence contributing 72 percent.",
+      "body": [
+        "Drone maker ideaForge reported a net profit of Rs 6.5 crore in the September quarter of FY27, compared with a loss of Rs 19.6 crore a year earlier. It had reported a loss of Rs 2.6 crore in the preceding quarter.",
+        "Operating revenue grew 124 percent year on year to Rs 91.3 crore, up 33 percent sequentially from Rs 68.6 crore. Defence business made up 72 percent of revenue, while civil applications contributed the rest. Total expenses rose to Rs 90.1 crore.",
+        "The company also said the Technology Development Board has committed Rs 151 crore through the RDI Fund to develop YETI, a logistics UAV with a 200 kg payload for cargo, medical evacuation and personnel deployment."
+      ],
+      "why": "A profitable Indian drone maker with a large defence order book and a new 200 kg logistics UAV signals steady domestic demand for aerial platforms that could later generate egocentric inspection, delivery and field-operations data.",
+      "hard": "The YETI UAV is still under development, and the company has not disclosed a timeline for commercial deployment or confirmed civil buyers beyond defence procurement.",
+      "tags": {
+        "industry": [
+          "Drones",
+          "Defence",
+          "Logistics"
+        ],
+        "task": [
+          "Aerial inspection",
+          "Cargo transport"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "Inc42",
+          "url": "https://inc42.com/buzz/ideaforge-returns-to-profitability-in-q2-reports-net-profit-of-%e2%82%b96-5-cr/"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "Your Beat",
+      "headline": "Nexus-VLA: Bridging Human and Robot Experiences via a Shared Hierarchical Semantic Latent Space",
+      "url": "https://arxiv.org/abs/2610.42021",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "HIPC: Humanoid Iterative Planning and Control via Goal-Conditioned Motion Closure",
+      "url": "https://arxiv.org/abs/2610.41334",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "DiffWBC: Unlocking Steerable General Humanoid Motion Tracking via One-Step Diffusion Whole-Body Control",
+      "url": "https://arxiv.org/abs/2610.41354",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "MolmoSpaces-CommonSense: Evaluating Commonsense in Robotic Manipulation Policies",
+      "url": "https://arxiv.org/abs/2610.41377",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "RTPolicy: Real-Time (32.9 Hz) Multi-View Visuomotor Policy for Robotic Manipulation on Edge Devices",
+      "url": "https://arxiv.org/abs/2610.41625",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Direct Action-Manifold Modeling for Efficient and Robust Bimanual Manipulation",
+      "url": "https://arxiv.org/abs/2610.41643",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Your Beat",
+      "headline": "When the Simulator Fails, Not the Policy: Auditing Contact Artifacts in Simulated Robot Benchmarks",
+      "url": "https://arxiv.org/abs/2610.41857",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Movens-Zero: Scaling Humanoid Motion Foundation Models with Large-Scale Human Videos",
+      "url": "https://arxiv.org/abs/2610.41877",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "AI Startup Lumaril Wants to Make Factories the Best Version of Themselves",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVXlLM2tob3NocFNXVU1IRm16RlNrS25kNV9wRVNjdnZMUmdVLThjckZQUnRVLThnSEx1UkctVkplNjJtT1E4VmpkR0tubTFlaWFfQUtuLUpvc1gxbElrdGJHOXdLTUkyc3FuTUtjOVZfMlBfMnBtM1k5SFJnMUs3UHEyQUNIMHE2b0JvRE1GNnpRRlpaakJKMk1rd2pLRk56bTlnQWJnTi1qTkw3cG1iS2Rqa1U5ZG1UYmhfNnltQQ?oc=5",
+      "source": "WSJ"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "DeepSeek Proposes Super-Agent Architecture to Automate AI Coding Workflows",
+      "url": "https://analyticsindiamag.com/ai-news/deepseek-proposes-super-agent-architecture-to-automate-ai-coding-workflows",
+      "source": "Analytics India Magazine"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 11,
+        "sector": "ai",
+        "company": "Grok competitor AI startup",
+        "what": "AI startup backed by Nvidia and AMD",
+        "round": "Funding",
+        "amount_usd_m": 6000,
+        "amount_text": "$6B valuation",
+        "lead": "Nvidia, AMD",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPMFI4TnZ1Y0kybmZSazNaTXRvVWFocjZwemI5Ukp5WFFObFBCR3RWdmM5RkRRM1hUejl1NnRoeDN2NW53eWZZOFN5a1I3a2MxdXlGelI4Y3pfRW9iT1I2NmdXN0ZNUlZjSThjX24xa1k4YXBHZUx6aDZjMFZNTHg4b0xQRnFadw?oc=5",
+        "source": "Benzinga"
+      },
+      {
+        "i": 19,
+        "sector": "deeptech",
+        "company": "Hypersonica",
+        "what": "Hypersonic missile defence technology",
+        "round": "Series B",
+        "amount_usd_m": 109,
+        "amount_text": "€100M ($109M)",
+        "lead": "Lightspeed and General Catalyst",
+        "india": false,
+        "url": "https://techfundingnews.com/hypersonica-111m-series-b-lightspeed-general-catalyst/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 0,
+        "sector": "robotics",
+        "company": "GenRobot AI",
+        "what": "Robot-training data for physical AI",
+        "round": "Series A+",
+        "amount_usd_m": 100,
+        "amount_text": "$100M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQYjIzTjU1OUtrZDVXNmZrU2lfSnlNODZIdlg5c3J1UTBCTnp1bFhrcWNUdXRNS1c1aXlCT2hjek5fbTZtSEZ6c01SNFYxOWg4REhVNV8tdnNQV2xOTzdtNlhnY1BMUTBKV1FPX1V1SE5PdUxhZGRKV04xZDRpV3lmZHpnanJJcnpUUDFMM3E1QWZndU1uVlBLZXdjN19wbk1seVdRQU1UR2p1SFVVZGc4Yg?oc=5",
+        "source": "TechNode"
+      },
+      {
+        "i": 3,
+        "sector": "ai",
+        "company": "42AI",
+        "what": "World model predicting human behavior",
+        "round": "Funding",
+        "amount_usd_m": 62.5,
+        "amount_text": "$62.5M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 9,
+        "sector": "ai",
+        "company": "Trajectory",
+        "what": "AI model training for nontechnical experts",
+        "round": "Funding",
+        "amount_usd_m": 45,
+        "amount_text": "$45M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 15,
+        "sector": "ai",
+        "company": "Aquatic Labs",
+        "what": "Data center water technology",
+        "round": "Acquisition",
+        "amount_usd_m": 16,
+        "amount_text": "$16M",
+        "lead": "Omen AI",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 7,
+        "sector": "ai",
+        "company": "Clinics On Cloud",
+        "what": "AI-led connected microclinic network",
+        "round": "Series A",
+        "amount_usd_m": 12.5,
+        "amount_text": "₹120 Cr ($12.5M)",
+        "lead": "Model42 (Enlightened Minds Investments)",
+        "india": true,
+        "url": "https://inc42.com/buzz/clinics-on-cloud-bags-%e2%82%b9120-cr-to-take-its-health-atms-global/",
+        "source": "Inc42"
+      },
+      {
+        "i": 24,
+        "sector": "ai",
+        "company": "LO:TECH",
+        "what": "Algorithmic trading firm for onchain markets",
+        "round": "Funding",
+        "amount_usd_m": 12,
+        "amount_text": "$12M",
+        "lead": "MMC",
+        "india": false,
+        "url": "https://techfundingnews.com/lotech-12m-series-a-market-making-tokenised-assets/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 12,
+        "sector": "ai",
+        "company": "Clark",
+        "what": "Autonomous AI employees for audit",
+        "round": "Seed",
+        "amount_usd_m": 11,
+        "amount_text": "$11M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNVElkblhZMGRDRlVUSHZudFBBbW9vdzZoWGR4VGl3c1BpX3hJLXBYM2RFajAtaWhQM1FER0h4S19xTmRWZHBXYlRvcjVDVlAtZG9oWms1MXJ0ZGQxTm84SjZfR0lHS1VBLVVwdjZIVlRVLUZhZnN3SVhVUFh5Q1BZU1E0WG9RMkZqTWVsUlFIWllWRWRUREFYNVJ0YTVOV2JwZHFBWG9yQjhxTEg4WjlrbTNaQ1QxTlVBZUl3WkJlSkNyMHhxYXlLZ1pBZXExbTBwUUgzcVNISFlxcTh0Vk1zaWRjcmE1bHJSa3gyWG1aZVBqdzZpZ2h6Zg?oc=5",
+        "source": "Morningstar"
+      },
+      {
+        "i": 20,
+        "sector": "ai",
+        "company": "Two Point O",
+        "what": "AI-powered clean energy deployment platform",
+        "round": "Funding",
+        "amount_usd_m": 10,
+        "amount_text": "$10M",
+        "lead": "Transition Venture Capital",
+        "india": true,
+        "url": "https://inc42.com/buzz/two-point-o-bags-10-mn-to-bridge-the-financing-gap-in-clean-energy/",
+        "source": "Inc42"
+      },
+      {
+        "i": 21,
+        "sector": "deeptech",
+        "company": "Gallium Defense",
+        "what": "Low-cost radar and drone detection",
+        "round": "Seed",
+        "amount_usd_m": 7.7,
+        "amount_text": "€7.1M ($7.7M)",
+        "lead": "Keen Venture Partners",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQOWtqeW5uVDNXWjJtQktrczBYb05QRjYxSlh1VHpXMkxJOVFZM0hHYV9WLUptRzZESzR6UEk5WFBkd1ZFeUJ5YU9oQm9obVh1ZW5yLVN1bTN0MkZqMHNyVEJTQ3RKWkJ0ZzkzOGhIT3NPQmNpTkgzcmZhMWNPNWQ0NC1ONEg4N1kxMFpCNlkwUU5fVVBkRlRRVy1ua0JUdHZMSUNLUw?oc=5",
+        "source": "Tech.eu"
+      },
+      {
+        "i": 1,
+        "sector": "ai",
+        "company": "Marble",
+        "what": "AI learns jobs from observing work",
+        "round": "Funding",
+        "amount_usd_m": 3.75,
+        "amount_text": "$3.75M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/marble-cognition-3-75m-ai-agents-workflow-automation/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 26,
+        "sector": "ai",
+        "company": "Swedish AI content verification startup",
+        "what": "Verifies AI-generated and manipulated content",
+        "round": "Seed",
+        "amount_usd_m": 3.1,
+        "amount_text": "$3.1M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9jWnFXUG1NVnhaUzExMVIyS3dsUTVvZk9FeXVicUd0QUE2REgyMkNhMHloSnNRNGNBWkFvZ3ZaLWZkSWVpcllJRlJkTlF3bWZ2TDlYalBxT1pGRmRHdXphYWpFVUJpRjU4RWtZSzVKbzdMZ9IBckFVX3lxTE9jWnFXUG1NVnhaUzExMVIyS3dsUTVvZk9FeXVicUd0QUE2REgyMkNhMHloSnNRNGNBWkFvZ3ZaLWZkSWVpcllJRlJkTlF3bWZ2TDlYalBxT1pGRmRHdXphYWpFVUJpRjU4RWtZSzVKbzdMZw?oc=5",
+        "source": "ArcticStartup"
+      },
+      {
+        "i": 28,
+        "sector": "ai",
+        "company": "CareLumi",
+        "what": "Automates healthcare credentialing",
+        "round": "Funding",
+        "amount_usd_m": 2.5,
+        "amount_text": "$2.5M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUU5BM25qUWdHMzdMdkhkc3AzTDROMXJDMEcyV1ZZaFd4eUNjdDRUdDBGbEtjU1Nrd1FneW1MRHZ5Z2Jqcm1WdTVDeFZ3UWU1WHdpWHJoVjduN0VzNFg0VXdtQXctUFEzdGtGcTJ5WFZfTGMwSzZFdzJNYTZHclUtVjlEdHY5cG1GN2d2dDdwamZvYmNzVlllMnh4dHUyMDFMZlZwUU1PX1h0QmY3YjNZT1g2bVBVS20t?oc=5",
+        "source": "The Business Journals"
+      },
+      {
+        "i": 30,
+        "sector": "ai",
+        "company": "Manicule",
+        "what": "AI agents choose software",
+        "round": "Funding",
+        "amount_usd_m": 1.3,
+        "amount_text": "$1.3M",
+        "lead": "Y Combinator",
+        "india": true,
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxON2psY2oxWnNJSW9jMnVqTEY4Uzh4c3EyM0xoaFNWck1meHNWODdHWmYyeXFPMGZ3OW1aVjd4elB5NjRGM185MFdxajRYY2lLQWNPaENwWUdMcEpoSUxCbUhrOXVwT2ZLUkxqUzR2bHlhblZ6enMxSFhESWQ5SEFnWkxtbGtnY0kzNlVzYUhBT05pblZmRDZnbkVUQ2c2M3E3RmxSbzk1MTE4YUpBMUh3cnpBZ1c?oc=5",
+        "source": "Elets CIO"
+      },
+      {
+        "i": 16,
+        "sector": "ai",
+        "company": "Dispatch Network",
+        "what": "AI last-mile delivery logistics",
+        "round": "Pre-seed",
+        "amount_usd_m": 0.57,
+        "amount_text": "₹5 Cr ($0.57M)",
+        "lead": "Antler India",
+        "india": true,
+        "url": "https://entrackr.com/snippets/antler-india-leads-pre-seed-round-in-last-mile-delivery-startup-dispatch-network-12775883",
+        "source": "Entrackr"
+      },
+      {
+        "i": 2,
+        "sector": "robotics",
+        "company": "Tutor Intelligence",
+        "what": "Picking robots and networked intelligence",
+        "round": "Series B",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://www.therobotreport.com/tutor-intelligence-raises-series-b-to-scale-model-training-robot-deployments/",
+        "source": "The Robot Report"
+      },
+      {
+        "i": 5,
+        "sector": "robotics",
+        "company": "Juqiao Industrial",
+        "what": "Electronic skin for humanoid robots",
+        "round": "Series A",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Ant Group",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9FQ0RhZ3pMQXFmZ0FOLVVPc3l0THJpUHZfUmEzTzExd1I2TzBNaVFnaC1BX29IdlpBQks4bko5bEo0SGdqSU9uM3pFSlR2RC1USDUwc29jSWNUQldzWGJ6eEZCNzN1R0oyR0NuTFJkMGJhbkxQZ1E?oc=5",
+        "source": "BigGo Finance"
+      },
+      {
+        "i": 6,
+        "sector": "robotics",
+        "company": "RoboScience",
+        "what": "Robotics company, Series A",
+        "round": "Series A",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOOVM3ZlRxRnQ3T0t3azFEYmpsQk4yQU1kekVqZ2lOR2NVWWZJS2xjTGF3V0tSd0NmejR4MzF1NGEwLVlkZUxDQ2ctVTR5WlZ3M1JlSF9BVGVTRXJ1YTA5eTVncGd0M1BPX3luVmt1MjBqc05hS19fb0VXdC1fTVlsYWNkb3VOaHJhaTk1SEthV2Ewa1lmWU0tbGFobWlTX1hwS2xKTkdjbEU?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 8,
+        "sector": "robotics",
+        "company": "Basilisk Industries",
+        "what": "Hardware startup acquired by physical AI venture",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Provision Labs",
+        "india": true,
+        "url": "https://inc42.com/buzz/pronto-founders-provision-labs-acquires-hardware-startup-basilisk-industries/",
+        "source": "Inc42"
+      }
+    ],
+    "totalUsdM": 6397
+  },
+  "playground": [
+    {
+      "headline": "AI Agent Performs Brain Surgery on a Mouse",
+      "body": "A researcher gave an AI agent gene therapy options, a mouse model of epilepsy, and control of a motorized surgery rig. It chose the drug, picked the brain region, derived coordinates from papers, and injected 250 nanolitres while watching for bleeding. A vet held a kill switch for irreversible steps.",
+      "why": "It shows AI can handle a delicate, multi-step physical procedure with real-time monitoring, hinting at future assistance in experimental medicine.",
+      "maker": "Unknown",
+      "url": "https://twitter.com/OcanaSantero/status/2115442964574908902",
+      "source": "Hacker News"
+    },
+    {
+      "headline": "ESP-FLUTTER Robotic Butterfly Actually Flaps to Fly",
+      "body": "Maker Max Imagination built a remote-controlled robotic butterfly that flies with flapping wings instead of propellers. The design mimics the delicate motion of a real butterfly, using lightweight mechanics and onboard control.",
+      "why": "It proves that flapping-wing flight for small robots is within reach for hobbyists, opening up new styles of agile, quiet aerial robots.",
+      "maker": "Max Imagination",
+      "url": "https://www.hackster.io/news/esp-flutter-is-a-robotic-butterfly-that-actually-flies-9baea9728f43",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "Robot Arm Hands Over Tools Using Meta AI",
+      "body": "A builder paired a $250 robot arm with Meta's Muse Spark and SAM 3.1 so it can find and pass requested tools. Saying 'pass me the screwdriver' makes the arm locate, pick up, and drop the tool into an open hand with no prior training.",
+      "why": "It shows off-the-shelf vision and language models can give cheap robot arms useful pick-and-place skills without custom training.",
+      "maker": "adoodevv",
+      "url": "https://www.reddit.com/r/robotics/comments/1xm4mhy/so101_robot_arm_meta_apis/",
+      "source": "r/robotics"
+    },
+    {
+      "headline": "DIY Robot Picks Locks with AI Assistance",
+      "body": "Dr. Kun Dániel built a lockpicking robot using an ESP32, 3D-printed parts, and AI to open pin tumbler locks autonomously. The machine feels its way through the pins without human guidance.",
+      "why": "It demonstrates that fine manipulation tasks once reserved for skilled human hands can now be automated with accessible hardware and AI.",
+      "maker": "Dr. Kun Dániel",
+      "url": "https://www.hackster.io/news/this-diy-lockpicker-has-ai-on-its-side-7264ccf5dccf",
+      "source": "Hackster.io"
+    }
+  ],
+  "think": {
+    "collision": {
+      "a": {
+        "kind": "story",
+        "n": 6,
+        "label": "VLA policies move without any instruction"
+      },
+      "b": {
+        "kind": "story",
+        "n": 10,
+        "label": "ideaForge profits on defence drone demand"
+      },
+      "headline": "Egocentric dataset of Indian field crews deciding not to act: holds, aborts and refused instructions during drone and site operations.",
+      "body": "The VLA study shows policies start moving on empty or infeasible instructions, because datasets rarely contain footage of skilled people waiting, checking and declining. Indian drone field teams, of the kind ideaForge's defence and logistics growth will expand, constantly run pre-flight checks, hold for clearance and abort loads that fail inspection. Capturing these crews with chest-mounted stereo cameras, labelled by the reason for each hold or abort, gives buyers a ready supply of no-task and refusal examples.",
+      "who_pays": "Robot foundation model labs and warehouse robot integrators that need safety-case evidence that their policies stay idle without valid intent.",
+      "data_needed": "Stereo egocentric video of payload loading, checklist and handover routines, with timestamped labels for idle periods, holds, aborts and the spoken instruction or its absence.",
+      "why_fail": "Defence-linked sites may refuse recording access, and civilian logistics crews may not produce enough varied refusal events to be worth the collection cost."
+    },
+    "contrarian": {
+      "story_n": 2,
+      "consensus": "Cheap unlabeled video can largely replace expensive action-labelled and teleoperation data for teaching robots new tasks.",
+      "against": [
+        "The gain comes from RoboTwin 2.0, a simulated benchmark where the video and the robot share rendering, viewpoint and embodiment, a far easier gap than real human egocentric footage poses.",
+        "Going from 25 to 56 percent out-of-distribution success still means failing nearly half the time, and closing the last gap to deployable reliability usually needs on-robot correction data.",
+        "Today's 1,700-trial study found that representation and action format swing success by 70 to 100 points, which suggests labels and geometry, not raw video volume, still decide real performance."
+      ],
+      "bets_otherwise": "Tutor Intelligence, which just raised $75M to collect remote-operator correction data from deployed fleets, is betting that action-grounded real-robot data is the scarce asset.",
+      "settle_it": "A real-robot test where WorldBridge-style training on human egocentric video of new tasks matches the success of an equal-cost budget of teleoperated demonstrations."
+    }
+  },
+  "cost": {
+    "usd": 0.0561,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 5,
+        "inTokens": 31051,
+        "outTokens": 9308,
+        "cost": 0.0078,
+        "models": {
+          "anthropic/claude-haiku-5.5": 5
+        }
+      },
+      "write": {
+        "calls": 10,
+        "inTokens": 11705,
+        "outTokens": 3590,
+        "cost": 0.0121,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 10
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 3554,
+        "outTokens": 1971,
+        "cost": 0.0013,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 1638,
+        "outTokens": 511,
+        "cost": 0.0017,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "think": {
+        "calls": 1,
+        "inTokens": 4104,
+        "outTokens": 838,
+        "cost": 0.0332,
+        "models": {
+          "anthropic/claude-opus-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 256,
+    "unique": 215,
+    "feeds": 29,
+    "failedFeeds": [
+      "Import AI",
+      "Google DeepMind",
+      "r/LocalLLaMA"
+    ]
+  },
+  "generatedAt": "2026-11-03T00:16:42.408Z"
+}
