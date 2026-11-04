@@ -1,5 +1,5 @@
 // Offline reading + the 8:00 push.
-const VERSION = 'servo-v4';
+const VERSION = 'servo-v5';
 const SHELL = ['./', 'index.html', 'styles.css', 'app.js', 'config.js', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png'];
 
 self.addEventListener('install', (e) => {

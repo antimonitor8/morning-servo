@@ -79,7 +79,7 @@
         <span class="kicker">${esc(lead.kicker)}</span>
         <h1 class="hl xl">${esc(lead.headline)}</h1>
         <p class="deck">${esc(lead.deck)}</p>
-        <p class="body drop">${esc(lead.body[0])}</p>
+        ${lead.takeaway ? `<div class="short"><span class="kicker">The short version</span>${esc(lead.takeaway)}</div>` : `<p class="body drop">${esc(lead.body[0])}</p>`}
         <div class="box"><span class="kicker">Why it matters</span>${esc(lead.why)}</div>
       </a>` : '<p class="empty-note">No top stories today.</p>'}
       ${below.length ? `<div class="cols">${below.map((s, j) => `<a href="#p=A${j + 3}"><span class="kicker">${esc(s.kicker)}</span><h2 class="hl m">${esc(s.headline)}</h2><p>${esc(s.deck)}</p></a>`).join('')}</div>` : ''}
@@ -98,9 +98,11 @@
       <h1 class="hl l">${esc(s.headline)}</h1>
       <p class="deck">${esc(s.deck)}</p>
       <div class="meta"><span>${s.sources.length > 1 ? `Reported by ${s.sources.length} outlets` : esc(s.sources[0]?.name)}</span><span>${Math.max(1, Math.round([...s.body, s.why, s.hard].join(' ').split(/\s+/).length / 230))} min</span></div>
+      ${s.takeaway ? `<div class="short"><span class="kicker">The short version</span>${esc(s.takeaway)}</div>` : ''}
       ${s.body.map((b, j) => `<p class="body${j === 0 ? ' drop' : ''}">${esc(b)}</p>`).join('')}
       <div class="box"><span class="kicker">Why it matters</span>${esc(s.why)}</div>
       <div class="box"><span class="kicker">What's still hard</span>${esc(s.hard)}</div>
+      ${s.terms?.length ? `<div class="box"><span class="kicker">Terms in this story</span><dl class="terms">${s.terms.map((t) => `<dt>${esc(t.term)}</dt><dd>${esc(t.meaning)}</dd>`).join('')}</dl></div>` : ''}
       <div class="tags">${(s.tags.industry || []).map((v) => tag('Industry', v)).join('')}${(s.tags.task || []).map((v) => tag('Task', v)).join('')}</div>
       <div class="sources"><span class="sec">Sources</span>${s.sources.map((src) => `<a href="${esc(src.url)}" target="_blank" rel="noopener">${esc(src.name)} ↗</a>`).join('')}</div>
       <div class="actions"><button class="btn${isSaved(id) ? ' on' : ''}" data-save="${esc(id)}" data-kind="story" data-i="${i}">${isSaved(id) ? '★ Saved' : '☆ Save'}</button></div>

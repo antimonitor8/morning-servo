@@ -7,7 +7,8 @@ export const SECTION_LABEL = {
   money: 'The Money', india: 'India Desk', policy: 'Policy', other: 'Elsewhere',
 };
 
-const HOUSE_STYLE = `House style: plain, specific and calm, like a good broadsheet. Short sentences. No hype words (revolutionary, game-changing, groundbreaking, unprecedented), no rhetorical questions, no exclamation marks, no emoji.`;
+const HOUSE_STYLE = `House style: plain, specific and calm, like a good broadsheet. Short sentences.
+Write for a smart, curious reader who is not an engineer or researcher. Explain every technical term in everyday words the first time it appears, spell out acronyms, and use a quick everyday comparison when an idea is abstract. Never assume the reader already knows the background: say in a few words what the thing is before saying what changed. No hype words (revolutionary, game-changing, groundbreaking, unprecedented), no rhetorical questions, no exclamation marks, no emoji.`;
 
 // ---------- Triage ----------
 
@@ -120,9 +121,14 @@ export function select(scored, s) {
 
 const writeSchema = {
   type: 'object', additionalProperties: false,
-  required: ['headline', 'deck', 'body', 'why', 'hard', 'industry', 'task'],
+  required: ['headline', 'takeaway', 'deck', 'body', 'why', 'hard', 'terms', 'industry', 'task'],
   properties: {
     headline: { type: 'string' },
+    takeaway: { type: 'string' },
+    terms: {
+      type: 'array',
+      items: { type: 'object', additionalProperties: false, required: ['term', 'meaning'], properties: { term: { type: 'string' }, meaning: { type: 'string' } } },
+    },
     deck: { type: 'string' },
     body: { type: 'array', items: { type: 'string' } },
     why: { type: 'string' },
@@ -141,11 +147,13 @@ ${HOUSE_STYLE}
 Use only facts in the source material. Never invent numbers, names, quotes or dates. If the source is thin, write less rather than pad.
 
 Fields:
-- headline: at most 14 words, says plainly what happened, sentence case
+- headline: at most 14 words, says plainly what happened, sentence case, no jargon
+- takeaway: the short version in two sentences, at most 45 words, that someone outside the field fully understands: what happened, and what it means in practice. No technical terms at all.
 - deck: one sentence of at most 30 words with the most important detail the headline left out
 - body: 2 or 3 paragraphs of 40 to 70 words each: what happened, the key numbers or how it works, then context
 - why: one or two sentences on why this matters to this reader. Be concrete about consequences. Don't flatter the reader or mention them directly.
 - hard: one sentence on the main caveat, open problem or thing that is still unproven
+- terms: up to 4 technical terms, product types or acronyms used in the story that a non-specialist might not know, starting with the most basic idea the story depends on (for example what a "policy" or "foundation model" is), each with a plain one-sentence meaning (at most 25 words). Empty if there are none.
 - industry: 1 or 2 short labels; task: 1 or 2 short labels`;
 
 export const writeUser = (it, text) => `Section: ${SECTION_LABEL[it.section]}
