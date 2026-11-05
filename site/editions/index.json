@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-11-05",
+    "weekday": "Thursday",
+    "number": 8,
+    "lead": "Handheld-only robot training data yields 78 percent success on bimanual tasks",
+    "stories": 10,
+    "readMinutes": 14,
+    "costUsd": 0.0844
+  },
+  {
     "date": "2026-11-04",
     "weekday": "Wednesday",
     "number": 7,

@@ -1,0 +1,1004 @@
+{
+  "date": "2026-11-05",
+  "weekday": "Thursday",
+  "sunday": false,
+  "number": 8,
+  "paper": "The Morning Servo",
+  "readMinutes": 14,
+  "stories": [
+    {
+      "id": "79d40df3d7",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Handheld-only robot training data yields 78 percent success on bimanual tasks",
+      "takeaway": "A research group trained a two-armed robot using only 16,151 hours of video from a handheld gripper, with no robot data. The robot then succeeded at 78 percent of tasks in a new location. This shows large handheld datasets can teach precise manipulation without expensive robot trials.",
+      "deck": "The model uses only wrist cameras and was tested in a place where none of its training data was recorded.",
+      "body": [
+        "The system, called AIRoA-0, was trained on 16,151 hours of demonstrations recorded with an open-source handheld gripper called YUBI. People used the gripper anywhere, with no robot present, and the researchers collected no robot data, teleoperation data, reinforcement learning, or on-robot corrections at any stage.",
+        "From a single written instruction, AIRoA-0 sorts more than a dozen small parts into numbered cells, changes a robot vacuum's mop pads and brush, unzips a pencil case, and folds a towel. It uses only a camera on each wrist, with no head or scene camera. Across ten evaluation tasks, it averaged a 78 percent success rate, compared with 27 percent for the strongest of four other vision-language-action models trained on the same task demonstrations.",
+        "The model learns which regions of each wrist view matter, predicts the stage a task has reached, and decodes actions as a continuous stream. It is described as embodiment-agnostic, meaning it runs on different robots that mount the YUBI gripper, including bimanual Franka, TX-G2, OpenArm, and UR models. The group is releasing the dataset, which they call the largest open dataset of handheld-gripper demonstrations with task and subtask instructions, along with pre-trained weights and a post-training recipe."
+      ],
+      "why": "It strengthens the case that handheld egocentric data can replace costly robot-based collection for precise, long-horizon bimanual tasks. The release of a 16,151-hour dataset with task and subtask labels also provides a benchmark for what commercial training-data buyers may expect to pay for and use.",
+      "hard": "The strongest comparison model reached only 27 percent success, so the 78 percent result may depend heavily on the specific post-training recipe or on the YUBI gripper format matching the test robots closely. No evidence yet shows the approach transfers to robots with very different hand shapes.",
+      "terms": [
+        {
+          "term": "bimanual manipulation",
+          "meaning": "Using two robot arms together to handle objects, similar to how a person uses both hands."
+        },
+        {
+          "term": "handheld gripper",
+          "meaning": "A small tool a person holds to record how their hand moves while picking up and moving objects."
+        },
+        {
+          "term": "vision-language-action model",
+          "meaning": "A system that takes images and written instructions, then decides the physical actions a robot should take."
+        },
+        {
+          "term": "teleoperation",
+          "meaning": "A person remotely controlling a robot's movements in real time, often to collect demonstration data."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Training data"
+        ],
+        "task": [
+          "Bimanual manipulation",
+          "Egocentric data collection"
+        ]
+      },
+      "score": 9,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.03815"
+        }
+      ]
+    },
+    {
+      "id": "7fe97b09d4",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Ottonomy raises Rs 40.6 crore for delivery robots",
+      "takeaway": "Ottonomy, which makes robots that deliver items inside and outside buildings, raised about $4.2 million. The money will help it sell more robots to hospitals and factories that are short on workers.",
+      "deck": "Japan-based Enrission India Capital joined the round.",
+      "body": [
+        "Ottonomy raised about Rs 40.6 crore, or $4.2 million, in a post-seed round. Japan-based venture firm Enrission India Capital participated.",
+        "The company makes the Ottobot, an autonomous delivery robot for indoor and outdoor use. It runs on Ottonomy's Contextual AI technology, which helps the robot find its way through busy facilities with little human help.",
+        "Ottonomy wants to grow in healthcare and industrial automation. Its robots carry medicines, medical equipment and supplies in hospitals, and move materials in factories. The company says worker shortages are pushing demand for this kind of logistics."
+      ],
+      "why": "This is another sign that buyers want robots for indoor material movement in hospitals and factories. Those settings are likely to need egocentric video of people pushing carts, carrying supplies and handing off items as training data.",
+      "hard": "The announcement does not say how many robots Ottonomy has deployed or whether any customers are paying at scale.",
+      "terms": [
+        {
+          "term": "Post-seed funding",
+          "meaning": "An early investment round after a startup has an early product and some proof it works."
+        },
+        {
+          "term": "Autonomous delivery robot",
+          "meaning": "A wheeled machine that moves goods by itself without a person steering it."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Logistics"
+        ],
+        "task": [
+          "Autonomous delivery",
+          "Material transport"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "Entrackr",
+          "url": "https://entrackr.com/snippets/enrission-india-capital-participates-in-ottonomys-rs-406-cr-funding-round-12782975"
+        },
+        {
+          "name": "Entrackr",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNaUMwNm0tX2o3azU0djZta21HVzB3SmR0cFl0YXFFQjlFMEJzVnBsWmlyVjFsN2dISVJVV0lKN0VYaXRvZ0Vab3o2cVJDX1ktc2tiaDZfeS00Q0tiUU5ZNXJhSGdyQThZU0dFd3pLak9TZEZFVm1YRzUtcmRKYjJvV1A2bWdHTW9xQVFGU3Q2NTA1Yl9VMmxzTGNpSGtGN0F1WXFXQkRhQ1IxOU9nQTFFamVB0gGyAUFVX3lxTE1pQzA2bS1fajdrNTR2Nm1rbUdXMHdKZHRwWXRhcUVCOUUwQnNWcGxaaXJWMWw3Z0hJUlVXSUo3RVhpdG9nRVpvejZxUkNfWS1za2JoNl95LTRDS2JRTlk1cmFIZ3JBOFlTR0V3ektqT1NkRkVWbVhHNS1yZEpiMm9XUDZtZ0dNb3FBUUZTdDY1MDViX1UybHNMY2lIa0Y3QXVZcVdCRGFDUjE5T2dBMUVqZUE?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "c5c6cce9e8",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "LiberAI model learns robot skills from 2.2 million hours of human video",
+      "takeaway": "A Beijing startup trained a robot control model mostly on human video and glove motion rather than task-specific robot demonstrations. It completed 36 percent of 60 unseen manipulation tasks, though harder multi-step tasks succeeded only 10.5 percent of the time.",
+      "deck": "Glove-recorded hand motion helped the model learn actions missing from robot data.",
+      "body": [
+        "LiberAI, a Beijing startup, trained a model called Liber-0 on more than 2.2 million hours of human experience, combining ordinary video with hand movements recorded by a data-collection glove. The model predicts future video frames and robot actions together, which lets it learn from footage that has no action labels.",
+        "In a test of 60 tasks proposed by an AI system, Liber-0 succeeded 36 percent of the time overall without robot demonstrations recorded for those specific tasks. It scored 63.5 percent on simple pick-and-place tasks and 10.5 percent on harder multi-step tasks. A separate experiment found glove recordings could replace three quarters of robot demonstration data with similar results.",
+        "The company said the glove currently records hand positions and paths but not contact or force, which matter for insertion, fastening and handling soft materials. Tactile and force sensing remain future work."
+      ],
+      "why": "This shows human video and glove motion can substitute for expensive robot-specific demonstration data, which is the same logic behind egocentric data collection for robot training. The 75 percent reduction in robot demonstrations suggests buyers may increasingly accept cheaper human-recorded data.",
+      "hard": "The model still succeeded on only about one in ten difficult multi-step tasks, and the glove does not capture contact or force, which limits fine manipulation.",
+      "terms": [
+        {
+          "term": "world action model",
+          "meaning": "A type of AI model that predicts both what will happen next on screen and what physical action to take."
+        },
+        {
+          "term": "zero-shot",
+          "meaning": "Performing a task without having been trained on examples of that specific task first."
+        },
+        {
+          "term": "pick-and-place",
+          "meaning": "A basic robot task of picking up an object and putting it somewhere else."
+        },
+        {
+          "term": "teleoperation",
+          "meaning": "A human controlling a robot's movements remotely, often used to record demonstration data."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Foundation models"
+        ],
+        "task": [
+          "Manipulation",
+          "Training data"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/liberai-unveils-liber-0-a-world-action-model-that-grounds-human-experience-in-robot-action/"
+        }
+      ]
+    },
+    {
+      "id": "6bd748e587",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Soft robot-matched fingers improve handheld data collection for pick-and-place",
+      "takeaway": "Researchers built a handheld gripper with soft fingers that match a robot's hand and show contact force by bending. Across 100 hours of pick-and-place demonstrations, the setup lifted success on unseen objects from 35% to 57% after fine-tuning.",
+      "deck": "A top camera alone raised success by 13 points even when only about half the data included it.",
+      "body": [
+        "A team built a battery-powered handheld gripper on an existing platform called YUBI. Its soft, angled fingers wrap around objects, bend visibly under load as a rough visual sign of contact force, and match the grippers of the robot that will later perform the task. The goal is to collect demonstrations that transfer more cleanly from human to robot.",
+        "With the device, researchers collected 99.7 hours of pick-and-place data across 53 objects. They trained policies on 49 objects and held out 4 as unseen. Adding a top camera raised success by 13 percentage points, even when only about half the recorded data included that view. Mid-training on the multi-task data, then fine-tuning on unseen objects, lifted success from 35% to 57%.",
+        "The work was accepted as a poster at the CoRL 2026 UMI Arena Workshop. The authors have released the finger design, dataset, and data-processing code."
+      ],
+      "why": "Handheld data collection is one of the cheaper ways to gather robot demonstrations, but mismatches between human grippers and robot hands can weaken the data. Results here suggest matching finger shape and softness, plus adding a top-down camera view, measurably improves transfer to unseen objects.",
+      "hard": "The gains are shown on a single pick-and-place setup with four held-out objects, so it is still unclear how well the approach generalizes to wider object sets or longer-horizon tasks.",
+      "terms": [
+        {
+          "term": "Robot policy",
+          "meaning": "A learned rule that tells a robot what action to take based on what it sees or senses."
+        },
+        {
+          "term": "Universal Manipulation Interface (UMI)",
+          "meaning": "A handheld device a person uses to record demonstrations of a task so a robot can learn from them."
+        },
+        {
+          "term": "Fine-tuning",
+          "meaning": "Further training of an already-trained model on a smaller, specific dataset to improve performance on new tasks."
+        },
+        {
+          "term": "Pick and place",
+          "meaning": "A common robotics task of grasping an object and moving it to a target location."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Training data"
+        ],
+        "task": [
+          "Manipulation",
+          "Data collection"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.03779"
+        }
+      ]
+    },
+    {
+      "id": "85434b8df1",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Peppermint Robotics raises Rs 100 crore to expand industrial robots",
+      "takeaway": "An Indian company that makes robots for cleaning floors and moving goods raised Rs 100 crore. It will use the money to build more robots, expand into material handling and cleanrooms, and grow its US and European sales.",
+      "deck": "The firm is moving beyond floor cleaning into material handling and cleanroom automation for factories, warehouses, and pharmaceutical sites.",
+      "body": [
+        "Peppermint Robotics, a Pune-based company founded in 2019, raised Rs 100 crore (about $10.5 million) in a Pre-Series B round led by pi Ventures and Crane Venture Partners, with Asiana Fund participating. The round mixed primary capital and secondary share sales. The company plans to use the money to expand manufacturing, develop new robots, and grow its US and European businesses.",
+        "Peppermint started with floor-cleaning robots and now sells scrubber-dryers, vacuuming and mopping machines, three material-handling models, and automated docking stations. Its cleanroom scrubber-dryer has passed qualification testing in an EU GMP Grade C cleanroom. Over the next 12-15 months it plans smaller and larger cleaning and material-handling robots, with outdoor cleaning robots targeted for 2028.",
+        "An average robot costs about Rs 20 lakh in India and $35,000 to $40,000 in the US. Operating revenue rose from Rs 2.71 crore in FY23 to Rs 6.26 crore in FY24 and Rs 21 crore in FY25. The US contributes nearly half of revenue, India close to 30%. The company competes with China's Gausium and Singapore's LionsBot and plans a North American assembly line."
+      ],
+      "why": "This shows an Indian robotics firm moving from a single task into more complex physical work, with real revenue numbers and US demand. It is a concrete signal of which cleaning and material-handling tasks buyers are paying for, and where robotics companies may next need egocentric training data for navigation and manipulation.",
+      "hard": "The company is loss-making overall because research and international expansion outweigh the profit from its core business, and servicing a wider robot portfolio across multiple markets remains unproven.",
+      "terms": [
+        {
+          "meaning": "A Pre-Series B round is an investment that comes after an early funding round, before the round called a Series B.",
+          "term": "Pre-Series B"
+        },
+        {
+          "meaning": "Primary capital is new money invested in a company, while secondary share sales involve existing shareholders selling their stakes.",
+          "term": "Primary and secondary transactions"
+        },
+        {
+          "meaning": "A cleanroom is a controlled space with very low dust and contamination, used in medicine and electronics manufacturing.",
+          "term": "Cleanroom"
+        },
+        {
+          "meaning": "LiDAR is a sensor that measures distance with laser light to help robots map spaces and avoid obstacles.",
+          "term": "LiDAR"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Industrial automation"
+        ],
+        "task": [
+          "Funding",
+          "Commercial cleaning and material handling robots"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "Inc42",
+          "url": "https://inc42.com/buzz/peppermint-robotics-bags-%e2%82%b9100-cr-to-scale-its-industrial-robotics-bet/"
+        },
+        {
+          "name": "Entrackr",
+          "url": "https://entrackr.com/news/peppermint-robotics-raises-rs-100-cr-in-pre-series-b-led-by-pi-ventures-crane-venture-partners-12781643"
+        },
+        {
+          "name": "YourStory",
+          "url": "https://yourstory.com/2026/11/peppermint-robotics-bags-rs-100-cr-in-pre-series-b-funding-round"
+        },
+        {
+          "name": "ET Entrepreneur",
+          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNdDFib09fS3FQWnhWZ283UUxyWEFXUUpJNW9rZmpyRTAyZlcycXlaZmJQTUJKeXF4emd6bjlmV2NwR1VYUTV3V1M1eldNUkN5elJnWGwxWHNLc2xwQlg5emtsd1FIaE9hM1pDWHJNcDFMUjhUM1gxaENEVFQtV1FNUkR4RnNwX3R2akp3QmlwNE5vb2Fnd3NfNEF4SC1ITU1EeTFxR0VQYTktd2RsR1l3aFd0S3V3aktWemh2Yll4UTVZc3dldXVyYS1MOTRoRWMxb1VLN0JhQTdMZlVaSVBrd0pXNWFiX1M3ZlZ0X193QVBxNmpwbGs5Ri1xbW40SVNEdU5n0gGDAkFVX3lxTE10MWJvT19LcVBaeFZnbzdRTHJYQVdRSkk1b2tmanJFMDJmVzJxeVpmYlBNQkp5cXh6Z3puOWZXY3BHVVhRNXdXUzV6V01SQ3l6UmdYbDFYc0tzbHBCWDl6a2x3UUhoT2EzWkNYck1wMUxSOFQzWDFoQ0RUVC1XUU1SRHhGc3BfdHZqSndCaXA0Tm9vYWd3c180QXhILUhNTUR5MXFHRVBhOS13ZGxHWXdoV3RLdXdqS1Z6aHZiWXhRNVlzd2V1dXJhLUw5NGhFYzFvVUs3QmFBN0xmVVpJUGt3Slc1YWJfUzdmVnRfX3dBUHE2anBsazlGLXFtbjRJU0R1Tmc?oc=5"
+        },
+        {
+          "name": "YourStory.com",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdFdzTDV3QXRvNXRkUlVldjdyVXphc1NBYVAtYm42NE5CZGdobTVTLW1vcTdXblRUX1JsOG1sZDUwakxaaTNvSm04WFhSNXdULVRiOVJhLU42bW5TZ1NxRDM2YVhxRUpLQV9WYktUR19raThlN1ROLXZRZy1iTWx0eTE4RGZyd2VEV1FtLTR1RlFwbXdNT2l2T0xn?oc=5"
+        },
+        {
+          "name": "BW Disrupt",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPVEVub2N2OFFSZGxBRERSX19mY1R3RlZlOFJmWlUwOTdzdXVQVVB1cGpYNGNMeXN4THJUUlFHdnVyaFV0OVdXbXprLVZrZzNIWjVzUE5YNm1tUWtSQmhzWWFwQjU2dzRUQ1l6cFlYVThkNXN4S2NvNE9rdGFYU0d3c0w4a2cwS24zcUpzak5feER2OFVkZTdoQlR6TUlWRWpjNUJHUEswNGl5M0RtV3l1cHIxRE9kQ2NwS2VVZEFDTVBzczk1RlNfRHJOYlFIMHU5VGZhX1lzQ0s?oc=5"
+        },
+        {
+          "name": "Entrackr",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPS2xFbjk1dkNlMll2Y0s3UUliNEpwTS1IbHB3UGZTenhORUNPN1FXN2RGR1NjeGxsWEZXeEk3dWxpNUxwWmN2eHJjSFpCNy1IM3g0LXh5ZC10VFZXNmcxbElITzVHQ2hqUzVRS1dwa3YtdWFwZXdmUTFjZHZMUGVUcWh2dENfd21zMGMyZnY2WkttMURuakFsaFNVdHlZSGthRktBMXR4Z2hBaTFfRUxyYXowTG9JMk5hQnhTSXZ2SFIyMF9TakI4UNIByAFBVV95cUxPS2xFbjk1dkNlMll2Y0s3UUliNEpwTS1IbHB3UGZTenhORUNPN1FXN2RGR1NjeGxsWEZXeEk3dWxpNUxwWmN2eHJjSFpCNy1IM3g0LXh5ZC10VFZXNmcxbElITzVHQ2hqUzVRS1dwa3YtdWFwZXdmUTFjZHZMUGVUcWh2dENfd21zMGMyZnY2WkttMURuakFsaFNVdHlZSGthRktBMXR4Z2hBaTFfRUxyYXowTG9JMk5hQnhTSXZ2SFIyMF9TakI4UA?oc=5"
+        },
+        {
+          "name": "Manufacturing Today India",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNQ2tEejdiT09nV2gtQUhHNVhYSnN3RGJWN2ZkaDQ0NGJ2T0F4d0kxVy1XT2VBNXFuZW0zeWhoLS1jSHB6c3RoVTVTc3JpYTM1OV84Vzgya3EzbTJMWEE3R19wV09yMno0cHZ1bGhHRlh5amhBZEVQRWpwb0xOXzZ2bA?oc=5"
+        },
+        {
+          "name": "Urban Acres",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVjRDdno3dXJreV95dHA4TnBjM08zR3lYelZ0VWFNQjYtQjJmT21EX1VGSzY4ZWp5bkVPOXNaZXhsYnMxVEgxTHJHU205MmQySmg0Y3puN0dTandqeTVxU1JUVUY2N2tmTTZsdlFwbGJRX3pUcEllVHB1RjRUN1ZvMnlUaGRWY0FaZ2QxV2Z1bW45SzJ4ZmZDTw?oc=5"
+        },
+        {
+          "name": "https://ascendants.in/",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNM0pORnAyWFVzUGlNM3padUFmLVpscXJob1RrUW4tRm9PN252SDZsb2lpSHBFdkMzTWxrZDlLOWpQempQMm5iQWdITDdlVjZsZ1lKSk9rWDQwTlI1eTdjUEhDaWEyM0dEUFQxSUVRNHI4SmVVaFV1T3NOdmRlN1pqM3NpTmxwcXBlS1VjWFFEWkRFb3dxWDhLb2pzdmp2ZGJ2LVFEMVZtUVRldw?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "b86a3250aa",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Open-source mobile bimanual robot MABEL costs US$8.1k in parts",
+      "takeaway": "A US$8,100 open-source robot with two arms, two hands, a moving torso and neck can be teleoperated using Apple Vision Pro. It runs fully from human demonstration data to a trained robot controller on the same hardware.",
+      "deck": "The build includes a pitching torso, lift and 3-DOF neck that extend camera coverage and reach.",
+      "body": [
+        "MABEL is a new open-source robot that movers can buy parts for and build for about US$8,100. It has two arms, two dexterous hands, a neck and a torso that can pitch and lift, giving it 56 independent joints in total. That joint count is high for this price class, where commercial equivalents often cost many times more.",
+        "The design stresses reach and camera coverage. Fingertips can go from floor level up to 2.23 metres. A moving head and torso roughly triple the area the robot's cameras can see compared with a camera fixed to the torso. The arms and torso are back-drivable, meaning a human can push them and the robot will give way, which helps with safe contact during work.",
+        "The team also tested teleoperation, the method where a human wears a headset and the robot copies their movements. Using an Apple Vision Pro for head and hand tracking, MABEL streamed stereo video to the operator with 137 milliseconds of delay over its own Wi-Fi hotspot. The paper reports a full imitation-learning pipeline: collect demonstrations this way, train a policy, then run that policy on the robot using the same command interface."
+      ],
+      "why": "This is one of the cheapest open-source mobile bimanual platforms aimed at whole-body teleoperation, which could expand who can collect demonstration data for robot foundation models. The combination of a moving torso and head with three-times camera coverage points to richer egocentric video during data collection.",
+      "hard": "The system is presented in an eight-page preprint, so its long-term reliability, repair burden and performance on varied real tasks are still unproven outside the lab.",
+      "terms": [
+        {
+          "meaning": "A teleoperation method where a person wears a headset and the robot copies their head and hand movements without handheld controllers.",
+          "term": "Vision Pro teleoperation"
+        },
+        {
+          "meaning": "A robot with two arms, designed to use both hands together for tasks that need two limbs.",
+          "term": "Bimanual robot"
+        },
+        {
+          "meaning": "A training method where a robot learns a skill by watching many human demonstrations instead of being programmed step by step.",
+          "term": "Imitation learning"
+        },
+        {
+          "meaning": "Joints that can be moved by hand because their motors yield to outside force, which makes contact with people or objects safer.",
+          "term": "Back-drivable"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Training data"
+        ],
+        "task": [
+          "Mobile manipulation",
+          "Teleoperation and imitation learning"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.04083"
+        }
+      ]
+    },
+    {
+      "id": "5765cef56d",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "New method transfers robot manipulation skills from human videos",
+      "takeaway": "Researchers built a two-stage method that pulls clean action intentions out of human videos and converts them into robot movements. It outperformed earlier approaches in simulation and real-world tests.",
+      "deck": "The approach separates clean action intent from messy scene details in human-centric videos.",
+      "body": [
+        "The paper introduces Action-Intent Transfer (AIT), a two-stage method. First, it extracts explicit action intents from manipulation videos and separates out the implicit action intent. Second, it aligns human and robot domains in that shared intent space, then decodes the intent into executable robot actions.",
+        "The authors say existing methods pull out latent action representations that are entangled with scene-specific noise, which weakens the knowledge being transferred. AIT instead uses a clean action representation shared across humans and robots.",
+        "The method was tested in simulation and in real-world environments. The authors report that AIT transfers human knowledge more effectively and consistently outperforms prior baselines."
+      ],
+      "why": "This matters because human-centric videos are far cheaper and more abundant than real-robot data. A method that reliably converts such video into robot actions could shift demand toward egocentric human video as a scalable training source for manipulation skills.",
+      "hard": "The paper is a preprint and has not yet been peer-reviewed. The real-world tests are limited in scale, and it is not yet clear how well the approach generalizes to unseen tasks or settings.",
+      "terms": [
+        {
+          "term": "Vision-Language-Action model",
+          "meaning": "An AI model that takes images and text instructions, then outputs the physical actions a robot should take."
+        },
+        {
+          "term": "latent action representation",
+          "meaning": "A compressed, hidden description of movement that a model learns, not directly readable by humans."
+        },
+        {
+          "term": "disentangle",
+          "meaning": "To separate a mixed signal into its independent parts, so one part can be used without the others."
+        },
+        {
+          "term": "simulation",
+          "meaning": "A computer-based copy of a physical environment where robots can practice tasks without real hardware."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Training data"
+        ],
+        "task": [
+          "Robot learning",
+          "Manipulation"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.04522"
+        }
+      ]
+    },
+    {
+      "id": "ebe6136890",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Startup Radar lists 60 young robotics firms across more than a dozen countries",
+      "takeaway": "A new report profiles 60 robotics startups founded in the last five years, covering their application, headcount and funding. Many submissions focus on software, simulation and AI models that aim to make robots more autonomous.",
+      "deck": "The free report shows the companies' applications, headcounts and total funding raised so far.",
+      "body": [
+        "The Robot Report has published its second annual Robotics Startup Radar, listing 60 companies working on commercial robotics and related technology. To qualify, firms had to be no more than five years old and involved in enabling technologies, new full systems, or new business models.",
+        "The report covers more than a dozen countries and sectors including manufacturing, warehousing, agriculture, defense and healthcare. For each startup, it notes the application, the number of employees, and the total funding raised to date. Several have already raised millions of dollars.",
+        "Submissions were especially strong in software, which the report links to growing investor interest in data, simulation and next-generation AI models. These tools promise to make robots more autonomous by helping them perceive, understand, act and improve. The publication plans to keep tracking funding news and outcomes for these firms."
+      ],
+      "why": "The heavy flow of software, simulation and data-focused startups confirms that autonomous robot behavior, more than new hardware, is the main commercial bottleneck. That signals rising demand for the kind of real-work video and training data this sector produces.",
+      "hard": "The report lists early-stage companies, but most are unproven and will not necessarily scale, exit or be acquired.",
+      "terms": [],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Manufacturing"
+        ],
+        "task": [
+          "Funding",
+          "Autonomous manipulation"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/robotics-startup-radar-2026/"
+        }
+      ]
+    },
+    {
+      "id": "d59434b130",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "RoboScope Kit speeds up robot policy evaluation in simulation",
+      "takeaway": "A new software kit makes testing robot control policies in simulation much faster without changing how success is measured. On one benchmark, it cut evaluation time from six hours to about one hour using a single graphics card.",
+      "deck": "The kit runs simulation workers and policy copies in separate pools and only renders images the policy actually reads.",
+      "body": [
+        "Researchers introduced RoboScope Kit to fix a common bottleneck. Simulation benchmarks, which are standard sets of virtual tasks for comparing robot policies, each come with their own evaluation software and data formats. Evaluating 500 RoboTwin Easy episodes with one model on one graphics card normally takes 359.7 minutes, or nearly six hours.",
+        "The kit wraps each robot policy once in a Python class and each benchmark once in an adapter, so scoring rules stay unchanged. It sizes two separate pools: one for simulator workers and one for policy copies. It also renders only the camera views that an action-chunk policy actually reads, the kind that predicts a sequence of future actions at once.",
+        "On the LIBERO-Long benchmark with one 48 GB Nvidia RTX 4090, the kit evaluated 500 episodes 4.45 times faster than the official evaluator, with equivalent success rates. Using CUDA MPS, which lets policy copies share the graphics card's processors, it reached 6.16 times faster. On RoboTwin Easy, four graphics cards finished the 500 episodes in 14.4 minutes, a 25.04 times speedup, with identical outcomes."
+      ],
+      "why": "Faster simulation evaluation matters for teams that test many robot policies or collect training data through simulation. It shortens the loop between changing a policy and seeing if it works, without changing the benchmarks themselves.",
+      "hard": "The speedups depend on having compatible benchmark adapters and graphics cards with enough memory; the current paper covers six benchmark families, so coverage may not extend to all evaluation setups.",
+      "terms": [
+        {
+          "term": "Robot policy",
+          "meaning": "The software that decides what actions a robot should take based on what it sees, like a driving rulebook for a robot."
+        },
+        {
+          "term": "Simulation benchmark",
+          "meaning": "A standard set of virtual tasks used to measure how well a robot policy performs before trying it on real hardware."
+        },
+        {
+          "term": "Action-chunk policy",
+          "meaning": "A policy that predicts a whole sequence of future actions at once, rather than one action at a time."
+        },
+        {
+          "term": "CUDA MPS",
+          "meaning": "A feature of Nvidia graphics cards that lets multiple programs use the card's processors at the same time more efficiently."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "AI infrastructure"
+        ],
+        "task": [
+          "Policy evaluation",
+          "Simulation benchmarking"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.03850"
+        }
+      ]
+    },
+    {
+      "id": "4474b13e4d",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Physical experience helps robots keep usable mental maps of changing spaces",
+      "takeaway": "Researchers showed that repeated real-world physical interaction lets a robot build a mental map that stays useful as its surroundings change. The result is fewer navigation errors and better predictions when familiar layouts shift.",
+      "deck": "A dynamic maze test shows old expectations do not have to override new evidence if the robot keeps learning from physical outcomes.",
+      "body": [
+        "A new study asks how repeated physical experience can make a robot's spatial world model more useful over time, not just more persistent. World models are internal maps or simulations that help embodied agents predict what will happen next and plan movement.",
+        "The researchers built a physics-grounded dynamic maze that separates recurring spatial changes from the continuous consequences of actions. Their system, called Cross-episode Spatial Change Memory, learns relations among environmental shifts while state-action-outcome experience refines predictions of motion.",
+        "In tests, structured experience reduced the need for future route correction and transferred to spatial transitions the robot had not seen during learning. The benefit disappeared when past changes held no information about future ones. Physical tests also showed that correct knowledge of a space's layout does not guarantee correct action prediction, but accumulated experience closes that gap within the modeled dynamics."
+      ],
+      "why": "This matters for robot training data because it suggests real, repeated physical interaction — not just stored egocentric video or static maps — is what lets a robot revise its world model when a worksite layout changes. For companies selling first-person video of warehouse or factory work, it points to the value of capturing repeated visits to the same changing environment.",
+      "hard": "The results come from a simulated dynamic maze, so it is still unproven how well the approach transfers to messy real-world industrial settings with varied lighting, clutter and human activity.",
+      "terms": [
+        {
+          "term": "World model",
+          "meaning": "An internal representation an AI agent builds to predict what will happen next in its environment."
+        },
+        {
+          "term": "Embodied agent",
+          "meaning": "An AI system that acts in a physical or simulated body, such as a robot."
+        },
+        {
+          "term": "Continual learning",
+          "meaning": "An AI approach where a system keeps learning from new experience instead of being trained once and then frozen."
+        },
+        {
+          "term": "State-action-outcome",
+          "meaning": "A record of what situation the agent was in, what it did, and what happened as a result."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Embodied AI"
+        ],
+        "task": [
+          "Navigation",
+          "Continual learning"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.04016"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "Your Beat",
+      "headline": "RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On",
+      "url": "https://arxiv.org/abs/2611.05163",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Your Beat",
+      "headline": "PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data",
+      "url": "https://arxiv.org/abs/2611.05320",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Your Beat",
+      "headline": "GUILD: Guided Iterative Data Collection for Imitation Learning",
+      "url": "https://arxiv.org/abs/2611.05368",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "The Money",
+      "headline": "China’s Embodied AI Funding Rose 5x to $13B, $40M a Deal",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZVRhTHRmMEtDc0g1OWVsRUdVaVpjbVk1ZnRuVzR0d1FvNG5fVTdYZTJEWmtGVEtwdUFPSHMxVzlWeGlJSVE1UGtjVUFHenpEVVBLUWV4dWNQZWNLZU5XSUJULXZSZmNnSnRlYUstRU1hN3dxbWdHNXlUMTdFWDlTeVVCOXpkTGc?oc=5",
+      "source": "FourWeekMBA"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "FEIJOA: Task-Driven Grounding and Execution for Mobile Manipulation",
+      "url": "https://arxiv.org/abs/2611.04080",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "RAIPAL: A Powerful and Agile Humanoid Arm for Human Tasks",
+      "url": "https://arxiv.org/abs/2611.04334",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "RAFT: Reasoning-Aligned Fine-Tuning Improves Robustness of VLA Post-Training",
+      "url": "https://arxiv.org/abs/2611.04368",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "PrimeSim: A Generalist World Model Simulator from Large-Scale Cross-Embodiment Demonstrations",
+      "url": "https://arxiv.org/abs/2611.04870",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "The Money",
+      "headline": "China Robot Funding Slows to $1.6 Billion as Shakeout Fears Grow",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdVl5ajFZZi1EeGhzbS1oVklzMVF4STNiTThRRkpPN0loaFdWWVpRTm5MNEJNTm5XZjVPSW9TYktkM3VORUNaUnB4Q3g5ZGZwYmdSOTVVQWg3T3JRVTVfZDlYb290NWdSZWlGMVpVbVlqdEhwWjdET2hCYk1yMmpzMWR4N3hLTk50R1VHdVBxZmQ3cFNyeXNiQlY5blZjYWtvZGdZdERISHVRVnkxYjBKLXJEVDI?oc=5",
+      "source": "Bloomberg.com"
+    },
+    {
+      "kicker": "The Money",
+      "headline": "China robotics funding slows as investment pace cools",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQX0NydXh1Y2pMSmNvSXE2WXc2N3Mtb2pRY3k3V0RSSXRaZHlJdE84OUd2aHFPZ3NfeGQ3UnpOVjB5MEMxaXBXcGhSUzdlai03WkNCRDJtcEQ0X0JHeVNJWVRSQTkzMmttYVgwT2ZyTllsY09HWlBpd3gwR2VOTnNpZTlaQml4MFdNRktKeFFfUTg2QQ?oc=5",
+      "source": "Traders Union"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 5,
+        "sector": "ai",
+        "company": "Simile",
+        "what": "Digital twins of human behavior",
+        "round": "Funding",
+        "amount_usd_m": 2000,
+        "amount_text": "$2B",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNSDFqVmt2dkNoZF9tUTdSMWFieWRrQUlya0hZTzVvOEdnamhaMWRBZVNldjFScFlmRHFrRWplYmxRNDRPVjFBQnR1V3hyY3dFOXIwUWQ2V0F3YXRuQmJkeGZfZUhVZFBBa1pFbl9waE9vTnB6TFZxeWwtQ1Bvd2syendjMVZqMzdta0JiUVhFeWctS2NhaDRIU1kyZUlVVjhScFctU01qZHpiZWJhT1duNUdESDQ2OWRnZWZ4N2VWUUxkMTB3VDUtOC0tWFBybWJUa0x2TnZWaFFWc3pwazNv0gHfAUFVX3lxTE1IMWpWa3Z2Q2hkX21RN1IxYWJ5ZGtBSXJrSFlPNW84R2dqaFoxZEFlU2V2MVJwWWZEcWtFamVibFE0NE9WMUFCdHVXeHJjd0U5cjBRZDZXQXdhdG5CYmR4Zl9lSFVkUEFrWkVuX3BoT29OcHpMVnF5bC1DUG93azJ6d2MxVmozN21rQmJRWEV5Zy1LY2FoNEhTWTJlSVVWOFJwVy1TTWpkemJlYmFPV241R0RINDY5ZGdlZng3ZVZRTGQxMHdUNS04LS1YUHJtYlRrTHZOdlZoUVZzenBrM28?oc=5",
+        "source": "Indian Startup News"
+      },
+      {
+        "i": 14,
+        "sector": "ai",
+        "company": "Nooks",
+        "what": "AI sales startup",
+        "round": "Funding",
+        "amount_usd_m": 500,
+        "amount_text": "$500M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/sentra-150m-capital-one-ventures-ai-data-security/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 20,
+        "sector": "ai",
+        "company": "Applied Compute",
+        "what": "AI model training platform",
+        "round": "Funding",
+        "amount_usd_m": 350,
+        "amount_text": "$350M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://www.alleywatch.com/2026/11/the-alleywatch-startup-daily-funding-report-11-4-2026/",
+        "source": "AlleyWatch"
+      },
+      {
+        "i": 8,
+        "sector": "ai",
+        "company": "Sentra",
+        "what": "Data security for AI agents",
+        "round": "Funding",
+        "amount_usd_m": 150,
+        "amount_text": "$150M",
+        "lead": "Capital One Ventures",
+        "india": false,
+        "url": "https://techfundingnews.com/fal-1-3b-series-f-16b-valuation-ai-inference/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 11,
+        "sector": "ai",
+        "company": "Traversal",
+        "what": "Autonomous site reliability engineering",
+        "round": "Funding",
+        "amount_usd_m": 120,
+        "amount_text": "$120M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNejZNLWYxRVRpVTVUenBXZUtDaU5mVUE2bElnQ1NYZkUzM0EyNDhWbFpDRHdYdnMtMzdyLXhIUEdFLVZFWGJjVFdYd2Zpa0xwN0lfWW5reE1iZzBNazRqNE5BUThNNmdnUjdCZmVyanVjOTQtdENaT2NaTi1SbHFpX2R4XzdMWFFMLWE4eUlRTlJtWUR3V25MSQ?oc=5",
+        "source": "news.lavx.hu"
+      },
+      {
+        "i": 9,
+        "sector": "ai",
+        "company": "Pliant",
+        "what": "B2B payments for AI agents",
+        "round": "Funding",
+        "amount_usd_m": 80,
+        "amount_text": "$80M",
+        "lead": "Seaya Nova and Speedinvest",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPYmxHQVcyc0hnOWo4Nm1iZEhhMF9fd05KSC1Kd0I2QTRiUnJIdnN3aUdnd2c1VFY5S2xMTDRtT0dYcnlkRU9vLWoyQldMSGVNakN5dmRCX2pkWUJ3bDE3aDd5WENJN1Z1MGpwQ0Nvdk5rYUJ6MXhqNUNyUV9paGlmOGdxSUlxbzFrQWwtalp5MWQ3OXNHT3FFRm9pRFVLSGUyaDVMYnJqTFkyQVAySXpON0VTVDN1Vmh0SDlQUVlOVXd1X0lZNTY2bzBaZnFHS0gxM2ZJ?oc=5",
+        "source": "DC Velocity"
+      },
+      {
+        "i": 12,
+        "sector": "ai",
+        "company": "Boston AI startup (unnamed)",
+        "what": "AI platform with client control",
+        "round": "Funding",
+        "amount_usd_m": 43,
+        "amount_text": "$43M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 10,
+        "sector": "ai",
+        "company": "Supa",
+        "what": "AI roll-up of block management",
+        "round": "Funding",
+        "amount_usd_m": 26.4,
+        "amount_text": "£21M ($26.4M)",
+        "lead": "2150 and OpenOcean",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOa2I0d1o0dnU3X3N2SXRTc01tbnVPcWF1aF9XS0MyMDgydklFTU51QUU4Qm10dWtGWHZsZE5Ha0hmYl9IUHB4MzRDX2lCRWxhbkNPSFgweEFUdWpjTDV0aHdBaF9VR1U2aFNtR1U4WEhJTGE3WVlkWlVxSWpGTkVMblo1aS1xYUJBNGducnRMRUE0SG1tdENWbFU4aEN0Vl9TNEhkaXppUjF6WEdUaTZwbWJFV2t1dGNpUmpKaktiaWVRNFM1UEVVN0hocUxralVHcGc0UjVXeENmWWdiZFhlbDdoOEo4UFdX?oc=5",
+        "source": "Gasgoo"
+      },
+      {
+        "i": 13,
+        "sector": "ai",
+        "company": "Tairex",
+        "what": "AI hospital system",
+        "round": "Angel",
+        "amount_usd_m": 15,
+        "amount_text": "~$15M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://openai.com/index/openai-to-acquire-pierre",
+        "source": "OpenAI"
+      },
+      {
+        "i": 1,
+        "sector": "robotics",
+        "company": "Peppermint Robotics",
+        "what": "Industrial and cleaning robotics",
+        "round": "Pre-Series B",
+        "amount_usd_m": 10.5,
+        "amount_text": "₹100 Cr ($10.5M)",
+        "lead": "pi Ventures and Crane Venture Partners",
+        "india": true,
+        "url": "https://inc42.com/buzz/peppermint-robotics-bags-%e2%82%b9100-cr-to-scale-its-industrial-robotics-bet/",
+        "source": "Inc42"
+      },
+      {
+        "i": 4,
+        "sector": "robotics",
+        "company": "ManuPrax Robotics",
+        "what": "Robotics company, two funding rounds",
+        "round": "Funding",
+        "amount_usd_m": 10,
+        "amount_text": "~$10M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNbE80RlAwR0FQbXVVWUgtb1NYdzR5UjlhcVpzTmtpdTVnV2VmelVLcVh3Ql9SSmRuc0lPUmxxOXNGWjBvYk1MdXdfZzRhR0Q0QWRlWjVUUGZXTktiekRjc3ZrRGpqWlA4dkpBck40RkdEMEVVUTVYWm1HQ0VleUt4U3AtWmdiTEFLRjF4Y2lPR0pKc0ZxTXZtdzlIMDFjdHZpcmVoYlQtcHM0NGZEamNiSW9XNTBZZDhEb1BSaTZPRWVmNGhjWmEzQ0tRNVhCTF9QNHB6YXlTR0JFaFVKQzRfT21pc9IB6AFBVV95cUxOZlVRZTZiak8zSjRLTi1GanhwUGZ4S2pNOW0zQ2JQS0dYb3ExQ0l1M0lYTDhVeHpUdGs1dmNYY2FLNktHY3c4WXBiX3VoakZ6d1Q2QS1EZlFjZGNHMkxLekdiX2U0eE5kX3JjY2dWQXNJS3kyM0lNcnU5NzRDVGN0ZjVEUGVfYUNldkZEcUxsMGtRcmhITWp6LXdFdnpySGdmUzNkdFNkdjNVZUt6bWRtRm5oOWltTkdWSEpxWW41NXRaQmJNWENKaXlxLU1rVXRNQVFjVmJSSzdmUkRLcnd4X1ZYOVB6YVoz?oc=5",
+        "source": "The Economic Times"
+      },
+      {
+        "i": 18,
+        "sector": "ai",
+        "company": "Osavul",
+        "what": "AI information security analytics",
+        "round": "Funding",
+        "amount_usd_m": 9.2,
+        "amount_text": "€8.5M ($9.2M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/pliant-80m-series-c-ai-agent-payments/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 2,
+        "sector": "robotics",
+        "company": "Aformic",
+        "what": "Autonomous industrial robotics",
+        "round": "Seed",
+        "amount_usd_m": 6.95,
+        "amount_text": "$6.95M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbXZJNG1iVDAzU0Npd3o5eDg0RjJKb3J2bU96LTZRQWdMdC15WmJlV1haYjAwRmFnbTAwTnhUdzczNkJQNE9GZWtHdUpjUlJnTGtKa1NrSnR6N1R1bWhjWVNIeFdsd08tVWkzVDRJRkNhRmt1MTFYUTZtLUpxRDFpVldPb2E4WklpZ3NURHFJV1YxUQ?oc=5",
+        "source": "Unite.AI"
+      },
+      {
+        "i": 0,
+        "sector": "robotics",
+        "company": "Ottonomy",
+        "what": "AI-powered autonomous delivery robots",
+        "round": "Post-Seed",
+        "amount_usd_m": 4.2,
+        "amount_text": "₹40.6 Cr ($4.2M)",
+        "lead": "Enrission India Capital (participating)",
+        "india": true,
+        "url": "https://entrackr.com/snippets/enrission-india-capital-participates-in-ottonomys-rs-406-cr-funding-round-12782975",
+        "source": "Entrackr"
+      },
+      {
+        "i": 22,
+        "sector": "ai",
+        "company": "Granter",
+        "what": "AI startup, European expansion",
+        "round": "Funding",
+        "amount_usd_m": 1.7,
+        "amount_text": "€1.6M ($1.7M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UZm9zdE5keEZmU2N1N0JhTjk2NEhmRlhnMWpMMFNFVUhsdUhQQjJMQ2V6R3RRSzBoVVZ0TFdvclhpSXZGdjYwRnNQSjhSRG45Mk5QdkgxbGdoVUpxSGdMN18zeXpMQTRFSFJzUkJqVjBtcjNfYWJGZl9TYkMyMkk?oc=5",
+        "source": "The Business Journals"
+      },
+      {
+        "i": 17,
+        "sector": "ai",
+        "company": "Nums AI",
+        "what": "Tabular data AI",
+        "round": "Pre-Seed",
+        "amount_usd_m": 1.5,
+        "amount_text": "$1.5M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.crunchbase.com/venture/startup-billionaire-founders-ai-defense-anthropic-spcx/",
+        "source": "Crunchbase News"
+      },
+      {
+        "i": 19,
+        "sector": "ai",
+        "company": "Juritas",
+        "what": "Contract intelligence technology",
+        "round": "Funding",
+        "amount_usd_m": 1.5,
+        "amount_text": "€1.4M ($1.5M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/supa-21m-funding-ai-block-management/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 6,
+        "sector": "ai",
+        "company": "Conductor",
+        "what": "AI coding agent orchestration",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Meta",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNRkREZGQyb3VMNzhDRFhzdUMxazVjVGxRRVFVcnlnR21LSG5lWV9ZVTdGT0tENE5KVnNQWUlzMDQ5TmFSb2pLSEhyT0wzajluRlNPZWhSTVktd2ktWm4zNlVOZU83cHdMeFpaZzNTTE03Qm45MXlVZ2drazBPcUo1VTlSXzl5amZQUlRHeDVreEphb3JqYUdYOWU5LXh5YkN5Q1E5Ulp0RFc0VVJWN0FDSF9tQWdHUm9LOW9MOTJDRF8zUEcyV1cw?oc=5",
+        "source": "NewsBytes"
+      },
+      {
+        "i": 7,
+        "sector": "ai",
+        "company": "Pierre Computer Company",
+        "what": "Developer code-review tools",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "OpenAI",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMml3enNZRWFUY3I5WUhvYWw0REkxY3cyeEg4QmJ4UVlXTlotMHRYS1BtczRrY0M1elpqeTc1ZFJxNFlHNmlXTXlzX2xpellsZXdRWnoyNzloRl8yY2dyZWE0RXN2T0ZTWGEtWXNmdHpkNGlMc21BX2JlcTJyUnRoZ3ptMnRwdjVI0gGOAUFVX3lxTE4yTWRVVGRDQl9ZSWJRV2l6VjBYRXF0TWxzMHFlWjJCeHhsOUFKdkxXRTZlbDhWUS12V2ZXWGN0cGFaNzIxa3hiOVpDMFk3VmRneGNXZDdvcFlSSnlDc1VRdDU5ampST1FhbGNmUUtXLU0yU04zQWxlaHpKVmtZWW5NekZmY21kSWNfcXNyS2c?oc=5",
+        "source": "AeroTime"
+      },
+      {
+        "i": 15,
+        "sector": "ai",
+        "company": "VisiQuate",
+        "what": "Revenue cycle AI workflow execution",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "VisiQuate",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPYXoxT3FYWjJHMDlHckQ0b0d4Z2ZYUnpRUjhzcFFLalFuYXdaV0hwLWJYOWh3U0FTTVJkNXFOcWpNSkRfc1lkT0preHVMN2JkdEJVUDJoaVhVV1lGdUNjdkNqY2xGeHBob1dCXzl2azhKX2U4UmtxejVuZTl1aUhGaHRYTTh1bGFaWVRPWTNZckdiTXhfSUVSb3hxWXhoaVBGdjRGT1hjTEprZUZPbmUxUmFZMlFHX3IzQmIyVg?oc=5",
+        "source": "WSJ"
+      },
+      {
+        "i": 21,
+        "sector": "ai",
+        "company": "Prevail",
+        "what": "Enterprise AI",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Appliers.ai",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQbU1BNDN2UEFScGVQX1R6RFAxcldNRVE0ampGcy16S2R0RVBNLWhjUU43VXFhVmNKUlVQWkJDd0N6Z0MxOC1tV2hxYnNOdG1IZzdyQ2xmV0JLNXNDZTJIRjAwOV9BeGp6X2lCeExqNzlnSGZvZ2gyTTdNN091N3BXRlBVSzBfNVdMTFIwc05VUHBBRjBYLU9NeUtuOEhlNDcwRGJ2TXVQZzBmUlFNUlg5Ymp3QjJndEM2N2FrVFpVZTQ2VEZLY0VjLXE0WjRDdw?oc=5",
+        "source": "SiliconANGLE"
+      },
+      {
+        "i": 23,
+        "sector": "ai",
+        "company": "Thermit",
+        "what": "AI commerce content agent",
+        "round": "Seed",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Mashup Ventures",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVklsWHZUTU9VbGRMajhwUDMyQU5scmJyV3JzTFExdXdjN3BqeUdSSWh3X1FJaTFwb3dqYUpFMGhENXh0NDRud2t2YkQyaWZyMmpVNHpwN0Q1TVBmaUV0S2UyaW44YjRQSGlZTDVvSTZSUmJySy1zaWhJc2dfYnNzTWpaVi1sVkU4eXdsTU5iZXEwaVJldWR6aGt6VFBXM1RhVDdRSQ?oc=5",
+        "source": "Dealroom"
+      }
+    ],
+    "totalUsdM": 3330
+  },
+  "playground": [
+    {
+      "headline": "Question LLM suspects who lie in this detective game",
+      "body": "Uncracked City is a detective game where you search real neighborhoods, interrogate AI suspects by typing or speaking, and catch them in lies. Suspects answer in their own voices, and some of them lie. Each case shows how many investigators have solved it, and most remain unsolved.",
+      "why": "It turns language models into unreliable witnesses, testing whether you can spot a lie a machine wrote.",
+      "maker": "Uncracked City",
+      "url": "https://uncracked.city",
+      "source": "Hacker News"
+    },
+    {
+      "headline": "A toy camera runs DOOM after a firmware jailbreak",
+      "body": "Maker Spode breached the firmware on a dirt cheap toy camera and got it running DOOM. The camera's easily updatable firmware let them dump memory into photo EXIF data, and a trick kept only the most-used DOOM code in RAM. A custom synthesizer handles the music, and after some control quirks it plays.",
+      "why": "It shows cheap camera hardware is powerful enough for a 1993 game once you open the firmware.",
+      "maker": "Spode",
+      "url": "https://hackaday.com/2026/11/04/its-doom-on-a-toy-camera/",
+      "source": "Hackaday"
+    },
+    {
+      "headline": "ChatGPT can now turn prompts or photos into GIFs",
+      "body": "ChatGPT's new Images 2.6 model can generate animated GIFs from a prompt or an uploaded photo. You can change playback speed, edit individual frames, and share the result. It rolls out across ChatGPT and Codex on web, desktop, and mobile.",
+      "why": "One-step GIF generation makes simple animation as easy as asking a chatbot.",
+      "maker": "OpenAI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6",
+      "source": "The Verge AI"
+    },
+    {
+      "headline": "Robot swarms dance differently than humans expect",
+      "body": "Researchers ran the same decentralized swarm code on tabletop, aerial, and human-scale mobile manipulator robots during live performances. Physical form changed motion timing by more than a factor of three and reshaped trajectories. Audience surveys showed that meaning and comfort did not track technical success, with humans reading purpose and threat differently depending on the robot body.",
+      "why": "It reveals that making robots physically work is not enough; swarms must be built with how humans will read their motion in mind.",
+      "maker": "Abdalwhab Bakheet Mohamed Abdalwhab and collaborators",
+      "url": "https://arxiv.org/abs/2611.05244",
+      "source": "arXiv cs.RO"
+    }
+  ],
+  "think": {
+    "collision": {
+      "a": {
+        "kind": "story",
+        "n": 10,
+        "label": "Robots revise mental maps through repeated physical visits"
+      },
+      "b": {
+        "kind": "story",
+        "n": 2,
+        "label": "Ottonomy raises Rs 40.6 crore for delivery robots"
+      },
+      "headline": "Repeat-visit egocentric dataset of Indian hospital corridors, recorded weekly as layouts, crowds and carts change, sold to indoor delivery robot makers",
+      "body": "Ottonomy and similar firms move supplies through hospitals, where beds, trolleys and queues shift every day. The maze study suggests robots keep useful maps only when they see the same space change over time, much like a nurse who learns which corridor is blocked at shift change. A vendor crew could wear chest cameras on the same delivery routes in a few partner hospitals each week, logging each layout change, detour and handoff with timestamps and floor-plan anchors.",
+      "who_pays": "Indoor delivery and hospital logistics robot companies such as Ottonomy, plus hospital chains planning automation, would pay for route-level licences.",
+      "data_needed": "Stereo egocentric video of the same routes recorded repeatedly over months, with floor plans, labels for each change (blocked door, moved bed, crowd) and notes on how the walker rerouted.",
+      "why_fail": "Hospitals may refuse repeated filming because of patient privacy, and blurring faces and screens at scale could cost more than buyers will pay."
+    },
+    "contrarian": {
+      "story_n": 3,
+      "consensus": "Huge amounts of human video and glove data will steadily replace expensive robot demonstrations, so cheap human-recorded data wins.",
+      "against": [
+        "A 75 percent cut in robot demonstrations still leaves a quarter, and that last share of robot-specific data may be the hardest, costliest part, so its price could rise rather than fall.",
+        "The 2.2 million hours came largely from existing internet and lab video, which suggests raw volume becomes a commodity; buyers may pay only for rare, well-labelled or glove-synced data, not ordinary footage.",
+        "Methods like RoboTryOn and PyRUA-DataFarm (Briefs 1 and 2) generate or teleoperate synthetic demonstrations, so human video could be squeezed from the other side by machine-made data."
+      ],
+      "bets_otherwise": "Teleoperation-heavy builders such as the MABEL open-source team, simulation players like PrimeSim's authors, and labs that run large robot-arm data farms are betting that robot-collected or synthetic data remains the core ingredient.",
+      "settle_it": "A public test where models trained on equal budgets of human video, robot teleoperation and synthetic data are scored on the same unseen real-world tasks would show which source buys the most success per dollar."
+    }
+  },
+  "cost": {
+    "usd": 0.0844,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 5,
+        "inTokens": 30345,
+        "outTokens": 9143,
+        "cost": 0.0076,
+        "models": {
+          "anthropic/claude-haiku-5.5": 5
+        }
+      },
+      "write": {
+        "calls": 10,
+        "inTokens": 14478,
+        "outTokens": 5774,
+        "cost": 0.0379,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 10
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 3691,
+        "outTokens": 2105,
+        "cost": 0.0014,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 2329,
+        "outTokens": 544,
+        "cost": 0.0028,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "think": {
+        "calls": 1,
+        "inTokens": 4105,
+        "outTokens": 913,
+        "cost": 0.0347,
+        "models": {
+          "anthropic/claude-opus-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 280,
+    "unique": 214,
+    "feeds": 29,
+    "failedFeeds": [
+      "Import AI",
+      "r/robotics",
+      "r/LocalLLaMA"
+    ]
+  },
+  "generatedAt": "2026-11-05T00:16:21.539Z"
+}
