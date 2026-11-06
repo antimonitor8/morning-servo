@@ -1,0 +1,1045 @@
+{
+  "date": "2026-11-06",
+  "weekday": "Friday",
+  "sunday": false,
+  "number": 9,
+  "paper": "The Morning Servo",
+  "readMinutes": 13,
+  "stories": [
+    {
+      "id": "4d6dbabd71",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "China blocks SoftBank's $5.4B ABB Robotics purchase",
+      "takeaway": "Chinese regulators stopped SoftBank from buying ABB's robotics division. They worry robot data could leave China and be used to train AI models elsewhere.",
+      "deck": "Regulators cited concerns about robot data being transferred overseas and used to train AI models.",
+      "body": [
+        "Chinese authorities have prohibited the $5.375 billion sale of ABB Robotics to Japan's SoftBank Group. The Office of the Working Mechanism for Foreign Investment Security Review made the decision. ABB confirmed the block and said the two companies remain in dialogue.",
+        "China is a major market for ABB Robotics. Orders from China reached $928,000 in fiscal 2025, up from $662,000 in 2024. About 90% of the robots ABB sells to Chinese customers are built locally in Shanghai, where the company employs thousands of people.",
+        "This is the second time this year China has blocked an international tech deal on national security grounds. In April it stopped Meta from buying the AI startup Manus for $2 billion. The US is also tightening rules on foreign-made robots, including possible tariffs and an FCC ban on new foreign humanoids and quadrupeds."
+      ],
+      "why": "It signals that robot data is now treated as a strategic asset by governments, not just a commercial one. For anyone selling or buying robot training data, cross-border data restrictions will increasingly shape which deals and data pipelines are allowed.",
+      "hard": "The block may still be resolved through negotiation, and it is unclear whether the deal will proceed in other countries or fall apart entirely.",
+      "terms": [],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Industrial automation"
+        ],
+        "task": [
+          "Cross-border data regulation",
+          "Industrial robotics M&A"
+        ]
+      },
+      "score": 9,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/chinese-regulators-block-softbanks-5-4b-acquisition-of-abb-robotics/"
+        }
+      ]
+    },
+    {
+      "id": "bc24f20800",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "New method lets robots learn manipulation from mostly unlabeled video",
+      "takeaway": "A new training method lets robots learn manipulation skills mostly from plain video, with only a few examples that include action labels. It outperforms earlier video-based approaches in simulated and real robot tasks.",
+      "deck": "The system needs only a handful of action-labeled robot demonstrations, while earlier methods struggled with this type of data.",
+      "body": [
+        "Robot imitation learning usually needs demonstrations that record both what the robot sees and the exact actions it takes. That action-labeled data is scarce, while plain video of people doing tasks is much easier to collect.",
+        "The new method, called ELA, learns a hidden action representation from video and trains it together with the robot's decision-making policy and an action decoder. The decoder turns the hidden representation into real robot movements. This lets the system use large amounts of unlabeled video and just a few labeled demonstrations.",
+        "In simulated and real-world manipulation tasks, ELA consistently beat earlier latent-action methods. It works with existing imitation learning systems through a small action decoder with about 4 million parameters, without changing the main policy."
+      ],
+      "why": "Video without action labels is much cheaper and easier to gather at scale, including egocentric footage of people working. A method that needs only a few labeled demonstrations could reduce the cost of producing training data for manipulation skills.",
+      "hard": "The paper is a preprint and has not yet been peer-reviewed, and the reported gains are only shown on a limited set of manipulation tasks.",
+      "terms": [
+        {
+          "term": "Imitation learning",
+          "meaning": "A way to train robots by showing them demonstrations of a task instead of programming every movement."
+        },
+        {
+          "term": "Action-labeled data",
+          "meaning": "Demonstration data that records both what the robot saw and the exact commands or movements it made."
+        },
+        {
+          "term": "Latent action",
+          "meaning": "A compressed, hidden representation of what a robot should do, learned from data rather than written by hand."
+        },
+        {
+          "term": "Policy",
+          "meaning": "The part of a robot system that decides what action to take next based on what it observes."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "AI"
+        ],
+        "task": [
+          "Robot manipulation",
+          "Imitation learning"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.05571"
+        }
+      ]
+    },
+    {
+      "id": "9316a2ac71",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Agility Robotics lists on Nasdaq after closing SPAC merger",
+      "takeaway": "Agility Robotics, which makes the Digit warehouse robot, is now a publicly traded company. The listing raised about $465 million, but the company still loses money and most of its current revenue comes from related parties.",
+      "deck": "The Oregon company is the first pure-play legged humanoid maker to go public in the U.S.",
+      "body": [
+        "Agility Robotics began trading on the Nasdaq Stock Market this morning under the ticker AGLT. The listing followed a merger with Churchill Capital Corp XI, a special-purpose acquisition company, or SPAC, which is a shell firm that takes private companies public. Agility's stock opened at $11.26 per share, above the $10 price used in the deal, and sat at $10.30 by press time.",
+        "The listing brought in about $465 million in gross proceeds before expenses. That includes roughly $164 million from Churchill's trust account after shareholders pulled some money out, $201 million from a private investment led by Foxconn, and a $100 million funding round closed after the SPAC was announced. Agility had originally projected more than $620 million if no shareholders redeemed.",
+        "Agility reported $1.78 million in revenue in 2025, up from $310,000 in 2024, with a net loss of $138.1 million. About 64% of that revenue came from related parties. The company says Digit has logged more than 65,000 hours of operation across nine customer sites, and it has more than $300 million in committed orders for its next-generation Digit 5, with deliveries expected in 2027."
+      ],
+      "why": "This is a rare public listing for a humanoid robot maker, and the financial details show how early-stage the commercial market still is: tiny revenue, heavy losses, and orders that depend on hitting future milestones.",
+      "hard": "The company's current revenue is small and mostly from related parties, so the commercial demand for Digit outside partner deals is still unproven.",
+      "terms": [
+        {
+          "term": "SPAC",
+          "meaning": "A special-purpose acquisition company: a shell firm that raises money by listing first, then merges with a private company to take it public."
+        },
+        {
+          "term": "Humanoid",
+          "meaning": "A robot shaped roughly like a person, usually with two legs, two arms, and a head."
+        },
+        {
+          "term": "PIPE",
+          "meaning": "A private investment in public equity: when selected investors buy shares directly in a company as part of a listing deal."
+        },
+        {
+          "term": "Pure-play",
+          "meaning": "A company focused on one line of business, in this case legged humanoid robots rather than a mix of robot types."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Humanoid robots"
+        ],
+        "task": [
+          "Warehouse automation",
+          "Public listing"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/agility-robotics-begins-trading-on-nasdaq/"
+        }
+      ]
+    },
+    {
+      "id": "bc4414365b",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Humanoid control method adds force to motion tracking for pushing and lifting",
+      "takeaway": "Researchers gave a humanoid robot a way to copy human movements while also commanding how hard to push or pull. The robot then dragged, pushed, lifted and kicked boxes, including 20 kg ones, and adjusted when loads changed mid-task.",
+      "deck": "The robot pushed and kicked 20 kg boxes where a version without force sensing failed.",
+      "body": [
+        "A team from the University of California, Berkeley and other institutions built Ctrl-F, a control method for humanoid robots that combines motion tracking with an explicit force command. The idea is that mimicking a person's movement tells the robot where its body should be, but not how hard it should act on the world.",
+        "Ctrl-F uses two levels. A low-level controller tracks a reference motion while applying a commanded 3-D force at designated contact points such as hands or feet. A high-level planner issues that force command online, using information about the object's state and the robot's own body position. The force command can change as the task changes.",
+        "In hardware tests, the robot used hand-based dragging, pushing and lifting, plus foot-based kicking. It manipulated boxes weighing up to 20 kg in pushing and kicking tasks where a force-blind baseline failed, and it adapted to extra loads introduced mid-task. Work was done in simulation and on real hardware."
+      ],
+      "why": "Training-data companies that collect egocentric video may need to record not just the position of hands and tools but also the forces a person applies. This kind of force-aware control could guide what new data types robot buyers request next.",
+      "hard": "The paper does not say whether the method generalizes to tasks beyond the specific box-pushing, kicking and lifting demonstrations shown.",
+      "terms": [
+        {
+          "term": "Motion tracking",
+          "meaning": "A way for a robot to copy recorded human movements, joint by joint, like following a moving skeleton."
+        },
+        {
+          "term": "Force command",
+          "meaning": "A precise instruction for how hard the robot should press against something at a specific body part."
+        },
+        {
+          "term": "Hierarchical framework",
+          "meaning": "A control setup with two levels: a high-level planner picks the force, and a low-level controller carries out the motion and that force."
+        },
+        {
+          "term": "Loco-manipulation",
+          "meaning": "Doing physical work with the arms or legs while the robot body is also moving around, such as pushing while walking."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Industrial automation"
+        ],
+        "task": [
+          "Humanoid control",
+          "Force-aware manipulation"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.05507"
+        }
+      ]
+    },
+    {
+      "id": "7403c0ac35",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "New MESA benchmark tests how well robot policies handle unfamiliar situations",
+      "takeaway": "Researchers built an evaluation suite that measures different types of generalization in robot manipulation. The best of seven tested models succeeded only about half the time, and scores aligned with performance in a separate robot arena.",
+      "deck": "The strongest of seven baseline methods reached only 52 percent success on single-arm tasks and 49 percent on two-arm tasks.",
+      "body": [
+        "Researchers introduced MESA, an evaluation framework for measuring how well robot policies generalize. Existing benchmarks tend to be either too narrow, too broad, or dependent on messy open-source training data. MESA instead isolates five test areas: performance on familiar setups, plus four kinds of generalization: spatial configuration, object instance, object category, and subtask composition.",
+        "To fill the benchmark with tasks and demonstrations at scale, the team built MESA-Gen, a generation pipeline based on MimicGen, an existing method for creating robot demonstration data. They released two suites: MESA for single-arm robots and BiMESA, the first large-scale benchmark for bimanual, or two-armed, generalization.",
+        "They tested seven baselines spanning diffusion policies, vision-language-model approaches, and pretrained vision-language-action models. The best achieved 52 percent on MESA and 49 percent on BiMESA. MESA rankings were broadly consistent with RoboArena scores, suggesting the benchmark reflects method differences that matter outside simulation."
+      ],
+      "why": "A benchmark that separates different kinds of generalization helps identify exactly where a robot model fails, such as handling new object categories versus new spatial arrangements. This points toward which training data gaps need filling, including bimanual manipulation, an area with little standardized evaluation.",
+      "hard": "Scores near 50 percent for the best model show the benchmark is not solved, but it is unclear whether improvements on MESA will carry over to real-world commercial and industrial tasks.",
+      "terms": [
+        {
+          "term": "Policy",
+          "meaning": "The learned decision-making part of a robot system that chooses what action to take next."
+        },
+        {
+          "term": "Foundation model",
+          "meaning": "A large AI model trained on broad data that can be adapted to many different tasks."
+        },
+        {
+          "term": "Diffusion policy",
+          "meaning": "A robot control method that generates actions by gradually refining random noise into a precise movement."
+        },
+        {
+          "term": "Vision-language-action model (VLA)",
+          "meaning": "An AI model that takes images and text instructions and directly outputs robot actions."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "AI research"
+        ],
+        "task": [
+          "Robot evaluation",
+          "Bimanual manipulation"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.05567"
+        }
+      ]
+    },
+    {
+      "id": "6c6b5079bb",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "New model predicts robot-caused object motion more accurately in video",
+      "takeaway": "A new video world model called ReactWorld predicts how objects will respond when a robot touches or moves them. It scored 77.51 on a standard benchmark, about 3.3 points higher than the previous best model. This points to better simulation tools for training robots before real-world deployment.",
+      "deck": "The model anticipates which parts of a scene will move before generating the video frames.",
+      "body": [
+        "ReactWorld is an embodied video generation model. That means it produces short videos of how a scene will look after a robot acts, for example after the robot pushes a box or opens a drawer. The goal is to make the generated video physically plausible: objects should move the way they would in the real world, not slide or deform randomly.",
+        "The new method adds two mechanisms. First, an interaction response field predictor guesses ahead of time which objects will move, how strongly, and where. Second, a response feedback adapter uses that prediction to adjust how each object is represented across video frames. The model scored 77.51 on the RBench benchmark, beating the previous best model, PhysisForcing, by 3.29 points across all nine task categories.",
+        "The authors also tested on EZS-Bench, another simulation benchmark, where ReactWorld scored 86.98 on the Domain score and 81.87 on the average score. The paper is from a research group and is posted on arXiv, an open preprint server for computer science and related fields."
+      ],
+      "why": "Better video world models could reduce the need for expensive physical robot trials. A company selling egocentric video of real work may face pricing or volume pressure if synthetic video of robot-object interactions becomes accepted as training data for robot foundation models.",
+      "hard": "The results are from simulations and benchmarks, not from real robot deployments, so it is still unclear whether the predicted motions hold up in messy physical environments.",
+      "terms": [
+        {
+          "term": "World model",
+          "meaning": "A computer program that predicts how a scene will change over time, often used to train robots without real-world trials."
+        },
+        {
+          "term": "Benchmark",
+          "meaning": "A standard test with fixed tasks and scores, used to compare how well different models perform."
+        },
+        {
+          "term": "Temporal attention",
+          "meaning": "A mechanism that helps a model decide which video frames matter most for predicting what happens next."
+        },
+        {
+          "term": "Embodied video",
+          "meaning": "Video recorded from a first-person or robot-mounted camera, showing actions and their effects in a physical environment."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "AI research"
+        ],
+        "task": [
+          "Robot learning",
+          "Synthetic data generation"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.06120"
+        }
+      ]
+    },
+    {
+      "id": "7afb5baa54",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Agility Robotics shares close 2% up after first day on Nasdaq",
+      "takeaway": "Agility Robotics, which makes walking warehouse robots, began trading on the Nasdaq and closed at $11.49 a share, just above its opening price. The modest rise came on a day when most technology and robotics stocks fell sharply.",
+      "deck": "The humanoid robot maker outperformed a Nasdaq market that fell 5.52% the same day.",
+      "body": [
+        "Agility Robotics began trading on the Nasdaq under the ticker AGLT. Shares opened at $11.26, above the $10 price used in its merger with a special-purpose acquisition company, or SPAC, a shell company created to take a private firm public. The stock swung between $8.40 and $12.15 before closing at $11.49, up 2% from the open.",
+        "The wider market had a difficult day. The Nasdaq fell 5.52%, pulled down by AI-related stocks such as Nvidia, down 9.26%, and AMD, down 17.26%. Other robotics companies with public listings also fell: Serve Robotics dropped 12.45%, Intuitive Surgical 2.82%, and Symbotic 2.47%.",
+        "Agility says it has more than $300 million in committed multiyear orders for its newest Digit 5 humanoid, which can lift up to 50 lb. Deliveries to early-access customers are expected in 2027. The company also says it is exploring wheel-based robots and a smaller bipedal form factor."
+      ],
+      "why": "A first-day close above the opening price, on a day when the Nasdaq fell sharply, signals that some investors see durable demand for humanoid robots used in logistics and warehousing. Agility's stated order book and timeline for Digit 5 deliveries suggest commercial demand for walking robots is firming up.",
+      "hard": "The stock traded as low as $8.40 during the day, showing that confidence is far from settled, and the $300 million order book is subject to contractual milestones and product specifications that may not all convert to revenue.",
+      "terms": [],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Humanoid robots"
+        ],
+        "task": [
+          "Humanoid robot IPO",
+          "Warehouse automation"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/how-did-agility-robotics-perform-on-its-first-day-on-the-stock-market/"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/05/agility-is-the-first-pure-humanoid-robot-company-on-the-stock-market-are-you-buying/"
+        },
+        {
+          "name": "TechCrunch Robotics",
+          "url": "https://techcrunch.com/2026/11/05/agility-is-the-first-pure-humanoid-robot-company-on-the-stock-market-are-you-buying/"
+        }
+      ]
+    },
+    {
+      "id": "20c66b3527",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Serve Robotics sells its robot connectivity and data tools to other firms",
+      "takeaway": "Serve Robotics, which runs sidewalk delivery robots, is now selling the connection and data tools it built for itself to other robot makers. This gives robot companies a faster way to link their machines to powerful off-board AI and to mine their field data.",
+      "deck": "The delivery robot maker is already working with T-Mobile and a construction equipment startup.",
+      "body": [
+        "Serve Robotics, which makes self-driving sidewalk delivery robots, is going beyond its own fleet. On Thursday it announced a new business line called Physical AI Services. The company will sell the connectivity and data tools it built for its own robots to other firms making robots for farms, warehouses, and other unpredictable real-world settings.",
+        "The offering has three parts. Serve Link connects robots in the field to AI systems running in data centers, so robots can tap powerful models without carrying all that computing onboard. A data curator tool helps companies find edge cases in the large volumes of real-world data their robots collect. A third product is a catalog of real-world foundation-model training data drawn from Serve's own sidewalk robots.",
+        "Serve's first customer is Bedrock Robotics, a startup working on self-driving systems for construction equipment. Serve is also working with T-Mobile to bring AI computing power physically closer to robots. The delivery business itself continues to grow, though Serve is shifting from Uber toward partners including DoorDash and Wonder. Serve spun out of Uber's Postmates acquisition in 2021 and went public in 2024."
+      ],
+      "why": "This is a concrete sign that robot companies see selling data infrastructure as a real business, not just a cost center. Serve's field-data catalog and edge-case tooling point to where demand for real-world navigation and manipulation data may grow.",
+      "hard": "It is not yet clear how much revenue the new business will generate or whether its sidewalk-focused data transfers well to robots in very different settings like construction and warehouses.",
+      "terms": [
+        {
+          "term": "Foundation model",
+          "meaning": "A large AI model trained on broad data that can be adapted to many specific tasks."
+        },
+        {
+          "term": "Edge case",
+          "meaning": "An unusual real-world situation a robot handles poorly because it rarely appears in training data."
+        },
+        {
+          "term": "Data center",
+          "meaning": "A building full of powerful computers that run heavy AI workloads remotely."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Autonomous delivery"
+        ],
+        "task": [
+          "Robot connectivity",
+          "Training data tools"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "TechCrunch Robotics",
+          "url": "https://techcrunch.com/2026/11/05/serve-robotics-launches-new-business-to-become-the-aws-for-robots/"
+        }
+      ]
+    },
+    {
+      "id": "e8690f74b6",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "NVIDIA releases four open Cosmos 3 models for interactive simulation",
+      "takeaway": "NVIDIA has published four free simulation models that generate video from driving controls, sensor data and robot actions. They let companies build custom virtual settings for testing self-driving cars and robots without writing new simulation code.",
+      "deck": "The new checkpoints support synchronized camera and LiDAR output, two-armed robot simulation, and custom sensor rigs.",
+      "body": [
+        "NVIDIA added four open-weight checkpoints to its Cosmos 3 family of world models, publishing them under the OpenMDW1.1 license for commercial and non-commercial use. Each is a post-trained version of Cosmos3-Nano with 16 billion trainable parameters.",
+        "Each checkpoint targets a different use. Two generate multi-view driving scenes: one produces offline data with up to 11 camera views plus LiDAR, while the other streams small chunks for fast interactive rollouts. A third turns a physics simulator's state into video. The fourth simulates two-armed robot interaction for YAM and AgiBot bodies, controlled by a policy or joysticks.",
+        "NVIDIA positions the release as a starting point for adaptation. A technical report and recipes cover four training stages, including post-training on your own data. For a new sensor rig or domain, the guidance is to adapt the offline driving model first, then distill it into the streaming version."
+      ],
+      "why": "Sim-to-real and synthetic data generation are direct pressure points for robot foundation-model training. Models like these can reduce dependence on expensive real egocentric video and teleoperation by producing varied, controllable interaction data.",
+      "hard": "NVIDIA itself notes the open problem: measuring where these models faithfully support policy learning and evaluation, since generated video can accumulate small errors that compound over time.",
+      "terms": [
+        {
+          "term": "World model",
+          "meaning": "A computer system that simulates how a scene will change, so a robot or car can predict the result of a possible action."
+        },
+        {
+          "term": "Checkpoint",
+          "meaning": "A saved copy of a trained model's settings that can be shared or fine-tuned on new data."
+        },
+        {
+          "term": "Fine-tuning",
+          "meaning": "Further training of an existing model on a smaller, specific dataset to adapt it to a new task."
+        },
+        {
+          "term": "LiDAR",
+          "meaning": "A laser-based sensor that measures distance to nearby objects, producing a 3D map of the surroundings."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Autonomous vehicles",
+          "Robotics"
+        ],
+        "task": [
+          "World simulation",
+          "Synthetic data generation"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
+        }
+      ]
+    },
+    {
+      "id": "9224dfe745",
+      "section": "india",
+      "kicker": "India Desk",
+      "headline": "Bariflo Labs gets Rs 2 crore to cut factory wastewater costs",
+      "takeaway": "An Odisha startup that uses AI to run factory wastewater plants more cheaply has raised Rs 2 crore from an investor. It is now preparing a pilot project with the oil company BPCL.",
+      "deck": "Bariflo Labs has raised Rs 2 crore from MC² Plus and is working toward a trial with BPCL.",
+      "body": [
+        "Bariflo Labs, based in Odisha, uses AI to help factories run their wastewater treatment plants at lower cost. The company says its system reduces what plants spend to clean water used in industrial processes.",
+        "The startup has raised Rs 2 crore from MC² Plus, an investor. The funding will support its work as it prepares for a pilot project with BPCL, the state-owned oil and gas company."
+      ],
+      "why": "Wastewater treatment is a recurring cost for every large factory. If AI can reliably cut that cost, factories across India will adopt it, and the systems will need continuous streams of sensor and video data from real plants to keep improving.",
+      "hard": "The source gives no numbers on how much Bariflo actually reduces treatment costs, and the BPCL pilot has not yet run.",
+      "terms": [
+        {
+          "term": "Pilot project",
+          "meaning": "A small, limited test of a new system in a real setting before it is used at full scale."
+        },
+        {
+          "term": "BPCL",
+          "meaning": "Bharat Petroleum Corporation Limited, a large Indian state-owned oil and gas company."
+        },
+        {
+          "term": "Wastewater treatment",
+          "meaning": "The process of cleaning water used in factories so it is safe to release or reuse."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Industrial AI",
+          "Water technology"
+        ],
+        "task": [
+          "Process optimization",
+          "Predictive control"
+        ]
+      },
+      "score": 4,
+      "sources": [
+        {
+          "name": "YourStory",
+          "url": "https://yourstory.com/2026/11/bariflo-ai-help-factories-treat-wastewater"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Jev with Foresight: Safe Language-Guided Autonomous Driving via a Language World Model",
+      "url": "https://arxiv.org/abs/2611.05448",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Contact-Implicit Whole-Body Trajectory Optimization for Dynamic Humanoid Locomotion on Parameterizable Uneven Terrain",
+      "url": "https://arxiv.org/abs/2611.05585",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Correct Robots Before They Make Mistakes: Proactive Human-in-the-Loop Intervention via Preference Learning",
+      "url": "https://arxiv.org/abs/2611.05667",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting",
+      "url": "https://arxiv.org/abs/2611.05754",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Your Beat",
+      "headline": "Which Physical Tactile Cues Matter for Contact-Rich Imitation Learning? A Controlled Real-Robot Study",
+      "url": "https://arxiv.org/abs/2611.06673",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Dexterous Robotic Hands in the Foundation-Model Era: A Full-Stack Survey of Hardware, Data, Cross-Embodiment Transfer, Learning, and Evaluation",
+      "url": "https://arxiv.org/abs/2611.06724",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Perceptive Humanoid Motion from Simulation",
+      "url": "https://arxiv.org/abs/2611.06908",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "How Ambi Robotics helps its customers prepare for peak season",
+      "url": "https://www.therobotreport.com/how-ambi-robotics-helps-customers-prepare-peak-season/",
+      "source": "The Robot Report"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+      "url": "https://openai.com/index/introducing-gpt-6-cyber",
+      "source": "OpenAI"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "RACE: Calibrated Cumulative Scoring for Rollout-Free Robot Policy Checkpoint Selection",
+      "url": "https://arxiv.org/abs/2611.05838",
+      "source": "arXiv cs.RO"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 0,
+        "sector": "robotics",
+        "company": "ABB Robotics",
+        "what": "Industrial robot maker, SoftBank acquisition target",
+        "round": "Acquisition",
+        "amount_usd_m": 5400,
+        "amount_text": "$5.4B",
+        "lead": "SoftBank",
+        "india": false,
+        "url": "https://www.therobotreport.com/chinese-regulators-block-softbanks-5-4b-acquisition-of-abb-robotics/",
+        "source": "The Robot Report"
+      },
+      {
+        "i": 17,
+        "sector": "robotics",
+        "company": "Echodyne",
+        "what": "Radar maker for drones and defence",
+        "round": "Acquisition",
+        "amount_usd_m": 5300,
+        "amount_text": "$5.3B",
+        "lead": "Shield AI",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNc0oyckdaOGFhZU5nc0lhQTJwaTgweC1PaWhYaTBfUkU1WmZXaEVqNUthRTZiVkFPR0FKLUx6ay03ZU1GSUVrRXRhQWtLbVJDREJla2t5YndjajJBdWNYbWN2M05lNkdNeGdfa0tBUVpfTTAxak9UMjNXLUZIbURUN3VlR09CS21UejlPTTAzT1JaUQ?oc=5",
+        "source": "Breaking Defense"
+      },
+      {
+        "i": 10,
+        "sector": "ai",
+        "company": "Isomorphic Labs",
+        "what": "AI drug discovery, DeepMind spinout",
+        "round": "Funding",
+        "amount_usd_m": 5000,
+        "amount_text": "$5B (in talks)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/isomorphic-labs-5b-raise-50b-valuation-first-clinical-trial/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 5,
+        "sector": "robotics",
+        "company": "Construction robotics sector",
+        "what": "Construction and robotics companies, aggregate funding",
+        "round": "Funding",
+        "amount_usd_m": 1600,
+        "amount_text": "$1.6B",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.crunchbase.com/venture/sector-snapshot-2026-construction-robotics-funding-soars-bedrock/",
+        "source": "Crunchbase News"
+      },
+      {
+        "i": 13,
+        "sector": "robotics",
+        "company": "Zipline",
+        "what": "Drone delivery network operator",
+        "round": "Funding",
+        "amount_usd_m": 1500,
+        "amount_text": "$1.5B",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQ2xJTlUtRU5TTGJzcml1Z3pMdi1SSEJDRVJoR3hqcTBaQkwtTlZCU2tQR1lfQXBsT0xFSW1DTXhrRzAybXZaT1QzZHJGNG1IS053cGdvZnNBbFRQVXFwQjZMdjhGb2hicmtUMnc0UC1DNXRMZTFUcVRPc2Q4WUtySG5manBDTW05YUdDWlZxbw?oc=5",
+        "source": "Unite.AI"
+      },
+      {
+        "i": 9,
+        "sector": "robotics",
+        "company": "Dronamics",
+        "what": "Cargo drone maker",
+        "round": "SPAC merger",
+        "amount_usd_m": 400,
+        "amount_text": "$400M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/dronamics-nasdaq-spac-400m-valuation-gpat/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 22,
+        "sector": "ai",
+        "company": "Tigris Data",
+        "what": "AI data infrastructure storage",
+        "round": "Acquisition",
+        "amount_usd_m": 350,
+        "amount_text": "$350M",
+        "lead": "Dropbox",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 31,
+        "sector": "ai",
+        "company": "Sand.ai",
+        "what": "AI video generation",
+        "round": "Funding",
+        "amount_usd_m": 200,
+        "amount_text": "$200M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA4Y25SMHpnUGZMMk55OWIxQ1NEVUJFTHphLUhHNlJBOGNDTURPaF9md0pMX3BoMU5RTXhIN1VycVRYV1I1Tk05LXpPSlJSQlFpaVZ0cmpvRlJwX055dGVsYS13VG04QjhFZXc1dTNHaERlQ0lmc3h0aDNuWEpfdw?oc=5",
+        "source": "DealStreetAsia"
+      },
+      {
+        "i": 7,
+        "sector": "robotics",
+        "company": "Cath lab AI robotics startup",
+        "what": "AI-powered robotics for cath labs",
+        "round": "Funding",
+        "amount_usd_m": 160,
+        "amount_text": "$160M",
+        "lead": "GE HealthCare",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQRC1oS0JOTkdEOUg0MTI1cTBmd1FZMTZjUFNobWx2b09sdWlDdHR6VW9kalZ3LURSTU14WjVxRzZJRHlQS1JaelZvMHhEdWY2Z1BvUmtlOUV1N0VSdGlxVjM1M1dVN1BhRHRvd2RWclFLckpzbHRhZ2EwYzNpYVcwMk1VdEV6UUNrUVUyajdVU2UxUm56dWxPXzZqNjFOX1pIUTRPUVVySTZhOTFkNHR1VWt0Q3Q3RFFvaU9Bai1yclBHWkdlbUpHVkJPTDc?oc=5",
+        "source": "Cardiovascular Business"
+      },
+      {
+        "i": 38,
+        "sector": "ai",
+        "company": "Future Secure AI",
+        "what": "AI security company",
+        "round": "Funding",
+        "amount_usd_m": 82,
+        "amount_text": "USD82M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOd1RwWWdpT3hycmhyRVZ3Z2ExLUwzRU9UcHA4TFhtWFh6ZzZ6YmtZd05MWFJINUd4N3U5UnlodWdYbXM4YUlRN3YwVFpGYmozaUhGSGwwNlR0RlBOR2VtRURTWE9wbTMyMWFnWUdET0FUNnk2SHJmRWlvMEZ5OUxWRFUxWW0xWHBaSWJUX3FWTFQycnlsLTlYRUlTNVlhSEtqRGJuQnozc2x4MFotNGhYSG80QXlZR2NpVmxxY1A4dVdYc1dqYmtnNnJBcHNicWhJX1E?oc=5",
+        "source": "Capital Brief"
+      },
+      {
+        "i": 16,
+        "sector": "ai",
+        "company": "Kalepa",
+        "what": "AI agents for insurance underwriting",
+        "round": "Funding",
+        "amount_usd_m": 75,
+        "amount_text": "$75M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://www.alleywatch.com/2026/11/kalepa-raises-75m-to-put-ai-agents-to-work-across-underwriting-pricing-and-portfolio-management-in-the-insurance-industry/",
+        "source": "AlleyWatch"
+      },
+      {
+        "i": 3,
+        "sector": "robotics",
+        "company": "Humble Robotics",
+        "what": "Cabless autonomous freight truck developer",
+        "round": "Funding",
+        "amount_usd_m": 51,
+        "amount_text": "$51M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOOVNYdS02czhyT2djVmdMb3YwcmI0aGRBaVV4TmJqN1RwNzRoZ3diakdxYUY1V09lTWhFVkNac0NISXNubGdSUUZGMkQyQWU5YUVRMmRnVWFZUXdDTzZUT3BVbmd1WmVjMTdBa3pmMkFZXy1PX0M0TTc1eU1GY0lqRVVmSQ?oc=5",
+        "source": "FreightWaves"
+      },
+      {
+        "i": 12,
+        "sector": "robotics",
+        "company": "Self-driving truck startup (Humble Robotics)",
+        "what": "Self-driving truck developer",
+        "round": "Funding",
+        "amount_usd_m": 51,
+        "amount_text": "$51M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWEhKMmM1YlR6MEZsanJJZVFvZmVNSnpyQ2JLaDVhLXhMZkJ3TWdNTjVpZ3RCMTNOYmdkWEFtZjJpZDdYYmlyUWlaZDJjV2FSdEJVcTVGUjNqODV1Zm14WDFMOThDYkw4Q0NZWFZuUDF2blFGbDVOdmljTllsM25RSHVtbElKWE1PZFNOQm5aWkxCcExsYWlBZ1pFQk1zXzMxU0MzUHpBcGM?oc=5",
+        "source": "Business Insider"
+      },
+      {
+        "i": 41,
+        "sector": "ai",
+        "company": "Beacon Software",
+        "what": "AI holding firm",
+        "round": "Funding",
+        "amount_usd_m": 50,
+        "amount_text": "$50M",
+        "lead": "CPPIB",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOG1lRm11eUJEdDkzOFIxM2duVzFseWhaNV81WlAxY3BTeXJncUU2UmxuVWhpV1BnQ3h3WElyZVRabE9taHdfTGtrU1BWNGhaU2toVktaVER4S25PcEh6UURvREJUT0dmbFhXZWwtZ25Sc25xcnEzRmVQcmsxT18zMFlMX3Y3SjNfd2pIclBpanEzZw?oc=5",
+        "source": "BetaKit"
+      },
+      {
+        "i": 32,
+        "sector": "ai",
+        "company": "Lunit",
+        "what": "Medical AI company",
+        "round": "Debt",
+        "amount_usd_m": 36,
+        "amount_text": "$36M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE05TFFDUTFxdHRUNjJwaVBGWnhnSDFLN2VtakVVc000MW42TU1sY19qQzhiQURhMGl6V01sQzFEbXl0NFdGUURjeU40U3lBNDV1ZmJr?oc=5",
+        "source": "Wowtale"
+      },
+      {
+        "i": 11,
+        "sector": "deeptech",
+        "company": "Electric aircraft startup (Ivor van Dartel)",
+        "what": "Electric aircraft developer",
+        "round": "Funding",
+        "amount_usd_m": 33,
+        "amount_text": "€30M ($32.4M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/vaeridion-30m-funding-94-5m-eu-grant-electric-aircraft/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 37,
+        "sector": "deeptech",
+        "company": "FluoRok",
+        "what": "Battery chemical supply chain materials",
+        "round": "Funding",
+        "amount_usd_m": 30,
+        "amount_text": "$30M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/fluorok-30m-series-a-hf-free-battery-chemicals/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 20,
+        "sector": "ai",
+        "company": "Phonic",
+        "what": "Multilingual speech-to-speech AI models",
+        "round": "Funding",
+        "amount_usd_m": 27.5,
+        "amount_text": "$27.5M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1MdV9yaDNpV0VwQWdqbU81ZnlMVkJ0TmRkRDg0bHpqWFIyZEdEYldOZXhLVlZhT2kxc1ZPZk0taF9JOUFVYXhqbGxXQWRsZTd1NFZtLTR3N1JnajNrT3VCazRxWGtZdTA?oc=5",
+        "source": "Slator"
+      },
+      {
+        "i": 39,
+        "sector": "ai",
+        "company": "Journify",
+        "what": "AI startup, Morocco",
+        "round": "Funding",
+        "amount_usd_m": 12,
+        "amount_text": "$12M",
+        "lead": "Al Mada",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQzU3Y3JlMWlrLVNRN0U1SUtvck5jTk9FOC1GQ2tfbElpVmhqRmcwZUFPaVh3X2F5RkFHNmpKaC1FYm5pd1NyNmc1VVFvUEREczNGN3JYX3dzZWRaSVJnblNWT2FSR2x0blZQYk5hbTkyaWlBSkxxLWtGQ1pxTnRvQmtzUjhKb3dKQjlaQWJXZk9hWDQwYTd5QlJrem5RRmk1UkRaR0hYbUluSFNERjM5aWx4SnA1Q2dlNE9Rcw?oc=5",
+        "source": "Billionaires.Africa"
+      },
+      {
+        "i": 21,
+        "sector": "deeptech",
+        "company": "altM",
+        "what": "Specialty chemicals manufacturing startup",
+        "round": "Series A",
+        "amount_usd_m": 10.3,
+        "amount_text": "$10.3M",
+        "lead": "Rainmatter by Zerodha",
+        "india": true,
+        "url": "https://inc42.com/buzz/cleantech-startup-altm-raises-10-3-mn-to-scale-manufacturing/",
+        "source": "Inc42"
+      },
+      {
+        "i": 27,
+        "sector": "ai",
+        "company": "Kabilio",
+        "what": "AI software for accounting firms",
+        "round": "Funding",
+        "amount_usd_m": 10,
+        "amount_text": "€10M ($10.8M)",
+        "lead": "Picus Capital and Visionaries",
+        "india": false,
+        "url": "https://techfundingnews.com/kabilio-10m-funding-ai-accounting-agents/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 14,
+        "sector": "deeptech",
+        "company": "Cosmoserve Space",
+        "what": "Spacetech satellite servicing startup",
+        "round": "Seed",
+        "amount_usd_m": 6,
+        "amount_text": "$6M",
+        "lead": "Rebright Partners",
+        "india": true,
+        "url": "https://inc42.com/buzz/spacetech-startup-cosmoserve-nets-6-mn-eyes-commercialisation-by-2028/",
+        "source": "Inc42"
+      },
+      {
+        "i": 36,
+        "sector": "ai",
+        "company": "Mindmax",
+        "what": "AI tutoring startup",
+        "round": "Funding",
+        "amount_usd_m": 3.3,
+        "amount_text": "$3.3M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/mindmax-3-3m-pre-seed-ai-tutor-memrise/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 8,
+        "sector": "robotics",
+        "company": "Strive Robotics",
+        "what": "Factory automation robotics for high-mix production",
+        "round": "Pre-seed",
+        "amount_usd_m": 3,
+        "amount_text": "$3M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWko2cXZxbFJzajFOWkxSeHZUQ2ZzRnQ4aVYwX25tWnEwOV9WU2FkZnVscU1BNzk3NEtfNEs0Nk5Va0FEalE0dUstUTM5VUtENXFKZmVIeWxHQnlDYnk1MUxRTzV6YXRyVnVOSTlRTkI5dFBNa19MNEVSNUtKeEdMTlF6UkhyQ3JUTDJRcVZVQXNHeFFiN1dVMmNvd2dRcDVq?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 18,
+        "sector": "robotics",
+        "company": "Edinburgh drone firm",
+        "what": "Drone manufacturer",
+        "round": "Acquisition",
+        "amount_usd_m": 2.8,
+        "amount_text": "£2.1M ($2.8M)",
+        "lead": "21CC Group",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVVBXczh1MXNnelJ0RmhUbWQ1WkFfOEk3MG9hdXFETmRJemZTOXRPUjRraW5CMWlTaWpHU3g1cDZFbEVVMHVCdkRmODJxeGZiSkFRN0l4VVZRbTE3RjZ3NmZ5UG1odWI0LVRWS0VHWnpSaHRMelBYNE1RbUtvYjRZaDNXWlpnbVhKcF9mN0JyRzZ4WFRtb2R1WW1uMA?oc=5",
+        "source": "The Herald"
+      },
+      {
+        "i": 23,
+        "sector": "ai",
+        "company": "Venomics AI",
+        "what": "AI venom-based medicine biotech",
+        "round": "Pre-seed",
+        "amount_usd_m": 2.7,
+        "amount_text": "$2.7M",
+        "lead": "Speciale Invest and South Park Commons",
+        "india": true,
+        "url": "https://inc42.com/buzz/venomics-ai-raises-2-7-mn-to-turn-venom-into-medicine/",
+        "source": "Inc42"
+      },
+      {
+        "i": 19,
+        "sector": "robotics",
+        "company": "Weishi Robotics Technology",
+        "what": "Robotics technology company",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Ways Electron Co.,Ltd.",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPYkZUYS05YTVXSjBoSFVjTU9peF93X3kwalFBUW56WUhVTU5KbFRlOV9BVzhHWXNQNEs0Sk11VjVtNHhLekFndk5vZFZQdVY3N3VMcDM3bllPam9Xd0FseUk4ck5Fa2R1SU1Va2hDUnhvM1l4UmZpMkZjbEp6TG5ENkRvZjZlNWM2SFcyUzZUVmJ6WHN3c0ZrY1RrMWV6TkN2eGxXRTBsWFYzWm1vMzNyVGJNNWFpbWFVd3o4TXZWVElYOFNjcVRnZHA1N2Q5VXFGMzd1emxRX1BOc2ppd1dNMXpVaw?oc=5",
+        "source": "www.marketscreener.com"
+      },
+      {
+        "i": 30,
+        "sector": "ai",
+        "company": "Simulacra",
+        "what": "Tokyo University AI startup",
+        "round": "Pre-seed",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "ANRI",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPRjdYSEY2XzJSZkVxeExobGktdjRDWFIzUWx0MFoyMUd2d3hIeFlBOGt5XzNGeW43d2tqRkxvZkdMWU5Md2JpQXhIWTYyeGNiTDRxZEtubGxjTjMwUVhoUHJmNDVfa0hqTFd4X3JXQ3paTElDZzRXRW5CU3lqN19zenVQdnJDRHNhRmxzNFZpNk5LY3c3U1FQVkx2RWVKRGlLZENnVFBITmY?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 33,
+        "sector": "ai",
+        "company": "Infilect",
+        "what": "AI retail execution software",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Andavi",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNM2VMV0JXSk5IUlJ4M0RHbFQ0STd0amtUU0ZOYWp6d2hjOEZfOHBYX2hRcWNYckw0c3dKNFZ3bHZBRlFhZEY3VUlDNmpaRzhSN1pPYkkzc0ctTDVEemp3LTFhMk43Z2lWcF9lbnZmeDFwSGZNZ0g1Yl9Vb0cta3RsSWtpSWYtdmNSM1VWZDlhYlFmSzNBdk12c3JsalhuOU9hUWNobllJV1lDUGxkbUQ4?oc=5",
+        "source": "Adgully"
+      }
+    ],
+    "totalUsdM": 20396
+  },
+  "playground": [
+    {
+      "headline": "Swarm robots act like liquid or solid based on hand gestures",
+      "body": "Researchers built Fluidic Body, a system where a person's hand movements change a robot swarm's behavior. Opening the hand makes the swarm soft enough to flow around obstacles; closing it makes the swarm rigid enough to push objects. In tests, users finished combined navigation and transport tasks faster than with standard control methods.",
+      "why": "It turns a robot swarm into a material people already understand intuitively, making large groups of robots feel like an extension of the body.",
+      "maker": "Michikuni Eguchi and colleagues",
+      "url": "https://arxiv.org/abs/2611.06068",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "headline": "Humanoid soccer robot learns human-like moves from motion capture",
+      "body": "A team built soccerbot, a learning framework that distills human soccer motion capture into a latent motion prior. A single policy then performs moving, dribbling, trapping, and kicking on a Unitree G1 humanoid, with natural transitions between skills. The system transferred from simulation to the real robot without additional training.",
+      "why": "It shows humanoid robots can combine agile locomotion and ball control in one fluid skill set, learned from watching people play.",
+      "maker": "Haoyu Shao and team",
+      "url": "https://arxiv.org/abs/2611.06564",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "headline": "AI trains two Henry Hoovers to battle like tiny robots",
+      "body": "James Bruton bought two Henry vacuum cleaners, added wheels and punching arms, and trained a deep learning model in a PyGame simulation. The model rewarded clobbering an opponent and moved the real robots using Vive trackers for positioning. The result is two goofy vacuum robots fighting autonomously in his living room.",
+      "why": "It takes the simulation-to-reality training used in cutting-edge robotics and applies it to something purely playful, making AI learning visible and fun.",
+      "maker": "James Bruton",
+      "url": "https://www.hackster.io/news/making-henry-hoovers-battle-for-ai-education-ee70525765e7",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "Children's toy camera gets Doom running at 30 frames per second",
+      "body": "Andrew Spode reverse engineered his daughter's cheap X9S camera, finding an HX3302B chip with under 1 MB of usable RAM. With help from Claude, he built custom tools and squeezed Doom into the device, splitting code between RAM and flash to save memory. The port runs with sound, chiptune music, and save support.",
+      "why": "It shows how AI coding assistance and clever memory management can bring classic software to hardware nobody intended for gaming.",
+      "maker": "Andrew Spode",
+      "url": "https://www.hackster.io/news/porting-doom-to-a-children-s-toy-camera-c1ac8d3bded0",
+      "source": "Hackster.io"
+    }
+  ],
+  "think": {
+    "collision": {
+      "a": {
+        "kind": "story",
+        "n": 10,
+        "label": "Bariflo Labs raises funds for factory wastewater AI"
+      },
+      "b": {
+        "kind": "story",
+        "n": 4,
+        "label": "Humanoid control adds force sensing for pushing, lifting"
+      },
+      "headline": "Egocentric video plus wrist-worn force readings of Indian plant operators doing heavy valve, hose and sludge-handling work in treatment plants",
+      "body": "Story 4 shows humanoids only managed heavy pushing and lifting once they could sense force, so buyers will soon want human data that records how hard people push, not just where their hands go. Wastewater and effluent plants, the setting Bariflo is entering, are full of exactly this work: turning stiff valves, dragging hoses, lifting screens and scraping sludge. A vendor crew wearing the stereo head camera plus cheap force-sensing gloves or wrist bands, a bit like a fitness tracker for grip, could capture paired video and force logs across many Indian plants.",
+      "who_pays": "Humanoid and mobile-manipulator labs building force-aware control, plus industrial robot makers targeting dirty, hazardous utility jobs.",
+      "data_needed": "Synchronized stereo egocentric video, glove or wrist force and grip readings, and task labels from operators at municipal and factory effluent plants across seasons and equipment brands.",
+      "why_fail": "Cheap wearable force sensors may be too noisy or badly calibrated to match robot force readings, so buyers may not trust or use the numbers."
+    },
+    "contrarian": {
+      "story_n": 7,
+      "consensus": "Agility's rise on a falling market shows investors believe humanoid demand in warehouses is real and firming.",
+      "against": [
+        "One trading day says little; newly listed SPAC shares often have few freely traded shares, so small buying can lift the price regardless of fundamentals.",
+        "Story 3 shows tiny revenue, heavy losses and orders tied to future milestones, meaning the order book is closer to conditional interest than confirmed demand.",
+        "Warehouse buyers like Ambi Robotics customers often prefer cheaper fixed arms and wheeled robots, so legs may stay a niche rather than the default."
+      ],
+      "bets_otherwise": "Makers of non-humanoid warehouse automation such as Ambi Robotics, and short sellers who routinely target post-SPAC listings, are effectively betting against humanoid-first logistics.",
+      "settle_it": "Agility's next four quarterly reports showing how many Digit units were delivered and paid for, versus milestone-dependent orders, would settle it."
+    }
+  },
+  "cost": {
+    "usd": 0.0733,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 5,
+        "inTokens": 29681,
+        "outTokens": 9087,
+        "cost": 0.0075,
+        "models": {
+          "anthropic/claude-haiku-5.5": 5
+        }
+      },
+      "write": {
+        "calls": 10,
+        "inTokens": 13991,
+        "outTokens": 5428,
+        "cost": 0.0274,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 10
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 4387,
+        "outTokens": 3231,
+        "cost": 0.0021,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 3982,
+        "outTokens": 585,
+        "cost": 0.0028,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "think": {
+        "calls": 1,
+        "inTokens": 4106,
+        "outTokens": 854,
+        "cost": 0.0335,
+        "models": {
+          "anthropic/claude-opus-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 257,
+    "unique": 208,
+    "feeds": 29,
+    "failedFeeds": [
+      "Import AI",
+      "r/robotics",
+      "r/LocalLLaMA"
+    ]
+  },
+  "generatedAt": "2026-11-06T00:16:36.354Z"
+}
