@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-11-07",
+    "weekday": "Saturday",
+    "number": 10,
+    "lead": "OpenAI raises $11 billion at $1.25 trillion valuation",
+    "stories": 10,
+    "readMinutes": 14,
+    "costUsd": 0.0895
+  },
+  {
     "date": "2026-11-06",
     "weekday": "Friday",
     "number": 9,

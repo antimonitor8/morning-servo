@@ -1,0 +1,858 @@
+{
+  "date": "2026-11-07",
+  "weekday": "Saturday",
+  "sunday": false,
+  "number": 10,
+  "paper": "The Morning Servo",
+  "readMinutes": 14,
+  "stories": [
+    {
+      "id": "314bd08978",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "OpenAI raises $11 billion at $1.25 trillion valuation",
+      "takeaway": "OpenAI has pulled in $11 billion so far in a funding round that could reach $20 billion. The company is now valued at $1.25 trillion, well below its earlier $30 billion target.",
+      "deck": "The round is still open and could total about $20 billion.",
+      "body": [
+        "OpenAI has raised $11 billion so far in a new funding round, according to Bloomberg sources. The deal values the company at $1.25 trillion. The round has not closed yet and could reach about $20 billion when it does.",
+        "In late September, Bloomberg reported OpenAI was aiming to raise $30 billion. The current figures fall well short of that target. The news came hours after Bloomberg reported that potential buyers in rival Anthropic's IPO are eyeing a valuation as low as $1.1 trillion, down from an expected $2 trillion a month earlier.",
+        "OpenAI has delayed plans to go public and may IPO next year. The midterm election results and negative voter sentiment about data centers have made the market for AI more uncertain, with possible regulatory challenges ahead."
+      ],
+      "why": "A lower-than-targeted raise at OpenAI, and a possible valuation cut at Anthropic, signals that investors are becoming more cautious about frontier AI labs. That caution could slow the flow of capital into robot foundation models and the training-data pipelines that support them.",
+      "hard": "The round is not closed and the final total could change; the figures rely on unnamed sources.",
+      "terms": [
+        {
+          "term": "Valuation",
+          "meaning": "The estimated total worth of a company, based on what investors agree to pay for a share of it."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "AI",
+          "Venture capital"
+        ],
+        "task": [
+          "Funding",
+          "Valuation"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/"
+        }
+      ]
+    },
+    {
+      "id": "9bbffcd4ba",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "A model adds depth sensing to robot-independent training data and improves task success",
+      "takeaway": "A research team built a model that learns robot skills from wrist-mounted camera video that includes depth, not just flat images. In tests, it handled new robot bodies and changed surroundings better than earlier approaches.",
+      "deck": "The new model was trained on 605 hours of handheld-gripper video that includes depth information.",
+      "body": [
+        "A group of researchers has released Spatial-UMI-Dream, a model with 5 billion adjustable parameters built to learn manipulation skills from UMI data. UMI is a handheld gripper with wrist-mounted cameras that people use to record demonstrations. The recordings can be used to train many different robots rather than just one.",
+        "The key change is that the training data includes depth: how far each point in the scene is from the camera. Earlier UMI models used only flat color images. This made it hard to tell whether the camera or the object was moving, since the cameras sit on the moving hand. The new model was pretrained on 605 hours of such data, with depth estimated from paired stereo cameras.",
+        "The researchers also built a simulation benchmark called RoboTwin-UMI, with twenty tasks. It lets them test a UMI-trained policy on new robot bodies and in changed environments, separately and together, without extra fine-tuning. On six real-world tasks, the new model succeeded 85 percent of the time on average, compared with 60.8 percent for the strongest baseline."
+      ],
+      "why": "Training-data sellers should note that depth sensing, not just color video, measurably improved performance. Buyers may start asking for stereo or RGB-D egocentric recordings in addition to flat video.",
+      "hard": "The result is from a single research paper and has not yet been independently reproduced outside the authors' own lab and chosen tasks.",
+      "terms": [
+        {
+          "term": "RGB-D",
+          "meaning": "Camera data that includes both color images and depth, meaning how far each point in the scene is from the camera."
+        },
+        {
+          "term": "UMI",
+          "meaning": "Universal Manipulation Interface, a handheld gripper with cameras that collects demonstration data without being tied to one robot model."
+        },
+        {
+          "term": "World action model",
+          "meaning": "A type of AI model that predicts what will happen next in a scene and what action the robot should take."
+        },
+        {
+          "term": "Policy",
+          "meaning": "The learned rule a robot follows to turn what it sees into the movements it makes."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Training data"
+        ],
+        "task": [
+          "Manipulation",
+          "Policy learning"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.07229"
+        }
+      ]
+    },
+    {
+      "id": "32289451c4",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Consumer VR headsets used to record robot training demonstrations",
+      "takeaway": "Researchers trained robot arm skills using video recorded on an ordinary virtual reality headset. After fixing issues with grasping, the robot completed a two-stage stacking task in 94 percent of test runs.",
+      "deck": "The PICO 4 Ultra headset nearly matched a research-grade device on a cube placement task.",
+      "body": [
+        "A team built VREgo, a method for training robot arm skills from demonstrations recorded on a consumer virtual reality headset, the PICO 4 Ultra. The headset tracks the wearer's head and hands and finds objects in the scene. A person demonstrates a task by moving their hands, and the system turns that into training data.",
+        "On a cube placement task, the robot completed the goal in 60 to 74 of 100 layouts after training on 40 demonstrations from the PICO. A research-grade device called Project Aria scored 73, 78, and 0 on the same layouts. On a harder two-stage stacking task, the robot initially failed often because its gripper knocked the cube or released it too early.",
+        "The researchers adjusted the training data and added rules that use the simulator's object positions. After those changes, the robot met both placement criteria in 93.8 percent of episodes across four test runs. The same 100 layouts were used both to write the rules and to evaluate them."
+      ],
+      "why": "This is direct evidence that cheap, widely available VR headsets can produce training data for robot arm skills, which could lower the cost of data collection compared with research-grade rigs. The gap between consumer and lab equipment is narrowing on simple tabletop tasks.",
+      "hard": "The 93.8 percent result relies on task-specific rules and simulator object positions, and the same layouts were used for both rule development and final evaluation, so the method may not transfer to unseen scenes.",
+      "terms": [
+        {
+          "term": "Manipulation policy",
+          "meaning": "The learned set of rules a robot uses to decide how to move its arm and gripper during a task."
+        },
+        {
+          "term": "Egocentric video",
+          "meaning": "First-person footage recorded from a head-mounted camera, showing what the wearer sees."
+        },
+        {
+          "term": "Stereo localisation",
+          "meaning": "Using two cameras to judge how far away objects are, like human depth perception."
+        },
+        {
+          "term": "Segmentation mask",
+          "meaning": "A label that marks which pixels in an image belong to a particular object."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Training data"
+        ],
+        "task": [
+          "Robot manipulation",
+          "Egocentric data collection"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.07272"
+        }
+      ]
+    },
+    {
+      "id": "f3bfec2868",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Phy sicl raises $10 million to build realistic 3D worlds for robot training",
+      "takeaway": "A startup called Physicl raised $10 million to turn real-world photos and scans into realistic 3D training scenes for robots. Its tool gives robot builders a faster way to create custom practice data for specific failure cases.",
+      "deck": "The company is reusing a pipeline first built for e-commerce product renderings to create training scenes with correct geometry, materials, and physics.",
+      "body": [
+        "Physicl, a new startup founded by Alex de Vigan, raised $10 million in seed funding led by Inovia Capital. De Vigan previously ran nfinite, which made 3D product models for online retailers. When generative AI disrupted that business, he saw a second use for the rendering technology: creating realistic digital environments where robots can practice.",
+        "Physicl is launching a product called Studio with 10,000 3D environments and 100,000 object assets. Users build scenes and generate synthetic data for a specific problem, such as helping a robot recognize a cup on a cluttered counter or in shadow. The company focuses on fine-tuning robot models on hard edge cases rather than broad base training.",
+        "Early customer SpAItial, a world model builder, used Physicl's data to improve its Echo-3 simulation tool. SpAItial CEO Matthias Niessner said the appeal is generating high-fidelity data on demand as a model's training reveals gaps, instead of slow manual curation."
+      ],
+      "why": "Physicl's approach of generating targeted synthetic scenes for specific failure cases points to a growing market for on-demand, task-specific robot training data. This could reduce reliance on expensive teleoperation data collection for edge cases, which is a direct competitor to egocentric video pipelines.",
+      "hard": "Physicl is entering a crowded field of simulation and synthetic data startups, and it has not yet proven that its rendered scenes transfer well enough to close the sim-to-real gap for real robots.",
+      "terms": [
+        {
+          "term": "Sim-to-real gap",
+          "meaning": "The difference between how a robot performs in a computer simulation and how it performs in the physical world."
+        },
+        {
+          "term": "Synthetic data",
+          "meaning": "Computer-generated training examples made to look like real-world data, used when real data is scarce or expensive."
+        },
+        {
+          "term": "World model",
+          "meaning": "Software that builds an internal representation of a physical space so an AI system can predict what will happen there."
+        },
+        {
+          "term": "Teleoperation",
+          "meaning": "A person remotely controlling a robot's movements, often used to collect real-world training demonstrations."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics training data",
+          "Simulation"
+        ],
+        "task": [
+          "Robot manipulation",
+          "Synthetic data generation"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/"
+        },
+        {
+          "name": "TechCrunch Robotics",
+          "url": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQLUp1SVV0MDNnTEJ3WVR0UDByckFtam9UUHZLeUFmQ3BsWFFFODFzZzhZZElqVmlvZDhOUTVmaWlyM2RNNjRtdmZaWWtPTXVKakp2RzhZVUpVUlo1eWdGTXhMYktWTjR6Z0JObWJrR2otZVlQd0hnbG55U2Ztd3hVYXBfcnZDQ3I0VXRXdWkwa1RiclJrM0J4YWp3MUswaHEyUjZmaA?oc=5"
+        },
+        {
+          "name": "The Tech Buzz",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZzlscDFXS05sa0FIWngxMVg3NVFhX1lMQlpfZXlkWWhWZEFmQjU4Vm1lUU95VEhZb3d6UEFBWklrcGZZeDFzVjdHNlp6VUJ4TFgyMXB3ZU1uTkpfVG8yQ0hmY3RZX0I5d3dCbTE3dHNLWS1OMG1rZnJtWlpCSkFyQmZlOHpGMlNOTVRWWDdhd0NJQQ?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "1e81754f53",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Boston Dynamics ships Stretch Gen 2 warehouse trailer unloading robot",
+      "takeaway": "Boston Dynamics has released a new version of its robot that unloads boxes from truck trailers. It is built to break down less often and be fixed much faster when it does.",
+      "deck": "The updated trailer-unloader cuts cabling by 81 percent and can swap its wheel drive in one hour.",
+      "body": [
+        "Boston Dynamics has released Stretch Gen 2, an updated version of its robot that unloads boxes from truck trailers. The company says the new machine is more durable, easier to service, and can pick up multiple boxes in one arm movement using suction cups. The robot can unload up to 1,000 cases per hour, depending on box weight and how neatly the trailer is packed.",
+        "The company focused on cutting downtime. It removed 81 percent of the internal cabling, which is roughly half a mile of wire that was a common point of failure. It also switched to heavy-duty automotive-style connectors, sourced with help from Hyundai, which owns Boston Dynamics. A full replacement of the wheel drive can now be done in one hour instead of a full day. The robot has a battery that lasts two shifts and a fast charger that reaches 90 percent in about 75 minutes.",
+        "Stretch Gen 2 is already running at multiple customer sites. Boston Dynamics says existing customers can switch to the new robot in about two weeks. Operators drive the robot into a trailer, step out of the work area, and press a play button. The company releases new software about every month; one recent update increased unloading speed across the fleet by 24 percent without any hardware changes."
+      ],
+      "why": "The emphasis on service speed and automotive-grade parts shows which hardware decisions matter for robots that run daily in dirty, vibrating warehouse environments. Companies building robot training data pipelines should note that trailer unloading is one of the few warehouse tasks with clear evidence of long-term commercial deployment.",
+      "hard": "Stretch Gen 2 is solving a narrow problem: pulling boxes out of truck trailers. Performance still depends heavily on box weight and how disorderly the trailer is, so the quoted 1,000 cases per hour is not a guaranteed rate.",
+      "terms": [
+        {
+          "meaning": "A machine with wheels or tracks that can move around a warehouse floor on its own, without a person driving it.",
+          "term": "autonomous mobile robot"
+        },
+        {
+          "meaning": "The part of the robot that touches packages, here using suction cups to grip and lift boxes.",
+          "term": "gripper"
+        },
+        {
+          "meaning": "Pulling the robot into a computer network through software updates that improve its vision and planning without changing hardware.",
+          "term": "fleet software update"
+        },
+        {
+          "meaning": "A twistable joint that can rotate past a full circle without hitting a mechanical stop, reducing stress on the arm.",
+          "term": "continuous rotation joint"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "warehousing and logistics"
+        ],
+        "task": [
+          "robot end-to-end deployment",
+          "hardware and fleet servicing"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/boston-dynamics-built-stretch-gen-2-for-reliable-consistent-performance/"
+        }
+      ]
+    },
+    {
+      "id": "1022fc3112",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Point One Navigation turns precise GPS into a broader robotics platform",
+      "takeaway": "Point One Navigation says precise location data can do more than stop robots getting lost. It is building a platform that helps robots coordinate, share space and scale up. That could make location a base layer for many robot applications.",
+      "deck": "CEO Aaron Nathan described the shift in a podcast interview and announced a November 19 event in San Francisco.",
+      "body": [
+        "Point One Navigation started by making GPS accurate enough to guide self-driving cars and robots. Standard GPS can be off by a few metres. Point One's technology tightens that to a few centimetres. Its CEO, Aaron Nathan, says the company is now turning that accuracy into a wider robotics platform.",
+        "In The Robot Report Podcast, Nathan said precise location should also help robots coordinate with each other and scale across real environments. The company plans to discuss this vision at its FUSE 2026 physical AI event on November 19 in San Francisco.",
+        "Nathan has led teams working on sensor fusion, computer vision and navigation for self-driving vehicles and other robots. He said his background in financial, defence and enterprise systems shaped the platform approach."
+      ],
+      "why": "Reliable position data is part of the stack for any robot working outdoors, in warehouses or on streets. If location providers move beyond navigation into coordination, they may influence what training data robot makers need, especially around multi-robot scenes and real-world mapping.",
+      "hard": "The article is based on a podcast interview and does not give independent performance numbers or customer deployment figures for the new platform.",
+      "terms": [
+        {
+          "term": "GPS",
+          "meaning": "A satellite-based system that tells a device where it is on Earth. Standard GPS is only accurate to a few metres."
+        },
+        {
+          "term": "Sensor fusion",
+          "meaning": "Combining data from several sensors, such as cameras, GPS and motion trackers, to get a more reliable picture of the world than any single sensor gives."
+        },
+        {
+          "term": "Self-driving vehicle",
+          "meaning": "A vehicle that can sense its surroundings and move with little or no human control."
+        },
+        {
+          "term": "Physical AI",
+          "meaning": "AI systems that act in the real world through robots, vehicles or other machines, rather than only on screens."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Navigation"
+        ],
+        "task": [
+          "Robot coordination",
+          "Localization"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/how-point-one-turned-gps-accuracy-into-robotics-platform/"
+        }
+      ]
+    },
+    {
+      "id": "e804e0e792",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Tau Robotics sends remotely piloted humanoid cleaners into San Francisco homes",
+      "takeaway": "A startup is renting out humanoid robots for home cleaning in San Francisco while human operators guide them remotely. The cleaning is slow and still unreliable, but each job collects video and movement data meant to train future autonomous robots.",
+      "deck": "The robots clean slowly and sometimes stall, but Tau charges $60 to $100 per visit while collecting data for future autonomy.",
+      "body": [
+        "Tau Robotics is piloting a home-cleaning service with four-and-a-half-foot-tall humanoid robots in San Francisco. For now, remote human pilots watch through cameras in each robot's head and wrists and control its actions. Some tasks, such as vacuuming and mopping, already happen without direct human control.",
+        "For trickier jobs like making a bed or folding laundry, pilots use kinematic guidance: their own motions are transmitted to the robot, which copies them. Tau charges $60 for a weekly cleaning with two robots or $100 for a one-time visit. The robot works slowly but managed to clean a kitchen, toilet, countertops, and floors during a reporter's test.",
+        "The company has completed only a couple hundred cleanings so far. Cofounder Cornelia Weinzierl says Tau is also considering uses in mold remediation and home health care. The reporter's first visit ended early when remote monitoring equipment overheated and the robot could no longer receive help, though a later cleaning went more smoothly."
+      ],
+      "why": "This is an example of a robot company using paid real-world deployments as a way to gather egocentric task data, and the tasks involved overlap with commercial and residential cleaning jobs that training-data buyers are likely to want next.",
+      "hard": "The robot still needs constant remote help for many tasks, and the number of cleanings completed so far is too small to show whether the data will be enough for reliable autonomous cleaning.",
+      "terms": [
+        {
+          "term": "humanoid robot",
+          "meaning": "A robot shaped roughly like a person, with a head, arms, legs, or hands, used here for household chores."
+        },
+        {
+          "term": "remote piloting",
+          "meaning": "A human operator controls the robot from another location, seeing through cameras on the robot and sending commands over a network."
+        },
+        {
+          "term": "kinematic guidance",
+          "meaning": "A way of teaching a robot where a person's arm or hand motions are measured and copied by the robot's body."
+        },
+        {
+          "term": "training data",
+          "meaning": "Examples of real-world actions and sensor readings used to help machine-learning models improve at a task."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "AI training data"
+        ],
+        "task": [
+          "Humanoid robot deployment",
+          "Manipulation data collection"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "MIT Technology Review",
+          "url": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/"
+        }
+      ]
+    },
+    {
+      "id": "f78e15662b",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Defense, drones and space lead the week's largest U.S. funding rounds",
+      "takeaway": "The biggest new U.S. funding rounds last week went to defense autonomy, drone delivery and space technology companies. One robotics startup focused on robot foundation model training raised a $75 million round.",
+      "deck": "A defense autonomy company, a drone delivery firm and two space startups took the four largest U.S. rounds this week.",
+      "body": [
+        "The biggest round went to Shield AI, a San Diego defense autonomy company, which took $2 billion in equity and another $500 million in debt. In the same week it said it is buying radar maker Echodyne in a deal valued at $5.3 billion.",
+        "Drone delivery company Zipline International raised $1.5 billion at a $21.5 billion valuation. It plans to grow its U.S. manufacturing and hiring as it builds a nationwide drone delivery network. Space tech drew big checks too, with $730 million for CesiumAstro and $375 million for Northwood Space.",
+        "One robotics deal scraped into the top ten. Tutor Intelligence, a Watertown, Massachusetts startup working on robot foundation model training and robot workers, raised a $75 million Series B led by Andreessen Horowitz. That is small next to the AI infrastructure and defense rounds above it."
+      ],
+      "why": "Tutor Intelligence getting a $75 million Series B shows investors are now willing to fund companies whose product is explicitly tied to robot foundation model training. That is a direct signal of where commercial demand for robot training data and robot workers is forming.",
+      "hard": "The press release does not say what specific tasks Tutor Intelligence's robots perform, how many are deployed, or what kind of training data it uses.",
+      "terms": [
+        {
+          "meaning": "Money invested in a startup in exchange for a share of ownership, unlike a loan which must be repaid with interest.",
+          "term": "Equity funding"
+        },
+        {
+          "meaning": "A company valuation that includes both the new money raised and the value of all existing shares after the round.",
+          "term": "Post-money valuation"
+        },
+        {
+          "meaning": "A type of AI model trained on very large and varied datasets so it can be adapted to many different tasks.",
+          "term": "Foundation model"
+        },
+        {
+          "meaning": "The cash a business generates from subscriptions or recurring contracts in a year, before one-time fees.",
+          "term": "Annual recurring revenue"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Defense tech"
+        ],
+        "task": [
+          "Funding tracker",
+          "Training data demand signal"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "Crunchbase News",
+          "url": "https://news.crunchbase.com/venture/biggest-startup-rounds-ai-defense-space-tech-shield-zipline/"
+        }
+      ]
+    },
+    {
+      "id": "254eb2dbc4",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Humanoid control method ties arm and leg planning through simulated forces",
+      "takeaway": "A new control method lets a humanoid robot plan arm and leg movements together while it carries objects with both hands. Tests on a G1 robot showed stable whole-body coordination and accurate two-arm motion.",
+      "deck": "The framework splits a G1 humanoid into torso, arms and lower body, then coordinates them through shared force variables, not a single monolithic model.",
+      "body": [
+        "A new control framework treats a humanoid robot as linked subsystems rather than one heavy model. The torso, arms and lower body are planned separately. Physical connections, such as shoulders joining arms to the torso or two hands holding the same object, appear as constraints the planner must respect.",
+        "The fiction of a single rigid body and separate arm and leg models is held together by interaction forces. The planner chooses arm torques, foot forces and the forces transmitted through the shoulders and hands at the same time. Arm torques then go directly to the arms while foot forces convert into leg joint torques.",
+        "The method ran online in simulation and on a Unitree G1 humanoid. Results showed planned force values close to measured contact forces, accurate two-arm tracking, and stable whole-body movement. The authors report seven pages and eight figures in the arXiv paper."
+      ],
+      "why": "Whole-body control that coordinates arms and legs while managing force at contact points is a core problem for humanoid robots doing real two-handed work, where training data demand is rising.",
+      "hard": "The validation covers one robot platform and the authors did not report long-duration or varied real-world tasks beyond the cooperative manipulation trials.",
+      "terms": [
+        {
+          "term": "Humanoid robot",
+          "meaning": "A robot with a body shape like a person, including a torso, two arms and two legs."
+        },
+        {
+          "term": "Nonlinear model predictive control",
+          "meaning": "A planning method that repeatedly computes the best next moves over a short future window while respecting physical limits."
+        },
+        {
+          "term": "Lagrange multipliers",
+          "meaning": "Mathematical values that measure the forces needed to satisfy physical constraints, such as keeping two hands attached to the same object."
+        },
+        {
+          "term": "Holonomic constraints",
+          "meaning": "Fixed geometric restrictions, such as a rigid joint or two grippers holding one box, that limit how parts can move."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Humanoid robots"
+        ],
+        "task": [
+          "Whole-body control",
+          "Dual-arm manipulation"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.07268"
+        }
+      ]
+    },
+    {
+      "id": "02b8c440a6",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "New method makes adapting pre-trained robot control models cheaper and better",
+      "takeaway": "Researchers found a way to fine-tune pre-trained robot control models that avoids a costly and unstable step in existing methods. In tests across locomotion and manipulation tasks, their approach delivered two to three times better performance while using fewer samples.",
+      "deck": "The approach aligns the random starting inputs with robot actions, removing a mismatch that made earlier fine-tuning methods unstable.",
+      "body": [
+        "Pre-trained diffusion and flow policies have become common starting points for robot learning. Fine-tuning them to new tasks with reinforcement learning is usually slow and sample-hungry. Earlier methods that only adjust the initial random noise avoid a costly training step called backpropagation through time, but they suffer from noise aliasing: there is no natural link between the noise space and the action space.",
+        "The researchers introduce a Latent Noise Linear Markov Decision Process and derive what they call the Bridge Equation to fix this. It aligns values in noise and action spaces through a shared representation. Their algorithm, Latent Representation Bridging for Diffusion, learns this representation and optimizes the initial noise distribution to steer the pre-trained model toward better behavior.",
+        "In tests, the method produced two to three times higher performance on challenging control problems across a range of robotic locomotion and manipulation tasks. The work is set for the Conference on Neural Information Processing Systems in 2026."
+      ],
+      "why": "Faster and more sample-efficient fine-tuning of pre-trained policies matters for companies that need to adapt general robot models to specific tasks. A method that performs better with fewer environment interactions reduces the cost of collecting real or simulated training data.",
+      "hard": "The results are reported on simulated control benchmarks, so it remains to be shown that the same gains hold on real robots with noisy sensors and varied physical conditions.",
+      "terms": [
+        {
+          "term": "Policy",
+          "meaning": "In robotics, a policy is the set of rules a model uses to decide what action to take next."
+        },
+        {
+          "term": "Diffusion model",
+          "meaning": "A type of AI model that learns by gradually removing noise from random inputs to produce a desired output, such as a robot action."
+        },
+        {
+          "term": "Reinforcement learning",
+          "meaning": "A training method where a model learns by trying actions and receiving rewards or penalties, rather than only copying examples."
+        },
+        {
+          "term": "Backpropagation through time",
+          "meaning": "A way to update a model by tracing errors back through every step of a sequence, which is computationally expensive."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "AI research"
+        ],
+        "task": [
+          "Robot learning",
+          "Policy fine-tuning"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.07275"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "Breakthroughs",
+      "headline": "MessyNav: Zero-Shot Navigation via Manipulation in Messy Environments",
+      "url": "https://arxiv.org/abs/2611.07417",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Your Beat",
+      "headline": "Closed-Loop Physics-Based Manipulation Evaluation at a Commodity Price: What 4.4 L4 GPU hours at $3.50 Buys You",
+      "url": "https://arxiv.org/abs/2611.07441",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "Fast and Reliable Open-Vocabulary Object Search with Absence Detection from Robot Memory",
+      "url": "https://arxiv.org/abs/2611.07493",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "LMGN: A Unified Policy Learning Model for Last-Mile Grasp-Navigation",
+      "url": "https://arxiv.org/abs/2611.07515",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Your Beat",
+      "headline": "GraspBench: Execution-Aware Cross-Robot Evaluation of 6-DoF Grasp Generation in MuJoCo",
+      "url": "https://arxiv.org/abs/2611.07651",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Your Beat",
+      "headline": "TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation",
+      "url": "https://arxiv.org/abs/2611.07881",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "HITCH: Teaching a Vision-Language Model to Operate a Humanoid through a Whole-Body Harness",
+      "url": "https://arxiv.org/abs/2611.08039",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "RoboARCade: Benchmarking Agentic Robot Control",
+      "url": "https://arxiv.org/abs/2611.08209",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Your Beat",
+      "headline": "MOMASPLAT: Dynamic Novel-View Demonstration Augmentation for Mobile Manipulation",
+      "url": "https://arxiv.org/abs/2611.08372",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "AI is dramatically accelerating AI research",
+      "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+      "source": "Hacker News"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 8,
+        "sector": "ai",
+        "company": "Thinking Machines Lab",
+        "what": "AI research lab",
+        "round": "Funding",
+        "amount_usd_m": 5000,
+        "amount_text": "$5B",
+        "lead": "Accel",
+        "india": false,
+        "url": "https://techfundingnews.com/accel-thinking-machines-lab-5b-round-40b-valuation/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 7,
+        "sector": "deeptech",
+        "company": "Shield AI",
+        "what": "Defense autonomy and simulation",
+        "round": "Funding",
+        "amount_usd_m": 2000,
+        "amount_text": "$2B",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.crunchbase.com/venture/biggest-startup-rounds-ai-defense-space-tech-shield-zipline/",
+        "source": "Crunchbase News"
+      },
+      {
+        "i": 10,
+        "sector": "robotics",
+        "company": "Skydio",
+        "what": "Public safety drone maker",
+        "round": "Funding",
+        "amount_usd_m": 1200,
+        "amount_text": "$1.2B",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5zQjIzYnJiRF9lVEU5aGhLVXdmU2dNZ21vSGs1OEdINXRvak9rd0JodnRvLXpldHd3c3E5TFdaRUlSM0Z1LU1zZGlKN1ZNXzZ6azlDd0h3bWpKZ3RIWlE3bjF0YTdjZ0l2azlLZkYydWp4ZWc?oc=5",
+        "source": "DroneDJ"
+      },
+      {
+        "i": 19,
+        "sector": "ai",
+        "company": "Clutch",
+        "what": "AI agent security startup",
+        "round": "Acquisition",
+        "amount_usd_m": 500,
+        "amount_text": "$500M",
+        "lead": "Palo Alto Networks",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 15,
+        "sector": "deeptech",
+        "company": "EOS-X Space",
+        "what": "Stratospheric balloon space platform",
+        "round": "Funding",
+        "amount_usd_m": 120,
+        "amount_text": "$120M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/eos-x-space-110m-raise-1-2b-valuation-balloon-flights/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 6,
+        "sector": "robotics",
+        "company": "URobotics",
+        "what": "Autonomous mobility physical AI",
+        "round": "Series A",
+        "amount_usd_m": 30,
+        "amount_text": "$30M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0wZ3dVVFpGQUxGV0I2UU1pd3BnVVA4eWpua1Bqc3Q5UFpVcmRzb2lWcEhFUWl2cGVTQXRRa2RqQm41MjM5QloxS0ZfVlVVdjJ5alJr?oc=5",
+        "source": "Wowtale"
+      },
+      {
+        "i": 0,
+        "sector": "robotics",
+        "company": "Physicl",
+        "what": "Physical AI simulation data pipeline",
+        "round": "Seed",
+        "amount_usd_m": 10,
+        "amount_text": "$10M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOcXVmakJKZ0NHREVzTE9vYjQ2bTdUNzRGV3FfT1BRR1NHRHc4azVwSzM1TGF6Z1Z1Y29mcHh1c2tuMEdsUUdEWElNYi1SRGt6OHRNS1dCVndJNVl2Z3YtTXA5UjFQeWMwMl8weFNLTlExVWZyZGhnVzBkTmtjS2ptcTlidzh2ZkFnWEJQVnIxZmk?oc=5",
+        "source": "Unite.AI"
+      },
+      {
+        "i": 21,
+        "sector": "deeptech",
+        "company": "Vensum Power",
+        "what": "Power converters for AI data centres",
+        "round": "Funding",
+        "amount_usd_m": 9.72,
+        "amount_text": "€9M ($9.7M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/vensum-power-9m-series-a-ai-data-centre-power-converters/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 25,
+        "sector": "robotics",
+        "company": "Topu Technology",
+        "what": "High-density drone batteries",
+        "round": "Funding",
+        "amount_usd_m": 4.49,
+        "amount_text": "$4.49M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNSktUN0gwcEo2VW9qMXM2SFBVbW5LdmV5SFRieDdzbk4tMnQzaEZybmZBQWppaG4yQ1l6aU9UNlNvclM2VUVVT0FPVXQ1VmZYbDlIcnhDeG1HYjVVLTBldVdPUXBfek9HbzdaWGc0VVZtaTFuTHVyN0Y1dUpidmZXOXlMdHZXblVvRUpLWnJhVXktYkhZUEtOWkpiMDk5X1B0R0RiQzdNWEQtRjQw?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 22,
+        "sector": "robotics",
+        "company": "SkyShows",
+        "what": "Drone show operator",
+        "round": "Acquisition",
+        "amount_usd_m": 2.8,
+        "amount_text": "£2.1M ($2.8M)",
+        "lead": "21CC Group",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNcU16bFNYaDBJdHM2b3ZidndHZFpyUEpQRGExZ1lOaWRNaWFMOU1qSlNGOC03dWNTb2RVaFhWMnd6X2hiTW9veWlXUTBPMEJwX1ZZcWxkbkdnYWhpRkRzRUMyM1picnJqNExUSUxSUkFDZVdZMjNqUTRpMFFpQUFrcjBObnEyMTA5TXhzNnRBclA4NDdv?oc=5",
+        "source": "Event Industry News"
+      },
+      {
+        "i": 5,
+        "sector": "robotics",
+        "company": "Stealth robotics startup (ex-JD.com exec)",
+        "what": "Stealth robotics startup",
+        "round": "Series A",
+        "amount_usd_m": null,
+        "amount_text": "Hundreds of millions",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNRDZOTG00eS10TzFIWHhTRXFkY1RVRUdoQVdMazgxeEt6ajdvVGJ5RTRBNW9pdHdHOFNhN1Z2Ym9SRVh5XzYwc0pPclYzY0g5aTFuNnFBTVJWdVdzLUVYTE83bzVCN0VoS1psZXkxbk9VTlRIaW1TX21NS3FXQ3Y0ZGxybjNPOGVCcVEwOUZvb0FhNGlVRW5TSGdGeE5lZFhGM29Xblhhc0JDQi1JRmxESFlEd1c?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 23,
+        "sector": "ai",
+        "company": "Supercompany",
+        "what": "Norwegian AI company",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Lime",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPcTZ1a21BV1dEVDUzWkwwdEVzNGlEby1TT3ZaTGE4SEFXRmVMbWktRzhCRndDZjJPZXBlY1dhbVkwa1VzREY2VjZUOFViSjJMS2htd21aeVdJRGNlNTRmMnJxMTlHNXp3VVUwRnZGdXg3Z2xnSDlHa2pmcW1ZWk5ycmVFRWZZWk12Wm5QR3puWHI0YThyeHppVWkzUWM0ZXRBRGQyck9Xa0c5NXBnRmwxc2VGeFUyZVBYSUE?oc=5",
+        "source": "www.marketscreener.com"
+      }
+    ],
+    "totalUsdM": 8877
+  },
+  "playground": [
+    {
+      "headline": "A 32MB speech model runs a browser game entirely offline",
+      "body": "Startup Underdog released Woof, a retro-themed browser game driven by a 31-million-parameter speech model that fits in 32 MB. You can type on a virtual typewriter and hear it talk back, or spin a music tuner to generate sounds. It all runs locally in the browser with no internet connection.",
+      "why": "Capable speech generation can now squeeze into models small enough to run privately on everyday devices.",
+      "maker": "Underdog",
+      "url": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+      "source": "TechCrunch AI"
+    },
+    {
+      "headline": "AirPods turned into a mouse with reverse-engineered head tracking",
+      "body": "Matteo Gaudioso built MousePods, a Python tool that reads motion sensors in AirPods 3 and Pro 2 on Linux and turns head movements into mouse input. The data was hidden because Linux's default packet size was too small to carry the full sensor payload. Claude Code helped run hundreds of probes to tease out the protocol.",
+      "why": "With a little reverse engineering, sensor-packed earbuds can become input devices for games and simulators.",
+      "maker": "Matteo Gaudioso",
+      "url": "https://hackaday.com/2026/11/06/mousepods-reverse-engineers-head-tracking-data-from-stubborn-airpods/",
+      "source": "Hackaday"
+    },
+    {
+      "headline": "The goat emoji is valid machine code that prints HELLO",
+      "body": "GloriousCow noticed that the goat emoji decodes to x86 instructions that effectively do nothing, then built a complete Hello World program from a string of emojis. Saved as a .com file and run in DOSBox, it writes HELLO directly to video memory. There is also a more elaborate VGA demo made entirely from emojis.",
+      "why": "Even emoji bytes can be assembled into working programs, showing how deeply arbitrary data can double as code.",
+      "maker": "GloriousCow",
+      "url": "https://hackaday.com/2026/11/06/the-goat-emoji-is-100-valid-machine-code-and-it-doesnt-stop-there/",
+      "source": "Hackaday"
+    },
+    {
+      "headline": "A lab-grown muscle lets a tiny robot jump",
+      "body": "Researchers at ETH Zurich built a 1.5-centimeter robot that jumps 5 mm using a single contraction of lab-grown muscle. They designed the muscle and a flexible, 3D-printed scaffold together. Grooves in the scaffold helped muscle fibers line up and gave them a firm place to pull against.",
+      "why": "Bio-hybrid robots are moving from twitches to useful bursts of motion by co-designing living tissue and mechanical frames.",
+      "maker": "ETH Zurich researchers",
+      "url": "https://www.reddit.com/r/robotics/comments/1xpfw34/a_15centimeter_robot_jumped_a_third_of_its_body/",
+      "source": "r/robotics"
+    }
+  ],
+  "think": {
+    "collision": {
+      "a": {
+        "kind": "story",
+        "n": 3,
+        "label": "Consumer VR headsets record usable robot demonstrations"
+      },
+      "b": {
+        "kind": "brief",
+        "n": 3,
+        "label": "Robot memory that searches objects and detects absence"
+      },
+      "headline": "Headset-recorded walkthroughs of Indian shops and stockrooms, labelled with where items are and where they are missing, for robot search training",
+      "body": "Story 3 shows a cheap consumer VR headset, the PICO 4 Ultra, can record demonstrations nearly as well as a lab device, and these headsets already track head position and map the room in three dimensions. Brief 3 is about robots that remember where things are and can say with confidence that an item is not there, a skill that needs examples of failed searches as well as successful ones. Vendors could wear headsets while restocking kirana stores, pharmacy back rooms and spare-parts counters, recording repeat visits and labelling each search as found, moved or absent.",
+      "who_pays": "Makers of mobile picking robots and retail inventory robots, plus labs training robot memory and search models.",
+      "data_needed": "Repeated headset recordings of the same rooms over weeks, with headset position tracks, shelf-level object labels and logged search outcomes including confirmed absences.",
+      "why_fail": "Buyers may find that cluttered Indian stockrooms differ too much from the tidy Western warehouses and homes their robots are sold into."
+    },
+    "contrarian": {
+      "story_n": 1,
+      "consensus": "OpenAI raising less than hoped means investors are cooling on AI, and that caution will slow money flowing into robot models and their training data.",
+      "against": [
+        "Eleven billion dollars at a 1.25 trillion dollar valuation is still among the largest private raises ever. A round that is short of its target is a pricing argument, not a retreat.",
+        "Money tight at the very top of the market often moves sideways into smaller bets with clearer revenue. Tutor Intelligence's 75 million dollar Series B and Physicl's 10 million dollar raise in the same week point that way.",
+        "Robot model builders pay for data out of their own rounds, which depend on robotics investors, not chatbot investors. Paid deployments like Tau Robotics' 60 to 100 dollar cleaning visits show data budgets tied to customer revenue."
+      ],
+      "bets_otherwise": "Investors in Tutor Intelligence and Physicl, along with defense and drone backers named in this week's largest U.S. rounds, are still writing large checks for physical AI.",
+      "settle_it": "Track total quarterly venture funding for robotics and robot data startups over the next two quarters against funding for frontier language model labs."
+    }
+  },
+  "cost": {
+    "usd": 0.0895,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 4,
+        "inTokens": 25389,
+        "outTokens": 7757,
+        "cost": 0.0064,
+        "models": {
+          "anthropic/claude-haiku-5.5": 4
+        }
+      },
+      "write": {
+        "calls": 10,
+        "inTokens": 16007,
+        "outTokens": 5810,
+        "cost": 0.0399,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 10
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 2958,
+        "outTokens": 1847,
+        "cost": 0.0012,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 4322,
+        "outTokens": 573,
+        "cost": 0.0079,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "think": {
+        "calls": 1,
+        "inTokens": 4160,
+        "outTokens": 870,
+        "cost": 0.034,
+        "models": {
+          "anthropic/claude-opus-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 228,
+    "unique": 178,
+    "feeds": 29,
+    "failedFeeds": [
+      "Import AI",
+      "Google DeepMind",
+      "r/LocalLLaMA"
+    ]
+  },
+  "generatedAt": "2026-11-07T00:16:17.847Z"
+}
