@@ -1,0 +1,279 @@
+{
+  "date": "2026-11-08",
+  "weekday": "Sunday",
+  "sunday": true,
+  "number": 11,
+  "paper": "The Morning Servo",
+  "readMinutes": 4,
+  "stories": [
+    {
+      "id": "8879475e62",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Anthropic AI models improve twice as fast as a year ago",
+      "takeaway": "Anthropic is using AI to speed up its own AI research, with models improving twice as fast as a year ago. This suggests AI systems that improve themselves with little human help may arrive sooner than expected, raising safety concerns.",
+      "deck": "Employees using an internal model reported being about 12 times as productive.",
+      "body": [
+        "Anthropic is using AI to build more powerful AI, and it appears to be working quickly. The AI safety research group METR spent 11 weeks inside the company and found that Anthropic's models are improving roughly twice as fast as they were a year ago. METR says Anthropic made about two years of progress in the last year.",
+        "The speedup is not mainly from adding more computers. METR says most of the acceleration is due to AI assisting human researchers. In informal polls, employees using Anthropic's most advanced internal model said they were about 12 times as productive as they would be without AI help, roughly double what staff reported a few months earlier.",
+        "Anthropic has finished training three models it has not released: Model 2, Model 3, and Model 4. The company was allowed to redact parts of METR's report and removed much of the evidence METR found most informative. Anthropic cofounder Sam McCandlish said the cuts were commercially sensitive and could hand rivals a roadmap."
+      ],
+      "why": "A faster path to AI systems that improve themselves could bring robot foundation models that learn new physical tasks with far less human data. That changes the value of egocentric video and teleoperation data, as buyers may need different or smaller data sets sooner. This is also a signal for India-based data collection vendors and partners tracking frontier-lab demand.",
+      "hard": "Anthropic redacted much of the evidence behind the findings, so outside researchers cannot check the claims that AI is accelerating its own development.",
+      "terms": [
+        {
+          "meaning": "A computer system trained on large amounts of data to do tasks such as writing, coding, or image recognition.",
+          "term": "AI model"
+        },
+        {
+          "meaning": "A scaling method where AI systems help build better AI systems, potentially with less human involvement over time.",
+          "term": "Recursive self-improvement"
+        },
+        {
+          "meaning": "An organization that studies risks from advanced AI systems, in this case by investigating work inside an AI company.",
+          "term": "METR"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "AI safety research",
+          "Frontier AI labs"
+        ],
+        "task": [
+          "AI research and development",
+          "Model benchmarking"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development"
+        }
+      ]
+    },
+    {
+      "id": "36231604b2",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Crusoe sells unfinished Wyoming data center project to Google",
+      "takeaway": "Crusoe sold an unfinished Wyoming data center site to Google, which will now finish the build. The deal shows how hard it is for independent developers to deliver very large AI data centers on time and on budget.",
+      "deck": "The sale price was not disclosed.",
+      "body": [
+        "Crusoe confirmed Friday it sold an unfinished data center project in southeastern Wyoming to Google. Crusoe had tried and failed to sign Google as a customer for the site, and Google reportedly raised concerns about cost and construction timeline under Crusoe's management.",
+        "Crusoe announced the project last year with Tallgrass, an infrastructure company backed by Blackstone, and planned to eventually scale it to 10 gigawatts of power capacity. Google did not disclose the purchase price but plans to invest $17 billion to develop the campus.",
+        "Google has not ended its relationship with Crusoe. Crusoe is developing another data center for Google near Amarillo, Texas. Despite the Wyoming setback, Crusoe raised $3.9 billion in September, and its other customers include Oracle, OpenAI, Microsoft, and Meta."
+      ],
+      "why": "Large AI training runs depend on data center capacity coming online on schedule. Delays and ownership changes like this one signal where compute supply may be tight for model developers and, in turn, for companies buying robot training data that relies on that compute.",
+      "hard": "The project changed hands before completion because Google raised concerns about its cost and construction schedule, which remains unresolved at this stage.",
+      "terms": [
+        {
+          "meaning": "A large building full of computers, called servers, that run AI models and other software.",
+          "term": "Data center"
+        },
+        {
+          "meaning": "A unit of electrical power, used here to describe how much energy a data center can draw.",
+          "term": "Gigawatt"
+        },
+        {
+          "meaning": "Running an already-trained AI model to produce answers or actions when someone uses it.",
+          "term": "Inference"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "AI infrastructure",
+          "Data centers"
+        ],
+        "task": [
+          "AI data center development"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Apple's HALO System Lets Robots \"Move House With Their Brains\" as Embodied AI Funding Puts Over 50% on Brains",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1FbU5xcUdXZDBRMGMwaEticGJOcEJzSUEzRGtNaGZzRjJVc1RQcGh5QU0zUkFpV1NPajc0eVVqODliUjNJcXdwUzQ2SVBkUGdCU01tVWZ6emxaYWt6RFRjeElFblY1c0VTZ21pcUtxbWRPai1tM2c?oc=5",
+      "source": "BigGo Finance"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "Robot integration brings high-precision production to midmarket manufacturers",
+      "url": "https://www.therobotreport.com/robot-integration-brings-high-precision-production-to-midmarket-manufacturers/",
+      "source": "The Robot Report"
+    },
+    {
+      "kicker": "Elsewhere",
+      "headline": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
+      "url": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/",
+      "source": "TechCrunch AI"
+    },
+    {
+      "kicker": "Elsewhere",
+      "headline": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
+      "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
+      "source": "TechCrunch AI"
+    },
+    {
+      "kicker": "Policy",
+      "headline": "The US let Nvidia sell chips to an empty office in China",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+      "source": "The Verge AI"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 1,
+        "sector": "ai",
+        "company": "OpenAI",
+        "what": "Frontier AI model developer",
+        "round": "Funding",
+        "amount_usd_m": 11000,
+        "amount_text": "$11B",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQYXNsRDZkdlRYaDFRYlUtQnM1NC13RjNFdEt0dlJhSlVpTUxtZ1A1YkdRTzhoc29hNC1HaGpTYkFtMHdWRFRLaEhFaWJtMnpjazBZSURBVllsWnZMTW15a0tSVWQ0OGE0ckwxbHExbDluNGxzMWFUdWdla09mamg4U24tY3hCVkhTektMY19OTHN0ZWI4amo5UjA0Q01IMEgybVozRUQ2ejRZTEdoSnRZVk9Sc00xU2ZNMFZpa1gxcw?oc=5",
+        "source": "AI Insider"
+      },
+      {
+        "i": 0,
+        "sector": "robotics",
+        "company": "Shinkei",
+        "what": "AI robot for fishing boats",
+        "round": "Series A",
+        "amount_usd_m": 22,
+        "amount_text": "$22M",
+        "lead": "Founders Fund",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPbWNYVTJwX2VBNS1DQzdmMXBtWFJZQm9QUEVXaFJmRW9la20yc2lLQTVJd2VkaEhaMGZsUDROel9RZ3lNLUt6cWJXUUdIcWdaQ1BLN3lXRndKSk5paVo5TkM3cFhQMXBacDFOcnU0NjROekJqOS1CRWRmeXlvYk5MMG5WSm0tUXVNWUdrOWZpd3FaX290N1NYOVg2T1RRMTFONjdEZFRoNU5uVU1HZlItYkItcDdkNUJzM0Q4RHc3Ui1jcFhZY3E4WUcxRXZSSmhsYnc?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 4,
+        "sector": "ai",
+        "company": "Crusoe",
+        "what": "AI data center developer",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Google",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 5,
+        "sector": "robotics",
+        "company": "Agility Robotics",
+        "what": "Humanoid robot developer",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQOUhkYkwtSHJKQVdOMHBZeWk4NWt5N0pVbE11Wm0tbnYtY2toc3RMbWVCS2o5Ymg4MHdHdmhBRjF0UTNWY2wzQXVFdUFoaDVZaGt1TkxqYmU1RzN2V3Q1WFBHZ2JJSkpoSE1Eai1sMUZzS1BpZnBQbllDVTRCVHRqeVlVdXBYTEw0OS1PakNXaUs3c3p0M2pfbXMzX19tMkZLOGZhMFl0eVE5RmNLSXY2dmVqeWg1SS1Ub2o0NmoyYk94OC1pQ1l2bUZR?oc=5",
+        "source": "Kalkine Media"
+      }
+    ],
+    "totalUsdM": 11022
+  },
+  "playground": [
+    {
+      "headline": "AirPods turn into a head-tracking mouse for Linux",
+      "body": "Matteo Gaudioso reverse-engineered Apple's RemoteHID protocol to read motion data from AirPods 3, which other open source projects had struggled to access. His MousePods app translates head movements into cursor movements on Linux, working at up to 210 Hz. It supports three control modes, including tilting your head or waving an earbud like an air mouse.",
+      "why": "It shows that consumer earbuds can be repurposed as precise input devices, hinting at more creative uses for the sensors we already carry.",
+      "maker": "Matteo Gaudioso",
+      "url": "https://www.hackster.io/news/your-airpods-are-now-a-mouse-35086dea3d9a",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "A Minecraft train travels through the Hacksmith office",
+      "body": "Hacksmith Industries built a G-scale model train that looks like it drove out of Minecraft, with 3D-printable modular tracks and terrain blocks textured using a UV printer. The train picks up DC power from the rails, and an Insta360 camera in a minecart records 360-degree video so you can ride along in VR. All the parts are available online.",
+      "why": "It shows how accessible fabrication tools let hobbyists merge physical model railroading with popular virtual worlds.",
+      "maker": "Hacksmith Industries",
+      "url": "https://www.hackster.io/news/this-modular-minecraft-train-spans-the-hacksmith-office-2b5d87bf4fd8",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "Simulated Tesla Roadster leaps and lands using thrusters",
+      "body": "A maker trained a model to control a simulated Tesla Roadster with fictional cold-gas thrusters, making it jump and balance in the air. The reverse digital twin uses real-time force dynamics and suction fans to hold the car against the track. No CFD, but the control software runs live.",
+      "why": "It demonstrates how reinforcement learning can handle aggressive, unconventional vehicle dynamics that would be difficult to tune by hand.",
+      "maker": "Unknown",
+      "url": "https://www.reddit.com/r/robotics/comments/1xpuxjb/i_tried_making_a_tesla_roadster_jump_and_balance/",
+      "source": "r/robotics"
+    },
+    {
+      "headline": "Thirty AI-built products from India to watch",
+      "body": "YourStory's VibeCode30 list highlights 30 live AI-built products from India, spanning healthcare, education, housing, travel and developer tools. The products show how AI is making software development accessible to a new generation of builders.",
+      "why": "It signals that AI-assisted development is letting more people turn ideas into working software without deep coding expertise.",
+      "maker": "YourStory",
+      "url": "https://yourstory.com/2026/11/vibecode30-2026-30-ai-built-products-india-new-builders",
+      "source": "YourStory"
+    }
+  ],
+  "think": null,
+  "cost": {
+    "usd": 0.0153,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 1,
+        "inTokens": 5695,
+        "outTokens": 1893,
+        "cost": 0.0015,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "write": {
+        "calls": 2,
+        "inTokens": 3796,
+        "outTokens": 1064,
+        "cost": 0.0092,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 2
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 1632,
+        "outTokens": 499,
+        "cost": 0.0004,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 1467,
+        "outTokens": 559,
+        "cost": 0.0042,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 64,
+    "unique": 45,
+    "feeds": 29,
+    "failedFeeds": [
+      "Import AI",
+      "Hacker News",
+      "r/LocalLLaMA",
+      "Show HN"
+    ]
+  },
+  "generatedAt": "2026-11-08T00:15:37.260Z"
+}

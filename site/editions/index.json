@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-11-08",
+    "weekday": "Sunday",
+    "number": 11,
+    "lead": "Anthropic AI models improve twice as fast as a year ago",
+    "stories": 2,
+    "readMinutes": 4,
+    "costUsd": 0.0153
+  },
+  {
     "date": "2026-11-07",
     "weekday": "Saturday",
     "number": 10,
