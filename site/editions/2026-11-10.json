@@ -1,0 +1,853 @@
+{
+  "date": "2026-11-10",
+  "weekday": "Tuesday",
+  "sunday": false,
+  "number": 13,
+  "paper": "The Morning Servo",
+  "readMinutes": 11,
+  "stories": [
+    {
+      "id": "1f5146b06f",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Meituan releases model and agent for desktop robot tasks",
+      "takeaway": "Meituan built a robot control model for desktop work like cable insertion, using millions of image-text pairs plus 15,060 hours of robot recordings. The model succeeded 93.6 percent of the time on one benchmark and 70 percent on a hard real-world insertion task.",
+      "deck": "The food delivery company trained one model on 15,060 hours of robot recordings across 12 robot bodies",
+      "body": [
+        "A team at Meituan, the Chinese food delivery company, released a robot control model and software agent for desktop tasks such as inserting cables or picking up objects. The model is called Meituan-Robotics-0, or MR0. It was trained on 147 million image-and-text pairs plus 15,060 hours of robot movement recordings across 12 different robot bodies.",
+        "The model uses a method called Rollback: when the robot fails, the team keeps the failed actions and pairs them with a human's corrected version. This gives the model both examples of what not to do and what to do instead. On a benchmark called RoboTwin 2.0, MR0 succeeded 93.6 percent of the time. It placed fifth on a public robot-skill competition track.",
+        "The company also tested MR0 on real robot tasks and compared it with an established model called pi-zero-point-five. After matched training, MR0 scored higher on average success and progress. On a cable insertion task, MR0 reached 70 percent success and a progress score of 0.90. The team said the system can also resume a task when conditions that blocked it later clear up."
+      ],
+      "why": "Meituan is a large operation with many physical tasks, so its model choices signal where real-world robot training is heading. The use of 15,060 hours of curated trajectories across 12 embodiments shows growing demand for diverse, real robot data rather than simulated data alone.",
+      "hard": "The results come from a preprint, which means other researchers have not yet reviewed the work independently.",
+      "terms": [
+        {
+          "meaning": "A general-purpose model trained on a lot of data that can be adapted to many specific tasks.",
+          "term": "Foundation model"
+        },
+        {
+          "meaning": "Recordings of a robot's movements and camera views, used as examples to train the robot.",
+          "term": "Robot trajectories"
+        },
+        {
+          "meaning": "Physical robot bodies with different shapes, such as arms with different joints and hands.",
+          "term": "Embodiments"
+        },
+        {
+          "meaning": "A training method where a human corrects a robot's failed attempt, then the model learns from both the mistake and the fix.",
+          "term": "Rollback"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Food delivery"
+        ],
+        "task": [
+          "Foundation model development",
+          "Robot manipulation"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.08577"
+        },
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.08895"
+        }
+      ]
+    },
+    {
+      "id": "8122ffda50",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "NVIDIA launches GR00T 2 robot model and Isaac Lab 3.0",
+      "takeaway": "NVIDIA released a new robot control model that learns physical tasks from small amounts of human video. The company also upgraded its simulation software to train robots faster and test them across many conditions at once.",
+      "deck": "The new model reached 95 percent average success on 50 tasks after seeing five demonstrations per task",
+      "body": [
+        "NVIDIA trained GR00T 2 on a mix of robot and human data, including 100,000 hours of first-person stereo video that NVIDIA has released openly. In tests, the model completed 40 of 50 tasks without any task-specific demonstrations. With just one demonstration per task, it reached 71 percent average success across 50 tasks, rising to 95 percent with five demonstrations.",
+        "The model can also transfer skills between different robot bodies after seeing only human demonstrations. NVIDIA said GR00T 2 now ranks among the top three models across several robot-learning benchmarks, and that partners are testing it for laundry handling, server factory automation, and cable-swapping on a robotic arm.",
+        "NVIDIA also released Isaac Lab 3.0, a tool for training robot control software in simulation. It can now model soft objects like cables and cloth, and complex hands with many joints. In one vision-based dexterity benchmark, the new version trained robots up to 2.5 times faster than the previous release. A new testing framework lets developers run trained policies across thousands of simulated variations to find where they fail."
+      ],
+      "why": "The 100,000 hours of open egocentric data, plus NVIDIA's tools for turning human video into robot demonstrations, show the growing focus on human-collected training data. The shift toward benchmarking dexterity in industrial settings signals which tasks and data types will matter next.",
+      "hard": "These results come from NVIDIA's own benchmarks and partner demos, so real-world reliability across new sites and conditions is still unproven.",
+      "terms": [
+        {
+          "meaning": "A learned program that turns what a robot sees into physical actions.",
+          "term": "Policy"
+        },
+        {
+          "meaning": "A model trained to take both images and instructions and produce robot movements.",
+          "term": "Vision-language-action model"
+        },
+        {
+          "meaning": "A large model trained on broad data that other developers can adapt to many tasks.",
+          "term": "Foundation model"
+        },
+        {
+          "meaning": "Training that gives a model a simple reward signal for good behavior rather than showing exact correct moves.",
+          "term": "Reinforcement learning"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Industrial automation"
+        ],
+        "task": [
+          "Manipulation",
+          "Robot learning"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/nvidia-launches-gr00t-2-isaac-lab-3-0-corl/"
+        }
+      ]
+    },
+    {
+      "id": "cf83aea47c",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "UC Berkeley and NVIDIA replace robot training data with AI-written code",
+      "takeaway": "Researchers showed that AI coding agents can program robot arms for industrial tasks without training data. In tests, this reached 99 percent success on some tasks, matching careful human code and beating data-driven learning.",
+      "deck": "AI coding agents write and refine robot-control code in simulation, with no training data collection.",
+      "body": [
+        "UC Berkeley and NVIDIA announced a method called agentic robotics at the 2026 Conference on Robot Learning. Their approach uses large language models, the same kind of AI behind tools like ChatGPT, to write plain computer code that controls a robot arm. A complex task such as packing groceries is split into simpler sub-tasks, and an AI coding agent handles each one.",
+        "These coding agents test their work in simulation, change starting conditions, and fix failures without human help. In UC Berkeley tests, this method reached success rates up to 99 percent on some tasks, similar to code written carefully by human engineers. The same tasks scored about 20 percent using imitation learning, where robots learn by copying human demonstrations.",
+        "Ken Goldberg of UC Berkeley said imitation learning, the dominant data-driven approach, has hit a plateau for industrial work because reliability falls short. At Wistron, a Taiwanese manufacturer of NVIDIA GPU baseboards, retasking one robot for a new product takes at least 8 hours. With agentic robotics, the same retasking could take one or two minutes."
+      ],
+      "why": "This signals a possible shift away from large human-demonstration datasets for some industrial manipulation tasks. Buyers who need precise, repeatable robot code may pay for simulation and coding-agent tooling instead of more egocentric video.",
+      "hard": "Simulators still cannot accurately model physical contact with the real world, so code that works in simulation may fail on real hardware.",
+      "terms": [
+        {
+          "meaning": "A type of AI that learns by copying many examples of humans doing a task.",
+          "term": "Imitation learning"
+        },
+        {
+          "meaning": "The program that decides what actions a robot takes based on what it sees.",
+          "term": "Robot policy"
+        },
+        {
+          "meaning": "An autonomous AI tool that can plan, write, test, and modify software with little human input.",
+          "term": "Coding agent"
+        },
+        {
+          "meaning": "A digital copy of a real environment where robot behavior can be tested without real hardware.",
+          "term": "Simulation"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Industrial automation"
+        ],
+        "task": [
+          "Manipulation",
+          "Robot programming"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "IEEE Spectrum Robotics",
+          "url": "https://spectrum.ieee.org/agentic-robotics"
+        }
+      ]
+    },
+    {
+      "id": "b00f09daa2",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "ToolDex dataset records humans repurposing everyday objects as tools",
+      "takeaway": "Researchers released a new real-world video dataset of people using everyday objects as improvised tools, recorded from first-person and surrounding cameras, with detailed labels. It gives robot builders material to teach machines flexible, creative physical tool use.",
+      "deck": "Includes synchronized egocentric and eight exocentric camera views of people repurposing everyday objects",
+      "body": [
+        "A group of researchers from Stanford, Columbia, Carnegie Mellon and other labs has released ToolDex, a dataset for creative physical tool use. It includes synchronized egocentric video, from head or chest mounted stereo cameras, plus eight exocentric cameras set around the scene.",
+        "The dataset captures people choosing, adapting and repurposing everyday objects as tools when standard tools are not available. It annotates hands, tools, target objects and how deformable things bend or change during use. The authors also provide benchmarks for physical tool-use reasoning, sparse-view 3D and 4D reconstruction, and robot policy learning.",
+        "The team says existing tool-use datasets are often simulation-based or too simple. ToolDex is meant to give embodied agents training material for flexible, real-world tool use. Code, visualizations and benchmark results are linked from the project page."
+      ],
+      "why": "Egocentric plus exocentric synchronized video with annotated deformable interactions is exactly the kind of real-world manipulation data robot foundation model builders are asking for. The tool-repurposing focus points toward generalization beyond fixed tools, which is a key test for embodied AI.",
+      "hard": "The dataset is new and not yet proven to improve real robot performance on tool-use tasks.",
+      "terms": [
+        {
+          "meaning": "A first-person, head-mounted or chest-mounted camera view showing what the person wearing it sees.",
+          "term": "egocentric video"
+        },
+        {
+          "meaning": "Exocentric cameras are placed around a scene to record the action from outside, like standard fixed cameras.",
+          "term": "exocentric cameras"
+        },
+        {
+          "meaning": "Mathematical rules a robot follows learned from data to decide how to move and act.",
+          "term": "robot policy"
+        },
+        {
+          "meaning": "Tracking objects and their motion through three dimensional space plus time, also called 4D.",
+          "term": "4D reconstruction"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Training data"
+        ],
+        "task": [
+          "Egocentric data collection",
+          "Manipulation",
+          "Tool use"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.09036"
+        }
+      ]
+    },
+    {
+      "id": "3da222861e",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Open-HumanWAM releases 50,000-hour egocentric pretraining recipe for robot models",
+      "takeaway": "Researchers released an open 50,000-hour first-person video dataset and training recipe for robot models. Their results show that more human video data leads to measurably better robot performance, including on physical robots.",
+      "deck": "The release includes an open 50,000-hour egocentric video dataset, training code, and model checkpoints.",
+      "body": [
+        "A research group has released Open-HumanWAM, an open recipe for training robot models on 50,000 hours of egocentric video, which is footage captured from a person's own viewpoint. The release includes a curated video dataset with hand-motion and language labels, plus the training code and model checkpoints.",
+        "The team first trained a model only on human video. After a short round of robot-specific training, it reached 92.08 percent success on one simulated benchmark's clean-to-clean variant and 68.88 percent on clean-to-random. They then trained a second model on mixed human and robot data, conditioned on a visual goal, which hit 92.70 and 84.60 percent on the same two variants.",
+        "The authors also report a log-linear scaling pattern linking hours of human pretraining video to downstream robot success rates. The visual-goal model showed what they call in-context learning on physical robots, changing behavior for unseen goals without updating its internal parameters."
+      ],
+      "why": "This is direct evidence that egocentric human video scales robot performance along a predictable curve and that joint human-robot training improves generalization. For a company selling first-person training video, that strengthens the market case and points toward visual-goal-conditioned datasets as a next buyer need.",
+      "hard": "The benchmarks are simulated or limited physical trials, and it is not yet clear how the scaling pattern holds beyond 50,000 hours or across broader real-world work settings.",
+      "terms": [
+        {
+          "meaning": "First-person video recorded from cameras worn on a person's head or chest, showing tasks from the person's own viewpoint.",
+          "term": "Egocentric video"
+        },
+        {
+          "meaning": "A general-purpose AI model trained on very large amounts of data that can be adapted to many downstream tasks.",
+          "term": "Foundation model"
+        },
+        {
+          "meaning": "The process of teaching an AI model general patterns from data before it is fine-tuned for a specific task.",
+          "term": "Pretraining"
+        },
+        {
+          "meaning": "A model that learns to predict actions and their effects in the world from video, spanning both perception and control.",
+          "term": "World-action model"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "AI research"
+        ],
+        "task": [
+          "Manipulation",
+          "Training data pipelines"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.06817"
+        }
+      ]
+    },
+    {
+      "id": "4eb104aca2",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Study of real human corrections produces more efficient robot learning",
+      "takeaway": "Researchers observed how people actually correct robots and found existing simulation assumptions were wrong. They built a more realistic model, then a learning method that used it to boost robot success by 10 to 50 percent.",
+      "deck": "The method got 10 to 50 percent higher success than standard approaches on simulated and real robots.",
+      "body": [
+        "Researchers at Q-OIL argue that most robot learning algorithms are tested using simulated human models that do not reflect how real people behave. To fix this, they recorded human interventions and found two patterns: people step in mainly when the robot stalls, and their corrections are often not the best possible fix.",
+        "The team built a new progress-based simulation model from those observations, then used it to develop Q-OIL, a reinforcement learning method. Q-OIL adds an optimistic bonus to states where humans tend to intervene and gently steers the robot to explore around those corrections. The authors say keeping two separate critics, or value estimators, is essential for stability because the bonuses would otherwise bleed back into earlier states.",
+        "In tests, Q-OIL reached 10 to 50 percent higher success than baseline methods in simulation and on real robots. It also improved pretrained vision-language-action models on two bimanual manipulation tasks. The paper is available on arXiv as number 2611.08576."
+      ],
+      "why": "This matters because training robots from human corrections is becoming a practical path for industrial deployments, and this work shows that realistic human behavior data changes which algorithms work best. The result points to higher data efficiency from fewer, better-placed human interventions.",
+      "hard": "The method still relies on a model of human behavior built from a limited set of participants and tasks, so it is not yet clear how well the findings transfer to more varied real-world work.",
+      "terms": [
+        {
+          "term": "Reinforcement learning",
+          "meaning": "A training method where a robot learns by trying actions and getting rewards or penalties, like training a dog with treats."
+        },
+        {
+          "term": "Intervention",
+          "meaning": "A moment when a human steps in to correct a robot that is doing something wrong or has stopped making progress."
+        },
+        {
+          "term": "Simulation",
+          "meaning": "A virtual computer environment where robots are trained and tested before or instead of using real hardware."
+        },
+        {
+          "term": "Vision-language-action model",
+          "meaning": "An AI model that takes images and text instructions and decides what physical actions a robot should take next."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "AI research"
+        ],
+        "task": [
+          "Robot learning",
+          "Human-in-the-loop training"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.08576"
+        }
+      ]
+    },
+    {
+      "id": "0dbf898d98",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Force-aware control lets humanoid push carts up to 30 kg",
+      "takeaway": "Researchers taught a humanoid robot to push wheeled carts by feeling forces through its own body instead of using extra sensors. The same learned skill transferred from simulation to a real Unitree G1 robot without any real-world retraining.",
+      "deck": "The robot relied on inferred force signals, not external sensors, to keep its balance while steering a loaded cart.",
+      "body": [
+        "Researchers built a control method called ForPC that lets a humanoid robot push an existing wheeled cart without special equipment. Grasping the cart with both hands creates a loop: the force used to push also throws off the robot's balance, and the load can change at any time.",
+        "The team trained the robot in two stages. First, it learned basic walking and balancing while holding varied weights and arm positions. Then a second layer learned to estimate forces from onboard observations alone and coordinate small adjustments in the arms, waist, and legs. Rewards punished internal arm fighting, slipping grips, and overloading joints.",
+        "In simulated tests, ForPC cut cart-speed error by up to 68.2 percent and route-tracking error by up to 74.2 percent compared with a walking-only baseline. Trained purely in simulation, it transferred to a physical Unitree G1 and pushed a cart carrying up to 30 kg at 0.5 meters per second, with no retuning for each payload."
+      ],
+      "why": "Cart pushing is common in warehouses, hospitals, and factories that already use human-sized aisles and equipment. A robot that can handle variable loads without new sensors or per-task tuning makes deployment cheaper and closer for material-handling buyers.",
+      "hard": "The physical tests used one robot and one cart setup, so it is unclear how well the method handles uneven floors, heavier loads, or different tools.",
+      "terms": [
+        {
+          "term": "Humanoid robot",
+          "meaning": "A robot built with a roughly human shape, with two arms, two legs, and a torso, designed to work in spaces made for people."
+        },
+        {
+          "term": "Reinforcement learning",
+          "meaning": "A training method where an AI learns by trying actions and getting rewards or penalties, gradually improving without being shown exact steps."
+        },
+        {
+          "term": "Simulation-to-simulation transfer",
+          "meaning": "Testing a trained skill in a new simulated setting different from the one used for training."
+        },
+        {
+          "term": "Policy",
+          "meaning": "The learned set of rules a robot uses to decide what action to take in each situation."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Logistics"
+        ],
+        "task": [
+          "Manipulation",
+          "Locomotion"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.08664"
+        }
+      ]
+    },
+    {
+      "id": "97062b421a",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "VICTR uses progress tracking to improve robot learning from demonstrations",
+      "takeaway": "A new method helps robots learn new tasks from video demonstrations by picking the right example at each step of the task. In tests on unseen real-world manipulation tasks, it raised success rates from 6.2 percent to 23.8 percent.",
+      "deck": "The method selects demonstration clips based on estimated task progress rather than visual similarity alone.",
+      "body": [
+        "Researchers introduced VICTR, a framework that improves how robots learn from demonstrations. It pairs a progress estimator, called an In-Context Value Function Estimator, with a robot control policy that has been post-trained to generate actions from demonstration clips.",
+        "The progress estimator watches a reference video of a task being done, reads the written instruction, and looks at the robot's current camera view. It then estimates how far along the task is and picks a matching clip from the demonstration to guide the robot's next move.",
+        "On unseen, out-of-domain real-world manipulation tasks, VICTR lifted success from 6.2 percent for a fine-tuned baseline policy to 23.8 percent. The task progress rate, a looser measure of partial completion, more than doubled from 28.9 percent to 55.5 percent."
+      ],
+      "why": "For robot training-data suppliers, the finding points to a shift in what makes demonstration data useful: buyers may soon want video with clear task-phase labels or progress cues, not just visually similar clips.",
+      "hard": "Success on unseen real-world tasks still tops out at 23.8 percent, so the method is far from reliable enough for commercial deployment.",
+      "terms": [
+        {
+          "term": "Vision-language-action model",
+          "meaning": "An AI model that takes in camera images and written instructions, then outputs the physical actions a robot should take."
+        },
+        {
+          "term": "In-context learning",
+          "meaning": "Adapting a model to a new task at the moment of use by showing it examples, without retraining its internal weights."
+        },
+        {
+          "term": "Manipulation task",
+          "meaning": "A physical job that involves moving or handling objects with a robot arm or hand, such as picking, placing, or assembling."
+        },
+        {
+          "term": "Policy",
+          "meaning": "In robotics, the part of the system that decides which action to take given what the robot sees and is told to do."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Industrial automation"
+        ],
+        "task": [
+          "Manipulation",
+          "Learning from demonstrations"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.08698"
+        }
+      ]
+    },
+    {
+      "id": "61ccb0e327",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Boston Dynamics puts wheels on Atlas humanoid to test hybrid control",
+      "takeaway": "Boston Dynamics attached wheels to its Atlas humanoid as a research test, not a product plan. The robot combined two control methods and moved well on mixed ground, which could shape how future robots handle unstructured workplaces.",
+      "deck": "The company says the wheeled version is a testbed, not a product.",
+      "body": [
+        "Boston Dynamics released a video showing its Atlas humanoid moving on wheels attached to its feet. A controls engineer, Andy Wu, ran the experiment to push the robot's joints harder and see how it handles unpredictable ground. A single custom adapter mounts an off-the-shelf scooter rim onto Atlas's existing ankle motor, and the wheels are modeled as ankles that can spin continuously.",
+        "The test paired classical model-based control—using fixed equations of the robot's physical behavior—with whole-body reinforcement learning, where software learns by trial and error. Atlas used internal sensor data about its joint positions and forces to stay stable on rough ground. The robot moved like a skater, rolling fast on flat surfaces and switching to legged motion over obstacles.",
+        "Boston Dynamics said a wheeled Atlas is not a product, and the company is preparing to expand Atlas testing at Hyundai facilities. The next question the team wants to answer is how the learned policy responds when an actuator fails. That matters for safety and for understanding control failures in real deployments."
+      ],
+      "why": "The experiment shows one approach to combining two control methods for more reliable movement on real, uneven floors and changing terrain. Buyers of manipulation training data should watch whether wheeled or legged platforms win for warehouse and factory work, since that affects which egocentric video and teleoperation data becomes valuable.",
+      "hard": "The result is a controlled research demo, not a production system, and the robot's response to failed motors and long-term reliability remain untested.",
+      "terms": [
+        {
+          "term": "Reinforcement learning",
+          "meaning": "A training method where software learns by trial and error, receiving rewards for actions that work."
+        },
+        {
+          "term": "Proprioceptive feedback",
+          "meaning": "Internal sensor data about a robot's own joint positions, forces, and movement, without using cameras."
+        },
+        {
+          "term": "Model-based control",
+          "meaning": "Controlling a machine using fixed mathematical equations of its physical behavior, rather than learned behavior."
+        },
+        {
+          "term": "Actuator",
+          "meaning": "The motor or mechanism that moves a robot joint."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics"
+        ],
+        "task": [
+          "Humanoid control",
+          "Locomotion research"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/boston-dynamics-adds-wheels-to-atlas-humanoid-to-test-whole-body-control/"
+        },
+        {
+          "name": "r/robotics",
+          "url": "https://www.reddit.com/r/robotics/comments/1xrygt4/atlas_on_a_roll_classical_motor_controls_and/"
+        }
+      ]
+    },
+    {
+      "id": "ff44d5ca8d",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "New framework helps underwater robots track each other through partial marker views",
+      "takeaway": "Researchers built a system that lets one underwater robot follow another even when tracking markers are hidden or hard to see. The robot imagines several possible paths, predicts their results, and picks the best one on its own.",
+      "deck": "The approach was tested on real underwater robots, not just in simulation.",
+      "body": [
+        "A team has proposed FATHOM, a tracking system for cooperative autonomous underwater vehicles, or AUVs. These robots often follow each other using active light markers, but markers can be blocked by reflections, occlusion, or sensor noise during motion, leaving the follower with only sparse and incomplete observations.",
+        "FATHOM handles this by blending marker readings, inertial measurements, and past actions into a predictive model of the leader's position. A diffusion action prior then proposes several possible multi-thruster trajectories. Instead of executing one blindly, the system predicts the future outcome of each candidate and picks the most favorable one, updating its choice as new onboard observations arrive.",
+        "The researchers ran extensive offline tests on the learned prediction model, multi-step world model, trajectory generation, and selection. They then ran real-AUV experiments, including comparisons against pose-based methods and component ablations. FATHOM maintained robust tracking under both nominal and challenging motions with naturally occurring partial marker visibility, and ran in real time on board without external motion-capture feedback."
+      ],
+      "why": "This shows a practical way to make multi-robot underwater operations work with degraded sensing, which matters for tasks like inspection, mapping, and maintenance where robots must follow each other reliably without a positioning system. It also points to a demand for training data that includes partial or noisy sensor views, not just clean, fully observed scenes.",
+      "hard": "The framework still relies on active light markers, and its performance in environments with severe or total marker loss is not yet proven.",
+      "terms": [
+        {
+          "term": "AUV (autonomous underwater vehicle)",
+          "meaning": "An untethered robot that operates underwater without a human pilot."
+        },
+        {
+          "term": "Diffusion action prior",
+          "meaning": "A method that generates several possible robot movements, similar to how image generators create a picture from random noise."
+        },
+        {
+          "term": "Receding-horizon objective",
+          "meaning": "A control approach that keeps choosing the best short-term plan and updates it as new information arrives."
+        },
+        {
+          "term": "Ablation study",
+          "meaning": "A test where parts of a system are removed one at a time to see what each part contributes."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Marine and underwater systems"
+        ],
+        "task": [
+          "Multi-robot coordination",
+          "Underwater tracking"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.08898"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Physical AI Startup RLWRLD Releases DexBench, a Benchmark for Humanoid Dexterous Manipulation",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1UTlZaWDB0eGFzZmZZX0pDc1QxLVZ5Nk1TMmZVb3ZpRG54RFI1WFVYQ09RXzluY2x4QVVuZnlCeXBONDZUc29hQV9BcEVVdEo2U1VR?oc=5",
+      "source": "Wowtale"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Anthropic releases new Mythos and Fable models amid RSI concerns",
+      "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
+      "source": "TechCrunch AI"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "CS-Pi: Constraint-Satisfying Flow Policy Sampling",
+      "url": "https://arxiv.org/abs/2611.08654",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "ActPrune: Action-Grounded Visual Token Pruning for Efficient Vision-Language-Action Models",
+      "url": "https://arxiv.org/abs/2611.08827",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "STRIDE: Learning Humanoid Locomotion in Minutes with Acceleration-Based Rewards",
+      "url": "https://arxiv.org/abs/2611.08857",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "HomeLoop: A Simulation Framework and Benchmark for Robot-IoT Coordination in Everyday Domestic Assistance and Safety",
+      "url": "https://arxiv.org/abs/2611.08914",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "PRISM: Primitive Routing via In-context Skill Mixing for Retentive VLA Adaptation",
+      "url": "https://arxiv.org/abs/2611.08917",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "HOC2R: Hand-Object Contact Trajectories for Human-to-Robot Motion Transfer",
+      "url": "https://arxiv.org/abs/2611.08920",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "VLA Handover: Failure-Prediction-Based Switching from On-Robot to Server VLA Models",
+      "url": "https://arxiv.org/abs/2611.08987",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Your Beat",
+      "headline": "Augmentron: Scalable Multi-View Visual Augmentation for Robot Learning",
+      "url": "https://arxiv.org/abs/2611.09145",
+      "source": "arXiv cs.RO"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 21,
+        "sector": "ai",
+        "company": "Not disclosed",
+        "what": "AI infrastructure financing",
+        "round": "Debt",
+        "amount_usd_m": 63000,
+        "amount_text": "$63B",
+        "lead": "Bank of America, Blackstone, Citi, Morgan Stanley",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYTR4bHNCM25Ta0lwOHpnQUtxWU10Q0RiOGtWMm4zNmRValA4LTRzTk4wYTJ5WFV3RVY5dXVsVmhJbFJXQUVZNGlCajBKX3hRaWpGQ1FSRXdDWjktdGZnMHZSeDEtMlZhQ3NYNV90RVM0a2FQbWdicjd0NElHekpTM1lZNHJKalY1cnQtMjJNRVdNekNqYy1kckZpT1FRRzg?oc=5",
+        "source": "Beinsure"
+      },
+      {
+        "i": 6,
+        "sector": "deeptech",
+        "company": "Onodrim Industries",
+        "what": "Defence tech, acquiring European defence suppliers",
+        "round": "Series A",
+        "amount_usd_m": 300,
+        "amount_text": "$300M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/onodrim-300m-series-a-european-defence-acquisitions/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 24,
+        "sector": "ai",
+        "company": "Dulo",
+        "what": "AI engineering platform",
+        "round": "Funding",
+        "amount_usd_m": 130,
+        "amount_text": "$130M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPMTNKd0JhLWFGTjFfWFlnNkQ1WlI0MnV3SEc1MkZ0SGMwaldDZzk2X0NCMFNRRDV2amQ3LU0yRE53eEpBMDFMd2NPbHRHa1YwUURwM2Q4SXNiSU9hN3pkSEZRZnd4YV9nZl9lNFlvZERkTW1rcDJqaUxUWkxGckJtSVhTMDZneTZLVjJ3bm1aVTVyMUxRejJFd3MwaUdfbWI3QzlSdnVhdU5vWHVfUWc?oc=5",
+        "source": "Hoodline"
+      },
+      {
+        "i": 19,
+        "sector": "ai",
+        "company": "SplashBI",
+        "what": "Enterprise data intelligence platform",
+        "round": "Funding",
+        "amount_usd_m": 100,
+        "amount_text": "Over $100M investment",
+        "lead": "Not disclosed",
+        "india": true,
+        "url": "https://yourstory.com/2026/11/splashbi-opens-gcc-in-hyderabad-to-invest-over-100-million",
+        "source": "YourStory"
+      },
+      {
+        "i": 1,
+        "sector": "ai",
+        "company": "UniX AI",
+        "what": "Humanoid robots and AI",
+        "round": "Pre-A",
+        "amount_usd_m": 75.1,
+        "amount_text": "$75.1M",
+        "lead": "Greenland",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUWVRajZOcXdablU0S1JYbzBmclF5ZHg1REpuVWtKNFB5UWRsMktYblRadm52bDc4Y2hkYmFTc2RFNEdwR3ljRmlYOGwtcWpmRjlINVNzaU9RYWUxMm9YcFFBdFR4QzRPdDlORUtKUGVsenJhZldIdjJRUVRsTDJNd1ZKblYwVnRaWjlpMC1YaFlwUGNuOUlYNl9CeDBIemxCVk5SdElMOA?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 11,
+        "sector": "deeptech",
+        "company": "Optics11",
+        "what": "Fibre optic sensing for subsea and grids",
+        "round": "Funding",
+        "amount_usd_m": 54.5,
+        "amount_text": "€50M ($54.5M)",
+        "lead": "Existing investors (SET)",
+        "india": false,
+        "url": "https://techfundingnews.com/optics11-50m-fibre-optic-sensors-seabed-power-grids/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 3,
+        "sector": "robotics",
+        "company": "PORT",
+        "what": "Courier network to autonomous delivery robots",
+        "round": "Funding",
+        "amount_usd_m": 15.7,
+        "amount_text": "€14.5M ($15.7M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPajl3MUhMMHUyLWM1X3QxVnRWS1hHSWcxT3dhbjJQdGVUUjVIazMtR0xERUpFeTNZTmVZWTlHNUNidkdmQXlxSzk2MlJLVjg4Y1hvdldPVWVOTmV4MTVBMkg3MEgxZUVxTnYyVjl1SEJfYzJKMDBidDl1Qk5oa0xmS3pFby1TNGZnLXQ0aHY0VGhKWnhybUtZU1FIVzd3enNoTVgwTEpTX2hTZmxBY3JQWA?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 12,
+        "sector": "deeptech",
+        "company": "Marble Imaging",
+        "what": "Commercial Earth observation satellite constellation",
+        "round": "Funding",
+        "amount_usd_m": 6.5,
+        "amount_text": "€6M ($6.5M)",
+        "lead": "Cherry",
+        "india": false,
+        "url": "https://techfundingnews.com/marble-imaging-6m-sovereign-satellite-imagery-spacex-launch/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 16,
+        "sector": "ai",
+        "company": "Snapp",
+        "what": "AI sports analytics",
+        "round": "Funding",
+        "amount_usd_m": 4.6,
+        "amount_text": "$4.6M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5KSWVNem0tNU1tcFhWSFhoRURvWGlkaWxjWXQxWFFZdHZYa3lsS1VxRmJrUmcxS19lbndMMkprVjZaWGtrSkFVWldVREVUM3dvQ0s4NmJNRUxxeHNkX2k3S2t4cC1hS1R0VlVqLTNJRTQwcHRsSG9RWDNubVM?oc=5",
+        "source": "Axios"
+      },
+      {
+        "i": 2,
+        "sector": "robotics",
+        "company": "Rogue Cortex",
+        "what": "Robotics development simplification platform",
+        "round": "Funding",
+        "amount_usd_m": 4.5,
+        "amount_text": "$4.5M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOdzJUUWlJaXVsclNpdzVEQkhoa2kzY1g3QW9UdVUydW9QSG5vWVRDc1ZGbEh6QUVoNVFYUGtxLVVDRC1Qa21UU2ViNHlCZUJGbTNnQ3laYjNnc2FVRldHZGhTZUVZb1lDUkJjWUNLcGlVSDFxVnNaYmF6ZDVrWDBCRHMyRmpDOEVUOGpoQTVMYTA5eFRRUU1wanV2SWJSTE0tRHpZTXo5aU1ZMVlvem5iWnJuNEFrRHJFZDk3dEhtTDhEOG1XWWg0aEtDZ2ZLR1Z6RDB6RHZLSQ?oc=5",
+        "source": "Robotics & Automation News"
+      },
+      {
+        "i": 18,
+        "sector": "ai",
+        "company": "PhysicsWallah",
+        "what": "Edtech using AI for operations",
+        "round": "Acquisition",
+        "amount_usd_m": 2.3,
+        "amount_text": "$20 Mn earmarked for M&A ($20M)",
+        "lead": "Not disclosed",
+        "india": true,
+        "url": "https://entrackr.com/news/physicswallah-cites-ai-efficiencies-for-job-cuts-offline-biz-faces-profit-pressure-earmarks-20-mn-for-ma-12795872",
+        "source": "Entrackr"
+      },
+      {
+        "i": 7,
+        "sector": "robotics",
+        "company": "EDGE Sound Research",
+        "what": "Physical AI perception technology",
+        "round": "Funding",
+        "amount_usd_m": 2,
+        "amount_text": "$2M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSjRtQnZ3RkN2LTZZTTZFZFRscjI0UllPcWd2dkllbUVuc245RXVwODJRR0lvS1lnZDB4cnc4V3lCSnRDOTRMLVE4bTVHblRyR3J4eDFTX0VoRm5HUzgySm56eHN2MnBkTWxhVXNuUnpGZ3FqcVYxc0hyb1Y4NWZ1VWdzeU1mcGJ3V19ESTR2aEFPT1pBLWV5YUJFZFVhay1iMVZUUUppN2s1Zm5nQk9UMVBpam9YSHNWUkFmY0Y4QmF0eUYxSGtpQ3VwUVM5ZGJKNGhR?oc=5",
+        "source": "Robotics & Automation News"
+      },
+      {
+        "i": 25,
+        "sector": "ai",
+        "company": "Janus Labs AI",
+        "what": "US pet health AI",
+        "round": "Pre-seed",
+        "amount_usd_m": 1.8,
+        "amount_text": "$1.8M",
+        "lead": "Kinisis Ventures",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNWGRFWVNyTmhxdXZEOTlNeFpxR0FLN1hmVDJXeG5YVW5sZUtCbU01dVAtNlFoV1Q4NjllVk9SQVR3bWpnTHlnSzdXQXJ4bVVWS1ZGQURWU2JrMUQweWxkUUJyRmxxdnk0Q2hPd3oyRWJ0N0Mza0I4alk1SHFieHliUU5JR3ZRX3JUMmhHRE0wUzh6RHZsNXVGUHFRZXhlYlJLajIyX01oUlB3clBsSmFKUlNTbWpBNlNzeGlpd05PS05QZWpEc1E?oc=5",
+        "source": "Cyprus Inform"
+      },
+      {
+        "i": 4,
+        "sector": "robotics",
+        "company": "Neurabody",
+        "what": "Physical AI startup",
+        "round": "Early VC",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "NEC",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxObFFPMG8zbU5peFZVSlg0TnMzYWJmWkU3UktNdlVtVDRNcm5hTHVnMG4yMGw1clAyN2dTU3REaTFMYWxRN3J4UkM3WGlrRUd0NkcxbW1NdmJfbXc0elRlQmpEUkZ6bzU0VVhkQXJwV1hqTlZEVlhhOUZuTm9qMFlPWDFjSkw4UHhNeDhzTmxXSXIwNXFvQk4yZHVGMjdoWVFSNkdF?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 9,
+        "sector": "ai",
+        "company": "Upstage",
+        "what": "Korean AI models and software",
+        "round": "Series C",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "NVIDIA",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdXBtVWV2WUM4X1BhUWtKSEM0ZWtDRnBsdlk4Z1N2alFjanppUC0zV3ZmUC1GU3o1NFZ1TFZ2MXRQQ0duTS1lZW5wX0xHenE4RVRGR1hma1FPWVd0VWl4dEdPRExVMk1RZ1d0S2VDaEpqRjlxRV8xcE9LLS1QVFdFYjU1eGhTa3dJ?oc=5",
+        "source": "조선일보"
+      },
+      {
+        "i": 14,
+        "sector": "ai",
+        "company": "Motif Technologies",
+        "what": "Korean AI model developer",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "NVIDIA",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZ2VjdGNXX0luaG5zbTBVOVVWQnc2eHVVbTdUd2xiaHg5Qi05NWkwbEZ0ZHpTamR2RFBydzFEMGR3M1Jqamp2MjVDbDZkM2tnSUdBUW05ZW1WaDhrUkdHRVdUVG9KZkx0TDRqalh6NnpWVGVGejVfWjRLSThJOHJFbG45WDlabzEz?oc=5",
+        "source": "조선일보"
+      },
+      {
+        "i": 20,
+        "sector": "ai",
+        "company": "Groq",
+        "what": "AI inference chips",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/nvidia-backed-groq-seeks-8b-valuation-2-5x-its-august-mark-as-neocloud-investors-retreat/",
+        "source": "Tech Funding News"
+      }
+    ],
+    "totalUsdM": 63697
+  },
+  "playground": [],
+  "think": null,
+  "cost": {
+    "usd": 0.0424,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 4,
+        "inTokens": 26625,
+        "outTokens": 8110,
+        "cost": 0.0067,
+        "models": {
+          "anthropic/claude-haiku-5.5": 4
+        }
+      },
+      "write": {
+        "calls": 10,
+        "inTokens": 16455,
+        "outTokens": 5952,
+        "cost": 0.0345,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 10
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 2818,
+        "outTokens": 1761,
+        "cost": 0.0012,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 214,
+    "unique": 186,
+    "feeds": 29,
+    "failedFeeds": [
+      "Import AI",
+      "r/LocalLLaMA",
+      "Hacker News",
+      "Show HN"
+    ]
+  },
+  "generatedAt": "2026-11-10T00:16:06.916Z"
+}

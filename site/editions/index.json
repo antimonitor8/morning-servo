@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-11-10",
+    "weekday": "Tuesday",
+    "number": 13,
+    "lead": "Meituan releases model and agent for desktop robot tasks",
+    "stories": 10,
+    "readMinutes": 11,
+    "costUsd": 0.0424
+  },
+  {
     "date": "2026-11-09",
     "weekday": "Monday",
     "number": 12,
