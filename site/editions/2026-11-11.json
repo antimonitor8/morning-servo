@@ -1,0 +1,981 @@
+{
+  "date": "2026-11-11",
+  "weekday": "Wednesday",
+  "sunday": false,
+  "number": 14,
+  "paper": "The Morning Servo",
+  "readMinutes": 14,
+  "stories": [
+    {
+      "id": "7051c6dd3e",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "UniLatent lets robot skills transfer between different robot arms",
+      "takeaway": "A new method lets a robot skill learned on one arm run on a different arm with little or no extra training. In tests, it worked most of the time without any adjustments and nearly always after a small amount of fine-tuning.",
+      "deck": "In three simulation tasks it reached 93 percent zero-shot success across two target arms.",
+      "body": [
+        "A research team has introduced UniLatent, a framework for transferring robot skills across different robot bodies, or embodiments. Robot datasets are usually tied to one specific arm, which makes it hard to reuse recorded demonstrations on robots with different shapes, appearances, or joint arrangements.",
+        "UniLatent works by creating paired observations of a source arm and a target arm in simulation. It then trains the source robot's visual encoder to match a frozen target encoder in a shared compressed format called a latent space. A skill policy trained on source data can then run directly on the target robot without translating images pixel by pixel.",
+        "Across three simulation tasks and two target arms, UniLatent reached up to 93 percent zero-shot success, beating the best pixel-translation baseline by more than 30 points on average. In a real-world transfer from an xArm to a Franka arm, fine-tuning with only 10 target demonstrations per task produced 27 successful rollouts out of 30."
+      ],
+      "why": "This reduces the need to collect fresh demonstrations for every new robot model. Training-data suppliers could repurpose existing egocentric video and teleoperation datasets across multiple arms, making each dataset easier to sell and lowering buyer costs for new hardware.",
+      "hard": "The real-world result still required 10 target demonstrations per task, so fully zero-shot transfer on physical hardware remains unproven.",
+      "terms": [
+        {
+          "term": "Embodiment",
+          "meaning": "The physical body of a robot, including its shape, joints, and how it moves."
+        },
+        {
+          "term": "Latent space",
+          "meaning": "A compressed, shared format for describing observations so different robots can be compared."
+        },
+        {
+          "term": "Policy",
+          "meaning": "The learned rule that tells a robot what action to take based on what it sees."
+        },
+        {
+          "term": "Zero-shot success",
+          "meaning": "How often the method works on a new robot without any extra training on that robot."
+        },
+        {
+          "term": "Fine-tuning",
+          "meaning": "A small amount of extra training on new examples to adapt an already trained model."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "AI research"
+        ],
+        "task": [
+          "Cross-embodiment transfer",
+          "Robot learning"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.10061"
+        }
+      ]
+    },
+    {
+      "id": "66ad5ee0e3",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "New dataset pairs egocentric video with full-body motion capture for humanoid learning",
+      "takeaway": "Researchers released a 200-hour dataset that records what people see while also precisely tracking their entire body, including legs and feet that are normally hidden from a first-person camera. It is meant to help teach humanoid robots how to move and carry things at the same time.",
+      "deck": "The dataset captures leg and foot motion that a person cannot see from their own viewpoint.",
+      "body": [
+        "RoboMoCap pairs egocentric video with marker-based optical motion capture, the gold-standard method where reflective dots on the body are tracked by cameras to record exact joint positions. It contains over 200 hours of recordings from 14 people. Six head-mounted cameras plus wrist sensors capture what the person sees and how their hands move, while the optical system records full-body motion at 120 times per second.",
+        "The dataset deliberately covers tasks where a person's lower body is hidden from their own view: walking at different speeds, turning, climbing over terrain, carrying objects, and using hands while moving. This matters because humanoid robots must coordinate legs and arms, yet standard egocentric datasets rarely include accurate foot and leg data since the wearer cannot see them.",
+        "The authors tested existing methods on three benchmarks: reconstructing full-body motion from the head view, estimating foot contact and placement, and retargeting human motion onto a humanoid body. These are the core steps for teaching a robot by watching humans. The paper appears on arXiv and includes a project page with more detail."
+      ],
+      "why": "This dataset targets the exact gap in current egocentric training data: lower-body motion paired with first-person vision. For a training-data company, it signals that locomotion plus manipulation tasks and foot placement data may become a new demand area from humanoid developers.",
+      "hard": "No robot was trained or tested with the data in this paper, so it remains unproven whether learning from it produces better real-world humanoid behaviour.",
+      "terms": [
+        {
+          "meaning": "Video recorded from a camera worn on the head or chest, showing what the person themselves sees.",
+          "term": "Egocentric vision"
+        },
+        {
+          "meaning": "A technique for recording exact body movement by tracking reflective markers placed on the body with special cameras.",
+          "term": "Optical motion capture"
+        },
+        {
+          "meaning": "Using the legs to walk, turn, climb or navigate while also using the arms to carry or handle objects.",
+          "term": "Loco-manipulation"
+        },
+        {
+          "meaning": "Converting a recording of human motion into joint movements that fit the body proportions of a specific robot.",
+          "term": "Motion retargeting"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "AI training data"
+        ],
+        "task": [
+          "Data collection",
+          "Humanoid learning"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.10994"
+        }
+      ]
+    },
+    {
+      "id": "bbbc5be8c3",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Single radar maps rooms on both sides of a moving robot",
+      "takeaway": "Researchers built a method that lets a mobile robot use one forward-facing radar to map furniture and walls on both sides as it moves. It found objects with errors of roughly 5 to 6 centimeters in home-like tests.",
+      "deck": "The approach needs only one forward pass and no learned scene model.",
+      "body": [
+        "A group of researchers has described a way for a home robot to reconstruct nearby objects on both sides of its path using a single forward-mounted millimeter-wave radar. The method uses the robot's own motion to gather views from several positions, then combines them with a technique called sliding-aperture back-projection.",
+        "The system sends wideband signals from transmitters on both sides and uses the spherical paths signals travel along to correct for near-field distortion. A Top-K power fusion step merges local images taken from different viewpoints. It then extracts multi-layer heights and refines them using the original MIMO channels.",
+        "In controlled, office-and-study, and corridor settings, the method reported mean lateral-forward localization errors of 4.65, 5.63, and 5.98 centimeters. Peak-to-background ratios, a measure of how clearly objects stand out, exceeded 13 decibels. The authors say it recovers 3D structure without pretrained scene knowledge."
+      ],
+      "why": "Robots that move through homes or offices need cheap, reliable maps of nearby obstacles. A single radar that maps both sides in one pass could reduce sensor cost and setup time for indoor mobile robots.",
+      "hard": "The results come from controlled experiments in three indoor settings, so real-world performance in cluttered or changing homes is still unproven.",
+      "terms": [
+        {
+          "term": "Millimeter-wave radar",
+          "meaning": "A sensor that bounces very short radio waves off objects to measure distance, and works in dust or darkness."
+        },
+        {
+          "term": "MIMO",
+          "meaning": "Multiple-input multiple-output: using several sending and receiving antennas at once to get richer signal information."
+        },
+        {
+          "term": "Near-field",
+          "meaning": "The zone close to a sensor where simple straight-line distance calculations stop being accurate."
+        },
+        {
+          "term": "Back-projection",
+          "meaning": "A way to combine radar readings into an image by tracing each echo to the spot it likely came from."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Radar sensing"
+        ],
+        "task": [
+          "3D mapping",
+          "Indoor navigation"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.11296"
+        }
+      ]
+    },
+    {
+      "id": "231c03db38",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Axon invests $1.2B in drone maker Skydio for public safety",
+      "takeaway": "Axon, a public safety technology company, is buying 20 percent of drone maker Skydio for $1.2 billion. Axon will become Skydio's exclusive seller to police and emergency agencies in the US and Canada, expanding a program where drones arrive at scenes before officers.",
+      "deck": "The deal values Skydio at $5.2 billion and gives Axon exclusive US and Canadian public safety distribution rights.",
+      "body": [
+        "Axon Enterprise, known for police body cameras and records software, is investing $1.2 billion in Skydio, a California drone maker that uses AI to fly drones with little human control. Axon gains a 20 percent stake and becomes Skydio's exclusive distributor for public safety in the US and Canada.",
+        "Skydio says it serves more than 1,500 public safety customers. Axon reports that at agencies using its Drone as First Responder program, priority response times have dropped by as much as 65 percent, and drones arrive before officers on about 80 percent of calls where they are sent.",
+        "Skydio expects about $1 billion in total bookings this fiscal year. Axon estimates the North American market for first-responder drones at about $13 billion. The investment includes cash and Axon stock, with part buying shares from existing Skydio investors. Closing is expected between late 2026 and early 2027."
+      ],
+      "why": "This shows strong demand for autonomous drones that operate without a human pilot on site, which will create more video from routine emergency and patrol flights. That first-person aerial footage is a different kind of egocentric data from the ground-level manual work video now common in training sets, and could push some robot training buyers toward aerial autonomy and low-altitude navigation data.",
+      "hard": "The deal still needs to clear closing conditions and is not expected to finish until the fourth quarter of 2026 or first quarter of 2027, so any data or product shift is not immediate.",
+      "terms": [
+        {
+          "term": "Drone as First Responder",
+          "meaning": "A program where a drone flies to an emergency call on its own and arrives before police or medics."
+        },
+        {
+          "term": "Radiometric camera",
+          "meaning": "A camera that measures heat, not just visible light, so it can spot people or objects in the dark or through smoke."
+        },
+        {
+          "term": "DFR dock",
+          "meaning": "A small ground station that houses, charges, and launches a drone automatically, so no pilot has to be on site."
+        },
+        {
+          "term": "Total addressable market",
+          "meaning": "An estimate of how much money a company could earn if it sold to every possible customer in a given area."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Public safety drones",
+          "Autonomous aerial systems"
+        ],
+        "task": [
+          "Emergency response",
+          "Aerial monitoring"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/axon-invests-1-2b-into-skydio-and-becomes-its-u-s-public-safety-distributor/"
+        }
+      ]
+    },
+    {
+      "id": "a98763b80c",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Gemini Robotics 2.5 model improves robot hands and factory reliability",
+      "takeaway": "Google DeepMind released a new robot control model that learns skills faster and handles delicate objects better. In a Mercedes-Benz pilot, an Apptronik humanoid used it to sort car parts with 96% success.",
+      "deck": "A pilot at two Mercedes-Benz plants used Apptronik's Apollo 2 humanoid to sort metal brackets into trays.",
+      "body": [
+        "Google DeepMind has introduced Gemini Robotics 2.5, a vision-language-action model that controls robot arms and hands. Compared with earlier versions, it completes tasks 20% to 30% faster and succeeds 30% to 100% more often, depending on the task type.",
+        "The team tested it on more than 200 tasks, including serving food with tongs, tying a bow, and pipetting liquid. In a real-world proof-of-concept with Apptronik and Mercedes-Benz, an Apollo 2 humanoid used the model for automotive kitting, pulling metal brackets from bins and placing them into ordered trays, with a 96% success rate.",
+        "Safety features improved too. The model steers around hazards in real time: safe task completion around obstacles rose 33%, and around people 43%. Google also released ASIMOV-Jailbreak, a benchmark of disguised unsafe robot commands, where its reasoning model resisted 99.5% of attacks."
+      ],
+      "why": "This signals that buyers of robot training data will increasingly need egocentric video of fine manipulation with deformable and delicate objects, long tool-use sequences, and real factory kitting tasks, not just simple pick-and-place.",
+      "hard": "The 96% figure comes from a limited proof-of-concept on specific automotive parts, so it is unclear how well the success rate holds across other factories, objects, or lighting conditions.",
+      "terms": [
+        {
+          "term": "Vision-language-action (VLA) model",
+          "meaning": "An AI system that takes in images and text instructions, then decides a series of physical movements for a robot to perform."
+        },
+        {
+          "term": "Humanoid",
+          "meaning": "A robot shaped roughly like a human body, with a head, torso, two arms and two legs."
+        },
+        {
+          "term": "Digital twin",
+          "meaning": "A computer simulation of a real scene or object that lets a robot practice tasks without using physical hardware."
+        },
+        {
+          "term": "Jailbreak",
+          "meaning": "An attempt to trick an AI model into doing something unsafe by disguising the request."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Humanoid robots",
+          "Automotive manufacturing"
+        ],
+        "task": [
+          "Fine manipulation and deformable objects",
+          "Vision-language-action model deployment"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/"
+        }
+      ]
+    },
+    {
+      "id": "5a50a1285c",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "BATCH framework aligns human video with robot actions for better learning",
+      "takeaway": "A new method called BATCH helps robots learn from videos of humans by automatically matching human movements to robot movements. In tests on real manipulation tasks, robots trained this way handled new situations better than robots trained on unaligned data.",
+      "deck": "The method works without manual labeling, using a cycle-consistency objective to find correspondences between human and robot behavior.",
+      "body": [
+        "Researchers have introduced BATCH, a learning framework that explicitly aligns human demonstrations with robot behaviors. The goal is to make it easier to use the large supply of human video as training material for robot manipulation, despite differences in body shape, camera viewpoint, action style, and timing.",
+        "BATCH learns to match human and robot behaviors using a self-supervised approach with a cycle-consistency objective. This means the system figures out correspondences on its own, without people labeling which human action matches which robot action. The matched data then feeds into a video-action model that predicts robot movements. The framework adds two training objectives: behavior-aligned co-training and transferring style from human to robot.",
+        "On real-world manipulation tasks, BATCH improved generalization to unseen task configurations compared with unaligned data and prior cross-embodiment baselines. The style-transfer objective provided additional gains. The paper argues that explicit behavior alignment is what makes transfer from human demonstrations to robot policies more effective."
+      ],
+      "why": "The method points to a practical use for large collections of human video in robot learning. If alignment can be done without manual labels, training-data providers may need to supply less structured or less annotated human demonstration footage.",
+      "hard": "Results are shown only on selected real-world manipulation tasks, and it is unclear how well the alignment scales to diverse environments, tasks, or robot types beyond those tested.",
+      "terms": [],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "AI research"
+        ],
+        "task": [
+          "Robot learning",
+          "Cross-embodiment learning"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.10148"
+        }
+      ]
+    },
+    {
+      "id": "d897dd4651",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Vision-only robot learns rough and smooth patches by remembering past contacts",
+      "takeaway": "Researchers built a system that lets a robot guess how a surface will feel, such as slippery or firm, from camera images alone before it touches it. The robot keeps several possibilities open and improves its guesses as it gains experience.",
+      "deck": "The method keeps multiple physical guesses open when camera images are unclear.",
+      "body": [
+        "A new paper proposes a system for robots to estimate physical properties, such as friction or stiffness, from camera images before touching a surface. The approach avoids forcing a single answer when appearance is ambiguous. Visually similar patches can feel very different, so the system keeps several possibilities open.",
+        "The estimator stores physical estimates from earlier interactions as a set of weighted alternatives. For each new spot, it retrieves and weights past experiences by how similar the visual scene looks. When experience is sparse, a learned prior model fills the gap, and a refinement step improves visual matching without splitting the world into fixed categories.",
+        "In a high-fidelity simulated racing task with unknown low- and high-friction regions, the system ran at controller rates. Over repeated laps it gathered interaction evidence and adapted. The authors report it improved performance while keeping the controller aware of different friction zones."
+      ],
+      "why": "Physical property estimation from pre-contact vision matters for mobile robots and manipulators that must act safely on unfamiliar ground or workpieces. The focus on continuous retrieval, rather than fixed semantic classes, points toward training data that captures repeated contact outcomes across visually similar scenes.",
+      "hard": "Results come from simulation experiments, and the approach still depends on enough relevant past interaction experience before it can make reliable guesses. It is not yet shown on real hardware.",
+      "terms": [
+        {
+          "term": "Latent physical parameters",
+          "meaning": "Hidden properties of a surface, such as friction or stiffness, that a robot cannot see directly but affects how contact will feel."
+        },
+        {
+          "term": "Gaussian mixture",
+          "meaning": "A way of representing several possible answers at once, each with a weight, instead of forcing a single best guess."
+        },
+        {
+          "term": "Visual embedding",
+          "meaning": "A compact numerical summary of a camera image that captures useful patterns for comparing one scene with another."
+        },
+        {
+          "term": "Inverse modeling",
+          "meaning": "Working backward from what a robot felt after contact to estimate the physical property that caused that feeling."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Autonomous vehicles"
+        ],
+        "task": [
+          "Visual place recognition",
+          "Pre-contact physical property inference"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.10107"
+        }
+      ]
+    },
+    {
+      "id": "cc1eac611e",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "One motion-learning system works for both people and humanoid robots",
+      "takeaway": "Researchers built a single motion-tracking system that can learn from recordings of both people and humanoid robots. It then worked on a real robot without any robot-specific training, estimating speed accurately and matching movement to language descriptions.",
+      "deck": "The system was trained on both human motion data and a retargeted version of humanoid robot motion.",
+      "body": [
+        "Researchers trained one motion-learning model on recordings of both people and humanoid robots. They converted the two into a shared format by placing motion sensors at matching body points, such as the same arm or leg positions on both a person and a robot.",
+        "The model was then tested on a physical Unitree G1 humanoid without any robot-specific training or fine-tuning. It estimated velocity with an error of 0.099 meters per second on the real robot, the lowest among evaluated methods across five datasets.",
+        "The same model could also match recorded motions to text descriptions, including robot movement types that had only appeared in human training data, not in robot data."
+      ],
+      "why": "This suggests human motion recordings could substitute for scarce robot data, promising lower-cost training for humanoid robots and shifting demand toward human egocentric motion with sensor data rather than robot-specific capture.",
+      "hard": "The work covers velocity estimation and motion-to-text matching on one robot platform; it is unclear whether the same transfer will hold for broader manipulation skills or varied humanoid hardware.",
+      "terms": [
+        {
+          "term": "IMU",
+          "meaning": "Inertial measurement unit: a small sensor that tracks motion, like the one that tells a phone which way is up."
+        },
+        {
+          "term": "Humanoid",
+          "meaning": "A robot with a body shape similar to a person, with a head, torso, two arms and two legs."
+        },
+        {
+          "term": "Zero-shot",
+          "meaning": "A model working on a new setup without seeing examples from that setup first."
+        },
+        {
+          "term": "Odometry",
+          "meaning": "Estimating where and how fast a robot is moving using its own sensors."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "AI research"
+        ],
+        "task": [
+          "State estimation",
+          "Motion understanding"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.10137"
+        }
+      ]
+    },
+    {
+      "id": "54e2e327b4",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Japanese festival dance moved from video to a Unitree humanoid robot",
+      "takeaway": "Researchers transferred a 43-second traditional Japanese dance from a single video onto a Unitree G1 humanoid. The robot then performed the routine repeatedly without safety ropes, including a live handover on stage.",
+      "deck": "The same pipeline ran the dance continuously for 9.7 minutes without support ropes.",
+      "body": [
+        "A team at Arithmer Inc. in Tokyo built a pipeline that takes a single ordinary video of the Awa Odori festival dance and turns it into motion a Unitree G1 EDU humanoid can perform. The process recovers the dancer's 3D body pose from the video, maps that motion onto the robot's joints, and then trains a control policy in simulation using reinforcement learning.",
+        "Training ran on a single RTX 5070 graphics card. On hardware, the robot completed three consecutive 43-second performances without safety ropes, one 46-second performance with an automatic handoff, and a continuous 9.7-minute rope-free run built from the captured motion. In a live stage handover, a single remote command let the robot start from and return to the manufacturer's default walking controller, with a measured torque-free window of 45 to 140 milliseconds.",
+        "The authors also document eleven versions of the deployment process, covering three fixes: silent corruption in deployment files, drift in the state estimator during training, and edits to the reference motion so the robot could end the routine in a stable, controlled way. They note remaining failure points, including soft flooring and occlusions in the original video capture."
+      ],
+      "why": "This is a worked example of taking one consumer video and producing a long, stable, expressive whole-body motion on a commercial humanoid with modest computing. Companies collecting egocentric or workshop video may see demand for similar pipelines where a few minutes of human footage becomes robot training data.",
+      "hard": "The work is shown on one robot model and one dance; it is not yet clear how well the approach transfers across robots, tasks, or more cluttered industrial settings.",
+      "terms": [
+        {
+          "term": "Human mesh recovery",
+          "meaning": "A computer-vision method that estimates the 3D shape and pose of a person's body from an ordinary 2D video."
+        },
+        {
+          "term": "Kinematic retargeting",
+          "meaning": "The process of mapping recorded human joint movements onto a robot's joints, which may have different lengths and ranges of motion."
+        },
+        {
+          "term": "Reinforcement learning",
+          "meaning": "A training approach where software learns by trial and error in simulation, receiving rewards for actions that match a desired motion."
+        },
+        {
+          "term": "ONNX",
+          "meaning": "Open Neural Network Exchange, a standard file format that lets a trained model run efficiently on the robot's onboard computer."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Humanoid robots"
+        ],
+        "task": [
+          "Motion transfer from video",
+          "Whole-body control"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.11127"
+        }
+      ]
+    },
+    {
+      "id": "513b909a68",
+      "section": "india",
+      "kicker": "India Desk",
+      "headline": "Google.org backs Froncort.AI with $2.3 Mn for disease screening",
+      "takeaway": "Froncort.AI received $2.3 million from Google.org to widen its disease-screening tool in India. In a Maharashtra TB trial, the tool found similar case numbers while testing two-thirds fewer people and cutting cost per confirmed case from about $29,000 to $10,000.",
+      "deck": "The startup will also build an open-source mobile version for government health teams.",
+      "body": [
+        "Froncort.AI has secured $2.3 million from Google.org, Google's philanthropic arm, plus $200,000 in Google Cloud credits and pro bono help from Google AI specialists. The startup builds tools that help frontline health workers find likely disease hotspots before cases rise.",
+        "Its platform, AI-NETRA, combines government health data, satellite-based risk signals and local factors such as settlement density, rainfall and flooding. It turns those signals into ranked routes that guide health workers to the households most likely to need screening.",
+        "In a validation study with Maharashtra's state TB programme, teams using AI-NETRA found about the same number of confirmed pulmonary TB cases while screening two-thirds fewer people. Cost per confirmed case fell from roughly $29,000 to $10,000, and 92% of participating health workers reported a lighter workload."
+      ],
+      "why": "India is pushing AI into public health programmes such as TB elimination and outbreak alerts. Deployments that measurably cut screening cost and worker time show where demand for real-world AI is growing in India, including for local field data.",
+      "hard": "The results come from one state-level TB study, and it remains to be seen whether the approach holds up across six diseases and different regions.",
+      "terms": [
+        {
+          "term": "Philanthropic arm",
+          "meaning": "The part of a company that gives grants and support to non-profit or public-benefit work, in this case Google.org."
+        },
+        {
+          "term": "Infectious disease surveillance",
+          "meaning": "Tracking where contagious illnesses such as TB or dengue are likely to spread so health workers can act early."
+        },
+        {
+          "term": "Open-source blueprint",
+          "meaning": "A design or code released publicly so other organisations can use, copy or adapt it without paying for a licence."
+        },
+        {
+          "term": "Satellite imagery models",
+          "meaning": "Software that reads overhead images of land, water and settlements to estimate local disease risk."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Healthcare AI",
+          "Public health technology"
+        ],
+        "task": [
+          "Disease risk mapping",
+          "Field screening route planning"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "Inc42",
+          "url": "https://inc42.com/buzz/froncort-ai-raises-2-3-mn-from-google-org-to-expand-ai-based-disease-surveillance/"
+        },
+        {
+          "name": "Analytics India Magazine",
+          "url": "https://analyticsindiamag.com/ai-news/froncortai-gets-23m-from-googleorg-to-expand-ai-based-disease-screening-in-india"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "Breakthroughs",
+      "headline": "GUARD: Anomaly-Informed Q-Steering for Generative Robot Policies in Dexterous Manipulation",
+      "url": "https://arxiv.org/abs/2611.10343",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "SimDuoReal: Object-Centric Bimanual Policy for Emergent Dexterity",
+      "url": "https://arxiv.org/abs/2611.10410",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Your Beat",
+      "headline": "Which Taxels, Not How Many: Tactile Sensor Placement for Dexterous Policies",
+      "url": "https://arxiv.org/abs/2611.10647",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "DreamVLA: From Generated Human Motions to Humanoid Vision-Language-Action Policies",
+      "url": "https://arxiv.org/abs/2611.10872",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "ObjectWorld: Scaling Object-Centric World Models with A Large-Scale 3D Full-Object Flow Dataset",
+      "url": "https://arxiv.org/abs/2611.11085",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "When Coding Agents Get Arms: Safety Risks Across the Digital-Physical Boundary",
+      "url": "https://arxiv.org/abs/2611.11438",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Off-Policy RL with Online Inference Tuning: My Solution to the CoRL 2026 RoboEval Challenge",
+      "url": "https://arxiv.org/abs/2611.11464",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Breaking survivorship bias in driving world models",
+      "url": "https://arxiv.org/abs/2611.11516",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "Humble Hauler autonomous trailer takes the truck out of trucking [update]",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPT2VjMjUxbUpBYV80cEY3ODVHRHl5d0k2N293RVJzR3hPUVQ4TDdvSFNzS3JVQnhfZFF2RGtUZEtWQXZTZTlON295dGhwVlpIc0tTdkhPR3k4RXdQWTB2WjlwTEFIazNDdE5oRDNwRVpwbjhMdEEwQVYxZGI3cmFCdl9zX3ZyQkJ4S0dOeUs3eU9SeHVPY1lyQTlPN3A?oc=5",
+      "source": "Electrek"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "PSI is trying to make a business out of AI-driven scientific discovery",
+      "url": "https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery/",
+      "source": "TechCrunch AI"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 11,
+        "sector": "ai",
+        "company": "Anthropic",
+        "what": "AI models developer",
+        "round": "IPO",
+        "amount_usd_m": 88500,
+        "amount_text": "$88.5B",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.crunchbase.com/ai/anthropic-record-ipo-ant-public-market-debut-spcx/",
+        "source": "Crunchbase News"
+      },
+      {
+        "i": 25,
+        "sector": "ai",
+        "company": "Edgevana",
+        "what": "AI infrastructure with NVIDIA Blackwell",
+        "round": "Funding",
+        "amount_usd_m": 700,
+        "amount_text": "$700M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://www.alleywatch.com/2026/11/the-shadery-motorized-roman-shades-interchangeable-fabric-smart-home-window-treatments-matt-weiler/",
+        "source": "AlleyWatch"
+      },
+      {
+        "i": 14,
+        "sector": "ai",
+        "company": "Counsel Health",
+        "what": "AI-native primary care startup",
+        "round": "Acquisition",
+        "amount_usd_m": 625,
+        "amount_text": "$625M",
+        "lead": "Oura",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 0,
+        "sector": "robotics",
+        "company": "Path Robotics",
+        "what": "Physical AI for manufacturing robots",
+        "round": "Funding",
+        "amount_usd_m": 300,
+        "amount_text": "$300M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNMlNId1FwZUNxSEdtTjJUMTVURmxjSjN1ZnllSUVhUEhjZFlpaUdROGgzQnBYZVphM1hjdTI3M0dkajNlTTlUazBtNUNISXR3Q29Ka1FSSkMzTG5McUtyejJVbnhScjY4VVpBSkdzQmJ0ZXRodXhYalE5Z3VaaklOMXR1Q1BtX2NhQ1FYVjlXVWI?oc=5",
+        "source": "Ohio Tech News"
+      },
+      {
+        "i": 13,
+        "sector": "deeptech",
+        "company": "Redalpine",
+        "what": "Venture fund for AI, robotics, biotech",
+        "round": "Funding",
+        "amount_usd_m": 250,
+        "amount_text": "$250M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9Rd0ZkRER3eEJYRGdTek9NWkt1dEkxN0pmVlllTThWb01MeW5SS2Z2SWlUVUd2Y1RTRXptMDB5SXpneXlSV2V3eWxlSFh5Rzl1bnN2YTVrbFFERzRyZlVEcVZxOFMtcTk5MlFzU1JnT0VPQ21VQUJwUFZR?oc=5",
+        "source": "www.trendingtopics.eu"
+      },
+      {
+        "i": 2,
+        "sector": "ai",
+        "company": "Nominal",
+        "what": "AI for hardware engineering",
+        "round": "Funding",
+        "amount_usd_m": 240,
+        "amount_text": "$240M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/nominal-raises-240m-at-3b-valuation-tripling-in-eight-months-to-put-ai-inside-hardware-engineering/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 24,
+        "sector": "ai",
+        "company": "Spines",
+        "what": "AI publishing startup",
+        "round": "Funding",
+        "amount_usd_m": 64,
+        "amount_text": "$64M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/sumary-25m-seed-ai-accounting-firms/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 8,
+        "sector": "robotics",
+        "company": "Mosaic",
+        "what": "Surgical robotics",
+        "round": "Seed",
+        "amount_usd_m": 47,
+        "amount_text": "$47M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPQ2pRQ0pVdS1LWkJoWGx4c1BhS0pzVm9xYTFJMnZDcGN3NHZuR2JpWW5SNWRpYW1RS3ZpUXNabHpqS0hXTXRRYkFLRXY1QjY3a2RFc1BQbTFhVFE1R2VJV0tGWENqSUNZbEdhaTNvUEhLeW9FMlltcGl3QThBRlBobmZNbGtmdk96WWNab192a1ZuNnlMMkdjajVR?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 22,
+        "sector": "ai",
+        "company": "Coframe",
+        "what": "Autonomous AI website optimization",
+        "round": "Funding",
+        "amount_usd_m": 35,
+        "amount_text": "$35M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 27,
+        "sector": "ai",
+        "company": "Graphon",
+        "what": "AI agent memory",
+        "round": "Funding",
+        "amount_usd_m": 35,
+        "amount_text": "$35M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPeW1KWldseklDM2pLRmI1cnd4Z3dTM1pxTnlXeHRyMU1fRnU2c2JLQVVlNzU3N09vM09RekQyQ3FWZmMwcGpTRHNnZEt2R1dOenpmdzA2WHNTcEpaSUZiRC1XajVtbEZic1kxVVlaMWlDenVTQ1c4RGZVUGRZVDhlM2RHZzRVa3FmSHpOZS1EaGk5SWMzblphckF3SzdXd3hGWW93SS1NbE9vTWFXY3l2OHkzVmdFT3c?oc=5",
+        "source": "Pulse 2.0"
+      },
+      {
+        "i": 6,
+        "sector": "robotics",
+        "company": "Nidus",
+        "what": "AI robotics for defense manufacturing",
+        "round": "Funding",
+        "amount_usd_m": 30,
+        "amount_text": "$30M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNN0hDTC1GVV9wZnd1ZHRlZm5aaTYwVndRRVh5OHRJZmtvU1hocVlKemVkWlk4c1g4ZVREVmtvY3JSbTEzcnRWbmJwQkZlcG1Dd3U1bGxlOG1nSXg3QUN5TmhwTVhNZE9CNHQyYV9Td0tfelI0X3hDTXp1b2hCcHd1RTBhQklpWXNJSkhMYkExanpKbGhORV81elhLaVl1THJ3ZlFyZjdhV0xVRzIzczdMeFhjVjhuMTNnekVtcmF3?oc=5",
+        "source": "citybiz"
+      },
+      {
+        "i": 19,
+        "sector": "ai",
+        "company": "Sumary",
+        "what": "AI software for accounting firms",
+        "round": "Seed",
+        "amount_usd_m": 25,
+        "amount_text": "$25M",
+        "lead": "Singular",
+        "india": false,
+        "url": "https://techfundingnews.com/redalpine-closes-250m-rac-viii-fund/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 23,
+        "sector": "ai",
+        "company": "Lumbra",
+        "what": "Agentic AI software",
+        "round": "Series A",
+        "amount_usd_m": 25,
+        "amount_text": "$25M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/puppygraph-raises-10m-so-ai-agents-can-query-3000-tables-without-a-graph-database/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 20,
+        "sector": "ai",
+        "company": "PuppyGraph",
+        "what": "Graph query engine for AI agents",
+        "round": "Funding",
+        "amount_usd_m": 10,
+        "amount_text": "$10M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPWWlJalF2djg5ZWxzVWNHRDlRajN4MmVZOVlBeEVPN0lzajZyYVp4N25EbU8tTEhhTlBtWGxxb1RmLWNCZDNTZWNZcVltVDZDN1FkQkJNS3A4alFLMHpvcTIzNENVZEx2aUhmaUl1aHlWdWdrX2pNWWpDZUpRX2dLVHppSklHQ0xyTXRKYzRBcC1vdHoyZ0gyWlhuZ0ZjdkRFLWNB?oc=5",
+        "source": "Defense Security Monitor"
+      },
+      {
+        "i": 26,
+        "sector": "ai",
+        "company": "Ancep",
+        "what": "AI agents for commercial insurance brokers",
+        "round": "Funding",
+        "amount_usd_m": 8.5,
+        "amount_text": "$8.5M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPbHZrYkRzbjQxbVpmV3djclVnR0VOUlhDbEI3aktuOWtqRFNHTmlkNnJsWFdWY0d4LXM5cGV1NVVuOEw2bkZ3d1RnaDJBZ0twai12Mlp5YzUtLXU5SzMxeXZOS0hGR3liNXd2NHFFUTVlSk9Nak91WGhPdEkxVG9ZT0VkRFRCSnV5aGtqVkZFemd6MlhkWVlDT0oxNUJIUXNmN0hEeGhKQ2NwdGVaM3JoN0pLVDFsZFpQRnNMX2w1RHlwY3pNLW1BZHhXVjZ6Y1AxTDVJdTN3Qno1SnRGRV9aUmR1aElrUHFFVFdTRWg2UXE4OWpRVEltalVTNFlyQ2UwNGxpVmJpNDROTEhrN2k1QVFR?oc=5",
+        "source": "PR Newswire"
+      },
+      {
+        "i": 9,
+        "sector": "ai",
+        "company": "Froncort.AI",
+        "what": "AI disease screening platform",
+        "round": "Funding",
+        "amount_usd_m": 2.3,
+        "amount_text": "$2.3M",
+        "lead": "Google.org",
+        "india": true,
+        "url": "https://inc42.com/buzz/froncort-ai-raises-2-3-mn-from-google-org-to-expand-ai-based-disease-surveillance/",
+        "source": "Inc42"
+      },
+      {
+        "i": 3,
+        "sector": "ai",
+        "company": "Mercor",
+        "what": "AI training data marketplace",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQakRyVVFaNHJEdFVOdTVHYUtNSWN3MEw4SkZXNFFXZFRtM21LLTZmWGtHRU9RcU9QM0dSUENscUhOZWV0WkFBZ1hQQV9vcHBFMzZxRlNrTjZvZFZwZzFZeDR2eGo2U2Q5b3VEcExyek9GY0JxQ0o4SkZYZmRTR21GaDhLTmE2b3J3MzJrRGZORXd0akdkVm41V0gzRGJYVTlvZ1hnZ0VUZ3RSa1RqckxUYUMyQ291NjVVQkdZa3NB?oc=5",
+        "source": "Reuters"
+      },
+      {
+        "i": 10,
+        "sector": "robotics",
+        "company": "FUWEI",
+        "what": "Industrial robotics",
+        "round": "Series A",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNQVJkUkFPSnY3c3FDS1hpSVhYakpBY3pBWm9fSjBmZTdzY3FFOEdNX1M3MkNjOUxBOHg5a25jNnVkQm9qZ2llQlJFUC13M0w2ZDJoVkFfSEFSMDEzLUVaV3NBRHhNNFRiRjZZQUZpemZBdlpaQ3pyOTVoUm55bU5hdEVDMXlfUGltNzNNc3JxWWhvMWdhYnV3UGxjb0s2dUozdUcyZFlHODI4VmJI?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 16,
+        "sector": "ai",
+        "company": "Crunchbase Unicorn Board",
+        "what": "Unicorn tracking report",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.crunchbase.com/venture/october-2026-unicorn-board-gains-34-tops-1900-ai-defense/",
+        "source": "Crunchbase News"
+      },
+      {
+        "i": 17,
+        "sector": "ai",
+        "company": "Sparxity",
+        "what": "Sparse AI chips",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Lockheed Martin Ventures",
+        "india": false,
+        "url": "https://inc42.com/buzz/softbank-q2-lenskart-meesho-drive-valuation-gains-ola-electric-books-losses/",
+        "source": "Inc42"
+      },
+      {
+        "i": 18,
+        "sector": "ai",
+        "company": "Proxima Fusion",
+        "what": "Fusion energy startup",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/sparxity-series-a-sparse-native-ai-computing/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 21,
+        "sector": "ai",
+        "company": "Scalestack",
+        "what": "Autonomous infrastructure for enterprise agents",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Leonis Capital",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQal80VWxwYzhxbi1wUzk5SmIxeVVfZ1VBYkYzQ2JTN01TNEdoRlpQaU1odGRKNi0yTlpHeXp6VXl3QjBzM0s3MnVHWlpfekszVFp5LXp6ZUhmZzlqTnlOTXVVNDlYNE1iZnBUVk4wNHJFX3J1Qnp2cml2bm9aWF9JZUpXTGdEMXowRjk5bXBlWDNpMnJrTVVyNllBams5dE8tbW9ncA?oc=5",
+        "source": "Dealroom"
+      }
+    ],
+    "totalUsdM": 90897
+  },
+  "playground": [
+    {
+      "headline": "Software turns a 3D printer into an electronics assembler",
+      "body": "Researchers from the University of Bristol and Hasso Plattner Institute turned a standard Prusa XL 3D printer into a pick-and-place machine. The trick is using the existing print head to grab components with a dab of melted filament, then position and encase them mid-print. No hardware mods needed, just software.",
+      "why": "A plain FDM printer can now build complete electronic devices without manual assembly or special filaments, hinting at fully automated desktop manufacturing.",
+      "maker": "University of Bristol and Hasso Plattner Institute",
+      "url": "https://www.hackster.io/news/print-place-software-turns-your-3d-printer-into-a-electronics-building-pick-and-place-machine-be23debb6d4b",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "A Wii Remote learns to boss around your smart home",
+      "body": "Maker GreatScott! stuffed an ESP32 camera board into an original Wii Remote. The remote now uses an on-device neural network to recognize which appliance it's pointing at, then sends a command over Wi-Fi via MQTT to Home Assistant. Point, click, and the lamp or TV toggles.",
+      "why": "A 20-year-old game controller can become a pointing, AI-equipped universal remote, showing how cheap hardware and tiny models can revive old gadgets.",
+      "maker": "GreatScott!",
+      "url": "https://www.hackster.io/news/giving-the-wii-remote-an-ai-upgrade-aefbd4860a73",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "Briefcase arcade folds an entire cabinet into a carry-on",
+      "body": "Maker Michael Alm built a two-player arcade cabinet that folds into a briefcase. A Raspberry Pi 3 running Batocera powers a 15.6-inch screen and Sanwa joysticks, with custom brass hinges so the whole thing closes without the sticks hitting the display.",
+      "why": "Retro gaming rigs no longer need a dedicated room; careful design packs a full two-player setup into something you can carry.",
+      "maker": "Michael Alm",
+      "url": "https://www.hackster.io/news/an-entire-arcade-in-a-briefcase-017020214b73",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "A 23-year-old gesture system gets a second life",
+      "body": "After a two-decade pause, Takahiro Yonemura revived a single-camera hand tracking system from 2002. The updated version detects open and closed hands and builds a game where the player controls a dragon by opening and closing their palm. Moving your hand off-screen pauses the action.",
+      "why": "This shows that older computer vision ideas can mature into playful new interfaces once modern processing makes them responsive enough.",
+      "maker": "Takahiro Yonemura",
+      "url": "https://hackaday.com/2026/11/10/gesture-controls-with-only-a-camera/",
+      "source": "Hackaday"
+    }
+  ],
+  "think": {
+    "collision": {
+      "a": {
+        "kind": "story",
+        "n": 7,
+        "label": "Vision-only robot learns surface roughness from past contacts"
+      },
+      "b": {
+        "kind": "brief",
+        "n": 9,
+        "label": "Humble Hauler autonomous trailer moves without truck"
+      },
+      "headline": "Ground-level egocentric video of Indian yard and dock floors, paired with wheel-slip and vibration readings, for autonomous haulers",
+      "body": "Story 7 shows a robot can learn to guess how rough or slippery ground is from camera images, if it has many recorded examples of what happened on contact. Autonomous trailers like the Humble Hauler must cross loading docks, gravel yards and wet ramps, where a wrong guess means a stuck or skidding load. A vendor could mount a low stereo camera and a cheap vibration sensor on hand carts and pallet jacks already moving through Indian warehouses and ports, recording each patch of floor alongside how the wheels actually behaved.",
+      "who_pays": "Makers of autonomous yard trucks, trailers and warehouse tuggers who need to plan routes over mixed, poorly kept surfaces.",
+      "data_needed": "Synchronised low-mounted stereo video, wheel-slip and vibration readings, load weight, and weather tags across monsoon and dry seasons at many yards.",
+      "why_fail": "Buyers may find their own robots log enough surface data during normal operation, so they never need to pay for outside recordings."
+    },
+    "contrarian": {
+      "story_n": 1,
+      "consensus": "Skills learned on one robot arm can now be reused on other arms, so buyers will need far fewer fresh demonstrations for each new robot.",
+      "against": [
+        "The 93 percent figure comes from three simulation tasks and two target arms. Simulated physics hides the friction, cable drag and sensor noise that usually break transfer on real hardware.",
+        "Arms are the easy case, because most share similar joints and grippers. The hard gaps are between grippers and hands of very different shapes, and between arms and humanoids, which this result does not test.",
+        "Cheaper reuse could raise demand for data rather than cut it. If every dataset works on more robots, buyers will want wider coverage of tasks and settings, and the value moves from robot-specific demos to varied real-world footage."
+      ],
+      "bets_otherwise": "Apptronik and Google DeepMind, per Story 5, still run pilots on specific hardware in real Mercedes-Benz plants, and teleoperation data firms keep collecting per-robot demonstrations on the belief that each body needs its own data.",
+      "settle_it": "A public test where a policy trained on one real arm runs on several real arms with different grippers, reporting success rates without any fresh demonstrations."
+    }
+  },
+  "cost": {
+    "usd": 0.0876,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 5,
+        "inTokens": 30328,
+        "outTokens": 9270,
+        "cost": 0.0077,
+        "models": {
+          "anthropic/claude-haiku-5.5": 5
+        }
+      },
+      "write": {
+        "calls": 10,
+        "inTokens": 13966,
+        "outTokens": 5829,
+        "cost": 0.037,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 10
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 3446,
+        "outTokens": 2300,
+        "cost": 0.0015,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 4377,
+        "outTokens": 569,
+        "cost": 0.008,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "think": {
+        "calls": 1,
+        "inTokens": 3929,
+        "outTokens": 887,
+        "cost": 0.0335,
+        "models": {
+          "anthropic/claude-opus-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 251,
+    "unique": 213,
+    "feeds": 29,
+    "failedFeeds": [
+      "Import AI",
+      "r/robotics",
+      "r/LocalLLaMA",
+      "Show HN"
+    ]
+  },
+  "generatedAt": "2026-11-11T00:16:29.530Z"
+}

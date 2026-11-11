@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-11-11",
+    "weekday": "Wednesday",
+    "number": 14,
+    "lead": "UniLatent lets robot skills transfer between different robot arms",
+    "stories": 10,
+    "readMinutes": 14,
+    "costUsd": 0.0876
+  },
+  {
     "date": "2026-11-10",
     "weekday": "Tuesday",
     "number": 13,
