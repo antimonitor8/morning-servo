@@ -1,0 +1,846 @@
+{
+  "date": "2026-11-12",
+  "weekday": "Thursday",
+  "sunday": false,
+  "number": 15,
+  "paper": "The Morning Servo",
+  "readMinutes": 14,
+  "stories": [
+    {
+      "id": "ab9f5a3d12",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Memories.ai standardizes first-person video collection for robot training",
+      "takeaway": "Memories.ai is building a steady supply of first-person work video, labeled by AI, for robot makers to use as training data. It is positioning itself as a long-term data partner rather than a one-off supplier.",
+      "deck": "The San Francisco startup uses a fixed camera rig and in-house annotation models rather than mixing footage from many sources.",
+      "body": [
+        "Memories.ai has built a system that collects first-person video of people doing real work, then annotates the clips with its own AI models. The company supplies this labeled video to robotics companies and to teams building vision-language-action models, which learn from both what the camera sees and what the person is doing.",
+        "The pipeline uses a standard camera setup and a uniform process, so the data is consistent enough to train machine learning models. It also uses NVIDIA Cosmos to interpret video before customers use the data for robotics and industrial projects. The company has published research code on GitHub and at conferences like NeurIPS.",
+        "The company says it wants to be a long-term data-infrastructure partner, not just a one-off vendor. In future it may offer exclusive datasets, help with customer models, or work on video infrastructure itself. It is based in San Francisco and aims to serve physical AI, robotics, and humanoid developers."
+      ],
+      "why": "This is another signal that egocentric video is becoming a product category in robotics training data. The company's focus on standardized capture and annotation maps directly onto the demand for consistent, labeled first-person work footage.",
+      "hard": "There are no published figures yet on dataset size, annotation quality, customer count, or whether models trained on this data outperform those trained on other egocentric video.",
+      "terms": [
+        {
+          "meaning": "Egocentric video is footage captured from a person's own point of view, usually through head- or chest-mounted cameras, showing what they see and do.",
+          "term": "egocentric video"
+        },
+        {
+          "meaning": "Vision-language-action models are AI systems that learn to connect visual input and text instructions with physical actions, often for robots.",
+          "term": "vision-language-action model"
+        },
+        {
+          "meaning": "A data lake is a large, loosely organized store of raw files that a company keeps and can filter or label for later use.",
+          "term": "data lake"
+        },
+        {
+          "meaning": "NVIDIA Cosmos is a platform for training and using models that simulate or understand physical-world video to support robotics and autonomous systems.",
+          "term": "NVIDIA Cosmos"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "robotics",
+          "ai infrastructure"
+        ],
+        "task": [
+          "manipulation",
+          "data collection"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/memories-ai-builds-standardized-egocentric-video-pipeline/"
+        }
+      ]
+    },
+    {
+      "id": "f3470eb868",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Survey organizes robot learning from first-person human video into four methods",
+      "takeaway": "Robotics researchers are converging on a shared name and ways of turning first-person video of people doing real work into robot skills. The survey helps show which approaches need the most robot data on top of human video.",
+      "deck": "It sorts the field into four methods and lists the datasets used.",
+      "body": [
+        "A new survey paper from arXiv groups work on turning egocentric human video, or first-person recordings of people working, into robot manipulation skills under one name: Ego2Robot learning. The authors describe four methods. One transfers the human motion directly onto a robot body. Another pulls out action labels and task steps. A third uses the video to pre-train the visual part of a robot model. The fourth learns to predict actions and movement from the video.",
+        "The paper also reviews benchmark datasets that mix first-person human video, robot demonstrations, and simulated data. It traces what kind of information each method extracts and how much robot-specific grounding each one needs during training or deployment.",
+        "The survey points to open problems in physical feasibility, coordinating two hands or two agents, adapting to a new task from context alone, controlled evaluation, and predictive control."
+      ],
+      "why": "For a training-data company, this is a direct map of how buyers might use first-person human video. It separates the data that is ready to sell, such as paired video and action labels, from data that matters only through pre-training or simulation, and it names the datasets researchers already compare against.",
+      "hard": "The survey shows no single method reliably beats the others across real manipulation tasks, and most approaches still need some robot demonstrations or simulation to work.",
+      "terms": [
+        {
+          "meaning": "First-person video recorded from a camera worn on a person's head or chest, showing their hands and the task from their point of view.",
+          "term": "Egocentric human video"
+        },
+        {
+          "meaning": "The computer program that turns what a robot sees into the actions its arms and hands should take.",
+          "term": "Robot manipulation policy"
+        },
+        {
+          "meaning": "A first step of training where a model learns general visual patterns from video before being tuned for a specific robot task.",
+          "term": "Representation pretraining"
+        },
+        {
+          "meaning": "Collections of recorded examples used to test and compare robot learning methods.",
+          "term": "Benchmark datasets"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "AI research"
+        ],
+        "task": [
+          "Robot manipulation",
+          "Learning from video"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.13610"
+        }
+      ]
+    },
+    {
+      "id": "3269fa315f",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Berkeley and NVIDIA open-source AI agents that program industrial robots",
+      "takeaway": "UC Berkeley and NVIDIA released free tools that let AI agents write, test, and refine robot programs in simulation. The result is code that human engineers can read and check before it runs on a real factory robot.",
+      "deck": "The resulting code is readable Python that engineers can verify before deployment.",
+      "body": [
+        "The researchers open-sourced two tools. The first, called Graph-as-Policy (GaP), splits a task such as packing syringes or routing cables into separate skills: seeing objects, planning a grasp, and moving without collisions. AI coding agents generate, connect, and rehearse each skill inside a physics simulator before any real robot moves. The second tool, VABAR, is a standard test suite of six industrial-style tasks, each with set difficulty levels and success measures.",
+        "A key enabler is RoboSimStudio, a simplified interface for the Newton physics engine. Newton is accurate but has hundreds of settings, which kept most people from using it. The new interface lets an AI agent tune those settings on its own. During an early demo, an agent watched a video, then rebuilt a closely matching 3D simulation within about an hour by trial and error.",
+        "The output is readable Python code that calls existing vendor modules, such as KUKA, for low-level motor control. It does not replace robot controllers and can convert to a standard ROS 2 graph. Bosch is evaluating the approach for industrial automation, and Ambi Robotics says it has used the method to turn production data into behavior updates that raised throughput across its U.S. parcel-sorting fleet."
+      ],
+      "why": "This shifts pressure away from hand-collected demonstration data for some fixed industrial tasks. If agents can generate and test code in simulation, demand may move toward sensor data and task descriptions that help agents build accurate virtual scenes, rather than long egocentric video runs of every manipulation.",
+      "hard": "What the researchers have shown so far is a research demonstration and a benchmark, not yet a shipping product for common factory robots, so real-world reliability across many sites is still unproven.",
+      "terms": [
+        {
+          "meaning": "A program that can act on its own to complete a task, such as writing and revising code, rather than only responding to a single prompt.",
+          "term": "AI agent"
+        },
+        {
+          "meaning": "A digital copy of a robot and its surroundings where software can be tested safely before running on real hardware.",
+          "term": "Physics simulator"
+        },
+        {
+          "meaning": "A standard robot software framework that lets separate parts of a robot program pass messages to one another.",
+          "term": "ROS 2"
+        },
+        {
+          "meaning": "A modular plan for a robot task, where each box is a small job like seeing or grasping and lines show how they connect.",
+          "term": "Computation graph"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Industrial automation",
+          "Robot software"
+        ],
+        "task": [
+          "Robot code generation",
+          "Simulation-to-real transfer"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/can-ai-agents-program-industrial-robots-without-training-data-berkeley-says-yes/"
+        }
+      ]
+    },
+    {
+      "id": "f9dc12b18f",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Egocentric video helps robots learn tasks without action labels, new paper shows",
+      "takeaway": "Researchers found that first-person video of people doing everyday tasks can improve robot learning even when the video has no labels showing what actions were taken. The method worked better as more video was added and helped robots handle unfamiliar situations.",
+      "deck": "The SPAR method uses a pretrained vision-language model to predict future visual states, giving robots an extra learning signal.",
+      "body": [
+        "A new paper from arXiv investigates whether first-person human video can help robots learn tasks without action supervision, meaning the video does not need labels that say exactly what movement or task was being performed. This matters because collecting labeled action data is expensive and slow, while raw egocentric video is relatively plentiful.",
+        "The researchers built a method called Shared Prediction on Action and Representation, or SPAR. It uses a pretrained vision-language model, an AI system trained on both images and text, to predict future visual states from the video. This prediction provides a separate learning signal alongside action prediction. They found that representations learned this way improved robot performance on out-of-distribution tasks, meaning tasks that differ from what the robot saw in training, and that gains increased as more video was added.",
+        "The authors also studied how choices about training objectives and data curation affect results. The paper includes a project page with further details. It was submitted to arXiv under robotics, artificial intelligence, and computer vision categories on 10 November 2026."
+      ],
+      "why": "This is direct evidence that unlabeled egocentric video, the kind of data this reader's company collects, has measurable value for robot learning. The finding that performance improves with more video supports the case for scaling up collection of raw first-person footage from commercial and industrial settings.",
+      "hard": "The paper is a preprint and has not yet been peer-reviewed, and the specific gains shown are in simulated or limited robot tasks rather than large-scale real-world deployment.",
+      "terms": [
+        {
+          "term": "Egocentric video",
+          "meaning": "Video recorded from a person's own point of view, usually with a head- or chest-mounted camera, showing what they see while working."
+        },
+        {
+          "term": "Policy",
+          "meaning": "The set of rules a robot uses to decide what action to take next based on what it sees."
+        },
+        {
+          "term": "Vision-language model",
+          "meaning": "An AI model trained on both images and text, so it can connect what it sees with what it knows in words."
+        },
+        {
+          "term": "Action supervision",
+          "meaning": "Labels that tell a model exactly what movement or task was being performed in each moment of training video."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "AI research"
+        ],
+        "task": [
+          "Robot learning",
+          "Egocentric data collection"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.13685"
+        }
+      ]
+    },
+    {
+      "id": "d287ecf1af",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Robot plans and monitors full lab workflows instead of only single motions",
+      "takeaway": "A new robot system follows whole lab procedures step by step instead of stringing together separate movements. It gained roughly 22 to 30 percentage points on two sample-handling tasks and recovered when a human removed a sample mid-run.",
+      "deck": "It beat a learned-motion baseline by 30 and 22 percentage points on two lab tasks.",
+      "body": [
+        "Robo-MLT separates the plan from the motion. A vision-language planner reads the protocol and the initial scene, then turns the workflow into an ordered list of simple skills. A separate execution monitor watches the scene to see when each skill finishes or becomes impossible, and tells the system to move on or plan again.",
+        "In tests on blood gas analysis and blood sample tube sorting, Robo-MLT reached task success rates of 82 percent and 70 percent. That beat a baseline method called pi zero point five by 30 and 22 percentage points. It was run on 50 normal setups per method and 20 setups where a sample was removed mid-task.",
+        "When a person removed the sample the robot was handling, the system revised its remaining plan and kept processing the other samples. The authors say explicit workflow monitoring makes long laboratory procedures more reliable and easier to recover when something changes."
+      ],
+      "why": "It shows a concrete path for robots that must do long multi-step clinical tasks and keep going after interruptions, which points to future demand for training data that captures full workflows and recovery moments, not just isolated motions.",
+      "hard": "The success rates are from one simulated or controlled setup, so it is not yet clear how well the approach transfers to messy real-world labs with varied equipment and lighting.",
+      "terms": [
+        {
+          "meaning": "An ordered set of simple physical actions, such as pick up, move, and place, that make up a full task.",
+          "term": "atomic skills"
+        },
+        {
+          "meaning": "A sequence of many small steps rather than one short action, which makes it easy for a robot to lose track.",
+          "term": "long-horizon tasks"
+        },
+        {
+          "meaning": "A type of AI model that connects what a camera sees and the words in a command to the joint movements a robot should make.",
+          "term": "vision-language-action policy"
+        },
+        {
+          "meaning": "A system that combines two approaches: one part manages the plan, and another part generates the physical movements.",
+          "term": "dual-system framework"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "medical automation",
+          "laboratory robotics"
+        ],
+        "task": [
+          "long-horizon manipulation",
+          "workflow monitoring"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.13039"
+        }
+      ]
+    },
+    {
+      "id": "d97648b01f",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Study finds stored demos nearly match robot control models on simulation test",
+      "takeaway": "A simple method that replays stored demonstrations scores almost as well as much more complex robot control models on a standard simulation test. This raises doubts about how much those models actually generalize, which could shift attention toward building better demonstration datasets.",
+      "deck": "Nearby-demonstration replay reaches 91.7% success without a trained policy.",
+      "body": [
+        "A new study asks a pointed question about modern robot control models: how much are they really learning, and how much are they just repeating stored examples? Vision-language-action models, which let a robot convert camera images and text instructions into physical movements, now score above 95% on a common simulation test called LIBERO.",
+        "The authors built a simple alternative with no forward policy at all. It retrieves the most similar saved demonstration and replays its action chunk. That method reached 91.7% success on LIBERO. When the test environment was made harder, under a set of changes called LIBERO-Plus, the retrieval method lost the least performance of any policy tested.",
+        "The paper also looked at nine published vision-language-action models. Fine-tuning them mostly improved their vision-language backbones as retrieval keys. The actions they produced stayed close to the demonstrations. The authors introduced an offline metric, Local Action Consistency, that measures whether nearby observations map to similar future actions and can help train a retrieval key."
+      ],
+      "why": "If a large share of policy performance comes from matching stored demonstrations, buyers may start asking for better coverage and cleaner organization in egocentric video and teleoperation datasets rather than ever larger model training runs. The offline metric, Local Action Consistency, could also become a quality check for datasets without needing a real robot.",
+      "hard": "The evidence comes from the LIBERO simulation benchmark, not real robot work, so it is unclear whether the same gap appears in the messy settings where training-data demand is highest.",
+      "terms": [
+        {
+          "meaning": "A model that takes camera images and language commands and produces the robot's next physical actions.",
+          "term": "Vision-language-action model"
+        },
+        {
+          "meaning": "A simulation benchmark widely used to test whether a robot can follow instructions across different tasks and layouts.",
+          "term": "LIBERO"
+        },
+        {
+          "meaning": "A stored example of a person or model completing a task, which can be retrieved and replayed instead of computing a new response",
+          "term": "Demonstration"
+        },
+        {
+          "meaning": "A method that finds the saved example most similar to the current situation rather than generating an answer from scratch.",
+          "term": "Retrieval"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Artificial intelligence"
+        ],
+        "task": [
+          "Robot learning",
+          "Training data"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.13160"
+        }
+      ]
+    },
+    {
+      "id": "23fdec7c4b",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Robot arm runs chemistry experiments by reading printed instructions and handwritten labels",
+      "takeaway": "A robot arm can now do simple chemistry experiments on a bench built for people, using a printed instruction sheet and handwritten container labels rather than a coded script. It succeeded in nearly all runs with no human help.",
+      "deck": "The robot reads printed instructions and handwritten labels on an unmodified bench, not a fixed script.",
+      "body": [
+        "The system is called Curie's Jarvis. It uses a Franka Panda robot arm, a common research arm, to carry out chemistry experiments on a bench set up for people. The bench has no fixed positions or machine-readable markers. Instead, the robot reads a printed instruction sheet the way a person would.",
+        "The robot photographs the sheet, then finds containers by reading their printed or handwritten labels through four cameras. Before each step it looks at the bench again to locate the target container, and it adjusts the speed of each action based on what it is handling.",
+        "In tests, the system completed 5 of 5 runs of one protocol from a children's chemistry kit and 4 of 5 runs of another, with no human intervention. Across 160 attempts to locate printed and handwritten labels, it identified every container correctly."
+      ],
+      "why": "It shows robots moving toward working on ordinary lab benches with everyday materials and written notes, which is closer to the varied, unscripted physical work where robot training data is scarce. The label-reading and repeated re-locating approach in cluttered, changing scenes may point to data collection methods for real-world manipulation.",
+      "hard": "The tests used simple protocols from a children's chemistry kit, so the system has not been shown on more complex or sensitive real-world procedures.",
+      "terms": [
+        {
+          "meaning": "A physical robotic limb, often mounted on a table or stand, that can move and hold objects.",
+          "term": "Robot arm"
+        },
+        {
+          "meaning": "A common research robot arm with seven joints, often used in academic and industrial robotics work.",
+          "term": "Franka Panda arm"
+        },
+        {
+          "meaning": "Machine-readable tags that cameras can quickly detect to identify and locate objects.",
+          "term": "Fiducial markers"
+        },
+        {
+          "meaning": "A fixed set of steps for an experiment, written with exact volumes, timings and conditions to follow.",
+          "term": "Protocol"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Laboratory automation",
+          "Scientific research"
+        ],
+        "task": [
+          "Manipulation",
+          "Visual perception"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.13251"
+        }
+      ]
+    },
+    {
+      "id": "d97be5d579",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Humanoid robot learns to dance to music as it streams",
+      "takeaway": "Researchers made a humanoid robot that dances to live music instead of a known song. They trained it to predict upcoming beats and to keep moving between short motion chunks.",
+      "deck": "A forecasting model predicts upcoming beats so a Unitree G1 can sync its moves to music it has not fully heard yet.",
+      "body": [
+        "A research team has built a method that lets a humanoid robot dance to music as it plays, rather than to a full song known in advance. The system commits to each short motion chunk before hearing the music that chunk will accompany, then makes its next move continue smoothly from the chunk it already chose.",
+        "Two techniques make this work. First, a forecasting model predicts upcoming beats and timing, so the robot can line up its committed moves with what is about to be heard. Second, a training trick called Commit Forcing teaches the robot to keep moving between chunks. Without it, the robot stayed still during 83.5 percent of the dance. With it, low-activity time fell to 10.3 percent, close to real human dance.",
+        "The approach ran on a physical Unitree G1, a small commercial humanoid. It danced while music streamed and stopped when the music ended, with no falls. The work appeared this week on arXiv, a public research archive."
+      ],
+      "why": "Streaming, real-time motion control is a core problem for robots that must react to their surroundings. Dance is a demanding stand-in for work that needs timing under uncertainty, such as catching, passing or moving near people.",
+      "hard": "Performance is shown on one humanoid model and a narrow set of dance evaluations.",
+      "terms": [
+        {
+          "meaning": "A robot shaped like a human body, with legs, arms and a head.",
+          "term": "humanoid"
+        },
+        {
+          "meaning": "A short fixed piece of planned movement that the robot must commit to before hearing the music for that moment.",
+          "term": "motion chunk"
+        },
+        {
+          "meaning": "A model that guesses what sounds are about to happen, helping the robot prepare moves ahead of time.",
+          "term": "music forecasting model"
+        },
+        {
+          "meaning": "A training method that teaches the robot to keep moving from its own previously chosen motions.",
+          "term": "Commit Forcing"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "robotics",
+          "entertainment"
+        ],
+        "task": [
+          "humanoid locomotion",
+          "whole-body control"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.13370"
+        }
+      ]
+    },
+    {
+      "id": "cbf2428024",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Excavator learns to dig using only cab camera and joystick history",
+      "takeaway": "Researchers built a system that lets an excavator dig on its own by estimating the arm's position from a cab camera and past joystick commands, with no extra sensors on the joints. In simulation it finished 95 percent of digging tasks.",
+      "deck": "The approach avoids adding joint sensors or external cameras to existing machines.",
+      "body": [
+        "A team has shown a way to run an autonomous excavator without retrofitting joint sensors, external cameras, or visual markers. The system uses only the view from a camera in the cab and the recent history of joystick commands to estimate the arm's joint angles continuously.",
+        "The method combines three ideas. It reads structural cues from the current cab image, models short-term motion trends from past joystick inputs, and keeps a rolling buffer for the bucket joint to maintain continuity when the bucket is hidden from view. Mechanical joint limits are built into the learning objective to rule out impossible estimates.",
+        "In a Unity-based simulation, the system completed 95 percent of 20 autonomous excavation trials. The average delay for joint-state inference and control was 10.11 milliseconds per step, and bucket-joint angle estimates had a mean absolute error of 0.965 degrees."
+      ],
+      "why": "This points to a cheaper path for automating existing construction machines. If the approach transfers to real equipment, fleet owners could add autonomy without the cost and maintenance burden of extra sensors on every joint.",
+      "hard": "The results come only from simulation, so it is not yet clear how well the cab-view inference holds up under real dust, vibration, and lighting conditions.",
+      "terms": [
+        {
+          "term": "Joint state",
+          "meaning": "The angles of the moving parts of a machine's arm, such as an excavator's boom, stick, and bucket."
+        },
+        {
+          "term": "Action Chunking with Transformers (ACT)",
+          "meaning": "A type of robot control model that predicts a short sequence of future movements at once, rather than one step at a time."
+        },
+        {
+          "term": "Mean absolute error (MAE)",
+          "meaning": "A way to measure prediction accuracy by averaging how far off each estimate is from the true value, ignoring direction."
+        },
+        {
+          "term": "Occlusion",
+          "meaning": "When part of a machine is hidden from the camera's view, for example by dirt, the machine's own body, or the work material."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Construction",
+          "Heavy equipment"
+        ],
+        "task": [
+          "Autonomous excavation",
+          "State estimation"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.13690"
+        }
+      ]
+    },
+    {
+      "id": "b960213e89",
+      "section": "india",
+      "kicker": "India Desk",
+      "headline": "Indian startups build services to run AI models more cheaply",
+      "takeaway": "Indian companies are selling tools that run already-trained AI models faster and at lower cost. As more businesses use AI daily, this work is becoming its own infrastructure market.",
+      "deck": "Startups are targeting separate layers such as voice response times, open-model serving and India-only cloud capacity.",
+      "body": [
+        "Indian startups are building a new market around inference, the process by which a trained AI model answers a request. The work has become a business problem because every AI interaction needs computing power, and small cost or speed differences add up across millions of requests.",
+        "Simplismart, Pipeshift and listed firm E2E Networks are taking different positions. Simplismart says it cut voice AI platform Sanas's inference costs by 53 percent while keeping 99.99 percent accuracy. For customer support firm Exotel, it says cost per minute fell from 2.10 rupees to 0.90 to 1.30 rupees, and latency fell from 1.1 seconds to under 300 milliseconds.",
+        "The market splits into shared model APIs, managed inference, self-managed inference and dedicated infrastructure. Simplismart raised 14 million dollars in October with backing from Nvidia, Accel, Shastra VC and Micromax."
+      ],
+      "why": "Robotics rollouts will create similar demand for running trained robot policies cheaply and with low delay, especially for voice-led or real-time physical tasks.",
+      "hard": "The Indian startups still compete with global cloud providers, and the companies quoted disagree on whether businesses will mostly buy external inference services or build their own.",
+      "terms": [
+        {
+          "term": "Inference",
+          "meaning": "When a trained AI model processes a new request, such as a question or image, and produces an answer."
+        },
+        {
+          "term": "Inference platform",
+          "meaning": "Software and infrastructure that deploy, run and optimise trained AI models so businesses do not build it themselves."
+        },
+        {
+          "term": "Latency",
+          "meaning": "The delay between a request and a response, usually measured in milliseconds."
+        },
+        {
+          "term": "Model quantisation",
+          "meaning": "A technique that shrinks an AI model's calculations to reduce computing cost, sometimes with a small accuracy trade-off."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "AI infrastructure",
+          "cloud services"
+        ],
+        "task": [
+          "model serving",
+          "cost optimization"
+        ]
+      },
+      "score": 4,
+      "sources": [
+        {
+          "name": "Inc42",
+          "url": "https://inc42.com/features/can-indian-startups-win-the-ai-inference-race/"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "Your Beat",
+      "headline": "DexSeed: Expanding Human Hand-Object Interactions into Robot Demonstrations for Dexterous Policy Learning",
+      "url": "https://arxiv.org/abs/2611.14092",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Your Beat",
+      "headline": "Camera equalisation of an 11.5x drop in environmental illuminance: four imitation-learning policies on an SO-101 arm",
+      "url": "https://arxiv.org/abs/2611.13810",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "WAM is capable in BEHAVIOR-1K: the 2nd-place solution to the 2026 BEHAVIOR Challenge",
+      "url": "https://arxiv.org/abs/2611.13818",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "LaST0.5: A Generalist World Action Model with Interaction-Centric Latent Reasoning",
+      "url": "https://arxiv.org/abs/2611.14048",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "A human-in-the-loop Control Paradigm for Construction Robotics: From VR-Guided Teleoperation to Semi-Autonomous Dual-Arm Operation",
+      "url": "https://arxiv.org/abs/2611.14062",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "One Policy for 100 Household Tasks: Our Solution for the 2026 BEHAVIOR Challenge",
+      "url": "https://arxiv.org/abs/2611.14432",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "Serve Robotics opens robot delivery network for others to build on",
+      "url": "https://www.therobotreport.com/serve-robotics-opens-robot-delivery-network-for-others-to-build-on/",
+      "source": "The Robot Report"
+    },
+    {
+      "kicker": "Policy",
+      "headline": "AI100 report released: embodied AI highlighted as grand challenge",
+      "url": "https://robohub.org/ai100-report-released-embodied-ai-highlighted-as-grand-challenge/",
+      "source": "Robohub"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
+      "source": "The Verge AI"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
+      "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+      "source": "Google DeepMind"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 9,
+        "sector": "ai",
+        "company": "Fractile",
+        "what": "Purpose-built AI chips",
+        "round": "Series C",
+        "amount_usd_m": 720,
+        "amount_text": "$720M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 26,
+        "sector": "ai",
+        "company": "Ocient",
+        "what": "Petabyte-scale AI data platform",
+        "round": "Series C",
+        "amount_usd_m": 100,
+        "amount_text": "$100M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQaHpNa1VDODBoRHNKSnVCeDhSbG93NXFqRktBSDlWQnBuWUJBS2t4SnNrRGg2aVFQd1pCUlhFdDh0SG5LTTZIWER2ZnZOU2lnbXZNNGZXRHh1R1U1YXNZdUVLdVdTZWRsMG9KTlNJZVZRbGtFNUlScUw2Z3U1SU9OUFV4R1B2RWozbnNDSXh2LUE1X1l3TFFReHViallhd0NkeHA4QTFDbDhkNzRROFMza2xKdHNtY0ZCal85UW1BWDdMc1liQ212SFFIaWs0MHJ6T25JVFA5WQ?oc=5",
+        "source": "AI Insider"
+      },
+      {
+        "i": 14,
+        "sector": "deeptech",
+        "company": "Reflect Orbital",
+        "what": "Satellites redirecting sunlight to Earth",
+        "round": "Funding",
+        "amount_usd_m": 73.5,
+        "amount_text": "$73.5M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/sequoia-backed-reflect-orbital-raises-73-5m-to-beam-sunlight-to-earth-after-dark/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 10,
+        "sector": "deeptech",
+        "company": "Tendrils",
+        "what": "Parallel-core CPU redesign",
+        "round": "Seed",
+        "amount_usd_m": 30,
+        "amount_text": "$30M",
+        "lead": "Benchmark",
+        "india": false,
+        "url": "https://techfundingnews.com/tendrils-30m-benchmark-parallel-cpu-vine/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 22,
+        "sector": "ai",
+        "company": "XpertDox",
+        "what": "Autonomous medical coding AI",
+        "round": "Series A",
+        "amount_usd_m": 20,
+        "amount_text": "$20M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPaU1DWG1mNDJLckVseG9iUmtGblY3X3F0U3JmT1hfMFdPVEN2MXVqcGhqWnN3Vkt4OGVOek5YME9GTnZCSTJST2R1QjNkWHR6YTd4YnhZTkdWVDMtTVZzdmZMdjN3akFTcHhZT250dGVsT1UzeFV4ajNhdDNxZjJpRVJWbDBuUFpVd3B4eU5ySQ?oc=5",
+        "source": "Unite.AI"
+      },
+      {
+        "i": 7,
+        "sector": "robotics",
+        "company": "Former Nexar AI researchers' startup",
+        "what": "Autonomous-driving simulations for AI agents",
+        "round": "Seed",
+        "amount_usd_m": 13,
+        "amount_text": "$13M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5DODFCeldaMENjRFFKaE8tR3BCTk02Z1FHc1M1WldvODM1MkFQS1BSVjJBa0lvQk5mQWEzYnlzdGdNVW5YcGk3am40VXVDYmJHaFBZMDVTSHFPeFI1ZUh1dnVlZ0FTbkdx?oc=5",
+        "source": "CTech"
+      },
+      {
+        "i": 29,
+        "sector": "ai",
+        "company": "Plurai",
+        "what": "Stress-testing AI agents",
+        "round": "Seed",
+        "amount_usd_m": 13,
+        "amount_text": "$13M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA4anhMdldRbi1WX3lnSXhvV1AxYmhMSGlIeGZEbGhZSVdPRXhpQWNWOVNyTVJOaE9sZXlVd3V6ZmhrUG1aNC1Eck1mTm9ncWRLZE5EVUdPV0FYSjB4WmRvQWZ3?oc=5",
+        "source": "Ynetnews"
+      },
+      {
+        "i": 6,
+        "sector": "robotics",
+        "company": "Akara",
+        "what": "Physical AI for hospitals",
+        "round": "Seed",
+        "amount_usd_m": 5.5,
+        "amount_text": "$5.5M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONi16YmtTd01zWG16U0hsYk1YMFl1UUdDT1AxTldMWWpPdzI4T0NLSzVrUE96bTlTdDhyVW5wcFBBSjdSaTByWnF3OHBKVGx5di1TZFhyVkltVktRWkZUUzRqaUtBdF9aUFFsTFdzN0ZWSV9ZMVNRS05KYTBrWnR1emJYTTVsdDVRREJMNkpIVQ?oc=5",
+        "source": "FourWeekMBA"
+      },
+      {
+        "i": 16,
+        "sector": "deeptech",
+        "company": "Mistt",
+        "what": "Autonomous systems navigation for defence",
+        "round": "Funding",
+        "amount_usd_m": 5,
+        "amount_text": "£5M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUVpkMUtoU2R2TFBhcUZKRW9qNnZtWnNhWGxhX3lNY0wtOG1kZ1JWSU52OWhpbHlqODlRSVlleUVLRUhGNzRYSXRqZnZ1TTRRUkREa0NMdGVPUjBaWmlvQ0hicV9aUEIzNEdoOEpBSHI2aHp4RlRxVzVGZ0UzRGE2VUtkdTgtUWJlX0pnTl9Ja2V0SzNvUy1jdzU0amRYQQ?oc=5",
+        "source": "Sifted"
+      },
+      {
+        "i": 20,
+        "sector": "ai",
+        "company": "Tano",
+        "what": "AI agents negotiating influencer deals",
+        "round": "Seed",
+        "amount_usd_m": 4,
+        "amount_text": "$4M",
+        "lead": "Cherry Ventures",
+        "india": false,
+        "url": "https://techfundingnews.com/tano-4m-seed-ai-creator-marketing-agents/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 24,
+        "sector": "ai",
+        "company": "Odessia",
+        "what": "Travel startup",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "OpenAI",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
+        "source": "TechCrunch AI"
+      }
+    ],
+    "totalUsdM": 984
+  },
+  "playground": [
+    {
+      "headline": "An open-source desk robot that watches your face back",
+      "body": "The robot uses a camera to spot faces and swivels its head to keep looking at them as they move. It springs from an open-source design called watcherobot0.5, and the maker shared footage of the head-tracking plus the preview window.",
+      "why": "Small, home-built desktop robots can now do smooth, socially aware camera-based tracking without exotic hardware.",
+      "maker": "/u/Quick-Us…",
+      "url": "https://www.reddit.com/r/robotics/comments/1xteyd0/i_added_face_tracking_to_watcherobot05_an/",
+      "source": "r/robotics"
+    },
+    {
+      "headline": "Google's Tabletop generates group tools from plain descriptions",
+      "body": "Google's Tabletop opens as a canvas where you can prompt an AI to generate shared tools like expense splitters or trip itineraries. The results work like a Google Doc, letting groups edit a custom collaboration space at the same time.",
+      "why": "AI can now turn everyday group coordination into bespoke mini-apps without anyone touching code.",
+      "maker": "Google Labs",
+      "url": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
+      "source": "The Verge AI"
+    },
+    {
+      "headline": "Adobe experiments let you interview characters and step into photos",
+      "body": "Adobe showed two concept tools: Project Screen Test, where you refine an AI character by interviewing it like a casting director, and Project Sight Span, which turns flat photos into walkable 3D scenes with fill-in scenery. These are experimental and not yet built into Adobe's product line.",
+      "why": "Conversation-based character direction and image-to-space reconstruction hint at tools that blur the line between editing and directing.",
+      "maker": "Adobe",
+      "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
+      "source": "The Verge AI"
+    },
+    {
+      "headline": "James Bruton builds a car that slides sideways and drives itself",
+      "body": "James Bruton built a rideable car whose four large ball-wheels let it slide sideways or spin in place. An Arduino VENTUNO Q board combines a microcontroller with a 40 TOPS NPU, ROS 2, and lidar so the same platform can navigate on its own.",
+      "why": "Cheap omnidirectional wheels plus onboard AI make formerly specialized robot motion tricks accessible to hobby builders.",
+      "maker": "James Bruton",
+      "url": "https://www.hackster.io/news/james-bruton-reinvents-the-wheel-literally-06e67c7c3bab",
+      "source": "Hackster.io"
+    }
+  ],
+  "think": {
+    "collision": {
+      "a": {
+        "kind": "story",
+        "n": 9,
+        "label": "Excavator learns digging from cab camera, joystick history"
+      },
+      "b": {
+        "kind": "brief",
+        "n": 5,
+        "label": "VR teleoperation to semi-autonomous construction robot arms"
+      },
+      "headline": "Record Indian excavator and loader operators with a cab-mounted stereo camera plus joystick logs, sold as ready-to-train machine datasets",
+      "body": "The excavator study shows a machine can learn to dig from only what the operator sees and how the controls moved, with no extra sensors on the joints. The construction teleoperation paper shows the industry already plans a gradual path from a human steering remotely, like a drone pilot, to the machine doing parts of the job alone. India has very large fleets of manual excavators and backhoe loaders on road, mining and housing sites, so a vendor network could fit a cheap camera and a joystick logger in hundreds of cabs and capture paired video and control data across soils, weather and operator skill levels.",
+      "who_pays": "Construction equipment makers building autonomy features and construction-robotics startups that need diverse real digging data, plus Indian fleet owners who want operator skill scoring.",
+      "data_needed": "Synchronized cab-view stereo video, joystick and pedal position streams at high rate, machine model and bucket type, soil and site labels, and task segments such as dig, swing, dump and trench finishing.",
+      "why_fail": "Equipment makers may refuse to buy data from machines they did not instrument themselves, and fitting loggers to older hydraulic joysticks across many brands may prove too messy to standardize."
+    },
+    "contrarian": {
+      "story_n": 4,
+      "consensus": "Raw, unlabeled first-person video now has proven value for robot learning, so collecting more of it is a safe bet.",
+      "against": [
+        "The gains in the SPAR paper come on top of robot data the model already has, so raw video acts as a helper signal, not a replacement, and buyers may pay little for it alone.",
+        "If raw video is useful without labels, its price falls toward a commodity: large internet video collections and big labs' own camera fleets can supply similar footage cheaply.",
+        "Story 6 suggests much robot success comes from closely matching stored demonstrations, which favours smaller, well-covered sets with clean action records over sheer volume of footage."
+      ],
+      "bets_otherwise": "Memories.ai is betting on standardized capture with in-house annotation rather than raw volume, and teleoperation data firms and simulation-first groups like the Berkeley and NVIDIA team in Story 3 bet that action-labelled or synthetic data matters more.",
+      "settle_it": "A controlled test showing how much robot success improves per extra hour of raw egocentric video versus per extra hour of action-labelled demonstrations, at matched cost."
+    }
+  },
+  "cost": {
+    "usd": 0.0861,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 5,
+        "inTokens": 30134,
+        "outTokens": 9168,
+        "cost": 0.0076,
+        "models": {
+          "anthropic/claude-haiku-5.5": 5
+        }
+      },
+      "write": {
+        "calls": 10,
+        "inTokens": 14357,
+        "outTokens": 5902,
+        "cost": 0.0379,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 10
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 3471,
+        "outTokens": 1417,
+        "cost": 0.0011,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 4027,
+        "outTokens": 507,
+        "cost": 0.0055,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "think": {
+        "calls": 1,
+        "inTokens": 3928,
+        "outTokens": 915,
+        "cost": 0.034,
+        "models": {
+          "anthropic/claude-opus-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 239,
+    "unique": 210,
+    "feeds": 29,
+    "failedFeeds": [
+      "Import AI",
+      "r/LocalLLaMA",
+      "Hacker News"
+    ]
+  },
+  "generatedAt": "2026-11-12T00:16:47.056Z"
+}
