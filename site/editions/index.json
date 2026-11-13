@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-11-13",
+    "weekday": "Friday",
+    "number": 16,
+    "lead": "Runway releases Praxis-1 robot action model with open weights",
+    "stories": 6,
+    "readMinutes": 10,
+    "costUsd": 0.0645
+  },
+  {
     "date": "2026-11-12",
     "weekday": "Thursday",
     "number": 15,

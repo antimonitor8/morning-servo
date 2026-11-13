@@ -1,0 +1,784 @@
+{
+  "date": "2026-11-13",
+  "weekday": "Friday",
+  "sunday": false,
+  "number": 16,
+  "paper": "The Morning Servo",
+  "readMinutes": 10,
+  "stories": [
+    {
+      "id": "452d03a429",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Runway releases Praxis-1 robot action model with open weights",
+      "takeaway": "Runway has released Praxis-1, a model that lets robots learn physical tasks from a small number of video examples. It is free to download, inspect and adapt for commercial use, which could speed up robot deployment in warehouses and factories.",
+      "deck": "It runs on hardware from data center GPUs to the robot's own onboard computer.",
+      "body": [
+        "Runway AI Inc. released Praxis-1, a world action model for robotics. The model is available on GitHub and Hugging Face with native LeRobot support, and on vLLM-Omni with hosted inference on Reactor.",
+        "Praxis-1 is a 27-billion-parameter mixture-of-experts diffusion transformer. It predicts video and actions together, and it reached 46.2% success across 1,200 episodes on the RoboLab-120 benchmark. The company said that compares with 42.9% for FLUX 3 Action and 28.0% for Pi-0.5.",
+        "Runway first announced Praxis-1 in September with partners Noble Machines, Standard Bots, and Ultra. The same model has driven a legged humanoid, a six-axis factory arm, and a dual-arm warehouse robot, according to Runway. The company released the weights, inference code, and fine-tuning code under the Apache 2.0 license, including for commercial use."
+      ],
+      "why": "This matters because the model learned a warehouse picking task from only 30 minutes of examples and completed the standard task 15 times out of 15. That suggests robot policies can be adapted with far less task-specific egocentric video and teleoperation data than before, which could change how much and what kind of training data robotics buyers need.",
+      "hard": "Runway also reported that on a messy pile of planks the model had never seen, it cleared the whole pile successfully only six times out of ten, so reliability in unstructured settings is still limited.",
+      "terms": [
+        {
+          "term": "World action model",
+          "meaning": "An AI model that both predicts what a scene will look like next and decides what physical action a robot should take to make that happen."
+        },
+        {
+          "term": "Open weights",
+          "meaning": "The trained settings or parameters of an AI model are shared publicly, so anyone can download, inspect, adapt and use the model themselves."
+        },
+        {
+          "term": "Fine-tuning",
+          "meaning": "Taking an already trained AI model and giving it a small amount of extra, specific training so it performs better on a particular task or robot."
+        },
+        {
+          "term": "Policy",
+          "meaning": "A learned rule that maps what a robot sees and senses to the action it should take, such as how to move its arm or gripper."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "AI"
+        ],
+        "task": [
+          "Robot learning",
+          "Manipulation"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/runways-praxis-1-world-action-model-for-robotics-is-now-available/"
+        }
+      ]
+    },
+    {
+      "id": "44e4371cbc",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "NVIDIA CEO steps down as trade scrutiny and China concerns grow",
+      "takeaway": "The head of NVIDIA, the company whose chips and software power much of AI and robotics, has left suddenly. The company faces questions about China trade rules, while its robot training tools keep moving forward.",
+      "deck": "CFO Collette Kress becomes interim CEO after a stock drop and questions over a relationship with a suspected Chinese spy",
+      "body": [
+        "NVIDIA said co-founder and CEO Jensen Huang has stepped down. The company named CFO Collette Kress as interim CEO and investor Harvey C. Jones as its first board chair. Huang left after the company's stock dropped about 18.5% in one week and after he admitted to extramarital affairs, including one with an executive suspected of being a Chinese spy.",
+        "The company faces possible investigations over whether its products were used to get around U.S. export controls on AI chips sold to China. In the same week, NVIDIA still moved ahead with robotics work, releasing GR00T 2, an updated AI model that helps robots understand and act in the physical world, and Isaac Lab 3.0, a new version of its free software for training robots in simulation.",
+        "NVIDIA's chips and software are widely used in robot learning, humanoids, and autonomous machines on factory floors. The leadership change comes as rivals like AMD, Qualcomm, Arm, and Intel may try to present themselves as more reliable Western suppliers, and as regulators look more closely at large AI and robotics deals."
+      ],
+      "why": "NVIDIA's chips, simulation tools, and robot learning software are central to the hardware and training pipelines that robotics companies depend on. Any disruption to NVIDIA or tightening of export rules could shift which robot platforms and training-data suppliers get funded and where buyers look for alternatives.",
+      "hard": "The independent board investigation is still underway, so the full national security picture and any lasting effect on NVIDIA's China-linked robotics work are not yet known.",
+      "terms": [
+        {
+          "meaning": "An AI model that helps a robot understand situations and choose physical actions, similar to how a language model handles words.",
+          "term": "world action model"
+        },
+        {
+          "meaning": "A virtual environment where robots can practice tasks in software before trying them in the real world.",
+          "term": "simulation"
+        },
+        {
+          "meaning": "A type of robot shaped roughly like a person, built to use human tools and work in human spaces.",
+          "term": "humanoid robot"
+        },
+        {
+          "meaning": "Rules that limit which advanced computer chips and related technology can be sold or shipped to certain countries such as China.",
+          "term": "export controls"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Semiconductors",
+          "Robotics"
+        ],
+        "task": [
+          "Robot learning",
+          "Corporate governance"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/nvidia-replaces-ceo-amid-china-ai-and-robotics-concerns/"
+        }
+      ]
+    },
+    {
+      "id": "d7547929d2",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Viam starts six-month program to push robotics startups into commercial installs",
+      "takeaway": "A robotics software company is running a six-month program that gives small startups engineering help, credits, and a robot lab. The goal is to turn prototypes into working commercial deployments faster.",
+      "deck": "The program includes engineering support, software credits, and a New York robotics lab with a robot-arm farm.",
+      "body": [
+        "Viam, a company that makes software for controlling robot fleets, has started a six-month program called Viam Launchpad. It accepts small robotics startups and gives them engineering help, credits for Viam's software, workspace in New York City, and access to a lab with many robot arms.",
+        "The point is to move companies from prototype to a real commercial install. One member, RoboBuilt, said Viam's ready-made software modules let it skip basic setup work such as robot-arm drivers and focus on its specific construction task. It expects to finish the program with a working deployment ready for its seed funding round.",
+        "Viam argues that the widely used open-source software framework ROS, or Robot Operating System, is strong for research but hard to turn into reliable commercial fleet software. Viam says its closed, managed platform plus hands-on support shortens that step, which is where many hardware startups stall."
+      ],
+      "why": "This shows a route for robot training-data demand to move from lab prototypes to installed fleets, where real deployment data such as egocentric video becomes more valuable and easier to collect at scale.",
+      "hard": "The article is written by the program's advising executive director, so the benefits are presented by someone with a direct interest in its success.",
+      "terms": [
+        {
+          "meaning": "Software that sits between robot hardware and the applications controlling it, so different machines can be managed the same way.",
+          "term": "Abstraction layer"
+        },
+        {
+          "meaning": "The standard open-source software framework many researchers and companies use to build robot control systems.",
+          "term": "ROS (Robot Operating System)"
+        },
+        {
+          "meaning": "Tools that let operators manage a group of robots at once, including monitoring, updates, and remote debugging.",
+          "term": "Fleet management"
+        },
+        {
+          "meaning": "A software simulation tool from NVIDIA that lets developers test robots in lifelike virtual worlds before running hardware.",
+          "term": "Isaac Sim"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics software",
+          "Startup accelerators"
+        ],
+        "task": [
+          "Robot deployment",
+          "Startup incubation"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/viam-launchpad-aims-to-accelerate-robotics-deployments/"
+        }
+      ]
+    },
+    {
+      "id": "8f30ac9550",
+      "section": "other",
+      "kicker": "Elsewhere",
+      "headline": "NVIDIA chief Jensen Huang resigns immediately after security concern reports",
+      "takeaway": "NVIDIA's chief executive Jensen Huang resigned suddenly after reports linked him to a person suspected of working for Chinese intelligence. The company put its chief financial officer in charge while it looks for a permanent replacement.",
+      "deck": "NVIDIA named chief financial officer Colette Kress as interim chief executive",
+      "body": [
+        "NVIDIA said on November 12 that Jensen Huang resigned immediately as president, chief executive officer and board member. He had led the company for 33 years. The move came days after reports that US intelligence agencies found he had a close personal relationship with a woman suspected of working for China's Ministry of State Security.",
+        "NVIDIA's board opened an independent investigation on November 8 over national security concerns, but said there was no reason to believe company secrets or US national security had been compromised. The company named chief financial officer Colette Kress as interim CEO while it searches for a permanent successor inside and outside the company.",
+        "Huang admitted in an internal memo to employees that he had been unfaithful to his wife. News reports also said he had a relationship with an NVIDIA vice president. Harvey C Jones was appointed as NVIDIA's first chair of the board."
+      ],
+      "why": "NVIDIA supplies most of the chips used to train large AI and robot models. A leadership shake-up and any national security limits on its business could reshape the hardware pipeline that robotics companies rely on.",
+      "hard": "The announced resignation and week-old reports have not yet visibly affected NVIDIA's business, contracts or AI hardware roadmap, so the practical impact is unproven.",
+      "terms": [
+        {
+          "meaning": "A company's top executive in charge of day-to-day management and major decisions.",
+          "term": "Chief executive officer"
+        },
+        {
+          "meaning": "A top finance executive who oversees a company's money, accounting and financial planning.",
+          "term": "Chief financial officer"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "AI hardware",
+          "Semiconductors"
+        ],
+        "task": [
+          "Corporate leadership",
+          "AI infrastructure"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "Analytics India Magazine",
+          "url": "https://analyticsindiamag.com/ai-news/in-a-stunning-fall-jensen-huang-resigns-as-nvidia-chief-after-33-years"
+        }
+      ]
+    },
+    {
+      "id": "412b4e7468",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Nebius plans $40 billion AI data center buildout funded by customer prepayments",
+      "takeaway": "Nebius will spend $40 billion on AI data centers by 2027, mostly funded by customer prepayments and loans. Delays at a Microsoft site in New Jersey show how fragile this financing model can be.",
+      "deck": "A Microsoft data center in New Jersey is months behind schedule, and the delay has already cut Nebius's 2026 revenue forecast.",
+      "body": [
+        "Nebius, a company that builds and rents out specialized cloud computing for AI, said on Thursday it plans to spend $40 billion by 2027. That is far more than Wall Street expected. The company will fund most of it through customer prepayments and loans backed by customer contracts, essentially using the future value of its data centers to pay for building them.",
+        "The plan is already showing strain. One of Nebius's largest customers is Microsoft, which is paying for AI computing capacity at a data center in Vineland, New Jersey. That site is months behind schedule. Only just over half of the Microsoft capacity is now planned for delivery by the end of the year, with the rest pushed to mid-2027. The delay came after the site's operator, DataOne, was fined $1.1 million by New Jersey regulators for running natural gas generators without permits.",
+        "Nebius cut its 2026 revenue forecast by $200 million to $3 billion, citing delays at third-party sites like New Jersey. The company reported third-quarter revenue of $981 million, up 571% from a year earlier, though roughly a third of that was a one-time payment. Shares fell 17% on the day. Nebius says data centers it builds itself are on time or ahead of schedule, and that those will supply most of its new capacity from 2027."
+      ],
+      "why": "This shows how the economics of AI infrastructure are shifting toward financing models that depend on delivery timelines. For training-data suppliers, delays at data centers can ripple into slower demand for compute, which in turn affects how quickly robot foundation models get trained and deployed.",
+      "hard": "The financing model only works if projects finish on time. If delays pile up, Nebius keeps paying construction costs while revenue slips, and customers like Microsoft can cancel or reduce their contracts.",
+      "terms": [
+        {
+          "term": "Neocloud",
+          "meaning": "A company that builds and rents out specialized cloud computing capacity for AI workloads, rather than general-purpose cloud services."
+        },
+        {
+          "term": "Capex",
+          "meaning": "Capital expenditure, the money a company spends on physical assets like buildings and equipment rather than day-to-day running costs."
+        },
+        {
+          "term": "Prepayment",
+          "meaning": "Money a customer pays upfront for a service that will be delivered later, in this case computing capacity that is still being built."
+        },
+        {
+          "term": "Data center",
+          "meaning": "A large building full of computer servers that store data and run computing tasks, often for many customers at once."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "AI infrastructure",
+          "Cloud computing"
+        ],
+        "task": [
+          "Data center construction",
+          "AI compute capacity"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/"
+        }
+      ]
+    },
+    {
+      "id": "a0e2f968ff",
+      "section": "india",
+      "kicker": "India Desk",
+      "headline": "Google Cloud shows Gemini voice, agents and coding tools for business",
+      "takeaway": "Google Cloud demonstrated how businesses are using its Gemini AI model for voice work, software agents and coding. The company said the supporting systems around a model now matter as much as the model itself.",
+      "deck": "The presentation focused on practical business use rather than new model features.",
+      "body": [
+        "At the TechSparks 2026 event, Google Cloud's Rajesh Shewani walked through how companies are using Gemini for three kinds of work: voice interactions, software agents that carry out tasks, and coding tools for developers.",
+        "The main point was not a new model announcement. Shewani argued that the systems built around a model, such as how it connects to company data and existing software, now matter as much as the model itself.",
+        "The session reflects a wider shift in enterprise AI talk, away from raw model performance and toward whether the surrounding tooling is reliable enough for daily business use."
+      ],
+      "why": "It signals where enterprise AI demand is moving: toward integrated voice, agent and developer workflows. For robotics training-data suppliers, this matters because voice-guided and agent-driven systems may create new kinds of human demonstration data, especially in service and back-office tasks.",
+      "hard": "The source is only a summary of a presentation, so there are no customer numbers, performance figures or independent results to verify the claims.",
+      "terms": [
+        {
+          "term": "AI model",
+          "meaning": "A computer program trained on data to recognise patterns and produce useful output, such as text or speech."
+        },
+        {
+          "term": "Software agent",
+          "meaning": "A program that can carry out multi-step tasks on a user's behalf, like booking a meeting or updating records."
+        },
+        {
+          "term": "Gemini",
+          "meaning": "Google's family of AI models that can handle text, images, audio and code."
+        },
+        {
+          "term": "Coding tool",
+          "meaning": "Software that helps developers write, check or complete computer code, often using an AI model."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Enterprise AI",
+          "Cloud services"
+        ],
+        "task": [
+          "Voice AI",
+          "Software agents"
+        ]
+      },
+      "score": 4,
+      "sources": [
+        {
+          "name": "YourStory",
+          "url": "https://yourstory.com/2026/11/gemini-in-action-how-voice-agents-and-coding-tools-are-changing-the-way-businesses-use-ai"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "Robotics Floor",
+      "headline": "Viam Launchpad: Deploying Robots Day One",
+      "url": "https://www.alleywatch.com/2026/11/viam-launchpad-deploying-robots-day-one/",
+      "source": "AlleyWatch"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "Canada’s Dominion Dynamics is building a combat drone for the arctic",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxONm53Uzc1TW1zNVdZNVo4WmR4V1gycW1zdEZVVUxnMTdIT0FVR0FIUzlXRFhEbERMVDdLY2dMLXdPbW02WmVFZi1wVGpZWlhUX0hsbWg1TU5FWHE0YU1wSExJeERDbzNvOVVsSDJyRjBHTlpBeGNnbjViQzZjbmx3cTl4Y1FSeVUwSzI2SkpXa2p2d2dsQzhQcVRqbw?oc=5",
+      "source": "Resilience Media"
+    },
+    {
+      "kicker": "Elsewhere",
+      "headline": "Jensen Huang’s exit puts Nvidia’s support for open source in question",
+      "url": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/",
+      "source": "TechCrunch AI"
+    },
+    {
+      "kicker": "Policy",
+      "headline": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
+      "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
+      "source": "MIT Technology Review"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "The Definitive Fine-Tuning Guide for 3D Generation Models",
+      "url": "https://huggingface.co/blog/3d-lora-finetuning",
+      "source": "Hugging Face"
+    },
+    {
+      "kicker": "India Desk",
+      "headline": "From multi-lingual AI agents to the future of voice: Google Cloud’s Naren Kachroo at TechSparks 2026",
+      "url": "https://yourstory.com/2026/11/from-multi-lingual-ai-agents-to-the-future-of-voice-google-clouds-naren-kachroo-at-techsparks-2026",
+      "source": "YourStory"
+    },
+    {
+      "kicker": "India Desk",
+      "headline": "Karnataka may subsidise GPU access for startups through AI hub",
+      "url": "https://yourstory.com/2026/11/karnataka-open-to-subsidising-gpu-access-for-startups-through-ai-hub",
+      "source": "YourStory"
+    },
+    {
+      "kicker": "Elsewhere",
+      "headline": "Siemens Wants to Continue NVIDIA Partnership Even If Jensen Huang is Ousted",
+      "url": "https://analyticsindiamag.com/ai-news/siemens-wants-to-continue-nvidia-partnership-even-if-jensen-huang-is-ousted",
+      "source": "Analytics India Magazine"
+    },
+    {
+      "kicker": "India Desk",
+      "headline": "Meet Netweb, the Only Indian Company Building NVIDIA-Certified GPU Servers",
+      "url": "https://analyticsindiamag.com/ai-startups/meet-netweb-the-only-indian-company-building-nvidia-certified-gpu-servers",
+      "source": "Analytics India Magazine"
+    },
+    {
+      "kicker": "India Desk",
+      "headline": "Chariot Launches Multilingual TTS Model with Support for 11 Indian Languages",
+      "url": "https://analyticsindiamag.com/ai-news/chariot-launches-multilingual-tts-model-with-support-for-11-indian-languages",
+      "source": "Analytics India Magazine"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 7,
+        "sector": "deeptech",
+        "company": "UFORCE",
+        "what": "Ukrainian drone and defence technology maker",
+        "round": "Funding",
+        "amount_usd_m": 700,
+        "amount_text": "$700M",
+        "lead": "UK National Wealth Fund",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQLXRDT1BZMDlmWlItVUxldDJiM28zbmlTVlE4OWtNY0E1Uld2WVhvdkVFZGVadjZHRWg5SXVVZ1lkMmVVSmhHZ2FVVG05Vl9nX1pvMkJLZ1V5d193VmZMVlR4LUZUam1jUVB5V3owMlhDd0JHWWhkVlVRUlNfanZqUE4tc3FTbXJjYVl0Nmg1QWdfakNhRGYtN1VzYlkybUdpUFo3MkJyaFo1aFVXVUNpZ0thRGlhVVpuRXhzR2ZwTXJwLXVMYUtZWVpSRmE?oc=5",
+        "source": "MLQ.ai"
+      },
+      {
+        "i": 3,
+        "sector": "robotics",
+        "company": "Bedrock Robotics",
+        "what": "Autonomous excavators for construction",
+        "round": "Funding",
+        "amount_usd_m": 600,
+        "amount_text": "$600M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQM09RNGk1c0t1QWFLb0ZuVTkzU21BSm0tVVF6OFZjTVFmYnhnR1pRaHVuNDg5blZDYWRQSENWQTlubHctc3kwZTZXZTdXSFdVZF94eEdlNXhrSTdKQmdJVndxYzJjVWVKM0twZzJyVjM1YUhYRkV4UVU5NktBaHl4R0s0ZGJnNTNUNDBlSXBBN2VETTkxN2RIcGpPa0ZBTG5iZDhNZGQ2Q081dENtX0pHQnpFb2lqX21vVnZnU3FjVnI0OTQ?oc=5",
+        "source": "A3 Association for Advancing Automation"
+      },
+      {
+        "i": 0,
+        "sector": "robotics",
+        "company": "Agile Robots",
+        "what": "Robotic arms, hands, humanoids and software",
+        "round": "Series F",
+        "amount_usd_m": 500,
+        "amount_text": "$500M",
+        "lead": "SoftBank",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbVoxVEpYc2k0ZFFuTWROSFFxVjFKSVZiODBhVzRyOV9CSUtNamlBVU5nOVR4Y3hSWExFbXRMcmNjSWF3SmR4TFZOUUNrVjZyODFqUmlyUkZDTl9UZ2ZhTDNfYi1RcGdpSGhxNkprbVloYnJhX0c5RUVmVmR5T0NBbjZZU0U1WldvRllyeWZwVEh4NlRJS0FCcGRlNjRudE9mUkhkVXQ3QzUyZE82SHlwd2JXV05QeVQ0a0E4ellsT2VIUQ?oc=5",
+        "source": "AI Insider"
+      },
+      {
+        "i": 36,
+        "sector": "ai",
+        "company": "Blue J",
+        "what": "AI tax research agent",
+        "round": "Funding",
+        "amount_usd_m": 176,
+        "amount_text": "$176M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZnloZlREcmI3LU54QUFKLUVrNG1yQkFNRWZ6YkQyLUhVNHVEQ3ZrUDhUcWpwWUJlM25fQzZnNWwxME52dURwa0ZFLUZVX3I4dTlmVHJXcE44MUU0WDBrbEJSUE5uS0VJRlhRRzFqcW42UUpJSlhHcXNDWl9Nd2RaWFpqV2JLby1peDg3X2dwTjF3LTAwQUZNNVdod2RvcENYWjAxVnhvQWd1MXRoZGduUWFIZk01VDVRRHR3?oc=5",
+        "source": "AI Insider"
+      },
+      {
+        "i": 12,
+        "sector": "ai",
+        "company": "Rox",
+        "what": "Autonomous AI revenue agents for enterprises",
+        "round": "Series B",
+        "amount_usd_m": 100,
+        "amount_text": "$100M",
+        "lead": "Prosperity7 Ventures",
+        "india": false,
+        "url": "https://techfundingnews.com/sequoia-backed-rox-raises-100m-at-1-3b-valuation-can-ai-agents-unseat-salesforce-in-sales/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 14,
+        "sector": "robotics",
+        "company": "Amicro",
+        "what": "Robot-chip maker",
+        "round": "IPO",
+        "amount_usd_m": 90.5,
+        "amount_text": "$90.5M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVUUtaS14UkVSYjJLX2J5VFp3Z0dxYVgyaUdMbjJsV1NrYVFKQzd2YXAxSDRSMGJhN09WZzB1NjEwWTJqRjVFOFdobDRBU1l1T3RuNVV6cWV2VUlxb0ZtY3ZncUVDV2JhWURUUTVKSm9vVDZmTWc1UGdZYmZyRENJYmh6d1dVQW9xMW52OXg5NzM1ZnJKWXQtUmFUQ1ZqMjV6?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 9,
+        "sector": "robotics",
+        "company": "Humble Robotics",
+        "what": "Autonomous and electric freight robotics",
+        "round": "Series A",
+        "amount_usd_m": 51,
+        "amount_text": "$51M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNXzd2bnJqMWs3Zkg3R1Nwc0Z1eWt3Vm01Q2xqTlVITk4ybzhGNGYzNk1rQUxaSklCNllQVkdTTFlQcEpCa0pVdVJBSjlYSTJEUVFnZVpyS2dVRzVmalYzVktQZHJBX1gtT25pVVNmbll4NGQ2VDZVVUNsaFlvcFZ5UlphcjBxemhZNjluUEFhUUY1YUJZN01PbEZETlhGT3NSQW1Hd1dkS09MVFcyN3ZIOXZpQWR1am1MS3FnbFAxS09BYTJHOG8ydWtkRTA1bFVCQnZmVXpoN3VTRDhPSjlQSlhpZVo?oc=5",
+        "source": "Cyprus Shipping News"
+      },
+      {
+        "i": 35,
+        "sector": "ai",
+        "company": "Mount Thor",
+        "what": "AI cloud infrastructure on Apple hardware",
+        "round": "Funding",
+        "amount_usd_m": 45,
+        "amount_text": "$45M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcUl2RTNDTW0waW5DSUNxUElSU2tWemVCa3Ffc18xV0FhS0s5NUd3cHRCdlNTME1BSmxVdU80Q0d3dlVvaDBoM1BwcWdMdFI3Q3hLQ2ZkUjBpaWctSmtoTjJCR2VpMERoTnJ3Mnlxb0tUZFUyc2dCOTVrWjJLWXZoUjZWSGRrN0ZzeHRybVBNZ1FnVnkzekFrMmUteGxmczJuX0lVQ0pqRkFhaFNfY3FKNnBnZUU3OFVGb1hTSkdoQQ?oc=5",
+        "source": "AI Insider"
+      },
+      {
+        "i": 34,
+        "sector": "ai",
+        "company": "Orakl Oncology",
+        "what": "AI cancer drug prediction",
+        "round": "Funding",
+        "amount_usd_m": 34,
+        "amount_text": "$34M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/paris-based-orakl-oncology-scoops-34m-for-ai-cancer-drug-prediction/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 8,
+        "sector": "robotics",
+        "company": "SE3",
+        "what": "Spatial AI for drones without GPS",
+        "round": "Series A",
+        "amount_usd_m": 30,
+        "amount_text": "$30M",
+        "lead": "Accel",
+        "india": false,
+        "url": "https://techfundingnews.com/accel-leads-30m-series-a-in-se3-the-munich-startup-teaching-drones-to-work-without-gps/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 32,
+        "sector": "ai",
+        "company": "Kindo",
+        "what": "Control center for enterprise AI agents",
+        "round": "Funding",
+        "amount_usd_m": 30,
+        "amount_text": "$30M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/kindo-raises-30m-after-800-revenue-growth-can-one-control-center-tame-enterprise-ai-agents/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 23,
+        "sector": "ai",
+        "company": "Luminal",
+        "what": "AI inference infrastructure",
+        "round": "Funding",
+        "amount_usd_m": 25,
+        "amount_text": "$25M",
+        "lead": "Standard Capital",
+        "india": false,
+        "url": "https://techfundingnews.com/luminal-25m-series-a-ai-inference-compiler-cloud/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 21,
+        "sector": "deeptech",
+        "company": "Dhruva Space",
+        "what": "Spacetech satellite company",
+        "round": "Pre-Series B",
+        "amount_usd_m": 15.5,
+        "amount_text": "₹147 Cr ($15.5M)",
+        "lead": "IndusBridge Ventures",
+        "india": true,
+        "url": "https://entrackr.com/exclusive/exclusive-dhruva-space-to-raise-155-mn-in-pre-series-b-revenue-surges-8x-12803436",
+        "source": "Entrackr"
+      },
+      {
+        "i": 27,
+        "sector": "ai",
+        "company": "4Minds",
+        "what": "Dallas AI startup",
+        "round": "Series A",
+        "amount_usd_m": 15,
+        "amount_text": "$15M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPRi14Z2N2VjJBYzdKbDNDQ3V4QUk1OFBKb1lVa3k3UmRjdlZKbFRNbFZsTmJuT2F0MUE5YmNmeUlxdDJHYVE3WFZIcnVLUVEteXdnS240Uy16aUtGMmFZeGVEbXFLTjZ4amlmdHlnVkZraTRoMkhYbnZFbFlRbUxLdzZkT3dVVnRWa0NsRm1uRkJUYVRndmc?oc=5",
+        "source": "Dallas Innovates"
+      },
+      {
+        "i": 11,
+        "sector": "deeptech",
+        "company": "Astrome",
+        "what": "AI satellite network for signal detection",
+        "round": "Funding",
+        "amount_usd_m": 7.3,
+        "amount_text": "₹64 Cr ($7.3M)",
+        "lead": "RDI Fund",
+        "india": true,
+        "url": "https://analyticsindiamag.com/ai-news/space-tech-startup-astrome-bags-64-cr-rdi-fund-for-ai-satellite-network",
+        "source": "Analytics India Magazine"
+      },
+      {
+        "i": 43,
+        "sector": "ai",
+        "company": "Olyv",
+        "what": "AI-driven personal lending platform",
+        "round": "Series C",
+        "amount_usd_m": 6.5,
+        "amount_text": "₹58 Cr ($6.5M)",
+        "lead": "Nippon India Digital",
+        "india": true,
+        "url": "https://entrackr.com/exclusive/exclusive-olyv-raises-rs-58-cr-in-extended-series-c-round-led-by-nippon-india-digital-12803184",
+        "source": "Entrackr"
+      },
+      {
+        "i": 38,
+        "sector": "ai",
+        "company": "Voice AI Startup",
+        "what": "Voice AI platform",
+        "round": "Funding",
+        "amount_usd_m": 4.6,
+        "amount_text": "$4.6M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQeVRnQU1kWVp2M0l1a21Wc2twTWZuVzNaa1hyWURyNnZudWZMbUo1Z0hIWDRBcS1zMS03UjExVlBlVE5VWDkyNGh1NE9IdndvQjNzRzdlYlNMVExualgxcE9CRGZab0xyWXF0b3laNW5oZFBqZHhuaktTWjVPQ211NHNZTHdqdEVDbTl6LXMwTXhtOTg?oc=5",
+        "source": "Yahoo Finance"
+      },
+      {
+        "i": 31,
+        "sector": "ai",
+        "company": "Kutlerri.ai",
+        "what": "AI agents for restaurant revenue",
+        "round": "Funding",
+        "amount_usd_m": 4,
+        "amount_text": "$4M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://yourstory.com/2026/11/kutlerriai-raises-4m-to-help-us-restaurants-grow-revenue-and-cut-costs-using-ai-agents",
+        "source": "YourStory"
+      },
+      {
+        "i": 33,
+        "sector": "ai",
+        "company": "Opdo",
+        "what": "AI agents for optical design software",
+        "round": "Funding",
+        "amount_usd_m": 2.3,
+        "amount_text": "$2.3M",
+        "lead": "Angular and Inflection",
+        "india": false,
+        "url": "https://techfundingnews.com/opdo-2-3m-pre-seed-ai-optical-design/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 44,
+        "sector": "ai",
+        "company": "Rigi",
+        "what": "Creator economy platform",
+        "round": "Funding",
+        "amount_usd_m": 1.1,
+        "amount_text": "₹10 Cr ($1.1M)",
+        "lead": "Google International",
+        "india": true,
+        "url": "https://entrackr.com/exclusive/exclusive-rigi-kicks-off-fresh-investment-from-google-12802768",
+        "source": "Entrackr"
+      },
+      {
+        "i": 6,
+        "sector": "robotics",
+        "company": "Qvyon",
+        "what": "Physical AI testing",
+        "round": "Seed",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPaU00alByZ2JJbjNFUEtvY1JHSTZXYlBYUm43dS1HcTY1MG1UbTBEMWlPZl9qNU0tOTF2QmE2cjZyNm1abHdQbF9BS1hnVVhXQ0NUTUd1M3VmY2xjcUM4OTIxaGwtUHpLdDJ2Wjhtak5BUkctY2MyMF9EV29JODZqLXQyT2ZGMl94Skc1OGh5R3VYU2VMd1RIOFNoTmpfNkFYd2sweUZPSVU3clE?oc=5",
+        "source": "Axios"
+      },
+      {
+        "i": 24,
+        "sector": "robotics",
+        "company": "HHLA Sky",
+        "what": "Automated drone operations",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "CONDOR Group",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMFlhUnlEMU9GT2F4TnJGcFVWZ05XS2Vxa1h6Umstd1NqS3l4YTE1TklaN3praHF2S29jSjh4bFZIa0NoSVRkUWRoZFRraGtCMHp6aGJFLU9lOXFqNTdtVlJ6dkNaYk5uc0R1M0l1RktRMjJYM1dEZGVoaFpYd2hxQm5kM192a1BQMVVSWWg0ZmlfRDB4MGxMN0EwWmpPQ0dHamdOWmh6dDRkakxYNnNabm5XRHZsd1U?oc=5",
+        "source": "Unmanned airspace"
+      }
+    ],
+    "totalUsdM": 2438
+  },
+  "playground": [
+    {
+      "headline": "ElectroPad adds 380 touch points to a PS5 controller",
+      "body": "Researchers at Hunan University and the Chinese Academy of Sciences built custom covers for a DualSense controller with 190 electrodes per handle. The electrodes fire in sequence as a virtual hand touches objects in Unity, simulating textures, edges, and shapes. They tested it with virtual items like a guitar, knife, and cup.",
+      "why": "It shows that fine-grained tactile feedback in consumer game controllers is becoming feasible outside research labs.",
+      "maker": "Hunan University and Chinese Academy of Sciences",
+      "url": "https://www.hackster.io/news/electropad-makes-virtual-worlds-feel-more-real-4062c6769221",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "A conference badge that doubles as a handheld game console",
+      "body": "Maker Clem Mayer designed a PCB badge with an ESP32-S2, a 128x64 LCD, and a d-pad plus A/B buttons. After displaying a name during the day, it runs six original games, including clones of Millipede and Breakout. Power comes from two AA batteries.",
+      "why": "It shows how cheap microcontrollers and simple displays are enough for wearable devices to moonlight as game systems.",
+      "maker": "Clem Mayer",
+      "url": "https://www.hackster.io/news/this-diy-conference-badge-doubles-as-a-handheld-game-console-1be2bae62d36",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "Desktop buoy mirrors real ocean wave data",
+      "body": "A maritime pilot in Belgium built SeaGlance, a small model buoy suspended by eight cables from stepper motors. It fetches live wave buoy data over Wi-Fi and moves the model to match real sea conditions. Build files are available for purchase.",
+      "why": "Physical objects can now sync with real-world sensor data to make distant conditions tangible on a desk.",
+      "maker": "TheMaritimePilot",
+      "url": "https://www.hackster.io/news/this-actuated-desktop-model-mirrors-the-movement-of-a-real-life-buoy-cf2359ea4552",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "Coffee machine controller gets hacked to run Doom",
+      "body": "Hardware hacker Robin M. found a microphone listed in a Spengler PSL50 coffee machine's service docs and decided to investigate. He bought a spare controller board, found an unsecured UART interface, and discovered the USB update check used a plaintext secret. After gaining shell access, he loaded Doom onto the machine.",
+      "why": "It shows that even unexpected embedded Linux devices can be opened up and repurposed with off-the-shelf tools.",
+      "maker": "Robin M.",
+      "url": "https://www.hackster.io/news/this-coffee-machine-serves-up-a-fresh-cup-of-doom-c196cecdf43d",
+      "source": "Hackster.io"
+    }
+  ],
+  "think": {
+    "collision": {
+      "a": {
+        "kind": "story",
+        "n": 1,
+        "label": "Runway Praxis-1 learns picking from 30 minutes"
+      },
+      "b": {
+        "kind": "brief",
+        "n": 7,
+        "label": "Karnataka may subsidise startup GPU access"
+      },
+      "headline": "A Bengaluru service that turns 30-minute egocentric recordings into fine-tuned Praxis-1 robot skills, run on subsidised Karnataka GPUs",
+      "body": "Praxis-1 is a robot action model, software that maps what a camera sees to arm movements, and its weights are open, meaning anyone can download and adjust it. It learned a picking task from half an hour of examples, so the bottleneck shifts from collecting huge datasets to collecting small, clean, task-specific ones and adapting the model quickly. A Karnataka GPU subsidy could make that adaptation step cheap enough to sell as a fixed-price package: a vendor records one task at a client site, and the company returns a fine-tuned model plus a success-rate report.",
+      "who_pays": "Indian warehouse operators, contract manufacturers and robot integrators who want one specific task automated without hiring a machine learning team.",
+      "data_needed": "Thirty to sixty minutes per task of synchronised stereo egocentric video with hand pose, plus a small amount of teleoperation recordings on the target robot arm to bridge human motion to robot motion.",
+      "why_fail": "Human first-person video may not transfer to the robot as well as the robot-collected demonstrations Runway used, so each job could quietly need far more teleoperation than the price assumes."
+    },
+    "contrarian": {
+      "story_n": 1,
+      "consensus": "Praxis-1 shows robots now need only minutes of task data, so demand for large training datasets will shrink.",
+      "against": [
+        "Fifteen successes out of fifteen on one standard warehouse benchmark says little about messy real sites, where lighting, clutter and odd objects change constantly and failures hide in the long tail.",
+        "The 30 minutes works because the base model was already trained on a very large pile of data, so cheaper adaptation increases the value of broad, diverse pretraining data rather than removing the need for it.",
+        "When adapting a model gets cheap, more companies try more tasks, so total data bought may rise even as data per task falls, much like cheaper printing led to more printed pages."
+      ],
+      "bets_otherwise": "Viam, with its robot-arm farm and push toward installed fleets, is betting that real deployment data at scale matters, and robot companies that build large data operations, such as Tesla and Figure AI, act as if volume still wins.",
+      "settle_it": "Independent tests of Praxis-1 fine-tuned from 30 minutes of data on several unfamiliar real-world sites, reporting success rates over hundreds of attempts instead of fifteen."
+    }
+  },
+  "cost": {
+    "usd": 0.0645,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 4,
+        "inTokens": 21042,
+        "outTokens": 6887,
+        "cost": 0.0055,
+        "models": {
+          "anthropic/claude-haiku-5.5": 4
+        }
+      },
+      "write": {
+        "calls": 6,
+        "inTokens": 10560,
+        "outTokens": 3475,
+        "cost": 0.0232,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 6
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 4818,
+        "outTokens": 2220,
+        "cost": 0.0016,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 2643,
+        "outTokens": 534,
+        "cost": 0.0027,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "think": {
+        "calls": 1,
+        "inTokens": 3305,
+        "outTokens": 917,
+        "cost": 0.0316,
+        "models": {
+          "anthropic/claude-opus-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 201,
+    "unique": 163,
+    "feeds": 29,
+    "failedFeeds": [
+      "Import AI",
+      "Google DeepMind",
+      "r/robotics",
+      "r/LocalLLaMA",
+      "Show HN",
+      "Hacker News"
+    ]
+  },
+  "generatedAt": "2026-11-13T00:16:39.797Z"
+}
