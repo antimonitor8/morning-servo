@@ -1,0 +1,925 @@
+{
+  "date": "2026-11-14",
+  "weekday": "Saturday",
+  "sunday": false,
+  "number": 17,
+  "paper": "The Morning Servo",
+  "readMinutes": 14,
+  "stories": [
+    {
+      "id": "21e94d425e",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "India ministry questions gig worker video data used to train physical AI",
+      "takeaway": "India's electronics ministry has asked home services platforms how they collect first-person video and sensor data from gig workers for physical AI training. It is worried about worker consent, customer privacy, data security, and Indian data being sent to foreign AI developers.",
+      "deck": "The ministry asked Pronto, Snabbit and Urban Company about consent procedures and whether data was shared outside India.",
+      "body": [
+        "The Ministry of Electronics and Information Technology met senior executives from Pronto, Snabbit and Urban Company's InstaHelp on Tuesday. Officials wanted to know how these home services platforms collect, process and store first-person video and sensor data from gig workers, according to a report in The Economic Times.",
+        "The ministry asked for details on standard operating procedures and on safeguards for worker consent. It also asked whether customers in the recordings had given permission, and whether companies were selling, sharing or transferring collected data to physical AI developers outside India.",
+        "The meeting follows scrutiny of Pronto's pilot programme that records household chores using cameras worn by service professionals. Pronto said the pilot covered less than 0.01% of users. Snabbit said it tested the technology only in a controlled training centre and then decided against using it. Urban Company said it does not record inside customers' homes and has no plans to do so."
+      ],
+      "why": "This signals that India's government is beginning to regulate how in-home egocentric video is gathered for robot training. For training-data suppliers, consent, anonymisation and data-transfer rules are now a business risk, not just an ethical question. Buyers sourcing Indian data may also face new compliance requirements.",
+      "hard": "It is not yet clear whether the ministry will issue formal rules or whether the current inquiries will lead to enforcement or restrictions on exporting Indian training data.",
+      "terms": [
+        {
+          "term": "Physical AI",
+          "meaning": "AI systems designed to perform real-world tasks using robots or other machines, rather than only processing text or images on a computer."
+        },
+        {
+          "term": "First-person video",
+          "meaning": "Video recorded from a person's own point of view, usually from a head- or body-mounted camera."
+        },
+        {
+          "term": "Sensor data",
+          "meaning": "Readings from devices that detect movement, force, position or other physical conditions, used alongside video to teach robots how tasks feel."
+        },
+        {
+          "term": "Data sovereignty",
+          "meaning": "The principle that a country has control over data collected within its borders, including whether it can be sent abroad."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Physical AI",
+          "Home services"
+        ],
+        "task": [
+          "Training data collection",
+          "Policy and regulation"
+        ]
+      },
+      "score": 9,
+      "sources": [
+        {
+          "name": "Inc42",
+          "url": "https://inc42.com/buzz/meity-reviews-house-help-platforms-data-collection-process-for-physical-ai-training/"
+        },
+        {
+          "name": "Entrackr",
+          "url": "https://entrackr.com/news/meity-examines-data-collection-by-home-services-platforms-for-physical-ai-training-12806000"
+        }
+      ]
+    },
+    {
+      "id": "471fb334b4",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Six AGIBOT robots run a Shanghai convenience store for 24 hours",
+      "takeaway": "Six wheeled humanoid robots worked a full day in a real Shanghai convenience store, finishing 1,730 tasks like restocking, coffee making and cleaning. Four of six passed, suggesting robots can now handle messy real store work some of the time, but not yet reliably.",
+      "deck": "Four of six robots passed the final assessment.",
+      "body": [
+        "Six AGIBOT G2 wheeled humanoid robots worked a full 24 hours in a Shanghai convenience store from November 2 to 3. The trial was livestreamed to over two million viewers and covered store cleaning, shelf restocking, coffee preparation, checkout, hot food service, and customer assistance. One robot restocked gaps on shelves without being told to do so. Another told spills apart from patterns on a countertop before cleaning.",
+        "The robots completed 1,730 tasks: 683 customer-service interactions, 369 product pickups and deliveries, 147 coffee orders, 126 breakfast servings, 277 shelf inspections and restocking tasks, and 128 table-cleaning tasks. Four of the six robots passed the final assessment. Evaluators tested them with tricky situations, such as telling apart regular and sugar-free Coca-Cola, restoring moved chewing gum to the right shelf spots, and navigating around a person and a box blocking an aisle.",
+        "AGIBOT says the trial tested its Genie Master framework, which coordinates the robots and feeds results from each task back for analysis. Successful adjustments can be stored in long-term memory or turned into training data to refine how the robots act. The company plans to run more trials in other real-world settings and use the results to make the robots more reliable."
+      ],
+      "why": "This is one of the clearest public examples of general-purpose robots doing many unrelated tasks in a real, customer-facing workplace. For training-data suppliers, the specific failure modes, such as spotting spills and returning misplaced goods, preview which visual and physical scenarios model builders will need recorded.",
+      "hard": "Two of the six robots failed the final assessment, showing that the system is not yet reliable enough for unattended store work.",
+      "terms": [
+        {
+          "meaning": "A robot with a head, torso and arms, built to resemble the human body, but in this case moving on wheels instead of legs.",
+          "term": "humanoid robot"
+        },
+        {
+          "meaning": "The part of a robot control system that converts what the robot sees into decisions about how to move.",
+          "term": "action policy"
+        },
+        {
+          "meaning": "Giving a robot's learning system examples of successful and failed attempts so it can do better next time.",
+          "term": "training data"
+        },
+        {
+          "meaning": "Using feedback from real jobs to improve how a robot decides what to do.",
+          "term": "embodied AI agent framework"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "robotics",
+          "retail"
+        ],
+        "task": [
+          "mobile manipulation",
+          "long-horizon deployment"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/six-agibot-g2-robots-complete-1730-tasks-in-24-hour-shanghai-convenience-store-trial/"
+        }
+      ]
+    },
+    {
+      "id": "3a31ccef0c",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Rhoda AI uses internet video to train robots for real factory work",
+      "takeaway": "Rhoda AI has built a robot control model trained on huge amounts of internet video, then fine-tuned with a small amount of task-specific footage. The company says this lets robots handle messy real-world jobs after only 10 to 20 hours of extra training.",
+      "deck": "The company raised $450 million and is working with automotive, manufacturing, logistics, and e-commerce customers.",
+      "body": [
+        "Rhoda AI emerged from stealth earlier this year with $450 million in Series A funding. The company is deploying its direct video action model, or DVA, with customers in automotive, manufacturing, logistics, and e-commerce. The model recently gained a mobile version that combines manipulation and movement into one policy.",
+        "The DVA model works by looking at recent video frames, action tokens, and language tokens. It predicts what the scene will look like in the next half second, then a second part of the model converts that predicted video into robot actions. The robot executes those actions, observes the changed world, and repeats the loop.",
+        "Rhoda AI pretrains its models on hundreds of years of internet video, including content with no obvious link to robotics, such as waves crashing or trees blowing. The company found that models trained on the broadest datasets performed best. After pretraining, only 10 to 20 hours of task-specific training are needed, similar to teaching a new assembly line worker a company's workflow."
+      ],
+      "why": "Rhoda AI's claim that broad internet video beats curated egocentric manipulation footage for pretraining is a direct signal about what kind of training data may matter most for robot foundation models. Its focus on manufacturing and logistics also points to where demand for real-world deployment data is heading.",
+      "hard": "The company's claims about robustness and generalization have not been independently verified, and the article provides no deployment numbers or customer results.",
+      "terms": [
+        {
+          "term": "Direct video action model",
+          "meaning": "A robot control system that predicts short video clips of what should happen next, then converts those predictions into physical robot movements."
+        },
+        {
+          "term": "Vision-language-action model",
+          "meaning": "A common robot AI approach that learns from images, video, and text instructions to decide what a robot should do."
+        },
+        {
+          "term": "Pretraining",
+          "meaning": "The first stage of training an AI model on a very large, general dataset before it is fine-tuned for a specific task."
+        },
+        {
+          "term": "Embodiment",
+          "meaning": "The specific physical body of a robot, such as its arms, hands, wheels, or legs, which affects how it can move and act."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Manufacturing"
+        ],
+        "task": [
+          "Robot learning",
+          "Manipulation"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/how-rhoda-ai-is-using-video-data-to-create-generalized-ai-models-for-robots/"
+        }
+      ]
+    },
+    {
+      "id": "067e2e8664",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Web annotators boost robot learning by adding actions to recorded states",
+      "takeaway": "A website lets remote workers add extra valid robot movements to existing recordings. Training on these richer labels improved robot success rates by roughly a third across five real manipulation tasks.",
+      "deck": "Remote annotators add extra valid actions to real robot frames through a 3D web interface",
+      "body": [
+        "A new paper describes CrowdMAPS, a web tool that lets remote workers add extra action labels to frames that a physical robot has already visited. They see a three-dimensional view of the scene and mark other valid ways the robot could have moved, with no robot hardware needed.",
+        "The authors tested it on five real manipulation tasks. When each robot state carried ten possible actions instead of one, success rates rose by 35.6 percentage points for one type of policy and 33.0 points for another. The work will appear at the Conference on Robot Learning in 2026.",
+        "Ordinary robot data collection records one action per moment. This method adds a width dimension, giving learning algorithms more choices per situation without requiring more time on the physical robot."
+      ],
+      "why": "It shows a practical way to extract more training value from existing physical robot recordings. For suppliers of egocentric video and robot datasets, this kind of software layer could become a separate annotation service buyers want.",
+      "hard": "The experiments relied on non-expert annotators, and the results may not transfer directly to tasks where judging alternative actions requires deeper domain knowledge.",
+      "terms": [
+        {
+          "meaning": "A learned mapping from what a robot sees to what it should do next.",
+          "term": "Policy"
+        },
+        {
+          "meaning": "Training a robot by showing it examples of correct behaviour, rather than programming every rule.",
+          "term": "Imitation learning"
+        },
+        {
+          "meaning": "A recorded path of robot states and actions from one start to one finish.",
+          "term": "Trajectory"
+        },
+        {
+          "meaning": "A chosen moment in a recording, used here to mark target positions for the robot.",
+          "term": "Keyframe"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Training data"
+        ],
+        "task": [
+          "Data collection and annotation",
+          "Robot manipulation"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.15078"
+        }
+      ]
+    },
+    {
+      "id": "d6f57ed8e4",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "OpenAI disbands its robotics team as its general models start running robots",
+      "takeaway": "OpenAI has folded its separate robotics team into its main research group. The company now believes its general-purpose AI models can control robots directly, without a specialized robot brain. This could reduce demand for robot-specific training data.",
+      "deck": "The company's GPT-6 Astra model now runs some robotic tasks directly.",
+      "body": [
+        "OpenAI has disbanded its stand-alone robotics team and moved its researchers into the main research group and the Applied organization. A company spokesperson confirmed the change and said robotics remains part of the company's long-term plan. OpenAI still aims to show its own humanoid robot in 2027.",
+        "The shift follows a finding inside OpenAI. Earlier this year, the company assumed robots would need models built on work like Sora, its video generator. But the company now says its general-purpose models, including GPT-6 Astra, can be connected to robots directly and handle some tasks without a specialized robot brain.",
+        "In one Nvidia study, an Astra-powered agent scored 74.8 percent on a simulated manipulation test, compared with 51.0 percent for the best specialized robotic models on that leaderboard. A Carnegie Mellon professor said general models now cope with changed lighting or object positions and can reason about task steps. Still, he noted these large models are slow and usually need a cloud connection, so smaller onboard models still have a role."
+      ],
+      "why": "If buyers follow OpenAI's lead and use general-purpose models for robot control, demand could shift away from large volumes of robot-specific egocentric video toward smaller, site-specific datasets that help robots adapt to particular workplaces and tasks.",
+      "hard": "The benchmark result is from a simulation, not a real robot, and it remains unproven whether general models can reliably control physical robots at commercial scale without specialized training data.",
+      "terms": [
+        {
+          "term": "Embodied AI",
+          "meaning": "AI that controls a physical device, such as a robot, driverless car, or drone, rather than just working with text or images."
+        },
+        {
+          "term": "General-purpose model",
+          "meaning": "A single AI model trained to handle many kinds of tasks, for example language, code, and vision, instead of one narrow job."
+        },
+        {
+          "term": "Spatial intelligence",
+          "meaning": "A machine's ability to understand where objects are in three-dimensional space and how they move, which robots need to act physically."
+        },
+        {
+          "term": "Manipulation benchmark",
+          "meaning": "A standard test where a model is scored on how reliably it can get a simulated robot to move or handle objects."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "AI and robotics"
+        ],
+        "task": [
+          "Robotics research and strategy"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "Hacker News",
+          "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/"
+        }
+      ]
+    },
+    {
+      "id": "5db699f9ba",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Mirendil and Mercor Lead $100 Million-Plus AI Funding Rounds",
+      "takeaway": "Two AI startups raised very large rounds: Mirendil got $1 billion for research and development agents, and Mercor got $750 million for connecting AI companies with human experts. The money is mostly going to software and infrastructure, with only one large round for physical robotics.",
+      "deck": "Path Robotics was the largest physical AI deal, at $300 million for welding automation.",
+      "body": [
+        "Mirendil, a San Francisco startup building agentic AI for research and development, raised $1 billion in a Series A round led by Kleiner Perkins and Clearlake Capital. An agentic AI system can plan and carry out multi-step tasks with less human prompting than a standard chatbot.",
+        "Mercor, a platform connecting AI developers with human experts for model training and evaluation, raised $750 million at a $20 billion valuation. The company is less than four years old. Path Robotics, which makes physical AI for welding, raised $300 million at a $2.45 billion valuation.",
+        "Other notable rounds included Torus, raising $500 million for modular AI infrastructure, and LangChain, raising $300 million at a $3 billion valuation for its agent management platform. Nine of the ten largest rounds were AI-related. The funding covered November 7 to 13, 2026."
+      ],
+      "why": "Mercor's $750 million round shows that demand for human-led training and evaluation is still rising sharply. It also suggests robotics data buyers may increasingly want structured access to skilled workers, not just raw egocentric video, for tasks like welding.",
+      "hard": "Large valuations do not prove that these companies have steady revenue or will become profitable.",
+      "terms": [
+        {
+          "meaning": "A software system that can plan and carry out multi-step tasks with limited human guidance.",
+          "term": "Agentic AI"
+        },
+        {
+          "meaning": "The work of collecting or creating examples used to teach AI models.",
+          "term": "Model training and evaluation"
+        },
+        {
+          "meaning": "AI that controls machines or robots to do physical work in the real world.",
+          "term": "Physical AI"
+        },
+        {
+          "meaning": "The computer hardware and supporting systems needed to run AI applications.",
+          "term": "AI infrastructure"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "AI and robotics",
+          "Venture funding"
+        ],
+        "task": [
+          "Funding analysis",
+          "Training data demand"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "Crunchbase News",
+          "url": "https://news.crunchbase.com/venture/biggest-startup-funding-rounds-agentic-ai-infrastructure-mirendil-mercor/"
+        }
+      ]
+    },
+    {
+      "id": "cbaa2a771d",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "System cuts serving cost for fleets of robot control models",
+      "takeaway": "A new serving system coordinates how hundreds of robots share computing hardware when running vision-language-action models. It increases the number of robots one server can support by 1.26 to 3.75 times while keeping time-critical responses on schedule.",
+      "deck": "The system, called XInfer, was tested on three robot control models with workloads modeled on real deployments.",
+      "body": [
+        "Researchers from a production robotics setting describe XInfer, a serving system for vision-language-action models. These models turn camera images and text instructions into robot movements. The paper says hundreds of robots using such models are already operating in real-world environments, creating pressure to serve them cheaply.",
+        "XInfer coordinates different kinds of computation across a fleet while respecting the timing needs of robot control. It exploits parallel processing but manages interference between requests. In tests with three VLA models and production-derived workloads, XInfer achieved 1.26 to 3.75 times the effective robot capacity of existing systems under physical-execution constraints.",
+        "The work addresses a practical bottleneck: as robot fleets grow, the cost of running large models on servers can rise faster than the value of the robots themselves. The code is publicly available."
+      ],
+      "why": "This points to a near-term cost problem for robot foundation model deployments. If serving costs drop sharply, more buyers can run larger fleets, which in turn increases demand for the egocentric video and manipulation data used to train those models.",
+      "hard": "The results come from production-derived workloads rather than a fully independent benchmark, so gains may vary across different robot tasks and hardware setups.",
+      "terms": [
+        {
+          "term": "Vision-language-action model",
+          "meaning": "An AI model that takes camera images and text instructions, then outputs robot movements."
+        },
+        {
+          "term": "Serving system",
+          "meaning": "Software that runs AI models on servers and handles many incoming requests at once."
+        },
+        {
+          "term": "GPU",
+          "meaning": "A specialized computer chip that does the heavy parallel math behind modern AI models."
+        },
+        {
+          "term": "Inference",
+          "meaning": "The act of running a trained AI model to get an answer or action from new input."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Cloud infrastructure"
+        ],
+        "task": [
+          "Robot fleet serving",
+          "Model inference optimization"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.14969"
+        }
+      ]
+    },
+    {
+      "id": "4e0910e6af",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Single photo becomes humanoid motion plan without built 3D scenes",
+      "takeaway": "A new method turns one ordinary photo into a movement plan a humanoid robot can follow. It reached 89 percent success in simulation and 70 percent in 50 physical trials on a Unitree G1 robot.",
+      "deck": "Physical tests used a Unitree G1 humanoid, a small commercial robot",
+      "body": [
+        "Researchers have built a single pipeline that turns one standard color photo into a motion plan for a humanoid robot. It first reconstructs the scene's shape from the image, then creates a human movement that fits that scene, and finally converts the movement for the robot's body.",
+        "Two refinement steps keep the robot from misjudging distances or losing support. One corrects the human motion to match the reconstructed scene before retargeting. The other fixes robot-specific errors, such as a foot not properly touching a surface, after retargeting.",
+        "The method reached 89 percent success in simulation and 70 percent across 50 physical trials on a Unitree G1. Refinement time fell from 480 seconds to 87 seconds compared with an earlier method called GRAIL. The motion references also worked with multiple pretrained humanoid controllers without extra training for each scene."
+      ],
+      "why": "It suggests robot training pipelines may soon depend less on manually built 3D scenes and more on everyday photos. That could shift demand toward larger, more varied real-world visual and video capture rather than expensive scene modeling.",
+      "hard": "The 70 percent physical success rate still leaves meaningful room for failure, and the work was demonstrated on only one robot model.",
+      "terms": [
+        {
+          "term": "RGB image",
+          "meaning": "A standard color photo taken by a normal camera, not a depth sensor or 3D scan."
+        },
+        {
+          "term": "3D scene asset",
+          "meaning": "A prebuilt digital copy of a space, usually created manually, that a robot uses to plan movement."
+        },
+        {
+          "term": "Retargeting",
+          "meaning": "Converting a motion recorded from a person into equivalent motion for a robot with a different body shape."
+        },
+        {
+          "term": "Policy",
+          "meaning": "A learned set of rules that tells a robot what action to take in each situation."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Training data"
+        ],
+        "task": [
+          "Humanoid control",
+          "Egocentric video capture"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.14981"
+        }
+      ]
+    },
+    {
+      "id": "72300dbe57",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Adapter lets humanoid robots yield to human guidance without extra sensors",
+      "takeaway": "Researchers added a small software layer to humanoid robot motion trackers so a person can physically guide the robot mid-task. The robot follows the guidance while still performing its original motion, with tracking errors falling by roughly two-thirds in tests.",
+      "deck": "The module works with three different existing motion trackers and needs no retraining.",
+      "body": [
+        "A team has built a software add-on called ILA, short for Interface-Level Adapter, that makes humanoid robots more responsive when a person pushes or pulls on them during a task. The adapter watches the robot's recent sensor history and adjusts the target motion to match the physical guidance.",
+        "ILA sits between the robot's existing motion tracker and the rest of its control stack. Because it works at this interface level, it can be plugged into different pretrained trackers without retraining either the adapter or the underlying tracker. The adapter itself is trained entirely in simulation to predict what reference corrections a physical interaction would cause.",
+        "In tests with three humanoid motion trackers, ILA reduced guidance-target error by 63.6 to 75.4 percent compared with the original policies. Hardware experiments showed the robot responded better to human guidance while keeping its normal motion-tracking performance when no guidance was applied. The work suggests compliant guidance can be added as a reusable, sensor-free extension to existing humanoid motion trackers."
+      ],
+      "why": "Compliant motion tracking makes humanoid teleoperation and data collection safer and easier, since an operator can correct the robot by hand during a task. A drop-in adapter that works across multiple trackers reduces the cost of adding this capability to existing robot models.",
+      "hard": "The results come from a research preprint and have not yet been through peer review, and the hardware tests cover a limited set of guidance scenarios.",
+      "terms": [
+        {
+          "term": "Motion tracking policy",
+          "meaning": "A trained control program that tells a humanoid robot what joint movements to make so it copies a recorded or commanded motion."
+        },
+        {
+          "term": "Compliant motion",
+          "meaning": "Robot movement that can bend or yield to outside force, like a person pushing on the arm, instead of holding a fixed path."
+        },
+        {
+          "term": "Simulation training",
+          "meaning": "Teaching a robot control program inside a virtual physics environment rather than on a real machine, which is cheaper and safer."
+        },
+        {
+          "term": "Observation history",
+          "meaning": "The recent stream of sensor readings a robot control program looks at when deciding its next movement."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Humanoid robotics",
+          "Robot learning"
+        ],
+        "task": [
+          "Motion tracking",
+          "Teleoperation"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.14985"
+        }
+      ]
+    },
+    {
+      "id": "4907eb362d",
+      "section": "india",
+      "kicker": "India Desk",
+      "headline": "ReNew pledges Rs 80,000 crore for green data centre in Andhra Pradesh",
+      "takeaway": "An Indian clean-energy company has promised about Rs 80,000 crore for a large data centre and related factories in Andhra Pradesh. If built, it would increase the computing and manufacturing capacity available to India's AI push.",
+      "deck": "The plan includes a 1-gigawatt renewable-powered hyperscale data centre plus silicon and magnet factories.",
+      "body": [
+        "Indian clean-energy company ReNew Energy Global has pledged about Rs 80,000 crore for data-centre and manufacturing projects in Andhra Pradesh. The largest share, Rs 67,000 crore, is for a 1-gigawatt green hyperscale data centre in Anakapalli that would run on renewable power. A gigawatt is roughly the peak output of a large conventional power plant. The company has also set aside Rs 11,000 crore for polysilicon and metallurgical silicon plants in Anakapalli and Nellore, plus Rs 1,500 crore for a permanent-magnet factory in Rambilli, expected by March 2029.",
+        "The state already hosts other large AI-infrastructure commitments. In October 2025 Google said it would invest about $15 billion in a Visakhapatnam AI hub between 2026 and 2030. Clean Max Enviro Energy Solutions has also signed a preliminary agreement to invest about Rs 50,000 crore, including renewable generation to supply a 2-gigawatt green compute factory in Kurnool, partly anchored by AI cloud provider Neysa.",
+        "This sits inside a fast-growing national market. India's installed data-centre capacity rose from about 375 megawatts in 2020 to 1.57 gigawatts in August 2026, with projections near 8 gigawatts by 2030. Power availability, water use and approval timelines remain constraints. ReNew is separately building a 6.5-gigawatt ingot and wafer plant in Anakapalli, expected by March 2028, and will add a technical-training centre in Visakhapatnam."
+      ],
+      "why": "India's AI build-out is creating large new demand for compute, clean power and hardware materials. This expansion signals where data-centre operators and buyers may need more training data, robotics and operational technology.",
+      "hard": "India's data-centre expansion still depends on scarce power, water and slow project approvals, and many of these investments are at the pledge stage rather than fully delivered.",
+      "terms": [
+        {
+          "meaning": "A data centre is a large building full of computers that stores and processes data for cloud services and AI.",
+          "term": "Data centre"
+        },
+        {
+          "meaning": "Hyperscale refers to very large data centres built for massive cloud-computing workloads from major technology companies.",
+          "term": "Hyperscale"
+        },
+        {
+          "meaning": "A gigawatt is a unit of power equal to one billion watts, roughly the output of a large power plant.",
+          "term": "Gigawatt"
+        },
+        {
+          "meaning": "Polysilicon is a purified form of silicon used to make solar cells and electronic components.",
+          "term": "Polysilicon"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Data centres",
+          "Renewable energy"
+        ],
+        "task": [
+          "AI infrastructure build-out",
+          "Clean-energy manufacturing"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "Analytics India Magazine",
+          "url": "https://analyticsindiamag.com/ai-news/renew-pledges-80000-cr-for-green-data-centre-to-fuel-indias-ai-push"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "Your Beat",
+      "headline": "RUMI: A Robotiq-Matched Universal Manipulation Interface for Robot Learning with Augmented Reality and Haptic Feedback",
+      "url": "https://arxiv.org/abs/2611.15802",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Your Beat",
+      "headline": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
+      "url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
+      "source": "Hugging Face"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Genie Sim Benchmark: Real-to-Sim Fidelity and Evaluation",
+      "url": "https://arxiv.org/abs/2611.15020",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Your Beat",
+      "headline": "MiniPose: Miniature-Based Real Data Collection for 6D Pose Estimation of Large Industrial Pipe Segments",
+      "url": "https://arxiv.org/abs/2611.15066",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "ARTS: An Open-Source, Reproducible Three-Arm Platform for Autonomy Research in Minimally Invasive Surgery",
+      "url": "https://arxiv.org/abs/2611.15135",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "BiPOP: Partial-Order Planning for Long-Horizon Bimanual Robotic Manipulation",
+      "url": "https://arxiv.org/abs/2611.15317",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Bind-WAM: Binding-Uncertainty-Guided Selective Future Imagination in World Action Models",
+      "url": "https://arxiv.org/abs/2611.15368",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "Low-Cost Mobile Bimanual Manipulation for Long-Horizon Toilet Cleaning",
+      "url": "https://arxiv.org/abs/2611.15381",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "ActionCodec2: A Streaming Action Tokenizer",
+      "url": "https://arxiv.org/abs/2611.15490",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "What Makes a VLA Reactive? A Study of Execution Strategies for Dynamic Manipulation",
+      "url": "https://arxiv.org/abs/2611.15491",
+      "source": "arXiv cs.RO"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 2,
+        "sector": "ai",
+        "company": "Mirendil",
+        "what": "Agentic AI for R&D",
+        "round": "Series A",
+        "amount_usd_m": 1000,
+        "amount_text": "$1B",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.crunchbase.com/venture/biggest-startup-funding-rounds-agentic-ai-infrastructure-mirendil-mercor/",
+        "source": "Crunchbase News"
+      },
+      {
+        "i": 17,
+        "sector": "ai",
+        "company": "vVardis",
+        "what": "AI company ahead of NYSE IPO",
+        "round": "IPO",
+        "amount_usd_m": 175,
+        "amount_text": "$175M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxON0U4emlVclp4QU9NRFVwbEVnUjdiVnduRFgzcXprNWZKY3ozcktzc1ctMnFxZEg2X2JTLWpiSGM3NzFEOEFybUItZF9CM0E2c3BhaU9hRFVZMVRtMFZHdU1Ja3gxZk1FblNadlNuaFdUNm1uRVRPU09ET3gyRkJ4Z1Z0eTZRN0VqVk1WTnAtSmI0N2Q0bUlyR1c4RkJoTXlNWkVpYjdyRGxHNDg3R3JaSHVPU2M0WTJ4MmVsMnFPYXlVSEpEcDJVQzNpVlI3aUxmeEp3MVQtOGV2MEN6UFk5R0tfSkFFdw?oc=5",
+        "source": "AI Insider"
+      },
+      {
+        "i": 16,
+        "sector": "ai",
+        "company": "Bay",
+        "what": "Autonomous AI agent platform",
+        "round": "Funding",
+        "amount_usd_m": 50,
+        "amount_text": "$50M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://entrackr.com/exclusive/exclusive-baaz-bikes-to-kick-off-series-b-round-led-by-big-capital-12805522",
+        "source": "Entrackr"
+      },
+      {
+        "i": 6,
+        "sector": "ai",
+        "company": "Garage",
+        "what": "AI marketplace for fire trucks",
+        "round": "Funding",
+        "amount_usd_m": 41,
+        "amount_text": "$41M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://www.alleywatch.com/2026/11/garage-municipal-equipment-marketplace-used-fire-trucks-government-surplus-vehicles-martin-hunt/",
+        "source": "AlleyWatch"
+      },
+      {
+        "i": 11,
+        "sector": "robotics",
+        "company": "Arcanus",
+        "what": "Allied drone technologies manufacturing",
+        "round": "Series A",
+        "amount_usd_m": 27,
+        "amount_text": "$27M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPU3I1TlotSWQySlpfRzloLWdGbURkUFlheWJOT3d3MF9MTzJxR1ByTEpyUC1aZEFlSWxwVWdUYXAwQ0NXWnI4OHlwRW1HM0t2NUlSWTRQSF9mM1ZmaGxtanMzS2VIWEdObkxWZlJ4eVlPYWJFR3M2d2RrejYxSkducmhDQy1lTndjczk3d1lYN2V4TzdrVVB0YndVZXpRTl9ZMXphYm03MV9mbF9kQWpjUTZIUW4xQ0o5emJncjRpRHVUaGxYQU5keUd6RlJVeVRpaWx6STlKcG1UXzdNNXVidzF0NURRNEVzMHJRY0h5Rk96S1ViTmFoeVpKR0k?oc=5",
+        "source": "TradingView"
+      },
+      {
+        "i": 5,
+        "sector": "robotics",
+        "company": "QuikTech",
+        "what": "Self-driving labs for science",
+        "round": "Series A",
+        "amount_usd_m": 15,
+        "amount_text": "$15M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQTXhFbWdVT191SGVZTGdueWdZc3J3UFVZZlRIcXFRNEVFR0RaYk85SS1qZllqZy1nNDNWSzI4SHd0UkZiaDhKTlZzV2RQVzkwQUo3ckQxQTlxbmtMdEx0QWpVaExkck5RcXJKTGZpRVYtMWt6T2lFZ0VkV1JhNmw2TUVRczlUUDdOX052Tm9hN1pzU0F5bkxWQXNBMHllLVBHUEJv?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 23,
+        "sector": "ai",
+        "company": "Live2.ai",
+        "what": "AI startup",
+        "round": "Funding",
+        "amount_usd_m": 13,
+        "amount_text": "$13M",
+        "lead": "IvyCap Ventures",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxORjZzYnVYZHVRalhkX0JaY28xeWExWXR2b1hzYWswX3EzYmw0RWFaalR3WFh2aUFjLVN4WEJiUjBxS1hBd25VYW9EQ1pickxrOHJPVEEySm1XVGF6Y3lmQV9icWtlTDJJc3AzR3g0WkdVVW01M1huUVVvZWRLSTAyalA1dm9sS01zQWp2ZFNXWlBYRDhhYnVzcTVTby1yRGhlWE5LdE5zX01jTE1IbS1IaHRlVll6QdIBtgFBVV95cUxORjZzYnVYZHVRalhkX0JaY28xeWExWXR2b1hzYWswX3EzYmw0RWFaalR3WFh2aUFjLVN4WEJiUjBxS1hBd25VYW9EQ1pickxrOHJPVEEySm1XVGF6Y3lmQV9icWtlTDJJc3AzR3g0WkdVVW01M1huUVVvZWRLSTAyalA1dm9sS01zQWp2ZFNXWlBYRDhhYnVzcTVTby1yRGhlWE5LdE5zX01jTE1IbS1IaHRlVll6QQ?oc=5",
+        "source": "Consulting.us"
+      },
+      {
+        "i": 4,
+        "sector": "robotics",
+        "company": "SYMX.AI",
+        "what": "Physical AI for mining",
+        "round": "Funding",
+        "amount_usd_m": 6,
+        "amount_text": "$6M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE03S2ZyeU56THRhSkJoTGFkZVkzNTlENm5MVUlvVlhBdW9vNHlGTU5NMTdCeHFDWFA0SkFwb1h0cUJFT3JvYmJDcDgxazhZLTZmLUtkdlpkazJOaEpQZEVwTm5qNlhFdnM?oc=5",
+        "source": "Kingy AI"
+      },
+      {
+        "i": 15,
+        "sector": "robotics",
+        "company": "Baaz Bikes",
+        "what": "Electric vehicles for gig workers",
+        "round": "Series B",
+        "amount_usd_m": 5.2,
+        "amount_text": "₹46.22 Cr ($5.2M)",
+        "lead": "BIG Capital",
+        "india": true,
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxON2JjMVBWVmJxRE96RjdBMG0yUVJqWENuQ3pObXhkeU5DNTk2a3pta3RXNjhKR2FtZm1oaGFOZEJhb0UwX21wS2lZbnhIQnVqX2hMd1J1d1dwR3lCNmNKR281WjlKbk1lSHFQV2VPVHVwdldiMjlKTjlLd0RZX2NoR21qdkI1WTF4b2FyNl9kNjdudGl2VmMxczFPUEFlZw?oc=5",
+        "source": "n24.com.tr"
+      },
+      {
+        "i": 10,
+        "sector": "ai",
+        "company": "Desible.ai",
+        "what": "Agentic AI software",
+        "round": "Funding",
+        "amount_usd_m": 3.6,
+        "amount_text": "₹32 Cr ($3.6M)",
+        "lead": "Prime Venture Partners",
+        "india": true,
+        "url": "https://entrackr.com/snippets/desibleai-raises-rs-32-cr-led-by-prime-venture-partners-12805523",
+        "source": "Entrackr"
+      },
+      {
+        "i": 9,
+        "sector": "ai",
+        "company": "Morsa",
+        "what": "Autonomous AI agents for manufacturing",
+        "round": "Pre-Seed",
+        "amount_usd_m": 1.5,
+        "amount_text": "$1.5M",
+        "lead": "Jackson Square Ventures",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPVFZBYURyT04wQWFmTGhuNTJDQVBnVmV4QlRtMU9DODFNOW1wVkhoQ3lsM0dudDNTaWczM2VVQWdkNHZCMVRRTG9xYlFPVVY4eG00VW9jTkFtajJid21iTWNtLUlVMVUzUWtSenJIdkdOTDhjRWhjN2IxclJmQnpiMlAxa2NtRUJCUmdKdTlnSkxRQ21Cd0tHREt0UWQ4M1NUcjh2aU11QmNVb1hqWTcwSTdZX3hiWWU2QnpXOGRzZFVzOGE1aEQ5M0hmX2hXTFMybWFXT2VIaHdyUDZKQlVMWjlCWk93UHN5Vk91Sw?oc=5",
+        "source": "CXO Digitalpulse"
+      },
+      {
+        "i": 7,
+        "sector": "robotics",
+        "company": "Qingtianzu",
+        "what": "Robot rental services",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5TXy1DbzdOdi1rcmxKOVJpVzR5cUdJcmlHU19CVmZaTThFTTlIMFFFUW9GUzRBbzNzdWlXUDN6SVI0QVJZLU1xblJIa3FCaS1LNXhtakRNV3VBUXlWNmxCbVpOUTl3TktUNWdmNE9uYnc3UmhHQnc?oc=5",
+        "source": "BigGo Finance"
+      },
+      {
+        "i": 18,
+        "sector": "ai",
+        "company": "Brillian",
+        "what": "AI deployment company",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Peter Sarlin's PostScriptum",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVG9qc3F6RTRRTEUxOXlhS191Yk9pVGNLWkxUdTRoSUhEcklVX1hDN01uY29qZWRwSzhucV9xdHFWOFNMQ2FNWjhJQkxGUFo2eTNFMTFhWjZvZ0l3MmROR1VKTURYaUlNVVFGR1lNUW8tUWFsLXI2SFNqc2NGMnYxUW5nR2V3aFRoZ0pOc1R2NjlTR25CYWIwOXB5d2NPNGhic1VrNFB2b1RxVVdhR0xnZmtKQzZpUzQ?oc=5",
+        "source": "Press Release Hub"
+      },
+      {
+        "i": 19,
+        "sector": "ai",
+        "company": "Hatz AI",
+        "what": "AI startup",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOaXJjYkI1LVBIMVg1SmlubEFKYnl2ak02NlFJeVR3a250clFWbURYQ1hrLTF2WXhyeEFHNTgtWk9MaDBsVzcycEl6VU9SQTZtckdZNWtZMUVZUlFIcWdSdTNxTU81aXBQcF9PM2h0VG9MMXdxdUJKNFhIbEJDTkpzX1lHSjdBQWVtUjdVUU9mazVocE5ja2xKNEFXUHdsaDR4NlRCODQyaUxQZ0l1elRQWGJPWEJXM2YzV1luLVBtZTltaXo3N2NXbTllWQ?oc=5",
+        "source": "ePressi"
+      },
+      {
+        "i": 20,
+        "sector": "ai",
+        "company": "Deloitte AI business (Flipside Crypto)",
+        "what": "AI business spun into Edisyl",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Deloitte",
+        "india": false,
+        "url": "https://inc42.com/buzz/softbank-offloads-meesho-shares-worth-%e2%82%b91855-cr/",
+        "source": "Inc42"
+      },
+      {
+        "i": 21,
+        "sector": "ai",
+        "company": "Laguna Health",
+        "what": "Conversational AI for health plans",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Elligint Health",
+        "india": false,
+        "url": "https://entrackr.com/news/softbank-sells-165-stake-in-meesho-for-rs-1885-cr-through-block-deal-12807590",
+        "source": "Entrackr"
+      },
+      {
+        "i": 22,
+        "sector": "ai",
+        "company": "elDigesto",
+        "what": "Chilean legal-AI startup",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Tirant",
+        "india": false,
+        "url": "https://www.alleywatch.com/2026/11/the-new-york-tech-daily-funding-report-11-12-2026/",
+        "source": "AlleyWatch"
+      }
+    ],
+    "totalUsdM": 1337
+  },
+  "playground": [
+    {
+      "headline": "Open-Source Humanoid Robot Teleoperated by Head Movements",
+      "body": "Asimov is an open-source humanoid robot, and this test shows head teleoperation. The operator’s head movements drive the robot’s 2-DoF neck, while the camera feed streams back so anyone—human or AI agent—can see through its eyes.",
+      "why": "Sharing a robot’s live viewpoint with both people and AI agents hints at more collaborative, behind-the-eyes teleoperation.",
+      "maker": "u/eck72 on r/robotics",
+      "url": "https://www.reddit.com/r/robotics/comments/1xuybbi/day_382_of_building_asimov_an_opensource_humanoid/",
+      "source": "r/robotics"
+    },
+    {
+      "headline": "Sunlight Alone Powers Tiny Jumping, Swimming Soft Robots",
+      "body": "SunLightBots are subgram soft robots powered directly by sunlight. A self-resetting snapping mechanism lets a liquid crystal elastomer store solar energy slowly and release it as fast, high-power motion for swimming, crawling, and jumping.",
+      "why": "Harvesting low-power sunlight and turning it into high-power motion shows a path to fully environment-powered autonomous robots.",
+      "maker": "Yimin Luo and team",
+      "url": "https://arxiv.org/abs/2611.14729",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "headline": "DIY Smart Glasses Turn Obstacles Into Touch Feedback",
+      "body": "Smart glasses with three 512-point LiDAR sensors feed distance data to a Raspberry Pi, which drives 16 vibration motors on a shirt. Each motor maps to a region of the wearer’s surroundings, letting them feel obstacles without cameras or audio.",
+      "why": "Translating a spatial scan into skin vibrations offers a wearable, non-visual way to sense a busy environment.",
+      "maker": "DebackTech",
+      "url": "https://www.hackster.io/news/turning-sight-into-touch-with-diy-smart-glasses-636b62af6037",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "A Mouth-Worn Interface Controlled by Tongue on Teeth",
+      "body": "TeethMark is a dental retainer with a flexible circuit board that detects tongue gestures on teeth. It also delivers electrotactile feedback on the tongue and inner lips, with recognition accuracy above 82% for tapping and nearly 95% for sliding.",
+      "why": "Using teeth as a touch surface and the tongue as a stylus suggests subtle, screen-free computer input for all kinds of contexts.",
+      "maker": "Aarhus University researchers",
+      "url": "https://www.hackster.io/news/teethmark-puts-a-computer-interface-in-your-mouth-c2d0d7856388",
+      "source": "Hackster.io"
+    }
+  ],
+  "think": {
+    "collision": {
+      "a": {
+        "kind": "story",
+        "n": 1,
+        "label": "India ministry probes consent in gig worker video"
+      },
+      "b": {
+        "kind": "story",
+        "n": 4,
+        "label": "Web annotators add extra actions to robot frames"
+      },
+      "headline": "A consent-first Indian pipeline that blurs faces and homes, then has remote annotators add alternative actions to each clip",
+      "body": "The ministry's questions to Pronto, Snabbit and Urban Company mean raw in-home video now carries legal risk. Story 4 shows that remote workers using a 3D web tool can add extra valid actions to recorded moments, which multiplies the training value of each frame. Pair the two: record fewer, fully consented sessions, strip out faces and identifying details before anything leaves India, then pay Indian annotators to add several correct alternative motions per frame, so buyers get more learning per clip with a clean consent record attached.",
+      "who_pays": "Foreign robot model builders who want Indian household and service-task data but need documented consent and data-transfer compliance to avoid regulatory exposure.",
+      "data_needed": "Signed, per-session consent records, egocentric stereo video with on-device anonymisation, and annotator-added action labels linked to 3D reconstructions of each scene.",
+      "why_fail": "If India's eventual rules ban sending even anonymised in-home video abroad, the business would need costly in-country training partners before any foreign buyer can use it."
+    },
+    "contrarian": {
+      "story_n": 3,
+      "consensus": "Rhoda AI's $450 million round shows that cheap internet video, not curated first-person recordings, will be the main fuel for robot foundation models.",
+      "against": [
+        "Internet video shows hands moving but not forces, grip pressure or joint commands, so a model still needs real robot or sensor-rich data to learn the physical part of a task. Pretraining is only the first stage.",
+        "Rhoda's customers are in automotive, manufacturing and logistics, where the footage that matters, such as specific assembly lines, is rarely on the internet. Site-specific capture becomes more valuable, not less.",
+        "Funding size reflects investor appetite, not proof. The claim that broad video beats curated egocentric footage has not been shown in independent, published comparisons on real factory tasks."
+      ],
+      "bets_otherwise": "Mercor, with its $750 million round for human-led training work, and Path Robotics, which raised $300 million for welding automation, are both betting on skilled, task-specific human input rather than generic web video.",
+      "settle_it": "A public test where models pretrained only on internet video and models pretrained on curated egocentric footage are fine-tuned identically and scored on the same real factory tasks."
+    }
+  },
+  "cost": {
+    "usd": 0.0924,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 5,
+        "inTokens": 30648,
+        "outTokens": 9038,
+        "cost": 0.0076,
+        "models": {
+          "anthropic/claude-haiku-5.5": 5
+        }
+      },
+      "write": {
+        "calls": 10,
+        "inTokens": 17291,
+        "outTokens": 5993,
+        "cost": 0.0436,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 10
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 3284,
+        "outTokens": 2042,
+        "cost": 0.0013,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 3507,
+        "outTokens": 524,
+        "cost": 0.0067,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "think": {
+        "calls": 1,
+        "inTokens": 3959,
+        "outTokens": 867,
+        "cost": 0.0332,
+        "models": {
+          "anthropic/claude-opus-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 242,
+    "unique": 208,
+    "feeds": 29,
+    "failedFeeds": [
+      "Import AI",
+      "r/LocalLLaMA"
+    ]
+  },
+  "generatedAt": "2026-11-14T00:16:36.230Z"
+}
