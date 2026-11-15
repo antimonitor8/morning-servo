@@ -1,0 +1,289 @@
+{
+  "date": "2026-11-15",
+  "weekday": "Sunday",
+  "sunday": true,
+  "number": 18,
+  "paper": "The Morning Servo",
+  "readMinutes": 3,
+  "stories": [
+    {
+      "id": "645e798427",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "LangChain raises $300M at $3B valuation for AI agent management",
+      "takeaway": "LangChain, which started as a free coding toolkit, raised $300 million to grow its software for managing AI agents. The company says 7,000 businesses now use this paid software, showing strong demand for tools that keep AI agents under control.",
+      "deck": "The round more than doubles its valuation from a year ago.",
+      "body": [
+        "LangChain raised a $300 million Series C at a $3 billion valuation, led by CapitalG, with GIC, DFJ Growth, IVP, and Sapphire Ventures also participating. A year ago, the company was valued at $1.25 billion when it raised $125 million.",
+        "LangChain began in 2022 as a popular open source project that helped early language models search the web, call APIs, and query databases. As larger AI labs built those abilities directly, the company shifted to its paid agent management product, LangSmith.",
+        "LangSmith is designed to let businesses run agents without being tied to one model or cloud. The company now claims 7,000 LangSmith customers, including Harvey, Rippling, Clay, Nvidia, Toyota, and Salesforce."
+      ],
+      "why": "It signals that spending is moving up the stack, from building robot and AI models to managing fleets of agents. The same control, observability, and vendor-neutral message may matter for companies buying robot training data from multiple suppliers.",
+      "hard": "The company gave no revenue figures or customer breakdown, so the 7,000-customer claim does not show how heavily those businesses use LangSmith or how much they pay.",
+      "terms": [
+        {
+          "term": "AI agent",
+          "meaning": "Software that can carry out multi-step tasks on its own, such as searching the web or updating records, rather than only answering one question."
+        },
+        {
+          "term": "Open source",
+          "meaning": "Software whose code is freely available for anyone to use, change, or build on."
+        },
+        {
+          "term": "LLM",
+          "meaning": "Large language model, the type of AI behind chatbots that is trained on huge amounts of text to predict and generate language."
+        },
+        {
+          "term": "API",
+          "meaning": "Application programming interface, a defined way for one piece of software to request data or actions from another."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Enterprise software",
+          "AI infrastructure"
+        ],
+        "task": [
+          "Agent management",
+          "Funding"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/"
+        },
+        {
+          "name": "Inshorts",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTjdsOF9HeGlrQU5YQVJFcjktUmYwMDJsbVBtTmJHU1Z5UWdXZDZiQzVmeDk0cmZsYWYxUzR2Zkl3eE1ZQ0RYNzZsN2lwSU8yRllwZjA4Tktxdm8zYzJQYTdUalkxVE4yUjV3dlJnQ3ZOUk1Qclh3ck5Cb0plVTkwSHRQQlBZd1F6RjBZRzdjWHlMaWRQck5BbVdCVVFSRU1fWDZn0gGjAUFVX3lxTE5ON2w4X0d4aWtBTlhBUkVyOS1SZjAwMmxtUG1OYkdTVnlRZ1dkNmJDNWZ4OTRyZmxhZjFTNHZmSXd4TVlDRFg3Nmw3aXBJTzJGWXBmMDhOS3F2bzNjMlBhN1RqWTFUTjJSNXd2UmdDdk5STVByWHdyTkJvSmVVOTBIdFBCUFl3UXpGMFlHN2NYeUxpZFByTkFtV0JVUVJFTV9YNmc?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "ec577d4c46",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Huang exit set to shrink Nvidia's startup checks, investors say",
+      "takeaway": "Nvidia has been one of the biggest funders of AI startups, often deciding deals personally through CEO Jensen Huang. Investors now expect fewer and smaller investments, which would lower startup valuations and leave a funding gap no one can easily fill.",
+      "deck": "Nvidia took part in 105 startup rounds this year and often led them.",
+      "body": [
+        "Nvidia has been a prolific startup investor, writing tens of billions of dollars into AI companies each year. Under Jensen Huang, who co-founded and led the company for 33 years, most significant investment decisions came from him directly, according to investors who spoke to TechCrunch.",
+        "His departure is expected to slow that spending. Investors described interim CEO Colette Kress as more conservative and unlikely to commit the same amounts to early-stage companies. Nvidia-backed startups include CoreWeave, Crusoe, Mistral AI, Lambda, Black Forest Labs, and Hugging Face, which it agreed to buy for $13 billion.",
+        "The change could lower valuations and make traditional venture investors more cautious. Some hope large cloud providers or other chipmakers will step in, but investors doubt they will pour hundreds of millions into pre-revenue infrastructure startups the way Nvidia did."
+      ],
+      "why": "A pullback in Nvidia's startup funding would hit the same kind of capital-intensive robotics and AI infrastructure companies that buy egocentric training data and deploy physical AI systems.",
+      "hard": "It is still unclear who, if anyone, will replace Nvidia's willingness to fund pre-revenue startups at the same scale.",
+      "terms": [
+        {
+          "term": "Neocloud",
+          "meaning": "A new kind of cloud computing provider built specifically to rent out powerful AI chips at large scale."
+        },
+        {
+          "term": "Inference provider",
+          "meaning": "A company that runs trained AI models so customers can get answers from them in real time."
+        },
+        {
+          "term": "Open weight model",
+          "meaning": "An AI model whose learned settings are public, so companies can run or adapt it without paying the original builder."
+        },
+        {
+          "term": "CUDA",
+          "meaning": "Nvidia's software platform that developers use to run AI programs on its graphics chips."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "AI infrastructure",
+          "Venture capital"
+        ],
+        "task": [
+          "Startup funding",
+          "Chip and cloud investment"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "Robotics Floor",
+      "headline": "Neura Robotics partners with E.ON to bring humanoid robots to energy infrastructure",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNN09rcE94dkJUTkktSTRPOEF5UHhzNHJVNUo4QnJDV1RBUTJFc0dpV2F6WkRrX3RZZmhRVUJrQXJ0ZWdpbElkVGhPdGRLY3hDaFAtNmJSOFdEbzcxU2cyYm9ISzE1dlpZRTZHcVl5UFRzWFp5bTRwbktGU0kzeFltQlpIbGdjQ1JiWVRVd3hLYjVpUjRUenRTZkNUNzJSaDR6Zkw5VnMxZGUzYng0NEdYM1pwa3hjT0V6MnRJZ0xoWlQ5RzdtZF8zcEhOOXBLN29CY0x3Umdxcw?oc=5",
+      "source": "Robotics & Automation News"
+    },
+    {
+      "kicker": "Policy",
+      "headline": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
+      "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+      "source": "TechCrunch AI"
+    },
+    {
+      "kicker": "The Money",
+      "headline": "Crunchbase Data: Nvidia’s Startup Funding Deals Hit A Record. What’s Next After Huang?",
+      "url": "https://news.crunchbase.com/venture/huang-nvda-ai-startup-funding-record-2026/",
+      "source": "Crunchbase News"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "Toro Partners with TURF Insight to Bring Drone Mapping to GeoLink® Spray",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPOUotMEZQZ2NManpMcUNJNWxTdjZUdGdteWg1akNqc1pyZDYyMV9xQVRyV2JWcFg0SWpiMjRIdmxVMEdUZ21jc3duaXBjaWxmQjluRk1hSTJqVzBxbFZxTVpNX1NXUWFJbFJ5ekFrNldOcUhycHFHOEdBdFdxR2pQR0Z3dU0zTU1pOExWVGtlMzBYMnBRQVJCWDZ0UWFUZEFVRmlBTUwwQlJFN3YxMEFUeWlGSlA?oc=5",
+      "source": "Pitchcare"
+    },
+    {
+      "kicker": "Elsewhere",
+      "headline": "Amazon has a plan to index the world’s online shopping data",
+      "url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
+      "source": "The Verge AI"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 0,
+        "sector": "robotics",
+        "company": "Zipline",
+        "what": "Nationwide drone delivery network",
+        "round": "Funding",
+        "amount_usd_m": 1500,
+        "amount_text": "$1.5B",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQVHR6T1lJeFhLSTdwbk1GR1VwOW9oYm1PQVczNkFLdENaT0gtLXZpOXh2eFlzanlwSDMxd1lickVHdmxKNDdGam9ubENfQ3ROczJNbFIzTmF0UzlCOFZWX1ZDWlhHaV81Vm9OWTV3RzB2SnVxQ29sT0xDdm95am4xZlRId2hLV0FsdGpkSGludmd2U09qMk5tLWQ0ckdPYmkxZnFJb0VBUm5aSS11VUFfdUI3bFJWZDdFelZmelhzNlE2LUVCdHpDRVNtMWR3S1k0UXJPYi1qeXcyZw?oc=5",
+        "source": "Robotics & Automation News"
+      },
+      {
+        "i": 2,
+        "sector": "ai",
+        "company": "Humain",
+        "what": "AI infrastructure in Saudi Arabia",
+        "round": "Funding",
+        "amount_usd_m": 667,
+        "amount_text": "$667M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOeWdkMTJqbGJZc1N4dE1nMUsyT2Fva2VNNTZWZzVFS2RCalhnaHdWRGY1dzBKemhySDM2WVI0MWFOemR0RVJkeUxxc3ZnZlRqMjQ3QTNGTGRvMGFlY1k1QVI3SmFYaWllU1Vxd0xTTDVkVWxlT2NHbXZrbE9naWpoR0pYaGZ0dUFuQlFtNm9hZ0M4b0JFWjhNNXJ3?oc=5",
+        "source": "Data Center Dynamics"
+      },
+      {
+        "i": 1,
+        "sector": "ai",
+        "company": "Xilect",
+        "what": "Robot chip venture",
+        "round": "Funding",
+        "amount_usd_m": 68.2,
+        "amount_text": "¥500M (~$68M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOdnVmYXlrZ1pLTm9rZWlnVldkZmZNVmw5NFgtZ3BJaHJhWGFOUUF1b3hJU1dpXzhvaDF4bjJPMGVJVTVyUVVldTRPN2JnQkhPOFVfdXI3d3RWMlZYTzZXMGxZcjg3Q2k4a0N0eC1HamxRTExWVmhHVFp4LWFkLUNTMWNfa0xfZU04TDBfT1dudmdFdw?oc=5",
+        "source": "MLQ.ai"
+      },
+      {
+        "i": 3,
+        "sector": "ai",
+        "company": "LangChain",
+        "what": "AI agent development platform",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "$3B valuation",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+        "source": "TechCrunch AI"
+      }
+    ],
+    "totalUsdM": 2235
+  },
+  "playground": [
+    {
+      "headline": "A tiny TARS-inspired robot for your desk",
+      "body": "This open source kit pairs a 3D-printed segmented body with an ESP32-S3, display, camera, microphone, and speaker. It scoots around on three articulated columns driven by servos, not wheels, and can hold a conversation through a cloud-connected LLM. You can even adjust its humor and sincerity settings.",
+      "why": "It takes a beloved sci-fi character and makes a hackable, talking companion cheap enough to build at home.",
+      "maker": "LuwuDynamics",
+      "url": "https://www.hackster.io/news/build-your-own-tars-robot-from-interstellar-382dd9e6fd0a",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "Doom now plays on a USB flash drive",
+      "body": "This build gets the classic shooter running on a USB stick's display-driving microcontroller at about 13 fps. With no buttons, it uses the drive's read and write activity as a control interface, with a Python program translating keyboard inputs into game actions. Only the first level fits in memory, and there is no sound.",
+      "why": "Even storage hardware now has enough spare processing power to run a legendary game.",
+      "maker": "Aaron Christophel",
+      "url": "https://www.hackster.io/news/doom-comes-to-a-usb-flash-drive-near-you-0873a3fc59b0",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "3D-printed rideable tank keeps shedding its tracks",
+      "body": "A custom track made of many 3D-printed links wraps around a pair of QS138 motorcycle motors, controlled like a large RC vehicle. The builder used an RC transmitter and VESC controllers, and found the drive side straightforward. The links kept snapping, often where cheap filament had been used.",
+      "why": "It shows electric drivetrains scale from hobby RC to human-sized vehicles surprisingly well.",
+      "maker": "Simon Sörensen",
+      "url": "https://www.hackster.io/news/3d-printing-a-tank-is-both-easier-and-more-challenging-than-you-think-1818b00ba8a5",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "Tube-like audio warmth from an ESP32 and code",
+      "body": "An ESP32 and WM8960 audio codec combine to emulate the nonlinear distortion and slow response of vacuum tube amplifiers. A small display shows the transfer function, and the whole thing sits in a Tektronix-inspired case. It is a DSP take on the warm sound people chase with expensive tubes.",
+      "why": "A cheap microcontroller convincingly recreates audio hardware that usually costs hundreds of dollars.",
+      "maker": "mircemk",
+      "url": "https://hackaday.com/2026/11/14/warm-analog-dsp-on-the-esp/",
+      "source": "Hackaday"
+    }
+  ],
+  "think": null,
+  "cost": {
+    "usd": 0.0157,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 2,
+        "inTokens": 9454,
+        "outTokens": 2944,
+        "cost": 0.0024,
+        "models": {
+          "anthropic/claude-haiku-5.5": 2
+        }
+      },
+      "write": {
+        "calls": 2,
+        "inTokens": 3172,
+        "outTokens": 1108,
+        "cost": 0.0065,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 2
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 1623,
+        "outTokens": 524,
+        "cost": 0.0004,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 3164,
+        "outTokens": 534,
+        "cost": 0.0063,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 88,
+    "unique": 70,
+    "feeds": 29,
+    "failedFeeds": [
+      "r/LocalLLaMA"
+    ]
+  },
+  "generatedAt": "2026-11-15T00:16:05.533Z"
+}

@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-11-15",
+    "weekday": "Sunday",
+    "number": 18,
+    "lead": "LangChain raises $300M at $3B valuation for AI agent management",
+    "stories": 2,
+    "readMinutes": 3,
+    "costUsd": 0.0157
+  },
+  {
     "date": "2026-11-14",
     "weekday": "Saturday",
     "number": 17,
