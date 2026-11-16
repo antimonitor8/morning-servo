@@ -1,0 +1,354 @@
+{
+  "date": "2026-11-16",
+  "weekday": "Monday",
+  "sunday": false,
+  "number": 19,
+  "paper": "The Morning Servo",
+  "readMinutes": 6,
+  "stories": [
+    {
+      "id": "fa232e2aaf",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Bharat Semi raises $24 million to build AI image sensors",
+      "takeaway": "An Indian chip startup raised $24 million to develop image sensors that process what they see on the chip itself, instead of sending video to a separate computer. The company has early design commitments but will not sell products until 2027.",
+      "deck": "The startup is targeting industrial automation, surveillance, drones, and smart buildings, with first commercial production planned for 2027.",
+      "body": [
+        "Bharat Semi, a New Delhi-based semiconductor startup, has raised a $24 million seed round. The company, founded in late 2021, is pre-revenue and has about 75 employees across India and the U.S.",
+        "It is developing programmable image sensors that combine image capture, processing, and AI on one chip. Co-founder Vrinda Kapoor said this approach could cut system costs by at least 70 percent compared with a setup using a separate image sensor, image signal processor, and system-on-chip.",
+        "The company said it has secured design wins with U.S. defense technology firm General Atomics and India's Kaynes Semicon, but did not give details. Its first-generation sensors are in prototyping. Second-generation sensors with more advanced AI are expected to reach prototyping by mid-2027 and reach customers later that year."
+      ],
+      "why": "Cheaper, on-device visual processing could change which camera and sensor setups are practical for robots, drones, and factory equipment. If sensors understand scenes locally, systems may need less central computing and could rely on different training data than cloud-fed video pipelines.",
+      "hard": "The company is pre-revenue and its sensors remain under development; design wins do not guarantee volume sales, and the 70 percent cost reduction is the startup's own estimate rather than an independently verified figure.",
+      "terms": [
+        {
+          "term": "Image sensor",
+          "meaning": "A chip that turns light into digital pictures, the part of a camera that captures the image."
+        },
+        {
+          "term": "AI-enabled sensor",
+          "meaning": "A camera chip that also runs artificial-intelligence software, so it can understand images without a separate computer."
+        },
+        {
+          "term": "Image signal processor",
+          "meaning": "A chip that cleans up raw images from a camera sensor, adjusting color, light, and sharpness."
+        },
+        {
+          "term": "Design win",
+          "meaning": "A customer has agreed to consider or use a company's chip design in its products, though sales may not have started."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Semiconductors",
+          "Robotics infrastructure"
+        ],
+        "task": [
+          "Investment and funding",
+          "Camera and vision hardware"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/"
+        }
+      ]
+    },
+    {
+      "id": "1207b5c1c7",
+      "section": "policy",
+      "kicker": "Policy",
+      "headline": "Congress moves to tighten AI chip export rules after Nvidia spy scandal",
+      "takeaway": "US lawmakers from both parties want stricter limits on selling advanced AI chips to China, and they want Nvidia executives to testify. This follows the scandal over the company's former CEO and a suspected Chinese spy.",
+      "deck": "Both parties want Nvidia leaders to testify before Congress",
+      "body": [
+        "Both Democrats and Republicans in the US Congress are pushing to tighten export rules on advanced AI chips after the scandal involving former Nvidia CEO Jensen Huang and a suspected Chinese spy. House Speaker Mike Johnson said there is “growing consensus in Congress on limiting chip exports to China,” and that he personally supports restricting China’s access to powerful AI chips from companies like Nvidia.",
+        "Senate Banking Committee Chairman Tim Scott sent letters to Huang and Commerce Secretary Howard Lutnick calling on them to publicly testify. Senate Minority Leader Chuck Schumer has said Huang and the Trump administration need to answer to Congress. A stalled bill called the Remote Access Security Act, first introduced in the House in April 2025, is receiving renewed interest, though it may not become law in its current form."
+      ],
+      "why": "If the US tightens chip export rules, it could constrict the supply of advanced AI hardware globally. That would shape which countries and companies can train large models, which in turn affects demand for robotics training data.",
+      "hard": "The Remote Access Security Act has been stalled in the Senate since April 2025, and it is unclear whether any specific new rule will become law.",
+      "terms": [
+        {
+          "meaning": "A leading American company that designs the advanced computer chips used to train and run large AI models.",
+          "term": "Nvidia"
+        },
+        {
+          "meaning": "Government rules that control which products and technologies can be sold or shipped to other countries.",
+          "term": "Export controls"
+        },
+        {
+          "meaning": "A proposed law that has been formally introduced but has not yet been voted into effect.",
+          "term": "Bill"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Semiconductors",
+          "Government policy"
+        ],
+        "task": [
+          "Export controls",
+          "Regulatory oversight"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china"
+        }
+      ]
+    },
+    {
+      "id": "1193923d24",
+      "section": "india",
+      "kicker": "India Desk",
+      "headline": "Indian consumer wearables can launch without clinical proof, exposing a validation gap",
+      "takeaway": "A new Indian wearable makes health claims using metrics that are not yet clinically proven or peer-reviewed. Indian rules do not force consumer wearables to complete medical validation, so buyers and investors are left to judge claims on their own.",
+      "deck": "Founders say there is no required sample size, timing, or agency for validating new health metrics before sale.",
+      "body": [
+        "Temple, a new Indian wearable from Zomato founder Deepinder Goyal, tracks two new metrics. BrainFlow estimates relative changes in blood flow to the brain. Entropy is meant to measure how hard the body works to shed heat across many systems. Temple says BrainFlow is a relative index from optical signals at the temple, not a direct measure of cerebral blood flow.",
+        "The company has shared studies comparing BrainFlow with transcranial Doppler ultrasound and near infrared spectroscopy. One trial used 23 healthy adults. Critics point out the studies are preprints, not peer-reviewed. Founders building similar devices say credible validation usually requires controlled, ideally double-blind trials, but Indian rules set no fixed sample size or require publishing research at all.",
+        "Temple argues it is not a medical device because it does not diagnose, treat, or prevent disease, and cites CDSCO guidance that general wellness software falls outside medical device rules. Some doctors disagree and want it regulated as a medical device. Investors and doctors are increasingly asking startups for third-party trials, but one founder said a 100-person study can cost around Rs 15 lakh."
+      ],
+      "why": "The dispute shows a newer task for robot training-data teams to watch: egocentric sensor data and real-world physiological signals from wearable devices are starting to overlap with health tracking, a sector with very weak validation rules. In India, new wearable hardware built around optical sensors and mixed physiological claims is coming to market faster than proof, which may shift demand toward independently validated, high-quality body data collected outside controlled labs.",
+      "hard": "Temple has not yet published peer-reviewed validation for BrainFlow or Entropy, and its own study page says the device cannot directly measure cerebral blood flow, so the usefulness of its core metrics remains unproven.",
+      "terms": [
+        {
+          "term": "Transcranial Doppler ultrasound",
+          "meaning": "A clinical method that uses sound waves to measure how fast blood flows through major arteries in the brain."
+        },
+        {
+          "term": "Near infrared spectroscopy",
+          "meaning": "A technique that shines harmless light through the skull to estimate changes in blood volume in brain tissue."
+        },
+        {
+          "term": "Peer review",
+          "meaning": "A process where independent experts check a study's methods and findings before it is accepted for publication."
+        },
+        {
+          "term": "Preprint",
+          "meaning": "A full research paper shared publicly before independent experts have formally approved it for a journal."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Wearables",
+          "Consumer health devices"
+        ],
+        "task": [
+          "Health tracking",
+          "Sensor validation"
+        ]
+      },
+      "score": 4,
+      "sources": [
+        {
+          "name": "Inc42",
+          "url": "https://inc42.com/features/not-just-about-temple-indias-wearable-impasse/"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "Robotics Floor",
+      "headline": "OpenAI Dissolves Robotics Team, Moves Staff to 2 Orgs",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeTBYWDI0Y3F4NzlkNmpmMnFiNmhJYUZNQkZVUmlfQ3N2dXM2Q0NieE5ocTZ6bHhHU2Q1Z1NpUEEzR3FOUUg2VkMtY2twLTgyTjBndUpuVkFDeHByMzNlZTlPekgtOFBBcmR5c3BXbkNRS0pNa20zT1F3MmFlSXU4Umt4UDZzdVZU?oc=5",
+      "source": "shattered.io"
+    },
+    {
+      "kicker": "Your Beat",
+      "headline": "GRAIL Genesis robotics data funding call opens",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1kcDh0aEZERVpNMUVGeXgwd3lMOHdMWWZiYURlLVBONExjN05McmtCc0xzSi1RY01KaUNvVy0zLUVmSFNCbkQyUUtJQkZMWHE1emtXVFNndHpTd3diUjFydHBTblJ0ZnpLcnMyWjhaRTZVaUV6?oc=5",
+      "source": "CASRAI"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "Humble Robotics founder Eyal Cohen: self-driving trucks should be built without a driver's cab, and regulation is the real brake",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5Ka3h4UEdFT2dGcnpXZlYyYlNBUXRnNlQwa2lzaTFCWDNETHRnNDBLM2tkS3NBSmNRSkZ5ZE9qZzJtTTVULWMzbVRfd2ZDVHFsY3pjWnFMZFp3U1U?oc=5",
+      "source": "BigGo Finance"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "A step toward defining the Standard Model on a lattice",
+      "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+      "source": "OpenAI"
+    },
+    {
+      "kicker": "Policy",
+      "headline": "Sebi to issue AI usage guidelines for capital markets, focus on investor protection",
+      "url": "https://yourstory.com/2026/11/sebi-issue-ai-usage-guidelines-investor-protection",
+      "source": "YourStory"
+    },
+    {
+      "kicker": "The Money",
+      "headline": "NVIDIA CEO Exit Risks AI Startup Funding",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbmhZZTk1REMxb1VFYlAzSHJPMWlHNUNtZUZwZjR4aUpWZl95ZG1qYmJHU0NyNHk0REhyZUczNGVNZnVTcTZQenlrOEEtMHRJek9fZmUtcHFZeXNWWmRreUpPUzlGUllIdERVWVJ2Sm5oV3c5NXVYdjdLS1VIMUx6VC1RLWFVdUJj?oc=5",
+      "source": "조선일보"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 0,
+        "sector": "robotics",
+        "company": "Zacua Ventures",
+        "what": "Investor in robotics and physical AI",
+        "round": "Funding",
+        "amount_usd_m": 135,
+        "amount_text": "$135M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPSUdmdkpkZEhJV3RBTlp6N01TMWVodDV3SHREbmFTeW9iQXlHODdLd2YzdC1WbWtrVGFWMGlFWnRRUFVSR3lCVWhBZDhpVmlnZndpcXAwTjYwNE1vdUV5cnR6VzVpaHZfN2JfQlpiMzEySXJwc0tmUlhvbDRQc1RSYzAwbExzQkZJcXptTnpGUVcyZTVFcG5vWWc1cWVVbERqdmI0RlN4c1NXelZCMTUxRDFQNWM5U0IwdkVuOHZVMlBiNEp1dWVWWjJ5VFdXTURvVlZxN2JQb3ZJS0IzYlVMdXhMYVE?oc=5",
+        "source": "Robotics & Automation News"
+      },
+      {
+        "i": 2,
+        "sector": "deeptech",
+        "company": "Bharat Semi",
+        "what": "AI-enabled sensor chips",
+        "round": "Seed",
+        "amount_usd_m": 24,
+        "amount_text": "$24M",
+        "lead": "Not disclosed",
+        "india": true,
+        "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 1,
+        "sector": "robotics",
+        "company": "Physicl",
+        "what": "Synthetic data for physical AI training",
+        "round": "Funding",
+        "amount_usd_m": 10,
+        "amount_text": "$10M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQcnhKaW1XcEFPVzV1MUp4LTRoM3ZqalZ3UHd5VFpSc3FXWEt5NzExOWJ1b2JOZXNaSV9aUk5rLXg1aENZdHFBeExPUjRFcDZLdFdpLWlMdEJxU2c4Z2FmcXc0dmJBcDJxSG4zMTAxZnQyRENFRUYyY1RkT3RXdVFvWlJ0MG9CMG1idUFUcUdOSUd6Z2RJQjhOMy1OTHNqWThaNGI5M2Vld2EycGhlSlA3ZWpMTGdrSUY5eGxzRUNJSWFYal9ZMmtiYUhuZ0J0alU?oc=5",
+        "source": "Robotics & Automation News"
+      }
+    ],
+    "totalUsdM": 169
+  },
+  "playground": [
+    {
+      "headline": "A $100 teleoperated humanoid hand you can build yourself",
+      "body": "Someone put together a teleop demo of the open source Enhanced Amazing Hand from Lerobot, Hugging Face, and Pollen. The build costs around $100 with cheaper servos, or $200 to $300 with nicer ones. They plan to pair it with SO101 arms for a full upper-body teleop setup.",
+      "why": "It shows that capable humanoid robot hardware is drifting into hobbyist price territory.",
+      "maker": "Unknown",
+      "url": "https://www.reddit.com/r/robotics/comments/1xwwmv9/low_cost_humanoid_hand_live_teleop_amazing_hand/",
+      "source": "r/robotics"
+    },
+    {
+      "headline": "Robot tag with four legs, one arm, and a flag",
+      "body": "A builder is prototyping a robot sport where two quadrupeds try to grab a flag off each other's backs. In a demo, one quadruped carrying a SO-101 arm walks over and snatches the flag from a second robot. The game is still rough, but the arm-swinging grab already looks promising.",
+      "why": "It turns robot competition into something physical, playful, and more like a schoolyard game than a lab benchmark.",
+      "maker": "Unknown",
+      "url": "https://www.reddit.com/r/robotics/comments/1xx9ejt/tag_of_flag_concept_demo/",
+      "source": "r/robotics"
+    },
+    {
+      "headline": "An MP3 player built entirely inside Factorio",
+      "body": "Nablanaut made an MP3 player as a Factorio blueprint, using only the game's simple speaker elements to produce sound. Because the built-in synth voices aren't set up for complex audio, the build leans on Fourier-style tricks and a script that generates the blueprint procedurally. The result plays actual music through the factory's speakers.",
+      "why": "It shows that even a constrained game synth can be pushed into reproducing real recorded audio.",
+      "maker": "Nablanaut",
+      "url": "https://hackaday.com/2026/11/15/an-mp3-player-implemented-as-a-factorio-blueprint/",
+      "source": "Hackaday"
+    }
+  ],
+  "think": {
+    "collision": {
+      "a": {
+        "kind": "story",
+        "n": 1,
+        "label": "Bharat Semi raises $24M for AI image sensors"
+      },
+      "b": {
+        "kind": "brief",
+        "n": 2,
+        "label": "GRAIL Genesis robotics data funding call opens"
+      },
+      "headline": "Build an egocentric dataset recorded twice at once, on standard stereo cameras and on low-power smart sensors, for on-device robot vision",
+      "body": "Bharat Semi is building image sensors that interpret a scene inside the chip itself, so the camera sends out labels or compressed features instead of full video. Robots using such chips will need training data that matches what those sensors actually output, and almost no one records that today. A small pilot that mounts a regular stereo rig next to an early smart-sensor module on Indian factory workers could be pitched to the GRAIL Genesis funding call as a public, paired benchmark.",
+      "who_pays": "Sensor makers like Bharat Semi and robot companies planning low-power edge vision would pay for paired data, with the GRAIL grant funding the first pilot.",
+      "data_needed": "Time-synced head-mounted stereo video and smart-sensor outputs of the same industrial tasks, with task labels and hand positions.",
+      "why_fail": "Bharat Semi's chips do not ship until 2027, and their output format may change, so data recorded early could stop matching the final hardware."
+    },
+    "contrarian": {
+      "story_n": 2,
+      "consensus": "Tighter US export rules on AI chips will choke global access to compute and slow robotics outside the US.",
+      "against": [
+        "Robot foundation models are far smaller than frontier chatbots, so data, not top-end chips, is usually the scarcer input for robotics labs.",
+        "Bills that have moved after a scandal often get watered down or delayed, and Nvidia has strong reasons to lobby for licences rather than bans.",
+        "Scarce chips push builders toward efficient on-device hardware, like Bharat Semi's sensors, which could increase demand for compact, well-labelled real-world data rather than shrink it."
+      ],
+      "bets_otherwise": "Bharat Semi and other edge-chip startups are betting on local processing, and Chinese robotics firms are already training on domestic chips.",
+      "settle_it": "Track whether robotics labs outside the US slow their model releases or data purchases in the 12 months after any new rule takes effect."
+    }
+  },
+  "cost": {
+    "usd": 0.043,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 2,
+        "inTokens": 7704,
+        "outTokens": 2369,
+        "cost": 0.002,
+        "models": {
+          "anthropic/claude-haiku-5.5": 2
+        }
+      },
+      "write": {
+        "calls": 3,
+        "inTokens": 5289,
+        "outTokens": 1726,
+        "cost": 0.0115,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 3
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 1297,
+        "outTokens": 263,
+        "cost": 0.0003,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 979,
+        "outTokens": 412,
+        "cost": 0.0029,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "think": {
+        "calls": 1,
+        "inTokens": 2744,
+        "outTokens": 768,
+        "cost": 0.0263,
+        "models": {
+          "anthropic/claude-opus-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 62,
+    "unique": 55,
+    "feeds": 29,
+    "failedFeeds": [
+      "Import AI",
+      "r/LocalLLaMA"
+    ]
+  },
+  "generatedAt": "2026-11-16T00:16:17.420Z"
+}
