@@ -1,0 +1,890 @@
+{
+  "date": "2026-11-17",
+  "weekday": "Tuesday",
+  "sunday": false,
+  "number": 20,
+  "paper": "The Morning Servo",
+  "readMinutes": 14,
+  "stories": [
+    {
+      "id": "d40156bb9a",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Remote surgical robot gives stroke care an Xbox-style controller",
+      "takeaway": "A San Francisco startup is testing a robot that lets a surgeon remove a brain clot from another room or city. It has already been tried on a few patients, but it is not yet proven to improve real-world stroke outcomes.",
+      "deck": "Remote testing has begun on a small group of patients, but clinical benefit remains unproven.",
+      "body": [
+        "Remedy Robotics, based in San Francisco, is testing a remote-controlled surgical robot for stroke treatment. The N1 system includes a motorized arm, a steerable catheter, and software that overlays a CT scan on the live X-ray feed so the operator can see the three-dimensional path of blood vessels instead of a flat silhouette.",
+        "The catheter does not need a guide wire. Tiny wires tug its tip in any direction, while an algorithm tracks its rotation and translates a simple left or right command into the correct movement inside the body. The company has already tested the system remotely on a small group of patients.",
+        "The goal is thrombectomy, the emergency removal of a blood clot from the brain. About 1 in 10 eligible patients currently receives one, partly because many hospitals lack the staff and equipment. The founders argue that putting a robot in one hospital and a surgeon elsewhere could close that gap, though this depends on communications infrastructure and hospital workflows."
+      ],
+      "why": "This is a concrete case of remote operation plus computer vision in a high-stakes physical task. It points to a future market for paired sensor data from constrained hospital environments and for training models that interpret catheters inside the body from limited imaging.",
+      "hard": "The biggest unproven point is whether telesurgery meaningfully improves patient outcomes in time-critical stroke care, given dependence on hospital resources and network reliability.",
+      "terms": [
+        {
+          "meaning": "The emergency removal of a blood clot from a brain artery using a catheter.",
+          "term": "thrombectomy"
+        },
+        {
+          "meaning": "A thin, flexible tube inserted into blood vessels to reach an organ such as the brain.",
+          "term": "catheter"
+        },
+        {
+          "meaning": "A stroke caused by a clot blocking blood flow to the brain.",
+          "term": "acute ischemic stroke"
+        },
+        {
+          "meaning": "A real-time X-ray video used to watch instruments move inside the body.",
+          "term": "live X-ray feed"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "healthcare technology",
+          "robotics"
+        ],
+        "task": [
+          "surgical robotics",
+          "telesurgery"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "IEEE Spectrum Robotics",
+          "url": "https://spectrum.ieee.org/telesurgery-stroke"
+        }
+      ]
+    },
+    {
+      "id": "243e54a7d5",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "New method generates training data from a robot model's own failures",
+      "takeaway": "Researchers built a system that watches where a robot model fails, then automatically creates extra practice examples from exactly those difficult moments. In tests, it lifted success rates across three simulation suites, including from zero to 30 percent on one set of tasks.",
+      "deck": "The approach improved a physical-reasoning robot model called pi-0 across three different simulation benchmarks.",
+      "body": [
+        "A team of researchers has introduced Agentic-Teacher, an automatic data engine for improving pretrained vision-language-action models. These models, known as VLA models, learn to turn camera images and text instructions into physical robot movements. The engine first runs the robot model in a simulated environment and records where it fails.",
+        "At each difficult moment, Agentic-Teacher writes a small code policy, a scripted rule, and tests it in the simulator. Scripts that work become reusable generators of successful demonstrations from the exact states where the robot struggled. The system adds controlled action noise to vary the examples, removes idle frames, and filters out demonstrations using the original model's own confidence signal.",
+        "In simulation tests, the method improved the pi-0 robot model's success rate from 79.4 percent to 87.8 percent on LIBERO-10, from 80.4 percent to 90.6 percent on MetaWorld-10, and from zero to 30 percent on three RoboCasa tasks. The updated model then runs on its own, without the coding agent's help."
+      ],
+      "why": "This points to a shift in training-data thinking: rather than collecting more demonstrations of tasks done well, buyers may want pipelines that mine a model's specific failures and generate corrective data. For egocentric video collection and teleoperation services, the same logic could apply to choosing which human demonstrations to record next.",
+      "hard": "All results are from simulation only, and the largest improvement still leaves RoboCasa tasks at 30 percent success, so real-world usefulness is unproven.",
+      "terms": [],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Training data"
+        ],
+        "task": [
+          "Robot learning",
+          "Data generation"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.17394"
+        }
+      ]
+    },
+    {
+      "id": "d9d1144a64",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Humanoid robot walks from office lobby to nearby store on one instruction",
+      "takeaway": "A Chinese bipedal robot followed a single language instruction to walk about a hundred metres from an indoor lobby to a shop in another building. The system used only its built-in camera for navigation decisions, with laser scanning and wheel-style motion tracking for the final approach.",
+      "deck": "The robot changed destination mid-route and passed static and dynamic obstacles.",
+      "body": [
+        "Researchers from AGIBOT and partners present X-Nav, a system that lets a bipedal humanoid robot carry out a long navigation task from one spoken or written instruction. The robot, a Lingxi X2, walked about a hundred metres from an office lobby to a store in a neighbouring building.",
+        "The navigation model, called MELIOR, uses only RGB images from the robot's built-in camera. One version predicts the next action; another predicts a navigation goal. A separate workflow, X-Navarch, breaks a short instruction into sub-tasks and handles target approach and obstacle avoidance. LiDAR and odometry are used only for the final approach and low-level control.",
+        "Before deployment, MELIOR is adapted with data collected in a digital twin of the real site. This adaptation raised the closed-loop success rate in the simulation, and the adapted model was then used on the real robot. The team also reports competitive results on two standard navigation benchmarks, R2R-CE and RxR-CE."
+      ],
+      "why": "This shows a humanoid moving between real workplaces without a person guiding it step by step. For training-data providers, the digital-twin adaptation step is a concrete example of synthetic or simulated site data improving real-world robot performance, which may signal demand for site-specific egocentric navigation data.",
+      "hard": "The report describes one mission at one site, so it is not yet clear how well the system generalises to unfamiliar buildings or weather conditions.",
+      "terms": [
+        {
+          "term": "Humanoid robot",
+          "meaning": "A robot with a body shaped like a person, usually with two legs, two arms and a head."
+        },
+        {
+          "term": "LiDAR",
+          "meaning": "A sensor that measures distance by bouncing laser light off surfaces, used to build a 3D map of the surroundings."
+        },
+        {
+          "term": "Odometry",
+          "meaning": "A way of estimating where a robot is by tracking how far its wheels or legs have moved."
+        },
+        {
+          "term": "Digital twin",
+          "meaning": "A computer simulation of a real place, used to test or train a robot before it works in the actual location."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Humanoid robots"
+        ],
+        "task": [
+          "Autonomous navigation",
+          "Sim-to-real transfer"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.17598"
+        }
+      ]
+    },
+    {
+      "id": "8ff68ce081",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "TouchTwin uses glove data to close robot grip-force gap",
+      "takeaway": "A team rebuilt robot hand demonstrations with real touch measurements from sensor gloves. The result matched recorded grip force almost exactly, unlike vision-only methods that gripped too softly or too hard.",
+      "deck": "Vision-based replays missed how hard each finger pressed, causing soft or crushing grips.",
+      "body": [
+        "A research paper describes TouchTwin, a system that rebuilds human hand demonstrations using measured touch rather than vision alone. Each recording captures head and wrist depth cameras alongside an 880-taxel glove, a glove with 880 pressure-sensing points. The interaction is then replayed in MuJoCo, a physics simulator.",
+        "Vision-only methods could see where fingers stopped but not how hard they closed. A policy trained on observed poses gripped with 0.31 times the recorded force. A policy trained on physics replays of vision-tracked poses gripped with 1.55 times the force. TouchTwin's touch-grounded replays matched the recorded force at 0.99 times and succeeded in all 20 held-out trials.",
+        "The team also used each replay to seed perturbed demonstrations with simulated contact and force labels, rendered as video in new views and scenes. A contact predictor trained on these missed 13 percent of real contact frames, less than half the 32 percent missed by one trained on vision-based replays."
+      ],
+      "why": "Force and contact data are a gap in current robot manipulation datasets. If demand shifts toward dexterous work with fragile or delicate objects, buyers will likely want egocentric video paired with tactile or force measurements, not pose-only data.",
+      "hard": "The system depends on a specialized 880-taxel glove and per-subject tactile hand models, which may be expensive and difficult to scale across many workers and sites.",
+      "terms": [
+        {
+          "term": "Policy",
+          "meaning": "A learned rule that tells a robot what action to take based on what it sees or senses."
+        },
+        {
+          "term": "Real-to-sim-to-real pipeline",
+          "meaning": "A method that records a real task, rebuilds it in a physics simulator, and trains robots inside that simulation before they act in the real world."
+        },
+        {
+          "term": "Dexterous manipulation",
+          "meaning": "Using a robot hand with many moving fingers and joints to handle objects skillfully, the way human hands do."
+        },
+        {
+          "term": "Taxel",
+          "meaning": "A single pressure-sensing point on a tactile sensor, like one pixel of an image that measures touch instead of light."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics"
+        ],
+        "task": [
+          "Dexterous manipulation",
+          "Robot training data"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.17619"
+        }
+      ]
+    },
+    {
+      "id": "b69d70a822",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Bharat Semi raises $24 million for smart sensors aimed at physical AI",
+      "takeaway": "An Indian chip startup raised 24 million dollars to build sensors that process AI on the device itself instead of sending data elsewhere. This could make robots, drones and cameras respond faster while using less power and lowering costs.",
+      "deck": "The Bengaluru startup is integrating AI processing directly into sensor chips to cut delays, power use and data movement.",
+      "body": [
+        "Bharat Semi is building programmable smart sensors that put sensing and AI processing on one chip. The company says this design can cut data movement between parts by up to 99 percent and lower system costs by up to 10 times compared with conventional multi-chip setups.",
+        "The startup will first target consumer electronics and surveillance, where cost, power use and response time matter most. Later it plans to move into robotics, vehicles, aerospace and defence. Expected uses include a ceiling fan that reacts to a sleeping person's position, a door camera that recognises a parcel, and a drone that spots obstacles without sending data to a remote server.",
+        "The company has not yet commercialised its technology. It faces established sensor makers such as Sony Semiconductor Solutions and OmniVision, plus startups like Oculi and Prophesee. The global AI sensor market is projected to reach 139.4 billion dollars by 2033."
+      ],
+      "why": "Bharat Semi's planned move into robotics and drones points to future demand for onboard perception hardware that does not depend on cloud connections. If the technology works at the claimed cost and power levels, robot and drone makers in India could get cheaper local sensor options for real-time tasks.",
+      "hard": "The technology is not yet commercialised, and the company must compete with large incumbent sensor makers while proving its cost and performance claims in real products.",
+      "terms": [
+        {
+          "meaning": "Running AI models directly on a device, such as a sensor or camera, instead of sending data to a cloud server for processing.",
+          "term": "Edge AI"
+        },
+        {
+          "meaning": "The delay between an input and the system's response. Low latency means a device reacts almost instantly.",
+          "term": "Latency"
+        },
+        {
+          "meaning": "A chip that can be reconfigured to run different tasks or AI models rather than being fixed for one purpose.",
+          "term": "Programmable sensor"
+        },
+        {
+          "meaning": "A product where multiple chips are packaged together to handle sensing and processing separately, which Bharat Semi says it can replace with one chip.",
+          "term": "Multi-chip module"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Semiconductors",
+          "Robotics"
+        ],
+        "task": [
+          "Sensor hardware",
+          "Edge AI"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "Inc42",
+          "url": "https://inc42.com/buzz/bharat-semi-raises-24-mn-to-build-smart-sensors-for-physical-ai/"
+        },
+        {
+          "name": "Entrackr",
+          "url": "https://entrackr.com/news/bharat-semi-raises-24-mn-in-seed-round-from-info-edge-south-park-common-others-12812801"
+        },
+        {
+          "name": "Analytics India Magazine",
+          "url": "https://analyticsindiamag.com/ai-news/delhis-bharat-semi-raises-24-mn-to-develop-ai-image-sensors"
+        },
+        {
+          "name": "https://ascendants.in/",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQWVlaLXNvQWVGMGQxQ3ZBSGUxazhLSTVNZGZEcmNkMTNhMHdIZ3FSMElSWHQyaFNKWWhWVTFocldxaThyYXBmNFgycnBHRGp4blVvMkNkcE9uNFF1WGhHOVJxbmJael84dTJVRlFRcUlsVmpaV2xRUEg2QVVvVHFkSHpINk9fRWc1anlVZUoyQ2gzb0lvaWREYw?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "4cf91bc8ca",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Teaching robots to search differently when time is short",
+      "takeaway": "Researchers trained a robot navigation model that changes its search plan based on how much time it has. The approach found more objects than a model trained on perfect, map-based routes.",
+      "deck": "A model taught by a limited-view planner found 71.4 percent of reachable objects versus 65.5 percent for a map-based teacher.",
+      "body": [
+        "In time-critical missions, a rescue robot should sprint toward one promising room with 30 seconds left, but explore a broader route given ten minutes. Most vision-language-navigation models, however, are trained and tested with a fixed time limit the robot never sees. The researchers call their task budget-conditioned object search: the robot must find as many distinct target objects as possible before a given action budget runs out.",
+        "They compared two teaching methods. A TSP expert plans near-perfect routes using a full map and true target locations. A Bellman expert maximizes expected reward using only partial views and general knowledge of common room layouts. The map-based expert performed better on its own, but its demonstrations were worse for training. On held-out HM3D indoor scenes, the Bellman-supervised model found 71.4 percent of reachable objects at 2,000 steps, while the TSP-supervised model found 65.5 percent and a pretrained model found 44.8 percent.",
+        "The gap widened as budgets grew longer. The result suggests that optimal routing is not the same as optimal exploration. A good teacher for embodied learning should optimize decisions under partial observability, not imitate routes that only make sense with full knowledge of the environment."
+      ],
+      "why": "This points to a lesson for robot training-data pipelines: demonstrations from experts who can see everything may teach worse behavior than demonstrations from experts who see only what a robot sees. For egocentric video collection, pairing first-person footage with budget and partial-view reasoning could improve learned search and inspection policies.",
+      "hard": "The results are from simulated indoor scenes. It is unproven whether the same training approach transfers to real robots in cluttered or dynamic industrial settings.",
+      "terms": [
+        {
+          "term": "Vision-language-navigation model",
+          "meaning": "An AI system that follows text instructions to move through a space using camera images."
+        },
+        {
+          "term": "Privileged TSP expert",
+          "meaning": "A planner that knows the full map and all target locations, like seeing the whole search area from above."
+        },
+        {
+          "term": "Bellman expert",
+          "meaning": "A planner that learns the best action from limited on-the-ground views, balancing short-term and long-term gains."
+        },
+        {
+          "term": "Partial observability",
+          "meaning": "Only seeing a small part of the environment at any moment, as a robot does through its camera."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Artificial intelligence"
+        ],
+        "task": [
+          "Navigation",
+          "Object search"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.17442"
+        }
+      ]
+    },
+    {
+      "id": "218aa7a0e7",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Fingertip touch displays made teleoperated robot hands move more naturally",
+      "takeaway": "Researchers showed that letting a teleoperator feel the location of contact on their fingertip, not just force, makes them control a robot hand more smoothly and finish tasks faster. The more natural demonstrations also produced better-performing autonomous robot control software.",
+      "deck": "Spatially distributed touch feedback on a fingertip display cut task time and made demonstrations more consistent.",
+      "body": [
+        "Researchers tested a teleoperation setup where an operator remotely controls a two-jointed robot finger that can push back with force. They added a camera-based sensor on the robot fingertip that captures where and how the finger touches a surface. A 32-pixel display on the operator's fingertip then recreates that touch pattern.",
+        "In button-pressing and peg-rolling tasks, operators with spatial touch feedback made fewer unnecessary motions and finished faster. Their demonstrations were also more consistent between different people and trials. Robots trained on these improved demonstrations matched the gains in speed and naturalness.",
+        "This matters because many robot learning teams use teleoperation to collect training data, but the data often reflects jerky, inefficient human control. Adding localized touch could narrow the gap between teleoperated and natural hand movements without changing the core hardware approach."
+      ],
+      "why": "For training-data companies, this points to a real way to raise demonstration quality. If touch feedback reduces wasted motion and variance across operators, vendors collecting egocentric video and robot-action pairs could supply cleaner data with fewer passes per task.",
+      "hard": "The work was demonstrated only on a single two-jointed finger doing simple tasks; it is not yet shown on a full multi-finger hand or for longer, messier real-world jobs.",
+      "terms": [
+        {
+          "meaning": "Controlling a robot remotely, often used to record human demonstrations that train robot control software.",
+          "term": "Teleoperation"
+        },
+        {
+          "meaning": "A computer program that maps what a robot sees or feels to the movements it should make.",
+          "term": "Policy"
+        },
+        {
+          "meaning": "Using tiny cameras inside a fingertip to capture detailed maps of what the finger touches.",
+          "term": "Vision-based tactile sensor"
+        },
+        {
+          "meaning": "A feedback channel where the operator feels force or pressure that mirrors what the remote robot experiences.",
+          "term": "Bilateral force feedback"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Training data"
+        ],
+        "task": [
+          "Teleoperation",
+          "Tactile sensing"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2608.19372"
+        }
+      ]
+    },
+    {
+      "id": "13074a84e5",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Standard Bots builds AI-native industrial robots in New York",
+      "takeaway": "A US firm is making industrial robots that are easier to program using built-in AI. It designs the hardware and software in-house and assembles every robot in New York. A longer-term goal is a fully domestic manufacturing operation.",
+      "deck": "The company sees easier programming, not smarter machines alone, as the key to wider factory use.",
+      "body": [
+        "Standard Bots is one of America's largest manufacturers of AI-native industrial robots. Its CEO, Evan Beard, made the case on The Robot Report Podcast that the country that builds the robots of the future will build everything in the future.",
+        "The company designs nearly all its own components, including actuators, and writes its own hardware, software, and AI. Every robot is assembled at its facility in Glen Cove, New York. The long-term vision is a fully domestic manufacturing operation, from raw metal to finished robots.",
+        "Beard has testified before Congress twice, arguing for a coordinated US robotics strategy. The episode also covered other topics, including whether AI agents can program industrial robots without training data."
+      ],
+      "why": "A push toward AI-native industrial robots and easier programming could shift what tasks get automated, which in turn shapes what real-world manipulation data buyers will need next.",
+      "hard": "The article mostly covers the company's positioning and vision, not independent evidence that its robots work better or fail less than alternatives on real factory lines.",
+      "terms": [
+        {
+          "term": "Industrial robot",
+          "meaning": "A programmable machine used in factories for tasks such as welding, packing, or moving parts."
+        },
+        {
+          "term": "AI-native",
+          "meaning": "Designed from the start around artificial intelligence, rather than having AI added to an older design."
+        },
+        {
+          "term": "Actuator",
+          "meaning": "The part of a robot that moves a joint, similar to a muscle."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Manufacturing",
+          "Industrial robotics"
+        ],
+        "task": [
+          "Robot assembly",
+          "Factory automation"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/the-hidden-reason-most-robots-fail-on-the-factory-floor/"
+        }
+      ]
+    },
+    {
+      "id": "aae8c4832e",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "AI cyber defense startup Corma hits $1 billion valuation in three months",
+      "takeaway": "A startup that uses AI to defend companies against cyberattacks raised new funding at a $1 billion value just three months after launching. A wave of security failures in October showed how much demand there is for automated cyber defense.",
+      "deck": "The company has raised $185 million in total since emerging from stealth in August.",
+      "body": [
+        "Corma, an artificial intelligence cybersecurity company, raised a $125 million Series A round led by the venture firm NEA. The round values Corma at $1 billion just three months after its product launched in August. Total funding now stands at $185 million, with backing also from Sequoia Capital, Khosla Ventures and Coatue.",
+        "Corma builds AI models and software agents for cyber defense. Demand surged after October 21, when several serious security flaws were disclosed on the same day, including in the PHP web programming language, the Node.js JavaScript runtime and the LiteLLM open source tool that routes requests between different AI models.",
+        "The startup describes itself as a frontier AI research lab focused on protection, a positioning meant to set it apart from the many other companies now selling AI security products. Those include Anthropic, OpenAI and Microsoft, as well as newer entrants like Kevin Mandia's startup Armadin."
+      ],
+      "why": "Buyers of robot training data face the same rising threat landscape as any company with valuable digital assets, and this deal shows how quickly capital is moving into automated defense tools. It also signals broader investor appetite for AI systems that act rather than just advise, a pattern relevant to embodied AI and robot learning.",
+      "hard": "Corma is a young company in a crowded market, and it still has to show that its research-focused approach can win customers against established security and AI vendors.",
+      "terms": [
+        {
+          "meaning": "A venture capital funding round for young companies. Series A usually comes after early seed funding and is meant to help the company grow.",
+          "term": "Series A"
+        },
+        {
+          "meaning": "An AI system that is trained to perform multi-step tasks on its own, such as spotting and responding to a security threat.",
+          "term": "AI agent"
+        },
+        {
+          "meaning": "A research organization working at the most advanced edge of AI capability, rather than only packaging existing tools.",
+          "term": "Frontier AI research lab"
+        },
+        {
+          "meaning": "A startup that is operating privately and has not yet publicly announced its product or company details.",
+          "term": "In stealth"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Cybersecurity",
+          "Enterprise AI"
+        ],
+        "task": [
+          "AI security agents",
+          "Threat defense"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/"
+        }
+      ]
+    },
+    {
+      "id": "46d7e1114c",
+      "section": "india",
+      "kicker": "India Desk",
+      "headline": "Five Indian AI startups to watch, from CCTV search to model routing",
+      "takeaway": "Inc42 picked five emerging Indian AI startups to watch, covering CCTV video search, online marketplace automation, sales lead generation, model routing and customer tracking software. The common theme is making existing AI models cheaper and easier to use inside businesses, rather than building new models.",
+      "deck": "Investor money is moving to companies that deploy existing AI models cheaply rather than build new ones.",
+      "body": [
+        "Inc42's November list of AI startups to watch includes five emerging Indian companies. BLUE turns CCTV footage into a searchable layer of objects, events and behaviours, cutting storage needs by up to 90 percent. Kily runs marketplace listings, pricing and ads for consumer brands as an autonomous agent that takes actions rather than only recommending them.",
+        "Revspot builds an AI growth agent called Spot that finds and qualifies leads for high-value sales such as real estate, education and wealth management. RouterPlus is a routing layer that sits between a company's applications and multiple large language models, sending each request to the cheapest model that can handle it. Superleap is rebuilding the customer relationship management system, the software sales teams use to track deals, as an AI-run revenue operating system.",
+        "The selection reflects a wider change in Indian enterprise AI. Rather than funding companies that train new frontier models, investors are backing startups that make existing models cheaper to run and easier to use inside a business. Recent deals include AuxoAI's $20.7 million raise and Blacksmith's $66 million round at a unicorn valuation."
+      ],
+      "why": "The shift from building new models to serving existing ones shows where demand for AI infrastructure is heading in India. For a team supplying egocentric video training data, the same logic applies: buyers will want data that makes deployed models work reliably in real physical settings rather than data for speculative new models.",
+      "hard": "The list is a curated editorial selection, not a ranking, and most of these startups have not published independent performance or customer outcome data.",
+      "terms": [
+        {
+          "meaning": "Large language models are AI systems trained on huge amounts of text to understand and generate language, such as GPT, Gemini, Claude and DeepSeek.",
+          "term": "Large language model (LLM)"
+        },
+        {
+          "meaning": "Routing means sending each request to the most suitable AI model, balancing cost, speed and quality instead of always using the same one.",
+          "term": "Model routing"
+        },
+        {
+          "meaning": "Customer relationship management software is the system a sales team uses to record leads, track deals and manage customer contact.",
+          "term": "CRM"
+        },
+        {
+          "meaning": "Codec here means software that compresses video into a smaller, searchable form by recording objects and events as structured data instead of raw pixels.",
+          "term": "Video codec"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Enterprise AI",
+          "AI infrastructure"
+        ],
+        "task": [
+          "Video analytics",
+          "Sales automation"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "Inc42",
+          "url": "https://inc42.com/startups/ai-startups-to-watch-5-startups-that-caught-our-eye-in-november/"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Learning Latent Goal Costs for Visual World-Model Planning with an Expanding Curriculum",
+      "url": "https://arxiv.org/abs/2611.17529",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Reusing Locomotion Training Recipes Across Humanoids via Body-Aligned Virtual Joints",
+      "url": "https://arxiv.org/abs/2611.18003",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "ESI: An Embodied Self-Improvement Flywheel for LLM-VLA Agents",
+      "url": "https://arxiv.org/abs/2611.18176",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "Heavy Metal Acrobatics: Learning Dynamic Control for Skid-Steer Loaders",
+      "url": "https://arxiv.org/abs/2611.18365",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Vision-Language-Action Models: A Life-Cycle Survey of Design, Training and Deployment",
+      "url": "https://arxiv.org/abs/2611.18372",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "When Will You Hand It Over? A Hidden Start Delay Makes Self-Play Handover Robust to Unfamiliar Partners",
+      "url": "https://arxiv.org/abs/2611.18491",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Training Reasoning Models in Simulation to Natively Use Real Robots",
+      "url": "https://arxiv.org/abs/2611.18562",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Your Beat",
+      "headline": "Geometric Refinement and Distributional Alignment for Sim2Real Roadside LiDAR Detection",
+      "url": "https://arxiv.org/abs/2611.03936",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Policy",
+      "headline": "India & Nine Other Nations Sign Joint Declaration To Safeguard AI Supply Chains",
+      "url": "https://inc42.com/buzz/india-nine-other-nations-sign-declaration-to-secure-ai-supply-chains/",
+      "source": "Inc42"
+    },
+    {
+      "kicker": "Elsewhere",
+      "headline": "28 Zero-Day Findings in Under Two Days. Is Robotics Security Keeping Pace?",
+      "url": "https://spectrum.ieee.org/zero-day-robotics-vulnerabilities-vicone-security",
+      "source": "IEEE Spectrum Robotics"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 9,
+        "sector": "ai",
+        "company": "World Labs",
+        "what": "AI world-model startup",
+        "round": "Acquisition",
+        "amount_usd_m": 8200,
+        "amount_text": "$8.2B",
+        "lead": "AMD",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTkxfN0V1SDdIS09sNmJYeUptZXVUVXd3bDhMMUpIZ1VaWnF3djNDMUlfU1FjN2pRaDZBWDBvMHB0Ql9IdnJNOV9nX0o5OU9KZjVDOWNHM1JSdTVzN1Q1ZDhiVm52ZkdFbDJQTnVjcUJLUW9KY0N5cUFoUy1MaU9vdmdGVzdSLVRzQzJkOW92Vy1oS2Fz?oc=5",
+        "source": "ForkLog"
+      },
+      {
+        "i": 13,
+        "sector": "deeptech",
+        "company": "Plural",
+        "what": "Venture firm investing in European startups",
+        "round": "Funding",
+        "amount_usd_m": 1100,
+        "amount_text": "$1.1B",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.crunchbase.com/venture/plural-closes-billion-euro-fund-european-ai-robotics-defense-startup-investment/",
+        "source": "Crunchbase News"
+      },
+      {
+        "i": 7,
+        "sector": "ai",
+        "company": "Corma",
+        "what": "AI cybersecurity platform",
+        "round": "Series A",
+        "amount_usd_m": 125,
+        "amount_text": "$125M",
+        "lead": "NEA",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 5,
+        "sector": "robotics",
+        "company": "Foundry Robotics",
+        "what": "Autonomous factory assembly robotics",
+        "round": "Series A",
+        "amount_usd_m": 100,
+        "amount_text": "$100M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNZm1QbGpUVzd1RFdwekYwS3JFUlZudTRHZXJPQnlLalJoLTE5OTRxU0hXRnJjWVFXUnNadWd1dmtuUHQ1NzhocTVZYVJjQ2xCSDZwQzJMdWVkNFdXeHpHRFdkUTIyUWItVnFralFjYlpOVkJqSWFTOWw2eF9GS0JPcVZBbDhTY1VFX0FoX1hHdzNMZkVBZWVISGM3R0FJQTR4NUE2TlVad0todkxLNVd2TGV0Qnh0b1FuWWFoNUZjMUJFUXFlVnRiOGpYT0tsdjlRV1ZYZi1WbGRrRXRqamtLQ2xGbw?oc=5",
+        "source": "Defense and Munitions"
+      },
+      {
+        "i": 16,
+        "sector": "robotics",
+        "company": "Expat",
+        "what": "Remote surgery medtech for stroke care",
+        "round": "Series B",
+        "amount_usd_m": 92,
+        "amount_text": "$92M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPY2hwamtRVlowUVJQck1yXzV5b21KeFJjWmFxT1FxUlBscWs4TmRGa3NtX1NsWnotbmlSOC1tYU5RalowUHRJR2g4UjZPX2NITGVDaXZoQUEyTlctM2duNTZlSWRlRDZxTWFPMFBXZFpvMUZYMGp4MkpIdmlSVmw4VkFmdldpTEJuVXdZREtrX3Q1OHUwMXJlbTFwcFpEaUhZTWdSS0MtXzZqWlN1Z21odXc0S3dUMTQ?oc=5",
+        "source": "Startup Daily"
+      },
+      {
+        "i": 0,
+        "sector": "robotics",
+        "company": "Remedy Robotics",
+        "what": "Robotic medical systems for stroke care",
+        "round": "Series B",
+        "amount_usd_m": 62,
+        "amount_text": "$62M",
+        "lead": "DCVC",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOYzlnSi1oZnlLbnh1bnAtS0NHQ1M0a2FCaHVaZlkxM2VhalZCN2taanlBVHJsU0tmcFdZTk11NmR5OTN2LWxSd1pFT0ZFT29qZ21tSzU2STZVWjZURFBxVFRrdzhaenhWYUswQWpJWDdzMFNEMTNTWjFZVHYwdElNMTRuaEN5UTAwWE85ZmZ2ZVdLSTRBVXpTOS01bW9CMGJsQk9rc1JKWWRWSzhQSXVLTFBvdw?oc=5",
+        "source": "MassDevice"
+      },
+      {
+        "i": 18,
+        "sector": "ai",
+        "company": "Dreamteam",
+        "what": "AI-native CRM platform",
+        "round": "Funding",
+        "amount_usd_m": 53,
+        "amount_text": "$53M",
+        "lead": "Together Fund",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 22,
+        "sector": "ai",
+        "company": "Numa",
+        "what": "AI software for car dealerships",
+        "round": "Funding",
+        "amount_usd_m": 45,
+        "amount_text": "$45M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOVlJ3NXVBM3dkMnZYQjVpbU4zMGtlMjVzZmdmcmpLYVVwRWRtYUNxQ1JHaUhxeS1uSXJUZks2Y0xFSDMxM2dORUlzcDNTMWY4SHdsNlZMeU5uT3AtVHZnNl9OT3JGX0ZxSU9feHhIQmlWbEI3T01WQURzRi1tdWpjbmdESTl4V3hsb3hPVg?oc=5",
+        "source": "Fortune"
+      },
+      {
+        "i": 8,
+        "sector": "robotics",
+        "company": "Andromeda Robotics",
+        "what": "Abi care robot",
+        "round": "Funding",
+        "amount_usd_m": 30,
+        "amount_text": "$30M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUjdaeGxONWd2U29MX2lXWmJpRFVUVWNjMlhRT3MzQy1DWDF3SnR0TTVYRzZxRmdZVWJEalpMX1FDb2pqcGpYRXNNbnZsemt3U3loZ1hzaVBGVlpuZFpNeUtpQTdUbWZSMU0xSDBjWUFtUTd4R0pZRWJOZFlUU3NtLTVpMW5BVmVMZ1ZWMTMtM0Y5eVU?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 17,
+        "sector": "robotics",
+        "company": "MedInTech",
+        "what": "Medical robotics startup",
+        "round": "Series C",
+        "amount_usd_m": 24.6,
+        "amount_text": "₩33.8B ($24.6M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBUeGhBUzJ0ZG9xUFcxelRlYXBHQkRiSjdUbDN5RkpCaC0zNWY0b2RtVjBxT2dBRU9OQllIUU9MNkJieU5VbmRaeXJBQzNUUDUtS2xYUC1Gc1Z1TG1SaTJIakZVamg?oc=5",
+        "source": "아시아경제"
+      },
+      {
+        "i": 28,
+        "sector": "ai",
+        "company": "Bevado",
+        "what": "AI property management platform",
+        "round": "Seed",
+        "amount_usd_m": 10,
+        "amount_text": "$10M",
+        "lead": "RET Ventures",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPLUJZOFhXNHowQnkzS2pPT0ZsUFYxbGpWQmEtc2JZN09IODRjUGtVTHBfNkEzYTdoM00yWUV3cGM1Q0JkV1YxenRrTE9BZW5MVkFaUEZWbExhU3hHSEpmZDluWjhMVkZSVzdJNFhENXlHRjFCWmVfX2N1Q1JhdmNBYklXUmpQcDBUeXF6RWVtUWE5NTI5M1BteXEzQ0VCUjVwVWs5ZzYtNWZ1MXktMWlKRVU1MDNNbkx3cThoWlF5WGdUS013QkYyaw?oc=5",
+        "source": "citybiz"
+      },
+      {
+        "i": 4,
+        "sector": "robotics",
+        "company": "Site Bionics",
+        "what": "Physical AI robotics company",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "GreyOrange",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQTTBVTFljZlhRQWVGbUVaSV9qVUtjRkc5YmVEQ2dDSGQzYVBieWlhMzktdlBTbUEyUGR4bTBhXzF1QUt3WDR1czkzQ0tTVDdNdkUycGJxQVpnMzNib3lXWm5ZbklOdW9uVGlwRmxDZTdhb2syTks1bm84SnVpOFdEQkVrZVl5dXEtOUZSOE9yeXg4QnpLREtWS3FaanJXMFVGYVMxMHROa3hral9W?oc=5",
+        "source": "RFID Journal"
+      },
+      {
+        "i": 14,
+        "sector": "robotics",
+        "company": "Swarmer",
+        "what": "Drone software and hardware company",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQMnNIRmRDaW9Bd19sdkdhMHhUdEhLX0hCTW9jUndBd2xpVXBkUWF2N2NVOUJkb0gzNy1ISF9FRFFrLXNnRldvb0Jxb3NmU1pqM0hFYXZHaW9Ycl9GTWMteE1LU3NCMFVVVDFJbGMtaWFuUHhpR0J1NUJ4Q0FJX2llcXQ1bzhheEFjUnhCN3RTQXRlejBQdHRnTGdB?oc=5",
+        "source": "Pulse 2.0"
+      },
+      {
+        "i": 21,
+        "sector": "ai",
+        "company": "Arborum Labs",
+        "what": "Indian AI startup",
+        "round": "Pre-seed",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": true,
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPVFFNRXhxbkM0Nm5TVERJenU0OVI1TTYxXzYzaGM3UzJLZ2VlR09mMXNfT2lZckwxZUFDTUtYUXJDY1IwSmV6a0FIVGtHUVh3MUJWWThaTVU1Y2RHbDFrcXNJNV8zVGxYYVNPZmNCRE91a0t2VUN6ZGhoTTZwWFJCN1hhdHNMZm5ra3JqcWpR?oc=5",
+        "source": "Tech in Asia"
+      },
+      {
+        "i": 30,
+        "sector": "ai",
+        "company": "AthenaHQ",
+        "what": "AI visibility and AEO platform",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Bloomreach",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOUWh3MDZBbEQ3MlFicFVGME9ZVWRuTDN1NWtaR05wSl94dHU1RGR4OWFHUnBLS2czYmtVa3ZTd3h1MjVZYTVCSURwTlkwQ2x5TkRiT215NXZCeDVka2hSNWY1UVdlNTNIb3ZhZWpzSjNWTk91bnItTlNVUmVzajgyZFRHaHZNWnl3UlMyTG9nZ25IZXlwbW90c0ZMMjhTYWljTEVTMXE2VFZtcDhxNmo5UWhmd3I3LUxubE13WlBTNGtBWGR0VEhxWkIzWERNUU54ZTh6Vnd1a1pRaXAzVldld3FUTHE5R3ZQajhqY1J4TlVSOV9EYS1wOUFyOXBIdzVBSi1rdWlXZzJBR0Z2VlJaLTRsMmZZZw?oc=5",
+        "source": "Business Wire"
+      }
+    ],
+    "totalUsdM": 9842
+  },
+  "playground": [
+    {
+      "headline": "Robot Duo Returns Volleys Without Colliding",
+      "body": "Two humanoid robots take turns at the same table in a doubles table tennis match. PingpongDuo uses a planner to pick safe positions while a separate footwork skill keeps the striker lined up for accurate returns. In real tests the pair sustained more than 10 consecutive alternating strikes.",
+      "why": "Coordinated robots sharing tight, fast-paced space opens the door to more natural human-robot teams.",
+      "maker": "PingpongDuo research team",
+      "url": "https://arxiv.org/abs/2610.20579",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "headline": "Smartwatch Grows a Tentacle to Fetch Your Tea Bag",
+      "body": "Researchers at National Taiwan University added a robotic tentacle that emerges from beneath a smartwatch screen. The flexible arm can reach out to pull a tea bag from a cup or hold a drink. It turns a wristwatch from a display into a tiny extra hand.",
+      "why": "Wearable robots could soon handle small physical tasks without you lifting a finger.",
+      "maker": "National Taiwan University researchers",
+      "url": "https://www.hackster.io/news/a-smartwatch-with-a-robotic-arm-up-its-sleeve-1af908e3c732",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "Programmer Turns Conference Badge Into Tiny Photo Booth",
+      "body": "Developer Wes Bos hacked a programmable conference badge into a miniature photo booth. Instead of writing software all day, he got hands-on with hardware and made the badge capture pictures. It is a playful detour from his usual screen time.",
+      "why": "Everyday conference gadgets are becoming versatile enough for spontaneous hardware creations.",
+      "maker": "Wes Bos",
+      "url": "https://www.hackster.io/news/this-conference-badge-is-now-a-tiny-photo-booth-bcbb945ab028",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "Split Mechanical Keyboard Becomes an Ergonomic Game Controller",
+      "body": "Maker Alexi Giovani turned a split mechanical keyboard into a gaming controller by adding thumbsticks. He crowdfunded the design to give desktop players a more comfortable alternative to mouse and keyboard. The thumb is put to work on movement while fingers stay on the keys.",
+      "why": "Blending keyboard precision with controller comfort hints at more personalized input devices ahead.",
+      "maker": "Alexi Giovani",
+      "url": "https://www.hackster.io/news/alexi-giovani-s-gauntlet-family-takes-the-keyboard-and-turns-it-into-a-slick-gaming-controller-9646272b0af4",
+      "source": "Hackster.io"
+    }
+  ],
+  "think": {
+    "collision": {
+      "a": {
+        "kind": "story",
+        "n": 6,
+        "label": "Limited-view teachers make better robot search policies"
+      },
+      "b": {
+        "kind": "story",
+        "n": 1,
+        "label": "Remote surgical robot uses game-style controller"
+      },
+      "headline": "Record Indian hospital and lab inspectors searching cabinets and stores with chest cameras, logging what they could see and how long they had",
+      "body": "Story 6 found that robots learn to search better from teachers who see only what the robot sees, under a time limit, than from teachers with a full map. Story 1 shows hospitals are now open to remote and robotic help in cramped rooms where you cannot see everything at once. A dataset of nurses and pharmacy staff finding supplies in cluttered hospital stores, with each clip tagged by the time allowed and the person's narrated guesses about where to look, would give robot makers exactly the partial-view, time-limited demonstrations that worked in the study.",
+      "who_pays": "Makers of hospital logistics and fetch-and-carry robots, and research labs building search and inspection policies, would pay per hour of tagged footage.",
+      "data_needed": "Head-mounted stereo video of real supply searches, timestamps, a set time budget per task, spoken reasoning transcribed into text, and a record of whether and when the item was found.",
+      "why_fail": "Hospitals may refuse camera access because of patient privacy rules, leaving only staged stockrooms that lack the real clutter buyers want."
+    },
+    "contrarian": {
+      "story_n": 2,
+      "consensus": "Generating corrective training data from a robot model's own failures will reduce the need to collect large amounts of new human demonstrations.",
+      "against": [
+        "The gains were shown on three simulation benchmarks, which are like practice exams; real kitchens and factories produce failures that a simulator cannot recreate faithfully.",
+        "To fix a failure you need a correct example of what should have happened, and for messy real tasks that example usually still comes from a human doing it right.",
+        "Failure mining makes data more targeted, which could increase demand for human recordings, because buyers will order specific, hard-to-capture scenes rather than generic footage."
+      ],
+      "bets_otherwise": "Physical Intelligence, the maker of pi-0, still collects large volumes of real teleoperated robot data, and data vendors selling egocentric and teleoperation footage are betting real human demonstrations stay central.",
+      "settle_it": "A real-world test showing a robot model improved by self-generated failure data matches one improved by an equal budget of new human demonstrations on physical tasks."
+    }
+  },
+  "cost": {
+    "usd": 0.0855,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 5,
+        "inTokens": 29058,
+        "outTokens": 8706,
+        "cost": 0.0073,
+        "models": {
+          "anthropic/claude-haiku-5.5": 5
+        }
+      },
+      "write": {
+        "calls": 10,
+        "inTokens": 14921,
+        "outTokens": 5782,
+        "cost": 0.0406,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 10
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 3240,
+        "outTokens": 1778,
+        "cost": 0.0012,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 1248,
+        "outTokens": 489,
+        "cost": 0.0036,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "think": {
+        "calls": 1,
+        "inTokens": 4089,
+        "outTokens": 827,
+        "cost": 0.0329,
+        "models": {
+          "anthropic/claude-opus-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 245,
+    "unique": 201,
+    "feeds": 29,
+    "failedFeeds": [
+      "Import AI",
+      "Google DeepMind",
+      "r/robotics",
+      "r/LocalLLaMA",
+      "AlleyWatch"
+    ]
+  },
+  "generatedAt": "2026-11-17T00:16:35.986Z"
+}
