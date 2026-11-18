@@ -1,0 +1,1117 @@
+{
+  "date": "2026-11-18",
+  "weekday": "Wednesday",
+  "sunday": false,
+  "number": 21,
+  "paper": "The Morning Servo",
+  "readMinutes": 14,
+  "stories": [
+    {
+      "id": "04d3ec1b70",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Genesis AI raises $500 million to build robots with sensor-glove training data",
+      "takeaway": "Genesis AI, a startup teaching robots manual skills by recording workers wearing sensor gloves and head cameras, raised $500 million. The funding shows serious money is backing human-collected manipulation data, though long-term robot hand reliability is still unproven.",
+      "deck": "The startup collects training data from workers wearing sensor-enabled gloves and headset cameras, then uses the same gloves on its robots.",
+      "body": [
+        "Genesis AI, based in Silicon Valley, announced a $500 million Series A round led by Khosla Ventures, Premji Invest, and Eclipse, valuing the company at $3.5 billion. The startup raised a $105 million seed round in July 2025. Co-founders Zhou Xian and Théophile Gervet met as graduate students at Carnegie Mellon University.",
+        "During a demo at the company's facility, its model operated two off-the-shelf robotic arms to pick up two small boxes, scan them, place them in a larger box, fold and tape it shut, then peel a label off printer tape and apply it to the box. On a second run, the robot dropped a box and struggled to peel the label. A Genesis executive described such mistakes as 'hiccup data' to improve the model.",
+        "The company's strategy is vertical integration: generate its own training data, build its own generative AI model, and design its own humanoid robot called Eno. Sensor-enabled gloves capture force data, which the CEO says is the key to manipulation. More than 100 real workers around the world wear those gloves and headset cameras while working. Robot hands wear the same gloves and are shaped like human hands.",
+        "Genesis said its dexterous hands currently last only a few weeks of regular work before needing replacement. It has built 30 to 40 Eno robots and says a mass-manufacturing contractor has been chosen to start work next year in the U.S., but it would not share production volume or customer names."
+      ],
+      "why": "This deal confirms rising investor demand for companies that gather their own real-world manipulation data, including force feedback from human hands. It is a direct signal that buyers of robot training data will likely want more egocentric video paired with force and tactile information, not just camera feeds, and will pay attention to hand dexterity tasks like packing, sorting, and wire handling.",
+      "hard": "The robot's hands wear out after only a few weeks of regular use, and the company has not shown its flagship humanoid Eno performing the demo or disclosed customer results.",
+      "terms": [
+        {
+          "term": "Dexterous manipulation",
+          "meaning": "A robot's ability to use its hands or grippers to handle objects precisely, like a person picking up, folding, or taping a box."
+        },
+        {
+          "term": "Physical AI model",
+          "meaning": "Software trained to control a robot's physical actions, converting what the robot sees and senses into movements."
+        },
+        {
+          "term": "Series A funding",
+          "meaning": "An early round of investment in a startup, used to scale the business after initial seed money."
+        },
+        {
+          "term": "Simulation",
+          "meaning": "A computer-created virtual environment where a robot's actions can be practiced millions of times without using real hardware."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Industrial AI"
+        ],
+        "task": [
+          "Manipulation",
+          "Training data collection"
+        ]
+      },
+      "score": 9,
+      "sources": [
+        {
+          "name": "TechCrunch Robotics",
+          "url": "https://techcrunch.com/2026/11/17/genesis-ai-raises-500-million-to-deploy-electric-glove-wearing-robots/"
+        },
+        {
+          "name": "Crunchbase News",
+          "url": "https://news.crunchbase.com/venture/robot-factory-workers-genesis-ai-fundraise/"
+        },
+        {
+          "name": "Crunchbase News",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNZF9iLUFxUHpNN09VSk9nUVA0RGdZNk9jZ3U0X3hnLWMyb2hjeldWLV80NTNkWXptQ3pDSlJIdUlud2Y1UTVESV9rS0l6bFZmZmg1SFdPQjJxbXI3ZmVjNVdfZXZ6bVRoN3pUQ0NUUlFGcWtFR1REWXZ5bGVhQmlpdFV3bmdPUQ?oc=5"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxObHhyRC1XRF9xXzdGcUtGZWtOVDdnT01na21ranFlSE1LcnNCVU9PZWltd21oaVpmblZ2djduZzdDNlJIeG93U2ZaM0xmYWd1TkhPRXplek0zRHdOM3BhclhLdXlkVzJGclZ6UmdqYmJKU1Q5aU5ZOXA1c3ZwSktERGlIQW1BNGR0aXE4Nzh6SkdWcEswUVQzOUtPdi04Njg2VHY4ZmswNA?oc=5"
+        },
+        {
+          "name": "AI Insider",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUi15aXlZRmtGN0VuamtqS2l6OEdlXzhURHhFUUlHd0QyWGhteVk4SXFvRVNoeHNmNTlkS1ZRQTRiUm9fc2VmakVNX3M5bkRXdVEwWlRIV3hUUFRmSl9rcUJ0eEFha0U1SFR2SzFvZDdHUGptSkE2ODN0TVVWSURsUDlCa2F1X3VYQ1M2RjlfQWlPUWh1bDUxdmM4UUVpcjh3MzNkaUY4TEhETDg4S0QzRg?oc=5"
+        },
+        {
+          "name": "Dataconomy",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRnp2N2JHODdsN2wyQWJCalNPTVRMZzBXVjR5WVk0RW00aGFlbHNsMmh1YV91dzhLaXZGeF9NUS1BemdhNEptU09QcXE1Q1k2NURrOUdQbG0yQ0lrUDI5eldzUDdrckZOMTZoUk1DeG5EWmRlSGYxRzlMWmh4OWczOXk3am54R01qRnN0SXNsa1FaUQ?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "afd0415ebb",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Boston Dynamics Atlas humanoid gets first semiconductor maker trial",
+      "takeaway": "GlobalFoundries will test Boston Dynamics' Atlas humanoid robot in semiconductor factories starting in early 2027. This is the first trial outside car manufacturing and shows humanoid robots moving into a new industry.",
+      "deck": "The trial at GlobalFoundries begins in early 2027.",
+      "body": [
+        "GlobalFoundries, a large semiconductor manufacturer, will test Boston Dynamics' Atlas humanoid starting in early 2027. The companies did not say how many Atlas robots would be involved, which factories would host them, or what tasks they would perform first. They plan to identify possible uses, check integration needs, and train Atlas for specific jobs.",
+        "GlobalFoundries already uses Boston Dynamics' Spot robot, a four-legged machine, for inspections. Since April 2026, two Spot robots at its Singapore plant have traveled nearly 900 kilometers and finished more than 90,000 inspections in sub-fab areas, with a 99 percent mission success rate. The companies will now add more Spot robots across GlobalFoundries' global network.",
+        "Boston Dynamics has so far focused Atlas on its parent company Hyundai's car factories, where it plans to deploy 25,000 humanoids. It also works with Google DeepMind on AI models for Atlas. The company says it is talking to existing customers in aerospace, logistics, food and beverage, and life sciences. Semiconductor work brings different technical demands than car assembly, such as cleaner environments and precise handling of delicate parts."
+      ],
+      "why": "This signals that humanoid robot makers are expanding from car factories into chip manufacturing, a sector with many repetitive, precision tasks. Demand for training data showing cleanroom work, delicate manipulation, and inspection routines could rise as robot companies chase this market.",
+      "hard": "No tasks, number of robots, or facility locations have been announced, so it is not yet clear what Atlas will actually do or how quickly the trial can produce useful results.",
+      "terms": [
+        {
+          "term": "humanoid",
+          "meaning": "A robot shaped like a human body, with two arms, two legs, and a head, built to work in spaces designed for people."
+        },
+        {
+          "term": "semiconductor",
+          "meaning": "A material used to make computer chips; semiconductor manufacturing means making the chips that power electronics."
+        },
+        {
+          "term": "foundation model",
+          "meaning": "A large AI system trained on broad data that can be adapted to many specific tasks, like controlling a robot."
+        },
+        {
+          "term": "degrees of freedom",
+          "meaning": "The number of independent ways a robot joint or hand can move, which affects how dexterous it is."
+        },
+        {
+          "term": "reinforcement learning",
+          "meaning": "A training method where an AI learns by trial and error in a simulated environment, receiving rewards for good actions."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Semiconductor manufacturing",
+          "Robotics"
+        ],
+        "task": [
+          "Humanoid robot deployment",
+          "Industrial inspection"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/boston-dynamics-atlas-humanoid-lands-first-non-automotive-trial/"
+        }
+      ]
+    },
+    {
+      "id": "3ddd561d3d",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Isomorphic Labs raises $5B to move drug candidates toward clinical trials",
+      "takeaway": "Isomorphic Labs raised $5 billion to push its AI-designed drugs toward human testing. Strong investor backing shows confidence, but the drugs are still years from working in patients.",
+      "deck": "The Series C comes six months after a $2.1 billion Series B.",
+      "body": [
+        "Isomorphic Labs, a drug discovery company spun out of Google's DeepMind in 2021, has raised $5 billion in a Series C round. Greenoaks and Sequoia Capital co-led. Andreessen Horowitz joined as a new investor, with existing backers including Thrive Capital and Temasek also participating.",
+        "The company designs drugs using simulation AI models, building on AlphaFold, the protein-structure prediction system from DeepMind. It says its work has produced \"positive preclinical results\" in oncology and immunology, meaning results in lab tests before human trials. It has partnerships with Eli Lilly, Novartis, and Johnson & Johnson.",
+        "The money will fund further development of its drug-design engine and expansion into new medicine types. This is the first raise since co-founder Demis Hassabis left his role as head of DeepMind to focus on Isomorphic. The company did not disclose a valuation, though Bloomberg earlier reported it was seeking around $50 billion."
+      ],
+      "why": "Large pharma deals point to steady demand for AI-designed drug candidates over the next decade. For a company selling data for robot learning, the deeper signal is that simulation-first approaches are attracting serious capital outside robotics.",
+      "hard": "Preclinical results do not yet prove a drug will work in people; none of the candidates have reached clinical trials.",
+      "terms": [
+        {
+          "meaning": "A system that predicts the three-dimensional shape of a protein from its genetic sequence, which helps researchers understand how it works.",
+          "term": "AlphaFold"
+        },
+        {
+          "meaning": "The stage of testing before human trials, typically involving lab experiments on cells or animals.",
+          "term": "Preclinical"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "AI drug discovery",
+          "Biotech"
+        ],
+        "task": [
+          "Drug discovery",
+          "Protein structure prediction"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/"
+        }
+      ]
+    },
+    {
+      "id": "c76cc3171c",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Human VR demos fix grasp failures that reinforcement learning keeps missing",
+      "takeaway": "Researchers showed a robot grasping policy its past failures, then had a person demonstrate fixes in virtual reality. Feeding those few human examples back into training nearly doubled success on the hardest cases.",
+      "deck": "Fifty-eight human demonstrations doubled success on the hardest grasps without hurting overall performance.",
+      "body": [
+        "A team took an existing grasp generator, Contact-GraspNet, which scores possible grips on an object by learned plausibility rather than by whether the lift works. Reinforcement learning improved average success on unseen objects from 55 percent to 83 percent in simulation.",
+        "But a small set of grasps stayed broken. The researchers built a loop that automatically finds those failures, sends them to a virtual reality app where a person shows where to grip with their own hands, and turns each demo into two grasp points.",
+        "Adding 58 of these human demonstrations nearly doubled success on the stubborn cases, from 24 percent to 45 percent. It also improved similar cases that were never demonstrated, without lowering success on new objects."
+      ],
+      "why": "This points to a cheap data type for robot training: a few targeted human corrections for the specific cases a policy keeps failing, not broad human demonstrations of whole tasks. It also shows egocentric-style human hand data from VR can transfer to robot grips.",
+      "hard": "The work is simulation-only so far. Real depth sensors and real objects add noise and variation that could change how well the demonstrated grasp points transfer.",
+      "terms": [
+        {
+          "term": "Grasping policy",
+          "meaning": "The software that decides where and how a robot should grip an object, based on what it sees."
+        },
+        {
+          "term": "Point cloud",
+          "meaning": "A 3D map of an object's surface made of many measured points, like a dot drawing of its shape."
+        },
+        {
+          "term": "Reinforcement learning",
+          "meaning": "A training method where software learns by trying actions and getting rewards, like points for a successful lift."
+        },
+        {
+          "term": "Virtual reality demonstration",
+          "meaning": "A person wearing a headset performs the task with their own hands, and the computer records where they moved."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Warehouse automation"
+        ],
+        "task": [
+          "Robotic grasping",
+          "Training data collection"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.18919"
+        }
+      ]
+    },
+    {
+      "id": "d8c81256a1",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Robots trained in simulation keep working as a real swarm",
+      "takeaway": "A Belgian lab trained robot swarms in simulation and found they still worked on real machines. The trick was restricting what the robots could learn, so they picked up only behaviors that make sense in the physical world.",
+      "deck": "Constraining what robots can learn in simulation closes the gap between simulated and real behavior.",
+      "body": [
+        "Researchers at IRIDIA, the artificial intelligence laboratory of the Universite libre de Bruxelles, trained a swarm of 20 small wheeled robots entirely in computer simulation, then moved the learned behavior onto the physical machines. Across five collective missions and 250 real-world experiments, the swarms kept working reliably.",
+        "The method works by limiting what the learning algorithm can control. Instead of setting each wheel's speed directly, the algorithm only chooses when to switch among a few pre-tested behaviors, such as moving toward a light or exploring. This stops it from learning tricks that work only in simulation, where friction and sensor noise are imperfectly modeled.",
+        "The constrained swarms substantially outperformed a state-of-the-art method that controls motors directly, which struggled once it left the simulator. The team also found that simpler, more restricted policies transferred better than larger, more flexible ones, reversing a common assumption that bigger models are generally better."
+      ],
+      "why": "The finding that smaller, more constrained policies transfer better challenges a widespread belief in AI that bigger models are generally superior. For robot training-data work, it suggests that buyers may increasingly want data and methods that capture a limited set of reliable real-world behaviors rather than raw, unstructured control data.",
+      "hard": "The approach has only been tested on 20 small e-puck robots in controlled conditions; larger swarms, other platforms and less predictable environments have not yet been tried.",
+      "terms": [
+        {
+          "meaning": "The mismatch between how a robot behaves in a computer simulation and how it behaves on a physical machine, caused by differences in friction, sensor noise and mechanical imprecision.",
+          "term": "Reality gap"
+        },
+        {
+          "meaning": "A machine-learning method where a robot tries actions and learns from rewards or penalties, becoming better through many rounds of trial and error.",
+          "term": "Reinforcement learning"
+        },
+        {
+          "meaning": "A robot's learned rule for deciding what action to take given what it senses at any moment.",
+          "term": "Policy"
+        },
+        {
+          "meaning": "The process of moving a model trained in simulation onto a real robot and having it perform correctly there.",
+          "term": "Sim-to-real transfer"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics"
+        ],
+        "task": [
+          "Robot learning",
+          "Simulation"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "Robohub",
+          "url": "https://robohub.org/robot-swarms-trained-by-trial-and-error-in-simulation-keep-working-on-real-robots/"
+        }
+      ]
+    },
+    {
+      "id": "316dec87ff",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Tactile-driven method lets humanoid turn doorknobs after training only in simulation",
+      "takeaway": "A humanoid robot learned to open round doorknobs using only simulated practice, then did it on a real robot with no extra real-world training. Touch-based adaptation made it better than standard methods, suggesting dexterous contact tasks can be learned more cheaply in simulation.",
+      "deck": "A humanoid learned to turn round doorknobs in simulation and then did it on real hardware with no extra real-world training.",
+      "body": [
+        "The system is called Tactile-Driven Motor Adaptation, or TMA. It structures robot learning around what can be observed through touch sensors in the fingers. It uses the cone shape of fingertips as a built-in hint for how to represent contact when gripping an object. The robot then adjusts its motors online based on the recent history of touch signals.",
+        "A policy for controlling the upper body and hands was trained entirely in simulation, alongside a separately pretrained walking controller. The two work together so the robot can turn a doorknob while keeping its whole body stable. The approach transferred to a real Unitree G1 humanoid with BrainCo Revo2 multi-fingered hands without any additional real-world training, what the researchers call zero-shot transfer.",
+        "In tests across four commercial round doorknobs, TMA substantially outperformed two baselines: a standard method called Rapid Motor Adaptation and a simpler reactive tactile policy. Round doorknobs are a hard benchmark because they require a stable multi-finger friction grip, enough torque to turn without slipping, and controlled pushing force, all while staying balanced."
+      ],
+      "why": "Forceful multi-finger manipulation with touch feedback is directly relevant to data collection for robot foundation models. If such skills can be learned in simulation and then transferred to real humanoids without costly real-world training runs, it points to specific tactile and dexterous-hand data that robot builders will likely need more of, especially for contact-rich industrial and commercial tasks.",
+      "hard": "The work focuses on one benchmark task, round doorknob opening, so it is not yet clear how well the method generalizes to other forceful multi-finger manipulation tasks.",
+      "terms": [
+        {
+          "meaning": "A robot control method that changes motor behavior on the fly based on sensor history rather than a fixed script.",
+          "term": "Motor adaptation"
+        },
+        {
+          "meaning": "Training a robot entirely in a simulated environment and then running the same learned behavior on real hardware without additional real-world training.",
+          "term": "Zero-shot sim-to-real transfer"
+        },
+        {
+          "meaning": "A learned decision-making system that maps what a robot senses to what actions it should take.",
+          "term": "Policy"
+        },
+        {
+          "meaning": "A design hint baked into a learning system to guide it toward sensible solutions, here using fingertip cone shapes to structure contact information.",
+          "term": "Inductive bias"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Humanoid robots"
+        ],
+        "task": [
+          "Manipulation",
+          "Sim-to-real transfer"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.18976"
+        }
+      ]
+    },
+    {
+      "id": "1a4f49f1ba",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Study calls for disclosure labels on robot demo videos",
+      "takeaway": "A large six-country study found people cannot tell if robot videos are real or computer-generated, or if a robot acts on its own. Adding clear labels in videos markedly improved public understanding of what robots can actually do.",
+      "deck": "A six-country study with 9,341 people found most could not tell CGI from real footage or autonomy from human remote control.",
+      "body": [
+        "A paper on arXiv from researchers including Nozomi Nakajima argues that robotics and AI researchers should adopt disclosure standards for demonstration videos. These curated videos are now the main way the public sees progress in robotics, because few people can directly access the technology.",
+        "The authors ran a large pre-registered experiment with 9,341 participants across six countries. People struggled to tell real footage from computer-generated imagery, and struggled to tell autonomy from teleoperation, where a human remotely controls the robot. This led people to overestimate how well robots can perform tasks and navigate real environments.",
+        "The researchers designed a disclosure intervention, such as labels stating whether footage is real and whether the robot is autonomous or teleoperated. They found that clear disclosures significantly improved people's ability to judge visual and behavioral authenticity, and improved their understanding of robot capabilities."
+      ],
+      "why": "The finding that the public cannot distinguish autonomy from teleoperation or real footage from CGI reinforces a known problem in robot training-data supply. The demand for trustworthy, clearly labeled data is likely to rise if funders and research groups adopt these disclosure norms, and vendors that already log how footage is collected may be better placed to serve buyers.",
+      "hard": "The work is a proposal in a preprint and has not been peer-reviewed, and it does not establish whether the community would adopt such disclosure standards.",
+      "terms": [
+        {
+          "meaning": "A robot that works inside its own body using AI to sense and act in the physical world.",
+          "term": "Embodied AI"
+        },
+        {
+          "meaning": "When a human operator remotely controls a robot, so the robot is not acting on its own.",
+          "term": "Teleoperation"
+        },
+        {
+          "meaning": "An experiment whose plan and analysis are registered before data is collected, reducing cherry-picking of results.",
+          "term": "Pre-registered experiment"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics research",
+          "AI research"
+        ],
+        "task": [
+          "Research",
+          "Public communication"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.18982"
+        }
+      ]
+    },
+    {
+      "id": "7e206922e6",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Method turns glasses video into robot training data without a robot",
+      "takeaway": "Researchers built a pipeline that converts ordinary egocentric video of people doing tasks into physically verified robot training examples. A humanoid learned loco-manipulation tasks from this converted data alone, with no real robot demonstrations.",
+      "deck": "The system reconstructs a 3D scene from glasses recordings, then adapts human motion to a robot body.",
+      "body": [
+        "A team has built a method called Ego2Sim2Humanoid that turns egocentric glasses recordings into robot training trajectories. The input is ordinary first-person video of a person doing a task, with no robot, no handheld gripper, and no operator teleoperating a robot in real time.",
+        "The pipeline works in stages. An agentic real-to-sim stage reconstructs a textured 3D scene from the recorded RGB-D and head streams, fills in unseen surfaces, and predicts contact bands on objects. A grasp planner turns each contact band into a robot wrist pose and finger closure. Bilevel stance optimization plans collision-free standing postures, and a whole-body motion generator produces lower-body walking and out-of-view arm motion. A reinforcement-learning tracking policy is trained in simulation under agent-designed semantic rewards.",
+        "The rendered scene is then viewed through the robot's onboard camera along the optimized rollout, yielding synchronized robot-view images, proprioception, and verified action labels. Fine-tuned only on this converted dataset, with no real-robot demonstrations, GR00T N1.7 performed loco-manipulation tasks autonomously on a Unitree G1 humanoid."
+      ],
+      "why": "This directly lowers the cost of producing robot training data. If egocentric video of people working can be converted into useful robot demonstrations, buyers may need less teleoperation data and can instead source human first-person footage at scale.",
+      "hard": "The work is a preprint and has not yet been peer-reviewed. The paper does not state how well the learned tasks transfer to new scenes or objects beyond the demonstrations.",
+      "terms": [
+        {
+          "term": "Visuomotor policy",
+          "meaning": "A learned control system that maps what a robot sees to how it should move."
+        },
+        {
+          "term": "Egocentric video",
+          "meaning": "First-person footage from a head- or chest-mounted camera showing the wearer's hands and surroundings."
+        },
+        {
+          "term": "Loco-manipulation",
+          "meaning": "Doing whole-body tasks that combine walking and moving around with using the arms and hands to handle objects."
+        },
+        {
+          "term": "Reinforcement learning",
+          "meaning": "Training a system by letting it try actions in a simulator and rewarding behavior that meets set goals."
+        },
+        {
+          "term": "GR00T N1.7",
+          "meaning": "A robot foundation model from NVIDIA that generates robot actions."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Humanoid robots"
+        ],
+        "task": [
+          "Training data generation",
+          "Egocentric video conversion"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.19196"
+        }
+      ]
+    },
+    {
+      "id": "985ba42c62",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "California DMV bars Waymo robotaxis from state freeways",
+      "takeaway": "California has stopped Waymo's driverless cars from using freeways after repeated incidents in construction zones. Waymo will also pause freeway driving elsewhere while it works on fixes for detecting roadwork and emergency scenes.",
+      "deck": "The order follows incidents where Waymo cars entered active construction closures and passed a police traffic stop.",
+      "body": [
+        "The California Department of Motor Vehicles (DMV) issued the order on Nov. 11. It said Waymo autonomous vehicles pose an imminent hazard to public safety because of recurring incursions into active construction zones where workers and equipment are present.",
+        "Waymo said the order only applies to freeways and its city-street ride-hailing will continue, serving over half a million trips each week. It also temporarily restricted freeway operations in other markets while it evaluates performance.",
+        "This follows a prior restriction and recall in June after seven Waymo vehicles drove into closed lanes in San Francisco. The recall was meant to improve performance in freeway construction zones, but the DMV says problems recurred."
+      ],
+      "why": "Construction-zone navigation is one of the hardest remaining perception and planning problems for self-driving cars, and it shows a concrete failure mode: reading temporary cones, barriers and workers. This is a clear example of a real-world edge case that needs more varied training data.",
+      "hard": "Waymo has not yet shown it can reliably detect and respond to construction zones and emergency vehicles, despite a recall meant to fix those issues.",
+      "terms": [
+        {
+          "term": "Autonomous vehicle (AV)",
+          "meaning": "A car or truck that drives itself using sensors and software, without a human controlling it."
+        },
+        {
+          "term": "Operational design domain",
+          "meaning": "The specific roads, weather and situations where a self-driving system is designed to work safely."
+        },
+        {
+          "term": "Safety recall",
+          "meaning": "A formal process where a manufacturer must fix a defect that affects vehicle safety."
+        },
+        {
+          "term": "Robotaxi",
+          "meaning": "A driverless car used for paid ride-hailing trips, like a taxi without a driver."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Autonomous vehicles"
+        ],
+        "task": [
+          "Navigation",
+          "Perception"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/california-dmv-bars-waymo-avs-from-operating-on-the-states-freeways/"
+        }
+      ]
+    },
+    {
+      "id": "bebb381688",
+      "section": "india",
+      "kicker": "India Desk",
+      "headline": "Coimbatore robotics firm GOAT reaches Rs 8 crore revenue, serves Toyota and Volvo",
+      "takeaway": "GOAT Robotics, started by friends in Coimbatore, has become an eight-crore-rupee business. It now supplies large global manufacturers like Toyota and Volvo.",
+      "deck": "The Coimbatore firm lists Toyota and Volvo among its customers.",
+      "body": [
+        "GOAT Robotics, a Coimbatore company, has grown into an Rs 8 crore business. It started from a small two-bedroom apartment. The company now serves global clients including Toyota and Volvo.",
+        "The firm was founded by friends from Coimbatore. It provides industrial automation and robotics services. Details on its exact products were not available in the source material.",
+        "The reported revenue of Rs 8 crore is roughly 950,000 US dollars. This is small by global standards but signals steady commercial traction in India's industrial robotics market."
+      ],
+      "why": "It is a concrete example of an Indian robotics firm moving beyond local pilots to steady revenue from major global manufacturers. This shows where industrial demand for automation is becoming commercial, not experimental.",
+      "hard": "The source did not include specifics on what the robots do, so the depth of technical capability is unclear.",
+      "terms": [],
+      "tags": {
+        "industry": [
+          "industrial robotics",
+          "automation"
+        ],
+        "task": [
+          "industrial automation"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "YourStory",
+          "url": "https://yourstory.com/2026/11/coimbatore-goat-robotics-startup-success-story-8-crore-turnover"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Robustness as a Transferable Skill: Cross-Task Adversarial Defense for Vision-Language-Action Policies",
+      "url": "https://arxiv.org/abs/2611.18702",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "MoViC: Real-Time Humanoid Whole-Body Control from Monocular Video Streams",
+      "url": "https://arxiv.org/abs/2611.19998",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Introducing GPT-6.2 Astra and Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "source": "OpenAI"
+    },
+    {
+      "kicker": "Elsewhere",
+      "headline": "AI Is Giving Optical Computing Another Shot",
+      "url": "https://spectrum.ieee.org/optical-computing-ai",
+      "source": "IEEE Spectrum AI"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Passage-Focused Soft Coordination for Hierarchical Multi-Robot Navigation in Bottleneck Environments",
+      "url": "https://arxiv.org/abs/2611.18877",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Refinement vs. Replanning: Inference Compute Allocation in Robot Policies",
+      "url": "https://arxiv.org/abs/2611.19034",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Certify, Then Select: Viability-Aware Runtime Steering of Frozen Diffusion Policies",
+      "url": "https://arxiv.org/abs/2611.19047",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "RoboCoEvo: Expanding Robot Capabilities through Agent-Policy Co-Evolution",
+      "url": "https://arxiv.org/abs/2611.19081",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "Self-Calibrating Vision-Agent-Action: Deploying Pick-and-Place to New Robot Cells without Demonstrations or Fine-Tuning",
+      "url": "https://arxiv.org/abs/2611.19198",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Your Beat",
+      "headline": "HospitalBench: Diagnosing Where and Why Embodied Agents Fail on Long Hospital Task Chains",
+      "url": "https://arxiv.org/abs/2611.19274",
+      "source": "arXiv cs.RO"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 2,
+        "sector": "ai",
+        "company": "Ineffable Intelligence",
+        "what": "AI company founded by Demis Hassabis",
+        "round": "Funding",
+        "amount_usd_m": 5000,
+        "amount_text": "$5B",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPTFpzOHFHREVGLWRCYk1xQlppZXlkZTJtQ3dsV3JqNHM3al9SVF82UGtNUk52Y2diUTlXYUt2QWZ1MFRnN3dlbEpLQUdiYWc4aDgtOERaLVJLckgzaUFTOTBtMEo0NUcxckFWSy1yRThTSkx6Z3lfV3dQdFBaU1pBelpncTB1d0nSAYwBQVVfeXFMTUtFN2U2MHg1TlE2aVZSa1pRUTQ1ZUY0blFyV1RKaFJHWWVTQlRTeEh5cG0temdzTmFHR2d4MVZlMXpNQ1l4eHBkRXJwOFd6ZUhQMk9pOUI5cWZFdUE4S3hoSngwNXZxTndONlM1cUgycFZZOUttZzdVc056eXF3Q18xbjBOLTZQX2w4Qy0?oc=5",
+        "source": "CNBC"
+      },
+      {
+        "i": 5,
+        "sector": "deeptech",
+        "company": "Isomorphic Labs",
+        "what": "AI drug-discovery platform",
+        "round": "Series C",
+        "amount_usd_m": 5000,
+        "amount_text": "$5B",
+        "lead": "Sequoia and Greenoaks",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWHViVURwTmZ3UG1oVms0OERiTUJJV1hFTjlPVDdyQUs4aDF1bE9HeGhiRVdoUXFiSWNCaXRQWUM4clF6b3h6SC01M1laV1ljOTFVX3doZmF5bEdneVJtdldWZVVHN2k0ZnptbjB4cGpkT1ZBeWNIb09Ma1IyMTRkbmNCU00xQXZmVzVrQUxuWmpac2JVVFpJU0xueXpjTXRSZEY3MXZQOGRUQXRnV0lWenBBMml5RkdyQmo5Mw?oc=5",
+        "source": "MLQ.ai"
+      },
+      {
+        "i": 36,
+        "sector": "deeptech",
+        "company": "Avio",
+        "what": "Italian rocket builder",
+        "round": "Acquisition",
+        "amount_usd_m": 2214,
+        "amount_text": "€2.05B ($2.2B)",
+        "lead": "ICEYE",
+        "india": false,
+        "url": "https://techfundingnews.com/iceye-bids-e2-05b-for-avio-to-bring-satellites-and-rockets-under-one-european-roof/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 0,
+        "sector": "robotics",
+        "company": "Genesis AI",
+        "what": "Robots learning physical tasks from human movement",
+        "round": "Series A",
+        "amount_usd_m": 500,
+        "amount_text": "$500M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/17/genesis-ai-raises-500-million-to-deploy-electric-glove-wearing-robots/",
+        "source": "TechCrunch Robotics"
+      },
+      {
+        "i": 19,
+        "sector": "ai",
+        "company": "AI company backed by Nobel Laureate",
+        "what": "AI company with Nobel laureate backing",
+        "round": "Funding",
+        "amount_usd_m": 454.5,
+        "amount_text": "¥33.3B ($455M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9RTGdrNXRIdjcxdXlSZkV4a2U3R0MwVkdHUUhHOFlhampYOWpVWDIza3JTUWd3ZzllbzNhVjNXUXlJM0FLVXYzUllRZVN6UFM5bzYw?oc=5",
+        "source": "36Kr"
+      },
+      {
+        "i": 16,
+        "sector": "deeptech",
+        "company": "Science Corporation",
+        "what": "Brain-computer interface technology",
+        "round": "Series D",
+        "amount_usd_m": 400,
+        "amount_text": "$400M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/17/science-corporations-brain-tech-is-worth-3-5-billion-after-new-funding/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 20,
+        "sector": "ai",
+        "company": "Model ML",
+        "what": "AI agents for banks",
+        "round": "Funding",
+        "amount_usd_m": 250,
+        "amount_text": "$250M",
+        "lead": "General Atlantic and QED",
+        "india": false,
+        "url": "https://techfundingnews.com/londons-model-ml-raises-250m-from-general-atlantic-and-qed-to-put-ai-agents-inside-banks/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 41,
+        "sector": "deeptech",
+        "company": "Form Bio",
+        "what": "Computational biology software platform",
+        "round": "Acquisition",
+        "amount_usd_m": 230,
+        "amount_text": "$230M",
+        "lead": "Astromech",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQM2o1RklrVjNDVDlydGZOcWJpc1BWQjU5YXlzMm5uY29xTDI4M05lQ0JnSDhQWFdPb3Z4WEZUWTVwZzV1N19nOFBwZVpHX2NzQk43WWo3cmdzaEhJdTFYMWQ2LVdLYkNtYUJ5cHlCUlFhandlNkdKWjAybHdiLVF4T1M2N0tzXzFlMk1oRnhXc1luZURmSGZQZllGZjhVQQ?oc=5",
+        "source": "Dallas Innovates"
+      },
+      {
+        "i": 26,
+        "sector": "ai",
+        "company": "Noeri",
+        "what": "Enterprise AI that rewrites itself",
+        "round": "Funding",
+        "amount_usd_m": 110,
+        "amount_text": "$110M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5CLW5ldmdpSHk3VWZuNUlfN3FqNnJpXy04R0NUamRNMHZNQlpXbXZrOUlTMG96NWNzZ0dnSlMydFRabmxJajE0TE1WZ0RaVlZtRjJTUlhfRVdPZHc0UFV3Q3RvZEVvdnRXUzZFYjJrWWRaX3B3dEE?oc=5",
+        "source": "BigGo Finance"
+      },
+      {
+        "i": 37,
+        "sector": "deeptech",
+        "company": "Tiberius Aerospace",
+        "what": "Long-range ramjet artillery shells",
+        "round": "Series A",
+        "amount_usd_m": 85,
+        "amount_text": "$85M",
+        "lead": "Lakestar",
+        "india": false,
+        "url": "https://techfundingnews.com/defence-unicorn-tiberius-raises-85m-to-scale-its-long-range-ramjet-artillery-shell/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 9,
+        "sector": "robotics",
+        "company": "Tutor Intelligence",
+        "what": "Robots performing work tasks",
+        "round": "Funding",
+        "amount_usd_m": 75,
+        "amount_text": "$75M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQY2dVbF9YUUNvb1hLOVVteGtCd0pZVXJFX1BXZGZtaE54ZjFmUTV3TTYxd202djdDLXpzYWJ1dmNLQUJWazZJazcxWlY2X0luSlRhQlBxQXlPd1F1S0FVRUpscnRDMGd5dTNRTVNoTk1fSlVhNWdmb29xVnFhMVZBZW9nTHhROXJyTXFOOG9fRVNhakl1NFp4Q21lcjQ0SVFVN1JfN0VEalE1TW5qdjdUN09wMjRfaVIyZ1E?oc=5",
+        "source": "MarketScale"
+      },
+      {
+        "i": 12,
+        "sector": "robotics",
+        "company": "UniX AI",
+        "what": "Physical AI robotics",
+        "round": "Pre-A",
+        "amount_usd_m": 75,
+        "amount_text": "$75M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNaHNPNFduaFVsOHNpQ2NfbldNX0plMnU1ckV5SVN5TVVLdWNOU1lQb3dxR1NWWjlNQlhuR3JWRi12NjdvUHQ2QkFnUjZLM1RHdnpfeW9MOVpfZThSRmFxcEYyS1RweENWUTBuVE5RbUJvQkpIVTkwV2hjYXg1NG1tWWxCVFNscGV2alM0YUJCdEtWemd1TnRGNEtKUUlad09TYWFqYTVSUjduenJvcjE5WmJaQm80b09PRVp1cUs5UEdRMmQ5WURreXk0ck1kd2p5Y3ZjYjZB?oc=5",
+        "source": "AI Insider"
+      },
+      {
+        "i": 13,
+        "sector": "robotics",
+        "company": "Polymaker",
+        "what": "3D printing materials for robotics",
+        "round": "Series B",
+        "amount_usd_m": 70,
+        "amount_text": "$70M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZkpSTjBDZlAwU1h2UVpiUkNIMEdxM1VUR2ZkZlFfQW9wNjdzZVdRc2d6d0V1TFJKNWQ3U1dCNXlWd0llZEw5VVQ4VlVlNXpFVDdWRjRkbFU5SVU2c0FXR3RORjNYblphTml4ZVJpT3l3Z2hzb0VQWnozMXNUeDhQWFJHTW9iZ2NqV1ZRa3JQZ3FwREpRdFlQR191TUxTZw?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 21,
+        "sector": "ai",
+        "company": "Remanence",
+        "what": "Turns AI agent data into owned models",
+        "round": "Funding",
+        "amount_usd_m": 30,
+        "amount_text": "$30M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/ex-h-company-researchers-remanence-raises-30m-to-turn-ai-agent-data-into-models-companies-own/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 10,
+        "sector": "robotics",
+        "company": "Promise Robotics",
+        "what": "Robot factories building homes",
+        "round": "Funding",
+        "amount_usd_m": 29,
+        "amount_text": "C$40M ($29M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSVdCV3haSUd1WTRTdmdmVmZPZXJYbWFpR0x5SkZBc0JoOEVXUHdNUlh6dk5Sb3V2YkVrUVlHRlRWaEE0d2hOZTNQZk5yRDhwTC1RXzFpeDZESWt0b1owVFRLbV9hZHZERTU5WENPUHA4eUYxZENKV1FKREYxTG5jNTVEbDdMZmc?oc=5",
+        "source": "The Next Web"
+      },
+      {
+        "i": 27,
+        "sector": "ai",
+        "company": "Aevius",
+        "what": "Clinical intelligence platform",
+        "round": "Funding",
+        "amount_usd_m": 22,
+        "amount_text": "$22M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQWEowX0tyTjA3U2V1YkpCeUNCMWk5bFUteVRGS0JzMUtaSTRZT3VPeTFyNEJ2Vi01MmhKbzNMbk5CU0dpakExR01MX0lqc1hlbmNpY05vNWdOZGNRSUQ2ZEMyX0tzdTJFM1BTenA3Y2JfODA3OU11Vkl3ZVUtTzAwbmhvMzZCdmREMXVZa0hmRFZhSE1JQ1VF?oc=5",
+        "source": "Axios"
+      },
+      {
+        "i": 18,
+        "sector": "ai",
+        "company": "SPARETECH",
+        "what": "AI spare parts inventory management",
+        "round": "Series B",
+        "amount_usd_m": 20,
+        "amount_text": "$20M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPYkp5SUZRR3BvY2U2Mzl5c28xMTVpTlhFaFZ0dlpQOWJEZmk4SDF0dDVTbUhoX0RfNTVCcWhZOFNDblhfZklqdGJwV3NRMGwzaXFNbzBnTXNYYXU3VU4tNzNYRVp6eXZKSmxCUnNpdng0cC1Ua3FqYXVCQldGZkxESGJmTTZ4dWFPTmdWdUJuQUY0QkZocUg0NXI2NUl1MFNwUFpKbnJGNjRvbVoyYzdSZ3RuamdubGZGM0dV?oc=5",
+        "source": "AI Insider"
+      },
+      {
+        "i": 31,
+        "sector": "ai",
+        "company": "Voyage Labs",
+        "what": "Specialized AI travel assistant",
+        "round": "Funding",
+        "amount_usd_m": 12,
+        "amount_text": "$12M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/17/voyage-labs-raises-12-million-for-a-specialized-ai-travel-assistant/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 40,
+        "sector": "ai",
+        "company": "Fermat",
+        "what": "AI fashion design platform",
+        "round": "Seed",
+        "amount_usd_m": 8,
+        "amount_text": "$8M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/fermat-raises-8m-seed-as-ai-fashion-platform-triples-revenue-and-prepares-new-york-expansion/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 17,
+        "sector": "robotics",
+        "company": "Nomadic",
+        "what": "Drones landing on live power lines",
+        "round": "Funding",
+        "amount_usd_m": 6,
+        "amount_text": "$6M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOY0JjSUdxMkY2TVJXNFFRLXRpVER2WTN0Sm1uWTJNak9NZzhXRkJnRmRGXzdybEpGeU9OVm00MXZ6eTViWHFLa3VNNmZmbW1aSlhYc3dSS0U1WTI1ZTlQd0tuV0wwNnNYYzJIdXJxM3dISkxROFJKMGZvSXdRTUZ4RjNwaWx1VTZSbmc?oc=5",
+        "source": "DroneXL"
+      },
+      {
+        "i": 30,
+        "sector": "ai",
+        "company": "Pedestal AI",
+        "what": "Agentic AI for supply chains",
+        "round": "Funding",
+        "amount_usd_m": 4.7,
+        "amount_text": "$4.7M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 35,
+        "sector": "ai",
+        "company": "Karta AI",
+        "what": "AI startup",
+        "round": "Seed",
+        "amount_usd_m": 3.24,
+        "amount_text": "₹28.52 Cr ($3.2M)",
+        "lead": "Peer Capital and Cedar Hill Capital",
+        "india": true,
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPUmhia1U5SFZBRFYwSGk4MHRpNm9TeldPNGV3b1dlT3pJdExTQnBON3djUDhDa0FMYjQ5RjZwUnM3Y3JiRExUMzhMWWhFZVZFeVRROUJNb1lFbTRWOEdYS1RLSGRUdlhZcTZUV0ZCSEdJR0xWTmpxMjVld1pjb3ROQU1DTDdLZGY1TkRSd1lKcVRhVUprZFhjNE96dGNYWmtRMHdfTHcta3lqNkRpQURRT3Z2dkdMZDZjR2FBVV9xQXVfeTJDN3p1S3M4WDIwcVJBMG80VXZsVU1ydTlxZHZPVEtR?oc=5",
+        "source": "Indian Startup Times"
+      },
+      {
+        "i": 39,
+        "sector": "deeptech",
+        "company": "Asynchronics",
+        "what": "Spacecraft digital twins",
+        "round": "Seed",
+        "amount_usd_m": 3.1,
+        "amount_text": "$3.1M",
+        "lead": "b2venture",
+        "india": false,
+        "url": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 43,
+        "sector": "ai",
+        "company": "Sqwish",
+        "what": "Tunable decision model AI",
+        "round": "Funding",
+        "amount_usd_m": 3,
+        "amount_text": "$3M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBnRVRURHNKZFc0UVNhNm5uUzAtSzUxSkk1dk1KT1VyTUZBQTRwZk9MY3d6czZkYlpHN0hsTkQzRDFXclc2UTg0ZENXREZ5dVFkU0dtSHkzQWM?oc=5",
+        "source": "www.tokenpost.com"
+      },
+      {
+        "i": 38,
+        "sector": "ai",
+        "company": "RHISE AI",
+        "what": "Personal AI assistant Lucie",
+        "round": "Angel",
+        "amount_usd_m": 2.87,
+        "amount_text": "€2.66M ($2.9M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/rhise-ai-raises-e2-66m-with-backing-from-an-early-google-investor-to-build-europes-personal-ai/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 15,
+        "sector": "ai",
+        "company": "CountAI",
+        "what": "Industrial AI for manufacturing",
+        "round": "Seed",
+        "amount_usd_m": 1.14,
+        "amount_text": "₹10 Cr ($1.1M)",
+        "lead": "Equirus InnovateX Fund",
+        "india": true,
+        "url": "https://entrackr.com/snippets/equirus-innovatex-fund-leads-rs-10-cr-seed-round-in-deep-tech-startup-countai-12816386",
+        "source": "Entrackr"
+      },
+      {
+        "i": 32,
+        "sector": "ai",
+        "company": "Lemonpeel",
+        "what": "AI video production platform",
+        "round": "Pre-Seed",
+        "amount_usd_m": 1,
+        "amount_text": "$1M",
+        "lead": "Shastra VC",
+        "india": true,
+        "url": "https://entrackr.com/snippets/ai-video-production-startup-lemonpeel-raises-1-mn-in-pre-seed-round-led-by-shastra-vc-12816726",
+        "source": "Entrackr"
+      },
+      {
+        "i": 23,
+        "sector": "robotics",
+        "company": "Syntric Medical",
+        "what": "CT-guided biopsy robot",
+        "round": "Pre-Seed",
+        "amount_usd_m": 0.54,
+        "amount_text": "€500K ($0.5M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOek1mem5NVEY3ME5Peld0TFdiMDdLODBDZkRXMDNXSmV3STZsY2R4aXRDS3A2cmpKd1BrMGEtaGw3N3RfQVJYQkpJd0lmYXV3UDcwbWhDUGVhV0E2T0FNU0llTWl3RFRKTHVsMl9wRHNNRVhRRDJrYkMxQUhienVoMUxZLU5wYWlTOHplbldQN2kxb0QyNlVGeElvMS1xdw?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 11,
+        "sector": "robotics",
+        "company": "Warehouse Robotics Firm",
+        "what": "Warehouse automation robotics",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Witron",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOek5CLU5mUmRXYVdqQm9vb2hNVmNhMXZ6RlpOdURBTWdoV0VTTmw0R3c1dTRCcHhfcmtxYXR1ZEdadllWS1RaTDdYbmRNZ09HNzgyNk5jU2pabFJKTHBiTFBKdzlxRUVlZVJfbWs3dTNMRGpoc2lENW5lQnVmX2pQOWVERDRhM3VQY3Zuc25KSXQtMnJ6M0JuUlExdzV3a3lRWnVCVXpENzQ?oc=5",
+        "source": "Logistics Business"
+      },
+      {
+        "i": 22,
+        "sector": "robotics",
+        "company": "Verkko Robotics",
+        "what": "Robotics startup",
+        "round": "Seed",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Elarion Partners",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOYmtNYXBtVzdrUmxIX0pqYTExNDd6MmdodWlBc3pRdm1UMWx2VnlZekgzRW95MDNBOTlVRm10MXo5SldGanphZHVUYVh3bXRGNXk3emZQNDZsbzRNUWhXUGFaemxjalphMGJQSXJwTDFSZTJUZ2tvVTI2cWNBTklxU3JtMVdOQUs3Unp4d1VDdkpCWGpQRWc?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 24,
+        "sector": "robotics",
+        "company": "Duflex",
+        "what": "Industrial robotics specialist",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "SPIE",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQk42c2pVWHpRbC1wQ0M3V3JoMFNHc3c0OFAwSHdvRktYV1pGcENVMlB2WjR1VnpkS0FjSGVIbFpqR1ZkU250ZDZMbkUwc3c0UHV6OUZFdmt2UDA0aEItTkp5VEJGYm5rcUtRa1dLZG9mMEk0WEV6cHhoSERBbDhDWE91bzFHNGRmeWZXTzBWTWV4ZWphTFo4bGNmN3NFSDFxa09ucGV5bmxTSmg1MmwxVGV1U2kxUGZEbXc?oc=5",
+        "source": "Idéal Investisseur"
+      },
+      {
+        "i": 34,
+        "sector": "ai",
+        "company": "Kotoba",
+        "what": "Japanese voice AI startup",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "ElevenLabs",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8wR1ZlcWsxQXh4cTlWRDN5ZnBjYVdRNHRDREROeUVtYV9mdnMtY1IxYmJsRDFXZkdhQjV5WW1RNmI4UEI3aU9YWkJRTTdMeFVieTlR?oc=5",
+        "source": "Wowtale"
+      }
+    ],
+    "totalUsdM": 14610
+  },
+  "playground": [
+    {
+      "headline": "A smartwatch that tracks your whole body for VR",
+      "body": "EchoMotion turns a normal wrist-worn smartwatch into a full-body motion tracker. Researchers from Cornell and KAIST built it to capture movement without the usual cameras or sensor suits.",
+      "why": "Comfortable full-body tracking could come from hardware people already wear.",
+      "maker": "Cornell University and KAIST",
+      "url": "https://www.hackster.io/news/echomotion-turns-an-off-the-shelf-smartwatch-into-a-full-body-motion-tracker-for-ar-vr-and-more-8b9ce7f567be",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "A $450 bioprinter made from an ordinary 3D printer",
+      "body": "Researchers at the University of Rochester and Cornell adapted a low-cost FFF printer to extrude biological material using syringes. Their goal is a DIY bioprinter built from cheap, easy-to-find parts.",
+      "why": "Bioprinting may stop being a lab-only tool and move into garages and classrooms.",
+      "maker": "University of Rochester and Cornell University",
+      "url": "https://www.hackster.io/news/researchers-unveil-the-450-3d-bioprinter-built-using-a-low-cost-fff-3d-printer-and-syringes-10a1bf322be6",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "A wall-climbing robot that draws murals with markers",
+      "body": "Mural 2.0 by Nik Ivanov is a large-format pen plotter that hangs from a ceiling-mounted belt and draws directly on walls. It handles SVG and raster images over WiFi, and can even render squiggle-style fills.",
+      "why": "Big, playful robot art no longer requires a specialized machine shop.",
+      "maker": "Nik Ivanov",
+      "url": "https://hackaday.com/2026/11/17/a-pen-plotter-to-draw-you-up-on-the-wall/",
+      "source": "Hackaday"
+    },
+    {
+      "headline": "A full Python web app running entirely in your browser",
+      "body": "Simon Willison rewrote Datasette Lite using service workers and Pyodide, letting the server-side Python app run in-browser. A crafted URL can load specific Datasette versions, plugins, and SQLite builds for live demos.",
+      "why": "Complex server software can now be shared as a simple link, no server needed.",
+      "maker": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Nov/17/datasette-lite/",
+      "source": "Simon Willison"
+    }
+  ],
+  "think": {
+    "collision": {
+      "a": {
+        "kind": "story",
+        "n": 4,
+        "label": "Few targeted human VR demos fix grasp failures"
+      },
+      "b": {
+        "kind": "story",
+        "n": 7,
+        "label": "Public cannot tell teleoperation from autonomy in videos"
+      },
+      "headline": "A failure-repair service: buyers send clips of tasks their robot keeps failing, Indian workers record certified fixes within a week",
+      "body": "Story 4 shows that about fifty short human demonstrations, aimed only at the cases a robot keeps getting wrong, can double success on those cases. Story 7 shows that buyers and funders increasingly want proof of how footage was made. A vendor could take a robot maker's list of failed grasps, have trained Indian workers record egocentric stereo corrections of those exact objects and poses, and ship each clip with a signed log of who recorded it, with what camera, and whether any of it was staged or edited.",
+      "who_pays": "Humanoid and warehouse-robot makers stuck on a long tail of failed grasps, who pay per batch of fixes rather than for bulk hours of video.",
+      "data_needed": "The buyer's failure logs and object photos, plus head-mounted stereo video of human hands on matching objects, with time stamps, camera calibration and a tamper-evident collection record.",
+      "why_fail": "Buyers may prefer to generate these corrections in-house with their own teleoperation rigs, because sending failure data to an outside vendor exposes the weak spots of their product."
+    },
+    "contrarian": {
+      "story_n": 1,
+      "consensus": "Genesis AI's $500 million round proves that sensor gloves plus headset cameras are the winning way to collect robot training data, so buyers will soon demand force and touch data alongside video.",
+      "against": [
+        "Story 6 and Story 5 show touch-heavy skills like turning doorknobs being learned in simulation and transferring to real hardware, which could make costly real-world glove data less necessary.",
+        "Story 8 shows ordinary glasses video being turned into robot demonstrations without any special hardware, so cheap plain video at scale may beat expensive instrumented recording.",
+        "A large round often reflects investor appetite for a full-stack robot company, not proof that its data method works; a glove matched to one robot hand may not help buyers whose robots have different hands."
+      ],
+      "bets_otherwise": "Groups converting plain egocentric video into robot data, like the team behind Story 8, and simulation-first players such as NVIDIA with its Isaac robot simulator, are betting that cameras and simulation will cover most needs.",
+      "settle_it": "A published comparison showing whether robots trained with glove force data succeed more often on real packing and wire-handling tasks than robots trained on equal-cost plain video plus simulation."
+    }
+  },
+  "cost": {
+    "usd": 0.084,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 5,
+        "inTokens": 30354,
+        "outTokens": 9270,
+        "cost": 0.0077,
+        "models": {
+          "anthropic/claude-haiku-5.5": 5
+        }
+      },
+      "write": {
+        "calls": 10,
+        "inTokens": 13401,
+        "outTokens": 5767,
+        "cost": 0.0342,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 10
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 3828,
+        "outTokens": 3010,
+        "cost": 0.0019,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 2968,
+        "outTokens": 460,
+        "cost": 0.0057,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "think": {
+        "calls": 1,
+        "inTokens": 4168,
+        "outTokens": 893,
+        "cost": 0.0345,
+        "models": {
+          "anthropic/claude-opus-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 280,
+    "unique": 214,
+    "feeds": 29,
+    "failedFeeds": [
+      "Import AI",
+      "r/LocalLLaMA",
+      "r/robotics",
+      "Show HN"
+    ]
+  },
+  "generatedAt": "2026-11-18T00:16:42.345Z"
+}
