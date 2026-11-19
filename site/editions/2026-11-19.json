@@ -1,0 +1,1093 @@
+{
+  "date": "2026-11-19",
+  "weekday": "Thursday",
+  "sunday": false,
+  "number": 22,
+  "paper": "The Morning Servo",
+  "readMinutes": 14,
+  "stories": [
+    {
+      "id": "07f42e2b89",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Humyn Labs raises $47M to collect real-world robotics data",
+      "takeaway": "Humyn Labs raised $47 million to expand its business collecting real-world sounds, touch, motion and video of people doing jobs. The data helps robot companies train machines to work outside simulation. It shows strong commercial demand for physical-world training data.",
+      "deck": "The company surpassed $50 million in annualized revenue within six months, with data collection across more than 20 countries.",
+      "body": [
+        "Humyn Labs, a physical AI data and deployment company, announced a $47 million Series A. The round includes $26 million in equity led by Accel, with participation from Prosus Ventures, Bajaj Finance-linked funds and others. Lighthouse Canton led a $21 million venture debt portion.",
+        "The company collects data across vision, sound, touch and motion using its own capture devices. These devices record people performing specific jobs to customer requirements, then convert the recordings into labeled, training-ready datasets. Operations span more than 20 countries, with the largest activity in Latin America, Southeast Asia, South Asia and East Asia.",
+        "Humyn Labs works across robot bodies rather than backing one type. It groups target industries into residential, commercial and industrial. The new capital will fund deployment-readiness infrastructure in Brazil, Korea and India, plus capture hardware and teams in San Francisco, London and Seoul."
+      ],
+      "why": "This is direct evidence of rising buyer willingness to pay for real-world robot training data, including the four modalities of vision, sound, touch and motion. The mention of deployment readiness and a real-sim-real flywheel signals growing demand for data tied closely to real operating environments, not just simulation.",
+      "hard": "It is still unclear how long average robot deployment cycles take, and revenue within six months may reflect a few large contracts rather than broad, repeatable demand.",
+      "terms": [
+        {
+          "term": "world model",
+          "meaning": "A system that learns to predict how the physical world works, used to help robots plan and learn."
+        },
+        {
+          "term": "Series A funding",
+          "meaning": "An early round of investment in a company after it has shown signs of product-market fit."
+        },
+        {
+          "term": "venture debt",
+          "meaning": "A loan to a startup, usually alongside equity funding, that does not require giving up ownership."
+        },
+        {
+          "term": "embodiment",
+          "meaning": "The physical body a robot uses, such as a fixed arm or a wheeled humanoid, which shapes what tasks it can perform."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Data services"
+        ],
+        "task": [
+          "Data collection",
+          "Deployment readiness"
+        ]
+      },
+      "score": 10,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/humyn-labs-raises-47m-to-collect-real-world-data-for-robotics/"
+        },
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/"
+        },
+        {
+          "name": "TechCrunch Robotics",
+          "url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/"
+        },
+        {
+          "name": "Inc42",
+          "url": "https://inc42.com/buzz/humyn-labs-raises-47-mn-to-collect-training-data-for-robots/"
+        },
+        {
+          "name": "The Robot Report",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOaVZONjhZVFlhNHQ5a2hSdmVXYmJodWV5ZG1VbTN1Uk0wUi1kN2YtZmNVX0xOQUROWGJJeGJiRW9GWkJrM0NCcmVGd0pFNnBkS2c0YkRpX1dUeHpXSDFYeUx6SnNLMmRLT0Z4SE9jSDVCVkNiNU85Tk1Ud05TSUVCaFBfeXlFQl9KTldtcVJSWWZ6Z1BZVm5GeA?oc=5"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNzBfSHFXbmNhSlhJUVNRcUdnQV91UWR1aXl0eEp4UktiVnU2SGluYzBIcW5kNTlRNlhaUDB6TmhlQ01kYVVPcnZoR0VwRTJWdEtmTFN6UVVFRjBjd1hMRnhISF8xR2l3TlR6NTRTTmhqbUt3OTdmSWdOb0k4Z2d4NktKY0FlTlVRUTV3T3pUSThIalJWX1htRGw5Y2VCc1dTU1V1czNVUXJ0S2hDVzM1VGk2R0t5SU5NWFlCa29ZUjNZMDg?oc=5"
+        },
+        {
+          "name": "SiliconANGLE",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZWFMbW9leFhzcUNOak0wclpoNFNIcTY0RUFVVi1aTDV5NUk1cEd3ZHRfSjF3M0o5bkNBQUY5WktqeUwtZ3B3SzFFcGNVVE1Na2cteEprUXNsN1F3WjFGajE3YndsMC1tQWYwd0Q3eGUya2FmbzNxU2ZGdkdSaHFiQmlHcjNtZFFsM2ItMENHOThtRWtLZkxuR0lSSFBiLW9uNTFaSFJsaG9iUUR5Nkt6RHZwRzAzQURac1psbQ?oc=5"
+        },
+        {
+          "name": "Unite.AI",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNSEVWT2x0cjhsbG82NDRXNFFNNWtEUXBtaFpjZ2VVS1VBSjUzYjZfZ0x3eEg2UThjaEZOYXd6MkN4SDlKaFJYR1VONy16NUR4U2NwWDl3SzI3bTctUEpMNXlYaGpadVZtYjlHdm9xZUxBQXM4VWVlOFo0YzkxQThOMUg4N05yY3hWeWc?oc=5"
+        },
+        {
+          "name": "Briefs Finance",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdmxsUWlWMklBVFRidlpDTUhHNUdvc0NTcGtHN2VvWUpENjY3cmI4aUdhVDM4T0VmR21YenA5U0Y5XzBqTXZLSmZvVHkxZmUwWVlZQndjUlBnLTlHU0lCQ0paM1d2TEh1bVl6QlFNSi1lR3hQRnMtZXdOczE2b3JNOFNSTEVEdk9IS2trc2Fwak16UQ?oc=5"
+        },
+        {
+          "name": "TradingView",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOaVQxZXZSSTVHNVVwZGFGMmdmMnF5Slk4WWhTUWJvSkd1SEdSbnkxdGtuZVJReTNwMTZPNV9WUDBLeW05dTE0bXNnU3ctR21faFNTYUwzaGh4aTR6ZWdLTXN5NnFzdHExSnRBNWVrODhyRGpPQzNmUWQ1ZFlJekVlNmdLZXYwQmpodC0zNWZpaXFONW5hV08tTVV3QTNxYU5FN21pUzBxdlNBdFNkQ3ViVl9IZ01UQl9HR2ltX3VjNGM?oc=5"
+        },
+        {
+          "name": "Tech in Asia",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNa09RdlRpVEdGN3Z0c01xVk5vdFVkdC02MzBtamdvMlh1dF85TnQtOVNxOG5pTC1ZY19COWhmVnQwcTZXZlozUXctUl9KWFIzWG56SlNubXY5RHltaW5VUUZGejYzYUpPNGQ2UWdQZml3VVlzSWJhajRWX25sbkthNkd1ajNMVEpaaXZLaXZHbGg?oc=5"
+        },
+        {
+          "name": "Traders Union",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPRVVpaHJmSllzOEdwUURNak9kb2JBQVNqRHM4SHdvLVljX21TQ0VPd0Z6QllCb3g5Z0lVdlRRcFk5Y1JQdjI4NmhpRnkwZGhFaTZydmJFMGoyZXNVcUdPNkhRdDZPR0luWFFzNkxmbGFIMEg1Z0Q5Tm5LazF5eURvaHVGNW9yTEN6QmlFNGtIb0F3WGREMkhNSA?oc=5"
+        },
+        {
+          "name": "Moneycontrol.com",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPaTNYS0RIMUtYaFhuTGV3UW95akV5aFB3Skw1Sk1ZcS1RLXhKTUFtTm4wMWVZX1prbWo0ZU1QMDNiNlN5T05FTWxISzR6LW1lOEtTclZvcVlQd19OOGZWMmlfNTRRR0pjOWRhSzNuOV9EdnZxWE9rU3dTX0dSOFZzN01jMV9CVzdyaGpPNWZWcFF1VVJwMUVDZkg4eHlFdC1jWGRmUnZ6SmpxZVJSX0tpc0Fkd2ZOUGMya0J6aXBBQlBLdmFTeXNaY2l2VlN2S0hPYlNRbDRtazY3NUZlMTBfWXpFSTNnUkhlS00wM2FTSzEzaGpj0gH6AUFVX3lxTE16bUVMUm5ndzU4N2VLNFVHY3Y2Z3RKa3lSYVBtbElEay1DQThWUEFaVm5hM0h2TnJyZU1IVm1oMUlKR1hKMEhKUnNLcTZPYWplNmoyUmF5TENxU2dRODVsLTRld1BUZzE4T2o0OEQ1NlpjUXpyLWNJTzNBYUVXQloyQUYtc2RmbDJvek5wVWp6WUZpa1BuN2p1TVZWMFM5VDBUU3lnMlB0cGU3c2xoSERvc2tzdGZNeGp5eUNnZVFrRzUzbGhycmowQ0ROaWZoOGtzUnk4b0pJNUp4bHRQWFlKRWpoTWp0dnUzanF1TGY3ODFUN0U2cTlCd1E?oc=5"
+        },
+        {
+          "name": "news.lavx.hu",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdG5Qd3YwcTRTM0EzeV91SEZKUjV1US13R2pYcGFCcmIwNk9QQmFXTXRfZGlQa1JrMFQtWmpwVENJOFhzWFZ1RlZNREcwUEZJTV9TSGRHWVloVUVsNkpyOXB1QVNrc2REUjNObkZMdkY2WVVuQkQ2eUgwdWxic1pjTF9zVWpNaXhOVS1NR21HSGJsX1FrRDZtQXdHVjJGZw?oc=5"
+        },
+        {
+          "name": "FourWeekMBA",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWDBnQmxjcDBUSFVaV2NIc1lleVM2RjZURzcwdWF5UHJEdXpJSnpnUXZacTczbGV5ck4wOExjS2d1YjUxNXhaakFBV2JPSUx1THFIVmIwQ2lqMnppLTh2RzB2SVhxaGcycjJlZ2NVM0VDZGFzQ0VmNmMwVUZVUDBJa3gtaTM0Q3Ns?oc=5"
+        },
+        {
+          "name": "Tech in Asia",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNa09RdlRpVEdGN3Z0c01xVk5vdFVkdC02MzBtamdvMlh1dF85TnQtOVNxOG5pTC1ZY19COWhmVnQwcTZXZlozUXctUl9KWFIzWG56SlNubXY5RHltaW5VUUZGejYzYUpPNGQ2UWdQZml3VVlzSWJhajRWX25sbkthNkd1ajNMVEpaaXZLaXZHbGg?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "980f7d655e",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "New open dataset adds 10,124 hours of real workplace video for robot training",
+      "takeaway": "A free dataset of 10,124 hours of first-person video recorded by 12,227 people doing real jobs across 15,548 workplaces is now available. It gives robot trainers much more variety of settings and tasks than previous egocentric video collections, which mostly showed home life.",
+      "deck": "The first release includes 10,124 hours of first-person workplace video from 12,227 contributors.",
+      "body": [
+        "A new open dataset called HubEgo-100K puts 10,124 hours of workplace video on the table for robot learning. The footage is egocentric, meaning it was filmed from a head-mounted phone camera, so it shows work from a person's own viewpoint. It includes 72,754 episodes across 12,227 contributors and 15,548 settings such as kitchens, farms, and workshops.",
+        "The collection covers 30 work categories, 56 task types, and 35 action families. About 83 percent of the hours were recorded in workplace settings rather than at home. Every clip comes with synchronized motion data from an inertial measurement unit, a sensor that tracks head movement, plus machine-generated labels describing the actions and the words spoken.",
+        "The creators argue that robot policies, the learned rules that tell a robot what to do next, improve more from seeing many different places and objects than from watching many repeats in one place. Most existing egocentric video shows daily life, not skilled work. This dataset is a deliberate attempt to fill that gap. It is released under CC BY 4.0 in LeRobot and MCAP formats, both common ways of packaging robot-learning data. The paper notes later versions will add benchmarks and move toward 100,000 hours."
+      ],
+      "why": "The dataset demonstrates a cost-effective route to the kind of environment and object diversity that scaling studies say improves robot generalization. Its workplace focus, head-mounted setup, and IMU data could influence what buyers ask for in commissioned egocentric video collections in India and elsewhere.",
+      "hard": "The action and language annotations are machine-generated, so their accuracy is not yet verified against human labels, and the paper does not yet include benchmarks showing whether training on this data actually improves robot performance.",
+      "terms": [
+        {
+          "meaning": "A learned set of rules that tells a robot what action to take in each situation.",
+          "term": "Policy"
+        },
+        {
+          "meaning": "Video recorded from a person's own viewpoint using a camera worn on the head or chest.",
+          "term": "Egocentric video"
+        },
+        {
+          "meaning": "A sensor that measures motion and orientation of whatever it is attached to, such as a head or robot arm.",
+          "term": "Inertial measurement unit"
+        },
+        {
+          "meaning": "A common way of organizing and storing robot-learning datasets so different systems can read them.",
+          "term": "LeRobot format"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics training data",
+          "Industrial and commercial work"
+        ],
+        "task": [
+          "Egocentric video data collection",
+          "Imitation learning for manipulation"
+        ]
+      },
+      "score": 9,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.21938"
+        }
+      ]
+    },
+    {
+      "id": "7ceec50630",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Humyn Labs raises $47 million for robot training data",
+      "takeaway": "A Bengaluru startup that records people doing everyday work to train robots has raised $47 million. The money will expand its data collection in Brazil, South Korea and India.",
+      "deck": "The company says it already records human tasks in more than 20 countries.",
+      "body": [
+        "Humyn Labs, based in Bengaluru, has raised $47 million in a Series A round. The round includes $26 million in equity and $21 million in venture debt. Accel led the equity portion, with participation from Prosus Ventures, Bajaj Alts AI Opportunities Fund, Dallas Venture Capital, Lighthouse Canton, Jump Trading and others. Lighthouse Canton led the venture debt, with Trifecta Capital also participating.",
+        "The company records people performing everyday tasks in factories, warehouses, farms and homes. It then processes that video and sells it to AI research labs and robotics companies that need real-world data to train their systems. Humyn Labs says it crossed $50 million in annualised revenue within six months of starting operations and now runs data collection in more than 20 countries across Latin America, East Asia, and South and Southeast Asia.",
+        "The new capital will expand operations in Brazil, South Korea and India, strengthen data collection hardware and processing, and build a larger presence in San Francisco, London and Seoul. In April 2026 the company announced a $20 million commitment to expand data collection infrastructure across India, Southeast Asia, Latin America and West Asia."
+      ],
+      "why": "This is a direct competitor in the same egocentric video data collection market, with claimed revenue and geographic reach that signal where demand for robot training data is growing. Its expansion into Brazil, South Korea and India shows which regions buyers are targeting next.",
+      "hard": "The revenue figure is self-reported and the company is only about six months old, so it is not yet clear how durable the demand or the data quality is.",
+      "terms": [
+        {
+          "term": "Series A round",
+          "meaning": "An early major funding round for a startup, after initial seed money, used to grow the business."
+        },
+        {
+          "term": "Venture debt",
+          "meaning": "A loan to a startup, often alongside equity funding, that must be repaid with interest."
+        },
+        {
+          "term": "Equity",
+          "meaning": "Ownership shares in a company sold to investors in exchange for capital."
+        },
+        {
+          "term": "Annualised revenue",
+          "meaning": "A company's income over a shorter period, scaled up to show what a full year would look like."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics training data",
+          "Venture funding"
+        ],
+        "task": [
+          "Data collection",
+          "Market expansion"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "Entrackr",
+          "url": "https://entrackr.com/news/physical-ai-startup-humyn-labs-raises-47-mn-in-equity-and-debt-12820886"
+        },
+        {
+          "name": "Bloomberg.com",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdlpWaHp2emQzQXpHUnZSbjFoSlQ5YlhpclpCMEdyRm1sNUxuSkQ1MklQS3Zrd0Y1Q2pzRUlqblc4R0ltU3BvNk1kWUlqd3NHejF3YnpINnc2aXFkZGtsUk56QUEwZXRTSHFxRmd0ZU5LVHA1R0xRRmVGd1dyeTJQUHdIXzVGd3JkNUFPUU9DdXphaUYzbS1yX00wV0xrY054cGRTdFlvOU5HSmM1WG42RjJ3?oc=5"
+        },
+        {
+          "name": "The Times of India",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNdnZJVUF4UGk5dlRfQlVDRHA1VmhVZzJ2WUswRkZaM1EtZ0Y4V29IRHRVRFNyRE40anRWREQ3dFdjQmFvcjlRRFBsMFdxbE5MZEVaNXljVnZtXzBFNGdyZlV4TlYwSG9TTVRLT0p1NG5hdlhsTXNGSWo3WVFuUnJqV21FX25MOUJDY2lXOEZxYjRyMlV4SE1XNVM4UmNfRlp1WFVoV2cyMjlrUXVkVjhHb2FvU3hvTzViZEQyTm9aV0hjcXdhUXE00gHMAUFVX3lxTE1ZM0dOSTAwcEo5Y2xHSnVkZ29paGpOR0NINHBid1Q4di14SmRVSkROemxzaFlhQ05tSzBEX2s5UXpaWFViSmpGeVlCRmFnR0dqVGtGVEx3M0ZCVnZ5N3NxMmwya0VJb3N6cGpiUDNUcXlfVHp3cWgxTVFxZlhwWlZBdGJqUUs0QzNPOC11R0lTT0dOSEFveEQ2bkZsWWZNZWpMVzhBemlGZWkzZXkyVlVROTZ5MG93WU5ja1hMbWUwRzIyZmxmSXE0b3NkQQ?oc=5"
+        },
+        {
+          "name": "Business Standard",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPNXZSOGpKLWxTdFIzakN4c0JQS3BJdkM5MVNfRDA0QUZjVUdxMWZOSUdWbHROQ0ZYQmh6VjNSSm1xQmFXZnZGMVlyMHBSeTFtem1OTUhoMEtfZWZfRkZMdXduT2ZSQVNETV9rZGptWmJEckg4cU4yTVNES3hKU2NNY3gwaDR1Q0tESFRlSTZ3bTVUN1B5TTQtcFlhUHRrR2V5X2tlYkxJTTV4d2JvWjRMTnRnbHhMWkVHNWJPSFJTUWo0dlJpWGFEYjQxdTNodVnSAdQBQVVfeXFMUDBNU251cTZyY1huU29YVFhrd3lqUHNPNlBVRXNLR0I5T3d6aWpaazBPX1Q2NGcybjZ2ZTZoZG9lYjl3VnBLOHlRQkdHQzBmNWhyZmY2YTJPd1NiVk9zTjFYVXk4SXBodWotVlpQbTJlbUt6czliUzhDRlVqX1lNa29pZjl6SGx3dVFseFR3UUhXOXg2QllDMjdJM0xVZVM0OGpCVEFOQkFhbldrMmltRWdScXhWY0t6dTdCa3gxTWdFNVc0SmhGZG01cjB4SG9JQl9HRl8?oc=5"
+        },
+        {
+          "name": "Entrackr",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQeHhuT0twUU91V09UZzdoX3BDNUhBc0EyQ2czRF9uQlNibUJPb2gzWENaN1RZQV8wSDYtZnJDTFNhd1I4ejh3eGZlMm1Xd1FZNl9ia0R4X1R6V0RUY2ZWU1pvTGJnVE9ncUluU0JsODlqRzBNVl9YUi0wdmNWWE5lLXZvNFhxSkFMdVlDNDh1ZmJuWk14X2Y2cncteHBjQdIBngFBVV95cUxQeHhuT0twUU91V09UZzdoX3BDNUhBc0EyQ2czRF9uQlNibUJPb2gzWENaN1RZQV8wSDYtZnJDTFNhd1I4ejh3eGZlMm1Xd1FZNl9ia0R4X1R6V0RUY2ZWU1pvTGJnVE9ncUluU0JsODlqRzBNVl9YUi0wdmNWWE5lLXZvNFhxSkFMdVlDNDh1ZmJuWk14X2Y2cncteHBjQQ?oc=5"
+        },
+        {
+          "name": "Livemint",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPSjQ0VnVmQW1nOFF4aVg3WWZMbnJPR0oyNlh0OXM2UVNFWm5VcG5zLW1BNXl6Y0FYLU93TlhZOGNoOUwtSFFWMk5wRDZ3TmE1eG83UkVnQmdnUmNUdUIzcHpycmVWSHlJVWhYQlBzU21zd0ZwYXp5LVgyeFZFZktQaG9mUFBQTWNMdExEV0JXNVl3cFVja0lPNmwyR216TmZNUjItQVlRdjZtbnRIYmV5MU5Ccm84S0tKV0xEazdzLTV4dnNN0gHKAUFVX3lxTE55U29scGR3dFVkRGZMcjR2NU9NQ0NxU0hZYXZCOVpkZEViNnA5NDZtdDBJaGo0Q1ZOOUxMdldVMmZSRGk0MFctTjdBZ09EZVkydzVPcFA3dlFGR1MxT2Nnbk9SZ1hTQmdNcjF5X01ZT3JqcHFtb2dieDdFdTZBdnF3RnV5M3Y5cmFXZE1DUldZMlNrM3dBd1JmNkdaMkFVdXJDcTRpSHhZSlNLemRhaE1rZ1oyamxyVEk2T2tGQmZJLUxhaEVMNjNjUnc?oc=5"
+        },
+        {
+          "name": "Bloomberg.com",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdlpWaHp2emQzQXpHUnZSbjFoSlQ5YlhpclpCMEdyRm1sNUxuSkQ1MklQS3Zrd0Y1Q2pzRUlqblc4R0ltU3BvNk1kWUlqd3NHejF3YnpINnc2aXFkZGtsUk56QUEwZXRTSHFxRmd0ZU5LVHA1R0xRRmVGd1dyeTJQUHdIXzVGd3JkNUFPUU9DdXphaUYzbS1yX00wV0xrY054cGRTdFlvOU5HSmM1WG42RjJ3?oc=5"
+        },
+        {
+          "name": "Business Standard",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPNXZSOGpKLWxTdFIzakN4c0JQS3BJdkM5MVNfRDA0QUZjVUdxMWZOSUdWbHROQ0ZYQmh6VjNSSm1xQmFXZnZGMVlyMHBSeTFtem1OTUhoMEtfZWZfRkZMdXduT2ZSQVNETV9rZGptWmJEckg4cU4yTVNES3hKU2NNY3gwaDR1Q0tESFRlSTZ3bTVUN1B5TTQtcFlhUHRrR2V5X2tlYkxJTTV4d2JvWjRMTnRnbHhMWkVHNWJPSFJTUWo0dlJpWGFEYjQxdTNodVnSAdQBQVVfeXFMUDBNU251cTZyY1huU29YVFhrd3lqUHNPNlBVRXNLR0I5T3d6aWpaazBPX1Q2NGcybjZ2ZTZoZG9lYjl3VnBLOHlRQkdHQzBmNWhyZmY2YTJPd1NiVk9zTjFYVXk4SXBodWotVlpQbTJlbUt6czliUzhDRlVqX1lNa29pZjl6SGx3dVFseFR3UUhXOXg2QllDMjdJM0xVZVM0OGpCVEFOQkFhbldrMmltRWdScXhWY0t6dTdCa3gxTWdFNVc0SmhGZG01cjB4SG9JQl9HRl8?oc=5"
+        },
+        {
+          "name": "Entrackr",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQeHhuT0twUU91V09UZzdoX3BDNUhBc0EyQ2czRF9uQlNibUJPb2gzWENaN1RZQV8wSDYtZnJDTFNhd1I4ejh3eGZlMm1Xd1FZNl9ia0R4X1R6V0RUY2ZWU1pvTGJnVE9ncUluU0JsODlqRzBNVl9YUi0wdmNWWE5lLXZvNFhxSkFMdVlDNDh1ZmJuWk14X2Y2cncteHBjQdIBngFBVV95cUxQeHhuT0twUU91V09UZzdoX3BDNUhBc0EyQ2czRF9uQlNibUJPb2gzWENaN1RZQV8wSDYtZnJDTFNhd1I4ejh3eGZlMm1Xd1FZNl9ia0R4X1R6V0RUY2ZWU1pvTGJnVE9ncUluU0JsODlqRzBNVl9YUi0wdmNWWE5lLXZvNFhxSkFMdVlDNDh1ZmJuWk14X2Y2cncteHBjQQ?oc=5"
+        },
+        {
+          "name": "Livemint",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPSjQ0VnVmQW1nOFF4aVg3WWZMbnJPR0oyNlh0OXM2UVNFWm5VcG5zLW1BNXl6Y0FYLU93TlhZOGNoOUwtSFFWMk5wRDZ3TmE1eG83UkVnQmdnUmNUdUIzcHpycmVWSHlJVWhYQlBzU21zd0ZwYXp5LVgyeFZFZktQaG9mUFBQTWNMdExEV0JXNVl3cFVja0lPNmwyR216TmZNUjItQVlRdjZtbnRIYmV5MU5Ccm84S0tKV0xEazdzLTV4dnNN0gHKAUFVX3lxTE55U29scGR3dFVkRGZMcjR2NU9NQ0NxU0hZYXZCOVpkZEViNnA5NDZtdDBJaGo0Q1ZOOUxMdldVMmZSRGk0MFctTjdBZ09EZVkydzVPcFA3dlFGR1MxT2Nnbk9SZ1hTQmdNcjF5X01ZT3JqcHFtb2dieDdFdTZBdnF3RnV5M3Y5cmFXZE1DUldZMlNrM3dBd1JmNkdaMkFVdXJDcTRpSHhZSlNLemRhaE1rZ1oyamxyVEk2T2tGQmZJLUxhaEVMNjNjUnc?oc=5"
+        },
+        {
+          "name": "The Economic Times",
+          "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOVWIxTjFpN2NsbEJEZWFBaGlKOG53dWhSV216SVI2YzRTeW04S3o5cTFjSDZMNWtmLUs0eXliRUF1NkdGRnVyMXRPVEVWMkpfWTlhSXA4Nk13WHpXeG10OFlWN2k0Mkt2WW9uOHlDX2JzalV3UC1uVjFtLThwZ0pWc1RTcTZrTkszSlB5MS1uYm5uS0VGVEtEUmNGWDhqOXZENEMyMC1yMVlaQmpjLUtwb01SS3Foa2hSQlQzTVkySWlTd1JzdGktM0JVR3NOOW5pQXFXMzV2R3RfeWgxcUtUZlRHRnpPSUhOVGRVT3VENGFTMzBiSGQ0X3FiUWJzbS1XR2lQclBqZllXVVJjTDU40gGUAkFVX3lxTE9iZzFjNy1EWGF5NmZUXzd6clM1bm9VSllzRmhVWmV0MWhVa0RtMHRFVm1FUjJPUGZfeUlCSXdBQmpfOGNVZ0xEckFRc0o1dUdRUEVjbEE2aWU1X1plbEdkUWk2SC0tTVIzaWVnZExONEFpSllwdkhrLTZ5bnZiWWFXQnNUS2Z4RnhDTmt1ak83U2hBeUxFbHNSUE5MQTNQVkV0VmZnRHlnZ09WdXN0STV0SEZISGc2MV9vRVVFYU9tbkJKaG5peEZERk1valZIMWFEWmRQRXRtRkV3dlFTX3luYlJGRVFIWVRnUFZvQ1JvemhRa0ZHc09uc1M0SWo4OXF0NGhNdEJSUXJaQURHUWhKQ1Zicw?oc=5"
+        },
+        {
+          "name": "The Economic Times",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPNTFQY191eE9YMGN5QklpVzZYUEFnVnM3UVhYbzg4Mjd4VnJodmxnRFQwNUw4Y0xMR2FqbHUwY2w2YmZJNkF0SWtfSnEtS1RMLTVBMzNfTXhFNjlRQXBnazY0U3BucU5iNVNlSHdCcXFvdHRWaDlyVFBFYmszSTB0TU9VT1FDWDFVdmwta29URkFFU0FybUNNRGFjV2JZYVBfS3Z1cTJfb3g4NElqWFZ6ZTZTdFNoQTMtaERPdXBqRW4tNlJjeG4tbkJYWWh4X2hZYXdCNkJqNGdJUVVwUlHSAeMBQVVfeXFMTlFGaGIwQTJBMWtBUk94TmlmYmJpUmZTZHNMbWR1Mlg3eUMtdVNRS3pabXE4N0hYc2xydmY4OGQ0UFB2SjlkY1JDbjlRSTBXREc5VkhCQW9ZRHE3OEtNRjUyU0Y5cHp5WkJNbUVMVjdwaklyaW1DXzYyeFhpWnc2VmF3R3p6QWRWNFV4TEVickZocmNSZEdubXhpYUhjQUN2ZnNSSnE1OV9HRUc2a2lKWV9xSFFVNGlwZHVFRDkwb1dWaXAxLUFoMjV0aktyel9sV2ppQUxxUTFxMGFQZ0tiV29fc1U?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "38d44b5d07",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Wearable gripper captures two-hand robot data without the robot",
+      "takeaway": "A cheap hand-worn tool lets people record two-handed robot demonstrations without operating a real robot. The recordings retarget to seven different simulated robots within about a millimetre, then train real arms to fold towels.",
+      "deck": "A $557 hand-worn rig captures two-handed demos without a robot, then retargets them to seven simulated arms.",
+      "body": [
+        "Most bimanual robot training data comes from teleoperating arms, which is slow and tiring. HandUMI replaces the robot during capture with a light hand-worn interface. Each unit has a parallel-jaw gripper held between the fingers, with swappable plastic fingertips that match whatever gripper is on the real robot.",
+        "A pair costs USD 557 with Meta Quest 3S headsets, so a trainer can record two-handed tasks without owning either robot. The system tracks hand positions with the headset cameras and measures how open the gripper is with built-in encoders. Recordings are robot-agnostic: software retargets the same clips to seven simulated arms, with a median error of 1.2 millimetres or less.",
+        "In a towel-folding test, 562 demonstrations trained policies on two real PiPER arms. A method called ACT succeeded in 12 of 20 attempts; a fine-tuned version of the Pi-zero-point-five model succeeded in 7 of 20. With only the first 101 clips, both ACT and base Pi-zero-point-five scored 0 of 20, showing the dataset size matters. Hardware and software are open source under an Apache 2.0 licence."
+      ],
+      "why": "Buyers want bimanual manipulation data, but teleoperating two arms is expensive and bottlenecked. A $557 hand-worn rig without a robot changes the economics of collecting two-handed demonstration data, especially for tasks where fiducial-marked fingertips can stay visible.",
+      "hard": "Success rates are modest, and the paper only shows towel folding on one real robot pair, so broader task coverage is unproven.",
+      "terms": [
+        {
+          "meaning": "A robot arm with two movable fingers that close toward each other to grip objects.",
+          "term": "Parallel-jaw gripper"
+        },
+        {
+          "meaning": "Matching a recorded motion to a robot with different arm lengths and joints, so one demonstration fits many machines.",
+          "term": "Retargeting"
+        },
+        {
+          "meaning": "A way to record an expert's movements as training examples for a robot, usually by moving a real or virtual robot.",
+          "term": "Demonstration"
+        },
+        {
+          "meaning": "The learned control program that turns what a robot sees into what it does.",
+          "term": "Policy"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics"
+        ],
+        "task": [
+          "Bimanual manipulation",
+          "Training-data collection"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.22146"
+        }
+      ]
+    },
+    {
+      "id": "e1a90533c3",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Robot data rig design quietly changes what policies learn",
+      "takeaway": "A study of 25 dual-arm robots finds that collection setup, cameras, calibration and control friction shape trained behavior. Bad demonstrations are partly learned rather than ignored, and checking rig quality before scaling could prevent wasted collection work.",
+      "deck": "A study of 25 dual-arm robots shows collection rig design quietly shapes trained behavior.",
+      "body": [
+        "A report from a large real-robot data collection team finds that the physical setup of a collection rig changes what a robot learns. They studied 25 dual-arm robots, controlled teleoperation tests, and robot policies fine-tuned from collected demonstrations.",
+        "Parallel control of body parts cut task time by 43 to 53 percent. When cameras did not show the scene details that justified an operator's choice, the trained robot picked the right arm 100 percent of the time when trained on active-search demonstrations, versus 50 percent without. At inference time, calibration errors caused all 30 trials to fail. Robots also kept about 90 percent of unnecessary path length from detour-contaminated demos.",
+        "The team argues that collection pipelines should be checked for effective workspace, control efficiency, observation completeness, calibration alignment, and motion quality before scaling. The paper does not name a commercial system or customer."
+      ],
+      "why": "This matters for anyone selling egocentric robot training data. The results suggest buyers may begin asking for evidence about rig calibration, camera angle completeness, and operator motion quality, not just hours of video.",
+      "hard": "The fine-tuned robot policies were evaluated in constrained lab settings, not in messy real-world sites, and most results come from a single team's collection system.",
+      "terms": [
+        {
+          "meaning": "A learned mapping from what a robot sees to what it should do next.",
+          "term": "Robot policy"
+        },
+        {
+          "meaning": "Two robot arms on one torso, designed to work together on tasks that need both hands.",
+          "term": "Dual-arm robot"
+        },
+        {
+          "meaning": "Controlling a robot remotely, like a puppet, so a human can show it how to do a task.",
+          "term": "Teleoperation"
+        },
+        {
+          "meaning": "Applying small example-specific updates to an already broadly trained AI model to improve it on a narrow task.",
+          "term": "Fine-tuned"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Training data"
+        ],
+        "task": [
+          "Manipulation",
+          "Data quality"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.22388"
+        }
+      ]
+    },
+    {
+      "id": "25f3323f6d",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Rockwell Automation to buy mobile robot maker AGILOX",
+      "takeaway": "Rockwell Automation is buying AGILOX, an Austrian maker of warehouse transport robots. The deal more than doubles Rockwell's mobile robot business and gives it a stronger foothold in Europe.",
+      "deck": "The deal is expected to close in the second quarter of Rockwell's fiscal 2027.",
+      "body": [
+        "Rockwell Automation has signed a definitive agreement to acquire AGILOX, an Austria-based developer of autonomous mobile robots, or AMRs. These are wheeled robots that move pallets and other materials around factories and warehouses without a person driving them. Rockwell said the deal will more than double the size of its AMR business. Financial terms were not disclosed.",
+        "AGILOX has deployed more than 2,500 AMRs worldwide since it was founded in 2017. The company has more than 250 employees and operations in Europe, North America, and China. Its robots are used in automotive, third-party logistics, food and beverage, and pharmaceutical work. Its robots use omnidirectional drives, meaning they can move sideways and diagonally without turning, which helps them maneuver in tight spaces.",
+        "The acquisition follows Rockwell's 2023 purchase of Clearpath Robotics, including its industrial division OTTO Motors, for about $609 million. OTTO has a strong presence in North America, while AGILOX has an established customer base in Europe. Rockwell said the technologies are complementary but did not say how it plans to integrate the two platforms or whether customers will be able to run AGILOX and OTTO robots in the same fleet."
+      ],
+      "why": "The deal signals that large industrial automation suppliers are consolidating mobile robot makers to cover more regions and material-handling tasks. For training-data providers, wider AMR fleets in automotive, logistics, food and pharmaceutical sites point to growing demand for egocentric video of real warehouse and factory transport work.",
+      "hard": "Rockwell has not explained how AGILOX and OTTO Motors robots will work together as one fleet, which is a common pain point when two robot platforms are merged.",
+      "terms": [
+        {
+          "term": "Autonomous mobile robot (AMR)",
+          "meaning": "A wheeled robot that moves materials around a factory or warehouse without a person driving it or fixed floor tracks."
+        },
+        {
+          "term": "Omnidirectional drive",
+          "meaning": "Wheels that let a robot move sideways or diagonally without turning, so it can work in tight spaces."
+        },
+        {
+          "term": "Robots-as-a-service (RaaS)",
+          "meaning": "A business model where customers pay to use robots through a subscription or usage fee instead of buying them outright."
+        },
+        {
+          "term": "Payload",
+          "meaning": "The maximum weight a robot is designed to carry."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Industrial automation",
+          "Warehouse robotics"
+        ],
+        "task": [
+          "Material transport",
+          "Acquisition"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/rockwell-automation-acquiring-mobile-robot-maker-agilox/"
+        }
+      ]
+    },
+    {
+      "id": "083251a67b",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "AI company formally verifies a 15,000-page math proof",
+      "takeaway": "Axiom Math used AI agents to turn the Classification of Finite Simple Groups proof and the Stacks project into machine-checked code. This shows very large, connected mathematical arguments can now be verified automatically, not just small isolated ones.",
+      "deck": "The result includes two separate verifications announced nine days apart, covering both one enormous theorem and a wide library of connected theory.",
+      "body": [
+        "Axiom Math has automatically verified the proof of the Classification of Finite Simple Groups, often called the enormous theorem. The proof runs over 15,000 pages and was assembled from more than 500 journal articles by around 100 authors over half a century. Axiom Math's system translated it into 43 million lines of checked code.",
+        "The team first mapped the informal proof's network of results, then split the statement into about 100 milestones that could be verified independently. The process also found and corrected several mistakes in the original human proof, according to University of St Andrews group theorist Colva Roney-Dougal.",
+        "Nine days after that announcement, the company said it had also formally verified the Stacks project, an open-source reference work covering modern algebraic geometry. That verification produced 16 million lines of code. Axiom Math says the two projects show formalization can scale both by proof length and by breadth of connected theory."
+      ],
+      "why": "The work demonstrates that AI systems can now handle the kind of large, interlocking technical corpora that training-data buyers increasingly need processed and checked. The same agent-based pipeline approach could apply to verifying or structuring other large technical datasets.",
+      "hard": "Because the verification was done automatically, very few mathematicians can currently extract useful insight from the resulting code, so the work may not immediately help the broader math community.",
+      "terms": [
+        {
+          "term": "Formal verification",
+          "meaning": "Checking that a mathematical proof is correct by expressing it in code and having a computer confirm every step follows logically."
+        },
+        {
+          "term": "Finite simple group",
+          "meaning": "A set of elements with a combining rule that cannot be broken into smaller groups and has a limited number of members."
+        },
+        {
+          "term": "AI agent",
+          "meaning": "A program that carries out a task on its own, in this case translating and checking portions of mathematical proofs."
+        },
+        {
+          "term": "Machine-readable",
+          "meaning": "Written in a form a computer can process and reason about, rather than prose meant only for people."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "AI research",
+          "Mathematics software"
+        ],
+        "task": [
+          "Formal verification",
+          "Automated theorem proving"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "IEEE Spectrum AI",
+          "url": "https://spectrum.ieee.org/enormous-theorem-ai"
+        }
+      ]
+    },
+    {
+      "id": "36ab44a965",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Study finds random data picks match hand-picked human video for robot pretraining",
+      "takeaway": "A study re-examined whether carefully chosen human video helps robots learn better than randomly chosen video. It found the careful selection added almost nothing beyond what random sampling already provided, once dataset size was controlled.",
+      "deck": "A random 5,000-recording subset matched most of the gain from a hand-picked subset in a 20-task benchmark.",
+      "body": [
+        "A new study revisits how much human video actually helps when used to pre-train robot control policies. A policy is the learned mapping from what a robot sees to what it does next. The authors took an existing method called Heterogeneous Pre-trained Transformers, or HPT, and tested it on 20 simulated manipulation tasks in MetaWorld.",
+        "They compared a hand-picked 5,000-recording subset of human data against a random 5,000-recording subset drawn from a larger 40,000-recording pool. After 20,000 training updates, the random subset captured 3.69 of the 4.29 percentage-point gain from the task-informed selection. At smaller sizes, the gap was 0.60 points at 5,000 recordings and 0.45 points at 1,250 recordings, with wide uncertainty ranges.",
+        "Two follow-up probes also failed to confirm the expected mechanisms. A test for task-slot mismatch showed a near-zero interaction of negative 0.0347 points after adaptation. In a six-task experiment, the sign of the observation-by-pretraining interaction flipped between seeds, while full-state pretraining stayed positive in both."
+      ],
+      "why": "It questions whether paying for curated human demonstration data is worth the cost, when a straightforward random sample from a larger pool may deliver nearly the same result in simulation.",
+      "hard": "The result comes from one implementation, one simulation suite and one dataset, so the conclusion may not hold for other robot learning methods or real-world data.",
+      "terms": [
+        {
+          "meaning": "A learned mapping from what a robot senses to what action it takes next.",
+          "term": "Policy"
+        },
+        {
+          "meaning": "Initial training on broad data before a model is adapted to a specific task.",
+          "term": "Pretraining"
+        },
+        {
+          "meaning": "A transformer-based method designed to combine data from different robot bodies and tasks into one model.",
+          "term": "Heterogeneous Pre-trained Transformers (HPT)"
+        },
+        {
+          "meaning": "A simulated benchmark of 20 robotic arm tasks used to compare robot learning methods.",
+          "term": "MetaWorld"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Training data"
+        ],
+        "task": [
+          "Policy pretraining",
+          "Data curation"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.22302"
+        }
+      ]
+    },
+    {
+      "id": "a524a0030a",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Toyota fund bets bigger on robotics and physical AI beyond cars",
+      "takeaway": "Toyota's venture arm is investing more in robotics, physical AI, energy, aerospace and manufacturing. The company is looking for startups that can shape Toyota decades from now and give it an edge beyond carmaking.",
+      "deck": "Woven Capital sees manufacturing and supply chain startups drawing new attention as Toyota looks past its core car business.",
+      "body": [
+        "Toyota's venture arm, Woven Capital, is shifting more money into robotics, physical AI, energy, aerospace, and manufacturing. Ro Gupta, the fund's head and a former autonomous vehicle startup founder, discussed the strategy on TechCrunch's Equity podcast.",
+        "Gupta said startup valuations may be more reasonable than they look at first glance. He compared the autonomous vehicle hype of 2017 and 2018 to today's AI rush, noting that future technology hype cycles could move even faster.",
+        "Woven Capital is especially interested in manufacturing and supply chain technology. Toyota can offer startups more than cash: access to customers, production know-how, and global distribution channels. Corporate venture money is becoming more appealing to founders for those reasons."
+      ],
+      "why": "Toyota is a major potential buyer of robot training data through its push into physical AI and manufacturing. Its interest in supply chain and manufacturing startups signals which industrial tasks and data types could see rising demand.",
+      "hard": "The source is a podcast summary with few concrete investment amounts, so the scale and specific targets of Toyota's robotics bets remain unclear.",
+      "terms": [
+        {
+          "term": "Physical AI",
+          "meaning": "Artificial intelligence that controls machines which move and act in the real world, such as robots, rather than only software."
+        },
+        {
+          "term": "Venture arm",
+          "meaning": "A part of a large company that invests money in smaller outside startups, usually to gain new technology or partnerships."
+        },
+        {
+          "term": "Autonomous vehicle",
+          "meaning": "A car or other vehicle that can drive itself using sensors and software without a human controlling it."
+        },
+        {
+          "term": "Supply chain technology",
+          "meaning": "Software and hardware that help track, move, and manage goods from factories to customers more efficiently."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Automotive",
+          "Robotics"
+        ],
+        "task": [
+          "Manufacturing",
+          "Supply chain"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "TechCrunch Robotics",
+          "url": "https://techcrunch.com/podcast/how-toyota-is-betting-on-a-future-beyond-cars/"
+        }
+      ]
+    },
+    {
+      "id": "51df07e10b",
+      "section": "india",
+      "kicker": "India Desk",
+      "headline": "Soket AI Raises $4 Mn from Bajaj Finserv to Expand Indian AI Model",
+      "takeaway": "Soket AI, an Indian startup building AI models for mathematics, coding and reasoning, raised $4 million from Bajaj Finserv and Pennant Technologies. The money will support research and enterprise deployments in finance, cybersecurity and defence.",
+      "deck": "Bajaj Finance and Pennant Technologies each put in about $2 million.",
+      "body": [
+        "Soket AI has raised $4 million from Bajaj Finserv's applied research arm, Finserv Intelligence, and Pennant Technologies. Bajaj Finance put in about $2 million; Pennant Technologies, a company Bajaj Finance invests in, put in the other $2 million. The money will fund applied AI research and enterprise deployments across financial services, cybersecurity, defence and enterprise technology.",
+        "The startup is building foundation models focused on mathematics, coding and reasoning. A foundation model is a large AI system trained on broad data that can be adapted to many tasks. Supported by the government's IndiaAI Mission, Soket AI recently launched EKA-1, a 26-billion-parameter model under Project EKA. The number of parameters gives a rough sense of model size and capacity.",
+        "Soket AI was founded in 2019 by Abhishek Upperwal and is working on a sovereign open-source AI stack that handles many Indian languages. The strategic investment is expected to pair Bajaj Finance's industry knowledge with Soket AI's research. Indian rivals are also moving: ZenteiQ AiTech launched small multilingual models, and Sarvam AI released an open-weight model for enterprise workflows like customer support routing and security checks."
+      ],
+      "why": "It is one more data point on where India's domestic AI effort is being funded. For a training-data company, growth in Indian-language and reasoning-focused models hints at future demand for Hindi, Tamil, Telugu and other Indian-language text and dialogue data, plus technical reasoning data, not just consumer chatbots.",
+      "hard": "The models are early-stage and not yet proven in large-scale commercial deployments; sovereign foundation models in India still face steep competition from much larger global systems.",
+      "terms": [
+        {
+          "meaning": "A large AI system trained on broad data, then adapted to many different tasks.",
+          "term": "Foundation model"
+        },
+        {
+          "meaning": "A model whose training recipe, weights or source code are publicly available, so others can inspect, use or modify it.",
+          "term": "Open-source AI stack"
+        },
+        {
+          "meaning": "AI built and controlled within one country, rather than depending on models from foreign companies.",
+          "term": "Sovereign AI"
+        },
+        {
+          "meaning": "A count of the adjustable connections inside a model; more parameters generally means a larger, more capable but costlier model.",
+          "term": "Parameters"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "AI and robotics",
+          "Financial services"
+        ],
+        "task": [
+          "Foundation model development",
+          "Enterprise AI deployment"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "Inc42",
+          "url": "https://inc42.com/buzz/soket-ai-raises-4-mn-from-bajaj-finserv-to-expand-its-ai-model-horizon/"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "Your Beat",
+      "headline": "From Human Videos to Bimanual Dexterous Manipulation Data: Confidence-Guided RL Refinement of Video Priors",
+      "url": "https://arxiv.org/abs/2611.21908",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Your Beat",
+      "headline": "FailureGen: Scalable Robot Failure Data Generation with World Models",
+      "url": "https://arxiv.org/abs/2611.22367",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Your Beat",
+      "headline": "This smell startup says its AI nose is as good as a human’s",
+      "url": "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/",
+      "source": "MIT Technology Review"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "ALOHA Lightning: Learning Fast and Precise Manipulation",
+      "url": "https://arxiv.org/abs/2611.21919",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Zero-Shot Compositional Generalization for Embodied Manipulation",
+      "url": "https://arxiv.org/abs/2611.22797",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "Technical Report of Mobile Manipulator Robot for Industrial Environments",
+      "url": "https://arxiv.org/abs/2611.22852",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Your Beat",
+      "headline": "RFW-S: Everyday Deformable Objects with Independent Simulation Verification",
+      "url": "https://arxiv.org/abs/2611.23056",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Elsewhere",
+      "headline": "From Commercial Scale to Embodied Intelligence: The Next Challenge for Robotics",
+      "url": "https://www.therobotreport.com/from-commercial-scale-to-embodied-intelligence-the-next-challenge-for-robotics/",
+      "source": "The Robot Report"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "An Open-Source da Vinci X/Xi Instrument Module for Laparoscopic Surgery Research",
+      "url": "https://arxiv.org/abs/2611.21771",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "DreamFAR: Real-Time and Long-Horizon Interaction with Diverse Objects",
+      "url": "https://arxiv.org/abs/2611.22001",
+      "source": "arXiv cs.RO"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 26,
+        "sector": "ai",
+        "company": "Applied Compute",
+        "what": "AI startup",
+        "round": "Acquisition",
+        "amount_usd_m": 4500,
+        "amount_text": "$4.5B",
+        "lead": "Palo Alto Networks",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZW5sQ0s3NEtGMUtHWHpjajhUZjB3WW1PcGNIOF9IdktwUTVFbVh6V2VsMVFsWFRBMlE5VmtyUXlPMUtfZlk2UU4zbGxoZ19ocThmVjNudnNUWFhNR3BlT0V5dUxuYVk5VXUyT2EwZHI3QmtTS1N1ejVTV005UmNvdV93MjVEVDBkQldGU3E2bTBzVHpUbWZNY2wtbWx6TzA?oc=5",
+        "source": "Reuters"
+      },
+      {
+        "i": 44,
+        "sector": "ai",
+        "company": "Ex-junior bankers' AI startup",
+        "what": "AI startup",
+        "round": "Funding",
+        "amount_usd_m": 3750,
+        "amount_text": "$3.75B valuation",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOM1dnaFlVWHVvbUdoSmwxTi1GSmhTSV85bWpEWWZPaThhQjlnMDhERzN5dnN1Y2tFWHhfa0hXMXBnNk9BZFFCdGhBOHpCTFROSWRVa0lkMENMX044alFWUWhNOHVhbklmbXpka29aekVYS2lwSXhPZHlyT1JEWkF5MlVpdTdvRTROSFJKR1h1Z0dvN19ucFJXMWRJWkpsUWlYMEJJdUFDZnZRcEl0djZYM2dJZEVWMDQ?oc=5",
+        "source": "Bloomberg.com"
+      },
+      {
+        "i": 20,
+        "sector": "ai",
+        "company": "Boltz",
+        "what": "Biomolecular AI models",
+        "round": "Series A",
+        "amount_usd_m": 110,
+        "amount_text": "$110M",
+        "lead": "Bessemer",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1YcUc3X0xDRGRJYTVhajZDT2xTa2NsVFVXSzU5UXcwTmJ1VHlscWZPcktGN2dGZGJ6NDZmbGR2d1ZIZnl5cjVmMGQtVjRsZndpanNN?oc=5",
+        "source": "Wowtale"
+      },
+      {
+        "i": 12,
+        "sector": "robotics",
+        "company": "BrightAI",
+        "what": "Physical AI for infrastructure monitoring",
+        "round": "Funding",
+        "amount_usd_m": 97,
+        "amount_text": "$97M",
+        "lead": "Smith Point Capital",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOUWMwWXBXSmVHRlBKTkhiTEFqc3JZelN0RTdFbXNGMnpRRkNiQmZRbUpMNGFjZm9oVDNtYlpBRUxvTWRlS2pHUTVoekI0cjdTVHl2Tml6RnlOVDlOSUIzOFk4UkxwbW9FZk9ucXdNVGd1VHJNWkRJajhwcHEyY243dXFqNk4wMmM3dExJSTE4bjlMWG93YlcyQUJlRmJYdGlSbEVXbVFqNFVoV1V3bzdGZEw2MjA0U09uTjIzUERWMng?oc=5",
+        "source": "citybiz"
+      },
+      {
+        "i": 0,
+        "sector": "robotics",
+        "company": "Humyn Labs",
+        "what": "Real-world data for robotics and AI",
+        "round": "Series A",
+        "amount_usd_m": 47,
+        "amount_text": "$47M",
+        "lead": "Accel",
+        "india": true,
+        "url": "https://www.therobotreport.com/humyn-labs-raises-47m-to-collect-real-world-data-for-robotics/",
+        "source": "The Robot Report"
+      },
+      {
+        "i": 19,
+        "sector": "robotics",
+        "company": "Nidus",
+        "what": "AI-powered robotics for defense factories",
+        "round": "Funding",
+        "amount_usd_m": 30,
+        "amount_text": "$30M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOd19Ec3JNZkVxSDdlY0JXSnpTY3YzVXY3d3pwRFRmNi0zQ0c3WlJrRlR4alQxejBuWFVVT2VoNWxuT2ZJdklWN1NpbDhWYWQtZDZCTkZ6aElhUENZVjhfYy16Wmo4RGRIOWYzLXdBTzVHdzdnRWZJMzB5YVAxMzRrcTB3ZGt1VDBlTWRlT3docEpKV3RQWlJvanZ1U0lLaDMwRXZHb0pyaC14MXc?oc=5",
+        "source": "AI Insider"
+      },
+      {
+        "i": 23,
+        "sector": "robotics",
+        "company": "Canadian robotics firm",
+        "what": "Robotics (name not given)",
+        "round": "Funding",
+        "amount_usd_m": 28,
+        "amount_text": "$28M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNWVVNY2JwSldQM1pMS2N2c1hFOXNCX3U5UkxoSWdmamlwM0lfNm83VThPYWJZWFJTa3FMbUZ1MS1KQ0pqWG5BbUhkNzBYQUFrRXVTT0paN21iQ2JqZjBGWXNCZTNGODI4VkNlRi1Vc3lsRFUyczVWZWwydUFtbjVXMmRSaEpxYXZtUXl1Nmt6alE0c1FVYkMxY1FHYw?oc=5",
+        "source": "The Business Journals"
+      },
+      {
+        "i": 36,
+        "sector": "deeptech",
+        "company": "Enerzolve Smart Technologies",
+        "what": "Deeptech energy technology",
+        "round": "Funding",
+        "amount_usd_m": 18,
+        "amount_text": "₹150-186 Cr ($16-20M)",
+        "lead": "Jungle Ventures",
+        "india": true,
+        "url": "https://inc42.com/buzz/deeptech-startup-enerzolve-to-raise-20-mn-from-jungle-ventures-others/",
+        "source": "Inc42"
+      },
+      {
+        "i": 27,
+        "sector": "deeptech",
+        "company": "Odin Dynamics",
+        "what": "Defence tech emerging from stealth",
+        "round": "Funding",
+        "amount_usd_m": 17,
+        "amount_text": "$17M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQ1plNmh6Y29BanVBRTFBeWRNNlo2WmVnaVVTN3JsOTdjV2x6dngtT21hbk1sLVZvM2xiQm1uZkdPUFdJUWc1Z2ppOHhnUVJCVEthTl9fRlZyTmxxSXBoNnhnRjJSNlA3Mk5JX19FUHlLZG9LRVRNYVdkbVRuRWxfS084TFJNYWJmUGV4YmJyNA?oc=5",
+        "source": "Tectonic Defense"
+      },
+      {
+        "i": 31,
+        "sector": "deeptech",
+        "company": "Valkryn",
+        "what": "Drone testing before combat",
+        "round": "Funding",
+        "amount_usd_m": 17,
+        "amount_text": "$17M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOd3JuMWE1UGlrVWNCbUJTVlhOQ1duenNCeFExN3RnbWZ1bFFQR00yVnVYeFo1M1BzY3FPZ1ZpTm5jSzhhYl9CeDB0c2s2NnBaMVFiMk9wVXhLaDc1MjZSZ0R3X2N4LUtwYm1NWEZPa1BsS3JRdkJhMG1PM2ptdG5DQ3Zhck9jeV9Hc2NENGJB?oc=5",
+        "source": "DroneXL"
+      },
+      {
+        "i": 9,
+        "sector": "robotics",
+        "company": "Botsync",
+        "what": "Robots and machines for factories",
+        "round": "Series B",
+        "amount_usd_m": 11,
+        "amount_text": "$11M",
+        "lead": "IvyCap Ventures",
+        "india": false,
+        "url": "https://entrackr.com/news/ivycap-ventures-leads-11-mn-series-b-round-in-robotics-company-botsync-12819998",
+        "source": "Entrackr"
+      },
+      {
+        "i": 25,
+        "sector": "ai",
+        "company": "Soombit AI",
+        "what": "Medical imaging AI",
+        "round": "Series A",
+        "amount_usd_m": 9.1,
+        "amount_text": "$9.1M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9YMHllcC1zd0FlT2E1cm9pYmtSVVJBd3VCT2VVS21JZVJwcm5ZZzZidWxDaVo2eUFaWFptRHhqVHBYV2xmY01XcEg1bFF3U2dYOGNj?oc=5",
+        "source": "Wowtale"
+      },
+      {
+        "i": 28,
+        "sector": "ai",
+        "company": "Unsiloed AI",
+        "what": "AI document processing for agents",
+        "round": "Seed",
+        "amount_usd_m": 7.5,
+        "amount_text": "$7.5M",
+        "lead": "Felicis",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/18/felicis-leads-7-5m-bet-on-unsiloed-ai-to-make-enterprise-documents-usable-by-ai-agents/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 8,
+        "sector": "robotics",
+        "company": "Baichuan",
+        "what": "Autonomous-driving data",
+        "round": "Pre-A",
+        "amount_usd_m": 7.49,
+        "amount_text": "$7.49M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNd29BdDBxU1M4TnpMV1dnczlua0xtNnRmdS1jYWhTRXhtRkFGZUZMT2NraFZUa0U2RGk3V2dhWGxYdGJwMm1hT2NFVExfNmo1eG1oMXJCSnBHUF9OYWlMVFR5VktHNEQ1czMxRjBVTzlteTQtTGFGVW1QWDJpLTV5OVd1OC1fajhha3R1R2dXakxUSmEtQWpPclIwM2k?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 40,
+        "sector": "ai",
+        "company": "each::labs",
+        "what": "AI startup",
+        "round": "Seed",
+        "amount_usd_m": 7,
+        "amount_text": "$7M",
+        "lead": "Revo Capital, EBRD",
+        "india": false,
+        "url": "https://techfundingnews.com/eachlabs-raises-7m-20m-run-rate-ai-hollywood/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 39,
+        "sector": "ai",
+        "company": "Tesorai",
+        "what": "Searchable raw lab data",
+        "round": "Seed",
+        "amount_usd_m": 5.3,
+        "amount_text": "$5.3M",
+        "lead": "Perplexity Fund, IQT",
+        "india": false,
+        "url": "https://techfundingnews.com/tesorai-raises-5-3m-seed-backed-by-perplexity-fund-and-iqt-to-make-raw-lab-data-searchable/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 22,
+        "sector": "ai",
+        "company": "Soket AI",
+        "what": "AI models",
+        "round": "Funding",
+        "amount_usd_m": 4,
+        "amount_text": "₹37 Cr ($4M)",
+        "lead": "Bajaj Finserv",
+        "india": true,
+        "url": "https://inc42.com/buzz/soket-ai-raises-4-mn-from-bajaj-finserv-to-expand-its-ai-model-horizon/",
+        "source": "Inc42"
+      },
+      {
+        "i": 42,
+        "sector": "ai",
+        "company": "AI startup (former City lawyer)",
+        "what": "AI for private capital deals",
+        "round": "Funding",
+        "amount_usd_m": 2.2,
+        "amount_text": "$2.2M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPeG5wZ04tMXdsdlJKQUVhUEU4eF9KTzJXLUw0U0J3eWtvRm0wOWtXRjc2blZBS0xQY1dfVGliN2VQZ05LVDlLSlM4YlhGRnhRSE16dlZoYzNXb3NUQmF3by1pdVZzS2wtcmJ6OFJXX2RLWGdzZV9KcExpUmtZSkJucnpZVQ?oc=5",
+        "source": "Google News: AI deals"
+      },
+      {
+        "i": 35,
+        "sector": "ai",
+        "company": "JohnAIC",
+        "what": "Sovereign on-premise AI servers",
+        "round": "Funding",
+        "amount_usd_m": 1.9,
+        "amount_text": "$1.9M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQek9Ed2tDaFctX0pIUXctQ1lzR3hzRHV1a183Q04wb0NXSjZuV3lUNkdGZl9KVHFtTHMtOC1RNE5pZ2gxVGNuM24wVkpURkM3VkVxLUtId1BuTmRFNDMtbGFUWW1SdXdfVFZwMUptLTBoQ3ZoT2c3em5JVHRaNWlYVURzdUJXdXFydzFXbWNzMGYyU0g2Q19MUGt5WmJGTWZpWTVjbmZXWXcwcTBkbU96ZUN2UG9MS3dQNlpxOGNqWl9lSGg3dWlFWldMWmMwU3hic2x1Z2VjT3JOd9IB2gFBVV95cUxQek9Ed2tDaFctX0pIUXctQ1lzR3hzRHV1a183Q04wb0NXSjZuV3lUNkdGZl9KVHFtTHMtOC1RNE5pZ2gxVGNuM24wVkpURkM3VkVxLUtId1BuTmRFNDMtbGFUWW1SdXdfVFZwMUptLTBoQ3ZoT2c3em5JVHRaNWlYVURzdUJXdXFydzFXbWNzMGYyU0g2Q19MUGt5WmJGTWZpWTVjbmZXWXcwcTBkbU96ZUN2UG9MS3dQNlpxOGNqWl9lSGg3dWlFWldMWmMwU3hic2x1Z2VjT3JOdw?oc=5",
+        "source": "Indian Startup News"
+      },
+      {
+        "i": 6,
+        "sector": "robotics",
+        "company": "AGILOX",
+        "what": "Autonomous mobile robot developer",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Rockwell Automation",
+        "india": false,
+        "url": "https://www.therobotreport.com/rockwell-automation-acquiring-mobile-robot-maker-agilox/",
+        "source": "The Robot Report"
+      },
+      {
+        "i": 10,
+        "sector": "ai",
+        "company": "Anthropic",
+        "what": "AI models (Claude)",
+        "round": "IPO",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 43,
+        "sector": "deeptech",
+        "company": "Cogitat",
+        "what": "Neurotech spinout from Imperial",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Indivi",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNSlFnRUtLU2RHeUw1Y1ZyRjg3NEU1Wm1CSnMyei1DMTFIdVoyenJ4Z3p6UDRFQ0lvazg4SnVZLURqY1JNSm1qdkN2MXoxLW9Jcm1GNjFJN0pIM3RSQW52blpLZkFIcFc4UUJjZ29BcVphVk1kNWdaMlNIcW95ejk4azZR?oc=5",
+        "source": "Mirage News"
+      }
+    ],
+    "totalUsdM": 8669
+  },
+  "playground": [
+    {
+      "headline": "MIT's AI bass guitar plays along with you",
+      "body": "MIT Media Lab researcher Antonis Christou built Automatar, a custom bass guitar that uses AI to accompany a human musician in real time. Instead of generating digital audio from text prompts, it listens and plays along, turning a solo practice into a duet.",
+      "why": "It shows AI moving from generating music in the abstract to joining a live human performance, hinting at more responsive and collaborative instruments.",
+      "maker": "Antonis Christou, MIT Media Lab",
+      "url": "https://www.hackster.io/news/mit-s-ai-powered-bass-guitar-plays-along-with-you-4dc56f464813",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "A one-motor drone flips and dodges obstacles",
+      "body": "Researchers at the University of Hong Kong built PULSAR II, a drone that flies with just one motor. It can perform aerial flips, navigate obstacles autonomously, and withstand impacts while relying on a single spinning rotor for both lift and control.",
+      "why": "It proves that simpler hardware, paired with clever control, can match the agility of multi-rotor drones, which could lead to cheaper and more robust flying robots.",
+      "maker": "University of Hong Kong researchers",
+      "url": "https://www.hackster.io/news/this-spinning-drone-can-see-everything-around-it-44c3d662f984",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "Will Wright's new game maps your memories",
+      "body": "Will Wright, creator of SimCity and The Sims, is working on MyMems, a mobile game where players speak short stories from their lives and the game turns them into pieces placed on a map. AI-powered avatars can represent real people, and the world gradually becomes a map of the player's psyche.",
+      "why": "It suggests a new kind of personal game where AI builds a world from autobiographical fragments rather than predefined assets.",
+      "maker": "Will Wright and Gallium Studios",
+      "url": "https://www.theverge.com/games/1036140/will-wright-mymems-ai-game-interview",
+      "source": "The Verge AI"
+    },
+    {
+      "headline": "A chatbot small enough for a floppy disk",
+      "body": "A hobbyist built Tiny2.1, a chatbot that fits on a single floppy disk and runs on a 486 or Pentium under DOS. The 367K-parameter transformer holds about 3,500 facts and was written in Turbo C 2.0 by one language model and trained by another.",
+      "why": "It shows that useful language models can be shrunk to absurdly small footprints, opening the door for curated AI assistants on vintage or constrained hardware.",
+      "maker": "WollyMonjac",
+      "url": "https://hackaday.com/2026/11/18/not-so-large-language-model-fits-on-a-floppy-disk/",
+      "source": "Hackaday"
+    }
+  ],
+  "think": {
+    "collision": {
+      "a": {
+        "kind": "story",
+        "n": 6,
+        "label": "Rockwell to buy mobile robot maker AGILOX"
+      },
+      "b": {
+        "kind": "brief",
+        "n": 3,
+        "label": "Startup says its AI nose matches humans"
+      },
+      "headline": "Record Indian pharma and food warehouse workers with chest cameras plus gas and smell sensors, for robots that must notice leaks and spoilage",
+      "body": "Rockwell's purchase of AGILOX points to more mobile robots hauling goods inside food and pharmaceutical sites, where a dented drum, a solvent leak or a spoiled pallet matters as much as the route. The smell startup shows that electronic noses, small sensors that turn odours into numbers, are now good enough to log alongside video. A pilot would pair stereo egocentric video with a clip-on gas and odour sensor while Indian warehouse staff do inspection rounds, and would tag each moment a worker stops, sniffs, checks or flags a problem.",
+      "who_pays": "Makers of mobile robots for regulated plants, such as Rockwell after the deal closes, and pharma and food companies that want their robots to do inspection as well as transport.",
+      "data_needed": "Synchronised stereo video, motion sensor and odour-sensor readings from real inspection rounds, with worker labels for each anomaly they found and what action they took.",
+      "why_fail": "Cheap odour sensors drift with heat and humidity in Indian warehouses, so readings may be too noisy for buyers to trust without costly calibration."
+    },
+    "contrarian": {
+      "story_n": 1,
+      "consensus": "Humyn Labs reaching $50 million in annual revenue in six months proves that demand for real-world robot training data is large, durable and growing.",
+      "against": [
+        "Early revenue in a hot market often comes from a few well-funded robot labs stockpiling data ahead of need, and that kind of buying can stop quickly if budgets tighten or a lab changes approach.",
+        "Today's study finding that random samples match hand-picked human video suggests buyers may soon pay for raw volume at falling prices, which squeezes margins for premium collectors.",
+        "The rig study and the $557 wearable gripper show that how data is captured shapes what robots learn, so buyers may move from generic hours of video toward their own hardware and in-house collection, cutting out vendors."
+      ],
+      "bets_otherwise": "Groups releasing large open workplace video datasets, like the 10,124-hour release in today's paper, and labs building world-model data generators such as the FailureGen team, are betting that much of this data will become cheap or synthetic.",
+      "settle_it": "Whether Humyn Labs and peers report repeat contracts from many buyers at stable or rising price per hour over the next year, rather than one-off bulk orders from a few labs."
+    }
+  },
+  "cost": {
+    "usd": 0.0898,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 5,
+        "inTokens": 30713,
+        "outTokens": 9784,
+        "cost": 0.008,
+        "models": {
+          "anthropic/claude-haiku-5.5": 5
+        }
+      },
+      "write": {
+        "calls": 10,
+        "inTokens": 14246,
+        "outTokens": 6128,
+        "cost": 0.0393,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 10
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 4112,
+        "outTokens": 2487,
+        "cost": 0.0017,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 3374,
+        "outTokens": 553,
+        "cost": 0.0066,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "think": {
+        "calls": 1,
+        "inTokens": 4020,
+        "outTokens": 909,
+        "cost": 0.0343,
+        "models": {
+          "anthropic/claude-opus-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 291,
+    "unique": 225,
+    "feeds": 29,
+    "failedFeeds": [
+      "r/robotics",
+      "r/LocalLLaMA",
+      "Hacker News",
+      "Show HN"
+    ]
+  },
+  "generatedAt": "2026-11-19T00:16:50.104Z"
+}
