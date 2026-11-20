@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-11-20",
+    "weekday": "Friday",
+    "number": 23,
+    "lead": "Anthropic raises $81.3 billion in IPO, larger than SpaceX offering",
+    "stories": 10,
+    "readMinutes": 14,
+    "costUsd": 0.0897
+  },
+  {
     "date": "2026-11-19",
     "weekday": "Thursday",
     "number": 22,

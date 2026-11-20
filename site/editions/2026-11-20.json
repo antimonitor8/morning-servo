@@ -1,0 +1,900 @@
+{
+  "date": "2026-11-20",
+  "weekday": "Friday",
+  "sunday": false,
+  "number": 23,
+  "paper": "The Morning Servo",
+  "readMinutes": 14,
+  "stories": [
+    {
+      "id": "f543638b41",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Anthropic raises $81.3 billion in IPO, larger than SpaceX offering",
+      "takeaway": "The AI company Anthropic raised $81.3 billion in its initial public offering, more than SpaceX's earlier $75 billion listing. The company's revenue grew sharply, though its losses also widened.",
+      "deck": "Revenue reached $16.2 billion in the first half of 2026, up from $1.16 billion a year earlier, while the net loss widened.",
+      "body": [
+        "Anthropic, the AI company known for the Claude chatbot, raised $81.3 billion in its initial public offering. That is larger than the $75 billion IPO by the rocket and satellite company SpaceX, which had held the record.",
+        "Anthropic reported $16.2 billion in revenue for the first half of 2026. In the same period a year earlier the figure was $1.16 billion, a growth of roughly fourteen times. The company's net loss widened, meaning costs grew faster than income.",
+        "The listing shows continued heavy investor demand for large AI companies even when they are not yet profitable. The share sale gives Anthropic a large cash reserve to fund data centers and model development."
+      ],
+      "why": "Large losses alongside fast revenue growth show AI companies are still spending far more than they earn. Robotics startups are likely to face the same pressure: buyers will want training data that demonstrably lowers model cost or improves task success, not just novelty.",
+      "hard": "The article text was not available, so details on which exchange listed the shares, the final share price, and how the money will be allocated are not confirmed in this source.",
+      "terms": [
+        {
+          "term": "IPO",
+          "meaning": "Initial public offering, the first sale of a company's shares to the public on a stock exchange."
+        },
+        {
+          "term": "Revenue",
+          "meaning": "The total money a company brings in from its business before costs are subtracted."
+        },
+        {
+          "term": "Net loss",
+          "meaning": "The amount by which a company's costs and expenses exceed its revenue over a period."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "AI",
+          "Venture capital"
+        ],
+        "task": [
+          "Funding and capital markets",
+          "AI model development"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "YourStory",
+          "url": "https://yourstory.com/2026/11/anthropic-raises-813-billion-from-ipo-with-valuation-of-15-trillion"
+        },
+        {
+          "name": "Analytics India Magazine",
+          "url": "https://analyticsindiamag.com/ai-news/anthropic-sets-us-ipo-record-with-813-billion-share-sale"
+        },
+        {
+          "name": "Ratopati",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOa0NDLXVzODJ5aGdTNUp0NFZLZUJfWmVxZG1TZEU2UjNEdElyTzM3R2NSTUtUbHBtbFo2RHNDaWw3dTc0UjlLLWluQzZIekdaVFAta3puX2lBTHpRcThaQnVybk9vYlZOYmFlQm85a1NVLU90U2lEVW42Z0ZGa3BxNU1pdXcyYW5ndDJGWWpiNkt3ck1fendKT2lIcWZvazZvZWRVQkJJSWJIb3NmVGRMY0g2N0Ric3o4SGFR?oc=5"
+        },
+        {
+          "name": "blue News",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPbE1HWEtfSEJ4V29IWnNGV2NWMWpQZlhXLWNwYUNOSVRENmdhQkJlVkwzdk9HMHM3VzNZQ1Z4azhSMEV2eDlvQ1lIV2pCVHNyXzI5ZHYwR1h5b19XNWYxZ1hMQnpqMzJudHdKRU5IWW1lMXNqUlZTdmF3dVplSW5JZi1HVUF2RG9wNEFoY1J0QTE4N3o2enc5XzRSM0lISlE?oc=5"
+        },
+        {
+          "name": "Hamro Patro",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSWtzYXBQRUlVR0RhbFNwSWdpYjZGZnY2anRBNEZLX1R2RkJ6YmRFSnlYd3ZtdkZEcjQ5cDdSNXQ4MEZwdzBHT3B0R1NlUXVBMWpiUF9sdzZQelBUeDBnZVBxWHR2aXQwY0pHdGhFWXBRRkhXcnhSQmlXQVJ3QS1MSWVtdERTMExjSnVXeG51Y2ZYcHNrNHV2cEtxN0UzU2VobVRaVU1GZUZOa180X3Z2TUcwdWRNcVox?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "5f20165735",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "New method converts first-person human video into physically accurate robot training data",
+      "takeaway": "A research team has built a system that turns egocentric human video into robot training data by tracking where hands touch objects and how objects move. It captures contact forces and grasp states, not just visual motion, which makes the resulting robot trajectories physically executable.",
+      "deck": "The contact-aware approach cut hand-depth error by 33.7 percent on one benchmark and more than doubled contact realization on another.",
+      "body": [
+        "Researchers at several labs have introduced Ego2X, a pipeline that converts monocular egocentric video into robot training data for dexterous hands and parallel grippers. The method centers on a representation called CORE, which records each contact by its surface anchor, relative force, grasp mode, and interaction state.",
+        "Existing ego-to-robot pipelines judge fidelity mainly by visual appearance, so fingers often hover beside objects and grippers close on empty space. Ego2X instead uses object-relative constraints to correct hand-object drift, steers inverse kinematics toward contacts the robot must realize, and preserves held objects during arm erasure and robot compositing.",
+        "On the HOT3D benchmark, contact-driven correction reduced in-contact hand depth error by 33.7 percent. On EgoDex, contact-driven retargeting realized 62.9 percent of annotated contacts, up from 27.9 percent for the official HuRo pipeline. In RoboTwin 2.0, training X-VLA on Ego2X episodes alone raised task success rate from 40.5 percent zero-shot to 67.0 percent across 200 paired scenes."
+      ],
+      "why": "This directly affects how egocentric video can be converted into usable robot training data. If contact-aware retargeting works reliably across hands and grippers, it raises the value of first-person human video as a substitute for slow, expensive robot data collection.",
+      "hard": "The largest gains still come from a single research benchmark with 200 paired scenes, and the pipeline has not been validated on commercial robots outside these controlled evaluation settings.",
+      "terms": [
+        {
+          "term": "Egocentric video",
+          "meaning": "First-person video recorded from a camera mounted on a person's head or chest, showing what they see while working."
+        },
+        {
+          "term": "Retargeting",
+          "meaning": "Mapping human motion from video onto a robot body so the robot can perform the same action."
+        },
+        {
+          "term": "Inverse kinematics",
+          "meaning": "A calculation that figures out the joint angles a robot needs to reach a target position with its hand or gripper."
+        },
+        {
+          "term": "Zero-shot",
+          "meaning": "A model performing a task it was not explicitly trained on, using only what it learned from other examples."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "AI research"
+        ],
+        "task": [
+          "Robot training data",
+          "Egocentric video retargeting"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.24138"
+        }
+      ]
+    },
+    {
+      "id": "634bef00fa",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "New tokenizer for two-armed robots improves coordination and success on tasks",
+      "takeaway": "A new way to package two-armed robot movements lets a robot learning system see what the arms share and how they depend on each other. In tests, it beat eight alternative methods, especially on tightly coordinated tasks.",
+      "deck": "It shares one movement representation across both arms and conditions each arm on the other",
+      "body": [
+        "BiCAT is a new way of converting robot arm movements into the small units, called tokens, that a robot learning model predicts one after another. For two-armed robots, most current methods squash both arms' movements into one combined unit per step. This obscures movement patterns the arms share and mixes up how the arms depend on each other.",
+        "BiCAT instead uses one shared movement representation for both arms, while letting each arm's tokens pay attention to the other arm's tokens. It predicts all tokens for the left arm first, then uses that output as additional context when predicting tokens for the right. This forced structure teaches the model where the coordination between arms actually lives.",
+        "In ten simulated tasks and six real robot tasks across three different robot bodies, BiCAT beat the other tokenizers tested. Its average success in simulation was 17.6 percentage points higher than the strongest of eight alternative methods, with the largest wins on tasks needing tight coordination. Each movement chunk took 40.5 milliseconds to predict."
+      ],
+      "why": "Two-armed robot tasks are a likely source of future training data demand, and this result suggests companies building such robots can get better performance by changing how movements are tokenized rather than only scaling data. Vendors collecting egocentric video of coordinated two-hand human work may see rising interest from customers using this tokenizer design.",
+      "hard": "The method is assessed only in a single research paper, with six real-world tasks, so its reliability across broader industrial bimanual work is still unproven.",
+      "terms": [
+        {
+          "meaning": "A system that converts a robot's movement into a set of discrete units, like words in a sentence, that a learning model can predict.",
+          "term": "Action tokenizer"
+        },
+        {
+          "meaning": "A type of model that takes in what a robot sees and its language instructions, then predicts the robot's next motions step by step.",
+          "term": "Vision-language-action model"
+        },
+        {
+          "meaning": "A rule or learned mapping that tells a robot what actions to take based on what it observes.",
+          "term": "Policy"
+        },
+        {
+          "meaning": "Using both arms together to carry out a job, such as holding a lid while the other hand turns a cap.",
+          "term": "Bimanual manipulation"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Robot learning"
+        ],
+        "task": [
+          "Bimanual manipulation",
+          "Robot policy learning"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.23499"
+        }
+      ]
+    },
+    {
+      "id": "87882629b7",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Researchers build robot control model that handles moved objects and new instructions",
+      "takeaway": "A new robot control model keeps most of its accuracy when objects are shifted or instructions are reworded. It suggests the way training examples are arranged matters more than using a bigger model.",
+      "deck": "The model scored 0.72 on LIBERO-PRO, above the previous best published score of 0.53.",
+      "body": [
+        "Researchers built a robot control model called RageVLA and tested it on LIBERO-PRO, a benchmark for robot manipulation. The model scored 0.72, compared with 0.53 for the best previously published model. A larger version reached 0.73.",
+        "The method rearranges training examples in two ways. Every object and fixture in demonstration videos is moved and rotated, tasks are shown in different rooms and on different surfaces, and every written instruction is paraphrased. The model is also split so one part describes objects and gripper view separately, then hands that scene description to the action model.",
+        "In further tests, when the position data given to the model was shuffled while camera images stayed correct, its success fell from 0.965 to 0.215. When the target object was moved 28 cm, RageVLA still succeeded 86.5 percent of the time, while another recent model succeeded 10.5 percent of the time."
+      ],
+      "why": "The results point to a concrete recipe for making robot control models robust to changed scenes and wording: rearrange and relabel existing demonstration data rather than only collecting more. That is cheaper for training-data suppliers and could guide how egocentric demonstration collections should be processed before sale.",
+      "hard": "The tests are on a lab benchmark with tabletop tasks, not on real deployments where lighting, clutter and hardware vary more.",
+      "terms": [
+        {
+          "term": "Vision-language-action model",
+          "meaning": "A robot control model that takes camera images and written instructions, then outputs robot actions."
+        },
+        {
+          "term": "Policy",
+          "meaning": "The learned rule a robot follows to choose actions from what it sees and is told."
+        },
+        {
+          "term": "Diffusion transformer",
+          "meaning": "A type of model that generates outputs by repeatedly refining random noise into a final result."
+        },
+        {
+          "term": "State of the art",
+          "meaning": "The best published performance on a standard benchmark task."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "AI research"
+        ],
+        "task": [
+          "Robot manipulation",
+          "Training data augmentation"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.23517"
+        }
+      ]
+    },
+    {
+      "id": "c9d0324d2e",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Thin open-source sensor gives robot grippers three-axis fingertip feel",
+      "takeaway": "Researchers built a thin, open-source touch sensor that measures both how hard a robot presses and which way a surface slides. It improved a robot at a peg-insertion task.",
+      "deck": "Optical tactile array resolves shear at each taxel using color, without a camera or magnets.",
+      "body": [
+        "Researchers from multiple US universities have released LuxTac, an open-source tactile sensor array for robot grippers. It is about 3.5 mm thick and made from off-the-shelf parts, so it can wrap around a finger or cover a palm without adding much bulk.",
+        "Each sensing point, called a taxel, sits under a white silicone layer capped with a black film. A small LED shines through the silicone, and a light sensor reads how much light returns, which changes with how deeply the silicone is pressed. One gel cartridge measures only downward force. A second cartridge has colored walls that change the color of the reflected light when the surface is pushed sideways, letting each taxel separately estimate force in three directions with a median directional error of 4.8 degrees.",
+        "When pressure readings from LuxTac were added to an Action Chunking Transformer, a common robot learning model, the robot improved at a peg-in-hole insertion task compared with using a camera alone. The normal-force cartridge responded linearly across a useful range, from 104 millinewtons to at least 5.8 newtons, with 2 percent repeatability. Design files and code are public."
+      ],
+      "why": "For a training-data business, this matters in two ways. First, sensors like LuxTac could be added to the egocentric data-collection rigs your vendors use, letting buyers capture touch along with video in one pass. Second, it signals that robot learning work is moving toward fine manipulation tasks such as insertion and assembly, where demand for paired force data is likely to grow.",
+      "hard": "The sensor is described in a preprint and has not yet been proven across many different manipulation tasks, gripper shapes, or long-term industrial use.",
+      "terms": [
+        {
+          "meaning": "A small sensing point on a tactile array, like one pixel of a touch screen.",
+          "term": "Taxel"
+        },
+        {
+          "meaning": "A machine-learning model that turns short sequences of robot observations into the next chunk of robot actions.",
+          "term": "Action Chunking Transformer"
+        },
+        {
+          "meaning": "Force applied sideways along a surface, which a robot needs to sense to avoid dropping or misaligning objects.",
+          "term": "Shear"
+        },
+        {
+          "meaning": "A repeated backward shift between a sensor's rising and falling response to the same force, which can make readings less consistent.",
+          "term": "Hysteresis"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Tactile sensing"
+        ],
+        "task": [
+          "Robotic manipulation",
+          "Tactile sensing"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.23575"
+        }
+      ]
+    },
+    {
+      "id": "e14cc272ed",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Study finds better way to adapt robot models to multi-finger hands",
+      "takeaway": "Researchers tested five ways to adapt a robot control model from simple grippers to a five-finger hand. They found that the version that looks best in early testing is often the wrong one to build on, and that freezing part of the model works better than retraining everything.",
+      "deck": "The best early checkpoint is rarely the one that improves most after reinforcement learning.",
+      "body": [
+        "Most robot manipulation datasets use simple parallel-jaw grippers, so models trained on them struggle when moved to multi-finger hands. Teleoperation data for dexterous hands is also harder to collect, making direct training expensive.",
+        "The researchers paired supervised fine-tuning with diffusion-steering reinforcement learning, a method that guides a model's trial-and-error learning. They tested five recipes on a LEAP hand across two simulation tasks, using only a handful of demonstrations for each.",
+        "Three findings stood out. First, success after supervised fine-tuning did not predict success after reinforcement learning. Second, freezing the vision-language model and training only the action expert produced the most steerable policy, including on new object placements. Third, low-rank adaptation was the least steerable approach."
+      ],
+      "why": "This matters for training-data strategy. If early fine-tuning results are a poor guide to final performance, teams evaluating robot models on small demonstration sets may be picking the wrong checkpoints. The finding that freezing the vision-language model works best also suggests buyers may not need to pay for expensive full-model retraining on dexterous-hand data.",
+      "hard": "The results come from two simulation tasks on one hand design, so it is unclear whether the recipe transfers to real hardware or other dexterous hands.",
+      "terms": [
+        {
+          "term": "Vision-Language-Action model",
+          "meaning": "An AI model that takes in images and text instructions and outputs robot movements."
+        },
+        {
+          "term": "Supervised fine-tuning",
+          "meaning": "Further training of an already-trained model on a smaller, specific dataset to adapt it to a new task."
+        },
+        {
+          "term": "Reinforcement learning",
+          "meaning": "A training method where a model learns by trial and error, receiving rewards for good outcomes."
+        },
+        {
+          "term": "Low-rank adaptation (LoRA)",
+          "meaning": "A technique that updates only a small set of extra parameters in a model, making fine-tuning cheaper."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "AI research"
+        ],
+        "task": [
+          "Dexterous manipulation",
+          "Model fine-tuning"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.23676"
+        }
+      ]
+    },
+    {
+      "id": "5b55dfee24",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Industrial drone autonomy remains fragile outside controlled testing",
+      "takeaway": "Drones still struggle to fly themselves through real industrial sites because structures disrupt satellite, camera, and depth sensors. Companies are shifting to predictable stops when conditions worsen, instead of promising continuous hands-off inspection.",
+      "deck": "Real factories degrade several drone sensors at once, forcing a defined operating envelope instead of always-on autonomy.",
+      "body": [
+        "The Robot Report describes why industrial drones are not ready for the hands-off flying that lab demonstrations often suggest. According to the analysis, factory sites degrade a drone's sensors in ways a testing facility cannot reproduce. Metal and glass surfaces reflect satellite signals, confuse depth cameras, and leave visual sensors without enough texture to track movement.",
+        "For one example, the report points to real-time kinematic GNSS, the method that corrects satellite positioning in outdoor drones using local base stations. Fixed RTK solutions are promoted as accurate, but they still fail when structures block the sky or bounce signals around. Many navigation stacks combine RTK with visual-inertial odometry, lidar-based mapping, and loop closure in SLAM, such as VINS-Mono and LIO-SAM, but each method weakens in different conditions.",
+        "The report sees a maturing industry accepting autonomous-only operation when clear conditions allow it, and predictable stops when confidence drops. That operational envelope, not continuous hands-off flight, is now the aim. Drone makers like ZenaDrone are already running supervised inspections at live industrial facilities. The next test is proving the whole system can respond in time, because a long processing delay looms when wind, sensor failure, and a narrow structure arrive together."
+      ],
+      "why": "The report isolates which sensing failures force a drone to stop. For training-data planning, firms collecting egocentric video or teleoperation data near steel, glass, and reflector-heavy structures may be able to sell exactly the failure-prone sequences that should teach robots when to hand control back.",
+      "hard": "Single-sensor tests and lab runs are not enough evidence, and there is still no clear way to verify when an integrated drone system is confidently wrong rather than just slow.",
+      "terms": [
+        {
+          "meaning": "The use of satellites like GPS to work out a drone or robot's location.",
+          "term": "Global Navigation Satellite System (GNSS)"
+        },
+        {
+          "meaning": "Building a map of an area while tracking the robot's position within it, used to correct drifting estimates.",
+          "term": "Simultaneous localization and mapping (SLAM)"
+        },
+        {
+          "meaning": "Merging readings from a camera and a motion sensor to estimate movement when satellite or map data is unreliable.",
+          "term": "Visual-inertial odometry (VIO)"
+        },
+        {
+          "meaning": "The allowed speeds, distances, and wind conditions within which an autonomous drone is trusted to stay safe.",
+          "term": "Operational envelope"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Drones",
+          "Industrial inspection"
+        ],
+        "task": [
+          "Robot navigation",
+          "Autonomous inspection"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/what-industrial-drone-deployments-reveal-about-real-world-autonomy-challenges/"
+        }
+      ]
+    },
+    {
+      "id": "107eabb8f8",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Soft exosuit helps older people stand and walk with less effort",
+      "takeaway": "A soft, wearable suit helps older adults stand up from chairs and walk more efficiently. In a small study, people stood up faster and used less energy walking while still feeling in control.",
+      "deck": "A motor on the back pulls artificial tendons at the hip when sensors detect the wearer is standing or walking.",
+      "body": [
+        "Researchers at the Technical University of Munich built a soft, lightweight suit that helps older adults stand up from a chair and walk. The suit has two thigh straps, a waist belt and artificial tendons connected to a small motor unit worn on the back like a backpack. Sensors on the thighs measure leg movement in real time.",
+        "Ten older adults aged 69 to 85 with reduced lower-limb function tested the suit. Standing became easier: some participants managed up to four additional sit-and-stand cycles per minute, with cycle time shortened by up to 21.9%. Walking efficiency improved by 14% on average, with one person's energy use falling 27.5%. Participants rated their sense of control at above 6 on a 7-point scale.",
+        "The researchers trained the control system on movement data from young, healthy people first, then refined it with usage data from older testers. The team says the suit can be put on or taken off in a few minutes and worn comfortably over normal clothing. The work was published in Nature Communications."
+      ],
+      "why": "This shows machine learning being used to time physical assistance to a person's own movement, which is the same core challenge as robot manipulation policies that must coordinate with human motion. The approach of starting with data from healthy people and refining with real user data is directly relevant to building training datasets.",
+      "hard": "These results come from a single small study with ten older participants, so long-term comfort and reliability in daily home use remain unproven.",
+      "terms": [
+        {
+          "meaning": "Wearable motorised suits that support a person's own movements rather than replacing them.",
+          "term": "Exosuit"
+        },
+        {
+          "meaning": "Data about the position, angle and speed of body parts during movement.",
+          "term": "Kinematics"
+        },
+        {
+          "meaning": "The amount of energy the body uses to perform a physical task.",
+          "term": "Metabolic cost"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Assistive technology"
+        ],
+        "task": [
+          "Mobility assistance",
+          "Rehabilitation"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "Robohub",
+          "url": "https://robohub.org/soft-exosuit-makes-it-easier-to-stand-up/"
+        }
+      ]
+    },
+    {
+      "id": "d680d8751e",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Anthropic shares open 33 percent above IPO price on Nasdaq",
+      "takeaway": "Anthropic began trading on the Nasdaq at $111.50, far above the $83 price set for its public listing. It now expects to hold about $220 billion in cash and starts with a value above Meta, Tesla and Walmart.",
+      "deck": "The listing gives the AI company far more cash than expected.",
+      "body": [
+        "Shares of Anthropic, the company behind the Claude chatbot, began trading on the Nasdaq exchange on November 19, 2026. In early trading, the stock changed hands at $111.50 per share. That was 33 percent above the initial public offering price of $83 set the day before. The company had earlier expected to price the offering between $70 and $78.",
+        "The offering itself raised more than $81 billion for employees and the company. Combined with prior fundraising and new private investments timed around the listing, Anthropic now expects to hold about $220 billion in cash. At the opening price, the company's total market value stood above $2 trillion, placing it ahead of Meta, Tesla and Walmart and behind only five other public companies.",
+        "Speaking before the opening bell, chief executive Dario Amodei framed the listing as support for the company's focus on AI safety. He said the stronger financial position reinforces a commitment to responsible choices and could encourage other companies to act similarly, describing the approach as a race to the top."
+      ],
+      "why": "A large new cash reserve at a major AI developer signals more spending on compute, data and research, which could shift demand for services such as real-world training data. It also sets a benchmark for how public markets now value AI companies in a short time.",
+      "hard": "The stock had only been trading for minutes at the reported price, so the valuation could change sharply as the market settles.",
+      "terms": [
+        {
+          "meaning": "The first sale of a private company's stock to the public, used to raise money.",
+          "term": "Initial public offering (IPO)"
+        },
+        {
+          "meaning": "The total value of a company's outstanding shares, found by multiplying share price by share count.",
+          "term": "Market capitalization"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Artificial intelligence",
+          "Public markets"
+        ],
+        "task": [
+          "Capital raising",
+          "AI safety positioning"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/"
+        }
+      ]
+    },
+    {
+      "id": "ac350395de",
+      "section": "india",
+      "kicker": "India Desk",
+      "headline": "Karnataka hosts nearly half of India's AI centres of excellence",
+      "takeaway": "Karnataka has over 120 AI and machine learning centres of excellence, nearly half of India's total. This concentration of talent and infrastructure makes the state the country's main hub for building enterprise AI products.",
+      "deck": "The state has 111,000 AI and machine learning professionals, or 43% of India's total.",
+      "body": [
+        "Karnataka has more than 120 artificial intelligence and machine learning Centres of Excellence across over 100 global capability centres, according to a Zinnov-KDEM report. That is nearly half of India's total, and about four times the size of the next-largest hub.",
+        "The state is home to 1,088 global capability centres, or 51% of India's total. It has 111,000 AI and machine learning professionals, 43% of the national total. One in three centres now works on generative AI or agentic AI projects, moving beyond pilot tests to production systems.",
+        "Bengaluru's AI hiring intensity reached 13.6% of global capability centre job postings in 2026, compared with 9.8% at the same companies' offices elsewhere in India. Around 69% of surveyed Karnataka centres provide role-specific AI training, against 53% nationally."
+      ],
+      "why": "The report shows where enterprise demand for AI skills is concentrating in India. For robotics training-data work, the growth of agentic AI and industrial maintenance projects in Karnataka suggests more buyers will need egocentric video of physical tasks, not just software workflows.",
+      "hard": "The report measures centres, headcount and job postings, but does not show how many of these AI projects are deployed in production or what share of the work involves physical-world tasks rather than software.",
+      "terms": [
+        {
+          "term": "Centre of Excellence (CoE)",
+          "meaning": "A dedicated team or unit inside a company that focuses on building skills and projects in one area, here AI and machine learning."
+        },
+        {
+          "term": "Global Capability Centre (GCC)",
+          "meaning": "An offshore office that a multinational company sets up to handle technology, research or business services for its global operations."
+        },
+        {
+          "term": "Generative AI",
+          "meaning": "AI that creates new content such as text, images or code, rather than only classifying or predicting from existing data."
+        },
+        {
+          "term": "Agentic AI",
+          "meaning": "AI systems that can plan and carry out multi-step tasks on their own, using tools and making decisions without constant human prompting."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "AI and machine learning",
+          "Global capability centres"
+        ],
+        "task": [
+          "Enterprise AI deployment",
+          "AI talent and hiring"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "Analytics India Magazine",
+          "url": "https://analyticsindiamag.com/ai-news/karnataka-hosts-nearly-half-of-indias-ai-centres-of-excellence-zinnov-kdem-report-says"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "Robotics Floor",
+      "headline": "RESCUE Jumper: A Centimeter-Scale Rolling and Jumping Robot for Search and Rescue",
+      "url": "https://arxiv.org/abs/2611.23531",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Learning the Dynamics of Deformable Linear Objects Through Coupled Oscillators for Bimanual Robotic Manipulation",
+      "url": "https://arxiv.org/abs/2611.23563",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "SPICE: Stochastic Policy for Interaction in Cluttered Environments",
+      "url": "https://arxiv.org/abs/2611.23585",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "How Uncertain Is My Action? Self-Correcting Visual Planning with Frozen World Models",
+      "url": "https://arxiv.org/abs/2611.23620",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Improving While Deployed: Learning Proactive End-to-End Driving from Imperfect Human Takeover Data",
+      "url": "https://arxiv.org/abs/2611.23719",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "TacPilot: Does Touch Need to Be Everywhere?",
+      "url": "https://arxiv.org/abs/2611.23804",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "3DTouch: A Tactile-aware VLA Model with 3D Geometric Relations for Dexterous Manipulation",
+      "url": "https://arxiv.org/abs/2611.23961",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "LaST1.0: A Unified Latent World-Action Model with Control-Centric SpatioTemporal Reasoning",
+      "url": "https://arxiv.org/abs/2611.23974",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Your Beat",
+      "headline": "Old Experience, New Lessons: Relabeling Autonomous Robot Rollouts in Interactive Imitation Learning",
+      "url": "https://arxiv.org/abs/2611.24273",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "OpenAI, AMD Use AI to Cut Chip Design Process From a Year to Under 5 Months",
+      "url": "https://analyticsindiamag.com/ai-news/openai-and-amd-achieve-a-year-of-chip-design-progress-in-under-five-months",
+      "source": "Analytics India Magazine"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 17,
+        "sector": "ai",
+        "company": "Yash Patil's AI startup",
+        "what": "AI startup co-founded by Yash Patil",
+        "round": "Acquisition",
+        "amount_usd_m": 5000,
+        "amount_text": "₹42,000 Cr ($4.8B)",
+        "lead": "Palo Alto Networks",
+        "india": false,
+        "url": "https://yourstory.com/2026/11/disseqt-ai-raises-8m-to-build-enterprise-ai-safeguards",
+        "source": "YourStory"
+      },
+      {
+        "i": 1,
+        "sector": "robotics",
+        "company": "Agile Robots",
+        "what": "Humanoid and robotics developer",
+        "round": "Funding",
+        "amount_usd_m": 500,
+        "amount_text": "$500M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSXM0U2NHTDBqdHN3dDVDUFM2dDdtdDVrWlZjTEJOam1fTjMwaVF3aEV4ajV6X0VScC1VVnJYSEpUZ1NxNFVXQjdMOXN0Z0VHM1RISnA1NFU1cWdCSExsc3FEMjFWUlRSQ3Q5d2pxWjZESXFHeVdaWHE3djlRcENTXzFQclp2cjBXTHh5QXU1NVEyYkZPWlg3MVpJMGxfelpSZVMzUlNLMWRlVU1JYUtaMlB4dGpCZw?oc=5",
+        "source": "Metrology and Quality News"
+      },
+      {
+        "i": 2,
+        "sector": "deeptech",
+        "company": "MegaRobo",
+        "what": "AI robotics biotech lab automation",
+        "round": "Funding",
+        "amount_usd_m": 200,
+        "amount_text": "$200M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxORzBnUTNnS3dRU0oxeUFNMU5KczIyanZsODV6WDlHWUdDTGVNOVVkcTdCakRDYVhKUkdTMkVzOTJMX1RsTF95cThJc3A2WXpDaWtDVG1acGwzdzRtVHlqbVN4MjZPR2FtNGlmY18yWjVRX3hLRmNzay1KY3lNMFlKX1NyUkhNdUN5SGhMdHR4Y0NscEExZDNvS3I2OFBfVjl4WWlIYUdNZ2FPbjFZd3RrSzM4Q3ZVV3JuQ1dhdFBwRW5SQV85ejRIZw?oc=5",
+        "source": "SiliconANGLE"
+      },
+      {
+        "i": 9,
+        "sector": "ai",
+        "company": "Everful",
+        "what": "Factory-direct sourcing platform",
+        "round": "Funding",
+        "amount_usd_m": 48.5,
+        "amount_text": "$48.5M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOOXJHYkZKM2w0VjMtUlJoNGxMNlVlV05TUGIwMGxUSWVIY29ucUpTZE14SXVsMlh1WUcwMmpnb1hoU0huN0VoMTU5TUVLZzlSZzhhYWw4M1Zob19BM0psM29rTWRZMXB1d3M0elFUOWtNRWtTdGNhbENpSHdVTjZ4YUtnYVMyMkYybGl1aXg1SFZ2QmtXZk05UGJDNFZMV2xLaHZtNkhDcWkyeW04Zi1NbVB6VEhBS1hFMUNkbQ?oc=5",
+        "source": "Indian Startup Times"
+      },
+      {
+        "i": 13,
+        "sector": "ai",
+        "company": "Sumary",
+        "what": "AI operating system for accounting firms",
+        "round": "Seed",
+        "amount_usd_m": 25,
+        "amount_text": "$25M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNWlBDbVdFdjllRHRtRkEweE5nUmN0bXVnSmN6V2JsMFBGelJMU0ZIVFQwUXRySU9SdjhmQUd4MjgxelJQdFh3Zy1jd0pLZWkxaGY2aE1uYlNZN0JLZjg3UFpXQ05ZZlBzYTJOc2NCd2ZneGFULWd1eDdKeE04cjg2T0pabU5VdGZ6cWVqZ1ZJYmNmRkhnelcwX1A0SG5XU21rYi1Dc0dSMmNrYXRSQ1R4MnplU2RHeldRcWFBZTFSVm9MekdOSzFnbWg3SU05QkI5Z1AzMmQ1Yw?oc=5",
+        "source": "Google News: robotics deals"
+      },
+      {
+        "i": 4,
+        "sector": "ai",
+        "company": "August AI",
+        "what": "AI healthcare assistant",
+        "round": "Funding",
+        "amount_usd_m": 12,
+        "amount_text": "$12M",
+        "lead": "Accel, Peak XV Partners, Claypond Capital",
+        "india": false,
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1035384/anthropic-ipo-trading-nasdaq",
+        "source": "The Verge AI"
+      },
+      {
+        "i": 10,
+        "sector": "deeptech",
+        "company": "Cyient Semiconductors",
+        "what": "Custom silicon and ASIC chipmaker",
+        "round": "Funding",
+        "amount_usd_m": 10,
+        "amount_text": "$10M",
+        "lead": "GlobalFoundries",
+        "india": true,
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1037459/anthropic-ipo-safe-ai-reputation-power-structure",
+        "source": "The Verge AI"
+      },
+      {
+        "i": 14,
+        "sector": "deeptech",
+        "company": "Stryx AI",
+        "what": "Anti-drone defence startup",
+        "round": "Seed",
+        "amount_usd_m": 8.3,
+        "amount_text": "€7.7M ($8.3M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5MbWdneGllb2NCSHlnRGx4YnF0MVptcDNHZE1WWFZwUkxqY3BXZGtPR3hod3NFU2lCSjJRcjBTblcyZ1U0dUlpZzdrWQ?oc=5",
+        "source": "Informationsdienst Wissenschaft"
+      },
+      {
+        "i": 8,
+        "sector": "ai",
+        "company": "Disseqt AI",
+        "what": "AI governance and assurance platform",
+        "round": "Pre-Series A",
+        "amount_usd_m": 8,
+        "amount_text": "$8M",
+        "lead": "Gresham House Ventures",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNUHFHM2tuZ0JQTEpPX1k3bWJ4VmVpLTZaMmZMR1ZzdWo4TXR1NktDWl9aWG1COUpzRUtOdVlrUlVuMkNQbWVORFNVTWE3WDhoRzFqVXRwbi13dklRZ0t1bjNpaWUwcGhNQVZBaEh2Zk9VbVRwV0YzMWZjZHVXbmtqajcxVDJ5SjJzb1FzbndfY1dSdGNTU2lhOTJfWXB2UWFmSFd6RWFiYjZNejRVeVNCR2M3aUZaTEYtbzRtV0p6VjU3LVpTd1E?oc=5",
+        "source": "Breitbart News"
+      },
+      {
+        "i": 6,
+        "sector": "robotics",
+        "company": "Vetaion",
+        "what": "AI robotics for control cabinet manufacturing",
+        "round": "Funding",
+        "amount_usd_m": 6.2,
+        "amount_text": "€5.7M ($6.2M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUlJISlJXZFo5clowVGJPak9EdGJ5aGlYd0FGeEkxTnBVbW1jSWNfQXdFU2tvYjYzLXNjelNJNmw3Z09ndmNTZk5LOFkyd3pfZllpYUNoTWRaSnl3VThKUXc1RUNwRkdlaHhjSnp1aUlrbTcxcjJkcVhkbDNTLTJJMFQxNXFsU3FVcWJ1U2Y1Z2ZvTUxRT1dSRUlkSk9reUFDaGNkOXRPRlFFazBLTTZXTFl0enY0UDV5Q2xj?oc=5",
+        "source": "AI Insider"
+      },
+      {
+        "i": 11,
+        "sector": "ai",
+        "company": "LATO",
+        "what": "AI agents for private equity diligence",
+        "round": "Seed",
+        "amount_usd_m": 4.7,
+        "amount_text": "$4.7M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://inc42.com/buzz/august-ai-raises-12-mn-to-expand-ai-healthcare-assistant-in-the-us/",
+        "source": "Inc42"
+      },
+      {
+        "i": 5,
+        "sector": "robotics",
+        "company": "IntelliProve",
+        "what": "Health sensing for humanoid robots",
+        "round": "Seed",
+        "amount_usd_m": 2.7,
+        "amount_text": "€2.7M ($2.9M)",
+        "lead": "Miles Ahead",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMmllM2hkN3JqNHpiSklDUjc3QjI1RjA5SDNZaGY2d0pTWnBpVEMwVVJzeEg5aUdwYmtFNFRtTTdRXzVsZmJ1cndVWnpNNFpfc2RJMi1xbTc0cUtPRE02R01aN0g2TW5wZV8wTVFKRlRJTWN0TjJ5Q1RhNHNrUmhOT0VaZFp3cmhWUTByeGNDeFdHQU1TTmRLUElydWlpS2VCUlNrRzdiRFpQYWxoSm1OaGdwaFBkdXhpQUlQWXp6b2Q?oc=5",
+        "source": "Ocean News & Technology"
+      },
+      {
+        "i": 12,
+        "sector": "ai",
+        "company": "Karia",
+        "what": "Logistics AI startup",
+        "round": "Pre-seed",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "DG Daiwa Ventures",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbndnbkdXOFk1WUVtY3czUnhTZHh5cjhENHhtTGVPZXVCbFA2MjRvVkRkdWVRMWtYeExwVWNxbFRNLTdITHprNjVsVFhSNnZpbkNEb2RmcFhYMXlxczZ6cDVaaGgzc1A2MTgwNGJfdWtteXVmQmRfN0pZYVhfRDZ5VFFTLU5JWVpLbnFnRlpIbEFUblJHTzV4VVVqenFFOWh1eUoxaHBwaVpVdHJHZFVLMDJNUHNxNTRU?oc=5",
+        "source": "Tech.eu"
+      },
+      {
+        "i": 15,
+        "sector": "ai",
+        "company": "Chipverse",
+        "what": "Egyptian AI startup",
+        "round": "Pre-seed",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPTGVSME02djlGR3JYbmxzSnZESTZzbjdyUGdNVGpoNzJMUlVtWXd1QmpQVE5fRXpmZEdqeG90VEtGUmxtcXZnOEY4cDZQRGtoVDh3T2gybTZiNmxlNjJUZEJzY0hyM3dqdDQxYk9hajYycnZaMzFFdllMb2ZlblIzbEl2MlVETl9zUF9HcUNnck1ReExTay11THdjdUl5azE2dk04NHljVzI5NTlMeFE?oc=5",
+        "source": "SiliconANGLE"
+      },
+      {
+        "i": 16,
+        "sector": "ai",
+        "company": "Manifast",
+        "what": "AI startup",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://inc42.com/buzz/ai-startup-disseqt-ai-raises-8-mn-to-scale-international-operations/",
+        "source": "Inc42"
+      }
+    ],
+    "totalUsdM": 5825
+  },
+  "playground": [
+    {
+      "headline": "MIT's Flying Robot Weighs Less Than a Paperclip",
+      "body": "A team at MIT built a flying robot that weighs less than a paperclip. It uses a new tetherless design to stay airborne despite the tiny payload, overcoming the usual problem of sensors and electronics being too heavy for insect-scale drones.",
+      "why": "Insect-sized drones that can carry their own navigation gear hint at future uses like crop pollination or inspecting tight spaces.",
+      "maker": "MIT researchers",
+      "url": "https://www.hackster.io/news/this-flying-robot-weighs-less-than-a-paperclip-a64d21f4bb8a",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "DIY Robot Plugs In a Tesla for You",
+      "body": "Mew463 built a DIY robot arm that automatically plugs a charger into a Tesla when it's parked at home. The system handles the whole routine, so the car can charge when energy prices are low without the owner lifting a finger.",
+      "why": "Home robots handling everyday chores like EV charging show how automation can quietly remove small daily hassles.",
+      "maker": "Mew463",
+      "url": "https://www.hackster.io/news/this-diy-robot-automatically-plugs-in-a-tesla-s-charger-235733951ff7",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "A Chatbot That Runs on a 486 PC",
+      "body": "WollyMonjac got a real transformer-based language model running on a 486 PC from the early 1990s. Tiny 2.1 has just 367,000 parameters, fits on a floppy disk, and runs in about 540 KB of memory under MS-DOS, complete with a neon interface and PC speaker voice.",
+      "why": "Putting a working language model on such old hardware shows how far model compression and lightweight AI have come.",
+      "maker": "WollyMonjac",
+      "url": "https://www.hackster.io/news/bringing-ai-to-the-dos-era-7a21c15723e6",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "Robot Face Reacts While the AI Speaks",
+      "body": "Emo-H2A drives a 29-degree-of-freedom facial robot directly from the hidden states of a large language model during decoding. The face shifts expression token by token as the model generates its reply, without waiting for a separate emotion label.",
+      "why": "Continuous, low-latency facial expressions synced to speech could make human-robot conversation feel much more natural.",
+      "maker": "Min Li and team",
+      "url": "https://arxiv.org/abs/2611.23932",
+      "source": "arXiv cs.RO"
+    }
+  ],
+  "think": {
+    "collision": {
+      "a": {
+        "kind": "story",
+        "n": 8,
+        "label": "Soft exosuit times hip assistance to wearer's movement"
+      },
+      "b": {
+        "kind": "brief",
+        "n": 5,
+        "label": "Self-driving cars learn from imperfect human takeovers"
+      },
+      "headline": "Record Indian care workers helping elderly people stand and walk, logging the exact moment they step in, for assistive robots",
+      "body": "The exosuit work shows the hard part of physical help is timing: knowing when a person needs a pull and when to stay out of the way. The driving paper shows that the moments when a human takes over from a machine are a valuable training signal, even when those takeovers are messy. A dataset of caregivers in Indian hospitals and elder-care homes, filmed with chest-mounted stereo cameras and wrist motion sensors, with every 'I stepped in here' moment tagged, would teach assistive robots and exosuits when to act.",
+      "who_pays": "Exosuit makers, elder-care robot startups in Japan, Korea and Europe, and rehabilitation research labs that lack real-world assistance data.",
+      "data_needed": "Egocentric stereo video from caregivers, wrist and waist motion sensors on both caregiver and patient, and timestamped labels for each moment of physical help, all under formal medical consent.",
+      "why_fail": "Consent and privacy rules for filming frail patients in care settings may make collection too slow and costly to reach useful scale."
+    },
+    "contrarian": {
+      "story_n": 2,
+      "consensus": "Contact-aware conversion of first-person human video makes egocentric footage a ready substitute for slow, expensive robot data collection.",
+      "against": [
+        "A 33.7 percent cut in hand-depth error on one benchmark is a lab result. Messy factory footage with gloves, blur and hidden hands may not convert nearly as well.",
+        "Video still carries no direct force or touch signal. Today's tactile briefs, such as TacPilot and 3DTouch, suggest buyers for fine tasks will want paired touch data that cameras alone cannot supply.",
+        "If conversion gets good, value may shift from raw footage to the conversion software. Video could become a cheap commodity, leaving the retargeting tool owners with the margin."
+      ],
+      "bets_otherwise": "Teleoperation-heavy players such as Tesla and Figure, which collect data on their own robots, and makers of tactile sensors like the LuxTac team, are betting that robot-native and touch data stays essential.",
+      "settle_it": "A head-to-head test where robots trained on converted egocentric video match the success rate of robots trained on equal-cost teleoperation data, on real contact-heavy industrial tasks."
+    }
+  },
+  "cost": {
+    "usd": 0.0897,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 5,
+        "inTokens": 30143,
+        "outTokens": 8931,
+        "cost": 0.0075,
+        "models": {
+          "anthropic/claude-haiku-5.5": 5
+        }
+      },
+      "write": {
+        "calls": 10,
+        "inTokens": 13861,
+        "outTokens": 5938,
+        "cost": 0.0404,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 10
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 3738,
+        "outTokens": 1594,
+        "cost": 0.0012,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 3464,
+        "outTokens": 507,
+        "cost": 0.0066,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "think": {
+        "calls": 1,
+        "inTokens": 4155,
+        "outTokens": 871,
+        "cost": 0.034,
+        "models": {
+          "anthropic/claude-opus-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 267,
+    "unique": 205,
+    "feeds": 29,
+    "failedFeeds": [
+      "Import AI",
+      "Google DeepMind",
+      "r/LocalLLaMA",
+      "r/robotics",
+      "Show HN"
+    ]
+  },
+  "generatedAt": "2026-11-20T00:16:54.167Z"
+}
