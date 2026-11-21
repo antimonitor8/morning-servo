@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-11-21",
+    "weekday": "Saturday",
+    "number": 24,
+    "lead": "Agents build 16,450 simulated robot tasks from existing examples",
+    "stories": 10,
+    "readMinutes": 14,
+    "costUsd": 0.0857
+  },
+  {
     "date": "2026-11-20",
     "weekday": "Friday",
     "number": 23,

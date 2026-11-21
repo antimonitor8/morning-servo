@@ -1,0 +1,867 @@
+{
+  "date": "2026-11-21",
+  "weekday": "Saturday",
+  "sunday": false,
+  "number": 24,
+  "paper": "The Morning Servo",
+  "readMinutes": 14,
+  "stories": [
+    {
+      "id": "914d51e8c5",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Agents build 16,450 simulated robot tasks from existing examples",
+      "takeaway": "A new system uses AI agents to expand a small set of robot tasks into thousands of new simulated training examples, checking each one for physical feasibility. It saved 16,450 usable tasks and completed about 38 percent with a robot policy.",
+      "deck": "The system turns 20,323 construction attempts into 16,450 saved task instances at 166.97 instances per hour.",
+      "body": [
+        "Researchers built AgenticTask, a framework where one AI agent creates new robot tasks and another tries to execute them. It starts from an existing task collection called RoboCasa, which provides simulated home scenes for robot training.",
+        "The generation agent reuses the structure of existing tasks to create variations such as placing, opening, and arranging objects. When a new task has a physical conflict, the system revises it using feedback from validation checks. Of the 20,323 construction attempts, 62.26 percent passed the configured physical checks.",
+        "The execution agent then selected robot skills and checked whether each task ended correctly. It completed about 38 percent of evaluated tasks. The researchers say construction reliability, action selection, and task-robot compatibility are the clearest areas to improve."
+      ],
+      "why": "Simulated task generation matters for training-data supply because it can produce large numbers of labeled interaction examples without paying for physical egocentric video or teleoperation. The throughput figure gives a concrete sense of how fast such pipelines can scale.",
+      "hard": "Only 38 percent of evaluated tasks were completed, so the execution side is still unreliable for generating clean demonstration data at scale.",
+      "terms": [
+        {
+          "term": "Embodied AI",
+          "meaning": "AI systems that control physical machines, such as robot arms or humanoids, rather than only processing text or images."
+        },
+        {
+          "term": "Simulation",
+          "meaning": "A computer-generated environment where robots are trained and tested virtually instead of in the real world."
+        },
+        {
+          "term": "Agent",
+          "meaning": "A software system that decides and acts in steps, here used to generate or run robot tasks."
+        },
+        {
+          "term": "Policy",
+          "meaning": "The learned set of rules a robot follows to decide what action to take next in a situation."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "AI training data"
+        ],
+        "task": [
+          "Simulated data generation",
+          "Task scaling"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.26046"
+        }
+      ]
+    },
+    {
+      "id": "132c6f0c4e",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Video world model helps humanoid robot policies improve without risky real-world training",
+      "takeaway": "Researchers trained a humanoid robot control policy inside a learned video simulation, then fine-tuned it with a small amount of real robot data. Success on three physical tasks rose from 23 percent to 75 percent, beating real-world-only training.",
+      "deck": "The method avoids teleoperation and uses only 20 real robot attempts per task to align the simulation with reality.",
+      "body": [
+        "A team from an unnamed institution built WEVO, a framework for improving humanoid robot control policies without teleoperation. The approach trains a video world model, a system that predicts what the robot will see next after taking an action, using simulated play data covering both manipulation and locomotion.",
+        "The researchers then let a vision-language-action policy, a model that turns camera images and text commands into robot movements, collect 20 real robot attempts per task. These real observations align the world model with actual deployment conditions. The policy, a whole-body controller, and the video world model form a closed-loop training environment with dense progress rewards.",
+        "Across three real robot tasks, adding play data improved every world model metric and downstream policy success. Training inside the video world model raised mean success from 23.3 percent to 75.0 percent, compared with 48.3 percent for training directly on the real robot. The authors argue simulation provides broad initial coverage while the video world model offers a deployment-aligned environment for later improvement."
+      ],
+      "why": "This shows a path to improve humanoid policies using mostly simulated and learned video data, with only a small amount of real robot interaction. For training-data providers, it suggests demand may shift toward diverse simulated play data and egocentric video that helps world models predict contact and viewpoint changes.",
+      "hard": "The work is demonstrated on only three real robot tasks, and the paper does not yet show whether the approach scales to many tasks or transfers across different robot bodies.",
+      "terms": [
+        {
+          "term": "Vision-language-action policy",
+          "meaning": "A control model that takes camera images and text instructions, then outputs robot actions."
+        },
+        {
+          "term": "World model",
+          "meaning": "A learned simulation that predicts what a robot will see next, given its current view and an action."
+        },
+        {
+          "term": "Reinforcement learning",
+          "meaning": "A training method where a model improves by trying actions and receiving reward signals for good outcomes."
+        },
+        {
+          "term": "Whole-body controller",
+          "meaning": "Software that coordinates all joints of a humanoid robot at once, rather than controlling arms and legs separately."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Humanoid robots"
+        ],
+        "task": [
+          "Robot learning",
+          "World models"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.25251"
+        }
+      ]
+    },
+    {
+      "id": "c7aaaea5f2",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Robot-training study re-weights demonstration video segments during learning",
+      "takeaway": "A research paper shows that automated re-sampling of robot demonstration video during training improves skill-learning results. The method raised task success on standard simulated tests, with no cost after deployment.",
+      "deck": "Scores of short video windows shift over time, so RefreshGrad re-weights demonstrations while a robot policy trains.",
+      "body": [
+        "A team from Beijing and Shanghai has posted a preprint on arXiv describing a method called RefreshGrad, which changes how robot-learning models are shown demonstration data during training. The headline claim is that not all parts of a demonstration video are equally useful, and their usefulness changes as the model learns.",
+        "The method works on vision-language-action policies, which are models that take in what a robot sees and an instruction in words, and output robot movements. Normally, training samples all parts of demonstration videos evenly. RefreshGrad instead scores short time windows of each video using five signals derived from the policy itself, then adjusts how often each window is replayed. The scoring happens periodically during training, so the priorities shift as the model improves.",
+        "The authors report that, across 10 simulated manipulation tasks in the LIBERO-Plus benchmark, average success rose from 60.7 percent with uniform sampling and 68.2 percent with a baseline called FAKTUAL to 76.1 percent when the robot was tested with visual disturbances. In clean test scenes, success rose from 57.4 percent and 73.3 percent to 81.3 percent. The authors say the method does not change the model architecture, the training objective, or how fast the model runs after training."
+      ],
+      "why": "For training-data suppliers, this points to automated data curation that does not require fixed human decisions about which recordings matter. If it translates to real, varied tasks, buyers may expect dataloaders and pipelines to support dynamic re-weighting of egocentric video.",
+      "hard": "The results are from simulated manipulation tasks in a controlled benchmark, so it is not yet clear whether the gains hold on real robots or for other task types.",
+      "terms": [
+        {
+          "meaning": "A model that looks at what a robot sees and an instruction in everyday words, then produces robot arm or hand movements in response.",
+          "term": "Vision-language-action policy"
+        },
+        {
+          "meaning": "A model’s overall setup and structure, including the layers it uses, as distinct from the numbers it learns during training.",
+          "term": "Architecture"
+        },
+        {
+          "meaning": "Short sections of a demonstration video, marked by start and end times, that the model learns from.",
+          "term": "Temporal windows"
+        },
+        {
+          "meaning": "Information calculated from the model’s current behavior, such as confidence or error patterns, used here to score which video segments are worth replaying.",
+          "term": "Policy-native signals"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Training data"
+        ],
+        "task": [
+          "Robot learning",
+          "Data selection"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.25398"
+        }
+      ]
+    },
+    {
+      "id": "9fc7791c8e",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Stereo camera mapping method blends learned depth with measured geometry",
+      "takeaway": "A new stereo camera mapping technique uses reliable measured distances to correct a neural network's dense depth guesses. The result is a consistent metric 3D map, meaning distances in the reconstruction match real-world distances.",
+      "deck": "The approach keeps the speed of older model-based methods while adding neural-network depth.",
+      "body": [
+        "The framework combines two existing approaches to camera tracking and mapping. The first is a geometric feed-forward model, a neural network that estimates distance for every pixel. The second is model-based stereo visual odometry, which tracks a camera by matching landmarks across images from two lenses.",
+        "The key fix addresses a known problem: neural depth predictions are not metrically consistent, meaning a metre in the model's output may not represent a real metre. The method uses sparse but reliable 3D landmarks, computed from stereo and multiple frames, to correct the dense predictions. This calibration is applied jointly across all keyframes in a local submaps.",
+        "At a higher level, the framework registers consecutive submaps together using their shared geometry. Any remaining scale differences are corrected. A global factor graph then combines constraints from within and between submaps. Tests on public and in-house datasets show competitive tracking accuracy against both geometric and learning-based baselines, with improved robustness when learned depth fails."
+      ],
+      "why": "This points to a practical middle ground for robot mapping: using learned depth without losing the accurate scale that measured geometry provides. For a company selling egocentric video, it signals continued demand for stereo footage where sparse reliable depth can anchor dense predictions.",
+      "hard": "The method has only been tested on datasets, not yet on robots operating in unfamiliar industrial environments in real time.",
+      "terms": [
+        {
+          "term": "Stereo visual odometry",
+          "meaning": "A method that estimates a camera's movement by matching images from two side-by-side cameras, like human eyes judging space."
+        },
+        {
+          "term": "Dense depth prediction",
+          "meaning": "A learned model's estimate of distance for every pixel in an image, rather than only for a few selected points."
+        },
+        {
+          "term": "Factor graph",
+          "meaning": "A way of representing a large estimation problem as smaller connected pieces, making it easier to solve."
+        },
+        {
+          "term": "Metric mapping",
+          "meaning": "Building a 3D map where distances and scales reflect the actual physical world, not an arbitrary scale."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "3D Mapping"
+        ],
+        "task": [
+          "Visual odometry",
+          "Dense depth estimation"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.25445"
+        }
+      ]
+    },
+    {
+      "id": "692dd72e45",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Language coach helps robots chain short skills into longer tasks",
+      "takeaway": "Researchers found a way to make robot policies better at long tasks by having an AI coach name the next step in plain language. After fine-tuning on those coached attempts, robots succeeded more often without any coach.",
+      "deck": "A frozen vision-language model names only the next step, never an action.",
+      "body": [
+        "Generalist robot policies can do short skills reliably, but they stall when chaining them into long tasks. Self-improvement from the policy's own collected experience does not fix this because the policy only repeats what it already does.",
+        "CoachSI uses a frozen vision-language model as a language coach. It watches the same camera images the robot sees and names the next step in the format of the policy's atomic instructions. It never outputs an action. Successful coached attempts are relabeled with the original task instruction and used to fine-tune the policy.",
+        "In unseen scenes, unassisted success on long tasks rose from 47.4 percent to 59.3 percent. That is 9.8 points above fine-tuning on human demonstrations and 7.3 points above fine-tuning on self-collected successes, at an equal data budget. The gain came with the action backbone frozen."
+      ],
+      "why": "The method suggests cheaper ways to improve robot policies: off-the-shelf language models can relabel collected video with useful step instructions, reducing the need for fresh human demonstrations for long-horizon tasks.",
+      "hard": "The coach still relies on the policy's existing atomic skills, so it cannot teach movements the robot does not already have.",
+      "terms": [
+        {
+          "term": "Policy",
+          "meaning": "The learned brain of a robot that decides what action to take based on what it sees."
+        },
+        {
+          "term": "Vision-language model (VLM)",
+          "meaning": "An AI that understands images and text together, like a system that can describe what is happening in a photo."
+        },
+        {
+          "term": "Fine-tune",
+          "meaning": "To update a trained model with a small amount of extra data so it gets better at a specific job."
+        },
+        {
+          "term": "Action backbone",
+          "meaning": "The part of a robot policy that turns decisions into actual movements, which stayed unchanged in this work."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "AI research"
+        ],
+        "task": [
+          "Robot learning",
+          "Long-horizon manipulation"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.25529"
+        }
+      ]
+    },
+    {
+      "id": "b5ff059faf",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Robot policy learns to reuse skills across unfamiliar tools",
+      "takeaway": "A new method lets a robot learn a task with a few tools, then figure out how to do the same job with tools it has never seen. In real-robot tests, success improved by more than 30 percentage points.",
+      "deck": "The system works out which parts of a tool matter for a task, then carries that knowledge to new tools.",
+      "body": [
+        "Researchers built a system called A2-VLA to solve a familiar robot problem: a spatula and a ladle have different shapes but do similar jobs. A robot trained to flip food with a spatula often fails when handed a ladle, because it does not know which parts of the new tool matter.",
+        "A2-VLA treats useful tool features, or affordances, as guesses to be tested. Starting from teleoperated demonstrations with a few tools, the system rebuilds the scenes in simulation and runs its own experiments to find functional regions and their key geometric properties. It stores validated feature-extraction skills in a library for later tools.",
+        "Those encoded tool-region features then steer a pi-0.5 robot control policy during training and use. In simulated tool-handover tests, the method reached 86.1 percent success. Across three real-robot tool-use tasks, it raised success by 30.7 percentage points over pi-0.5 alone."
+      ],
+      "why": "Tool generalization is a key gap for robot training data buyers. If a few teleoperated demonstrations can cover many unseen tools in a task family, the volume of egocentric video needed per tool drops sharply.",
+      "hard": "The work covers three real-robot tasks and relies on reconstructed simulation scenes, so it is still unclear how well the approach scales to messy, cluttered industrial settings.",
+      "terms": [
+        {
+          "term": "VLA policy",
+          "meaning": "A vision-language-action policy is a learned robot controller that turns camera images and text instructions into arm and hand movements."
+        },
+        {
+          "term": "Affordance",
+          "meaning": "The usable features of an object, such as the handle of a pan or the blade of a spatula, that suggest how to grip or use it."
+        },
+        {
+          "term": "Teleoperated demonstrations",
+          "meaning": "Recordings where a person remotely controls a robot to perform a task, used as examples for the robot to learn from."
+        },
+        {
+          "term": "Backbone",
+          "meaning": "The main pretrained model that a new system builds on, here the pi-0.5 robot control model."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Research"
+        ],
+        "task": [
+          "Manipulation",
+          "Tool use"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.25656"
+        }
+      ]
+    },
+    {
+      "id": "583b0c0a96",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Government space fund leads SatSure's ₹200 crore Series B round",
+      "takeaway": "A Bengaluru company that turns satellite images into data for banks and insurers has raised ₹60 crore from a government-backed space fund. The money will help it build its own satellites and sell its data services overseas.",
+      "deck": "The round values the Bengaluru Earth observation company at ₹870 crore as it pushes into satellite-building.",
+      "body": [
+        "SatSure, a Bengaluru company that analyses satellite images for banks, insurers and governments, has raised ₹60 crore (about $7 million) from Antariksh Venture Capital Fund, a government-backed space technology fund. This is the first tranche of a ₹200 crore Series B round that values the company at ₹870 crore.",
+        "The money will go toward three areas: advancing optical sensors built by its subsidiary KaleidEO, scaling Dhaarini, its geospatial AI model, and expanding international operations. The company will also use funds to help build India's first fully indigenous commercial Earth observation satellite system, under a public-private partnership led by Pixxel.",
+        "This is AVCF's first investment in the downstream data and AI layer of India's space economy. Launched in March 2025 and managed by SIDBI Venture Capital, the fund previously backed satellite maker Dhruva Space. SatSure says its products let public-sector banks approve farm loans in minutes and has raised ₹427 crore in institutional funding to date."
+      ],
+      "why": "SatSure is building a full-stack Earth observation business: satellites in orbit plus a geospatial foundation model on the ground. Its demand for large volumes of curated Earth imagery and its enterprise analytics focus point to where commercial buyers of space-derived training data may look next.",
+      "hard": "The valuation and first tranche are small next to the ₹200 crore target, and the round will not fully close until December 2026, leaving much of the capital still uncommitted.",
+      "terms": [
+        {
+          "meaning": "The part of the space industry that uses satellite pictures and signals to create data products, rather than building rockets or satellites.",
+          "term": "Downstream"
+        },
+        {
+          "meaning": "An AI model trained on many kinds of data so it can be adapted to varied tasks, here one trained on satellite and geospatial images.",
+          "term": "Foundation model"
+        },
+        {
+          "meaning": "Imaging sensors on a satellite that capture visible and other light, here the hardware KaleidEO is developing.",
+          "term": "Optical payload"
+        },
+        {
+          "meaning": "A network of satellites working together to provide continuous coverage of Earth, as opposed to a single satellite.",
+          "term": "Satellite constellation"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Geospatial AI",
+          "Space technology"
+        ],
+        "task": [
+          "Earth observation",
+          "Satellite data analytics"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "Inc42",
+          "url": "https://inc42.com/buzz/centres-antariksh-vc-fund-leads-satsures-%e2%82%b9200-cr-series-b-round/"
+        },
+        {
+          "name": "YourStory",
+          "url": "https://yourstory.com/2026/11/spacetech-firm-satsure-raises-rs-60-cr-from-antariksh-fund"
+        }
+      ]
+    },
+    {
+      "id": "bc056b2000",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Open-source tool eases data collection from Unitree Go1 robot dog",
+      "takeaway": "Researchers released a free graphical tool for recording movement and sensor data from the Unitree Go1 quadruped robot. It removes the need to use outdated Robot Operating System software, making data collection simpler for labs.",
+      "deck": "The tool records joint states, balance readings, foot force, and gyroscope data through a simple on-screen interface.",
+      "body": [
+        "The Unitree Go1 is a common four-legged robot in research labs, but gathering data about its own movement has been difficult. Its official software is poorly documented, and the robot's built-in control framework, ROS1, is no longer supported. The new open-source utility provides a graphical interface for starting, stopping, and labeling recordings without any ROS expertise.",
+        "The tool captures joint states, IMU readings, foot force sensor data, and gyroscope measurements. The authors tested it with 51 recordings and checked the sampling rate and repeated samples. As a modest check that the data is useful, they trained a terrain classifier on it. A Temporal Convolutional Network reached about 38% accuracy across ten terrain classes, where 10% would be chance.",
+        "The authors are clear that this is not a competitive classifier. A different way of splitting the data, one that ignores recording boundaries, inflated accuracy to about 99%. They report the weak result as evidence that the logged signals carry terrain information, not as a strong model. The main contribution is the collection utility itself."
+      ],
+      "why": "Legged robot data is scarce compared to wheeled or stationary robot data. A tool that lowers the barrier to collecting proprioceptive recordings from a widely used quadruped could increase the supply of locomotion and terrain data for robot learning.",
+      "hard": "The terrain classifier's weak 38% accuracy shows the recorded signals are noisy or limited for that task, and the inflated 99% result warns that careless data splitting can mislead evaluation.",
+      "terms": [
+        {
+          "term": "Proprioceptive data",
+          "meaning": "Information a robot collects about its own body, such as joint angles, balance readings, and foot pressure."
+        },
+        {
+          "term": "Unitree Go1",
+          "meaning": "A small four-legged robot dog widely used in university and industry robotics research."
+        },
+        {
+          "term": "ROS1 (Robot Operating System version 1)",
+          "meaning": "An older software framework for controlling robots that is no longer officially supported or updated."
+        },
+        {
+          "term": "IMU (Inertial Measurement Unit)",
+          "meaning": "A sensor that measures a robot's movement, orientation, and acceleration."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics research",
+          "Legged robots"
+        ],
+        "task": [
+          "Data collection",
+          "Proprioceptive sensing"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.26146"
+        }
+      ]
+    },
+    {
+      "id": "0416252daf",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Nvidia faces slowing capex and export rules after Jensen Huang exit",
+      "takeaway": "Nvidia posted record revenue but shares fell as investors worry about slower data centre spending, tighter chip export controls, and weaker financing for smaller cloud customers. The company is now more dependent on large buyers that are building their own chips.",
+      "deck": "The chipmaker's data centre revenue reached $107.6 billion, but its stock price fell as customers plan their own chips.",
+      "body": [
+        "Nvidia's revenue more than doubled from a year earlier to $115.8 billion in the third quarter of fiscal 2027. Data centre revenue rose 110 percent to $107.6 billion. The company also raised its fiscal 2028 revenue growth forecast from 70 percent to 75 percent.",
+        "Shares still dropped 2.9 percent after the results and are down 36 percent from their October record. Investors worry that spending by Microsoft, Amazon, Alphabet and Meta will slow sharply by 2028. Those companies are also designing their own AI chips to reduce their dependence on Nvidia.",
+        "Nvidia is also facing tighter export rules in Southeast Asia and Brazil. Regulators are investigating whether restricted chips reached Chinese buyers through Singapore and Malaysia. A planned $500 billion financing effort led by Jensen Huang has not funded a single deal."
+      ],
+      "why": "Slower hyperscaler spending and delays at smaller neocloud providers could reduce the number of new data centres running Nvidia chips. Fewer new deployments may mean less demand for robot foundation models and the egocentric training video that supports real-world robot learning.",
+      "hard": "The report relies on analyst forecasts and financing reports; whether smaller AI cloud providers secure funding and whether export probes reduce actual chip shipments remain unresolved.",
+      "terms": [
+        {
+          "term": "Hyperscaler",
+          "meaning": "A very large cloud-computing company, such as Google, Amazon, Microsoft, or Meta, that runs vast networks of data centres."
+        },
+        {
+          "term": "Neocloud",
+          "meaning": "A smaller cloud provider built mainly to rent out AI computing power, often using Nvidia chips."
+        },
+        {
+          "term": "Custom silicon",
+          "meaning": "Computer chips a company designs for its own use instead of buying standard chips from a supplier like Nvidia."
+        },
+        {
+          "term": "AI capex",
+          "meaning": "Money spent on buildings, chips and equipment for artificial-intelligence computing, rather than on day-to-day running costs."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Semiconductors",
+          "AI infrastructure"
+        ],
+        "task": [
+          "Investor risk monitoring",
+          "Demand forecasting"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "Analytics India Magazine",
+          "url": "https://analyticsindiamag.com/global-tech/nvidias-crisis-has-only-just-begun-and-theres-no-jensen-charm-to-save-it"
+        }
+      ]
+    },
+    {
+      "id": "91df8d95ae",
+      "section": "india",
+      "kicker": "India Desk",
+      "headline": "Goa approves policy to train 50,000 graduates in AI skills by 2030",
+      "takeaway": "Goa's government approved a three-year artificial intelligence policy focused mainly on training people. It also includes funding for startups, a Konkani language model, and help for small businesses to use AI.",
+      "deck": "Most of the policy's resources, 60 percent, go to AI skilling and certification.",
+      "body": [
+        "The Goa Cabinet approved a three-year artificial intelligence policy covering education, industry, startups and government. Sixty percent of its resources go to AI skilling and capacity building, with startup support and infrastructure each getting 20 percent. The state aims to train and certify 50,000 graduates by 2030.",
+        "The policy also proposes a Konkani AI and Research Excellence Scheme. This would fund a large language model for Konkani, the state's main local language, plus speech and translation tools built on the central government's BHASHINI platform. The work would use a language corpus developed with community validation and consent.",
+        "For businesses, the Udyam AI Scheme will encourage AI adoption among small and medium firms. The policy also provides startup funding, incubation and innovation support. An advisory council chaired by the state's Chief Minister will oversee implementation."
+      ],
+      "why": "The policy signals growing Indian state-level demand for AI talent and local-language models. Companies selling robotics training data may see more partners and buyers in regional industrial clusters as smaller firms begin adopting AI.",
+      "hard": "The policy sets training targets but does not specify what quality of certification the 50,000 graduates will receive or whether that will meet industry requirements.",
+      "terms": [
+        {
+          "term": "Large language model (LLM)",
+          "meaning": "Software trained on huge amounts of text to understand, generate and translate written language."
+        },
+        {
+          "term": "Language corpus",
+          "meaning": "A large, structured collection of written or spoken text used to train language software."
+        },
+        {
+          "term": "MSMEs",
+          "meaning": "Micro, small and medium enterprises, the official Indian term for smaller businesses."
+        },
+        {
+          "term": "Incubation",
+          "meaning": "Support such as office space, mentoring and early funding to help new companies survive and grow."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Government AI policy",
+          "AI skills and education",
+          "Small and medium enterprises"
+        ],
+        "task": [
+          "Workforce AI literacy",
+          "Local-language model development",
+          "AI adoption in small firms"
+        ]
+      },
+      "score": 4,
+      "sources": [
+        {
+          "name": "Analytics India Magazine",
+          "url": "https://analyticsindiamag.com/ai-news/goa-cabinet-approves-ai-policy-2026-puts-60-towards-skilling"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Hindsight Self-Distillation: Teaching Robots to Act from the Present",
+      "url": "https://arxiv.org/abs/2611.25777",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
+      "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
+      "source": "TechCrunch AI"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
+      "source": "The Verge AI"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "The most misunderstood graph in AI just got a major update",
+      "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+      "source": "MIT Technology Review"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Inhabitant: An Agent Framework for Long-Horizon Human-Scene Interaction with Spatial Control and Quantitative Feedback",
+      "url": "https://arxiv.org/abs/2611.25005",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "MAWAM: A Multi-Agent World-Action Model for Coordinated Manipulation",
+      "url": "https://arxiv.org/abs/2611.25105",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "GEMS: Generation and Experience Memory for Subgoal-Guided Long-Horizon World Model Planning",
+      "url": "https://arxiv.org/abs/2611.25134",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "VG-Steer: Visual-Geometric Policy Steering from In-Context Aligned Abstractions",
+      "url": "https://arxiv.org/abs/2611.25199",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Bridging vision-language reasoning and learned control for legged navigation in the wild",
+      "url": "https://arxiv.org/abs/2611.25215",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Verify2Act: Critic-Guided Latent World Models for Verifying Language-Conditioned Manipulation Plans",
+      "url": "https://arxiv.org/abs/2611.25243",
+      "source": "arXiv cs.RO"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 29,
+        "sector": "ai",
+        "company": "Mailchimp",
+        "what": "Email marketing and AI automation platform",
+        "round": "Acquisition",
+        "amount_usd_m": 3680,
+        "amount_text": "$3.68B",
+        "lead": "Bending Spoons",
+        "india": false,
+        "url": "https://techfundingnews.com/intuit-sells-mailchimp-to-bending-spoons-for-3-68b-less-than-a-third-of-its-2021-acquisition-price/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 3,
+        "sector": "ai",
+        "company": "Inception",
+        "what": "Diffusion-based large language models",
+        "round": "Acquisition",
+        "amount_usd_m": 500,
+        "amount_text": "$500M+",
+        "lead": "Nvidia",
+        "india": false,
+        "url": "https://techfundingnews.com/report-nvidia-in-advanced-talks-to-acquire-stanford-led-diffusion-ai-startup-inception-for-500m/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 2,
+        "sector": "robotics",
+        "company": "Robotics start-up (unnamed)",
+        "what": "Robotics company expanding internationally",
+        "round": "Funding",
+        "amount_usd_m": 42.2,
+        "amount_text": "£35M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOUng0RDJld00tVUF6WTFuQjM3Vk5LOFljazZZVWJRR0NuTEFMNkdOMGM1ZFNSajdYektieXhxbGs5MHRsR2t1TzViMHlSYm9MREh4ZHRybFNvbHdQWFEzNVd3YzI4VlRvUDM3TjFLWnNjSkhaUHZyZmxGLXBNYjB6VmJWR3JxVF8xLXVaVEpUajZ6T0hVZWtlSEpzazAtaFdCd0lnWGNCWVFfWUpHOHFQZDFFendxejNPREdjcnp0Sy01QjZobjhCZV8tMDVkZw?oc=5",
+        "source": "TheBusinessDesk.com"
+      },
+      {
+        "i": 5,
+        "sector": "deeptech",
+        "company": "SatSure",
+        "what": "Satellite and spacetech analytics",
+        "round": "Series B",
+        "amount_usd_m": 23,
+        "amount_text": "₹200 Cr ($23M)",
+        "lead": "Antariksh VC Fund",
+        "india": true,
+        "url": "https://inc42.com/buzz/centres-antariksh-vc-fund-leads-satsures-%e2%82%b9200-cr-series-b-round/",
+        "source": "Inc42"
+      },
+      {
+        "i": 21,
+        "sector": "ai",
+        "company": "Daisytuner",
+        "what": "AI performance engineering automation",
+        "round": "Seed",
+        "amount_usd_m": 6.5,
+        "amount_text": "€6M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOLU9OX0VvZVBINXpmUWdQLWEtNW4zbDZmZVJwV054TjBBYmdUNEY2U1pzZDVYRk1MUWE0bEQ1anhCaWVtWkFxODVVU1RrUC1IUDRJUzBGRmdOeFMxUGN4a1FtRHdlaGMxaVJxNWhnSnlhYVh1LU9mOE5PZkxDZWNzcmdRZ0hBaGRJUFVtWFdHTmtUTDI1Nkw0S0xZUXYzM1Q0aW14Y2puUXdaUFJEckNHNzR5VXUtR2QtWmlzSHFZMWEzeHNR?oc=5",
+        "source": "AI Insider"
+      },
+      {
+        "i": 22,
+        "sector": "ai",
+        "company": "Ranketta",
+        "what": "Czech AI startup",
+        "round": "Funding",
+        "amount_usd_m": 1.08,
+        "amount_text": "€1M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOY3lWWVFyekJUQTBaS0YtSjJpa29UTFFOX0pQWkRUakltQlFOUmt1RWs1elRKNkZmQ09KNEplLV9adC1FTGFkdjUzREZrWFFEcml6aE00U3lubUtUNDFNTnB4c1hDckJRRG9qc25ycE5HQ3d0MXVtRExqWUUyRG1QWTY4Z0RTUDNPT1BSY0xIOVA0Y2d3TlYtTGVDV05faVdJREV3?oc=5",
+        "source": "The Recursive"
+      },
+      {
+        "i": 23,
+        "sector": "ai",
+        "company": "Khaime",
+        "what": "Nigerian AI startup",
+        "round": "Pre-Seed",
+        "amount_usd_m": 0.5,
+        "amount_text": "$500K",
+        "lead": "Launch Africa Ventures",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONGtCU0RHSGE1eFN4V2M4aklENlEzM3hmaEdEN1ZLaldpbHd2Q3VRakkwWHNlcWZuRnFwTFZqTFZDYlB5TDhnZjhTY1liWDd3UmYxR0xGRlpNbDd0SE9CV1BJSnI5TGFnbDRLTndHWHYtcEozTnUzeUpuRlQyNmlUMjFhbUl6YzNDaHI1WVJR?oc=5",
+        "source": "WeeTracker"
+      },
+      {
+        "i": 0,
+        "sector": "robotics",
+        "company": "Orchard Robotics",
+        "what": "AI farming robotics startup",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "John Deere",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPX21ZVkJuSmlhbmxlUnQ4NTFIeEFYQl9DdlRzdTEzVjBwZGhOV3hvbVJWd2RVVmJYaEtUYk11WHFFZ25VbG5FM3YwODVRcGk5TEI2aWd5RkN0NkJZN21fZ0l4aDFPcnRpX1ZOVjVsZkJjRFZhSFozYTdCelAyU0ZQalB5bTZGenphazh3YXplRFhIX0xqdkg2di1lUlZsRnFEd0ZXelNnbzFyRjg?oc=5",
+        "source": "GeekWire"
+      },
+      {
+        "i": 16,
+        "sector": "ai",
+        "company": "Pragmatik Labs",
+        "what": "AI lab founded by ex-Qwen chief",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPN0pnTDdZeXFPaE5kLVVxcGtLbEp6ZVlNYW92Vld0a05tN3ZCRHF0SmhNRWVZeDUwV1ZEZExyc0pmeUVqYzJfMUVsblBoeGVnZmxmUGVFNzh5MzYzMHFPZTNTUnNVcTlMdThKcG85S2RjOUtWUVVUZFoyYy0zeFlLelJ4T1U4ZmN3OFl1Z3puQkszNm9lTXRqaUlrWHIwUUt1WlE?oc=5",
+        "source": "TechNode"
+      },
+      {
+        "i": 17,
+        "sector": "deeptech",
+        "company": "Europa Fusion",
+        "what": "Fusion power startup",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Daniel Ek",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 24,
+        "sector": "ai",
+        "company": "SAKAK",
+        "what": "On-device personalized AI",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "DRB Dongil",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBfdGdIeGxMSU05OWM3YjNiMWZMXzBWUlFVUkVfVFJpQlRhYmRrZ0RJd1F1ZDRvUldHWlhuTWk4cFRHRFdBMTFLVEhHQl9XeFBuN3Ew?oc=5",
+        "source": "Wowtale"
+      },
+      {
+        "i": 30,
+        "sector": "ai",
+        "company": "Telescope AI",
+        "what": "AI company",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Purple Group",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1LTWJrV2hGTGRHeXlnOUhWSWl1MnNXUjRtREthMGRGSEZpeTFkUGdMNzJrcFM3TWljX1BrLWhjazhnOGlpTEdQcllfUXhzY0sxSVc4VlAzb05hMjNRbGlfdUpuc3EtdVVvWEJDcTdlLVB5SmJ4WEhvblZITDJHZw?oc=5",
+        "source": "Wisevoter"
+      }
+    ],
+    "totalUsdM": 4253
+  },
+  "playground": [
+    {
+      "headline": "Smart Glasses That Listen to Your Focus",
+      "body": "A team from Carnegie Mellon, Tsinghua, and Wuhan built VergeIO, which responds to changes in eye focus instead of cameras. It picks up the subtle adjustments your eyes make as attention shifts.",
+      "why": "Eye focus could become a hands-free control channel for wearable devices.",
+      "maker": "Carnegie Mellon University, Tsinghua University, and Wuhan University",
+      "url": "https://www.hackster.io/news/control-smart-glasses-just-by-changing-your-focus-226c5a02b263",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "Humanoid Robot Learns Skateboarding on Its Own",
+      "body": "Researchers trained the K1 humanoid to skateboard using deep reinforcement learning. It learned to coordinate a planted foot on the board with pushing motions, without any human demonstrations.",
+      "why": "Robots can now master coordinating their bodies with passive objects like skateboards.",
+      "maker": "A humanoid robotics research team",
+      "url": "https://arxiv.org/abs/2611.26054",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "headline": "Learning to Sculpt Liquid Magnet Blobs",
+      "body": "A single electromagnet and visual feedback let a ferrofluid blob reshape into polygons, asterisks, and pentominoes. The policy was learned through direct physical interaction.",
+      "why": "Soft robots made from ferrofluids could be guided into useful shapes with simple hardware.",
+      "maker": "A reinforcement learning research group",
+      "url": "https://arxiv.org/abs/2611.25232",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "headline": "An RC Car With a Little Personality",
+      "body": "Irra Social Rover pairs an RC car with a camera, display, speakers, and cargo bay. It can deliver messages and entertain people while driving around.",
+      "why": "Even simple robot platforms can become social companions when you add screens and audio.",
+      "maker": "Airra Labs",
+      "url": "https://www.hackster.io/news/irra-social-rover-gives-rc-cars-a-little-personality-2258cc9c61f5",
+      "source": "Hackster.io"
+    }
+  ],
+  "think": {
+    "collision": {
+      "a": {
+        "kind": "story",
+        "n": 8,
+        "label": "Open-source tool records Unitree Go1 robot dog data"
+      },
+      "b": {
+        "kind": "story",
+        "n": 4,
+        "label": "Stereo mapping blends learned depth with measured geometry"
+      },
+      "headline": "Pair chest-camera stereo video from Indian site walkers with synced quadruped body readings over the same rough terrain routes",
+      "body": "The robot dog tool makes it cheap to log what a legged robot feels: joint angles, foot pressure and balance, known as proprioception, the body's sense of itself. The stereo mapping work shows buyers still want two-lens footage that gives true distances. A vendor could walk a Go1 and a camera-wearing worker along the same construction sites, quarries and factory yards, so each route has both a human's eye view with accurate depth and a robot's record of how the ground actually pushed back.",
+      "who_pays": "Makers of legged and humanoid robots for inspection and site work, who lack data from messy Indian-style terrain.",
+      "data_needed": "Time-synced stereo video from worker chest cameras, Go1 joint, foot-force and gyroscope logs, and GPS or tape-measured route markers on each site.",
+      "why_fail": "Buyers may find simulated terrain cheaper and decide that one robot model's readings do not transfer to their own legs."
+    },
+    "contrarian": {
+      "story_n": 1,
+      "consensus": "Software agents that churn out thousands of simulated tasks per hour will make paid real-world video and teleoperation, where a human remotely steers a robot, far less necessary.",
+      "against": [
+        "The tasks are built by remixing existing examples, so they inherit the limits of what was already recorded; volume grows faster than variety.",
+        "Counting saved task instances says nothing about whether robots trained on them work in real kitchens or factories, where friction, clutter and deformable things like cloth defeat simulators.",
+        "Story 2 itself still needed real robot attempts to align its simulation with reality, which suggests cheap simulation raises the value of small, well-chosen real data rather than replacing it."
+      ],
+      "bets_otherwise": "Physical Intelligence and Tesla keep spending heavily on real-world robot and human recordings, as do egocentric data vendors and teleoperation shops.",
+      "settle_it": "A head-to-head test where policies trained mainly on generated tasks match or beat real-data policies on unseen physical tasks at equal cost."
+    }
+  },
+  "cost": {
+    "usd": 0.0857,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 4,
+        "inTokens": 25667,
+        "outTokens": 8501,
+        "cost": 0.0068,
+        "models": {
+          "anthropic/claude-haiku-5.5": 4
+        }
+      },
+      "write": {
+        "calls": 10,
+        "inTokens": 14064,
+        "outTokens": 5951,
+        "cost": 0.0398,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 10
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 3007,
+        "outTokens": 1877,
+        "cost": 0.0012,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 3234,
+        "outTokens": 416,
+        "cost": 0.0059,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "think": {
+        "calls": 1,
+        "inTokens": 4009,
+        "outTokens": 796,
+        "cost": 0.032,
+        "models": {
+          "anthropic/claude-opus-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 230,
+    "unique": 195,
+    "feeds": 29,
+    "failedFeeds": [
+      "Import AI",
+      "r/robotics",
+      "r/LocalLLaMA",
+      "Show HN",
+      "Hacker News"
+    ]
+  },
+  "generatedAt": "2026-11-21T00:16:32.712Z"
+}
