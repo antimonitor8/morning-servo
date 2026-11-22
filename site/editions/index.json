@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-11-22",
+    "weekday": "Sunday",
+    "number": 25,
+    "lead": "Factory data is scattered, holding back autonomous industrial robots",
+    "stories": 6,
+    "readMinutes": 11,
+    "costUsd": 0.0612
+  },
+  {
     "date": "2026-11-21",
     "weekday": "Saturday",
     "number": 24,

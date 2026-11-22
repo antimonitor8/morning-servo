@@ -1,0 +1,569 @@
+{
+  "date": "2026-11-22",
+  "weekday": "Sunday",
+  "sunday": true,
+  "number": 25,
+  "paper": "The Morning Servo",
+  "readMinutes": 11,
+  "stories": [
+    {
+      "id": "3640b1da9f",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Factory data is scattered, holding back autonomous industrial robots",
+      "takeaway": "Robots that work without close human control need detailed records tying process choices to product quality, but most factories keep that information in disconnected systems. Manufacturers may need to link existing production and inspection data before autonomous robots can learn to do the work.",
+      "deck": "Nearly $48 billion was raised by robotics and physical AI companies this year, but factory data may not be ready for autonomous learning.",
+      "body": [
+        "Robotics and physical AI companies have raised nearly $48 billion so far in 2026, but most factories do not capture the process data that autonomous machines would need to learn from. The core problem is not a shortage of operational data. It is that the data is scattered and rarely linked to the outputs that matter.",
+        "A welding robot, for example, would need to see how changes in travel speed or part position affect the finished weld. Experienced workers know this from practice, but that knowledge is not recorded in a form a robot can learn from. In a 2026 Manufacturing Leadership Council survey, 37% of manufacturers said poor data interoperability was a major barrier, up from 22% in 2025.",
+        "The author, VulcanForms CTO Michael Kenworthy, suggests three steps: capture production conditions alongside quality results, link data across the whole production chain, and define clear limits on when a robot may adjust its own process. He argues that connecting existing records to inspection results is often more valuable than adding sensors."
+      ],
+      "why": "The article names the exact gap that robot training-data buyers will need filled: process parameter data linked to measured quality outcomes. A supplier that can deliver egocentric video tied to inspection results, part identifiers, and process records could sell into this specific manufacturing data shortage.",
+      "hard": "The article is an opinion piece by an executive at an advanced manufacturing company, and does not provide independent evidence that the proposed data practices improve robot performance in deployed systems.",
+      "terms": [
+        {
+          "meaning": "Physical AI is artificial intelligence that controls real machines such as robots, rather than software that only runs on computers.",
+          "term": "physical AI"
+        },
+        {
+          "meaning": "Data interoperability means different computer systems can share and use the same information without manual re-entry.",
+          "term": "data interoperability"
+        },
+        {
+          "meaning": "A digital thread is a connected record of a product's data across every stage of its production.",
+          "term": "digital thread"
+        },
+        {
+          "meaning": "Metal additive manufacturing, often called metal 3D printing, builds parts layer by layer from metal powder or wire.",
+          "term": "metal additive manufacturing"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "industrial robotics",
+          "manufacturing data"
+        ],
+        "task": [
+          "manufacturing data infrastructure",
+          "robot learning data readiness"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/the-manufacturing-data-gap-holding-back-physical-ai/"
+        }
+      ]
+    },
+    {
+      "id": "4267c8d80e",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Scaler cofounder launches Arcfront to sell records of expert decision-making as AI training data",
+      "takeaway": "Anshuman Singh has started Arcfront, a company that turns records of how professionals make decisions into training material for AI models. It claims four of the five leading AI labs became customers within a year.",
+      "deck": "The venture records not just correct answers but the options experts rejected, revisions they made, and final outcomes.",
+      "body": [
+        "Scaler cofounder Anshuman Singh has unveiled Arcfront, a venture he is building with Naman Bhalla, Scaler's former head of AI products. Singh said four of the five frontier AI labs became customers within less than a year, though he did not name them.",
+        "Arcfront works with organisations to reconstruct how experts reach decisions, including options they reject, revisions they make, and eventual outcomes. It calls this 'Decision Arc Data' and converts it into training data, reinforcement learning environments, and evaluations. Its work covers software engineering, site reliability engineering, cybersecurity, and collaborative workplace tasks.",
+        "The venture operates under Evaratus Inc., which recruitment material identifies as formerly Scaler AI Labs. Its current ownership relationship with Scaler remains unconfirmed. Angel investor Gokul Rajaram separately identified Arcfront as the company behind his earlier claim about a startup reaching a $1 billion annualised revenue run rate within 11 months of starting operations."
+      ],
+      "why": "Arcfront is a direct competitor in the market for AI training data, but focused on cognitive and professional tasks rather than physical work. Its claimed traction with frontier labs signals which data types the largest model builders are willing to pay for.",
+      "hard": "The ownership structure and any ongoing relationship with Scaler are unconfirmed, and the identity of the four claimed frontier lab customers has not been disclosed.",
+      "terms": [
+        {
+          "term": "Frontier AI labs",
+          "meaning": "The small group of companies, such as OpenAI, Anthropic, Google DeepMind and Meta, building the most advanced large AI models."
+        },
+        {
+          "term": "Reinforcement learning environments",
+          "meaning": "Simulated settings where an AI model can practise a task and receive feedback on whether its choices were good or bad."
+        },
+        {
+          "term": "Training data",
+          "meaning": "The examples used to teach an AI model what good answers or actions look like before it is released."
+        },
+        {
+          "term": "Annualised revenue run rate",
+          "meaning": "A company's revenue in one month multiplied by twelve, used to estimate what it would earn in a full year."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "AI training data",
+          "Enterprise software"
+        ],
+        "task": [
+          "Data collection",
+          "Model evaluation"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "Inc42",
+          "url": "https://inc42.com/buzz/scaler-cofounder-anshuman-singh-unveils-ai-training-data-venture-arcfront/"
+        }
+      ]
+    },
+    {
+      "id": "243cf56b14",
+      "section": "robotics",
+      "kicker": "Robotics Floor",
+      "headline": "Medtronic Hugo robot cleared for general surgery in the U.S.",
+      "takeaway": "A modular surgical robot is now approved in America for several common abdominal and hernia operations. The company expects the broader clearance to speed its adoption in U.S. hospitals.",
+      "deck": "The clearance covers several common abdominal procedures, including hernia repair and gastric bypass.",
+      "body": [
+        "The U.S. Food and Drug Administration has cleared Medtronic's Hugo robotic-assisted surgery system for general surgery. The clearance covers upper abdominal procedures such as cholecystectomy, Roux-en-Y gastric bypass, ventral hernia, and small bowel resection, plus lower abdominal procedures including inguinal hernia and appendectomy.",
+        "Medtronic said these procedures account for about 3.5 million surgeries annually in the U.S. The Hugo system is modular and cart-based, letting surgical teams use only the robotic arms needed for a given procedure. Medtronic already has FDA clearance for urology, which it received in December 2025.",
+        "The company used clinical data from Europe, where Hugo gained CE marking for general surgery in 2022, to support the U.S. submission. Globally, Hugo is on track to pass 50,000 cumulative procedures by the end of Medtronic's fiscal year. General surgery is the fastest-growing procedure mix for the system outside the U.S.",
+        "Medtronic sees AI playing a role across surgical care: pre-operative planning from imaging, intraoperative identification of anatomic structures, and post-operative recovery optimization. In June, the company gained FDA approval for Touch Surgery Aide, a platform that analyzes surgical video and provides real-time AI insights to surgical teams."
+      ],
+      "why": "It shows surgical robotics expanding beyond urology into a much larger general surgery market, and Medtronic is building AI-based surgical video analysis into its platform. For robotics businesses, this signals growing commercial demand for systems that combine hardware, procedure data, and AI-assisted intraoperative guidance.",
+      "hard": "The article does not include U.S. pricing or data on the number of U.S. hospitals currently using Hugo, only that adoption is underway.",
+      "terms": [
+        {
+          "meaning": "A cart or table holding robotic arms that a surgeon controls to perform operations through small incisions, usually while seated at a console.",
+          "term": "Robotic-assisted surgery system"
+        },
+        {
+          "meaning": "The U.S. agency that approves medical devices before they can be sold in America.",
+          "term": "FDA, or Food and Drug Administration"
+        },
+        {
+          "meaning": "The CE marking is Europe's approval stamp showing a product meets EU safety and health rules.",
+          "term": "CE marking"
+        },
+        {
+          "meaning": "A study of a medical device in people, run with special permission, to gather evidence for regulatory approval.",
+          "term": "Investigational device exemption, or IDE"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Healthcare",
+          "Robotics"
+        ],
+        "task": [
+          "Robotic-assisted surgery",
+          "Regulatory clearance"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/medtronics-hugo-surgical-robot-ready-for-bigger-operation/"
+        }
+      ]
+    },
+    {
+      "id": "234da3fc18",
+      "section": "policy",
+      "kicker": "Policy",
+      "headline": "UN fails to agree on rules for autonomous weapons",
+      "takeaway": "After a week of negotiations, countries could not agree on binding rules for autonomous weapons. They will now take at least two years to propose regulations, and some of those rules may be voluntary.",
+      "deck": "Negotiators left Geneva agreeing only to start discussing options, with regulations at least two years away.",
+      "body": [
+        "UN diplomats met in Geneva this week to discuss rules for autonomous weapons, often called killer robots. These are systems that can select and attack targets without a person directly approving each action. Negotiators ended a largely fruitless week by agreeing only to start discussing options.",
+        "The International Committee of the Red Cross, the UN secretary-general, and Pope Leo had called for legally binding rules within a year. Instead, countries have two years to propose regulations. Some future regulations may remain optional, and enforcement talks are expected to drag on beyond that.",
+        "Russia, Israel, and the US were the main obstacles. Russia delayed the meeting on day one. The US proposed a five-year window for nonbinding, optional guidelines. Humanitarian groups say semi-autonomous weapons and drones have caused many civilian deaths in Ukraine, Gaza, and Sudan."
+      ],
+      "why": "If export controls or rules on autonomous targeting tighten unevenly, demand may shift toward human-supervised data and teleoperation for accountability. But no binding rules means near-term buying patterns are unlikely to change.",
+      "hard": "The main holdouts, including the US, Russia, and Israel, have not committed to binding rules, so any future agreement may be optional and weakly enforced.",
+      "terms": [
+        {
+          "meaning": "Weapons that can choose and attack targets without a person approving each specific action.",
+          "term": "Autonomous weapons"
+        },
+        {
+          "meaning": "Weapons that carry out some steps on their own but still rely on human control for key decisions.",
+          "term": "Semi-autonomous weapons"
+        },
+        {
+          "meaning": "Rules that countries are legally required to follow, unlike optional guidelines.",
+          "term": "Legally binding rules"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Defense",
+          "Robotics"
+        ],
+        "task": [
+          "Regulation",
+          "Autonomous weapons"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots"
+        }
+      ]
+    },
+    {
+      "id": "7f6dccb8b8",
+      "section": "india",
+      "kicker": "India Desk",
+      "headline": "Atomberg and Voltas sign joint venture to build AC compressors",
+      "takeaway": "India's Atomberg and Voltas have agreed to jointly make air conditioner compressors, with each side investing up to 100 crore rupees. Voltas will buy a big share of the output, giving Atomberg a steady customer as it prepares to go public.",
+      "deck": "The Tata-owned company will hold a 50 percent stake and become an anchor customer for the AC compressor venture.",
+      "body": [
+        "Voltas will buy a 50 percent stake in Atomberg Airtech Private Limited, a step-down subsidiary of the Mumbai-based appliance maker. Both sides have agreed to put up to 100 crore rupees each into the venture, to be released in stages decided by the joint venture board.",
+        "The joint venture will make compressors for room air conditioners and related parts in India. Voltas has said it will be an anchor customer to give the venture a stable demand base, but the arrangement is not exclusive, so the unit can sell to other buyers as well.",
+        "Voltas will control the board of the new entity, with the right to nominate four directors, while Atomberg can nominate one. The venture will therefore become a subsidiary of Voltas once the deal closes, with the unit's name expected to change later."
+      ],
+      "why": "This shows an Indian appliance maker turning its in-house component technology into a manufacturing business with a guaranteed large buyer. For anyone watching India's factory automation and component supply chains, it is one more signal that local firms are trying to reduce reliance on imported parts.",
+      "hard": "The transaction still depends on conditions in the joint venture agreement being met, and Voltas's board control means Atomberg will have little say over the unit's direction.",
+      "terms": [
+        {
+          "meaning": "A subsidiary owned indirectly through another company rather than directly by the parent.",
+          "term": "step-down subsidiary"
+        },
+        {
+          "meaning": "A device that compresses refrigerant gas so an air conditioner can move heat out of a room.",
+          "term": "compressor"
+        },
+        {
+          "meaning": "A first public sale of a company's shares on a stock exchange.",
+          "term": "IPO"
+        },
+        {
+          "meaning": "A customer that promises to buy a meaningful share of a supplier's output, usually to help the supplier grow.",
+          "term": "anchor customer"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "consumer appliances",
+          "manufacturing"
+        ],
+        "task": [
+          "industrial manufacturing"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "Inc42",
+          "url": "https://inc42.com/buzz/atomberg-voltas-execute-jv-agreement-to-build-ac-compressors/"
+        }
+      ]
+    },
+    {
+      "id": "e345f4a905",
+      "section": "india",
+      "kicker": "India Desk",
+      "headline": "Sarvam AI Opens India Token Factory For Pay-Per-Use Models",
+      "takeaway": "Sarvam AI launched a service letting Indian companies use many AI models through one API and pay only for text or code processed. It is meant to make AI cheaper to run locally, but rivals offer similar access and Sarvam has not shown it can hold customers.",
+      "deck": "The company says the service runs on privately bought GPUs, not those subsidised under the IndiaAI Mission.",
+      "body": [
+        "Sarvam AI has started a paid service called Token Factory in India. Companies and software builders can use many AI models through one connection, without buying or managing their own servers. They pay per token, which is a unit of text or code a model reads or writes.",
+        "The service hosts Sarvam's own model and several free-to-use models from other makers. It does not use government-subsidised graphics processors, Sarvam said. It also said user data may be kept and used for training unless a customer asks in writing for no data retention.",
+        "Larsen & Toubro, E2E Networks through Jarvislabs, and others are building similar token-based services. For Sarvam, a key unknown is whether price and speed can keep customers, since rivals offer many of the same open-weight models."
+      ],
+      "why": "Indian companies are launching token-based inference platforms in a race to serve local demand without overseas servers or dollar billing. The shift from buying GPUs to selling served tokens signals where AI infrastructure spending is moving.",
+      "hard": "Sarvam has not shared how busy its servers are, how much traffic pays full price, or whether customers who arrive for cheaper foreign models will switch to Sarvam's own model.",
+      "terms": [
+        {
+          "meaning": "The work a trained AI model does when it reads a prompt and writes a response.",
+          "term": "Inference"
+        },
+        {
+          "meaning": "A unit of text or code an AI model processes; billing is often per million tokens.",
+          "term": "Token"
+        },
+        {
+          "meaning": "A single connection point that lets outside software use a service without knowing its internal details.",
+          "term": "API"
+        },
+        {
+          "meaning": "AI models whose internal settings are public, so anyone can download and run them.",
+          "term": "Open-weight models"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "AI infrastructure",
+          "Cloud computing"
+        ],
+        "task": [
+          "Model serving",
+          "AI inference"
+        ]
+      },
+      "score": 5,
+      "sources": [
+        {
+          "name": "Inc42",
+          "url": "https://inc42.com/features/sarvams-token-factory-raises-indias-ai-inference-stakes/"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "Policy",
+      "headline": "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
+      "url": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
+      "source": "The Verge AI"
+    },
+    {
+      "kicker": "Policy",
+      "headline": "Industry body raises alarm: 689 tenders for Chinese drones & parts floated since 2021, 84% by Army",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPZ2lBT19mX1IzMXVOdDhzUjdwUHo0d0NHSFFMZ19vWjlXS3JESkNKUUx6OE4wSnBlU21UZ2J2OGZUdC1iaXF1bDl1LW9PcUJpTkNyMEtkMnQ4QnVsS3BmVS1pcHU1bEI0ejJBZkJJV2QyZjJCLXZtdXdrLUxRcEswVTU5LUprR2s0QzdBZEFtQzk3X29vOXV1VGU4T01WSmxKNktIWlc3T005RUFGYm45RmlHS3p2RkkyenEyVVZ4eGlwNzZmdlpVY05R0gHPAUFVX3lxTE5fSzZXQ2xwekt2Qk9SeG1lZXlRazE2eDNpc0F5cmZLRlQ0OFN1ZTJwLUFxQVlNdzkyTlBMUVlpNks1YUxsMm5UbnpSZUVDeUpleWk5Q1VfVzBkeVJkWnBUOC1iSkVPaWRhb3JCbEZtRDUzdmdSbk5zdXZvLWc3TEUzM1NXZXVkb1dDVTJOUnFMWE5iTjRIV19DSDNkTnRQTU9peEk1b1ZSUXBXRTc4Yk9COWRlZmszX09NM0k4X2xWZ2dlV1NBMXh4bTFweEhpRQ?oc=5",
+      "source": "ThePrint"
+    },
+    {
+      "kicker": "The Money",
+      "headline": "A tale of two Nvidias",
+      "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+      "source": "TechCrunch AI"
+    },
+    {
+      "kicker": "Elsewhere",
+      "headline": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
+      "url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
+      "source": "TechCrunch AI"
+    },
+    {
+      "kicker": "Elsewhere",
+      "headline": "Exclusive: Bewakoof Cofounder Prabhkiran Singh Launches AI Shopping Assistant Save8",
+      "url": "https://inc42.com/buzz/bewakoof-cofounder-prabhkiran-singh-launches-ai-shopping-assistant-save8/",
+      "source": "Inc42"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 4,
+        "sector": "robotics",
+        "company": "Celcius Logistics",
+        "what": "Cold-chain logistics provider",
+        "round": "Pre-Series C",
+        "amount_usd_m": 11.4,
+        "amount_text": "₹100 Cr ($11.4M)",
+        "lead": "Not disclosed",
+        "india": true,
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNOEtocDZqSjA1Z1R1TklaRTJSUWtDcmVVSllwV2hkM0ZrWWFEWmNreUo4RHNPTHNTcHdGUWVLVWFxbk5nbFV0S1MwaXgwVHVFLVBSTEJ0LW1aZFozcVpWTDU1Wnl3ZkZYUGxzSk9wT094VzNLOV95NVoyX0NGU3dkSmZB?oc=5",
+        "source": "Pluang"
+      },
+      {
+        "i": 2,
+        "sector": "ai",
+        "company": "IIT Kharagpur",
+        "what": "Academic institute AI research and education",
+        "round": "Funding",
+        "amount_usd_m": 5,
+        "amount_text": "$5M",
+        "lead": "Google",
+        "india": true,
+        "url": "https://inc42.com/buzz/google-commits-5-mn-to-sundar-pichais-alma-mater-iit-kharagpur/",
+        "source": "Inc42"
+      },
+      {
+        "i": 0,
+        "sector": "robotics",
+        "company": "Atomberg",
+        "what": "Consumer appliances startup making AC compressors via JV",
+        "round": "Joint venture",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Voltas",
+        "india": true,
+        "url": "https://inc42.com/buzz/atomberg-voltas-execute-jv-agreement-to-build-ac-compressors/",
+        "source": "Inc42"
+      },
+      {
+        "i": 1,
+        "sector": "ai",
+        "company": "Cognition",
+        "what": "AI coding agent developer",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcWhpaU9neVJMd3hnYmh2YlYzbl9DMF8yWjFqQ2k4LWZVazFRTHdLNmh6alVaM29vaTIwUjFHX1FWWksyX3k4Y1ZmRHk0V21mcldQa29vUXR1QWQyX2xaT1NRaTVHaW1UZGRXQllFM0ticDU1S2lxSG5kMGNLdE1SRnFCNzFGMnd1TW1tVlRWcTZrQVlBVVI5UWx0M29xR2gyckhhTmxKVHVxWllDZlQ3WkJoS1V0VW0tVFpoS0JRTQ?oc=5",
+        "source": "Reuters"
+      }
+    ],
+    "totalUsdM": 16
+  },
+  "playground": [
+    {
+      "headline": "ClawDOS, an AI coding agent that runs on a 1984 IBM PC",
+      "body": "A DOS program called ClawDOS turns a 4.77 MHz IBM PC XT into a client for the Claude AI API. It reads and edits files, writes and compiles Turbo C programs, runs them, and inspects what they draw on screen. The entire harness is 176 KB, runs on the original hardware, and delegates only TLS to a bridge PC.",
+      "why": "It shows that even vintage hardware can be a creative playground for AI agents, not just a target for emulation.",
+      "maker": "Ricapar",
+      "url": "http://ricapar.net/ClawDOS/",
+      "source": "Hacker News"
+    },
+    {
+      "headline": "Lucent Cube wraps six LED matrix panels around a glowing box",
+      "body": "Maker Ross Harvey built a cube with high-resolution LED matrix panels on all six sides, unlike typical LED cubes that use individual LEDs in a grid. The result is a solid block of animated patterns and graphics. Each face works as a small, dense display, creating a volumetric effect without the usual wiring mess.",
+      "why": "This shows how repurposing existing display panels can create dense volumetric visuals much more simply than wiring thousands of individual LEDs.",
+      "maker": "Ross Harvey",
+      "url": "https://www.hackster.io/news/six-led-matrices-make-one-impressive-display-3ba6f80973a6",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "High-speed camera robot tracks bees in real time",
+      "body": "A project on Hackster describes a camera robot built to track and film fast-moving subjects like bees. Instead of relying on prediction or recording lots of footage, the system adjusts in real time to keep the subject framed and in focus. It focuses on macro shots where correct focus is the hardest part.",
+      "why": "It points to a future where camera operators can hand off impossible tracking shots to fast, precise machines.",
+      "maker": "Unknown",
+      "url": "https://www.hackster.io/news/high-speed-camera-robot-can-track-a-bee-in-real-time-f8cc477ac408",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "ESP32 drives a 1980s monochrome monitor as a wireless terminal",
+      "body": "Chad Boughton connected an ESP32 dev board to an old IBM Monochrome Display Adapter monitor, adding a single wire to bridge VGA to TTL. After tuning timings with an oscilloscope, he forked FabGL's terminal to run on the amber CRT. The setup shows a command-line interface styled like IBM OfficeVision, complete with word processor and spreadsheet editor.",
+      "why": "It shows that cheap modern microcontrollers can preserve and repurpose beloved old displays for new, practical uses.",
+      "maker": "Chad Boughton",
+      "url": "https://hackaday.com/2026/11/21/esp32-drives-mda-display-for-wireless-terminal/",
+      "source": "Hackaday"
+    }
+  ],
+  "think": {
+    "collision": {
+      "a": {
+        "kind": "story",
+        "n": 2,
+        "label": "Arcfront sells records of expert rejected options"
+      },
+      "b": {
+        "kind": "story",
+        "n": 5,
+        "label": "Atomberg and Voltas build AC compressors together"
+      },
+      "headline": "Record Indian compressor-line assemblers and fixers deciding what to reject, rework or pass, linked to each part's later test result.",
+      "body": "Arcfront's bet is that buyers pay more for the choices experts turned down than for the final answer alone. A new compressor plant like the Atomberg-Voltas venture has these choices all day: a worker sees a weld or a fit, decides to pass it, rework it or scrap it, and the part is later pressure-tested. Chest-camera video of those calls, tagged with the part number and the test result, gives robot builders the link between what a hand did and whether the part held up, which is the gap Story 1 describes.",
+      "who_pays": "Robot foundation model labs and industrial automation firms building inspection and assembly robots for appliance and motor factories.",
+      "data_needed": "Stereo egocentric video of assembly and rework stations, each part's serial number, worker decision labels, and the plant's leak and performance test records for the same parts.",
+      "why_fail": "Plants may refuse to share quality records that show defect rates, leaving only video with no outcome attached."
+    },
+    "contrarian": {
+      "story_n": 1,
+      "consensus": "Factories need to clean up and connect their scattered data before autonomous robots can learn there.",
+      "against": [
+        "Many robot learning methods today learn from watching people and from simulation, not from factory process logs, so messy plant data may matter less than the story implies.",
+        "Big unified data projects in factories have a long record of stalling; robot makers may simply skip them and collect their own narrow data per task.",
+        "The $48 billion in funding is mostly flowing to humanoids and general models, whose buyers want broad human demonstration data, not plant-specific quality records."
+      ],
+      "bets_otherwise": "Humanoid makers such as Figure and data collectors gathering human first-person video are betting that demonstrations, not factory databases, are the bottleneck.",
+      "settle_it": "Published results showing whether adding process and quality records measurably improves robot task success compared with adding more demonstration video."
+    },
+    "outside": {
+      "field": "Medicine",
+      "headline": "Morbidity and mortality conferences learn mainly from cases that went wrong",
+      "body": "Hospitals hold regular meetings where doctors review cases with complications or deaths. The aim is to find what decision led to harm, without punishing the individual. Over time this builds shared judgement about warning signs.",
+      "pull": "What if robot training data collection added a regular review of recorded near-misses and mistakes, with workers explaining what they noticed too late?",
+      "why_helps": "Robots fail most on rare errors, and narrated mistake footage teaches recovery that clean demonstrations never show.",
+      "who_might": "A data vendor serving surgical robotics or factory clients, borrowing the format Medtronic-style video analysis teams already know."
+    },
+    "wildcard": {
+      "headline": "It's 2031. India requires that any robot sold for factory use come with an audit trail of the human-recorded data it learned from.",
+      "changed": "Data provenance, meaning a record of who recorded what, where and with what consent, became a legal condition of sale.",
+      "won": "Collectors who had kept signed worker consent, site details and timestamps from day one became preferred suppliers.",
+      "broke": "Large scraped and loosely licensed video sets became unusable for Indian deployments overnight.",
+      "your_move": "If a regulator asked tomorrow for the consent and source record behind every clip you sold, could you produce it?"
+    },
+    "week": [
+      {
+        "date": "2026-11-16",
+        "weekday": "Monday",
+        "headline": "Build an egocentric dataset recorded twice at once, on standard stereo cameras and on low-power smart sensors, for on-device robot vision"
+      },
+      {
+        "date": "2026-11-17",
+        "weekday": "Tuesday",
+        "headline": "Record Indian hospital and lab inspectors searching cabinets and stores with chest cameras, logging what they could see and how long they had"
+      },
+      {
+        "date": "2026-11-18",
+        "weekday": "Wednesday",
+        "headline": "A failure-repair service: buyers send clips of tasks their robot keeps failing, Indian workers record certified fixes within a week"
+      },
+      {
+        "date": "2026-11-19",
+        "weekday": "Thursday",
+        "headline": "Record Indian pharma and food warehouse workers with chest cameras plus gas and smell sensors, for robots that must notice leaks and spoilage"
+      },
+      {
+        "date": "2026-11-20",
+        "weekday": "Friday",
+        "headline": "Record Indian care workers helping elderly people stand and walk, logging the exact moment they step in, for assistive robots"
+      },
+      {
+        "date": "2026-11-21",
+        "weekday": "Saturday",
+        "headline": "Pair chest-camera stereo video from Indian site walkers with synced quadruped body readings over the same rough terrain routes"
+      }
+    ]
+  },
+  "cost": {
+    "usd": 0.0612,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 2,
+        "inTokens": 8622,
+        "outTokens": 2717,
+        "cost": 0.0022,
+        "models": {
+          "anthropic/claude-haiku-5.5": 2
+        }
+      },
+      "write": {
+        "calls": 6,
+        "inTokens": 11707,
+        "outTokens": 3470,
+        "cost": 0.0163,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 6
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 1724,
+        "outTokens": 440,
+        "cost": 0.0004,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 2013,
+        "outTokens": 579,
+        "cost": 0.0028,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "think": {
+        "calls": 1,
+        "inTokens": 3916,
+        "outTokens": 1189,
+        "cost": 0.0394,
+        "models": {
+          "anthropic/claude-opus-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 79,
+    "unique": 65,
+    "feeds": 29,
+    "failedFeeds": [
+      "Import AI",
+      "Google DeepMind",
+      "r/robotics",
+      "r/LocalLLaMA"
+    ]
+  },
+  "generatedAt": "2026-11-22T00:16:29.219Z"
+}
