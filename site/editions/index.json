@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-11-23",
+    "weekday": "Monday",
+    "number": 26,
+    "lead": "",
+    "stories": 0,
+    "readMinutes": 3,
+    "costUsd": 0.0062
+  },
+  {
     "date": "2026-11-22",
     "weekday": "Sunday",
     "number": 25,

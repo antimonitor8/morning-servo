@@ -1,0 +1,184 @@
+{
+  "date": "2026-11-23",
+  "weekday": "Monday",
+  "sunday": false,
+  "number": 26,
+  "paper": "The Morning Servo",
+  "readMinutes": 3,
+  "stories": [],
+  "briefs": [
+    {
+      "kicker": "Robotics Floor",
+      "headline": "Physical AI value may move from robot hardware to deployment, McKinsey finds",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPdDJEcDZSRlVyS1VMR1VOWW1LY2ZzZG9jYmJTZkcwaFR1MEJrcWR5SUtpQm9IdkhlN3pYcFRmcHc3TG8xS0FDYVlCUEF1LTVoVDFtc0RwdXRHVDhEdDZ4YUxoaEFuSkhxZzhxZnhTSnotT25jYTVWcmcyWUxENHJVeGVjVWZEUGpYT2pmVjlfeWtDcFdxTy13NjFBWHFqTi0xTXB3NnVCQnZOU2JyNWZ2VU9VbDMtM0xGMmY1VWtSNHNsSzU2TTR3Qw?oc=5",
+      "source": "MarketScale"
+    },
+    {
+      "kicker": "The Money",
+      "headline": "Robotics investment set to reach $60.7 billion in 2026, but funding boom raises concerns",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOVTVMUFBHTzRkbV8tVmhCTmxFMHNLUkk5ZXNDV0VDMDRsRWRlWm9Yb2ZKczhFYUMxRFJ3Q0dmUHpySHAwdWJVdGQ5RGlkMU90MmNTOHVTZXBDOUEzbkxPQlAyV1FqLTZkTy1LRHRVRFhiczBGMlFKbUtXUy0wS3o2VWR2VlhJNklHZk9sN2I1WGM5ak11NzdPcnRKbU1XajgwSVVKMklfY08zMzR2S1JHZ1hfdm1FQTl5TnJ0LUdpR2VMSlA5Mk41djVXUXRzQjJXaVVOZFZBWnVnTzA?oc=5",
+      "source": "Robotics & Automation News"
+    },
+    {
+      "kicker": "Robotics Floor",
+      "headline": "151 Robots and 1 Dance Routine: China's humanoid robots break \"Guinness record\" again, but...",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOMFlHYkNqM0U2Wk9SX1ladUhOc3p2eUlwUE1sbVo1WGlGU25iVW0ycTd2eVZlQmhXZEhyMHVqbU53NUdEYWdycnRKZ2daZ2hrTVg3cE41bDNfOFBtdThLS1FXb3hYUTBXamsxcklBQ1RwYmJVV0xpVzg3UkRnUEhvUVctRzFDUFBmdHZYOGVNazhKb2pqSzJ1WFRYY0lZZDB5ZlpycjRscFMwVkZUaUwwaExfWU9pTGktV09OZGxUOEN1Z0p1M09fQjFkb2hHZmlkVlQxQmJnSmctTWpUVHlqSWp4aGQyUEZOLWdrUjI2eXdmYnRDY0VmMkNvVzhnMzZF0gGGAkFVX3lxTE1lanU0aUFsb2UyVm9KdGpxWHdCQnpZdkNpTzJteW81SzRlald2MjJ6aTdmR2p2WUhHSlNzeS1kMFhWcFg5YTgzaC1Hay1OVFBfOEpJTVJvVERNT1ZGWjlvckFSQkhXd241dDAtOHRUYUNkN1JGaElEMEg5Yi0yVjYxN09NVEwwUjgwVFZ3WmlIbG15MHZGTE5UNjU5VDA3WUd4bVVoRWpTWFBNRjVjcXNjRm0wNGZzb0xpSDFIWEVKenJVVm4ya2locVpMLUNKbFhhYkVrSUZiMkdyaGpCZWNEbTNSdklLU2dNSTRiaXpFSFFmZjF1RVlzTkRHRjJmWGk3WHQ0MEE?oc=5",
+      "source": "Moneycontrol.com"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Perplexity and Intelligence",
+      "url": "https://openai.com/index/perplexity-and-intelligence",
+      "source": "OpenAI"
+    },
+    {
+      "kicker": "India Desk",
+      "headline": "VinFast To Build Dedicated E-Scooter Assembly Line At TN Plant",
+      "url": "https://inc42.com/buzz/vinfast-to-build-dedicated-e-scooter-assembly-line-at-tn-plant/",
+      "source": "Inc42"
+    },
+    {
+      "kicker": "Elsewhere",
+      "headline": "The Sequence Radar - Issue #977: Last Week in AI: The Robots Are Thriving. The Shareholders Need a Minute.",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1lblpEbTZjYUx4RG1JdkoyTmttTjEza00xakFSOG5wRHIxaDdUTVVobEoySkJ1cDVKeW5rT0RSYXd4bFdjaWYtUzJEd3dNalk4Z1FEZFprRmlmbTlhNm9rMFFUUlU3MFNZS1pkMGlsWnJ0bk1VMjJj?oc=5",
+      "source": "TheSequence | Jesus Rodriguez"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 4,
+        "sector": "ai",
+        "company": "Terra",
+        "what": "Israeli AI cybersecurity startup",
+        "round": "Acquisition",
+        "amount_usd_m": 500,
+        "amount_text": "$500M+",
+        "lead": "Palo Alto Networks",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5RMERTdEdfbE1PZTBHbVRhVE02bGpBbWFManZRd2dPckJfQ3FjU0ZpMFFMNXV6bnVLcno1YXc0ekFKZDd2SmJCXzE5cHcxSldPUUxpV2l3TS1GYkZzS2xBQ2FCeTFNMU0?oc=5",
+        "source": "CTech"
+      },
+      {
+        "i": 0,
+        "sector": "robotics",
+        "company": "Simplexity",
+        "what": "Humanoid robot developer in China",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Ant Group",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWXh4U2VvY1cxMnk0QzdXUUxJNEtzSUd6MzNkSWNzU21PY3RsZjZRTUFPamJrLURCUHhfUDZyUEpDV19wSFdZX2xSSkhnQm4tdVRYVXBtV1JBM2duYVgwc0dHSTJNdi05Zy03M2VucWFpcE02MnVwMGNtbENKMkdwamhVOEJXZFdPbFJsQlR5RmdlYWRBU19jaFlNXzBlZHRVeWRmV2xXTEpPTjNWQ2pObWZqYno?oc=5",
+        "source": "Bloomberg.com"
+      },
+      {
+        "i": 2,
+        "sector": "robotics",
+        "company": "Foundation",
+        "what": "Robot startup seeking bridge funding",
+        "round": "Bridge",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcEFhcHhzOGRmQ1FWQzcza3phR0tKUmlVbmNtWmRTbmdQLTVjenVXR0cycFh2RXN3Y0xpNVJ3OExXaVItYVRFMl90Mk5IOVROSWYwVWNOX0o1UFZQSHZQXzF3SFMtUDdXeEJFaHRUYl9CR0lHY3VQTkpPWUNRODhBamRqVlBfMkxsd3pOaGQyb05GaVd6T1VrZ09qeVBocnFn?oc=5",
+        "source": "Traders Union"
+      },
+      {
+        "i": 3,
+        "sector": "robotics",
+        "company": "Skyfall",
+        "what": "Drone manufacturer building factory for Ukraine",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Germany (government-backed)",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTThZRVppd2NWNmp1ZFFOelBEOHNIa0pkVkFodVNPbVAyZ1EySjZnREFpSlJBTUdNcEV5MVlkOG0tVDBfbVRnNkJHM2tOVWozQ1N5XzUxVXlLVGJmNS1oMmJsNHFJRjk4MzVWZ3BzeGF6a3ZpLUs5bkVKM1ZMMGVZU3JmMTBnTnFtTFpBNTdRYXZzRDBQMXRRbUFZYVFoQWI1dGM1ZnZuYzE?oc=5",
+        "source": "Informat.ro"
+      }
+    ],
+    "totalUsdM": 500
+  },
+  "playground": [
+    {
+      "headline": "Soft robot sets land speed record using pneumatic logic",
+      "body": "UC San Diego researchers built a 3D-printed soft robot that cycles its legs using pneumatic logic gates instead of a microcontroller. The air-driven control lets it switch quickly between abduction and adduction, and it can even run on water. The team had to modify a commercial printer to work with the TPE material.",
+      "why": "It shows soft robots can gain speed through clever mechanical control rather than complex electronics, hinting at more agile and resilient soft machines.",
+      "maker": "UC San Diego researchers",
+      "url": "https://hackaday.com/2026/11/22/soft-robot-made-for-the-races/",
+      "source": "Hackaday"
+    },
+    {
+      "headline": "Developer uses Claude Code to declutter his Android TV",
+      "body": "Gathin T prompted Claude Code to remove ads and redesign the interface on his Xiaomi Android TV over Wi-Fi. The process took about 90 minutes and led him to release CleanYourTV, a tool that became a popular GitHub repository. It works on Android-based TVs without full jailbreaking.",
+      "why": "It shows how large language models can turn everyday users into hardware tinkerers, making device customization accessible without deep technical knowledge.",
+      "maker": "Gathin T",
+      "url": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera",
+      "source": "The Verge AI"
+    },
+    {
+      "headline": "Twenty-cent USB graphics card drives an old analog TV",
+      "body": "Bitluni built a USB to analog video converter using a 13-cent RISC-V microcontroller and a few passive components. The PCB itself forms both the USB-C and RCA connectors, and the device outputs grayscale text and simple graphics. A crystal oscillator keeps the signal timed to the display's refresh rate.",
+      "why": "It demonstrates that useful video output can be squeezed from extremely cheap, minimal hardware, pointing toward ultra-low-cost display solutions.",
+      "maker": "Bitluni",
+      "url": "https://www.hackster.io/news/a-usb-graphics-card-for-just-20-cents-7381b439acd2",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "Single-chip GPU sends video over a jumper wire",
+      "body": "Bitluni's CH570-based USB GPU generates analog video with PWM and appears to a computer as a USB CDC device. While testing, he found a TV in wireless reception mode could pick up the PWM signal from a jumper wire. He is now exploring SPI and overclocking to transmit a PAL color signal.",
+      "why": "It shows how a microcontroller's unintended RF emissions can become a feature, hinting at new ways to send video without dedicated transmitters.",
+      "maker": "Bitluni",
+      "url": "https://hackaday.com/2026/11/22/building-a-single-chip-usb-gpu/",
+      "source": "Hackaday"
+    }
+  ],
+  "think": null,
+  "cost": {
+    "usd": 0.0062,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 1,
+        "inTokens": 5186,
+        "outTokens": 2049,
+        "cost": 0.0015,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 1222,
+        "outTokens": 363,
+        "cost": 0.0003,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 1622,
+        "outTokens": 557,
+        "cost": 0.0043,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 61,
+    "unique": 49,
+    "feeds": 29,
+    "failedFeeds": [
+      "r/robotics",
+      "r/LocalLLaMA",
+      "Hacker News",
+      "Show HN"
+    ]
+  },
+  "generatedAt": "2026-11-23T00:15:55.550Z"
+}
