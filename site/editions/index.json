@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-11-24",
+    "weekday": "Tuesday",
+    "number": 27,
+    "lead": "TacHOI uses touch and vision to reconstruct objects from egocentric video",
+    "stories": 10,
+    "readMinutes": 14,
+    "costUsd": 0.0853
+  },
+  {
     "date": "2026-11-23",
     "weekday": "Monday",
     "number": 26,

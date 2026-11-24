@@ -1,365 +1,5 @@
 [
   {
-    "date": "2026-11-18",
-    "title": "Genesis AI raises $500M to deploy glove-wearing robots",
-    "link": "https://techcrunch.com/2026/11/17/genesis-ai-raises-500-million-to-deploy-electric-glove-wearing-robots/"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Boston Dynamics’ Atlas humanoid lands first non-automotive trial",
-    "link": "https://www.therobotreport.com/boston-dynamics-atlas-humanoid-lands-first-non-automotive-trial/"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Isomorphic Labs raises $5B as it looks to take drug candidates to clinical trials",
-    "link": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Correcting Persistent Failures in Point-Cloud Grasping Policies using Human Demonstrations in Virtual Reality",
-    "link": "https://arxiv.org/abs/2611.18919"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Robot swarms trained by trial and error in simulation keep working on real robots",
-    "link": "https://robohub.org/robot-swarms-trained-by-trial-and-error-in-simulation-keep-working-on-real-robots/"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "TMA: Sim-to-Real Forceful Humanoid Manipulation via Tactile-Driven Motor Adaptation",
-    "link": "https://arxiv.org/abs/2611.18976"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Robot Demonstration Videos Should Include Transparency Disclosures",
-    "link": "https://arxiv.org/abs/2611.18982"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Ego2Sim2Humanoid: Agentic Real-to-Sim for Learning Loco-Manipulation VLAs without Robot Demonstrations",
-    "link": "https://arxiv.org/abs/2611.19196"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "California DMV bars Waymo AVs from operating on the state’s freeways",
-    "link": "https://www.therobotreport.com/california-dmv-bars-waymo-avs-from-operating-on-the-states-freeways/"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "How friends from Coimbatore built GOAT Robotics into an Rs 8 crore business with global reach",
-    "link": "https://yourstory.com/2026/11/coimbatore-goat-robotics-startup-success-story-8-crore-turnover"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Robustness as a Transferable Skill: Cross-Task Adversarial Defense for Vision-Language-Action Policies",
-    "link": "https://arxiv.org/abs/2611.18702"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "MoViC: Real-Time Humanoid Whole-Body Control from Monocular Video Streams",
-    "link": "https://arxiv.org/abs/2611.19998"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Introducing GPT-6.2 Astra and Sol",
-    "link": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "AI Is Giving Optical Computing Another Shot",
-    "link": "https://spectrum.ieee.org/optical-computing-ai"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Passage-Focused Soft Coordination for Hierarchical Multi-Robot Navigation in Bottleneck Environments",
-    "link": "https://arxiv.org/abs/2611.18877"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Refinement vs. Replanning: Inference Compute Allocation in Robot Policies",
-    "link": "https://arxiv.org/abs/2611.19034"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Certify, Then Select: Viability-Aware Runtime Steering of Frozen Diffusion Policies",
-    "link": "https://arxiv.org/abs/2611.19047"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "RoboCoEvo: Expanding Robot Capabilities through Agent-Policy Co-Evolution",
-    "link": "https://arxiv.org/abs/2611.19081"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Self-Calibrating Vision-Agent-Action: Deploying Pick-and-Place to New Robot Cells without Demonstrations or Fine-Tuning",
-    "link": "https://arxiv.org/abs/2611.19198"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "HospitalBench: Diagnosing Where and Why Embodied Agents Fail on Long Hospital Task Chains",
-    "link": "https://arxiv.org/abs/2611.19274"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Genesis AI raises $500M to deploy glove-wearing robots",
-    "link": "https://techcrunch.com/2026/11/17/genesis-ai-raises-500-million-to-deploy-electric-glove-wearing-robots/"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Exclusive | Genesis AI, a Robotics Startup, Raises $500 Million",
-    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTWFFQXhWNzlaWHRMZ2E5dWdTY0pIa2dVci0wa0VETFVvZXRzS2Z3Vm9uenBueTdiNFVpQmxXTHBGUm1IS04tdEJuaTJKY0hoVHhsSWVhOGNFeUcyc09LSlV3aG05bzMycGZDa29JM3hvRFp1bm1UV1ZLblBFdzBMdVdMSzh4Zlk3M1drZm8tNUIyQ00?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Demis Hassabis’ AI company raises $5 billion, months after he left as Google DeepMind CEO",
-    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPTFpzOHFHREVGLWRCYk1xQlppZXlkZTJtQ3dsV3JqNHM3al9SVF82UGtNUk52Y2diUTlXYUt2QWZ1MFRnN3dlbEpLQUdiYWc4aDgtOERaLVJLckgzaUFTOTBtMEo0NUcxckFWSy1yRThTSkx6Z3lfV3dQdFBaU1pBelpncTB1d0nSAYwBQVVfeXFMTUtFN2U2MHg1TlE2aVZSa1pRUTQ1ZUY0blFyV1RKaFJHWWVTQlRTeEh5cG0temdzTmFHR2d4MVZlMXpNQ1l4eHBkRXJwOFd6ZUhQMk9pOUI5cWZFdUE4S3hoSngwNXZxTndONlM1cUgycFZZOUttZzdVc056eXF3Q18xbjBOLTZQX2w4Qy0?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Robotics startup Genesis AI raises $500m backed by Nvidia",
-    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB1c3VtQkRvTHBNQVRCX2k2WVdOWmJHUlJCNGhUdldPMnJTN3RhenFoMWV1Z3BESFhYaEhqaXN6NEtQN3lPZ0c5Y1JOelljbVR4ck9aYms3dFpjaFRXMGc?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Genesis AI Raises $500M Series A to Accelerate Robot Deployment",
-    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOYmUwTEdLZ1JabHpUMWloRERmS0NlVjBwcWxZM3pzSGNoVjZtUjZXSFYyaDB3bkdBX08yQlo4aDV2ZmpfV0ZtRWNXc3lVcm5UbTJfY3lVQll5a1dwQU5GNlVrNW9Ra21teFViV01tTDdET3VxcDZTN2F5b1VtVGFkWDY1eFBnTVJyd3ByZA?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Isomorphic Labs raises $5 billion led by Sequoia and Greenoaks, six months after its $2.1 billion round",
-    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWHViVURwTmZ3UG1oVms0OERiTUJJV1hFTjlPVDdyQUs4aDF1bE9HeGhiRVdoUXFiSWNCaXRQWUM4clF6b3h6SC01M1laV1ljOTFVX3doZmF5bEdneVJtdldWZVVHN2k0ZnptbjB4cGpkT1ZBeWNIb09Ma1IyMTRkbmNCU00xQXZmVzVrQUxuWmpac2JVVFpJU0xueXpjTXRSZEY3MXZQOGRUQXRnV0lWenBBMml5RkdyQmo5Mw?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Isomorphic Labs raises $5B as it looks to take drug candidates to clinical trials",
-    "link": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "DeepMind spinout Isomorphic Labs lands $5B Series C to take AI-designed medicines into the clinic",
-    "link": "https://techfundingnews.com/deepmind-spinout-isomorphic-labs-lands-5b-series-c-to-take-ai-designed-medicines-into-the-clinic/"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Promise Robotics raises $25M to scale automated homebuilding",
-    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPQ3RrVXVFUmRqY0hBXzBMdHRDaEtpR2hLa0ZySmNhczhSWC1MY2cyZ1ROanFmQWtkRTBkdkd0dHlZcFBKcGRUMUQyVXVCTzdLd2hTcEI0TEV4c3NSVTAwN2RxclEyX1pqSWw3TWtzMVZNNFFLcGFsTzF4Ym1QcEFKNGxn?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Tutor Intelligence raises $75M for robot work priced from $14 an hour",
-    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQY2dVbF9YUUNvb1hLOVVteGtCd0pZVXJFX1BXZGZtaE54ZjFmUTV3TTYxd202djdDLXpzYWJ1dmNLQUJWazZJazcxWlY2X0luSlRhQlBxQXlPd1F1S0FVRUpscnRDMGd5dTNRTVNoTk1fSlVhNWdmb29xVnFhMVZBZW9nTHhROXJyTXFOOG9fRVNhakl1NFp4Q21lcjQ0SVFVN1JfN0VEalE1TW5qdjdUN09wMjRfaVIyZ1E?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Promise Robotics raises C$40M for robot factories that build homes",
-    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSVdCV3haSUd1WTRTdmdmVmZPZXJYbWFpR0x5SkZBc0JoOEVXUHdNUlh6dk5Sb3V2YkVrUVlHRlRWaEE0d2hOZTNQZk5yRDhwTC1RXzFpeDZESWt0b1owVFRLbV9hZHZERTU5WENPUHA4eUYxZENKV1FKREYxTG5jNTVEbDdMZmc?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Witron Acquires Warehouse Robotics Firm",
-    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOek5CLU5mUmRXYVdqQm9vb2hNVmNhMXZ6RlpOdURBTWdoV0VTTmw0R3c1dTRCcHhfcmtxYXR1ZEdadllWS1RaTDdYbmRNZ09HNzgyNk5jU2pabFJKTHBiTFBKdzlxRUVlZVJfbWs3dTNMRGpoc2lENW5lQnVmX2pQOWVERDRhM3VQY3Zuc25KSXQtMnJ6M0JuUlExdzV3a3lRWnVCVXpENzQ?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "China Physical AI Roundup: UniX AI Raises $75M Pre-A, Plus TensorWorld, UBTech Order and Huawei CloudRobo",
-    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNaHNPNFduaFVsOHNpQ2NfbldNX0plMnU1ckV5SVN5TVVLdWNOU1lQb3dxR1NWWjlNQlhuR3JWRi12NjdvUHQ2QkFnUjZLM1RHdnpfeW9MOVpfZThSRmFxcEYyS1RweENWUTBuVE5RbUJvQkpIVTkwV2hjYXg1NG1tWWxCVFNscGV2alM0YUJCdEtWemd1TnRGNEtKUUlad09TYWFqYTVSUjduenJvcjE5WmJaQm80b09PRVp1cUs5UEdRMmQ5WURreXk0ck1kd2p5Y3ZjYjZB?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Polymaker raises $70M Series B to push 3D printing into robotics",
-    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZkpSTjBDZlAwU1h2UVpiUkNIMEdxM1VUR2ZkZlFfQW9wNjdzZVdRc2d6d0V1TFJKNWQ3U1dCNXlWd0llZEw5VVQ4VlVlNXpFVDdWRjRkbFU5SVU2c0FXR3RORjNYblphTml4ZVJpT3l3Z2hzb0VQWnozMXNUeDhQWFJHTW9iZ2NqV1ZRa3JQZ3FwREpRdFlQR191TUxTZw?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Remedy Robotics raises USD 62M in Series B round",
-    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQRmJzbV9qRmc2MmRtVy1RNjVRUzB1SHVyQzJfeVNIV25zekMtdzBSLWtWUkhCWm80aDByYXRfdHBGZW9jLTNueWc1T25GRUZ0RUl6d0Vkc0hVeTRIdml5U3R5Wmp0eVI0QWJiY3pPWnd1aW1iZklHcE1uQ2Zzb3R5dl93?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Equirus InnovateX Fund leads Rs 10 Cr seed round in deep-tech startup CountAI",
-    "link": "https://entrackr.com/snippets/equirus-innovatex-fund-leads-rs-10-cr-seed-round-in-deep-tech-startup-countai-12816386"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Science Corporation’s brain tech is worth $3.5 billion after new funding",
-    "link": "https://techcrunch.com/2026/11/17/science-corporations-brain-tech-is-worth-3-5-billion-after-new-funding/"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Nomadic Raises $6M for Drones That Land on Live Power Lines",
-    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOY0JjSUdxMkY2TVJXNFFRLXRpVER2WTN0Sm1uWTJNak9NZzhXRkJnRmRGXzdybEpGeU9OVm00MXZ6eTViWHFLa3VNNmZmbW1aSlhYc3dSS0U1WTI1ZTlQd0tuV0wwNnNYYzJIdXJxM3dISkxROFJKMGZvSXdRTUZ4RjNwaWx1VTZSbmc?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "SPARETECH Secures $20M Series B to Cut Manufacturers’ Spare Parts Inventory With AI",
-    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPYkp5SUZRR3BvY2U2Mzl5c28xMTVpTlhFaFZ0dlpQOWJEZmk4SDF0dDVTbUhoX0RfNTVCcWhZOFNDblhfZklqdGJwV3NRMGwzaXFNbzBnTXNYYXU3VU4tNzNYRVp6eXZKSmxCUnNpdng0cC1Ua3FqYXVCQldGZkxESGJmTTZ4dWFPTmdWdUJuQUY0QkZocUg0NXI2NUl1MFNwUFpKbnJGNjRvbVoyYzdSZ3RuamdubGZGM0dV?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "AI Company Backed by Nobel Laureate Secures 33.3 Billion Yuan in Latest Financing Round",
-    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9RTGdrNXRIdjcxdXlSZkV4a2U3R0MwVkdHUUhHOFlhampYOWpVWDIza3JTUWd3ZzllbzNhVjNXUXlJM0FLVXYzUllRZVN6UFM5bzYw?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "London’s Model ML raises $250M from General Atlantic and QED to put AI agents inside banks",
-    "link": "https://techfundingnews.com/londons-model-ml-raises-250m-from-general-atlantic-and-qed-to-put-ai-agents-inside-banks/"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Ex-H Company researchers’ Remanence raises $30M to turn AI agent data into models companies own",
-    "link": "https://techfundingnews.com/ex-h-company-researchers-remanence-raises-30m-to-turn-ai-agent-data-into-models-companies-own/"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Verkko Robotics closes seed round led by Elarion Partners",
-    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOYmtNYXBtVzdrUmxIX0pqYTExNDd6MmdodWlBc3pRdm1UMWx2VnlZekgzRW95MDNBOTlVRm10MXo5SldGanphZHVUYVh3bXRGNXk3emZQNDZsbzRNUWhXUGFaemxjalphMGJQSXJwTDFSZTJUZ2tvVTI2cWNBTklxU3JtMVdOQUs3Unp4d1VDdkpCWGpQRWc?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Syntric Medical raises €500K pre-seed for CT-guided biopsy robot",
-    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOek1mem5NVEY3ME5Peld0TFdiMDdLODBDZkRXMDNXSmV3STZsY2R4aXRDS3A2cmpKd1BrMGEtaGw3N3RfQVJYQkpJd0lmYXV3UDcwbWhDUGVhV0E2T0FNU0llTWl3RFRKTHVsMl9wRHNNRVhRRDJrYkMxQUhienVoMUxZLU5wYWlTOHplbldQN2kxb0QyNlVGeElvMS1xdw?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "SPIE acquires Duflex, a Dutch industrial robotics specialist",
-    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQk42c2pVWHpRbC1wQ0M3V3JoMFNHc3c0OFAwSHdvRktYV1pGcENVMlB2WjR1VnpkS0FjSGVIbFpqR1ZkU250ZDZMbkUwc3c0UHV6OUZFdmt2UDA0aEItTkp5VEJGYm5rcUtRa1dLZG9mMEk0WEV6cHhoSERBbDhDWE91bzFHNGRmeWZXTzBWTWV4ZWphTFo4bGNmN3NFSDFxa09ucGV5bmxTSmg1MmwxVGV1U2kxUGZEbXc?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Mass General Brigham spin-off launches with $22M seed round",
-    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQd25JUFpIRnQwaVVrTDlINVRSYUhiaGV5UnVIRHgtZ3RZNHU3Q3NrdnN0ZWl4UFcxZTJHMlpaZ1lqUGc1OXJ2Q01IdkRoYUVJRTU2ZW9rRFQ2Q2xGUEszS3RBWmZGSkFUejBTMExtMFRjbmVSY2FQbjRlNkRfdldLelhyU3JMNnRBc0dmc2xRVTFMZXg4amZ2YXotZTY5N2w2?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Stanford Professor's Startup Noeri Raises $110 Million to Let Enterprise AI Rewrite Itself",
-    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5CLW5ldmdpSHk3VWZuNUlfN3FqNnJpXy04R0NUamRNMHZNQlpXbXZrOUlTMG96NWNzZ0dnSlMydFRabmxJajE0TE1WZ0RaVlZtRjJTUlhfRVdPZHc0UFV3Q3RvZEVvdnRXUzZFYjJrWWRaX3B3dEE?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Exclusive: Aevius raises $22M for clinical intelligence platform",
-    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQWEowX0tyTjA3U2V1YkpCeUNCMWk5bFUteVRGS0JzMUtaSTRZT3VPeTFyNEJ2Vi01MmhKbzNMbk5CU0dpakExR01MX0lqc1hlbmNpY05vNWdOZGNRSUQ2ZEMyX0tzdTJFM1BTenA3Y2JfODA3OU11Vkl3ZVUtTzAwbmhvMzZCdmREMXVZa0hmRFZhSE1JQ1VF?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Amazon and Google will together own nearly 30% of Anthropic after its IPO",
-    "link": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo/"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Model ML raises $250M to automate investment banking grunt work",
-    "link": "https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work/"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Pedestal AI raises $4.7 million to agentify the supply chain",
-    "link": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Voyage Labs raises $12 million for a specialized AI travel assistant",
-    "link": "https://techcrunch.com/2026/11/17/voyage-labs-raises-12-million-for-a-specialized-ai-travel-assistant/"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "AI video production startup Lemonpeel raises $1 Mn in pre-seed round led by Shastra VC",
-    "link": "https://entrackr.com/snippets/ai-video-production-startup-lemonpeel-raises-1-mn-in-pre-seed-round-led-by-shastra-vc-12816726"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Restaurant AI startup Marble raises $5.5M seed round",
-    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdTlSUHNiU081M3N6UXcwcDd0SllXRWtOSGsxUE92NEN0cDlCUGp3alBGVUx0ejhXVW9YRTdxRnZSc2RxbWpuMWItVzhhRlliT2UyTTI0c0ZXT3NpUm1qMmlfUmNyTHlIRUw1Z3RlVDR5cEZ1MnV0NmFRZTRYMjFmanEtUEZrY3BacFNLUEdn?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Japanese Voice AI Startup Kotoba to Be Acquired by ElevenLabs",
-    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8wR1ZlcWsxQXh4cTlWRDN5ZnBjYVdRNHRDREROeUVtYV9mdnMtY1IxYmJsRDFXZkdhQjV5WW1RNmI4UEI3aU9YWkJRTTdMeFVieTlR?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Karta AI Raises ₹28.52 Crore in Seed Funding Round Led by Peer Capital and Cedar Hill Capital",
-    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPUmhia1U5SFZBRFYwSGk4MHRpNm9TeldPNGV3b1dlT3pJdExTQnBON3djUDhDa0FMYjQ5RjZwUnM3Y3JiRExUMzhMWWhFZVZFeVRROUJNb1lFbTRWOEdYS1RLSGRUdlhZcTZUV0ZCSEdJR0xWTmpxMjVld1pjb3ROQU1DTDdLZGY1TkRSd1lKcVRhVUprZFhjNE96dGNYWmtRMHdfTHcta3lqNkRpQURRT3Z2dkdMZDZjR2FBVV9xQXVfeTJDN3p1S3M4WDIwcVJBMG80VXZsVU1ydTlxZHZPVEtR?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "ICEYE bids €2.05B for Avio to bring satellites and rockets under one European roof",
-    "link": "https://techfundingnews.com/iceye-bids-e2-05b-for-avio-to-bring-satellites-and-rockets-under-one-european-roof/"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Defence unicorn Tiberius raises $85M to scale its long-range ramjet artillery shell",
-    "link": "https://techfundingnews.com/defence-unicorn-tiberius-raises-85m-to-scale-its-long-range-ramjet-artillery-shell/"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "RHISE AI raises €2.66M with backing from an early Google investor to build Europe’s personal AI",
-    "link": "https://techfundingnews.com/rhise-ai-raises-e2-66m-with-backing-from-an-early-google-investor-to-build-europes-personal-ai/"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Polish Asynchronics lands $3.1M seed led by b2venture for spacecraft digital twins",
-    "link": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Fermat raises $8M seed as AI fashion platform triples revenue and prepares New York expansion",
-    "link": "https://techfundingnews.com/fermat-raises-8m-seed-as-ai-fashion-platform-triples-revenue-and-prepares-new-york-expansion/"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Colossal Spinout Astromech Acquires Sister Company Form Bio for $230M",
-    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQM2o1RklrVjNDVDlydGZOcWJpc1BWQjU5YXlzMm5uY29xTDI4M05lQ0JnSDhQWFdPb3Z4WEZUWTVwZzV1N19nOFBwZVpHX2NzQk43WWo3cmdzaEhJdTFYMWQ2LVdLYkNtYUJ5cHlCUlFhandlNkdKWjAybHdiLVF4T1M2N0tzXzFlMk1oRnhXc1luZURmSGZQZllGZjhVQQ?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Synthesia and Datadog CEOs back AI startup Remanence in $30M funding round",
-    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQRUdEQk5jYjNWZ1U3YjlMOWYyMF9jTTAtOHZkV04xSjZoYlZMam40dEFfaVBJUUpEZHY3RHo5TmVRa201Q0g2UktfMGRQZ3pyaTNfRTNpSExHQXFMTHNPVWpXN3BaOUFydU43SUxIaXY4dnpHU2R2YkVBdGJXTXVvcXE5Z1ZMODVmY21OeU1mOHQ?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Sqwish Raises $3 Million to Build Its Tunable Decision Model",
-    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBnRVRURHNKZFc0UVNhNm5uUzAtSzUxSkk1dk1KT1VyTUZBQTRwZk9MY3d6czZkYlpHN0hsTkQzRDFXclc2UTg0ZENXREZ5dVFkU0dtSHkzQWM?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "EchoMotion Turns an Off-the-Shelf Smartwatch Into a Full-Body Motion Tracker for AR, VR, and More",
-    "link": "https://www.hackster.io/news/echomotion-turns-an-off-the-shelf-smartwatch-into-a-full-body-motion-tracker-for-ar-vr-and-more-8b9ce7f567be"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Technical Report of Auriga's 1:10 Scale Autonomous Vehicle Robot",
-    "link": "https://arxiv.org/abs/2611.18855"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Naranganam revives fallow land with drone seed-sowing",
-    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeVAybjlFVHV5Uk1VZTFma0Y0dV9FZHJvM1dETFJLLTl5Y3dhcmpOcHpWNmlhRmFnVXRsbGJ5bHRSMnE0WlIyc29pN0Nxc3I2MVFUMk9Wd05fUTM4bm8wWTZoa0YwS2lELWd6aVlMdkE4dWpQOXVtSkJ3WjdOSTNJZUdkSXpSYjRRUGJQbVNITXpBakZ0OFhQbDVuRU1QOEluQmdvbUtWS2Fham8?oc=5"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Researchers Unveil the $450 3D Bioprinter, Built Using a Low-Cost FFF 3D Printer and Syringes",
-    "link": "https://www.hackster.io/news/researchers-unveil-the-450-3d-bioprinter-built-using-a-low-cost-fff-3d-printer-and-syringes-10a1bf322be6"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "A Pen Plotter to Draw You Up (on) the Wall",
-    "link": "https://hackaday.com/2026/11/17/a-pen-plotter-to-draw-you-up-on-the-wall/"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Giving a 1994 Jeep an AI-Powered Tune-Up",
-    "link": "https://www.hackster.io/news/giving-a-1994-jeep-an-ai-powered-tune-up-cc81f96957aa"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "The FM-1: Open Source Hacked Open, Vibe Coding, and Farting Synthesizers",
-    "link": "https://hackaday.com/2026/11/17/the-fm-1-open-source-hacked-open-vibe-coding-and-farting-synthesizers/"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
-    "link": "https://simonwillison.net/2026/Nov/17/datasette-lite/"
-  },
-  {
     "date": "2026-11-19",
     "title": "Humyn Labs raises $47M to collect real-world data for robotics",
     "link": "https://www.therobotreport.com/humyn-labs-raises-47m-to-collect-real-world-data-for-robotics/"
@@ -1568,5 +1208,345 @@
     "date": "2026-11-23",
     "title": "Building a Single-Chip USB GPU",
     "link": "https://hackaday.com/2026/11/22/building-a-single-chip-usb-gpu/"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "TacHOI: Contact-Aware Object Reconstruction and Tracking for Egocentric Videos",
+    "link": "https://arxiv.org/abs/2611.26764"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "RoboCap-10k: A Metrically Accurate Egocentric Dataset for Robot Learning",
+    "link": "https://arxiv.org/abs/2611.26916"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Learning from Incomplete Actions: Interval Motion Supervision for Vision-Language-Action Policies",
+    "link": "https://arxiv.org/abs/2611.27171"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Amazon snaps up Decart’s AI optimization tech for $7.5B as it prepares to sell Trainium chips",
+    "link": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Sierra doubles valuation to $30B within six months as demand for AI in CX takes off",
+    "link": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "RoboTrack: Point tracking for real-world robotic manipulation",
+    "link": "https://huggingface.co/blog/allenai/robotrack"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "FORTH: Grounding Tactile VLA Execution via Forward-Only Proxy-Control Pairing",
+    "link": "https://arxiv.org/abs/2611.26744"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "MomentMem: Memorizing Key Moments for Robot Manipulation",
+    "link": "https://arxiv.org/abs/2611.26745"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "RoboDyna: A Benchmark for Evaluating Robotic Manipulation under Physically Grounded Dynamics",
+    "link": "https://arxiv.org/abs/2611.26969"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "India AI funding nearly doubles to $1.6B in Jan-Sept 2026: Tracxn",
+    "link": "https://yourstory.com/2026/11/india-ai-funding-nearly-doubles-jan-sept-2026-tracxn"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "FoRe: A Force-Guided Framework for Autonomous Grasp Recovery in Vision-Language-Action Models",
+    "link": "https://arxiv.org/abs/2611.27011"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "BeyondEgo: Learning to Act Beyond Egocentric Perception via Humanoid Ego-Exo Foresight",
+    "link": "https://arxiv.org/abs/2611.27047"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "HumanoidPose: Monocular 3D Pose Estimation for Humanoid Robots",
+    "link": "https://arxiv.org/abs/2611.27181"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "HermiteTwin: Bicubic Hermite Shell Digital Twins for Contact-Rich Deformable Manipulation",
+    "link": "https://arxiv.org/abs/2611.27282"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "ManipScope: A Diagnostic Benchmark for Instruction Following and Generalization in Robotic Manipulation",
+    "link": "https://arxiv.org/abs/2611.27305"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Latent Jacobian Steer: Eliciting Contact-Rich Out-of-Distribution Behaviors from Pretrained Humanoid Controllers",
+    "link": "https://arxiv.org/abs/2611.27338"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Learning Interaction Dynamics via Motion-Region Guidance for Robotic Video World Models",
+    "link": "https://arxiv.org/abs/2611.27344"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Ego4Gen: Generating Geometry-Grounded Motion Tokens as a World-Action Interface",
+    "link": "https://arxiv.org/abs/2611.27513"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Far Eye helps reduce Flipkart logistics expenses by 6%",
+    "link": "https://yourstory.com/2026/11/far-eye-helps-reduce-flipkart-logistics-expenses-6-percent"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "L&T Bags Contract to Deploy NVIDIA B300 GPUs in Chennai Data Centre",
+    "link": "https://analyticsindiamag.com/ai-news/lt-wins-large-order-to-deploy-additional-nvidia-b300-gpus-in-chennai"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Embo raises $110M seed to build robot brains with world models",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZC14WlpaUEpzTVdNSF9wZ0piLUlhSld1c25uc2hsbGlEdUwxRXlyLXk5enA4bG1taW1JdWNHSFRIamtxcHRxZ3VaOGJkZzNES0NTWnpCVXR3YmRmVDhBY1lNdXNYRUxIcFo5eC1LcHIybVp1TVpLRHVWOWVuaTJOREpqODJGR2l5QWF1WHM1SUtHMnZHM1BFYi1iSQ?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "OYMotion raises hundreds of millions in Series D for embodied AI hands",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONzAwQ0dEMldpdUY4TGE1ZnNNQW5fU1ZvZWFtVllreUF1V1VodG9KaDY1bU5NWE9BdzhPRXM0aFhUUUNPUE8zU29Wdm8wbGdaa3RORFltb1YxVG9oMkNXaXFmRVNiSV9vMUtWYVpJd0NNSHI1QlQwaF94VUE3dlNLZXhqbFdBNU5rb1MtUWdGdVhLQmVyLWZEd2pBS1lHUXFTTXZHS0xYdw?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Ant Group leads a $100 million round in Chinese robotics startup Simplexity",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVEtGa0MzRVA1eXFwR2JxNHhab1B4OVEzeHVfWmItdUFMa0ZaVl84NDdoRGktNEVwdXY1MmRWR1AzMnU2bEhZVHZiYlpsTW1Nc1gtNU1ScFBVWkNhT2NqZTlOV3BNWVlvTTZibVNodDJSQmt6TkF2Skg5Zl9DQThMMW5xUEtSRXBpRFAwWnBCQVVwWU0ya1VOOFFDVQ?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Billionaire Jack Ma's Ant Group backs $1.6bn robot startup",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOM05zbnU1SjVwYjc0UXZIaHNBR3hlRm51QndXVFpJQ09jUHplbnRtblNtMHBlMnFzaFE4TWVOTWNjdFpfZ0luQlhORTM4a0xSajJhcGhUbnl4VE1VcHRPUFlEak44NEo5RDNRT2tBM0U5NXRVZzV1VzdINEtFdzhBZmxDVWllcXlPVU5rTlo2b0YwY3NEZEQxZkdRSUVnSmwyUHpHRTBVQ1JxNlBDTl9nVlZ1NlBad0Z1UUZaYlFFYkdKVHY5V1dN?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "EPFL founders who built a robot in a garage raise $6M from Founderful and PROTOTYPE",
+    "link": "https://techfundingnews.com/coprod-raises-6m-robot-integration-hell/"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Marlowe's $1.15b valuation and John Deere's robotics buy",
+    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9Ud3F5c2RmTllFQ05XOXpjM3FubTF2VGJCb3pzSmM2eVFMQkFRYThkYnluWS1uZXFmeTdGdHZkTmQ1Y1B0ZnRMU3VITXBscV9UMjloSWstR0FBVVdGZElYREVzcGFPZlUyV0NEWXJQVmYzTXhqOWxDR3V2U0hoNkk?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Simplexity gets a $1.6B price tag before Series A, co-founder tells Bloomberg",
+    "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE0wZEhaYnFtbnphS0tKZ21uaWpfMnFKcjBwTDhzWV91NnNCMkRwaFRDQ1psc21FSlNNaTNnUWllQ2huZ3Nq?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Agon raises $70M at $450M valuation led by Northzone to build Europe’s defence AI lab",
+    "link": "https://techfundingnews.com/agon-raises-70m-at-450m-valuation-led-by-northzone-to-build-europes-defence-ai-lab/"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "U.K. Startup Agon Raises $70 Million With Focus On AI Models For Autonomous Systems",
+    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxONEswSktyb2ZNcTRCSGhHMnhPNF9mTHQ4RURGckRpLS1jdTB5SUJJWFR5WmZGV25JdjdIYTFqWDhsTDAta1hCa0x5SHlpX0xRN0hGa1EzTm1RSUtiZEpOeGtrQWxwSExmLXBiVmZoN3Noa3FlYXNCSlRVZzZSeHVFdXlhY2ZQbTJza1Z6UExBSTJwR1phc2UxTGhFVFlyZXFXZ2ZORlR5SUZVd0lhbDkySkxNMFVacVhmaXItRkttSlU4c3g5bzg2RVV4ay1iVTY5dEgtOWZ1cFpQaHRPLWEydFlB?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Swiss Robotics Startup coprod Raises $6M in Pre-Seed Funding to Simplify Custom Robot Hardware Development",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNSExoZlJpSmw3ajlnUUhEYTlWaU1aUU0zdFlNNjJrVHlBRlZPTVNRd0NmYjBVZmNWaFprQ0RTYzcyM05yeWxoYXJRZ205N0xRbWh2LXR3WGtscUN1X2tKN2JSRDlKN0xKNV9aTjNubldfTERPWTZxYmh6SlpBbzNxemVFbVFIZXdpNDRPeVFzNnNrSGJ3Ry0zUmV1dEVrV1lEa2w0bnhYOGhDVXg2RWVJclJ4aUp2MWVWZkNXY0wyOUJTSjZnSzdJRkkwbXlpSjFzS0hMSTFLd0Z6UkU?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Amazon snaps up Decart’s AI optimization tech for $7.5B as it prepares to sell Trainium chips",
+    "link": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Coprod raises $6 million to make ‘robot hardware as easy to build as software’",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPR0tOMkVrOHVrdFJySjN3VWxhU3lqeDZ2OXJnMGRwWHgxQThCYmNUN1V1ZGZNb0M1VlJFOGdOQWU0SFo1bEV3Y2l1X1B3NVBmX0s4UHhucGo0Vm1mcmFUR0l2OWNxN0NCb1BrSjNxTmdoaDVNUnlxTHJRaDNOV1RlODBld28wemN5YWFsSlV0eGJhd2p4UHRSVFJKdmpLem9hMm1uWGlHMzNVaE4zbFR3SFVlVS1UcW8wQW8yVzVtcVdDUXBJVnZuaGVCRTI?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "European Defense AI Company Agon Raises $70M in Series A Funding to Develop Autonomous Systems Technology",
+    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNbV9pVVJjcDRtZkFpdzlRWmRZekdESlNIS2M4Y294bjl1Y3Q0Y2F1U0hEbk9IUGlCUmROdEJjWlgwaEdoc0hwZWt2aXJTNzQzS3B3V2Y0cnNoUm45czJrT01zX2pfdUF1aGtBU0dheUpGYWZXZmZhdGJ0a3dhalgySlA2RlEwMk9qRHhfWEd3amRIWkxaaUF5V0ZUM2RNRUsxdE5MYWhiUVpvRm9lLTJ2a1IwN3RfZlVtQ3p4aklrT3hid192ZVd1UnRieGc4bldZNkpId2ZQTkhndw?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "AI tennis-robot maker Enhanced Robotics raises $15M Series B",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNndFVWZHMF9yY2VKZDV4VkVoU2M5NFQ4Y1FKcldBa1VkQWpLWW9lMDdpaHEzNy12dHNNWGhVNXJuMW1oa2dIWDRveTlRdnpTUWpGM0tXU3VMSnE3UDhqN29ob1o2cWUxMjlHTXZadmVuVFRaMlZfNTBJRlI4dXFsWU0weUVDdlllT1R2N1JndzY1UFhKMHBKeg?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Sierra doubles valuation to $30B within six months as demand for AI in CX takes off",
+    "link": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Databricks eyes $225B valuation in new funding talks, 18% above its August round: Report",
+    "link": "https://techfundingnews.com/databricks-eyes-225b-valuation-in-new-funding-talks-18-above-its-august-round-report/"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Report: Devin maker Cognition in talks to raise $2B+ at $75B valuation, two months after $48B round",
+    "link": "https://techfundingnews.com/report-devin-maker-cognition-in-talks-to-raise-2b-at-75b-valuation-two-months-after-48b-round/"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Dublin robotics startup raises $16M toward preventing stress injuries in hospital techs",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQZHBhblNQTFJHVFRhR2IzcmJoZFZGUDVfX0FhWEdLWTNFN0Q4SXhxQkotVmtIakhjN1dQMVdIaXo4akRLUW5BQ1BmdmVqaGxJdzRkY1d2dzdIZmwtN3owck0xM2xweF9CbnNTZVIxa3Zvd3NQanZzN2d4T0JZVldoUHZ0SE40SWJoYW0xQw?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Exclusive: Apricity raises $16.1M for ultrasound robotics",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZFdKSkFCSVZLTGVtOXhWRmZBY3V6c1J2ZFZFbUUzeFR3RGR3SEt1S1U2bGp5OTFfZVVHYU1GTkNqcS1lYzFqa3dCTzNGZ081S1luT1dRWExyUFFjc0RaR1lZOVFTdldBWjM0M09rVnZiMDhkd1JuM2pHcEJTQ2I2TnFJRTFBeXlSYXJLWG01aw?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Swiss startup coprod raises €5.45 million to solve “integration hell” in robotics and physical AI hardware - EU-Startups",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxObzBNV1VweGNUTDAxVXV5eUd6Zlh6RllSSU5LR2ZfNklLLUE3Unpabm9XeWUwRGRjS3dZYWZHZ0RIeUxNLVpLSHZfS01xdm5QaFdQSHVRNzZaSkxwMkJtTkxzeE4tYzVFb25MT08wdTNQNGM3dkZtbWw1NHNrQ191RWdzQTFiSGxMdGt6TTktYXFxdXptVEFwbHljV2dkSDRveEgtMG5Qblp3d2hyeEpfMFQtOTlZcWVaZXFzeXI0a2w4NG04Qll4SFBGSi1fekhXN3NoalF3SEY?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Theseus Robotics secures €455k to put robots to work in supermarkets across Europe and US - EU-Startups",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQLTZUaGpsSnF1d0lVZjZ4ankwc2lRSU5hU1NtM0RaSDVYVmNMdHJoVlJyM29Ubi00bldPNHk3UFljSGRfdER5NS02Y2xSdFYxNktmVWxkTG9pNEtrVk9QRkFiSG1YYzNhRFh4TkdFQWNueDJOWUxlV0x3LThxMEpLQl9wZ3NjSHV1YUd0NHBxMFNnOG45dDJNYmdXdW9xeDFuZTdGdnNNQ1hEN0FWZFhRNFhFbkQySU9jMXZObzJTTUgyUU5w?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Nomadic Raises $6M for NOMAD, a Drone That Recharges on Power Lines to Monitor the Grid",
+    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9XRW5SMXEyczlZYldISjRMdDVzYnhrN2RMaG1iYjU1ZzljQkQ5N1FkNzFwS1R4MjhNYjd2blVFZDE5RU9KQ1VzaEZUa3E0cmVybF9qcjhnUTRwWkswY0gteVBBMHhjRzNXNGc?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Ex-Sequoia Boss Backs UK Defense Startup at $450 Million Value",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPN2VKZjJpVWZ3RVUwdVlSN0p4aHdRWURXN0Jwd3g1TVBqR1FhNm42bjEzbG1LNWtaTW9BMWc5ZEoySjZnWVUzYVBwT3lrNGgtb1BUa2JRRU96YTN2UjhEUDFOamFQYThpSVpqNmd6SlJIZ3RUUHdFMm1aQ01nSVZOOVhKcGJZOS0yNWZ3Nk1Ua3F4Z3J4S0FaVWZ4aXV1bjJTQmZkTzhNVWFmWGhJdXZ4ZnpJS0JncUprcGFVUmt0N3R1Q2VS?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Salesforce Ex-CEO's AI Startup Sierra Hits $30 Billion Valuation. It Doubled In Just Six Months.",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOU29YdFhwTGk3MThFTjdwUmNzWDVESk05ZGNyNmpQc3ZaSVZGM2QzeXJ4c0Q2cUhXQ1BjaDhOaGVXZ0VNQ0lVa0gxMGRTVm1uQ0ZoX3pENjFGZEo3VUtybHJiT1QxZEpoWnRIdVhPSGVYVmZWNEtldGM5c1Y1RHF5LWlxS2U?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "London defense AI startup Agon raises $70 million at a $450 million valuation",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZnRXZnFianQzakFTS1d0MGhrYWlhV3BscktVUE15eWx6WmVmWG85OEZCbDJaVHBaMkxaMlBfd09LMTgzSjZOZXp6R3BkaURreUh6bWZGWTF6NVRYSG9STWo4allfc2tLamhUNWh3ejIybmNYZklaeGR0SjVNd3NrQ0ZQbFhqN1hOMDhjbkpuWWZDTExOaHVQbzdESHE?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Amazon is said to pay $7.5 billion for AI startup Decart's tech: Bloomberg News",
+    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPV0t6UDYzci1OdjZhNFVuN0JjU1VhZEZKbTVEWUFDb3hqZ1dnY0pkWWdldFVSRm9RVXBieEVwN3k2d3dTemwxWlRiMkFlTUNDR1RlMUg5alp6eVNzNlBpbkdhUWh6UFF4ak84UHdUS21BRHZBT0dyWjloa3loOG1QMjRjVU9jN3hkZmxDSmZDYU5Ob2pJbzhfU3owRG1yUmZHRHRReEJtSXA5Q293aUx3TlhrZ01Ec2t2bDBTbS1iRDlTOVVyZ09ubEphelN3WjlZYTJRZEQyZ3BJalFHcUNBdE85V1rSAeQBQVVfeXFMT1dLelA2M3ItTnY2YTRVbjdCY1NVYWRGSm01RFlBQ294amdXZ2NKZFlnZXRVUkZvUVVwYnhFcDd5Nnd3U3psMVpUYjJBZU1DQ0dUZTFIOWpaenlTczZQaW5HYVFoelBReGpPOFB3VEttQUR2QU9Hclo5aGt5aDhtUDI0Y1VPYzd4ZGZsQ0pmQ2FOTm9qSW84X1N6MERtclJmR0R0UXhCbUlwOUNvd2lMd05Ya2dNRHNrdmwwU20tYkQ5UzlVcmdPbmxKYXpTd1o5WWEyUWREMmdwSWpRR3FDQXRPOVda?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Ionic Wealth raises Rs 177 Cr from Angel One, marquee families",
+    "link": "https://entrackr.com/news/ionic-wealth-raises-rs-177-cr-from-angel-one-marquee-families-12833453"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Exclusive: Matters.AI to raise Rs 110 Cr in pre-Series A led by Tanglin Ventures",
+    "link": "https://entrackr.com/exclusive/exclusive-mattersai-to-raise-rs-110-cr-in-pre-series-a-led-by-tanglin-ventures-12833226"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Matters.AI Raises $12 Million Pre-Series A to Boost Data Security Platform & US Expansion",
+    "link": "https://analyticsindiamag.com/ai-news/mattersai-raises-12-million-pre-series-a-to-boost-data-security-platform-and-us-expansion"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "The Weekly Notable Startup Funding Report: 11/23/26",
+    "link": "https://www.alleywatch.com/2026/11/the-weekly-notable-startup-funding-report-11-23-26/"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Lupa Robotics raises $1.67 million seed funding",
+    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBROThJOG41MDVLeEU1RC1kNVpNY0FSY25Ick1BZzJqWUtxZkYxRkRQcU83dGVWYzA3aUZpYzZPYlVxNElhS08zbDU4VmFzRUZsdjZBdTBuZkZsUG5CN01LNnB4Y3ZfQUxKWTduU3hkT1VwemtpM2lZYUdyUQ?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Swiftstrike and Nautrik awarded Vinnova funding for counter-drone protection at sea",
+    "link": "https://news.google.com/rss/articles/CBMiugJBVV95cUxNa2Y1UnM2WlpTOXRBWnRvSlpNRnhxV09wdkNEa3JmdjZHdnVENWd4S0d3RWp4dDJEODI4djQtcDB5ZUx0RHhaUEtVd2t6YWdwa21FWUw4UG9kMlN4enY3bFQ2bUt2T0dINl9tQXM4d1Q1WHcycjVDbkhXS3VraXZ4MWRzQVllWXQ2ekVaMnFWQmk2S3hFei1RNWdjeXBEeWJfLWJoUlJzVjRwVk5GdEJpS2RhNkJDSVdLUUhOMFJaM3BsaEU3OGZEZGdyeUIyWDFJU2pWb19ZdnU4VklqN1Z0dHVEdXptWnVDWWFmeUZYSWVGUWxMOGtTTGExeXNuWU5VSXVHQ0xFd2NHRUpkYkhEWnlqbjBPQUtZVm05SC1lSExCYlpRTk0zNW4xRWtPcTR0VHBSSXlUNTZxZw?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Amazon Acquires Chip Software Business from AI Startup Decart",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZGxwb0piQjRYaXFvbEpVRE1CaDFMZWE0SVBGS1FLcXZJMlEtMnEwQnZoV0l1VGdEbS1NdXlUeW14VHlIT1JTc192czlZMTdXclhLOG11X3dKbzhKbEU2S1lURzd5b2lpblJuSUZvaTFveTVOQmFxYkNCV3Y0Zk9vd1I1b3drU0JCX3Rqb004SkRSVDVRVTRCczB6ZkU5UQ?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Adelaide AI startup pockets $9.5 million to cut AI training and model costs",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPdlBveWRMZUJsNUhpcUFqTDFlWVdKQzFwQ1FYcXVTUXJpSEZWd2dnMmg2SGlsOERyRG1JOWI5MnQwRUhpUTlVb1hwWWMycmY1SHBuNWlRYWhVaVBRZmZHSDlTWExkbEJMQk55NjNTN3FkT1pGNVVRbjFQLWtkRkdTNUp2dHRWVEQ5ZFl6VzY1N25LV1lzOEVOOEIzSzMzRldWOF8tbVNmTHMxWHprcTVvOTJGZTZ5dDMzQmc?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Aevius Raises $22M Seed Round for Clinical AI",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNYXlYQkdrVHdQUkkzYzd3RmxoTEgxcWVwb2xYeng4N0VNR01XZXNEcUI3RldjVlJWX09RRU1zQTV2dDFlbVBVNUFCZzRnWWxwYjdWRnBrcXRrdUtiNWtuam1ZRFZycFExQmwyZDFEUERHeFZPYTZUUFRFYi1pRHBud3RVUVJ0X3c4TFo5ZXJYUQ?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "UK Government Funds Back Defence AI Startup Agon in $70 Million Series A",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPT2pfZTBfYWFQM3FHMnF3OVhCZ0dNT0QwSlpVYm1vUmtBa1ZYb0s4YUNCczE1LUtnZkh6ODVwbC1oTk9aOVd2aTNHRXNIQUd1VHY4Y1NRaW40MnY4N1h2cWFpbGFxWXMxSVZSbWo5UnhSTEJOYkJxSGJ4aFNPYjVOSWMwQjQ4RlNxLTBTNkxmVjRaUEljZVdKZm11c3NRU00?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Steadview Capital Sells Lenskart Shares Worth ₹921 Cr",
+    "link": "https://inc42.com/buzz/steadview-capital-sells-lenskart-shares-worth-%e2%82%b9921-cr/"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "InPrime Finserv’s founders retains 28.5% stake after Series B, valuation doubles to Rs 360 Cr",
+    "link": "https://entrackr.com/decoding/inprime-finservs-founders-retains-285-stake-after-series-b-valuation-doubles-to-rs-360-cr-12833250"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Levenza Launches AI Agents Globally, Acquires Voice AI Startup Fluid Inference",
+    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPUlk0bS13aGJTN3I2NllfNzZoNmhnc1NzTGhDN2diVUlhd3laRUxZNjNkdWtaMVl1V2tXS05lVnlhc2xDdjZDTmV1MVdRb28tamZ0c05vOS1yRlVDcmNXak0yUmJ0QmUtM1k1V1ZGeVpBZHZsVEFiWHhhb2xuOW1wMw?oc=5"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Data Security Startup Matters.AI Nets ₹115 Cr From Tanglin Venture Partners, Others",
+    "link": "https://inc42.com/buzz/data-security-startup-matters-ai-nets-%e2%82%b9115-cr-from-tanglin-venture-partners-others/"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Zavya Nets ₹22.6 Cr To Scale Everyday Silver Jewellery Biz",
+    "link": "https://inc42.com/buzz/zavya-nets-%e2%82%b922-6-cr-to-scale-everyday-silver-jewellery-biz/"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Supertake raises $20M to let AI agents turn your market predictions into stock portfolios",
+    "link": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "VC funding rebounds as startups raise $255M; Women founders driving social change",
+    "link": "https://yourstory.com/2026/11/vc-funding-rebounds-women-founders-social-change"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "ROSWORLD: When Digital Task Competence Meets Physical Execution",
+    "link": "https://arxiv.org/abs/2611.27467"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "EloElo Group launches Dolphin AI Film Studio at IFFI 2026",
+    "link": "https://entrackr.com/snippets/eloelo-group-launches-dolphin-ai-film-studio-at-iffi-2026-12833088"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Turning a Lawnmower Into a Precision Surveying Tool",
+    "link": "https://www.hackster.io/news/turning-a-lawnmower-into-a-precision-surveying-tool-47d5ff2a4a56"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "RingIO Makes Smart Rings More Interactive",
+    "link": "https://www.hackster.io/news/ringio-makes-smart-rings-more-interactive-f9d054b7a471"
+  },
+  {
+    "date": "2026-11-24",
+    "title": "A Dozen Completely DIY Robot Actuators",
+    "link": "https://hackaday.com/2026/11/23/a-dozen-completely-diy-robot-actuators/"
   }
 ]

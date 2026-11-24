@@ -1,0 +1,920 @@
+{
+  "date": "2026-11-24",
+  "weekday": "Tuesday",
+  "sunday": false,
+  "number": 27,
+  "paper": "The Morning Servo",
+  "readMinutes": 14,
+  "stories": [
+    {
+      "id": "ad69688ff5",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "TacHOI uses touch and vision to reconstruct objects from egocentric video",
+      "takeaway": "A new method combines hand-mounted camera video with touch readings to work out the true size and motion of objects being handled. It cuts position error from 15.6 cm to 3.6 cm in tests, making first-person video more useful for robot training.",
+      "deck": "On benchmark tests, it cut average object-position error from 15.6 cm to 3.6 cm without needing depth sensors or object templates.",
+      "body": [
+        "A team of robotics researchers has introduced TacHOI, a training-free framework that pairs monocular egocentric video with tactile contact to jointly reconstruct and track a hand and the object it is manipulating. The method starts from pretrained visual estimates of hand and object pose, then uses touch readings to anchor the object's depth relative to the hand.",
+        "Because the hand model is metrically calibrated, each point where the hand touches the object acts like a physical ruler. Spatially separated contact points constrain how large the object can be. TacHOI folds these constraints into a joint optimization of hand poses, object trajectories, and non-uniform object scale, alongside visual alignment.",
+        "Across 100 sequences from the ARCTIC and HO3D datasets with synthesized tactile observations, TacHOI achieved the lowest median ADD-S error among baselines, reducing median error from 15.6 cm to 3.6 cm on ARCTIC and reaching 2.8 cm on HO3D. Tests on the OpenTouch dataset showed the approach also works with real measured tactile readings."
+      ],
+      "why": "For egocentric training-data collection, this matters because it recovers metric object geometry and motion from ordinary first-person video, without depth sensors or known object shapes. That could make it cheaper to turn existing egocentric capture into geometrically accurate manipulation demonstrations.",
+      "hard": "The strongest results use synthesized tactile observations rather than real sensor readings, and performance on real tactile data is shown on a smaller set, so reliability across varied hands and objects is still unproven.",
+      "terms": [
+        {
+          "term": "Egocentric video",
+          "meaning": "Video recorded from a person's own viewpoint, usually via a head- or chest-mounted camera, showing what they see while working."
+        },
+        {
+          "term": "Monocular vision",
+          "meaning": "Seeing through a single camera lens, which makes it hard to judge how far away objects are."
+        },
+        {
+          "term": "Scale-depth ambiguity",
+          "meaning": "The problem that a single camera cannot easily tell whether an object is large and far away or small and close up."
+        },
+        {
+          "term": "ADD-S",
+          "meaning": "A score that measures how accurately a method estimates an object's position and shape, with lower numbers meaning better results."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Robot training data"
+        ],
+        "task": [
+          "Egocentric data processing",
+          "Hand-object tracking"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.26764"
+        }
+      ]
+    },
+    {
+      "id": "920329a748",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "Paper details 10,000-hour egocentric robot training dataset with metric 3D labels",
+      "takeaway": "Researchers released a dataset of 10,000 hours of first-person video from paid workers doing real manipulation jobs. Every clip includes precise 3D hand positions and head movement, measured in centimeters, which most existing large datasets lack.",
+      "deck": "One custom six-camera hat captured all 10,000 hours across 11 countries.",
+      "body": [
+        "A team of 16 researchers describes RoboCap-10k, a dataset of 10,000 curated hours of unscripted manual work recorded during workers' paid shifts in 11 countries. It spans 18 task families, 200 task types, and 2,000 individual tasks.",
+        "All footage comes from one device: the RoboCap, a 250-gram hat with six synchronized global-shutter cameras and two motion sensors called IMUs. Online calibration keeps each device below 1 pixel of epipolar error, a strict measure of camera alignment. Visual-inertial SLAM produces gravity-aligned 6-DoF head trajectories, and a multi-view hand tracker gives hand poses precise to the centimeter. Each episode also has task and sub-task captions in everyday language.",
+        "The authors argue that egocentric video is the most scalable source of manipulation data for robot learning, but existing corpora lack metric 3D labels or mix different devices and motion-capture labs. Some headsets report real-time tracking without stating its accuracy on the released data. RoboCap-10k is an attempt to fix that consistency and measurement gap."
+      ],
+      "why": "This is a direct signal of where robot training data buyers are heading: egocentric manipulation footage with accurate 3D hand and head poses, cleaned and captioned at scale. It resembles the collection model of paid workers on real shifts, which matters for vendors comparing cost and annotation depth.",
+      "hard": "The dataset is new and its impact on real robot policy learning is not yet shown; its value depends on whether downstream training results match the quality claims for the 3D labels.",
+      "terms": [
+        {
+          "term": "Egocentric video",
+          "meaning": "First-person footage captured from a camera worn on the head or body, showing what the wearer sees and does."
+        },
+        {
+          "term": "Metric 3D labels",
+          "meaning": "Measurements that give real-world distances and positions in three dimensions, rather than just flat image coordinates."
+        },
+        {
+          "term": "Visual-inertial SLAM",
+          "meaning": "A method that combines camera images with motion sensors to estimate where a device is moving in space."
+        },
+        {
+          "term": "IMU",
+          "meaning": "A small sensor that tracks acceleration and rotation, helping the system know how the headset tilts and moves."
+        },
+        {
+          "term": "Global-shutter camera",
+          "meaning": "A camera that captures the whole image at once, avoiding the wobble and blur that rolling-shutter cameras produce during fast motion."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics training data",
+          "Dataset research"
+        ],
+        "task": [
+          "Manipulation",
+          "Egocentric data collection"
+        ]
+      },
+      "score": 8,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.26916"
+        }
+      ]
+    },
+    {
+      "id": "081948babb",
+      "section": "beat",
+      "kicker": "Your Beat",
+      "headline": "New method trains robot policies from incomplete action labels",
+      "takeaway": "Researchers found a way to train robots using video where action labels are missing for long stretches. The method uses the start and end points of each gap to fill in what happened, improving success rates on real-robot tasks.",
+      "deck": "The approach fills gaps in action labels using only the reliable poses at each end.",
+      "body": [
+        "When people record egocentric demonstrations for robot training, the action labels often have contiguous gaps. The camera may lose tracking, or a labeling step may skip frames. The new method treats each gap as an interval: the reliable poses at the start and end still give the net translation and rotation that happened across the gap.",
+        "The researchers train a vision-language-action policy while keeping ordinary flow matching on the reliable local actions. A separate interval branch learns from the reliable endpoints and supplies a target for the missing stretch. When a gap is longer than the policy's horizon, a composition objective constrains the aggregate motion across multiple fixed windows.",
+        "On the LIBERO benchmark with only 20% of demonstrations and 70.5% of actions missing, the method reached 87.9% mean success over three runs. On five real-robot tasks, mean success was 59.6%, compared with 54.8% for interval flow matching alone and 48.8% for masking. On Ego-informed RoboTwin gaps, success was 45.4% versus 40.3% for masking."
+      ],
+      "why": "Training-data companies often receive egocentric video with patchy or incomplete action labels from vendors. A method that tolerates large gaps means less manual labeling work and more usable data from the same recordings.",
+      "hard": "The real-robot success rate of 59.6% is still modest, and the method has only been tested on a limited set of five tasks.",
+      "terms": [
+        {
+          "term": "Vision-language-action policy",
+          "meaning": "A robot control model that takes camera images and text instructions, then outputs the physical actions the robot should take."
+        },
+        {
+          "term": "Egocentric demonstrations",
+          "meaning": "First-person video recordings of a person doing a task, captured from a head- or chest-mounted camera."
+        },
+        {
+          "term": "Flow matching",
+          "meaning": "A training technique that teaches a model to generate a smooth sequence of actions by gradually refining random noise into the target motion."
+        },
+        {
+          "term": "Action supervision",
+          "meaning": "The labeled record of what the demonstrator was doing at each moment, used as the correct answer during training."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Training data"
+        ],
+        "task": [
+          "Robot learning",
+          "Data labeling"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.27171"
+        }
+      ]
+    },
+    {
+      "id": "6a7990e1ad",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Amazon buys Decart's AI optimization tech for $7.5 billion",
+      "takeaway": "Amazon is paying $7.5 billion for Decart's software that makes AI models run more efficiently on computer chips. The deal supports Amazon's plan to sell its own Trainium chips as an alternative to Nvidia's.",
+      "deck": "The deal includes Decart's optimization stack and its founding and research teams.",
+      "body": [
+        "Amazon has agreed to acquire a large part of Israeli startup Decart for $7.5 billion, according to Bloomberg. Decart is known for building interactive real-time world models, including Oasis 3, and AI video-generation tools.",
+        "The core asset is the Decart Optimization Stack, or DOS, software that helps AI models run efficiently on hardware from Nvidia, Amazon, and Google. Amazon will acquire the technology behind DOS along with Decart's founding team and its AI researchers and engineers.",
+        "Amazon has so far used its Trainium chips only in its own data centers. The company is preparing to sell them to outside customers as a competitor to Nvidia, and Decart's software could make it easier for customers to run workloads on Amazon chips instead of Nvidia's."
+      ],
+      "why": "Efficient chip use directly affects the cost of training and running robot foundation models. If Amazon's Trainium chips become a credible lower-cost option, training-data buyers and robotics companies may face cheaper compute, which could shift where and how models are trained.",
+      "hard": "It is not yet proven that Decart's optimization software will make Amazon's chips attractive enough to pull significant customers away from Nvidia.",
+      "terms": [
+        {
+          "term": "AI optimization software",
+          "meaning": "Tools that adjust how an AI model uses computer chips so it runs faster or cheaper."
+        },
+        {
+          "term": "Trainium chips",
+          "meaning": "Amazon's custom-designed computer chips for running AI workloads, which it plans to sell to outside customers."
+        },
+        {
+          "term": "World models",
+          "meaning": "AI systems that build a real-time, interactive simulation of a physical or digital environment."
+        },
+        {
+          "term": "Inference",
+          "meaning": "The stage when a trained AI model produces answers or outputs from new inputs, as opposed to training."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Cloud computing",
+          "AI infrastructure"
+        ],
+        "task": [
+          "AI model optimization",
+          "Chip sales"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/"
+        },
+        {
+          "name": "PYMNTS.com",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNc1FBWENueTdKZ3BrbUlrWGQ3ZjNZMmlGaXdGNU9GaUpOdmtqX3N5V2JkTWJrRWhTMldnQ3N5d1RldkJsY1VONjdYRGh3ejJLSGwyOFZBU0lsaWlEQ3hIR1hVS1M3ZUZmakVZZHlBU1YwMnVqTE1uZnQ0dTh3WXJzb1NQWEtWOV9qUUZ3ZnpMdWpsNTRZWFpQS0VhWV9hQQ?oc=5"
+        },
+        {
+          "name": "Daily Beirut",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTUJkTmhwYzg4aWtfOG9TelFxVjBzQk9Cci0tdkxTWHZLQXdTNUVoYk9BUEp1d3ZXN05jZTJBZ0F6RWxNcFd6ekViVHVrdlBVanF5VG9JZVBoVk0wTDFicXNIZ1VNVV9ManhLUjB0aFhwOGtuTTd6d1lKejRNY3Zza0I2aUtZTXpORk1peVJud29sQkVUUUJLSDVZNDhiVEd5MUJMZmZrYThJcVgtdXFvRGNtRnYxam5adVVuNHczandMRXM?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "d6a5b08e3f",
+      "section": "money",
+      "kicker": "The Money",
+      "headline": "Sierra doubles valuation to $30 billion in six months on enterprise AI demand",
+      "takeaway": "Sierra, a company that builds AI agents for customer service, raised $1.75 billion and is now valued at $30 billion. The speed of the jump shows big companies are spending heavily on automating customer support.",
+      "deck": "The customer-service AI startup's annualized revenue doubled to $400 million within five months.",
+      "body": [
+        "Sierra, a company that builds AI agents for enterprise customer service, said on Monday it raised $1.75 billion in a Series F round. The round was led by Greenoaks and Lightspeed Venture Partners, with participation from Benchmark, Sequoia, GV and Tiger Global.",
+        "The new funding values Sierra at $30 billion, double its valuation from six months ago. Sierra says it now serves almost half of Fortune 50 companies, including BNY, HSBC, Wells Fargo, JPMorganChase and Cox Automotive. The company said its run-rate revenue doubled to $400 million within five months.",
+        "Sierra plans to use the cash to build more tools for its platform and hire sales staff to sign enterprise contracts faster. The round fits a broader pattern: voice AI company ElevenLabs is now valued at $22 billion, Decagon at $4.5 billion, and Parloa at $3 billion."
+      ],
+      "why": "Enterprise customer service is one of the few areas where AI spending is turning into large, renewing contracts, not just pilots. The rapid valuation jump signals where buyer budgets are moving, which shapes demand for training data tied to real service workflows.",
+      "hard": "Several well-funded competitors are building similar agent platforms, so Sierra's lead is not yet proven against rivals on price or reliability.",
+      "terms": [
+        {
+          "term": "AI agent",
+          "meaning": "Software that can carry out tasks like answering customer questions on its own, without a person guiding each step."
+        },
+        {
+          "term": "Run-rate revenue",
+          "meaning": "A company's current earnings scaled up to show what it would make in a full year."
+        },
+        {
+          "term": "Series F round",
+          "meaning": "A later stage of startup fundraising, after several earlier rounds, typically used to expand before going public or being acquired."
+        },
+        {
+          "term": "Valuation",
+          "meaning": "The total worth of a company based on what investors agree to pay for a share of it."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Enterprise AI",
+          "Customer service"
+        ],
+        "task": [
+          "AI agent deployment",
+          "Enterprise automation"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/"
+        }
+      ]
+    },
+    {
+      "id": "ca38829e73",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "Point trackers fail more on real robot clips than older tests suggest",
+      "takeaway": "A new test set of real robot and human-hand videos shows leading point trackers score 3 to 7 points lower than on existing robot benchmarks. Models trained with 15 million simulated robot-grasping tracks improve on real manipulation footage and on a physical pipette task.",
+      "deck": "The results come from a new benchmark of 307 human-annotated clips across cluttered scenes and first- and third-person views.",
+      "body": [
+        "Researchers at Ai2 built RoboTrack, a benchmark and training-data package for visual point tracking in robot manipulation. Point tracking means following a chosen spot in a video across frames, even when a gripper hides it or the camera angle changes.",
+        "RoboTrack-Bench contains 307 human-annotated videos from DROID, Ego-Exo4D, MolmoAct 2, and EgoVerse, with 2,522 verified point tracks. These show robots and human hands in cluttered scenes from both first-person and outside views. Leading trackers scored 3.0 to 6.6 points lower on RoboTrack-Bench than on RoboTAP, the only other real-video robotics benchmark. The strongest tracker, CoWTracker, dropped from 70.5 to 63.9 Average Jaccard.",
+        "The team also generated RoboTrack-15M from MolmoSpaces, Ai2's robot simulation environment. It contains 15 million point tracks from 3,000 simulated videos of a robot arm grasping cups, plates, and blocks, recorded from wrist and base cameras. Fine-tuning existing trackers on this data improved tracking on real manipulation video and on a physical pipette-handling task in a wet lab. The models are released as RoboTracker and RoboTracker-Warp."
+      ],
+      "why": "This is direct evidence that off-the-shelf perception tools degrade on messy, varied robot and first-person manipulation footage from sources like DROID and Ego-Exo4D. It points to rising demand for annotated real manipulation data and for synthetic fine-tuning data that captures robot grasping rather than generic object motion.",
+      "hard": "RoboTrack-15M is synthetic, so gains may not cover the full variety of real occlusion, lighting, and motion that a deployment sees. The evaluation also uses one accuracy metric, Average Jaccard, which may not capture every tracking failure that matters for control.",
+      "terms": [
+        {
+          "term": "Point tracking",
+          "meaning": "Following a chosen spot in a video across frames, even when it is briefly hidden or leaves and reappears."
+        },
+        {
+          "term": "Egocentric video",
+          "meaning": "Video recorded from a person's own viewpoint, typically through a head- or chest-mounted camera."
+        },
+        {
+          "term": "Fine-tuning",
+          "meaning": "Further training an already trained model on new data to improve its performance on a specific task."
+        },
+        {
+          "term": "Synthetic data",
+          "meaning": "Data created by a computer simulation rather than captured from the real world."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "AI training data"
+        ],
+        "task": [
+          "Robot learning",
+          "Visual tracking"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co/blog/allenai/robotrack"
+        }
+      ]
+    },
+    {
+      "id": "ae4052c381",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "New method pairs robot touch sensing with physical force control",
+      "takeaway": "Researchers found that common robot control models do not actually connect their training goals to real physical force. They built a new system that does, and it gripped a fragile shell with 29 times less force while still matching top success rates on standard tasks.",
+      "deck": "The system cut peak memory use by 7.12 times compared to standard training on the same model.",
+      "body": [
+        "A team has shown that Vision-Language-Action (VLA) policies, a common type of robot control model, often fail to connect their training goals to real physical force. The problem appears at three levels: frozen visual backbones discard contact geometry, downstream losses mask token-level gradient alignment, and discrete indicators trigger optimization collapse.",
+        "Their new system, called FORTH, pairs each training objective with a physical measurement. It uses a forward-only tactile encoder that preserves spatial contact information without backpropagation, a token-parallel zeroth-order adapter for memory-efficient updates, and SlipGuard, a continuous check that fires when a grip starts to slip.",
+        "On an elasto-plastic structural shell, FORTH's closed-loop gate peaked at 29 times lower grip force than a monotone reflex ramp, preventing permanent deformation. It also matched state-of-the-art execution with a 97.6 percent average success rate across three LIBERO suites, while cutting peak activation memory by 7.12 times."
+      ],
+      "why": "This matters for robot training data because it shows that force control cannot be assumed from proxy loss alone. Data buyers working on manipulation tasks that involve fragile or deformable objects will need tactile data paired with explicit physical measurements, not just visual demonstrations.",
+      "hard": "The results are shown on a single structural shell and three LIBERO benchmark suites, so it is not yet clear how well the approach transfers to varied real-world industrial tasks.",
+      "terms": [
+        {
+          "term": "Vision-Language-Action (VLA) policy",
+          "meaning": "A robot control model that takes camera images and text instructions, then outputs the physical actions the robot should take."
+        },
+        {
+          "term": "Tactile encoder",
+          "meaning": "A component that processes touch-sensor data, such as pressure or contact patterns, into a form the robot's control system can use."
+        },
+        {
+          "term": "Backpropagation",
+          "meaning": "The standard training method where a model works backward through its layers to update itself, which uses a lot of memory."
+        },
+        {
+          "term": "Zeroth-order adapter",
+          "meaning": "A training shortcut that updates a model without computing full gradients, saving memory at the cost of some precision."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Manufacturing"
+        ],
+        "task": [
+          "Manipulation",
+          "Tactile sensing"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.26744"
+        }
+      ]
+    },
+    {
+      "id": "939dd4e24e",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "New method helps robots remember key moments for long manipulation tasks",
+      "takeaway": "Researchers built a system that lets robots store only important visual moments instead of full video histories, then act on those memories. It roughly tripled success on memory-heavy tasks and adapted to a new task with only a few examples.",
+      "deck": "MomentMem outperformed the strongest baseline by 31.7 percentage points on tasks requiring memory of spatial positions and appearances.",
+      "body": [
+        "Researchers have proposed a new method, called MomentMem, for robot manipulation tasks that require remembering visual details no longer in view, such as where an object started. The system uses a vision-language model as a memorizer that picks out keyframes from the robot's video stream. A separate executor then predicts actions using only those selected memories.",
+        "The team built VMBench, a set of long-horizon tasks testing memory for spatial locations, visual appearances, and associations between them. On VMBench, MomentMem achieved 49.9 percent average success, compared with 18.2 percent for the strongest evaluated baseline. The memorizer also generalized to unseen object appearances without retraining and adapted to a new task with only a few memory annotations, reaching 43.7 percent success.",
+        "Further experiments showed competitive results on a separate benchmark called RMBench and improvements on real-robot manipulation. The work highlights that keeping sparse visual evidence can be enough for memory-dependent manipulation, avoiding the redundancy of full observation histories."
+      ],
+      "why": "The separation between memory selection and action execution could inform how training data is collected and labeled. If robots only need sparse keyframes, egocentric video datasets could be curated around high-value moments rather than continuous recordings.",
+      "hard": "Average success of 49.9 percent on VMBench leaves substantial room for improvement, and real-robot results are described only as showing improvements rather than with precise task success rates.",
+      "terms": [
+        {
+          "term": "Visual moment memory",
+          "meaning": "A robot's ability to retain visual details, like an object's first position, that are no longer in view but are needed later."
+        },
+        {
+          "term": "Keyframe",
+          "meaning": "A single still image chosen from a video stream as worth keeping, like a snapshot of an important moment."
+        },
+        {
+          "term": "Vision-language model",
+          "meaning": "An AI model trained to understand both images and text, used here to decide which video frames to remember."
+        },
+        {
+          "term": "Closed-loop",
+          "meaning": "A control setup where a robot repeatedly checks new input and adjusts its actions, rather than following one fixed plan."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robot learning and manipulation",
+          "Training data and annotation"
+        ],
+        "task": [
+          "Long-horizon robot manipulation",
+          "Memory-dependent vision"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.26745"
+        }
+      ]
+    },
+    {
+      "id": "6816941869",
+      "section": "breakthroughs",
+      "kicker": "Breakthroughs",
+      "headline": "New benchmark tests robot arms on physically realistic moving objects",
+      "takeaway": "Researchers built a test suite where robot arms must handle objects that move in physically realistic ways. Current AI models succeed less than 20 percent of the time, while humans do far better.",
+      "deck": "All tested models scored below 20 percent on tasks with realistic object motion.",
+      "body": [
+        "Researchers introduced RoboDyna, a benchmark for testing how well robot arms handle objects that move according to real physical rules. It includes 20 conceptual tasks across five skill categories, plus 10 household-style tasks in richer simulated environments. The suite provides 3,500 expert demonstrations and tools for measuring both full task success and partial progress.",
+        "The team evaluated vision-language-action models and a world-action model across 5,400 test episodes. Every policy scored below 20 percent success. The world-action model could track simple physical motion but struggled with complex interactions, and its ability to predict what would happen next did not reliably match whether it completed the task.",
+        "The benchmark also compares two testing styles: one that pauses the simulation while the model thinks, and one that runs in real time. Switching between these flipped the outcome of 5 to 12 percent of episodes, though average success changed by at most 3 percent. Human testers outperformed all models under the same conditions."
+      ],
+      "why": "This points to a specific weakness in current robot learning: models trained mostly on static or simplified scenes fail when objects roll, slide, or bounce realistically. Training-data buyers may soon ask for egocentric video of people handling moving, unstable, or falling objects, not just pick-and-place on stable surfaces.",
+      "hard": "The benchmark uses simulated environments, so it is not yet clear how well the results predict performance on real hardware with real physics.",
+      "terms": [
+        {
+          "term": "Manipulation policy",
+          "meaning": "The decision-making part of a robot that turns camera and sensor input into arm and hand movements."
+        },
+        {
+          "term": "Vision-language-action model",
+          "meaning": "An AI model that takes images and text instructions and outputs robot actions."
+        },
+        {
+          "term": "World-action model",
+          "meaning": "An AI model that predicts how a scene will change and chooses actions based on those predictions."
+        },
+        {
+          "term": "Inference latency",
+          "meaning": "The delay between a robot receiving sensor data and producing its next movement command."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "AI research"
+        ],
+        "task": [
+          "Benchmarking",
+          "Robot manipulation"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "arXiv cs.RO",
+          "url": "https://arxiv.org/abs/2611.26969"
+        }
+      ]
+    },
+    {
+      "id": "429920f88e",
+      "section": "india",
+      "kicker": "India Desk",
+      "headline": "Indian AI startup funding nearly doubles to $1.6 billion in nine months",
+      "takeaway": "Investment in Indian artificial intelligence startups rose to roughly $1.6 billion in the first nine months of 2026. Early-stage deals led the increase, and Mumbai overtook Bengaluru as the city attracting the most funding.",
+      "deck": "Early-stage deals made up most of the investment activity across the country.",
+      "body": [
+        "Venture investment in Indian artificial intelligence startups nearly doubled to about $1.6 billion between January and September 2026, according to market data firm Tracxn. The previous comparable figure was not given.",
+        "Early-stage funding led the mix, meaning newer companies received the largest share of money. Mumbai overtook Bengaluru as the city with the most AI startup funding during the period.",
+        "The shift in city ranking does not necessarily mean Bengaluru activity fell. It only shows Mumbai drew a larger share of the recorded investment in these nine months."
+      ],
+      "why": "A rising pool of Indian AI startups can become customers for robotics training data, especially if funding flows toward embodied AI, sensing or industrial automation teams rather than software-only services. Mumbai gaining share matters for where partnerships and field operations may concentrate.",
+      "hard": "The underlying Tracxn article could not be fetched, so sector breakdowns, deal sizes and comparisons with 2025 are unavailable and should be verified before acting.",
+      "terms": [],
+      "tags": {
+        "industry": [
+          "AI",
+          "Venture capital"
+        ],
+        "task": [
+          "Startup funding analysis"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "YourStory",
+          "url": "https://yourstory.com/2026/11/india-ai-funding-nearly-doubles-jan-sept-2026-tracxn"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "Breakthroughs",
+      "headline": "FoRe: A Force-Guided Framework for Autonomous Grasp Recovery in Vision-Language-Action Models",
+      "url": "https://arxiv.org/abs/2611.27011",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "BeyondEgo: Learning to Act Beyond Egocentric Perception via Humanoid Ego-Exo Foresight",
+      "url": "https://arxiv.org/abs/2611.27047",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "HumanoidPose: Monocular 3D Pose Estimation for Humanoid Robots",
+      "url": "https://arxiv.org/abs/2611.27181",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "HermiteTwin: Bicubic Hermite Shell Digital Twins for Contact-Rich Deformable Manipulation",
+      "url": "https://arxiv.org/abs/2611.27282",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Your Beat",
+      "headline": "ManipScope: A Diagnostic Benchmark for Instruction Following and Generalization in Robotic Manipulation",
+      "url": "https://arxiv.org/abs/2611.27305",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Latent Jacobian Steer: Eliciting Contact-Rich Out-of-Distribution Behaviors from Pretrained Humanoid Controllers",
+      "url": "https://arxiv.org/abs/2611.27338",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Your Beat",
+      "headline": "Learning Interaction Dynamics via Motion-Region Guidance for Robotic Video World Models",
+      "url": "https://arxiv.org/abs/2611.27344",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Breakthroughs",
+      "headline": "Ego4Gen: Generating Geometry-Grounded Motion Tokens as a World-Action Interface",
+      "url": "https://arxiv.org/abs/2611.27513",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "kicker": "Elsewhere",
+      "headline": "Far Eye helps reduce Flipkart logistics expenses by 6%",
+      "url": "https://yourstory.com/2026/11/far-eye-helps-reduce-flipkart-logistics-expenses-6-percent",
+      "source": "YourStory"
+    },
+    {
+      "kicker": "India Desk",
+      "headline": "L&T Bags Contract to Deploy NVIDIA B300 GPUs in Chennai Data Centre",
+      "url": "https://analyticsindiamag.com/ai-news/lt-wins-large-order-to-deploy-additional-nvidia-b300-gpus-in-chennai",
+      "source": "Analytics India Magazine"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 10,
+        "sector": "ai",
+        "company": "Decart",
+        "what": "AI optimization technology and research team",
+        "round": "Acquisition",
+        "amount_usd_m": 7500,
+        "amount_text": "$7.5B",
+        "lead": "Amazon",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 14,
+        "sector": "ai",
+        "company": "Sierra",
+        "what": "AI customer experience agents",
+        "round": "Series F",
+        "amount_usd_m": 1750,
+        "amount_text": "$1.75B",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 0,
+        "sector": "robotics",
+        "company": "Embo",
+        "what": "Robot brains using world models",
+        "round": "Seed",
+        "amount_usd_m": 110,
+        "amount_text": "$110M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZC14WlpaUEpzTVdNSF9wZ0piLUlhSld1c25uc2hsbGlEdUwxRXlyLXk5enA4bG1taW1JdWNHSFRIamtxcHRxZ3VaOGJkZzNES0NTWnpCVXR3YmRmVDhBY1lNdXNYRUxIcFo5eC1LcHIybVp1TVpLRHVWOWVuaTJOREpqODJGR2l5QWF1WHM1SUtHMnZHM1BFYi1iSQ?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 7,
+        "sector": "deeptech",
+        "company": "Agon",
+        "what": "European defence AI lab",
+        "round": "Funding",
+        "amount_usd_m": 70,
+        "amount_text": "$70M",
+        "lead": "Northzone",
+        "india": false,
+        "url": "https://techfundingnews.com/agon-raises-70m-at-450m-valuation-led-by-northzone-to-build-europes-defence-ai-lab/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 41,
+        "sector": "ai",
+        "company": "Supertake",
+        "what": "AI agents for stock portfolios",
+        "round": "Funding",
+        "amount_usd_m": 20,
+        "amount_text": "$20M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 18,
+        "sector": "robotics",
+        "company": "Apricity",
+        "what": "Ultrasound robotics",
+        "round": "Funding",
+        "amount_usd_m": 16.1,
+        "amount_text": "$16.1M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZFdKSkFCSVZLTGVtOXhWRmZBY3V6c1J2ZFZFbUUzeFR3RGR3SEt1S1U2bGp5OTFfZVVHYU1GTkNqcS1lYzFqa3dCTzNGZ081S1luT1dRWExyUFFjc0RaR1lZOVFTdldBWjM0M09rVnZiMDhkd1JuM2pHcEJTQ2I2TnFJRTFBeXlSYXJLWG01aw?oc=5",
+        "source": "MobiHealthNews"
+      },
+      {
+        "i": 17,
+        "sector": "robotics",
+        "company": "Dublin robotics startup",
+        "what": "Robotics for hospital staff injury prevention",
+        "round": "Funding",
+        "amount_usd_m": 16,
+        "amount_text": "$16M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQZHBhblNQTFJHVFRhR2IzcmJoZFZGUDVfX0FhWEdLWTNFN0Q4SXhxQkotVmtIakhjN1dQMVdIaXo4akRLUW5BQ1BmdmVqaGxJdzRkY1d2dzdIZmwtN3owck0xM2xweF9CbnNTZVIxa3Zvd3NQanZzN2d4T0JZVldoUHZ0SE40SWJoYW0xQw?oc=5",
+        "source": "The Business Journals"
+      },
+      {
+        "i": 13,
+        "sector": "robotics",
+        "company": "Enhanced Robotics",
+        "what": "AI tennis-robot maker",
+        "round": "Series B",
+        "amount_usd_m": 15,
+        "amount_text": "$15M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNndFVWZHMF9yY2VKZDV4VkVoU2M5NFQ4Y1FKcldBa1VkQWpLWW9lMDdpaHEzNy12dHNNWGhVNXJuMW1oa2dIWDRveTlRdnpTUWpGM0tXU3VMSnE3UDhqN29ob1o2cWUxMjlHTXZadmVuVFRaMlZfNTBJRlI4dXFsWU0weUVDdlllT1R2N1JndzY1UFhKMHBKeg?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 39,
+        "sector": "ai",
+        "company": "Matters.AI",
+        "what": "Data security platform",
+        "round": "Funding",
+        "amount_usd_m": 13.6,
+        "amount_text": "₹115 Cr ($13.6M)",
+        "lead": "Tanglin Venture Partners",
+        "india": true,
+        "url": "https://inc42.com/buzz/data-security-startup-matters-ai-nets-%e2%82%b9115-cr-from-tanglin-venture-partners-others/",
+        "source": "Inc42"
+      },
+      {
+        "i": 33,
+        "sector": "ai",
+        "company": "Adelaide AI startup",
+        "what": "Cuts AI training and model costs",
+        "round": "Funding",
+        "amount_usd_m": 9.5,
+        "amount_text": "$9.5M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPdlBveWRMZUJsNUhpcUFqTDFlWVdKQzFwQ1FYcXVTUXJpSEZWd2dnMmg2SGlsOERyRG1JOWI5MnQwRUhpUTlVb1hwWWMycmY1SHBuNWlRYWhVaVBRZmZHSDlTWExkbEJMQk55NjNTN3FkT1pGNVVRbjFQLWtkRkdTNUp2dHRWVEQ5ZFl6VzY1N25LV1lzOEVOOEIzSzMzRldWOF8tbVNmTHMxWHprcTVvOTJGZTZ5dDMzQmc?oc=5",
+        "source": "Startup Daily"
+      },
+      {
+        "i": 4,
+        "sector": "robotics",
+        "company": "EPFL robot startup",
+        "what": "Robot hardware integration startup",
+        "round": "Funding",
+        "amount_usd_m": 6,
+        "amount_text": "$6M",
+        "lead": "Founderful and PROTOTYPE",
+        "india": false,
+        "url": "https://techfundingnews.com/coprod-raises-6m-robot-integration-hell/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 9,
+        "sector": "robotics",
+        "company": "coprod",
+        "what": "Custom robot hardware development platform",
+        "round": "Pre-Seed",
+        "amount_usd_m": 6,
+        "amount_text": "$6M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNSExoZlJpSmw3ajlnUUhEYTlWaU1aUU0zdFlNNjJrVHlBRlZPTVNRd0NmYjBVZmNWaFprQ0RTYzcyM05yeWxoYXJRZ205N0xRbWh2LXR3WGtscUN1X2tKN2JSRDlKN0xKNV9aTjNubldfTERPWTZxYmh6SlpBbzNxemVFbVFIZXdpNDRPeVFzNnNrSGJ3Ry0zUmV1dEVrV1lEa2w0bnhYOGhDVXg2RWVJclJ4aUp2MWVWZkNXY0wyOUJTSjZnSzdJRkkwbXlpSjFzS0hMSTFLd0Z6UkU?oc=5",
+        "source": "AI Insider"
+      },
+      {
+        "i": 30,
+        "sector": "robotics",
+        "company": "Lupa Robotics",
+        "what": "Robotics startup",
+        "round": "Seed",
+        "amount_usd_m": 1.67,
+        "amount_text": "$1.67M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBROThJOG41MDVLeEU1RC1kNVpNY0FSY25Ick1BZzJqWUtxZkYxRkRQcU83dGVWYzA3aUZpYzZPYlVxNElhS08zbDU4VmFzRUZsdjZBdTBuZkZsUG5CN01LNnB4Y3ZfQUxKWTduU3hkT1VwemtpM2lZYUdyUQ?oc=5",
+        "source": "TechCabal"
+      },
+      {
+        "i": 20,
+        "sector": "robotics",
+        "company": "Theseus Robotics",
+        "what": "Supermarket robots in Europe and US",
+        "round": "Funding",
+        "amount_usd_m": 0.5,
+        "amount_text": "€455K ($0.5M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQLTZUaGpsSnF1d0lVZjZ4ankwc2lRSU5hU1NtM0RaSDVYVmNMdHJoVlJyM29Ubi00bldPNHk3UFljSGRfdER5NS02Y2xSdFYxNktmVWxkTG9pNEtrVk9QRkFiSG1YYzNhRFh4TkdFQWNueDJOWUxlV0x3LThxMEpLQl9wZ3NjSHV1YUd0NHBxMFNnOG45dDJNYmdXdW9xeDFuZTdGdnNNQ1hEN0FWZFhRNFhFbkQySU9jMXZObzJTTUgyUU5w?oc=5",
+        "source": "Google News: robotics deals"
+      },
+      {
+        "i": 1,
+        "sector": "robotics",
+        "company": "OYMotion",
+        "what": "Embodied AI robotic hands",
+        "round": "Series D",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONzAwQ0dEMldpdUY4TGE1ZnNNQW5fU1ZvZWFtVllreUF1V1VodG9KaDY1bU5NWE9BdzhPRXM0aFhUUUNPUE8zU29Wdm8wbGdaa3RORFltb1YxVG9oMkNXaXFmRVNiSV9vMUtWYVpJd0NNSHI1QlQwaF94VUE3dlNLZXhqbFdBNU5rb1MtUWdGdVhLQmVyLWZEd2pBS1lHUXFTTXZHS0xYdw?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 15,
+        "sector": "ai",
+        "company": "Databricks",
+        "what": "Data and AI platform",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/databricks-eyes-225b-valuation-in-new-funding-talks-18-above-its-august-round-report/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 38,
+        "sector": "ai",
+        "company": "Fluid Inference",
+        "what": "Voice AI startup",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Levenza",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPUlk0bS13aGJTN3I2NllfNzZoNmhnc1NzTGhDN2diVUlhd3laRUxZNjNkdWtaMVl1V2tXS05lVnlhc2xDdjZDTmV1MVdRb28tamZ0c05vOS1yRlVDcmNXak0yUmJ0QmUtM1k1V1ZGeVpBZHZsVEFiWHhhb2xuOW1wMw?oc=5",
+        "source": "Sahyadri Startups"
+      }
+    ],
+    "totalUsdM": 9534
+  },
+  "playground": [
+    {
+      "headline": "A dozen DIY robot actuators spin in desk-top choreography",
+      "body": "Koshiro Robot built a dozen custom robot actuator motors with drivers and field-oriented control firmware, designing them for easy assembly and mounting to a future quadruped robot. The 3D printed gearbox and controller sit outside the stator, which keeps them cool and simplifies wiring. A CAN bus plus XT-60 power daisy chain makes the whole setup modular.",
+      "why": "This shows that capable, open robot hardware can be built at a hobbyist scale, with careful design choices making a full set of actuators affordable and reproducible.",
+      "maker": "Koshiro Robot",
+      "url": "https://hackaday.com/2026/11/23/a-dozen-completely-diy-robot-actuators/",
+      "source": "Hackaday"
+    },
+    {
+      "headline": "Robot knows what to click, fumbles the actual keyboard",
+      "body": "ROSWorld pairs a physically simulated robot workstation with a live OSWorld desktop, so a robot and a desktop agent chase the same goals under the same evaluators. Across five frontier models and 40 tasks, models that solved 31 to 39 desktop tasks managed at most 23 with a rigid probe and 28 with dual-arm hands. Paired trajectory analysis shows the gap comes from missed presses, wrong targets, and unintended contacts.",
+      "why": "This makes the difference between digital competence and physical execution measurable, showing that knowing the right action is not the same as being able to press the right key.",
+      "maker": "Caoyuan Ma and team",
+      "url": "https://arxiv.org/abs/2611.27467",
+      "source": "arXiv cs.RO"
+    },
+    {
+      "headline": "AI film studio squeezes micro-drama production into one platform",
+      "body": "Dolphin AI Film Studio from EloElo Group launched at IFFI 2026 as a single platform covering script development through finished video. It uses more than 30 AI models, supports conversational video generation and preset templates, and includes World Lock technology to keep characters, locations, and props visually consistent. The first supported format is micro-dramas.",
+      "why": "This shows AI tools converging into a single production pipeline, potentially lowering the cost and time barrier for small studios and independent creators to make consistent long-form video.",
+      "maker": "EloElo Group",
+      "url": "https://entrackr.com/snippets/eloelo-group-launches-dolphin-ai-film-studio-at-iffi-2026-12833088",
+      "source": "Entrackr"
+    },
+    {
+      "headline": "Smart ring learns to talk back through touch",
+      "body": "RingIO is a prototype smart ring from University of Chicago researchers that gives users touch control and direct feedback through their skin. The small form factor of smart rings usually leaves little room for buttons, displays, or vibration motors, and this project addresses that limitation.",
+      "why": "This hints at wearable devices that stay tiny but become genuinely interactive, moving smart rings beyond passive health tracking into active control and feedback.",
+      "maker": "University of Chicago researchers",
+      "url": "https://www.hackster.io/news/ringio-makes-smart-rings-more-interactive-f9d054b7a471",
+      "source": "Hackster.io"
+    }
+  ],
+  "think": {
+    "collision": {
+      "a": {
+        "kind": "story",
+        "n": 9,
+        "label": "Robot arms fail on realistically moving objects"
+      },
+      "b": {
+        "kind": "brief",
+        "n": 9,
+        "label": "FarEye cuts Flipkart logistics costs by 6%"
+      },
+      "headline": "Record Indian parcel sorters catching, steadying and re-stacking sliding, rolling and toppling packages, sold as a moving-object manipulation dataset.",
+      "body": "A new benchmark found that every tested robot model scored below 20 percent when objects roll, slide or bounce the way real things do. Indian e-commerce hubs, such as those Flipkart runs with logistics software from FarEye, are full of exactly this: parcels sliding off chutes, tipping boxes and loose items rolling on conveyor belts. Chest-camera stereo video of sorters reacting to these moments, with each catch or save marked, gives buyers the moving-object footage the benchmark says is missing.",
+      "who_pays": "Robot foundation model labs and warehouse-automation firms building parcel-handling arms or humanoids would pay for it.",
+      "data_needed": "Stereo egocentric video of sorting shifts, an overhead camera to track parcel motion, and labels that mark the start of each slip, the hand's response and whether the save worked.",
+      "why_fail": "Real slips may be too rare in a well-run hub to collect cheaply, and staging them on purpose may make the motion look fake to buyers."
+    },
+    "contrarian": {
+      "story_n": 2,
+      "consensus": "A 10,000-hour egocentric dataset with precise 3D labels shows that scale plus custom multi-camera rigs is now the standard every data vendor must match.",
+      "against": [
+        "Story 1 shows touch-plus-vision methods recovering object position to within 3.6 cm from ordinary video without depth sensors, so expensive six-camera hats may soon matter less than plain footage cleaned up by software.",
+        "Story 6 and Story 9 suggest models fail on messy and moving scenes, so diversity of hard cases may count for more than raw hours of routine shifts.",
+        "Story 3 shows policies can train on patchy action labels, which weakens the premium on dense 3D labels on every frame."
+      ],
+      "bets_otherwise": "The team behind TacHOI and groups building gap-tolerant training methods are betting on cheaper capture fixed by software, as are low-cost vendors running simple head-mounted cameras at volume.",
+      "settle_it": "A head-to-head test where robots trained on equal budgets of rich-rig data versus cheap video plus reconstruction software are scored on the same real manipulation tasks."
+    }
+  },
+  "cost": {
+    "usd": 0.0853,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 4,
+        "inTokens": 26335,
+        "outTokens": 8352,
+        "cost": 0.0068,
+        "models": {
+          "anthropic/claude-haiku-5.5": 4
+        }
+      },
+      "write": {
+        "calls": 10,
+        "inTokens": 12964,
+        "outTokens": 5951,
+        "cost": 0.0425,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 10
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 4271,
+        "outTokens": 2749,
+        "cost": 0.0018,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 1908,
+        "outTokens": 616,
+        "cost": 0.0005,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "think": {
+        "calls": 1,
+        "inTokens": 4133,
+        "outTokens": 858,
+        "cost": 0.0337,
+        "models": {
+          "anthropic/claude-opus-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 242,
+    "unique": 192,
+    "feeds": 29,
+    "failedFeeds": [
+      "Import AI",
+      "Google DeepMind",
+      "Hacker News",
+      "r/robotics",
+      "r/LocalLLaMA"
+    ]
+  },
+  "generatedAt": "2026-11-24T00:16:41.305Z"
+}
