@@ -20,12 +20,21 @@ if (!VAPID_PUBLIC_KEY || !VAPID_PRIVATE_KEY || !PUSH_SUBSCRIPTION) {
 }
 
 const edition = readJson(p(`site/editions/${date}.json`), null);
+// Only announce the paper once the live site serves it, so the app never opens on yesterday's paper.
+const live = edition && SITE_URL
+  ? await fetch(new URL(`editions/index.json?t=${Date.now()}`, SITE_URL)).then((r) => r.json()).then((idx) => idx[0]?.date === date).catch(() => false)
+  : !!edition;
 let payload;
-if (edition?.stories.length) {
+if (edition && live) {
+  const n = edition.stories.length;
+  const extras = [edition.research?.length && `${edition.research.length} research`, edition.india?.length && `${edition.india.length} India`, `${edition.briefs.length} briefs`].filter(Boolean).join(', ');
   payload = {
     title: `${weekday}'s edition is ready`,
-    body: `${edition.stories[0].headline} · ${edition.stories.length - 1} more stories · ${edition.readMinutes} min read`,
+    body: n ? `${edition.stories[0].headline} · ${n - 1} more ${n - 1 === 1 ? 'story' : 'stories'} · ${edition.readMinutes} min read` : `A quiet news day: ${extras}`,
   };
+} else if (edition && istHour < 10) {
+  log("Today's edition is printed but not live on the site yet; the deploy will send the notification.");
+  process.exit(0);
 } else if (istHour >= 10) {
   payload = { title: 'No edition today', body: "Today's paper failed to print. Check the GitHub Actions log." };
 } else {
