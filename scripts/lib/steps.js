@@ -1,10 +1,9 @@
 import { chat, stepModels } from './openrouter.js';
-import { mapLimit, clip, log } from './util.js';
+import { mapLimit, clip, log, titleTokens, sameStory } from './util.js';
 
-export const SECTIONS = ['breakthroughs', 'robotics', 'beat', 'money', 'india', 'policy', 'other'];
+export const SECTIONS = ['robotics', 'ai', 'research', 'india', 'other'];
 export const SECTION_LABEL = {
-  breakthroughs: 'Breakthroughs', robotics: 'Robotics Floor', beat: 'Your Beat',
-  money: 'The Money', india: 'India Desk', policy: 'Policy', other: 'Elsewhere',
+  robotics: 'Robotics', ai: 'AI', research: 'Research & Data', india: 'India', other: 'Elsewhere',
 };
 
 const HOUSE_STYLE = `House style: plain, specific and calm, like a good broadsheet. Short sentences.
@@ -34,37 +33,42 @@ const triageSchema = {
   },
 };
 
-export const triageSystem = (profile) => `You are the night editor of The Morning Servo, a daily AI and robotics newspaper written for one reader.
+export const triageSystem = (profile, recentHeadlines = []) => `You are the night editor of The Morning Servo, a daily AI and robotics newspaper written for one reader.
 
 Reader profile:
 ${profile}
 
-Score every item from 0 to 10 for how much it deserves a place in tomorrow's paper for this reader:
-- 9-10: a major breakthrough, a very large funding round (over $100M), or a deployment that changes the field
-- 7-8: important and clearly relevant to the reader
-- 4-6: worth a one-line brief
-- 1-3: marginal
+Score every item from 0 to 10 for how noteworthy it is: would a smart, non-technical person working in AI and robotics still care about it in six months?
+- 9-10: news the whole industry will talk about this week: a very large funding round (over $100M), a major launch from a leading company, a large real-world deployment, a major policy decision, or a result that clearly changes what robots or AI can do
+- 7-8: clearly significant news with concrete facts: real customers, real numbers, a notable launch, deal or decision
+- 4-6: worth a one-line mention
+- 1-3: marginal: small product updates, incremental tweaks, announcements without substance
 - 0: off-topic (not about AI or robotics), a listicle, a deal or coupon, a podcast episode, or a vague opinion piece
-Favour real deployments with numbers, concrete use cases in specific industries, robot learning and embodied AI, training data and data collection, research with clear results, funding rounds, and India's AI and robotics ecosystem. Penalise hype and minor product updates.
+Research papers: most papers are small improvements to a method and score 3 to 5. Only a paper that shows a big new capability, a major new dataset, or a surprising finding scores 7 or more.
+Use the reader profile only to break ties between equally noteworthy items. Never raise a score just because an item touches the reader's niche (egocentric video, robot training data, data collection, gloves, wrist cameras, grippers, touch sensing).
+Repetition: the paper's headlines from the last few days are listed below. If an item is another example of the same theme with no major new fact (for example, yet another method for turning human video into robot training data), lower its score by 2 or 3. A new fact such as a big funding round, a major customer or a clear result keeps its score.
 
-section: breakthroughs (research, models, benchmarks), robotics (robot products, deployments, hardware), beat (robot training data, egocentric video, teleoperation, data vendors, datasets), money (funding rounds, acquisitions, IPOs), india (India-specific news), policy (regulation, government), other.
+section: robotics (news about robot companies, products, deployments, hardware, self-driving cars, drones, and robotics policy), ai (news about AI companies, models, products, chips, and AI policy and regulation), research (academic papers, preprints, benchmarks, datasets and lab results in AI or robotics, including methods for robot training data), india (any news about Indian AI or robotics companies, investors or government, including funding rounds of Indian startups; this overrides the others), other.
 industry: one short label for the industry the story applies to, such as Logistics, Automotive, Healthcare, Agriculture, Household, Retail, Construction, Textiles, Software, or General.
 task: one short label for the task, such as Manipulation, Navigation, Inspection, Assembly, Coding, Customer support, or General.
 funding: true only if the item reports a specific funding round, acquisition or IPO.
 fun: true if the item is a playful, surprising or creative experiment that uses AI or robots: a hobbyist build, a weird demo, an art or music project, a game, a clever hack, or a research stunt. It must involve AI or robots. Give fun items a score of at least 3 even if they matter little to the reader's work.
 
-Return exactly one entry per item, using the item's index as i.`;
+Return exactly one entry per item, using the item's index as i.
+
+Headlines from recent editions:
+${recentHeadlines.map((h) => `- ${h}`).join('\n') || '- (none yet)'}`;
 
 export const triageUser = (batch) => batch
   .map(({ it, i }) => `${i} | ${it.source} | ${it.title} | ${clip(it.snippet, 280)}`)
   .join('\n');
 
-export async function triage(items, { batchSize, budget, profile, models }) {
+export async function triage(items, { batchSize, budget, profile, models, recentHeadlines }) {
   const cfg = stepModels('triage');
   const indexed = items.map((it, i) => ({ it, i }));
   const batches = [];
   for (let k = 0; k < indexed.length; k += batchSize) batches.push(indexed.slice(k, k + batchSize));
-  const system = triageSystem(profile);
+  const system = triageSystem(profile, recentHeadlines);
   const results = await mapLimit(batches, 4, async (batch, b) => {
     try {
       const r = await chat({ step: 'triage', ...cfg, models: models || cfg.models, system, user: triageUser(batch), schema: triageSchema, budget });
@@ -83,25 +87,36 @@ export async function triage(items, { batchSize, budget, profile, models }) {
 export function select(scored, s) {
   const rank = (a, b) => b.score - a.score || b.also.length - a.also.length;
   const pool = [...scored].sort(rank);
-  const top = [];
-  const count = {};
-  for (const it of pool) {
-    if (top.length >= s.topStories) break;
-    if (it.score < s.minTopScore) break;
-    if (it.role) continue;
-    if ((count[it.section] || 0) >= (s.sectionCaps[it.section] ?? 2)) continue;
-    top.push(it);
-    count[it.section] = (count[it.section] || 0) + 1;
-  }
-  // Guarantee the reader's beat and India a slot when there's a decent candidate.
-  for (const must of ['beat', 'india']) {
-    if (top.some((t) => t.section === must)) continue;
-    const cand = pool.find((it) => it.section === must && !it.role && it.score >= s.minTopScore - 1 && !top.includes(it));
-    if (cand && top.length) top[top.length - 1] = cand;
-  }
-  top.sort(rank);
+  // Several outlets often cover one event under different headlines ("Nvidia reinstates Huang",
+  // "Jensen Huang is back"). Treat two items as the same topic when they share two distinctive words.
+  const GENERIC = new Set(['ai', 'robot', 'robots', 'robotics', 'model', 'models', 'startup', 'startups', 'raises', 'new', 'company', 'india', 'indian', 'launches', 'funding', 'million', 'billion', 'data']);
+  const tok = new Map(pool.map((it) => [it, titleTokens(it.title)]));
+  const sameTopic = (a, b) => {
+    const ta = tok.get(a), tb = tok.get(b);
+    let shared = 0;
+    for (const x of ta) if (tb.has(x) && !GENERIC.has(x)) shared++;
+    return shared >= 2 || sameStory(ta, tb);
+  };
+  const firstWord = (t) => t.split(/\s+/)[0].toLowerCase();
+  const news = (section) => {
+    const picks = [];
+    for (const it of pool) {
+      if (picks.length >= s.newsPerSection) break;
+      if (it.score < s.minNewsScore) break;
+      if (it.role || it.section !== section) continue;
+      if (picks.some((t) => sameTopic(t, it) || (t.funding && it.funding && firstWord(t.title) === firstWord(it.title)))) continue;
+      picks.push(it);
+    }
+    return picks;
+  };
+  // Full write-ups: the biggest robotics news first, then the biggest AI news.
+  const top = [...news('robotics'), ...news('ai')];
+  const covered = (it, list) => list.some((t) => sameTopic(t, it) || firstWord(t.title) === firstWord(it.title));
+  // Research and India get one page each with short summaries; the writer picks the best of these.
+  const research = pool.filter((it) => !it.role && it.section === 'research' && it.score >= s.minDigestScore).slice(0, s.researchCandidates);
+  const india = pool.filter((it) => !it.role && it.section === 'india' && it.score >= s.minDigestScore && !covered(it, top)).slice(0, s.indiaCandidates);
 
-  const used = new Set(top);
+  const used = new Set([...top, ...research, ...india]);
   // The Money table lists every deal, including ones that also made the top stories.
   // Any real AI or robotics deal qualifies; relevance to the reader only orders them.
   const funding = pool.filter((it) => it.funding && it.score >= 2).slice(0, 45);
@@ -109,12 +124,22 @@ export function select(scored, s) {
   // Candidates for The Playground; the writer picks the best few.
   const fun = pool.filter((it) => it.fun && !used.has(it) && !fundingSet.has(it) && it.score >= 2).slice(0, 10);
   const funSet = new Set(fun);
-  const briefable = (it) => !used.has(it) && !fundingSet.has(it) && !funSet.has(it) && it.role !== 'fun';
-  let briefs = pool.filter((it) => briefable(it) && it.score >= s.minBriefScore).slice(0, s.briefsMax);
-  if (briefs.length < s.briefsMin) {
-    briefs = pool.filter((it) => briefable(it) && it.score > 0).slice(0, s.briefsMin);
-  }
-  return { top, briefs, funding, fun };
+  // Research papers that didn't make the Research page are left out rather than listed as briefs.
+  const briefable = (it) => !used.has(it) && !fundingSet.has(it) && !funSet.has(it) && it.role !== 'fun' && it.section !== 'research';
+  // One brief per topic, and nothing the stories or the India page already cover.
+  const pickBriefs = (minScore, max) => {
+    const out = [];
+    for (const it of pool) {
+      if (out.length >= max) break;
+      if (!briefable(it) || it.score < minScore) continue;
+      if ([...top, ...india, ...out].some((t) => sameTopic(t, it))) continue;
+      out.push(it);
+    }
+    return out;
+  };
+  let briefs = pickBriefs(s.minBriefScore, s.briefsMax);
+  if (briefs.length < s.briefsMin) briefs = pickBriefs(1, s.briefsMin);
+  return { top, research, india, briefs, funding, fun };
 }
 
 // ---------- Writing ----------
@@ -147,7 +172,7 @@ ${HOUSE_STYLE}
 Use only facts in the source material. Never invent numbers, names, quotes or dates. If the source is thin, write less rather than pad.
 
 Fields:
-- headline: at most 14 words, says plainly what happened, sentence case, no jargon
+- headline: at most 14 words, says plainly what happened, sentence case, no jargon. Name companies, but never names of methods, models or techniques the reader wouldn't know.
 - takeaway: the short version in two sentences, at most 45 words, that someone outside the field fully understands: what happened, and what it means in practice. No technical terms at all.
 - deck: one sentence of at most 30 words with the most important detail the headline left out
 - body: 2 or 3 paragraphs of 40 to 70 words each: what happened, the key numbers or how it works, then context
@@ -217,6 +242,69 @@ No hype words, no exclamation marks, no emoji.`;
       .map((x) => ({ headline: x.headline, body: x.body, why: x.why_cool, maker: x.maker, url: candidates[x.n - 1].link, source: candidates[x.n - 1].source }));
   } catch (err) {
     log(`  playground failed: ${err.message}`);
+    return [];
+  }
+}
+
+// ---------- Research & Data and India pages ----------
+
+const digestSchema = {
+  type: 'object', additionalProperties: false, required: ['items'],
+  properties: {
+    items: {
+      type: 'array',
+      items: {
+        type: 'object', additionalProperties: false,
+        required: ['n', 'headline', 'what', 'why', 'who'],
+        properties: { n: { type: 'integer' }, headline: { type: 'string' }, what: { type: 'string' }, why: { type: 'string' }, who: { type: 'string' } },
+      },
+    },
+  },
+};
+
+const DIGEST_BRIEF = {
+  research: (count) => `You write the Research & Data page of The Morning Servo, a daily AI and robotics newspaper. The page sums up the most important new research papers, datasets and lab results in a few lines each, for a reader who is not a researcher.
+
+Pick at most ${count} candidates that matter most: a big new capability, a major dataset, or a surprising finding. Skip small improvements to a method. Picking fewer is fine; picking none is fine on a slow day. Never pick two that make the same point.
+
+For each pick:
+- n: the candidate number
+- headline: at most 12 words on what robots or AI can now do, or what was found, in everyday words. No names of methods, models or benchmarks.
+- what: two short sentences on what the researchers did and what they found, with at most one key number. Write it so someone with no technical background understands it: no technical terms such as policy, point tracker, vision-language model, fine-tuning, benchmark, simulation-to-real or embedding. Describe what the thing does instead (for example "the software that decides how the robot moves" rather than "policy").
+- why: one sentence on why it matters in practice: what it could make cheaper, faster, safer or possible
+- who: the lab, university or company behind it, or "Unknown" if the source doesn't say`,
+  india: (count) => `You write the India page of The Morning Servo, a daily AI and robotics newspaper. The page covers the most important news about India's AI and robotics ecosystem in a few lines each.
+
+Pick at most ${count} candidates that matter most: funding, government policy, big launches, deployments, and manufacturing. Only pick items about AI or robotics; skip space, fintech and other tech that doesn't involve AI or robots. Skip listicles, events and minor announcements. Picking fewer is fine. Never pick two about the same news.
+
+For each pick:
+- n: the candidate number
+- headline: at most 12 words saying plainly what happened
+- what: two short sentences on what happened, with the key numbers
+- why: one sentence on why it matters for AI or robotics in India
+- who: the main company, agency or organisation involved`,
+};
+
+export async function digest(kind, candidates, texts, { budget, count }) {
+  if (!candidates.length) return [];
+  const cfg = stepModels('write');
+  const system = `${DIGEST_BRIEF[kind](count)}
+
+${HOUSE_STYLE}
+Use only facts from the source. Never invent numbers, names or dates.`;
+  const user = candidates.map((it, i) => `Candidate ${i + 1} | ${it.source} | ${it.title}\n${texts[i] || it.snippet}`).join('\n\n');
+  try {
+    const r = await chat({ step: kind, ...cfg, system, user, schema: digestSchema, budget });
+    const seen = new Set();
+    return r.json.items
+      .filter((x) => candidates[x.n - 1] && !seen.has(x.n) && seen.add(x.n))
+      .slice(0, count)
+      .map((x) => {
+        const it = candidates[x.n - 1];
+        return { headline: x.headline, what: x.what, why: x.why, who: x.who, url: it.link, source: it.source, title: it.title };
+      });
+  } catch (err) {
+    log(`  ${kind} page failed: ${err.message}`);
     return [];
   }
 }

@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import { loadEnv, settings, readerProfile, localDate, readJson, writeJson, p, log, mapLimit } from './lib/util.js';
 import { Budget } from './lib/openrouter.js';
 import { fetchAll, dedupe, fullText } from './lib/news.js';
-import { triage, select, writeStories, extractMoney, think, playground, SECTION_LABEL } from './lib/steps.js';
+import { triage, select, writeStories, extractMoney, think, playground, digest, SECTION_LABEL } from './lib/steps.js';
 
 loadEnv();
 if (!process.env.OPENROUTER_API_KEY) { console.error('OPENROUTER_API_KEY is not set. Add it to .env.'); process.exit(1); }
@@ -44,13 +44,14 @@ log(`${items.length} unique new items after dedupe`);
 
 // 3. Triage
 stage = 'triage';
-const scored = await triage(items, { batchSize: s.triageBatchSize, budget, profile });
+const recentHeadlines = recent.flatMap((e) => [...e.stories.map((x) => x.headline), ...(e.research || []).map((x) => x.headline)]);
+const scored = await triage(items, { batchSize: s.triageBatchSize, budget, profile, recentHeadlines });
 log(`Triage done ($${budget.spent.toFixed(3)} so far)`);
 
 // 4. Select
 stage = 'select';
-const { top, briefs, funding, fun } = select(scored, s);
-log(`Selected ${top.length} top stories, ${briefs.length} briefs, ${funding.length} funding items, ${fun.length} playground candidates`);
+const { top, research: researchCands, india: indiaCands, briefs, funding, fun } = select(scored, s);
+log(`Selected ${top.length} top stories, ${researchCands.length} research and ${indiaCands.length} India candidates, ${briefs.length} briefs, ${funding.length} funding items, ${fun.length} playground candidates`);
 
 // 5. Write the top stories from full article text
 stage = 'full text and writing';
@@ -80,6 +81,16 @@ top.forEach((it, i) => {
 });
 log(`Wrote ${stories.length} stories ($${budget.spent.toFixed(3)} so far)`);
 
+// 5b. Research & Data and India pages
+stage = 'research and India pages';
+const excerpt = (it) => (it.link.includes('news.google.com') ? '' : fullText(it.link).then((t) => t.slice(0, 2500)));
+const [researchTexts, indiaTexts] = await Promise.all([mapLimit(researchCands, 5, excerpt), mapLimit(indiaCands, 5, excerpt)]);
+const [research, india] = await Promise.all([
+  digest('research', researchCands, researchTexts, { budget, count: s.researchItems }),
+  digest('india', indiaCands, indiaTexts, { budget, count: s.indiaItems }),
+]);
+log(`Research page: ${research.length} items, India page: ${india.length} items`);
+
 // 6. The Money
 stage = 'money';
 const pastCompanies = recent.flatMap((e) => e.money?.rounds?.map((r) => r.company) || []);
@@ -97,7 +108,7 @@ stage = 'think';
 const briefList = [...demoted, ...briefs].slice(0, s.briefsMax);
 const pastCollisions = recent.map((e) => e.think?.collision?.headline).filter(Boolean);
 const pastWildcards = recent.map((e) => e.think?.wildcard?.headline).filter(Boolean);
-const thinkOut = stories.length >= 3
+const thinkOut = stories.length >= 2
   ? await think(stories, briefList, { budget, profile, sunday, pastCollisions, pastWildcards })
   : null;
 if (thinkOut && sunday) {
@@ -110,7 +121,7 @@ if (thinkOut && sunday) {
 // 8. Save
 stage = 'save';
 const words = stories.reduce((n, st) => n + [st.deck, ...st.body, st.why, st.hard].join(' ').split(/\s+/).length, 0)
-  + briefList.length * 15 + play.length * 70 + (thinkOut ? (sunday ? 700 : 380) : 0);
+  + (research.length + india.length) * 60 + briefList.length * 15 + play.length * 70 + (thinkOut ? (sunday ? 700 : 380) : 0);
 const edition = {
   date,
   weekday,
@@ -119,6 +130,8 @@ const edition = {
   paper: s.paperName,
   readMinutes: Math.max(3, Math.round(words / 230)),
   stories,
+  research,
+  india,
   briefs: briefList.map((b) => ({ kicker: SECTION_LABEL[b.section], headline: b.title, url: b.link, source: b.source })),
   money: { rounds, totalUsdM: Math.round(totalM) },
   playground: play,
@@ -127,12 +140,15 @@ const edition = {
   sources: { fetched: raw.length, unique: items.length, feeds: report.length, failedFeeds: report.filter((r) => r.error).map((r) => r.source) },
   generatedAt: new Date().toISOString(),
 };
-writeJson(p(`site/editions/${date}.json`), edition);
+// PREVIEW_DIR writes the edition somewhere else for a test run, leaving the live paper alone.
+const outDir = process.env.PREVIEW_DIR || p('site/editions');
+writeJson(`${outDir}/${date}.json`, edition);
+if (process.env.PREVIEW_DIR) { log(`Preview saved to ${outDir}/${date}.json`); process.exit(0); }
 writeJson(indexFile, [{ date, weekday, number: edition.number, lead: stories[0]?.headline || '', stories: stories.length, readMinutes: edition.readMinutes, costUsd: edition.cost.usd }, ...index]
   .sort((a, b) => b.date.localeCompare(a.date)));
-writeJson(p('data/seen.json'), [...seen, ...top, ...briefs, ...funding, ...fun].map((x) => ({ date: x.date || date, title: x.title, link: x.link })));
+writeJson(p('data/seen.json'), [...seen, ...top, ...research.map((x) => ({ title: x.title, link: x.url })), ...india.map((x) => ({ title: x.title, link: x.url })), ...briefs, ...funding, ...fun].map((x) => ({ date: x.date || date, title: x.title, link: x.link })));
 
-log(`Saved edition No. ${edition.number}: ${stories.length} stories, ${edition.briefs.length} briefs, ${rounds.length} rounds, think: ${thinkOut ? 'yes' : 'no'}`);
+log(`Saved edition No. ${edition.number}: ${stories.length} stories, ${research.length} research, ${india.length} India, ${edition.briefs.length} briefs, ${rounds.length} rounds, think: ${thinkOut ? 'yes' : 'no'}`);
 log(`Cost: $${budget.spent.toFixed(4)}`, JSON.stringify(edition.cost.steps));
 
 function dateDaysAgo(iso, n) {

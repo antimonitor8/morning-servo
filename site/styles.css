@@ -111,6 +111,12 @@ td small { display: block; color: var(--ink-2); font-size: .7rem; }
 .empty-note { color: var(--ink-2); font-style: italic; padding: 8px 0 16px; }
 
 /* ---------- The Playground: the one loose, hand-set page in the paper ---------- */
+.digest-sub { font-family: var(--f-ui); font-size: .72rem; letter-spacing: .04em; color: var(--ink-2); margin: 0 0 4px; }
+.digest { position: relative; padding: 14px 0 14px 34px; border-bottom: 1px solid var(--rule); }
+.digest-n { position: absolute; left: 0; top: 15px; font-family: var(--f-head); font-size: 1.5rem; line-height: 1; color: var(--ink-2); }
+.digest .hl { margin-top: 0; }
+.digest-why { font-size: .92rem; line-height: 1.45; margin: 0 0 6px; border-left: 3px solid var(--ink); padding: 2px 0 2px 9px; }
+.digest-why b { font-family: var(--f-ui); font-size: .6rem; letter-spacing: .1em; text-transform: uppercase; margin-right: 4px; }
 .play-mast { text-align: center; padding: 4px 0 10px; border-bottom: 3px double var(--ink); }
 .play-mast .w { font-family: var(--f-head); font-style: italic; font-size: 2.3rem; line-height: 1.05; transform: rotate(-1.5deg); }
 .play-mast .s { font-family: var(--f-ui); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); margin-top: 6px; }

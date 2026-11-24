@@ -43,10 +43,24 @@
   function pageList(e) {
     const pages = [{ id: 'A1', kind: 'front' }];
     e.stories.forEach((s, i) => pages.push({ id: `A${i + 2}`, kind: 'story', i }));
-    pages.push({ id: 'D1', kind: 'money' }, { id: 'D2', kind: 'briefs' });
+    if (e.research?.length) pages.push({ id: 'R1', kind: 'research' });
+    pages.push({ id: 'D1', kind: 'money' });
+    if (e.india?.length) pages.push({ id: 'N1', kind: 'india' });
+    pages.push({ id: 'D2', kind: 'briefs' });
     if (e.playground?.length) pages.push({ id: 'P1', kind: 'playground' });
     if (e.think) pages.push({ id: 'T1', kind: 'think' });
     return pages;
+  }
+
+  const PAGE_NAME = { research: 'Research & Data', money: 'The Money', india: 'India', briefs: 'In Brief', playground: 'The Playground', think: 'Think' };
+
+  // The "Next" link at the foot of a page, worked out from the pages this edition has.
+  function nextLink(e, id) {
+    const pages = pageList(e);
+    const n = pages[pages.findIndex((x) => x.id === id) + 1];
+    if (!n) return doneBlock(e);
+    if (n.kind === 'story') return `<a class="next" href="#p=${n.id}">Next, story ${n.i + 1} of ${e.stories.length}<b>${esc(e.stories[n.i].headline)} →</b></a>`;
+    return `<a class="next" href="#p=${n.id}">${n.kind === 'think' ? 'Last page' : 'Next'}<b>${PAGE_NAME[n.kind]} →</b></a>`;
   }
 
   const folio = (e, label) => `<div class="folio"><a href="#p=A1" class="home">↩ Front page</a><span>${esc(longDate(e.date))}</span><b>${esc(label)}</b></div>`;
@@ -63,7 +77,9 @@
     });
     const inside = [
       ...sections.map((s) => [s.page, s.kicker, `${s.n} ${s.n === 1 ? 'story' : 'stories'}`]),
+      ...(e.research?.length ? [['R1', 'Research & Data', `${e.research.length} ${e.research.length === 1 ? 'paper' : 'papers'}`]] : []),
       ['D1', 'The Money', `${e.money.rounds.length} rounds`],
+      ...(e.india?.length ? [['N1', 'India', `${e.india.length} ${e.india.length === 1 ? 'story' : 'stories'}`]] : []),
       ['D2', 'In Brief', `${e.briefs.length} headlines`],
       ...(e.playground?.length ? [['P1', 'The Playground', `${e.playground.length} experiments`]] : []),
       ...(e.think ? [['T1', 'Think', e.sunday ? 'Sunday edition' : '4 min']] : []),
@@ -90,7 +106,6 @@
 
   function story(e, i) {
     const s = e.stories[i];
-    const next = e.stories[i + 1];
     const id = `${e.date}:${s.id}`;
     const tag = (k, v) => `<span class="tag"><i>${k}</i> ${esc(v)}</span>`;
     return `
@@ -106,7 +121,7 @@
       <div class="tags">${(s.tags.industry || []).map((v) => tag('Industry', v)).join('')}${(s.tags.task || []).map((v) => tag('Task', v)).join('')}</div>
       <div class="sources"><span class="sec">Sources</span>${s.sources.map((src) => `<a href="${esc(src.url)}" target="_blank" rel="noopener">${esc(src.name)} ↗</a>`).join('')}</div>
       <div class="actions"><button class="btn${isSaved(id) ? ' on' : ''}" data-save="${esc(id)}" data-kind="story" data-i="${i}">${isSaved(id) ? '★ Saved' : '☆ Save'}</button></div>
-      ${next ? `<a class="next" href="#p=A${i + 3}">Next, story ${i + 2} of ${e.stories.length}<b>${esc(next.headline)} →</b></a>` : `<a class="next" href="#p=D1">Next<b>The Money →</b></a>`}`;
+      ${nextLink(e, `A${i + 2}`)}`;
   }
 
   const MONEY_GROUPS = [['robotics', 'Robotics &amp; physical AI'], ['ai', 'AI'], ['deeptech', 'Other deep tech']];
@@ -132,18 +147,30 @@
       ${r.length ? `${groups}
       <div class="tally">Disclosed total: <b>${money(e.money.totalUsdM)}</b> across ${r.length} deals · Tap a company for the source</div>`
         : '<p class="empty-note">No funding rounds were reported in the last day.</p>'}
-      <a class="next" href="#p=D2">Next<b>In Brief →</b></a>`;
+      ${nextLink(e, 'D1')}`;
+  }
+
+  // Research & Data and India: one page each, a few lines per item.
+  function digestPage(e, id, title, sub, items) {
+    return `
+      <div class="pagehead"><span class="t">${title}</span><span class="p">Page ${id}</span></div>
+      <p class="digest-sub">${sub}</p>
+      ${items.map((x, i) => `<article class="digest">
+        <span class="digest-n">${i + 1}</span>
+        <h2 class="hl m">${esc(x.headline)}</h2>
+        <p class="body">${esc(x.what)}</p>
+        <p class="digest-why"><b>Why it matters</b> ${esc(x.why)}</p>
+        <p class="play-src">${x.who && x.who !== 'Unknown' ? `${esc(x.who)} · ` : ''}<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.source)} ↗</a></p>
+      </article>`).join('')}
+      ${nextLink(e, id)}`;
   }
 
   function briefsPage(e) {
     return `
       <div class="pagehead"><span class="t">In Brief</span><span class="p">Page D2</span></div>
       <ul class="briefs">${e.briefs.map((b) => `<li><span class="k">${esc(b.kicker)} · ${esc(b.source)}</span>${esc(b.headline)}<a class="src" href="${esc(b.url)}" target="_blank" rel="noopener">source ↗</a></li>`).join('')}</ul>
-      ${nextAfterBriefs(e)}`;
+      ${nextLink(e, 'D2')}`;
   }
-
-  const nextAfterBriefs = (e) => (e.playground?.length ? '<a class="next" href="#p=P1">Next<b>The Playground →</b></a>'
-    : e.think ? '<a class="next" href="#p=T1">Last page<b>Think →</b></a>' : doneBlock(e));
 
   function playgroundPage(e) {
     return `
@@ -155,7 +182,7 @@
         <p class="play-why"><b>Why it's cool</b> ${esc(x.why)}</p>
         <p class="play-src">${x.maker && x.maker !== 'Unknown' ? `By ${esc(x.maker)} · ` : ''}<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.source)} ↗</a></p>
       </article>`).join('')}
-      ${e.think ? '<a class="next" href="#p=T1">Last page<b>Think →</b></a>' : doneBlock(e)}`;
+      ${nextLink(e, 'P1')}`;
   }
 
   function refLink(e, r) {
@@ -214,7 +241,9 @@
     const body = (p) => {
       if (p.kind === 'front') return front(e, pages);
       if (p.kind === 'story') return folio(e, p.id) + story(e, p.i);
+      if (p.kind === 'research') return folio(e, p.id) + digestPage(e, p.id, 'Research &amp; Data', "The research papers and datasets worth knowing about, in plain words", e.research);
       if (p.kind === 'money') return folio(e, p.id) + moneyPage(e);
+      if (p.kind === 'india') return folio(e, p.id) + digestPage(e, p.id, 'India', "AI and robotics news from India", e.india);
       if (p.kind === 'briefs') return folio(e, p.id) + briefsPage(e);
       if (p.kind === 'playground') return folio(e, p.id) + playgroundPage(e);
       return folio(e, p.id) + thinkPage(e);
