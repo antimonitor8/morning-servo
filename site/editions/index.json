@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-11-25",
+    "weekday": "Wednesday",
+    "number": 28,
+    "lead": "SoftBank buys Marc Raibert's Robotics and AI Institute from Hyundai",
+    "stories": 3,
+    "readMinutes": 8,
+    "costUsd": 0.0625
+  },
+  {
     "date": "2026-11-24",
     "weekday": "Tuesday",
     "number": 27,

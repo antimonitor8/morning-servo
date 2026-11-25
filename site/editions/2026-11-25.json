@@ -1,0 +1,660 @@
+{
+  "date": "2026-11-25",
+  "weekday": "Wednesday",
+  "sunday": false,
+  "number": 28,
+  "paper": "The Morning Servo",
+  "readMinutes": 8,
+  "stories": [
+    {
+      "id": "6d7d5fab1d",
+      "section": "robotics",
+      "kicker": "Robotics",
+      "headline": "SoftBank buys Marc Raibert's Robotics and AI Institute from Hyundai",
+      "takeaway": "SoftBank now owns the Robotics and AI Institute, a research lab started by Boston Dynamics founder Marc Raibert. The lab is hiring 24 people in robot learning, manipulation, simulation, navigation and hardware.",
+      "deck": "The Cambridge, Massachusetts institute has 24 open jobs in Massachusetts and Switzerland.",
+      "body": [
+        "SoftBank has completed its purchase of the Robotics and AI Institute from Hyundai Motor Group. Neither side disclosed the price. SoftBank confirmed the deal to The Robot Report but declined to comment further.",
+        "The institute was founded in 2022 by Marc Raibert, who also founded Boston Dynamics. Hyundai gave it more than $400 million in initial funding. It works on fundamental robotics problems in mobility, manipulation, perception and intelligence.",
+        "The lab is hiring for 24 positions, including internships, in Cambridge, Massachusetts and Zurich, Switzerland. The jobs cover robot learning, manipulation, simulation, navigation and hardware engineering."
+      ],
+      "why": "This puts one of the main robotics research labs under a company that also owns or backs 1X Technologies, Agile Robots, Skild AI and Symbotic. Deals between lab research and those companies could signal which manipulation and learning problems will need new training data soon.",
+      "hard": "It is unclear whether SoftBank will change the institute's research priorities or let it keep operating independently.",
+      "terms": [
+        {
+          "term": "Manipulation",
+          "meaning": "A robot using arms or hands to move, pick up, or change objects, like tightening a bolt or packing a box."
+        },
+        {
+          "term": "Simulation",
+          "meaning": "A software copy of the real world where robots practice skills in fast, safe virtual trials before doing them in real life."
+        },
+        {
+          "term": "GPU",
+          "meaning": "A powerful computer chip often used to run the many repeated calculations needed for robot learning and simulation."
+        },
+        {
+          "term": "Perception",
+          "meaning": "A robot's ability to understand what its cameras and sensors are seeing, such as knowing a bin is empty or a part is misaligned."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Robotics",
+          "Industrial automation"
+        ],
+        "task": [
+          "Robot research",
+          "Manipulation"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/softbank-acquires-marc-raiberts-robotics-and-ai-institute/"
+        },
+        {
+          "name": "The Robot Report",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdFVpMkxPaEw4NVUzdTZmNHM3amdYLVRJc0tfcWdlSWpUR1hrczBVNTVXMC1PVWY1X2tQeWRHNldFOWxKN3NmajU1QTduMG1NOG45OVlncm44VnVuOWZhUlNZd08xclRoTFdkN1huSWtjN1lfb241Q0JXOXk2b2VKYkc2SFNxdHc4Si1rX3RrRU1mdnM?oc=5"
+        },
+        {
+          "name": "Wisevoter",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdEtNZV9iekNGZVVzcmFYZl9aYVlOMi1pWkM4V0VFSThSazk5ZERmdFV2VW5TOVg4SGMydnNQNDQ1VXFROHpPYjNqdWRiS09qZnp3Znc5Njd2MEZscm5JWlhEQTBFZElfaEpRZ3VsTWYtWU85VVNEdEVnc3QzbE4tQ09yeFQwNGFKdF9Mdjdvd0pKMGtwN2NGeENR?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "2666fdd285",
+      "section": "ai",
+      "kicker": "AI",
+      "headline": "CrowdStrike to buy Zscaler for $43.9 billion",
+      "takeaway": "CrowdStrike is buying Zscaler in an all-stock deal worth $43.9 billion. The combined company expects more than $10 billion in yearly recurring revenue and aims to secure corporate networks as AI agents spread.",
+      "deck": "The deal folds Zscaler's network security tools into CrowdStrike's Falcon platform, with Zscaler's CEO staying on.",
+      "body": [
+        "CrowdStrike, a company that protects computers and cloud services from attack, agreed to buy Zscaler in an all-stock transaction valued at $43.9 billion. Zscaler shareholders will receive 1.135 CrowdStrike shares for each Zscaler share they hold. Zscaler CEO Jay Chaudhry will continue leading the business and join CrowdStrike's board.",
+        "Zscaler specialises in zero-trust architecture: a security model that assumes no user or device is safe by default and checks every request. Its tools will be integrated into CrowdStrike's Falcon platform. The combined company expects more than $10 billion in annual recurring revenue and about $1 billion in added yearly sales within 30 months of closing.",
+        "Both leaders framed the deal around AI agents, software programs that act on a user's behalf across systems. Chaudhry called AI agents 'rapidly becoming the new weakest link' in enterprise security. CrowdStrike expects the deal to close in the second half of its fiscal year 2028, pending shareholder and regulatory approvals."
+      ],
+      "why": "The deal signals that large security vendors see AI agents as a new attack surface and revenue driver. Companies building or deploying AI agents will likely face stronger compliance and monitoring requirements, which could shape how robot training-data vendors handle access controls and audit trails around collected video.",
+      "hard": "The deal still needs Zscaler shareholder approval and regulatory clearances, and the expected closing is more than a year away.",
+      "terms": [],
+      "tags": {
+        "industry": [
+          "Cybersecurity",
+          "Enterprise software"
+        ],
+        "task": [
+          "Mergers and acquisitions",
+          "AI agent security"
+        ]
+      },
+      "score": 7,
+      "sources": [
+        {
+          "name": "Analytics India Magazine",
+          "url": "https://analyticsindiamag.com/ai-news/crowdstrike-to-buy-zscaler-for-44-billion-as-ai-raises-stakes-for-cyber-defence"
+        }
+      ]
+    },
+    {
+      "id": "754f867302",
+      "section": "ai",
+      "kicker": "AI",
+      "headline": "Anthropic stock falls below IPO price days after listing",
+      "takeaway": "Anthropic shares dropped under the price set for its stock market debut, falling about 12 percent in a day. A weak first week could make investors less willing to pay high prices for other private AI companies.",
+      "deck": "The stock traded as low as $76 after debuting on Nasdaq at $111.50 less than a week earlier.",
+      "body": [
+        "Anthropic's stock fell below its initial public offering price of $83, trading as low as $76 a share by midday Tuesday. The drop was nearly 12 percent from Monday's close. Falling below the IPO price is often read as a negative signal because banks that manage listings usually set the price at a discount to what they expect shares to fetch.",
+        "The decline comes less than a week after Anthropic began trading on the Nasdaq exchange at $111.50 a share. Venture investors and other observers have been watching the listing closely, saying its performance could act as a gauge for how public market investors value the broader AI sector.",
+        "Anthropic was not the only AI stock to slide. Chipmaker Nvidia fell more than 7 percent by midday, giving back part of a gain of more than 30 percent from the previous day."
+      ],
+      "why": "If AI company shares keep trading weakly after going public, investors may mark down the value of private robotics and AI startups. That would make it harder for training-data suppliers and robot learning companies to raise money at the same terms.",
+      "hard": "It is still too early to tell whether this is a short-term swing or a longer shift in how public investors value AI companies.",
+      "terms": [],
+      "tags": {
+        "industry": [
+          "AI",
+          "Venture capital"
+        ],
+        "task": [
+          "Public market signal"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/"
+        }
+      ]
+    }
+  ],
+  "research": [
+    {
+      "headline": "OpenAI's new models can design proteins from scratch using only reasoning",
+      "what": "Researchers at OpenAI found that their GPT-6 family of models can design the three-dimensional shapes and chemical sequences of new proteins without relying on specialized biology software. The model draws on general knowledge of math, physics, and chemistry through written reasoning and code. In lab tests, proteins based on its designs showed signs of attaching to five target molecules.",
+      "why": "This could make designing custom proteins for medicines, vaccines, or carbon capture much easier, since researchers would not need to master several different expert tools.",
+      "who": "OpenAI",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "source": "OpenAI",
+      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities"
+    },
+    {
+      "headline": "Robots can be tested with almost no human supervision using AI graders",
+      "what": "Researchers built a system that lets robots run continuous, self-directed practice tasks while software generates the instructions and judges the results. The AI grader agreed with human graders about 91 percent of the time, and the approach cut the amount of active human labor needed by 98 percent.",
+      "why": "Evaluating robots in the real world is usually slow and expensive because a person has to reset each task and check the outcome; this method could speed that up dramatically and allow testing across many more situations.",
+      "who": "Unknown",
+      "url": "https://arxiv.org/abs/2611.28411",
+      "source": "arXiv cs.RO",
+      "title": "ScaleEvals: Scaling Generalist Policy Evaluation through Reset-Free Autonomous Play"
+    },
+    {
+      "headline": "A new technique helps simulated robot skills hold up better outdoors",
+      "what": "Researchers developed a way to continuously adjust the gap between computer simulation and reality for a robot in the field. When tested on a wheeled robot with a broken axle driving over snow, mud, and wet grass, their method raised the rate of successful navigation across rough terrain from 26 percent to 70 percent.",
+      "why": "This could make robots trained in simulation much more reliable when deployed in messy, changing outdoor environments, where unexpected damage or terrain often breaks down learned skills.",
+      "who": "Unknown",
+      "url": "https://arxiv.org/abs/2611.28260",
+      "source": "arXiv cs.RO",
+      "title": "Neural Fidelity Calibration: Turning Field Anomalies into Simulation Fine-Tuning"
+    },
+    {
+      "headline": "A quick self-test helps robots stay accurate when their hardware changes",
+      "what": "Researchers created a method where a robot performs a short calibration routine before each task, moving one arm joint at a time to detect changes in how its commands translate into motion. The approach recovered most of the performance lost when cameras, controllers, or payloads differed from training conditions, lifting success on one set of tasks from 61 percent to nearly 90 percent.",
+      "why": "Robots often fail when deployed on hardware that differs from their training setup; this approach could let one trained skill work across many robot bodies without expensive retraining.",
+      "who": "Unknown",
+      "url": "https://arxiv.org/abs/2611.28308",
+      "source": "arXiv cs.RO",
+      "title": "Probing Invisible Actuation Shifts for Test-time Calibration of Visuomotor Policies"
+    }
+  ],
+  "india": [
+    {
+      "headline": "Cosine Robots raises Rs 22.4 crore to build robotic actuators",
+      "what": "Cosine Robots, a Bengaluru startup that makes actuators - the parts that convert energy into physical movement and control robotic joints - has raised Rs 22.4 crore led by Avaana Capital. The money will go towards an R&D and production facility and expanding the engineering team.",
+      "why": "Actuators are a critical and costly component for industrial arms, collaborative robots and humanoids, so domestic production could lower costs for Indian robot makers.",
+      "who": "Cosine Robots",
+      "url": "https://entrackr.com/snippets/cosine-robots-raises-rs-2236-cr-led-by-avaana-capital-12836692",
+      "source": "Entrackr",
+      "title": "Cosine Robots raises Rs 22.36 Cr led by Avaana Capital"
+    },
+    {
+      "headline": "CortexSpark launches Rs 1,000 crore deeptech and AI fund",
+      "what": "CortexSpark Ventures, founded by former Infosys executives, has launched a fund targeting Rs 1,000 crore to back around 20 startups in areas including embodied AI and robotics, enterprise AI, and defence tech. The fund has a Rs 400 crore greenshoe option and an average cheque size of $4-5 million.",
+      "why": "More domestic capital for AI and robotics startups could help companies with long development cycles stay in India rather than seeking funding abroad.",
+      "who": "CortexSpark Ventures",
+      "url": "https://inc42.com/buzz/ex-infosys-executives-cortexspark-ventures-launches-%e2%82%b91000-cr-deeptech-fund/",
+      "source": "Inc42",
+      "title": "Ex-Infosys Executives’ CortexSpark Ventures Launches ₹1,000 Cr Deeptech Fund"
+    },
+    {
+      "headline": "AidenAI raises $32 million to scale enterprise AI workflows",
+      "what": "AidenAI, which helps large companies integrate AI agents into existing applications and data systems, has raised $32 million in a Series A round led by A91 Partners. The Hyderabad-based startup says it serves over 30 enterprise clients across six countries and plans to train more than 1,000 AI engineers.",
+      "why": "The deal signals investor demand for services that move enterprise AI from pilot projects into live business operations, a gap many firms still struggle with.",
+      "who": "AidenAI",
+      "url": "https://inc42.com/buzz/aidenai-nets-32-mn-to-scale-enterprise-ai-workflows/",
+      "source": "Inc42",
+      "title": "AidenAI Nets $32 Mn To Scale Enterprise AI Workflows"
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "AI",
+      "headline": "Anthropic Mathematician Levent Alpöge Claims Claude-Assisted Proof of the Riemann Hypothesis",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOejBVN0dhclZXdmVkcWFuOEpKOFB1M2l6N2NNZEdyaXBXUllpbWQ3RXZNUkx5czNmbXpjejdVdFFzV1RyblZ5NlpiWTlvVVVkVms4X1I0SE12RlN4WjZ2TWtZbXBYNm8tS3NjMW5CSGJfRktzdGs4UzNNYk9DUmVjblRmdFE4X05LU0xBTW9OenhJZTE5aG85RktuNkMyZE9Fa0RLcnNtdmxsUHR3Sk9yTjNoY1dsazl0NGRUc1pXYlZKY2VOT3RoWVNB?oc=5",
+      "source": "AI Insider"
+    },
+    {
+      "kicker": "AI",
+      "headline": "Even the best AI agents struggle with everyday life",
+      "url": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/",
+      "source": "TechCrunch AI"
+    },
+    {
+      "kicker": "AI",
+      "headline": "Claude AI can review pull requests and ship fixes on its own now",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+      "source": "The Verge AI"
+    },
+    {
+      "kicker": "AI",
+      "headline": "Trump Has Saved Jensen’s Job. But Can He Save NVIDIA?",
+      "url": "https://analyticsindiamag.com/ai-features/trump-has-saved-jensens-job-but-can-he-save-nvidia",
+      "source": "Analytics India Magazine"
+    },
+    {
+      "kicker": "Robotics",
+      "headline": "South Korea Plans Next-X Humanoid Challenge to Select National Robot Platform",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdXdZYTBNTVJNRTJBbHhva2Fta2E0dksxTEtZVnNCalF1OXpkSXc1MmtlcEItRWJodlc3LTRWWGhQM0VKNFJuMzhlRVk3eTU1RFlPSUhLSnlVckNtZEk3bVY3c0NfM25jU0hmMWF2YnpWbnRvWXZYSENrMkN1UnlzRE4tRFB2OEYxWVV3dzRRa2tZeWhmTU42VUV1VWhiaG95WVpVbjV6VlBsTGNqYVF1ZjdXZmk3QQ?oc=5",
+      "source": "AI Insider"
+    },
+    {
+      "kicker": "Robotics",
+      "headline": "Amazon drone crash raises safety concerns",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9zdmFuSzcxX0dCdjNBVWpVZXAtTzRjSFJieVprNWJRUk1oVEYxS0ZIb3JPTk45MER1X1NoUFpmN2dhdm5tZGdQOXFEbVM?oc=5",
+      "source": "6abc Philadelphia"
+    },
+    {
+      "kicker": "AI",
+      "headline": "Why Does Voice AI Still Struggle With Kenyans’ Speech?",
+      "url": "https://spectrum.ieee.org/swahili-speech-recognition",
+      "source": "IEEE Spectrum AI"
+    },
+    {
+      "kicker": "AI",
+      "headline": "Yale’s Sonnenfeld: Nvidia is a ‘detriment’ to U.S. industrial might — not a champion",
+      "url": "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/",
+      "source": "TechCrunch AI"
+    },
+    {
+      "kicker": "AI",
+      "headline": "UK warns AI-driven cyberattacks are exposing years of weak security",
+      "url": "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/",
+      "source": "TechCrunch AI"
+    },
+    {
+      "kicker": "AI",
+      "headline": "Why a Crusoe investor is betting on solar and batteries to power future AI data centers",
+      "url": "https://techcrunch.com/2026/11/24/why-a-crusoe-investor-is-betting-on-solar-and-batteries-to-power-future-ai-data-centers/",
+      "source": "TechCrunch AI"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 0,
+        "sector": "robotics",
+        "company": "Genesis AI",
+        "what": "Robotics startup",
+        "round": "Funding",
+        "amount_usd_m": 500,
+        "amount_text": "$500M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTWFFQXhWNzlaWHRMZ2E5dWdTY0pIa2dVci0wa0VETFVvZXRzS2Z3Vm9uenBueTdiNFVpQmxXTHBGUm1IS04tdEJuaTJKY0hoVHhsSWVhOGNFeUcyc09LSlV3aG05bzMycGZDa29JM3hvRFp1bm1UV1ZLblBFdzBMdVdMSzh4Zlk3M1drZm8tNUIyQ00?oc=5",
+        "source": "WSJ"
+      },
+      {
+        "i": 6,
+        "sector": "ai",
+        "company": "Axelera AI",
+        "what": "Dutch AI chip maker",
+        "round": "Funding",
+        "amount_usd_m": 400,
+        "amount_text": "$400M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/dutch-ai-chipmaker-axelera-in-talks-to-raise-400m-and-eu-subsidies-to-take-on-nvidia/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 28,
+        "sector": "ai",
+        "company": "AIVC",
+        "what": "AI-native company builder",
+        "round": "Funding",
+        "amount_usd_m": 112,
+        "amount_text": "$112M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQOUFXUVpHZUtHNklVX0J5NEx3LTFnQUdjTXJXNnNzMjJrQzBGN3owUk1maXNWQnJRUnV1TURaWl9JaTBmQU5DSXp4OWMyb21QYXg4bXVyVjRTbUpaZHlieXBNOXRuMlFmRmF2bURwOTI2dGVmeW9qRFo4ZTJEQ2N4bEY1eF9DdURIaDVZZDNJUTF6aGVqbFdWaFlMY3YyZw?oc=5",
+        "source": "Traders Union"
+      },
+      {
+        "i": 15,
+        "sector": "deeptech",
+        "company": "Defence AI startup (UK)",
+        "what": "British defence AI startup",
+        "round": "Funding",
+        "amount_usd_m": 70,
+        "amount_text": "$70M",
+        "lead": "Government-backed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONGNDYXhzS2o5TmNTRF95X2phS2l6c3hlZDNRYjBHcFRtNXNfb0FYci1wTTVzVFI3Q0c4UDNJSjBEbldTNFhOWmNzNlF1cFFJekIzVENOTlVIUE9yN3F2ckxoTk5uUm1GNWtyaEtMV19paG5qT2E0V08yN1R5dkZ0THVzRUdSWjZWMFR1V0prYnlBQQ?oc=5",
+        "source": "City AM"
+      },
+      {
+        "i": 18,
+        "sector": "ai",
+        "company": "AidenAI",
+        "what": "Enterprise AI workflow platform",
+        "round": "Series A",
+        "amount_usd_m": 32,
+        "amount_text": "$32M (₹297.1 Cr)",
+        "lead": "Growth investor (unnamed in item)",
+        "india": true,
+        "url": "https://inc42.com/buzz/aidenai-nets-32-mn-to-scale-enterprise-ai-workflows/",
+        "source": "Inc42"
+      },
+      {
+        "i": 21,
+        "sector": "robotics",
+        "company": "Octopus Power",
+        "what": "Chinese robotics company",
+        "round": "Series A",
+        "amount_usd_m": 15,
+        "amount_text": "$15M",
+        "lead": "Midea",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPNGhKRGVDX1lWTmlwSFBGeTBTMmx3NThfaWNvRm9kNWxrRjdzaTR4VWJEOFpqMjRpbDZDMjBHNlNITmhlT2xpR0FreG5DNzdPRlk1NVF1dGF0X1BBREF1M3ZBdlY4TGxta21SYWtLSnhfVzJLYWU1UlNBQ09rTGVTQUVPUmE4QkpveGlfVGJ2Zw?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 31,
+        "sector": "ai",
+        "company": "Iconic",
+        "what": "Software for large projects",
+        "round": "Funding",
+        "amount_usd_m": 10,
+        "amount_text": "$10M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdDNqRTkyaUdQZWFMYVlhUEVxNGJhc3hEM0hBUkhaQmJxcE12cVh6emNjV0pyZTZESXVKbXAtUV9lTnVKYzJfRVk5NXNuRlVrakViLWlWZFg0ZWZ0S1pacXFzSFgwNWliTDIza0hkajhkd3hvVS15Tll3YTQ2QVhreW9GSE1yVHhEWFpSd1VIQ2NKZUVoYjZIdVZOVUg5MFVNTmk4UHNHSlRITnJKY3h3cDVyLVRVWnU5M1E?oc=5",
+        "source": "AI Insider"
+      },
+      {
+        "i": 24,
+        "sector": "ai",
+        "company": "MountAIn",
+        "what": "AI for microcontrollers",
+        "round": "Seed",
+        "amount_usd_m": 7.3,
+        "amount_text": "€7.3M ($7.9M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPaDJtcXpqempjR2kyQzFIbklYbTM5Mi13VzlDQjN2UDEybzRZSHd0WEF6ZGN1MndqUnllOXRTbm9YMWdMbkxqaDh0ODhnYTdtT3dtcWdDUWl3UUptcFBZQTJRMTJQWU1BQ0lqR1hhRy0ydWVzWHE0N3Nld2hUVElEN3B1MXROUm16N1JkZVBsSno4ZHFfYm1YZzFaenR5eFRVOGZERU82ZUJTUWlld2xwQ2t4alNlMlRi?oc=5",
+        "source": "AI Insider"
+      },
+      {
+        "i": 33,
+        "sector": "ai",
+        "company": "Maple",
+        "what": "Encrypted AI products",
+        "round": "Funding",
+        "amount_usd_m": 5.3,
+        "amount_text": "$5.3M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/",
+        "source": "TechCrunch AI"
+      },
+      {
+        "i": 17,
+        "sector": "robotics",
+        "company": "Pai Defence",
+        "what": "Drone detection and mapping",
+        "round": "Funding",
+        "amount_usd_m": 5,
+        "amount_text": "$5M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOMFdSNHBKcGxsU0lJR2hGVjdoT1Jfa1FxZFN4RFRWZzBDYWNZaGI1ZlkzdkdWTmpmc1lnQlZtNTBrOXJtV2xNU2pDWjhpbnJ1RG5Renh3NUdFYTZHSTBzMW0zR1Byay13bzdMb25palNreGtQWWZ4OVFrRExnSWJuSGhsOENhRXYxSGdvMFE0REtaZWY2TmFiWWNVMDNZLWwyUHlqYnd3?oc=5",
+        "source": "Resilience Media"
+      },
+      {
+        "i": 39,
+        "sector": "ai",
+        "company": "Verra",
+        "what": "AI memory layer for consulting",
+        "round": "Funding",
+        "amount_usd_m": 5,
+        "amount_text": "$5M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/ex-openai-and-palantir-duos-verra-raises-5m-to-build-an-ai-memory-layer-for-consulting-firms/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 42,
+        "sector": "ai",
+        "company": "Pedestal AI",
+        "what": "Agentic AI for supply chains",
+        "round": "Seed",
+        "amount_usd_m": 4.7,
+        "amount_text": "$4.7M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPdVp4TFY4cVIxN3NOYU03SkpjUGdhQ3VzV0JULXdBNlNPRWZsejdoeW1YdFZDNVllLU1VRW5ZdnJ5SUktOEVfSXE1UFJ1T2x5cmhTUEVQRjBvc3JtRmtjWXBNMHhMbXVlQk16cndpcnhWN0U0eFg3aHBnaXBKdURmSVVBQXRIUWpOdWhYY0pFOHZ6cG1MRW95Wmsta0ZYQXBldmRRMVVxZ1JiM3BzeUs4UmtiZU5Cc1pMbng3SWFIRE1UdmZf?oc=5",
+        "source": "AI Insider"
+      },
+      {
+        "i": 8,
+        "sector": "robotics",
+        "company": "Cosine Robots",
+        "what": "Robotics hardware and servo actuators",
+        "round": "Funding",
+        "amount_usd_m": 2.4,
+        "amount_text": "₹22.36 Cr ($2.4M)",
+        "lead": "Avaana Capital",
+        "india": true,
+        "url": "https://entrackr.com/snippets/cosine-robots-raises-rs-2236-cr-led-by-avaana-capital-12836692",
+        "source": "Entrackr"
+      },
+      {
+        "i": 19,
+        "sector": "robotics",
+        "company": "Whereable.ai",
+        "what": "Autonomous driving for industrial sites",
+        "round": "Pre-Series A",
+        "amount_usd_m": 2.26,
+        "amount_text": "$2.26M",
+        "lead": "LOTTE Ventures, Quad Ventures, KODIT",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOa0c1SDNrWkZOdkx4TUp6Y2RNZTV6TTJZbE5oQXNmS3ZWQU9odDQxcDczMEdoMEo4amhwVk5DemZmNVBSZEVvTEt1YllGWFRHRlJhVFY2dldnRkxTZnVlMF9DcndiY0pIcWNHMVZYTGVSTW1sbWxYV0pIRW1nZEs1REh6QmdVdTUyVUJ2U3R5OGVoRy1tTy1zbTd2eWNfOUJtREYxcW1n?oc=5",
+        "source": "Pulse 2.0"
+      },
+      {
+        "i": 32,
+        "sector": "ai",
+        "company": "009",
+        "what": "Saudi enterprise AI agents",
+        "round": "Funding",
+        "amount_usd_m": 1.4,
+        "amount_text": "$1.4M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxObW44RGFxRmJzZnFZNy1vQ1ZVY3h0TmRXZmJnOVFHUnZFSzdkUGFiV0VFY1d1YVNvY3h3UHl6Q1UwSHV1QmlzYjRTNkVWSUNpak1tckNEamoxTVctOFppdVZMd0swQjMwV1NxdG9WemhXOFZjdjF6eElGOG8yMC1oMWp2eWZtU2dmOC1WRmJpME5BUWxIQ2lWSGV1UQ?oc=5",
+        "source": "entARABI"
+      },
+      {
+        "i": 1,
+        "sector": "robotics",
+        "company": "Robotics and AI Institute",
+        "what": "Robotics research organization acquired by SoftBank",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "SoftBank",
+        "india": false,
+        "url": "https://www.therobotreport.com/softbank-acquires-marc-raiberts-robotics-and-ai-institute/",
+        "source": "The Robot Report"
+      },
+      {
+        "i": 10,
+        "sector": "robotics",
+        "company": "Yingtuo Sensing",
+        "what": "Force-sensing robot actuators",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Tens of millions of yuan",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOVTRoWThFbkJOYUM3Umo4UER3czZoNS1wQmFhYkxaYXI2amxNbzJNTkRfSG03UVZWRW5TUUhCMTV3MW9NN2txOTExZVdJeEVLeERFTW1RSkJEWFhJc0pfZVhQU2VDOUVWMmdmc05ZaXhjQ0RHVnc2WUtrYko4S0RFM0xYZVRDWmkzTDlIVmhHVXNDV3RONl9iYWM3RVJjRzNNVnB5UXVDM1B2VS1LOEYxWExoY3Vodw?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 11,
+        "sector": "robotics",
+        "company": "SynapX",
+        "what": "Robotics startup",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Hundreds of millions of yuan",
+        "lead": "Midea (participant)",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPMXBGTy0zTFFLblg2WHMwanJPQTM0OFBSZ2JzWlBwRlY2VWhBLXZlZWVScm0taDhJLTczLU1nMlBVdGY5czhvWUNyd0xNVU9PUTJwc3o1V2Z3V3hnYVRuRjBDNkRERWFLM3dkc3o1dzVJWnc5UWZRcDM2ZFdEdUt5YUdZMnBGN1ZGXzdUUXZqNy1CRnNMbnFDQ1d5aTZWVEwxZUJlZEhfR1V4dEhHWkVDM2xTRWtuVUhPNzBnQk0xVQ?oc=5",
+        "source": "TechNode"
+      },
+      {
+        "i": 43,
+        "sector": "ai",
+        "company": "Scialytics",
+        "what": "Surgical AI startup",
+        "round": "Stake acquisition",
+        "amount_usd_m": null,
+        "amount_text": "23% stake, undisclosed",
+        "lead": "Cosmo N.V.",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQX1lELWZoSmk4WUh1RHltSlRCWUZDdDZ3enYxLU1RbEJOOXU4UlZKYVNNR3RnZjJVbDQ1YVZ1R0U1YW1McUMxWEpnYUswSXhvTkJyVVJabWJzRkVMUFgzaUM0WTVnRlllLUhDejFHYk9ocHYzQWVsUXJvdHpDWk96OFFkZE5rUkFlaS1EMnRIcGRhTUZGWF94SlZMY1N3MXYxbEV6dHM1R1RudGdPSl80MXJiRkZoNHFxbUIzWmdfdnY2QQ?oc=5",
+        "source": "TradingView"
+      }
+    ],
+    "totalUsdM": 1172
+  },
+  "playground": [
+    {
+      "headline": "LEGO bricks turn into a working 3D printer",
+      "body": "Adam T. built a functional 3D printer using LEGO bricks instead of custom parts. It shows that consumer-grade 3D printing no longer needs specialized hardware from a decade ago.",
+      "why": "It hints that precision fabrication tools could become more accessible and rebuildable from common toy parts.",
+      "maker": "Adam T.",
+      "url": "https://www.hackster.io/news/someone-used-lego-bricks-to-build-a-functional-3d-printer-6f99950158cc",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "Quadcopter shrinks itself to squeeze through narrow gaps",
+      "body": "Etor Arza and colleagues built a quadcopter with flexible arms that passively fold when they hit resistance. It drops from 31.3 to 14.1 cm wide and can fly through 15 by 20 cm gaps and long tubes.",
+      "why": "It shows a drone can adapt its body shape without complex active systems, making robust navigation in tight spaces more practical.",
+      "maker": "Etor Arza et al.",
+      "url": "https://hackaday.com/2026/11/24/designing-a-passively-morphing-quadcopter-that-can-fly-through-gaps/",
+      "source": "Hackaday"
+    },
+    {
+      "headline": "Play hotel switchboard operator on original 1950s hardware",
+      "body": "Mark Sidell turned a real Western Electric switchboard into a game where you route calls for hotel guests and staff. A PC and multichannel sound card run 120 scenes, while the unmodified board keeps all its original internal hardware.",
+      "why": "It demonstrates how vintage hardware can be preserved and repurposed into interactive experiences without losing its history.",
+      "maker": "Mark Sidell",
+      "url": "https://hackaday.com/2026/11/24/a-switchboard-operator-simulator-on-real-hardware/",
+      "source": "Hackaday"
+    },
+    {
+      "headline": "Worm-like robots team up to move and grab things",
+      "body": "Engineers at Colorado State University built small worm-like robots that work together instead of relying on one large machine. Each robot handles part of the task, combining mobility and manipulation without the usual cost or size penalty.",
+      "why": "It points toward cheaper, modular robot teams that can split jobs a single bulky machine would struggle with.",
+      "maker": "Colorado State University engineers",
+      "url": "https://www.hackster.io/news/teamwork-makes-the-robot-work-093707d8cd78",
+      "source": "Hackster.io"
+    }
+  ],
+  "think": {
+    "collision": {
+      "a": {
+        "kind": "brief",
+        "n": 5,
+        "label": "South Korea picks national humanoid platform via challenge"
+      },
+      "b": {
+        "kind": "brief",
+        "n": 7,
+        "label": "Voice AI fails on Kenyan speech"
+      },
+      "headline": "Build an Indian humanoid challenge task set: spoken instructions in regional accents paired with egocentric video of the task being done",
+      "body": "South Korea is choosing a national humanoid by running a contest, so the tasks in that contest become the target every robot maker trains for. The Kenyan voice story shows that speech systems trained mostly on American and British voices break on local accents. A benchmark and dataset that pairs a supervisor's spoken instruction in Hindi, Tamil or Indian English with chest-camera video of a worker carrying it out would test whether a robot can hear an order on an Indian shop floor and act on it correctly.",
+      "who_pays": "Humanoid makers and government programs planning contests or factory pilots in India and other multilingual markets would pay to train and test on it.",
+      "data_needed": "Thousands of recorded instruction-and-action episodes from Indian workshops and warehouses, with audio, stereo video, transcripts and a note of whether the worker understood the instruction correctly.",
+      "why_fail": "Buyers may decide that typed or app-based commands are good enough on factory floors, so accented spoken instructions never become a requirement they will pay for."
+    },
+    "contrarian": {
+      "story_n": 3,
+      "consensus": "Anthropic's fall below its listing price means AI valuations are cooling, and robotics and training-data startups will find money harder to raise.",
+      "against": [
+        "A drop in the first week mostly reflects an opening price set too high in early trading. It says little about the company's revenue or about demand for AI.",
+        "Robotics investors are already pricing in long timelines and hardware risk. Money for robot learning comes partly from strategic buyers such as SoftBank, which bought the Robotics and AI Institute in the same news cycle.",
+        "If investors move away from chatbot companies, some of that money may shift toward physical AI and data infrastructure. Investors who want a distinct story may actually favor training-data suppliers."
+      ],
+      "bets_otherwise": "SoftBank, by buying the Robotics and AI Institute and backing 1X, Skild AI and Agile Robots, is betting that robotics money keeps flowing regardless of public AI stock prices.",
+      "settle_it": "Track whether robotics and robot-data startups' round sizes and valuations over the next two quarters fall in step with Anthropic's share price or hold steady."
+    }
+  },
+  "cost": {
+    "usd": 0.0625,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 5,
+        "inTokens": 36583,
+        "outTokens": 9044,
+        "cost": 0.0082,
+        "models": {
+          "anthropic/claude-haiku-5.5": 5
+        }
+      },
+      "write": {
+        "calls": 3,
+        "inTokens": 3763,
+        "outTokens": 1384,
+        "cost": 0.0113,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 3
+        }
+      },
+      "india": {
+        "calls": 1,
+        "inTokens": 3404,
+        "outTokens": 428,
+        "cost": 0.0062,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "research": {
+        "calls": 1,
+        "inTokens": 5925,
+        "outTokens": 588,
+        "cost": 0.0033,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 4375,
+        "outTokens": 1829,
+        "cost": 0.0014,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 1342,
+        "outTokens": 474,
+        "cost": 0.0036,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "think": {
+        "calls": 1,
+        "inTokens": 2941,
+        "outTokens": 840,
+        "cost": 0.0286,
+        "models": {
+          "anthropic/claude-opus-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 272,
+    "unique": 213,
+    "feeds": 29,
+    "failedFeeds": [
+      "Import AI",
+      "r/robotics",
+      "r/LocalLLaMA",
+      "Show HN",
+      "Hacker News"
+    ]
+  },
+  "generatedAt": "2026-11-25T00:16:38.117Z"
+}
