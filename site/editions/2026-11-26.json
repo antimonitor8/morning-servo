@@ -1,0 +1,711 @@
+{
+  "date": "2026-11-26",
+  "weekday": "Thursday",
+  "sunday": false,
+  "number": 29,
+  "paper": "The Morning Servo",
+  "readMinutes": 8,
+  "stories": [
+    {
+      "id": "6359c2ce09",
+      "section": "ai",
+      "kicker": "AI",
+      "headline": "FCC approves SpaceX plan for up to 1 million AI chip satellites",
+      "takeaway": "US regulators have approved SpaceX's plan to put up to one million AI-equipped satellites in orbit. The constellation would beam computing power to Earth using lasers, but deadlines stretch to 2040.",
+      "deck": "SpaceX must launch at least one satellite by 2033 and reach the full million-satellite target by 2040.",
+      "body": [
+        "The Federal Communications Commission said on Wednesday it has authorized SpaceX to deploy up to 1 million satellites carrying AI chips, part of a project called Starmind. The satellites would capture solar energy in space and use it to run AI workloads, then send results to Earth through laser links connected to the Starlink network.",
+        "The approval comes with deadlines: SpaceX must have at least one Starmind satellite in orbit by 2033 and the full million in place by 2040. The agency also held back a request to move dead satellites above 600 kilometers into disposal orbits rather than burning them up in the atmosphere, saying SpaceX has not given enough detail on that process.",
+        "SpaceX is not alone. Google launched its first AI server satellite last month under Project Suncatcher, and Blue Origin is scheduled to carry out a dedicated heavy-lift launch for that project in 2029. The FCC said this is the first full approval for an AI satellite constellation, though other companies are pursuing similar ideas."
+      ],
+      "why": "This signals that some AI computing may move off Earth entirely. If space-based AI data centers become real, demand for certain types of robotics training data could shift toward systems that operate with laser-linked ground infrastructure rather than conventional terrestrial servers.",
+      "hard": "No Starmind satellite is required to launch until 2033, so the project's technical feasibility, cost, and actual performance remain unproven for years.",
+      "terms": [
+        {
+          "term": "Constellation",
+          "meaning": "A large group of satellites working together as one system in orbit."
+        },
+        {
+          "term": "AI chip",
+          "meaning": "A specialized computer processor designed to run artificial intelligence tasks quickly and efficiently."
+        },
+        {
+          "term": "FCC",
+          "meaning": "The Federal Communications Commission, the US agency that approves satellite launches and radio transmissions."
+        },
+        {
+          "term": "Orbit",
+          "meaning": "The curved path an object takes around a planet or star due to gravity."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Aerospace",
+          "AI infrastructure"
+        ],
+        "task": [
+          "Satellite deployment",
+          "Computing infrastructure"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "The Verge AI",
+          "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers"
+        }
+      ]
+    },
+    {
+      "id": "3d99396f6e",
+      "section": "ai",
+      "kicker": "AI",
+      "headline": "Dell raises annual forecast as AI server orders reach record backlog",
+      "takeaway": "Dell now expects about $202 billion in revenue this fiscal year, far above its earlier forecast, because companies are buying AI servers much faster than expected. For suppliers of physical AI and robot training data, it signals that the underlying compute buildout is still accelerating.",
+      "deck": "The company expects close to 78 percent revenue growth this fiscal year and sees demand outpacing server supply into 2027.",
+      "body": [
+        "Dell raised its full-year revenue forecast for the third time, to $202 billion, on demand for AI servers. It expects close to 78 percent revenue growth from the prior year. The stronger estimate follows a record quarter where overall revenue rose 103 percent to $54.9 billion.",
+        "The company's infrastructure unit grew 198 percent to $42 billion in revenue. AI-optimised server revenue rose 291 percent to $22 billion. Dell also said customers are shifting from AI that answers questions to agentic AI, where systems take actions, and that this is creating demand for more servers, storage and networking.",
+        "Dell took $60.2 billion in AI server orders in the quarter and ended with a record backlog of $132.3 billion. The company said demand is already ahead of supply and it expects the gap to widen next calendar year. Most enterprise customers are still in the proof-of-concept phase, which suggests demand has not peaked."
+      ],
+      "why": "The data shows spending on infrastructure for AI that acts, not just chats, has become the main driver for one of the largest enterprise hardware makers. Physical AI and robot learning depend on the same compute buildout, so the supply gap could affect when and where training and inference capacity is available.",
+      "hard": "Most enterprise customers are still only testing AI, so this level of spending has not yet been proven across production use.",
+      "terms": [
+        {
+          "meaning": "A powerful computer built to run AI workloads, especially for training models or handling tasks like generating responses.",
+          "term": "AI server"
+        },
+        {
+          "meaning": "AI that does not just answer questions but carries out multi-step tasks, such as booking a delivery or controlling a workflow.",
+          "term": "Agentic AI"
+        },
+        {
+          "meaning": "The work of running a trained AI model on new inputs, for example answering prompts or making decisions, often on cheaper or general-purpose hardware.",
+          "term": "Inference"
+        },
+        {
+          "meaning": "A measure of fulfilled and expected demand: booked orders that have not yet been delivered, showing future revenue pressure.",
+          "term": "Backlog"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "AI infrastructure",
+          "Enterprise computing"
+        ],
+        "task": [
+          "Demand forecasting",
+          "Supply planning"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "Analytics India Magazine",
+          "url": "https://analyticsindiamag.com/ai-news/dell-lifts-fy27-outlook-for-third-time-as-ai-server-backlog-hits-132-billion"
+        }
+      ]
+    }
+  ],
+  "research": [
+    {
+      "headline": "A single human demo now trains robots to do varied household tasks",
+      "what": "Researchers built a system that takes just one filmed demonstration of a task, rebuilds a virtual version of that scene, and uses it to practice and improve robot skills automatically. Across eight tasks, it reached 97% average success on unseen layouts in simulation, and the final programs succeeded in 80% of 280 real-robot trials across four robots.",
+      "why": "This could make it dramatically cheaper to teach robots new manipulation skills, since one human example can replace large collections of demonstrations and let different robot bodies share the same verified practice world.",
+      "who": "Unknown",
+      "url": "https://arxiv.org/abs/2611.31894",
+      "source": "arXiv cs.RO",
+      "title": "RESET: One Demonstration, One Verified World, Self-Improved Skills Across Embodiments"
+    },
+    {
+      "headline": "A new testbed measures how well robots handle fabric",
+      "what": "Researchers released a public benchmark with six tasks, such as folding a T-shirt, using a contact-rich simulator and 10,000 ready-made cloth assets. The best robot control system reached 77% average success, but none exceeded 36% on folding a T-shirt from start to finish, and performance fell to 6–14% when the shirt started in the most crumpled positions.",
+      "why": "Cloth is common in homes and factories but still unusually hard for robots; a standard yardstick could speed up progress on laundry, bagging and similar tasks.",
+      "who": "University of Kentucky and collaborators, according to the author list",
+      "url": "https://arxiv.org/abs/2611.31577",
+      "source": "arXiv cs.RO",
+      "title": "FabricBench: A Standardized Policy Benchmark for Bimanual Fabric Manipulation with a Contact-Driven Deformable Simulator"
+    },
+    {
+      "headline": "Self-driving software learns to anticipate what a plan will cause",
+      "what": "Researchers paired a learned picture of how traffic scenes change with small programs that describe how the car itself moves under a candidate plan. The system scored 93.6 on one standard navigation test and 50.6 on a harder one, and improved other planners without extra training.",
+      "why": "Better prediction of the consequences of each possible move could make autonomous driving decisions more consistent and safer in complex traffic.",
+      "who": "Unknown",
+      "url": "https://arxiv.org/abs/2611.32483",
+      "source": "arXiv cs.RO",
+      "title": "CodeWAM: A Code World Action Model for End-to-End Autonomous Driving"
+    },
+    {
+      "headline": "Touch-sensing gloves help robots copy delicate two-handed tasks from people",
+      "what": "Researchers recorded human demonstrations with gloves that capture both video and touch data, then used those signals to teach robotic hands how to make contact with objects. Adding touch information during both scene reconstruction and skill learning produced higher success rates than relying on video alone.",
+      "why": "It offers a practical route to give robots dexterous, contact-heavy skills—such as opening containers or handling fragile items—by learning from human touch instead of painstaking manual programming.",
+      "who": "Unknown",
+      "url": "https://arxiv.org/abs/2611.32101",
+      "source": "arXiv cs.RO",
+      "title": "Ego2Real: Learning Bimanual Dexterous Manipulation from Egocentric Visuo-Tactile Demonstrations"
+    },
+    {
+      "headline": "A faster, more faithful simulator lets robots learn tasks by feel",
+      "what": "Researchers built a simulation framework that reproduces both the overall and detailed forces a robot feels when touching objects, while keeping calculations fast enough for large-scale practice. It cut force prediction errors from 2.31 and 1.85 newtons to 0.42 and 0.53 newtons, and ran nearly 2,500 simulated touch pipelines per second.",
+      "why": "Cheaper, more realistic touch simulation could help robots master grip and assembly skills in software before they ever touch a real object.",
+      "who": "Unknown",
+      "url": "https://arxiv.org/abs/2611.32476",
+      "source": "arXiv cs.RO",
+      "title": "ViTacLab: Physically Consistent Visuo-Tactile Simulation, Benchmarking, and Representation Learning for Robotic Manipulation"
+    }
+  ],
+  "india": [
+    {
+      "headline": "Nexent Capital launches $1 billion fund for AI and data centres",
+      "what": "Nexent Capital has launched a $1 billion fund focused on AI and data centre investments. The capital will be deployed through private equity, credit and public equity.",
+      "why": "It adds a large new pool of capital for the computing infrastructure that AI systems depend on in India.",
+      "who": "Nexent Capital",
+      "url": "https://yourstory.com/2026/11/nexent-capital-launches-1-billion-fund-focused-on-ai-data-centres-investments",
+      "source": "YourStory",
+      "title": "Nexent Capital launches $1B fund focused on AI & data centres investments"
+    },
+    {
+      "headline": "Lakshya Aerotech raises Rs 2.5 crore seed round for physical intelligence",
+      "what": "Lakshya Aerotech raised Rs 2.5 crore in seed funding from Santosh Kumar, promoter of Samkhyaa Group. The company works on physical intelligence, helping machines sense their surroundings, make decisions and act on their own.",
+      "why": "It backs early work on autonomous machines, a core robotics capability, and on building the technology locally.",
+      "who": "Lakshya Aerotech",
+      "url": "https://entrackr.com/snippets/lakshya-aerotech-raises-rs-25-cr-seed-round-from-samkhyaa-group-promoter-12840370",
+      "source": "Entrackr",
+      "title": "Lakshya Aerotech raises Rs 2.5 Cr seed round from Samkhyaa Group promoter"
+    },
+    {
+      "headline": "AidenAI raises $32 million to deploy AI agents in enterprises",
+      "what": "AidenAI, founded by former Infosys executive Srinivas Kamadi, raised $32 million in a Series A round led by A91 Partners. The startup, which has a large presence in India, helps businesses build and run AI agents inside their existing software systems.",
+      "why": "It signals growing investor backing for enterprise AI adoption and for India-based engineering talent building agentic AI tools.",
+      "who": "AidenAI",
+      "url": "https://analyticsindiamag.com/ai-news/aidenai-raises-32-million-in-series-a-funding-led-by-a91-partners",
+      "source": "Analytics India Magazine",
+      "title": "Ex-Infosys Exec's Enterprise AI Startup Bags $32 Mn for Agentic Deployment"
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "Robotics",
+      "headline": "How DARPA Challenged Teams to Bring Robots Into Disaster Triage",
+      "url": "https://spectrum.ieee.org/darpa-triage-challenge-final-robots",
+      "source": "IEEE Spectrum Robotics"
+    },
+    {
+      "kicker": "AI",
+      "headline": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
+      "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+      "source": "TechCrunch AI"
+    },
+    {
+      "kicker": "AI",
+      "headline": "AI data centers are becoming harder to build, and neoclouds are feeling it",
+      "url": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it/",
+      "source": "TechCrunch AI"
+    },
+    {
+      "kicker": "Robotics",
+      "headline": "NTU says this seed-sized robot packs five surgical tools into 4.4 millimetres",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWnhBYmNRZmJLX3UtbnNqLWRhSTZyRUdxSWoxZkx4M2dsOVVFNnZTRUdYRHpjaTZ1SkNXQlg3S3NIMnM0VTJEZ3pQTnpGVDZ6UXZfZ3hycFZ2empjdjFsUGN2M0NlTXE3cXk5OFJmM1FCU3hDNDBDRzBtOWsyRzFIM0dwLW14eXZZZXpRekdYREpwSmQ3bTU5Nk5zajk4QUM1UVFwbENSTXBmYXVYSV9MQnVaaTlXcDdsNVY4?oc=5",
+      "source": "Interesting Engineering"
+    },
+    {
+      "kicker": "Robotics",
+      "headline": "How Vention is cutting factory programming from weeks to minutes",
+      "url": "https://www.therobotreport.com/how-vention-is-cutting-factory-programming-from-weeks-to-minutes/",
+      "source": "The Robot Report"
+    },
+    {
+      "kicker": "AI",
+      "headline": "Jensen Huang broke Nvidia’s code of conduct, and his employees may not forget it",
+      "url": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
+      "source": "TechCrunch AI"
+    },
+    {
+      "kicker": "AI",
+      "headline": "Ex-xAI Team Has Launched a New Startup to Do the Impossible—Predict the Future",
+      "url": "https://analyticsindiamag.com/ai-news/can-ai-predict-the-future-former-xai-team-build-ai-time-machine-in-hopes-of-just-that",
+      "source": "Analytics India Magazine"
+    },
+    {
+      "kicker": "Robotics",
+      "headline": "JPMorgan Humanoid Robot Research Report: Raises Unitree Robotics Price Target to RMB 1,060, Upgrades UBTECH Robotics to…",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPam05YVNJekQxT09lVTJJY2VRMERxV3BPcGNFbUNCUjlGMEwyY2s3RmtjM1RDVHVOUWt4eTNhb3pPZDF6aHFRcnI1Y0Q5Wi1hTjNIRDZoWVVxaC1jZXgxanpGUE53Yk9JbkpHTFJUZm15SThBYjlEV3ZsT3BrSi1mdWhWRlpnVW11YWtEQUdpM0VPaW9NYWlSenBtaFoxX0g5Y0NWNWZlbzQ3N1NicloyWldkT0I?oc=5",
+      "source": "深潮TechFlow"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 0,
+        "sector": "ai",
+        "company": "Arife",
+        "what": "mRNA cancer startup co-founded by BioNTech founders",
+        "round": "Funding",
+        "amount_usd_m": 1000,
+        "amount_text": "$1B",
+        "lead": "Plural",
+        "india": false,
+        "url": "https://techfundingnews.com/report-biontech-founders-in-talks-to-raise-1b-for-arife-a-new-mrna-cancer-startup-led-by-plural/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 30,
+        "sector": "ai",
+        "company": "Payhawk",
+        "what": "AI-era finance operating system",
+        "round": "Series C",
+        "amount_usd_m": 280,
+        "amount_text": "$280M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNd0Jjcm9uV3R0Z1JuZUNBMUNGcXpUeFhUMGpQMU9LX2dORHZrZUdVenNjelViLWxzT09FZkg5MmpMSHR3STRJQUtUWWFHRk9GMGg4YV9vS1ZidlRQVFpIdkxZSmp5VUVnOUc5UGptRXNZbGJZQUtxejEyaHh4YnZwSEp3VzVOdURCajk3YVNFbjExUzY4VWZkTFJwU25uUW5za0VEVjItSHhvdVRwWjdsaV9BellVRS1sT0dUZU5JbHd6Mjdr?oc=5",
+        "source": "AI Insider"
+      },
+      {
+        "i": 16,
+        "sector": "ai",
+        "company": "Zipher",
+        "what": "Enterprise data infrastructure automation",
+        "round": "Funding",
+        "amount_usd_m": 53,
+        "amount_text": "$53M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9WSG4td0R6WlB1YnA0MHFhU2hkY21HajVCazVySzFMci1EMWliSnNQdGdCSWJsWGVqYkRGZ1hWem5TMnplSENqUk1xRUNBR1d3eUwwcy0za3F3Y21nNmkza1h3?oc=5",
+        "source": "Ynetnews"
+      },
+      {
+        "i": 10,
+        "sector": "ai",
+        "company": "Capable",
+        "what": "AI peptide drug discovery automation",
+        "round": "Seed",
+        "amount_usd_m": 38,
+        "amount_text": "$38M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9VWEVXa1VyZU8xQzBYLXlYR1ptRkZTSkQ0SUJHSDNXZEFLa0p2OHNGeXB5NlhZUFdRYmhQQ3AwSUJMLW1yNjcwTDh4TjhQd0J3NVlZ?oc=5",
+        "source": "Wowtale"
+      },
+      {
+        "i": 26,
+        "sector": "deeptech",
+        "company": "Ardee Engineering",
+        "what": "Industrial engineering manufacturing",
+        "round": "Funding",
+        "amount_usd_m": 26.7,
+        "amount_text": "₹225 Cr ($26.7M)",
+        "lead": "Piramal Alternatives",
+        "india": true,
+        "url": "https://yourstory.com/2026/11/piramal-alternatives-invests-rs-225-cr-in-ardee-engineering",
+        "source": "YourStory"
+      },
+      {
+        "i": 7,
+        "sector": "robotics",
+        "company": "Lute",
+        "what": "Physical AI",
+        "round": "Pre-Seed and Seed",
+        "amount_usd_m": 20,
+        "amount_text": "$20M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbmUtM2xCNVhDYnptWkliZWhwdUNIZGQtbTF4cW1PLWlXcENYUjBSRWh2Mjg4b2ozZWJBa24zLVh1Z0JreHpxSDNwMGFWT3B5ZklKUXZkSVNwbU5rUXRiTWN3VTlwX24xYzVVRW15cmxWc21kcndOeTl0bDNZVWU0WEVsN3RJQV9zRGgw?oc=5",
+        "source": "Unite.AI"
+      },
+      {
+        "i": 13,
+        "sector": "ai",
+        "company": "Leash Biosciences",
+        "what": "Scientific AI training environments",
+        "round": "Funding",
+        "amount_usd_m": 11,
+        "amount_text": "$11M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQalhWSnpiNExfMnQ5RkNnY1pWRXE1SUg3VkQ1bGFrNkw4ZGp2czJ4VW1BT1RvWWZ0aGtRNXpMZkdfX2lkVDh1QWdqelVBbmV6RTVMT0dwNXZCWTN1VW90SjkxdVZIOGxNcWxoNDFtd3pnOFlIRWNNekozcmVzNmxwM3dJcUlzSmIyd2JDSm01NFowQjdWZ0lwN3pnUU1Dekw5N1lpTC1ZUWJVaE41S3FyeUFEM0NKdFc3Q3JQVkY5bXY?oc=5",
+        "source": "AI Insider"
+      },
+      {
+        "i": 23,
+        "sector": "robotics",
+        "company": "Botsync",
+        "what": "Robotics",
+        "round": "Funding",
+        "amount_usd_m": 11,
+        "amount_text": "$11M",
+        "lead": "IvyCap Ventures",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOU05OSXJsUlVMdE9DbVRfTkQ4Y2dEVzFBX2NmNmI3dXJxZDdlT05LMktHUFV3S3ZoUU5MaTdWWGNzbUdkYmwwdXc0aHd4ekZHa3J1VzVINnBmbFZVblliTGo3VWVYNS1xRTJtbkpLQ2ZqLVhpZTEyeGNYLWhXN2dzY1hlVnBMYlhMZmxLVFhXNXJIQ2NnNndNeFlzejF3elZuaVR2MGotNXk4R1k4Ri14X3pIM0Viczlob0d5cFRua0F3LUFUclE?oc=5",
+        "source": "USA Today"
+      },
+      {
+        "i": 14,
+        "sector": "ai",
+        "company": "Unsiloed AI",
+        "what": "Document parsing for AI agents",
+        "round": "Seed",
+        "amount_usd_m": 7.5,
+        "amount_text": "$7.5M",
+        "lead": "Felicis",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPQnplRG9acVBMM1BxYzMwbTdfckNzUWJQUTlsQ1Q2TUhlOHgxcVVtempNM3lISF8zeTBEUldyUTRHa1N0N2JzZnVsU0pNbE9vYTlQbC16SEN2Yno4WXZfaUpjeENndUt0SF9iNktnNWxlQ0xoV3hDQ1g4Y3RXX0ZLNl91eFQwMFNwTVBRVHpBc3hOWDd0TFJ4Njk3T0k1TlN1c2haRXV6Z1JuUVhnTDRPTGUtaWdzbVg5RTc2Y0NVTXlDYjcwZWNCZnBvTGtTd2dqRDJzZjY4aw?oc=5",
+        "source": "AI Insider"
+      },
+      {
+        "i": 8,
+        "sector": "robotics",
+        "company": "Azalea Robotics",
+        "what": "Airport ramp robots",
+        "round": "Funding",
+        "amount_usd_m": 3.5,
+        "amount_text": "$3.5M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQS1oxZG55MkRTeHlWTTY5WGQ4UE05QTBjNk9iTklPdDNKdUhId3h0cTR4TzRTVXZfYjNxdkppM253T1RERmUyWU9aeld0UjYwVHJCMkNucWZfZ2poTVRHMFZlLU1leER5cTlFdXZFX1ZtMzhLbjJYS21oRTdVUjVpNEl6QWV0X2JfbHZWY2lzWGxnT09TVmo5aDhlYw?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 18,
+        "sector": "ai",
+        "company": "Fault Line",
+        "what": "Clinical AI",
+        "round": "Pre-Seed",
+        "amount_usd_m": 2.9,
+        "amount_text": "£2.3M ($2.9M)",
+        "lead": "Concept Ventures and Frontline Ventures",
+        "india": false,
+        "url": "https://techfundingnews.com/fault-line-raises-2-3m-clinical-ai-safety-benchmarks/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 36,
+        "sector": "ai",
+        "company": "elbic",
+        "what": "Sovereign voice AI for calls",
+        "round": "Pre-Seed",
+        "amount_usd_m": 2.9,
+        "amount_text": "€2.7M ($2.9M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxObUJnRkd2Q0dCTXY2Q1NMOWhmUGtqcVNZOFJxVWtrRVlLMmNCV0NySEx6WndVbVJUTnpRTk1Gbk9udUM5LV94d1Z2bHRHc3pNU0lxVlgzUmI5S3pVR1pYNE5jWUpCUlllNng1U0lRcEJDdGVfQ3ZzQXFzZHBSd2h1RWU3bmhDYWNXUi1BQjRJUGNmbkhfcWFDc1ZVMEpBMFYyUlhFUlphRzNuUk85amVyTFpoSTh1Q29vdktKcFg4anYzQlR1QS1kck43cjBocWFYaW9EUkxhQXF3T1E?oc=5",
+        "source": "Google News: AI deals"
+      },
+      {
+        "i": 4,
+        "sector": "robotics",
+        "company": "Aqura Systems",
+        "what": "AI fish farm robots",
+        "round": "Funding",
+        "amount_usd_m": 2.7,
+        "amount_text": "£2.1M ($2.7M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQNHhNQ25zQk9OeFFfQnJUSHU4QmhSeWVLUXdPYjFmcFJJVHBwaWhwMkV4OTAxcFhjbWRLbzRqbWlURWFvVVN3ejdsdHZ3WTJZalgtbFdyQ1o1Z055R3dKbFk4VGc4S3NFTlltRzUxMVI3VGJqTkE3UFJEeEcyZVNRcUFMQlBrWnItT2M0c1Y4RVZKX1BDV1haMVlZaWctczRzTWdha3NnUlF1TDgyc3FNOVdQdUtBRkpldjdKZG5nbjV0WlZFbmxuYnMtRkR3LXN2SHc?oc=5",
+        "source": "Aberdeen & Grampian Chamber of Commerce"
+      },
+      {
+        "i": 19,
+        "sector": "ai",
+        "company": "Sequent",
+        "what": "AI-driven software safety verification",
+        "round": "Funding",
+        "amount_usd_m": 2.2,
+        "amount_text": "$2.2M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/ex-deepmind-researchers-sequent-raises-2-2m-to-prove-software-safe-with-ai-found-maths/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 35,
+        "sector": "ai",
+        "company": "Outcome1.AI",
+        "what": "AI digital employees",
+        "round": "Pre-Seed",
+        "amount_usd_m": 2.2,
+        "amount_text": "€2.05M ($2.2M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbWlkSlFneXBRQmE0aWVQSXAwNDJJYkhNZE1PeEJoSXkxeHBMVXZVYzhLU3R4MUYzZ0doNXVlZHNGRWxTWFZFSzdybVJuUHY1TFF4YkJnaXFRYUdoLUJzNG1vMFVnRE5WVk94WGkxX1BVcHJlNmNiVm5Va2xTbTFFUk5MUEVmdXB5bV9FNlF0UGo1ZGVONnZLOWFNUTA2b1VydTNoTnpzQQ?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 21,
+        "sector": "robotics",
+        "company": "Eight Knot",
+        "what": "Autonomous ships",
+        "round": "Series A",
+        "amount_usd_m": 1.07,
+        "amount_text": "$1.07M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPU3RjcnRRbHdpSGRrWGszLXd1VFctZm5Cbzd2QmlRdnExbFhKUGlQMHlUMHRzUGxYOXMtWHhSdHlDb28yMERkZXBsNm5fRHlkSk15UmplQkx1SjNoQ2RzWnhpcDJncVBCUUJyOEE4Ynhvd0c4MklKVElOVWxHay1YX0pQbW96enN1MDFxbVFkYVg5M2NrRk5ScTA3RmxabjlEWjdXcA?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 43,
+        "sector": "deeptech",
+        "company": "NoorNation",
+        "what": "Solar-water technology",
+        "round": "Seed",
+        "amount_usd_m": 1.05,
+        "amount_text": "$1.05M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE10ei1KSE1ZbXFyYmYtRUFNbUdDTWZZeTFSa1h3WUhLY1Z3MEhLa1k4YkE3aGFra3h3Ni1UVU1jQWpxMHVsbWlLaXo5RUpXcU5ZdU5LUkNJSk9YVlFuSldESmJFeE1DY09ieFhrNE5BZG9HX042d2Vn?oc=5",
+        "source": "Condia"
+      },
+      {
+        "i": 29,
+        "sector": "robotics",
+        "company": "FF EAI Robotics",
+        "what": "Robotics",
+        "round": "PIPE",
+        "amount_usd_m": 0.3,
+        "amount_text": "$300K of planned $10M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQRTcwbnR2b1I2NEhfZEk2czBiUTlvZE55ZVg2VVVTcFYwTGc2X3Y0QThGZzBPQnJYd3VySnctYlNBa1ZkVk13WG16N3lTQWRIN0QyZzV2SDRjaDM5aF9UNktYclVuZWlvXzVoX0otMzVEZ0dMeTFhczZXcFcyQXpyYmpWMmpDZjRkRzdoQmF1VnFCc2ExVEZOM251QQ?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 11,
+        "sector": "deeptech",
+        "company": "Lakshya Aerotech",
+        "what": "Aerospace R&D and manufacturing",
+        "round": "Seed",
+        "amount_usd_m": 0.28,
+        "amount_text": "₹2.5 Cr ($0.28M)",
+        "lead": "Santosh Kumar (Samkhyaa Group)",
+        "india": true,
+        "url": "https://entrackr.com/snippets/lakshya-aerotech-raises-rs-25-cr-seed-round-from-samkhyaa-group-promoter-12840370",
+        "source": "Entrackr"
+      },
+      {
+        "i": 6,
+        "sector": "robotics",
+        "company": "Black AI",
+        "what": "Full-stack humanoid robots",
+        "round": "Seed",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Incubate Fund",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPck5DZmFKRUlTTEg4NGR2YzVWYlRoQnY2TnE0ZW9uRmNzblVRYmRvdkdGbWRmc0NON2E5ZnJueUdLRGRta2VkN2c0eTBQaTEzM2VQaU9mdTUweUViMGN2RXVWOWVYMzJUc3hNblotV2Z4YlZwc1F4cGpCX1k2REhnbEY1UW5vaENRTmQxVDBXVXRMZHpsbmNNRG13YnRvbUhZWTNGd1RSbzBudXpZS2R2RnZn?oc=5",
+        "source": "AI Insider"
+      },
+      {
+        "i": 15,
+        "sector": "ai",
+        "company": "NCredible",
+        "what": "Food-factory AI startup",
+        "round": "Seed",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Kakao Ventures",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOR3JvMzhGcTBSRmc5aGVUMUVDUkIxZWJTYW9QWEhQZHBBYUd4UF9LaUE2MS1XYWJGY3lTZEo1WHIwc2xHWU9qTmYwLWtXeVJaY1pLOFBSTWUtVFFCNTRKLTlhYnhralo5TWotVWZWazMxdEVLTW9rVXBaTlZIQUg2cW1NZHBLd0lVcVFwVlZUMDYzbGc3ZnVXaElYUENKUVk2eWpDSQ?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 25,
+        "sector": "deeptech",
+        "company": "Lenskart",
+        "what": "Eyewear retail (not AI/deeptech)",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Rs 920 Cr stake",
+        "lead": "Goldman Sachs, Societe Generale",
+        "india": true,
+        "url": "https://yourstory.com/2026/11/goldman-sachs-societe-generale-buy-rs-920-cr-stake-lenskart",
+        "source": "YourStory"
+      },
+      {
+        "i": 31,
+        "sector": "robotics",
+        "company": "Oversonic Robotics",
+        "what": "Robotics",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Angelini Technologies",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNOEEtUWN2Yjh6b0twNGtwa1JtZTRybjN5bVFnUGp5a1ZLdDlSa1B2eXFXN3dKQXA1czMxZ0FvOHBUX1hoQVhQaFNUb2N2Q0dzbWZpR2JOa3lkZG5pWWRCVGFnaVM4Rk40bEZmckk4eTFwbE1wLTUxRjdkVnhxQXVHS2tEVTBnd0VZTVU2MkN2aHp2dw?oc=5",
+        "source": "METissue"
+      },
+      {
+        "i": 33,
+        "sector": "ai",
+        "company": "ankerkern",
+        "what": "AI startup",
+        "round": "Pre-Seed",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Industrial group (unnamed)",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOcUVHYWFQdmdmZVc2SnJ1VmxULVZta2pmX0lSYXdaWHBrRGVqME5ZcjhFdFhPbHY3VjBrTE1peGZzZENySHVQWXFGVTlENHVZN0pWUWxHeG9rSU0wdzlWVkhMSWlEbVRoQ2Z2czJQSTFkYmpqZkU5R0NhcEFEalJXSUtYeDl0bllxQ2h3WjJjNjk0bHpwLVZiRGV2YUVxWGk5NHc?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 34,
+        "sector": "ai",
+        "company": "Tailwind",
+        "what": "InsurTech AI automation",
+        "round": "Acquisition",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Applied Systems",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5GRlRwWWNpcV9DNm02TEw0Tm1LLWpncVlTbGl1YVdKSkxORFdheFozYzZhSlFJUHpwdVRLVlhKV0paNWptVDh1V1Z2RE9yOGk4VE9VdnhSYTJYSGtueE9aTk9wcmRDN3MzSXBLams3N1dtVUxRWENEemRR?oc=5",
+        "source": "Beinsure"
+      }
+    ],
+    "totalUsdM": 1466
+  },
+  "playground": [
+    {
+      "headline": "Touching a spinner makes VR feel sticky or slippery",
+      "body": "Surf-Roll is a small handheld device with a wheel that spins under your fingertip while you explore virtual scenes. If the wheel moves faster than your finger expects, it reads as slippery oil; slower, it feels like sticky honey. The illusion comes entirely from mismatched movement, not special materials or vibration.",
+      "why": "It shows a cheap mechanical trick can fool your sense of touch, opening up richer VR textures without exotic hardware.",
+      "maker": "Researchers (source does not name the team)",
+      "url": "https://hackaday.com/2026/11/25/touching-a-spinner-makes-things-feel-sticky-or-slippery-in-vr/",
+      "source": "Hackaday"
+    },
+    {
+      "headline": "A wristwatch that draws time in sand",
+      "body": "This watch shrinks a kinetic sand table into a wearable. A hidden magnetic mechanism drags a tiny ball across a sand bed to trace the time, then erases and redraws it. The maker pulled off the same effect in a package small enough for a wrist.",
+      "why": "It proves kinetic art mechanisms can be miniaturized enough to live on your arm.",
+      "maker": "Unknown",
+      "url": "https://www.hackster.io/news/this-wristwatch-displays-the-time-in-sand-4649952c06c3",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "3D-printed hand helps robots handle chopsticks and screwdrivers",
+      "body": "A custom robotic hand takes on tasks that still flummox many humanoid robots, like using chopsticks or turning a screwdriver. The design packs mechanical complexity into a compact, lower-cost build by leaning on 3D-printed parts. It gives machines a more human range of grip without the usual price tag.",
+      "why": "It suggests dexterous robot hands may stop being a luxury and start showing up in more projects.",
+      "maker": "Unknown",
+      "url": "https://www.hackster.io/news/a-helping-hand-from-a-3d-printer-f37e617413a2",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "A machine winds brushless motor stators for you",
+      "body": "This contraption automates the fiddly job of winding wire onto motor stators, the part that usually demands patient hand work. It guides the wire around complex stator cores more consistently than a person can manage. That takes a serious chore out of building custom electric motors.",
+      "why": "It points to a future where small-batch motor building is approachable for hobbyists and small teams.",
+      "maker": "Unknown",
+      "url": "https://www.hackster.io/news/this-machine-winds-stators-for-brushless-motors-bace5d480ba3",
+      "source": "Hackster.io"
+    }
+  ],
+  "think": {
+    "collision": {
+      "a": {
+        "kind": "brief",
+        "n": 1,
+        "label": "DARPA pushes robots into disaster triage"
+      },
+      "b": {
+        "kind": "brief",
+        "n": 5,
+        "label": "Vention cuts factory robot programming to minutes"
+      },
+      "headline": "Record Indian emergency medical technicians doing first-response triage, step by step, as a dataset for rescue robots that need quick setup.",
+      "body": "DARPA, the United States military research agency, is pushing teams to build robots that can judge who is hurt worst at a disaster scene. Vention shows buyers want robots that can be taught new jobs in minutes instead of weeks, which needs short, clearly labelled examples of each step. A dataset of Indian ambulance and hospital emergency staff, filmed with chest-mounted stereo cameras during drills and real intake, broken into labelled steps such as approach, check breathing, check bleeding and tag, would give rescue robot makers ready-made teaching material.",
+      "who_pays": "Teams building disaster and field-medicine robots, along with defence and civil-protection research groups that fund them.",
+      "data_needed": "Consented chest-camera stereo video from mass-casualty drills and emergency intake, with step labels and the triage category each person was given.",
+      "why_fail": "Patient privacy rules and hospital consent processes may make real emergency footage nearly impossible to collect, leaving only staged drills that buyers value less."
+    },
+    "contrarian": {
+      "story_n": 2,
+      "consensus": "Dell's record backlog of artificial intelligence servers proves that demand for AI computing will keep outrunning supply for years.",
+      "against": [
+        "A backlog is a list of orders, not money already paid. Orders from new cloud firms can be cut or delayed if their financing tightens, and Brief 3 says these firms are already finding data centres harder to build.",
+        "Power, land and grid hookups, not servers, may become the real limit. If buildings cannot be powered, servers sit in warehouses and the order rush ends quickly.",
+        "Much of the spending goes to big companies training chatbot models. Robot learning needs a different mix: smaller compute budgets but far more real-world data, so a server shortage may matter less to robotics than the headlines suggest."
+      ],
+      "bets_otherwise": "Smaller cloud firms that are slowing their expansion, along with investors who are short-selling hardware stocks, are betting that this demand will cool.",
+      "settle_it": "Whether Dell's backlog turns into shipped, paid revenue over the next two or three quarters without big order cancellations."
+    }
+  },
+  "cost": {
+    "usd": 0.0542,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 5,
+        "inTokens": 36094,
+        "outTokens": 8928,
+        "cost": 0.0081,
+        "models": {
+          "anthropic/claude-haiku-5.5": 5
+        }
+      },
+      "write": {
+        "calls": 2,
+        "inTokens": 2590,
+        "outTokens": 1192,
+        "cost": 0.0071,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 2
+        }
+      },
+      "india": {
+        "calls": 1,
+        "inTokens": 1968,
+        "outTokens": 369,
+        "cost": 0.0021,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "research": {
+        "calls": 1,
+        "inTokens": 5340,
+        "outTokens": 732,
+        "cost": 0.0047,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 4120,
+        "outTokens": 2844,
+        "cost": 0.0018,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 2521,
+        "outTokens": 524,
+        "cost": 0.003,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "think": {
+        "calls": 1,
+        "inTokens": 2741,
+        "outTokens": 824,
+        "cost": 0.0274,
+        "models": {
+          "anthropic/claude-opus-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 256,
+    "unique": 211,
+    "feeds": 29,
+    "failedFeeds": [
+      "Import AI",
+      "r/robotics",
+      "r/LocalLLaMA",
+      "Show HN"
+    ]
+  },
+  "generatedAt": "2026-11-26T00:16:39.948Z"
+}

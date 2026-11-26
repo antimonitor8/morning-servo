@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-11-26",
+    "weekday": "Thursday",
+    "number": 29,
+    "lead": "FCC approves SpaceX plan for up to 1 million AI chip satellites",
+    "stories": 2,
+    "readMinutes": 8,
+    "costUsd": 0.0542
+  },
+  {
     "date": "2026-11-25",
     "weekday": "Wednesday",
     "number": 28,
