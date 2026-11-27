@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-11-27",
+    "weekday": "Friday",
+    "number": 30,
+    "lead": "Nvidia pauses server shipments to four Southeast Asian countries",
+    "stories": 2,
+    "readMinutes": 6,
+    "costUsd": 0.0501
+  },
+  {
     "date": "2026-11-26",
     "weekday": "Thursday",
     "number": 29,

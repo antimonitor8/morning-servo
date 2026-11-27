@@ -1,0 +1,622 @@
+{
+  "date": "2026-11-27",
+  "weekday": "Friday",
+  "sunday": false,
+  "number": 30,
+  "paper": "The Morning Servo",
+  "readMinutes": 6,
+  "stories": [
+    {
+      "id": "94305b427e",
+      "section": "ai",
+      "kicker": "AI",
+      "headline": "Nvidia pauses server shipments to four Southeast Asian countries",
+      "takeaway": "Nvidia told manufacturing partners to pause server shipments to Malaysia, Singapore, Thailand and Indonesia. The U.S. is trying to stop Chinese companies getting AI chips through data centers in those countries.",
+      "deck": "The pause affects shipments made by partners including Dell and Super Micro.",
+      "body": [
+        "Nvidia has told manufacturing partners, including Dell and Super Micro, to pause server shipments to Malaysia, Singapore, Thailand and Indonesia for an unspecified period. The company is assessing whether its regional partners are meeting U.S. export requirements.",
+        "Chinese companies have been tapping Nvidia chips remotely from data centers in those countries. The U.S. Commerce Department closed that loophole earlier this month. The Institute for Progress estimates such remote data centers supply about 24% of China's AI computing power."
+      ],
+      "why": "This shows the U.S. tightening chip controls beyond direct sales to China, which will affect where AI computing capacity can be built. Robotics and AI training data companies that rely on cloud GPU access should watch whether these restrictions spread to other regions.",
+      "hard": "The pause is for an unspecified period, and it is unclear how Nvidia will decide which regional partners are compliant with U.S. rules.",
+      "terms": [
+        {
+          "term": "Server",
+          "meaning": "A powerful computer that stores data and runs software for other computers to use over a network."
+        },
+        {
+          "term": "AI chip",
+          "meaning": "A specialized computer processor designed to handle the heavy calculations needed for artificial intelligence work."
+        },
+        {
+          "term": "Data center",
+          "meaning": "A large facility full of servers that provides computing power to customers, often remotely."
+        },
+        {
+          "term": "Export requirements",
+          "meaning": "Rules set by a government about what products can be sold or shipped to other countries."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Semiconductors",
+          "AI infrastructure"
+        ],
+        "task": [
+          "Export controls",
+          "Supply chain compliance"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/"
+        }
+      ]
+    },
+    {
+      "id": "f1c36cafce",
+      "section": "ai",
+      "kicker": "AI",
+      "headline": "SpaceX wins US approval for orbital AI data centre satellites",
+      "takeaway": "The US communications regulator has let SpaceX plan up to one million satellites that would run AI computing in orbit on solar power. This is an early, unbuilt plan that could shift some AI energy demand off Earth but may never reach full scale.",
+      "deck": "SpaceX must start launching by 2033 and have at least 100,000 satellites in orbit by 2035.",
+      "body": [
+        "The US Federal Communications Commission has approved SpaceX's Starmind constellation, which would place AI data centres in orbit. The approval covers up to one million satellites. The company says the satellites would run AI computing tasks in space and send results back to Earth.",
+        "SpaceX argues that near-constant solar power and passive cooling in space would cut the energy cost of AI computing compared with ground data centres. The approval sets deadlines: deployment must start by November 2033, with at least 100,000 satellites in orbit by November 2035 and half the full constellation by November 2038.",
+        "Competing satellite operators including Amazon and Viasat objected, with Amazon calling the plan an ambition rather than a concrete schedule. The American Astronomical Society warned about interference with ground telescopes. The FCC said environmental and astronomy concerns fell outside its authority. SpaceX has not committed to launching the full one million satellites."
+      ],
+      "why": "If orbital computing matures, it would move part of AI processing off Earth, changing where and how training and inference for models are run. That could shift the economics of AI infrastructure away from conventional data centres and toward space-based providers.",
+      "hard": "The approval is not a deployment commitment, and Amazon has argued that building the full one million satellites would take centuries.",
+      "terms": [
+        {
+          "meaning": "A group of thousands of small satellites working together as one network for communication or computing in orbit.",
+          "term": "constellation"
+        },
+        {
+          "meaning": "A large building full of computers that run internet and AI services, which uses a lot of electricity and gives off heat.",
+          "term": "data centre"
+        },
+        {
+          "meaning": "The computing work needed to train AI models or run them, such as processing images, text or robot commands.",
+          "term": "AI workloads"
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Space infrastructure",
+          "Data centres"
+        ],
+        "task": [
+          "AI computing in orbit",
+          "Satellite deployment"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "Analytics India Magazine",
+          "url": "https://analyticsindiamag.com/ai-news/spacex-gets-us-nod-to-deploy-1-million-satellites-for-orbital-ai-data-centres"
+        }
+      ]
+    }
+  ],
+  "research": [
+    {
+      "headline": "Robots can learn pick-and-place from entirely synthetic demonstration videos",
+      "what": "Researchers generated 340 artificial demonstration videos for robot training, then used software to recover the robot movements shown in each video. After quality checks, 300 clips were accepted. A robot trained only on these synthetic clips succeeded at 16 of 20 real-world pick-and-place attempts on one packaging task.",
+      "why": "Collecting real robot demonstrations is expensive and slow, so generating them from video could make robot training much cheaper and easier to scale to new tasks.",
+      "who": "Unknown",
+      "url": "https://arxiv.org/abs/2611.34287",
+      "source": "arXiv cs.RO",
+      "title": "DataForgeVLA: Fully Synthetic Manipulation Demonstrations for Vision-Language-Action Training"
+    },
+    {
+      "headline": "A robot can now preview potential dangers before acting",
+      "what": "Researchers built a system that imagines the likely visual result of a robot's next movement and scores how risky it is. If the risk is too high, the robot backs off. In tests, this cut hazardous trial outcomes from 27 percent to 10.8 percent without reducing the robot's success at tasks.",
+      "why": "It could make robots safer in real workplaces by catching unsafe movements before they happen rather than after something goes wrong.",
+      "who": "Unknown",
+      "url": "https://arxiv.org/abs/2611.34124",
+      "source": "arXiv cs.RO",
+      "title": "WAtcher: Watching Ahead for Safe Robotic Manipulation with Efficient World-Action Models"
+    },
+    {
+      "headline": "One robot brain can now work across many different robot bodies",
+      "what": "Researchers built a robot control system that works across many types of robot arms and hands by giving them a shared way of describing how their joints and cameras are arranged. Trained on more than 10,000 hours of robot and human movement data, it performed real tasks without extra training on several robot types and learned new bodies with only a small number of demonstrations.",
+      "why": "This could let companies reuse one robot control system across different machines instead of training a new one from scratch for each model, cutting cost and setup time.",
+      "who": "Unknown",
+      "url": "https://arxiv.org/abs/2611.34449",
+      "source": "arXiv cs.RO",
+      "title": "HoloBrain-0.5 Technical Report"
+    },
+    {
+      "headline": "A humanoid robot can shuffle heavy boxes without lifting them",
+      "what": "Researchers trained a humanoid robot to shift a heavy box forward by pivoting it on its corners, the way people move furniture too heavy to carry. In five real-world trials, the robot moved the box more than one meter each time before a safety stop.",
+      "why": "This could let humanoid robots move heavy loads in warehouses or homes without needing the strength to lift them, expanding what they can handle safely.",
+      "who": "Unknown",
+      "url": "https://arxiv.org/abs/2611.33828",
+      "source": "arXiv cs.RO",
+      "title": "Learning a Whole-Body Pivot-Walking Gait for Heavy-Box Transport with a Humanoid"
+    }
+  ],
+  "india": [
+    {
+      "headline": "Green Aero raises $14 million for jet engines and combat drones",
+      "what": "Green Aero raised $14 million in a Series A round led by Crane Ventures. The Bengaluru startup will use the money over 12 to 18 months to expand engine testing, hire engineers and push its transonic and supersonic drone platforms toward flight qualification.",
+      "why": "It shows investors backing indigenous development of jet propulsion and autonomous combat aircraft, a part of India's defence manufacturing push that relies on specialist AI and robotics engineering.",
+      "who": "Green Aero",
+      "url": "https://inc42.com/buzz/green-aero-raises-14-mn-to-build-jet-engines-combat-drones/",
+      "source": "Inc42",
+      "title": "Green Aero Raises $14 Mn To Build Jet Engines, Combat Drones"
+    },
+    {
+      "headline": "Chariot AI unveils India-built language and speech models under IndiaAI Mission",
+      "what": "Chariot AI launched Chariot-1, an 11 billion parameter large language model, along with a text-to-speech model covering 10 Indian languages. Its innovations include a shared alphabet for 12 Indian scripts and a training method that lets three model sizes be trained in one run.",
+      "why": "It is one of the first concrete model releases from the government-backed IndiaAI Mission, and the focus on Indian scripts and on-device deployment could lower the cost of building local language AI apps.",
+      "who": "Chariot AI",
+      "url": "https://inc42.com/buzz/indiaai-mission-backed-chariot-ai-unveils-11-bn-parameter-llm-speech-models/",
+      "source": "Inc42",
+      "title": "IndiaAI Mission-Backed Chariot AI Unveils 11 Bn Parameter LLM, Speech Models"
+    },
+    {
+      "headline": "BharatGen launches Patram 1.5 for enterprise document processing",
+      "what": "BharatGen released Patram 1.5, a vision-language model that reads documents as images to handle forms, invoices and bank statements. The model is available under an Apache 2.0 licence and is already running in live data centres in banking, financial services and government, though clients were not named.",
+      "why": "It targets a large, practical market in India for automating document-heavy work, and its explicit ability to say when information is unclear could reduce costly errors in regulated industries.",
+      "who": "BharatGen",
+      "url": "https://inc42.com/buzz/bharatgen-launches-patram-1-5-to-target-enterprise-document-processing/",
+      "source": "Inc42",
+      "title": "BharatGen Launches Patram 1.5 To Target Enterprise Document Processing"
+    },
+    {
+      "headline": "XEBO.ai raises $10.5 million from Emirates Growth Fund",
+      "what": "XEBO.ai, a startup that uses AI to process survey and feedback data, raised $10.5 million from the Emirates Growth Fund. The company plans to use the capital to scale its product and expand its customer base.",
+      "why": "The round signals continued investor interest in Indian AI software companies, particularly those selling to businesses rather than consumers.",
+      "who": "XEBO.ai",
+      "url": "https://yourstory.com/2026/11/xeboai-bags-10-million-funding-from-emirates-growth-fund",
+      "source": "YourStory",
+      "title": "XEBO.ai bags $10.5M funding from Emirates Growth Fund"
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "AI",
+      "headline": "EU proposes €50B Sovereign Tech Equity Fund to close Europe’s quantum funding gap with US and China",
+      "url": "https://techfundingnews.com/eu-proposes-e50b-sovereign-tech-equity-fund-to-close-europes-quantum-funding-gap-with-us-and-china/",
+      "source": "Tech Funding News"
+    },
+    {
+      "kicker": "AI",
+      "headline": "Private links and login details exposed? Dragos investigation raises questions over MiniMax's AI security",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxORmtzczJZZy1aQlY3cG43UnpYVEkwZWV2SWRBVmNKb3lfczdRdXhQZHRUQUZEOEcteklmOVZINExLRERCQk84ZHJfcUd5V0RxclM3NUdfa1M5aGFrT043NGp1aHFFSkFmMkhJeHlvc2dIVnNmMGo1N0FMQXlTM19wa0ZXbWdKamhlQnh2QWNJWkdUOGs2bGZjbEdsdC1tSWVhemxfeXYzVXVyTGVaVmo1a2lzaGsyRDhmSDlhamhtdFQwNmFxeTRTMTlRajVfSUg3NmtDdUl5d01WLXR5azFlTERB0gHnAUFVX3lxTE11VDl6all6RHo5Q0JBQlpmNnJ6TXRhMHpRdnMxZGx0bzdZSk14Mm02UE1WdEdmYXUwcjc0aGxXcVJaOUdnSk53Tzhyei1yUVFwSjF0Ym4zZ2lkcmRwRXNKRVcxQzBnTUlmQTlJc1lHYWlrQ1BibUctVlhzYldfT1EwVEJCQXNCRElNMTB5WDBfblhhd2dSRWZQUnZmeDhsQ0F4M1BnN2xzdkJpTXk5VHdPUkxodGZnR29NMV8wQVpMUU5nX0hRSWh6QVBuQVpEQ2pmUjhLMG80TVlQV0s1ZlZsNDl1Mi1Fbw?oc=5",
+      "source": "Firstpost"
+    },
+    {
+      "kicker": "AI",
+      "headline": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
+      "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+      "source": "TechCrunch AI"
+    },
+    {
+      "kicker": "AI",
+      "headline": "42 state AGs are trying to stop Character.AI from selling users’ chats",
+      "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
+      "source": "The Verge AI"
+    },
+    {
+      "kicker": "AI",
+      "headline": "Anthropic CEO Accuses Rivals Of Using ‘Human Control’ Slogans Without Tackling AI Risks",
+      "url": "https://inc42.com/buzz/anthropic-ceo-accuses-rivals-of-using-human-control-slogans-without-tackling-ai-risks/",
+      "source": "Inc42"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 2,
+        "sector": "robotics",
+        "company": "UForce",
+        "what": "Ukrainian drone maker",
+        "round": "Funding",
+        "amount_usd_m": 700,
+        "amount_text": "$700M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRmU4dW5waVlVVlFhWF9PT0Zpbnpka1dQRkNyc1BtLUFSajg3dEtiRmVLTUxzSzQyMnhWaV9SWFRIYWt6dUlEX1p2S21UQmdpaFhBS19Od0Y2MEZvRnNrUjNvSlNNaTRtT1p6dGVkTmtMTVI2ZEZDcE1ROWFCcUM3NUtjTTdVOWp5aVlvTEZidGxyT3E5N2JsR3VIM3IwMDRtMmJuUVNVMUNNSlBteDVVTVZkN1NsYjhCN2ROc0Z3?oc=5",
+        "source": "The Ukrainian Weekly"
+      },
+      {
+        "i": 3,
+        "sector": "robotics",
+        "company": "Humble Robotics",
+        "what": "Cabless autonomous trucks",
+        "round": "Funding",
+        "amount_usd_m": 51,
+        "amount_text": "$51M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVXg3TmJhN1NGbGNTOWZ3MS0yQmplb1BVUmQtM2lOeW9wWldlMUZoM29UUG81eG9WTVNfYlI5X2d4a3draEpCZjdZaUd0QjAyVURvYURXSnU0amVmdUQybkRvT2ZSbGFEVmx3VkRUbXRXNlF1T3BBUkRsTmdGLW1UWTEtc1g3NWF5U1FrOGFPUGRHa3pVcm9LaTNqQzIxNTNnMGpBVENFSVh3bjQ?oc=5",
+        "source": "Wisevoter"
+      },
+      {
+        "i": 22,
+        "sector": "ai",
+        "company": "Finnable",
+        "what": "Digital lending platform",
+        "round": "Series C",
+        "amount_usd_m": 46,
+        "amount_text": "Rs 405 Cr ($46M)",
+        "lead": "Bharat Value Fund",
+        "india": true,
+        "url": "https://entrackr.com/news/finnable-raises-rs-405-cr-from-bharat-value-fund-kamath-brothers-others-12842322",
+        "source": "Entrackr"
+      },
+      {
+        "i": 21,
+        "sector": "ai",
+        "company": "Amagi",
+        "what": "SaaS media technology platform",
+        "round": "Secondary block sale",
+        "amount_usd_m": 30,
+        "amount_text": "Rs 262 Cr ($30M)",
+        "lead": "Not disclosed",
+        "india": true,
+        "url": "https://entrackr.com/news/norwest-venture-partners-sells-215-stake-in-amagi-for-rs-262-cr-through-block-deal-12844123",
+        "source": "Entrackr"
+      },
+      {
+        "i": 14,
+        "sector": "ai",
+        "company": "Every",
+        "what": "AI media platform",
+        "round": "Series A",
+        "amount_usd_m": 17.5,
+        "amount_text": "$17.5M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9rQVJPcUdVcXN4N1E2ZEt0N08tNFFhbnZ6ZldXaU01Y1JoTUZMMmIxQS1yWHNFUndPNWpBZkczWW1KNlhTd3dvN1FNelVfMUJnTmww?oc=5",
+        "source": "Wowtale"
+      },
+      {
+        "i": 7,
+        "sector": "robotics",
+        "company": "Jiutian Chuangzhi",
+        "what": "Outdoor robots",
+        "round": "Series A",
+        "amount_usd_m": 15,
+        "amount_text": "$15M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQbjNQRXd5RnZiME8xTm9yd2hWQ0dPRmR2dmh5ekZXTm9HeTN5NHRiU1RJSnNYMi1DeW1wbjFzQ1pUUHluZDJxNERDQXhWajlfTnN5MW5jdlNiUkw5TVVyY0N4TUJ5aElWVFAzUVYweFpkdFo2d2libVpRUjRLb3MzUWZORUt1d19iNVk4dC1kcmF1YUl1?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 12,
+        "sector": "deeptech",
+        "company": "Elecbits",
+        "what": "Electronics design and manufacturing",
+        "round": "Funding",
+        "amount_usd_m": 15,
+        "amount_text": "Up to $15M (talks)",
+        "lead": "Xponentia Capital",
+        "india": true,
+        "url": "https://inc42.com/buzz/exclusive-electronics-manufacturing-startup-elecbits-to-raise-up-to-15-mn-from-xponentia-capital/",
+        "source": "Inc42"
+      },
+      {
+        "i": 1,
+        "sector": "deeptech",
+        "company": "Green Aero",
+        "what": "Jet engines and combat drones",
+        "round": "Series A",
+        "amount_usd_m": 14,
+        "amount_text": "$14M",
+        "lead": "Crane Ventures",
+        "india": true,
+        "url": "https://inc42.com/buzz/green-aero-raises-14-mn-to-build-jet-engines-combat-drones/",
+        "source": "Inc42"
+      },
+      {
+        "i": 10,
+        "sector": "ai",
+        "company": "Metano",
+        "what": "Autonomous AI agents",
+        "round": "Seed",
+        "amount_usd_m": 12,
+        "amount_text": "$12M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOX2p5bTlkMzZZaTIzSHhRM3pPSXVva2FFTEJCUHZBWUlrM2dmVGZ4eXk5elNKc294aF9vWTViVGhUc01qVnY3LThwZDk5VHRZS3Q3NHpGelhyaUtLcEZodTN4aUNpY3R3M3lBSGVnZVRQU05HMlVySkx5eTRsQXFTdUxwdDA5S0lTRVNSNTFrclQ2dWUzWVRrTjFhTl83WnlxQjNRZVpSdkxULTNQTGc?oc=5",
+        "source": "FF News"
+      },
+      {
+        "i": 20,
+        "sector": "ai",
+        "company": "XEBO.ai",
+        "what": "AI customer experience platform",
+        "round": "Series A",
+        "amount_usd_m": 10.5,
+        "amount_text": "$10.5M",
+        "lead": "Emirates Growth Fund",
+        "india": false,
+        "url": "https://inc42.com/buzz/xebo-ai-bags-10-5-mn-to-strengthen-ai-solutions-stack/",
+        "source": "Inc42"
+      },
+      {
+        "i": 17,
+        "sector": "ai",
+        "company": "Nextesy",
+        "what": "Automated Swiss SMB bookkeeping",
+        "round": "Seed",
+        "amount_usd_m": 10.4,
+        "amount_text": "$10.4M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdXpPQXdLSnFidGpMMkZQVFFqQkszWjFlZnNJWFNYNzZzbm5zNk1zSkdlc096MWF2a2VjT1VLQURQREZGT3YyU2ZKeERkRXlhSTJ0R0FhbzVBTHF4d2lRa2VRTGljVlpidXpEU2xkamltaWFWdExjSTZFRUpsMUdYRl9UR0llYmNUMDY3UkYzdU9sb3FLT2RDOA?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 24,
+        "sector": "ai",
+        "company": "Vegapay",
+        "what": "Credit on UPI and banking tech",
+        "round": "Series A",
+        "amount_usd_m": 10,
+        "amount_text": "$10M",
+        "lead": "Vertex Ventures, Prosus",
+        "india": true,
+        "url": "https://yourstory.com/2026/11/vegapay-raises-10m-in-series-a-round-co-led-by-vertex-ventures-prosus",
+        "source": "YourStory"
+      },
+      {
+        "i": 13,
+        "sector": "deeptech",
+        "company": "Starforge",
+        "what": "Compact fusion reactors",
+        "round": "Pre-seed",
+        "amount_usd_m": 6.6,
+        "amount_text": "€6.6M ($7.1M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/munich-fusion-startup-starforge-raises-e6-6m-to-build-compact-reactors-on-production-lines/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 26,
+        "sector": "ai",
+        "company": "WaterSense",
+        "what": "Water pollution prediction",
+        "round": "Funding",
+        "amount_usd_m": 6.2,
+        "amount_text": "€5.7M ($6.2M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/watersense-raises-5-75m-river-data-subscriptions/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 27,
+        "sector": "deeptech",
+        "company": "ARK Capture Solutions",
+        "what": "CO2 capture from industrial emissions",
+        "round": "Funding",
+        "amount_usd_m": 5.8,
+        "amount_text": "€5.4M ($5.8M)",
+        "lead": "Aperam Ventures",
+        "india": false,
+        "url": "https://techfundingnews.com/ark-raises-5-4m-solvent-free-carbon-capture/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 30,
+        "sector": "ai",
+        "company": "VirtualBrain",
+        "what": "AI startup",
+        "round": "Funding",
+        "amount_usd_m": 4.3,
+        "amount_text": "€4M ($4.3M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQYk9ReF9TVHVFQTVxMmpWSHdWZ0diU2VkQWJkUVA3VVctekFwOTdkbDVMdEw0bk5TYU96N2ZQc3BxbzdFbmNFdFRmQXRGTWpvWjAtQnBnM0NndUk4U1liYUtya1lKcXhOTUNJZHlWWjBXdndFeU1QYUdSNUltQk40NF92eUpVR2FMdGtOekE4RUdtelJrOXdTZm5hdnpYV1AzMWl5WGdrb1FwSm53aDJUNUdLeGg3Ty0tQ0tLaTF2Q0JLOUdpY3RpVW9RUkVwWUJ0LThDOG8xcw?oc=5",
+        "source": "Business Review"
+      },
+      {
+        "i": 15,
+        "sector": "ai",
+        "company": "Nihin Media",
+        "what": "Medical AI",
+        "round": "Funding",
+        "amount_usd_m": 3.3,
+        "amount_text": "$3.3M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRjN5TlF3d0wzQzdwc0lkMW9POFRhVFZQSExwNHJuLXpKbk9welBpZ3NoUUxob2ZaeGg3UVg0cnBELWpCbWl1TWQxZ0Y5Unh1UTZ4Y3BVV0lRaUxvQnhFTkRhenFxVXNrSzVOU3lNZHFURG10NnNyRzdKZ05meHRwemhyZFEwXzdDSVE?oc=5",
+        "source": "Tech in Asia"
+      },
+      {
+        "i": 25,
+        "sector": "ai",
+        "company": "Audun",
+        "what": "AI debt collection",
+        "round": "Funding",
+        "amount_usd_m": 3,
+        "amount_text": "$3M",
+        "lead": "Y Combinator, Alliance VC",
+        "india": false,
+        "url": "https://techfundingnews.com/norwegian-ai-debt-collection-startup-audun-raises-3m-from-y-combinator-and-alliance-vc/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 28,
+        "sector": "ai",
+        "company": "Aeon",
+        "what": "Nigerian cybersecurity startup",
+        "round": "Pre-seed",
+        "amount_usd_m": 2,
+        "amount_text": "$2M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQekVJb1VlV1Y2dVNMVmJPWnc1X2xpLXZlbDBDOGIzb1R2aHNyRzI5RHNKNXBnSjBNOHRNN0ZocnZfRk1oc3lxTHJzc2puLUlaTDNlVHQtS3FaV2M4d2JLQmNsS0I5VkR4OGtZeEEyS0F2NDh3MnNXRlN1M21pdlUtWlhjVDM0bDJNeVF3ZjlaWGJQSWFLRFlqakZtbEN2dXdBdVdaMlhxeFk?oc=5",
+        "source": "Tech In Africa"
+      },
+      {
+        "i": 18,
+        "sector": "ai",
+        "company": "Mawj",
+        "what": "AI customer-service and voice AI",
+        "round": "Series A",
+        "amount_usd_m": 1.9,
+        "amount_text": "$1.9M",
+        "lead": "SEEDRA",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcVR2dmd5d0ZWMnJfN2pSRm5HM040d2FVazlaR2szbzZVanVQdlFVSGVjY0lQNy0teEtyekVLaDN6Y3Vwclc4WENNMjRBN0I0dlBVOWtRSG9CdS1NUWNRbmM1UzVWVXc2ME1yckpLNmZua1I4bGcyTFNzc0txdTVEd1kzSEU3R2p1UWFxMnRzSThkSmNGMnZyMWpyNXA1OE5ZN0xB?oc=5",
+        "source": "FWDStart"
+      },
+      {
+        "i": 8,
+        "sector": "deeptech",
+        "company": "Agnikul",
+        "what": "Spacetech rocket launches",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": true,
+        "url": "https://yourstory.com/2026/11/agnikuls-rocket-ambitions-gather-pace-but-commercial-revenue-is-yet-to-take-off",
+        "source": "YourStory"
+      }
+    ],
+    "totalUsdM": 964
+  },
+  "playground": [
+    {
+      "headline": "Autonomous Lawnmower Vibe-Coded by One Determined Tinkerer",
+      "body": "Jakkuh built an autonomous lawnmower by vibe-coding, letting AI help write the control software. The mower handles yard work without a human driver, inspired by the autonomy already common on industrial farms.",
+      "why": "Vibe-coding lets a single enthusiast bring farm-grade autonomy to a suburban front yard.",
+      "maker": "Jakkuh",
+      "url": "https://www.hackster.io/news/this-guy-vibe-coded-his-own-autonomous-lawnmower-17a4c681d86f",
+      "source": "Hackster.io"
+    },
+    {
+      "headline": "Quadrotor Learns to Navigate by Target Photo Alone",
+      "body": "Researchers trained a quadrotor to fly toward a goal image using a recurrent vision-based policy, with no map, state estimation, or separate velocity controller. It reached an 84% success rate in real indoor flights. The policy commands thrust and angular rates directly from camera images.",
+      "why": "Agile drones can now navigate unseen spaces using only a snapshot as the destination.",
+      "maker": "Simone Nascivera and team",
+      "url": "https://arxiv.org/abs/2611.34046",
+      "source": "arXiv cs.RO"
+    }
+  ],
+  "think": {
+    "collision": {
+      "a": {
+        "kind": "story",
+        "n": 1,
+        "label": "Nvidia pauses server shipments to Southeast Asia"
+      },
+      "b": {
+        "kind": "brief",
+        "n": 4,
+        "label": "State attorneys general fight Character.AI selling user chats"
+      },
+      "headline": "Offer robot buyers an Indian-hosted egocentric video library with signed worker consent and local compute, safe from export and privacy shocks",
+      "body": "Story 1 shows that access to Nvidia's AI servers can be cut off by region with little warning. Brief 4 shows that regulators now punish companies that resell people's recordings without clear permission. A data company could store and pre-process its first-person work video on graphics-chip servers (GPUs, the chips that train AI) rented inside India, and attach a per-clip consent record so each worker's permission for resale can be checked, so buyers get footage that is both legally clean and always reachable.",
+      "who_pays": "Robot foundation model teams and their lawyers, who need training data that will survive privacy audits and chip-access disruptions.",
+      "data_needed": "Signed, revocable consent records tied to each video clip, face-blurring logs, and records showing where each file was stored and processed.",
+      "why_fail": "Buyers may care more about price and volume than about consent records and data location until a regulator actually fines someone in robotics."
+    },
+    "contrarian": {
+      "story_n": 2,
+      "consensus": "SpaceX's approval means AI computing is starting to move into orbit, and space data centres will reshape the economics of AI.",
+      "against": [
+        "Approval is permission, not proof: a 100,000-satellite target by 2035 is a regulatory placeholder, and similar large filings have often been scaled back.",
+        "Space makes chips hard to cool and impossible to repair, and radiation wears them out, so each unit of computing will likely cost more than on the ground for years.",
+        "Robot training and inference need large data uploads and quick responses, which favour ground data centres near users, not satellites with limited links back to Earth."
+      ],
+      "bets_otherwise": "Microsoft, Google, Amazon and Indian groups such as Reliance and Adani are pouring money into large ground data centres, betting that compute stays on Earth.",
+      "settle_it": "Published cost per hour of GPU computing from a working orbital cluster compared with ground cloud prices by around 2030."
+    }
+  },
+  "cost": {
+    "usd": 0.0501,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 4,
+        "inTokens": 29777,
+        "outTokens": 7185,
+        "cost": 0.0066,
+        "models": {
+          "anthropic/claude-haiku-5.5": 4
+        }
+      },
+      "write": {
+        "calls": 2,
+        "inTokens": 2161,
+        "outTokens": 991,
+        "cost": 0.006,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 2
+        }
+      },
+      "research": {
+        "calls": 1,
+        "inTokens": 5820,
+        "outTokens": 549,
+        "cost": 0.004,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "india": {
+        "calls": 1,
+        "inTokens": 2261,
+        "outTokens": 564,
+        "cost": 0.0052,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 3461,
+        "outTokens": 2280,
+        "cost": 0.0015,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 806,
+        "outTokens": 252,
+        "cost": 0.0013,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "think": {
+        "calls": 1,
+        "inTokens": 2606,
+        "outTokens": 755,
+        "cost": 0.0255,
+        "models": {
+          "anthropic/claude-opus-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 201,
+    "unique": 171,
+    "feeds": 29,
+    "failedFeeds": [
+      "Import AI",
+      "Google DeepMind",
+      "r/robotics",
+      "r/LocalLLaMA",
+      "Hacker News",
+      "Show HN"
+    ]
+  },
+  "generatedAt": "2026-11-27T00:16:23.924Z"
+}
