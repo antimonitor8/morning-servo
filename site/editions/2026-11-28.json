@@ -1,0 +1,445 @@
+{
+  "date": "2026-11-28",
+  "weekday": "Saturday",
+  "sunday": false,
+  "number": 31,
+  "paper": "The Morning Servo",
+  "readMinutes": 5,
+  "stories": [
+    {
+      "id": "6a3382e11f",
+      "section": "ai",
+      "kicker": "AI",
+      "headline": "SAP weighs cutting 10,000 jobs in AI restructuring",
+      "takeaway": "SAP is considering eliminating at least 10,000 roles, roughly 9 percent of its workforce, to focus its business on AI. Product, engineering and sales teams would see the most change.",
+      "deck": "The cuts would fall hardest on product, engineering and sales teams.",
+      "body": [
+        "SAP, Europe's largest technology company, is considering eliminating at least 10,000 positions as it shifts its software business toward AI, according to a Bloomberg report. The cuts could affect about 9 percent of the company's global workforce of more than 110,000 people. The final number has not been set and could change after labour negotiations.",
+        "The review covers all departments, but product, engineering and sales teams are in particular focus. Chief Executive Christian Klein wants AI embedded in the company's core software, and SAP has reorganized its executive board twice this year. Two of six board members are due to leave in March.",
+        "SAP's last major restructuring, in January 2024, also cut up to 10,000 roles and cost about 3 billion euros. That effort relied mainly on voluntary departures and retraining, and overall headcount stayed roughly stable as the company hired for new roles. Germany, SAP's largest employee base, has an employment guarantee through 2028."
+      ],
+      "why": "Large enterprise software vendors are redirecting headcount from traditional product and sales roles toward AI work. That signals where buyer budgets are shifting and which internal teams face pressure.",
+      "hard": "The number of cuts is not final, and labour agreements in Germany may limit how many roles can actually be removed.",
+      "terms": [
+        {
+          "term": "Enterprise software",
+          "meaning": "Large programs companies use to run finances, supply chains, hiring and other core operations, sold mostly to businesses rather than individuals."
+        },
+        {
+          "term": "Restructuring",
+          "meaning": "Reorganizing a company's teams, roles or business units, often involving layoffs, to shift strategy or cut costs."
+        },
+        {
+          "term": "Labour council",
+          "meaning": "An elected group of employee representatives that negotiates with management over job cuts, pay and working conditions, common in German companies."
+        },
+        {
+          "term": "Workforce realignment",
+          "meaning": "Changing the mix of people a company employs, usually reducing some roles while hiring for new ones."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Enterprise software",
+          "Artificial intelligence"
+        ],
+        "task": [
+          "Workforce restructuring",
+          "AI business strategy"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "Analytics India Magazine",
+          "url": "https://analyticsindiamag.com/ai-news/sap-considers-10000-job-cuts-across-departments-in-ai-restructuring-report"
+        }
+      ]
+    },
+    {
+      "id": "864e83f4c1",
+      "section": "ai",
+      "kicker": "AI",
+      "headline": "ElevenLabs in talks for funding at $33 billion valuation",
+      "takeaway": "ElevenLabs, a voice AI company, is discussing a funding round that would value it at $33 billion. Its annual recurring revenue has reached $700 million, up from $600 million in September.",
+      "deck": "The London company's revenue figure and investor interest point to fast growth in voice tools.",
+      "body": [
+        "ElevenLabs is in early talks for a funding round that could value the London-based voice AI company at $33 billion, according to a Bloomberg report. The process could begin in the first quarter of 2027, though some investors are pushing for it to start sooner and discussions are still preliminary.",
+        "The company's annual recurring revenue has reached $700 million, up from $600 million in September. ElevenLabs was last valued at $22 billion in September after a $300 million employee share sale. A $33 billion valuation would be 50 percent higher than that.",
+        "ElevenLabs makes AI models that generate synthetic voices for uses such as gaming, audiobooks and interactive voice agents. In September it said enterprise customers made up 55 percent of revenue, and that its technology is used in daily operations at five of the world's ten largest technology companies."
+      ],
+      "why": "Voice is becoming a standard layer for robots and physical-work systems that need to take spoken instructions, report status, or handle customer interactions. Rising revenue and enterprise adoption at ElevenLabs signal that speech interfaces are moving into operational settings, not just media.",
+      "hard": "The funding talks are early and informal; no deal is confirmed.",
+      "terms": [
+        {
+          "term": "Annual recurring revenue",
+          "meaning": "An estimate of sales over one year, based on a shorter period of recent business."
+        },
+        {
+          "term": "Synthetic voice",
+          "meaning": "A human-like voice generated by a computer rather than recorded from a real person."
+        },
+        {
+          "term": "Voice agent",
+          "meaning": "Software that can carry on spoken conversations and handle tasks like customer service calls."
+        },
+        {
+          "term": "Speech-to-text model",
+          "meaning": "Software that converts spoken audio into written words."
+        }
+      ],
+      "tags": {
+        "industry": [
+          "Voice AI"
+        ],
+        "task": [
+          "Funding and valuation"
+        ]
+      },
+      "score": 6,
+      "sources": [
+        {
+          "name": "Analytics India Magazine",
+          "url": "https://analyticsindiamag.com/ai-news/elevenlabs-targets-33-billion-valuation-in-fresh-funding-round-report"
+        }
+      ]
+    }
+  ],
+  "research": [],
+  "india": [
+    {
+      "headline": "Dunzo founder's AI home management startup raises nine million dollars",
+      "what": "M, a Bengaluru startup building AI tools to run household tasks, raised nine million dollars in a round led by RTP Global. Peak XV Partners and Blume Ventures also put in more money, taking total funding to about twenty million dollars.",
+      "why": "The round shows continued investor interest in consumer AI beyond chatbots and quick delivery, applied to everyday home tasks.",
+      "who": "M, RTP Global, Peak XV Partners, Blume Ventures",
+      "url": "https://inc42.com/buzz/kabeer-biswas-m-raises-9-mn-led-by-rtp-global/",
+      "source": "Inc42",
+      "title": "Kabeer Biswas’ M Raises $9 Mn Led By RTP Global"
+    },
+    {
+      "headline": "Swiggy Instamart cuts 340 jobs during restructuring citing generative AI",
+      "what": "Swiggy's quick commerce arm Instamart laid off about 340 corporate and support employees as part of a restructuring. The company cited generative AI, new ways of working and organisational changes as reasons, while saying severance and extended health cover would be provided.",
+      "why": "It is one of the clearest Indian examples of a large consumer internet company linking job cuts directly to AI-driven efficiency.",
+      "who": "Swiggy Instamart",
+      "url": "https://inc42.com/buzz/swiggy-instamart-lays-off-340-employees-amid-organisational-restructuring/",
+      "source": "Inc42",
+      "title": "Swiggy Instamart Lays Off 340 Employees Amid Organisational Restructuring"
+    }
+  ],
+  "briefs": [
+    {
+      "kicker": "AI",
+      "headline": "AI on brink of making online security useless, mathematicians fear",
+      "url": "https://www.thetimes.com/uk/technology-uk/article/ai-making-online-security-useless-smr73d3n8",
+      "source": "Hacker News"
+    },
+    {
+      "kicker": "AI",
+      "headline": "Anthropic Ditches Python for Rust in Messages API, Cuts CPU Usage by 70% and Memory by Over 80%",
+      "url": "https://analyticsindiamag.com/ai-news/anthropic-ditches-python-for-rust-in-messages-api-cuts-cpu-usage-by-70-and-memory-by-over-80",
+      "source": "Analytics India Magazine"
+    },
+    {
+      "kicker": "India",
+      "headline": "What if a falling drone could save itself? How this Bengaluru start-up is making it possible",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOeE5SVC02c3YyOXkzTWhsNk5FUThybFJjM0h5dUhnQWhydEYwNDNwYy0wcE5ua3FKcHdHMkVrc25jNjlsNW5yaTNXVDJfdGZGMWxCX3lWWDBYMGFyYUxMa3N2WWU4N1N0dmUtM2RzWmlOSS1aUUE2bDBoSDJHSGZBemlTUXp3b2g0UVhld29GU2FvYUtGdlRpVFVvZkludVlSTzNMYV9MdmhHLU41RlY4SG9BVmxjbGxLdEQ2UldhUHVhRU5YcGhSUV9PMThraGdESDV5QTEtWDZ2bUhKMEJnbFZYUmVzWjBuSV83SjBtN2d0TVM1RGNZQUVWVmgyZXlXbVHSAYcCQVVfeXFMTnBkV1JnY1hia1oyb3FkcG5oX3VpSDEzWmw5SVdkMXdjSkZfQmtnUUJtWmVOS3kyMEtIYnI3cmU4YzNmTWNyM0M4ZUtDMmg0UHVqZU1YRHRXX0NSM001ZGNkVU1vQ0pGclB4MlBlZGdWem1fSzdzTmdLSnZ4emlvRGpoTjY1b0VLck9FdW9Kd1ExUU1QZEUydGNrNmg5RjVJYWRrbW5uN0hWSzd4TVpxUGgxanQ3SnNtYUx4b3JIYkZIT1BnSVhXTWVoel93eFp5UnZjQWhIcmhsdnk3ejE4clpmZ3JFaGdrT2JoN3l1V0g0RVdQMlpfZXBNU0QzVVB1NVg5RkZHaXc?oc=5",
+      "source": "The Economic Times"
+    },
+    {
+      "kicker": "Robotics",
+      "headline": "US Army Acquires RAPTOR Ground Robot, Inspired by Lunar Rover, to Enhance Infantry Support",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPQ3JwVW1idFhlZFNud2VybFBHSlczckpWRlFBV2o3SERYUlRaZ2dEX2ZxTlFFUUMxaTJvbmpsdUkzNUR4TjNUYXludVdENnpqSE8yVTU4NFM4d2FzSUZsUnA5dnlGRG1TRFdTRWFtdEN3RU9OV1VyZ1kyWmdObk54UGV1OFdFSG9ybW1McTg3M052ZnNWNzI1MEF5V0FPSUFXVTFOaWxXc19oY3ZVbVoyMEtJM0tjWVVmX29mYkJEV2IyLWxBQndtVkdpbGJyYUlm0gHQAUFVX3lxTE9DcnBVbWJ0WGVkU253ZXJsUEdKVzNySlZGUUFXajdIRFhSVFpnZ0RfZnFOUUVRQzFpMm9uamx1STM1RHhOM1RheW51V0Q2empITzJVNTg0Uzh3YXNJRmxScDl2eUZEbVNEV1NFYW10Q3dFT05XVXJnWTJaZ05uTnhQZXU4V0VIb3JtbUxxODczTnZmc1Y3MjUwQXlXQU9JQVdVMU5pbFdzX2hjdlVtWjIwS0kzS2NZVWZfb2ZiQkRXYjItbEFCd21WR2lsYnJhSWY?oc=5",
+      "source": "Inkorr"
+    },
+    {
+      "kicker": "Robotics",
+      "headline": "GXO doubling down on robotics in 2027",
+      "url": "https://www.therobotreport.com/gxo-doubling-down-on-robotics-in-2027/",
+      "source": "The Robot Report"
+    },
+    {
+      "kicker": "AI",
+      "headline": "30B Beats 120B! Sakana AI Releases Namazu Small: Ending Enterprise AI's Compute Anxiety with 3B Activated Parameters",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE94NHV3bG9TM3JBMjdxX0V2Nkh4bG1SaHJHd0p6WHpWUlJ1cmZ0Vko4cUxITnZETk12N1hCdHpIb0EwNXhSS0MwRTR3?oc=5",
+      "source": "AIBase"
+    },
+    {
+      "kicker": "India",
+      "headline": "Ex-Sequoia Investor Sudhanshu Mishra Launches Demi, An AI Assistant That Works Before You Ask",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNU2V4Q01BbFFGcFlPckR6YTVmU29CakFmYTJVMEd2dTktZm5IQVVwVHV2OFo1clRTbURLekc1MTVwMUlnSFdVTTBPU25qMTljX2VOQlJnVlBTbmRkRHRMcXhqTVdHbmU0VVJSNm44a3JtRndLbG5USy15cVA1V3FyMXpaaWJqTFdVY1J2OENGeFg4U1dCWUVLTEJR?oc=5",
+      "source": "Bharat Fast"
+    }
+  ],
+  "money": {
+    "rounds": [
+      {
+        "i": 2,
+        "sector": "ai",
+        "company": "Marlowe",
+        "what": "AI-related startup",
+        "round": "Funding",
+        "amount_usd_m": 277,
+        "amount_text": "$277M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPS3FkV3ZaUmkyZ3NTQ1dmclJPX2tJR2NuZXhaUlFybWwzSFFIc0gxa09oOUVoZTlJNXNaMHRPMzRWem9WckxaRk9tS3NGTThhMDhNb0VLVjFyS1hrVDdnTkdVTHoyeE1yWk1OMGl3aDY2U3BRaHJJSXFrOGRnRllwc3lTVGpOb0x0QWJqZU1OWEktV0l4SFZQRy1WMEg2Q3plaGM3QTZqaExmSUFaaExVWlZaZGdYcFU0UEtfcnBBONIBzAFBVV95cUxNTWdpQWtEWHItbkszSlpMX1dwTzEyRUZaaUFWYzJudmliYndnWC1abW1MdjlaLVEyQ2gyNUlUOE4yb2ZCMlFZODhTTV9EWm1UUFlONWNUaVctRThfQkpzUjVwQUZ6Q0VOUDR4OGVUbThYTkt6LS1teHoxdjRXTUp3UThMV0JaYnZ1c2VfcElvejBKMEg1ZHlieHFuc3BkOExSMXJUOWhiak5faUhPRGJEOGk2LWNtYjVVMk53bW1hUHY0WDRCRFVMSkdfOGc?oc=5",
+        "source": "Analytics Insight"
+      },
+      {
+        "i": 19,
+        "sector": "ai",
+        "company": "Everful",
+        "what": "AI-powered factory-direct sourcing",
+        "round": "Series A",
+        "amount_usd_m": 48.5,
+        "amount_text": "$48.5M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPVE13aEVFWkhCYmhQYlZBbGdWUGhITDNOUjAzc0RqY19WeExNbnE5YjUwdFZ5TUd3Q09wY0xacER2bEhSRWliVF9xa29VVlpzUWxTRS05N1NqenVhV0twOFNvX1ZTYW1NMTVJbXBUZXozbTVRbXJYRkt5by0yaDJXYUxwRXNydXJvUlpNbDIybUstU2Z3OHlPQ1FJb2NETWpDZGh4YmtJQzhjX3JTdFJleG13?oc=5",
+        "source": "AI Insider"
+      },
+      {
+        "i": 24,
+        "sector": "ai",
+        "company": "Henfruit",
+        "what": "Branded egg company",
+        "round": "Series A",
+        "amount_usd_m": 15,
+        "amount_text": "$15M (₹143.5 Cr)",
+        "lead": "Not disclosed",
+        "india": true,
+        "url": "https://entrackr.com/exclusive/decoding-henfruit-founder-retains-5808-stake-after-15-mn-series-a-12844932",
+        "source": "Entrackr"
+      },
+      {
+        "i": 10,
+        "sector": "robotics",
+        "company": "Robros",
+        "what": "Humanoid robot maker",
+        "round": "Series B",
+        "amount_usd_m": 14.4,
+        "amount_text": "$14.4M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNEotZFNZYVpyczF3M3JfX3I3QjZaRkl6b1ZvYklfejRicUNEMVotV2JJV2JtcGg2QUc4N2JkbGN1OGFLTUROb3o3dEZCOU1QZmctU1B1bDlBZnd0dlZKSzRDeWF6SEk3bGdmMmk2cEdITGc3YTN5aEF5cm1EczFhU0RMaUpHenRJdkJnQzYxaGVnNGNhTjZZWFB3?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 7,
+        "sector": "robotics",
+        "company": "Korben",
+        "what": "Robotics software platform",
+        "round": "Seed",
+        "amount_usd_m": 11.2,
+        "amount_text": "€10.2M ($11.2M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxON3J6N0ZOdWNLQUliQ3V0N3hTWklLa29rWFRMaXgzQlpmRzdCWUVVLWZRbzBucHdjb054LVU3MzUySjZ6ZUI1czhoOGpyR3MwRkI2djF5Y0hneVdLMFZ0dWN1NUJra1hLYndVeWlkRjg5el9qOWlGcFNBWWpzazNKanlFenczeEg1YllCLWg5bkhUWlhrWHNWQXpWeEkyRnpBQUFqZWtkbUNkQ0FXMnpYYlhNLXpXZFk?oc=5",
+        "source": "AI Insider"
+      },
+      {
+        "i": 5,
+        "sector": "robotics",
+        "company": "Suota Wujie",
+        "what": "Robot brains for retail stores",
+        "round": "Funding",
+        "amount_usd_m": 4.51,
+        "amount_text": "$4.51M",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPeHQ1cGxJOEZyNF81dnR4MWlwdmxoM2s3aTdoZzYxWVBlZjNVbG9nTV9OMXVlSDgtbHJaWnFtQnpoNEd5M1BOX3dhOVJNQXJzOW1oTGVYMTBubkVndi1DTTlpX2E4cmlYVnZzWDNiUDBsdFYzY29nTWFFSnczTVFGdVpTZlJwRmxtQy1TaGN4OGdzTlB0MG5UbzdrY0RSZnFwb2FWYkUxYVI?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 25,
+        "sector": "ai",
+        "company": "Namma Yatri",
+        "what": "Ride-hailing platform",
+        "round": "Pre-Series A",
+        "amount_usd_m": 3.1,
+        "amount_text": "₹27.25 Cr ($3.1M)",
+        "lead": "Michael & Susan Dell Foundation",
+        "india": true,
+        "url": "https://entrackr.com/exclusive/exclusive-namma-yatri-raises-rs-2725-cr-led-by-michael-susan-dell-foundation-12844724",
+        "source": "Entrackr"
+      },
+      {
+        "i": 4,
+        "sector": "ai",
+        "company": "Lampsy Health",
+        "what": "AI seizure-monitoring lamp",
+        "round": "Funding",
+        "amount_usd_m": 1.2,
+        "amount_text": "€1.1M ($1.2M)",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://techfundingnews.com/portuguese-startup-lampsy-raises-e1-1m-for-an-ai-lamp-that-detects-epilepsy-seizures-during-sleep/",
+        "source": "Tech Funding News"
+      },
+      {
+        "i": 0,
+        "sector": "ai",
+        "company": "ElevenLabs",
+        "what": "Voice AI platform",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://analyticsindiamag.com/ai-news/elevenlabs-targets-33-billion-valuation-in-fresh-funding-round-report",
+        "source": "Analytics India Magazine"
+      },
+      {
+        "i": 9,
+        "sector": "robotics",
+        "company": "Xingyan",
+        "what": "Self-improving robots",
+        "round": "Seed",
+        "amount_usd_m": null,
+        "amount_text": "Tens of millions",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQN3BsUXV1NWM1ZHNyYVdIWktxZUhOd3ZlNUZyQkZieERqQTNKX2pMYkJuNTJ3VDZyRkp0NFBCbjREb2FzQUlCY0hlb2dlQ3dXc3d0VjVYTVJXMGFLX3pfU0ZzV0tjT1lYY2xDNUxFanpEeXJVMWQzajVOcG4wQUxQOE9YMjJqRmkxVmdqanZ2QW1GMTBtZjktMmtDZ0ZLSS1TcXRLMzRueUI1RlU?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 13,
+        "sector": "ai",
+        "company": "Xiaxian",
+        "what": "AI startup, early-stage",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Tens of millions of yuan",
+        "lead": "Not disclosed",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOa2tYbXdieUJQR1JTNUJsNTBUcTg3ZlF4Nkw3bVNPSm5jNlFReS1wUi1peTB5RnpGbkRJZjRTQUxXenUzck9sLS1UYXdLU2U1b0FMREhKOElFdW8wRWNfQWJuUkVKWjlyRTZCN3FqX2txdjFvR1I3Z2JyT0txWjYxN0NWNjZnZHJqWk1xNGYzQTBRRVpBaHVxbWtYdWIxYmxzYV80NkVkTV9aQlE?oc=5",
+        "source": "Dealroom"
+      },
+      {
+        "i": 28,
+        "sector": "robotics",
+        "company": "Atlas Engineered Products",
+        "what": "Engineered products with robotics",
+        "round": "Funding",
+        "amount_usd_m": null,
+        "amount_text": "Undisclosed",
+        "lead": "Ontario government",
+        "india": false,
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOVU11V0p6T3FTdnpoZ212X181MGd2eUxoU3dsZ3lNYVVTekVSWjJXQkFkNHpINWZqeEJKNWlBUWdOeDJvcWN5SUdJQk9yaDl5SGRZZFJFaXZXdGV4U1NhelQ5TzlNd1h5aGo4OW1fMlBlMDBESVlLLTNLa3BEODRTOXZjMk4yY1RWZFJFaEVYUUh1LXFsNExYU2g4NWpabFVNLWh1QzRwczItTEZLTmhyeGFhRjd0MUZVRjZKNDVjLTkzRklmbUViZHZtVnMyMWVkYUVIY2VQeGd2UXBnYVE?oc=5",
+        "source": "TradingView"
+      }
+    ],
+    "totalUsdM": 375
+  },
+  "playground": [
+    {
+      "headline": "Android AI widgets let you put Jurassic Park quotes on your home screen",
+      "body": "Google's Create My Widget feature uses Gemini to build custom home screen widgets from a text description. One user made a widget that displays a different quote from the original Jurassic Park every hour, and another that announces 'Tut tut, looks like rain' whenever it rains.",
+      "why": "It shows that AI can turn a casual thought into a personal, functional piece of software in under a minute.",
+      "maker": "Google",
+      "url": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
+      "source": "The Verge AI"
+    }
+  ],
+  "think": {
+    "collision": {
+      "a": {
+        "kind": "story",
+        "n": 2,
+        "label": "ElevenLabs valued at $33 billion on voice growth"
+      },
+      "b": {
+        "kind": "brief",
+        "n": 5,
+        "label": "GXO doubling down on warehouse robotics in 2027"
+      },
+      "headline": "Record Indian warehouse shifts with synced audio and egocentric video, capturing spoken handoffs, so robots learn to follow and report by voice.",
+      "body": "ElevenLabs' growth shows that voice is becoming a normal way to give instructions to machines. GXO, a large contract logistics firm (a company that runs warehouses for other brands), plans more robots in 2027, and those robots will work beside people who shout, radio and talk through tasks. A dataset that pairs first-person video of pickers and loaders with their real spoken exchanges would teach robots what a spoken instruction means in physical terms. Examples include \"that pallet goes to bay four\" or \"stop, the box is crushed.\"",
+      "who_pays": "Warehouse robot makers and humanoid labs building voice-commanded machines for logistics would pay, as would speech companies that want noisy, industrial audio paired with action.",
+      "data_needed": "It would need stereo head-camera video synced with clean and ambient audio from Indian warehouse shifts. Each recording would be transcribed in Hindi, English and regional languages, with time stamps linking each utterance to the action that followed, and carry consent from everyone recorded.",
+      "why_fail": "Warehouse operators may refuse to let workers' conversations be recorded because of privacy and labour concerns, leaving too little natural speech to be useful."
+    },
+    "contrarian": {
+      "story_n": 1,
+      "consensus": "SAP cutting 10,000 jobs shows AI is replacing software engineers and salespeople, and budgets are flowing cleanly into AI.",
+      "against": [
+        "Large software firms often use AI as a public reason for cuts that are really about slowing growth and pleasing investors on cost, so the cuts say little about what AI can actually do.",
+        "Enterprise software customers still need people to install and adapt systems, so much of the work may shift to outside consultants, many of them in India, rather than disappear.",
+        "If budgets are moving to AI, some of that money may go to physical automation in warehouses and factories, not office software, which would make SAP's traditional product less central."
+      ],
+      "bets_otherwise": "Indian IT services firms and system integrators, the companies hired to set up and run enterprise software, are betting human implementation work persists. Physical automation operators such as GXO are betting the money goes to robots on the floor.",
+      "settle_it": "Settle it by tracking whether SAP's revenue per employee and its spending on outside contractors both rise over the next two years, or whether output per worker stays flat after the cuts."
+    }
+  },
+  "cost": {
+    "usd": 0.0431,
+    "cap": 1,
+    "steps": {
+      "triage": {
+        "calls": 3,
+        "inTokens": 17387,
+        "outTokens": 4787,
+        "cost": 0.0041,
+        "models": {
+          "anthropic/claude-haiku-5.5": 3
+        }
+      },
+      "write": {
+        "calls": 2,
+        "inTokens": 2538,
+        "outTokens": 1086,
+        "cost": 0.0051,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 2
+        }
+      },
+      "india": {
+        "calls": 1,
+        "inTokens": 1491,
+        "outTokens": 236,
+        "cost": 0.0029,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "money": {
+        "calls": 1,
+        "inTokens": 3200,
+        "outTokens": 1728,
+        "cost": 0.0012,
+        "models": {
+          "anthropic/claude-haiku-5.5": 1
+        }
+      },
+      "playground": {
+        "calls": 1,
+        "inTokens": 955,
+        "outTokens": 136,
+        "cost": 0.0009,
+        "models": {
+          "deepseek/deepseek-v4-pro-0813": 1
+        }
+      },
+      "think": {
+        "calls": 1,
+        "inTokens": 2693,
+        "outTokens": 907,
+        "cost": 0.0289,
+        "models": {
+          "anthropic/claude-opus-5.5": 1
+        }
+      }
+    }
+  },
+  "sources": {
+    "fetched": 143,
+    "unique": 116,
+    "feeds": 29,
+    "failedFeeds": [
+      "r/robotics",
+      "r/LocalLLaMA",
+      "Show HN"
+    ]
+  },
+  "generatedAt": "2026-11-28T00:16:33.575Z"
+}
